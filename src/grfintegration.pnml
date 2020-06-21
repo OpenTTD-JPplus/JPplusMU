@@ -1,0 +1,46 @@
+//set depot vehicle width to 32px to avoid overlap
+train_width_32_px = 1;
+//align train properly in depot window
+traininfo_y_offset = 2;
+
+// TTD check //
+if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 2, 0, 22723)) {
+	error(FATAL, REQUIRES_OPENTTD, string(GRF_OTTDVER));
+}
+
+// Warn if "JapanSet3: Trains isn't optimal" //
+/*
+if (((grf_current_status("SZ\0D\00") == 0) && (grf_current_status("DP\30\00") == 0)) || ((grf_future_status("SZ\0D\00") == 0) && (grf_future_status("DP\30\00") == 0)) || ((grf_order_behind("SZ\0D\00") == 0) && (grf_order_behind("DP\30\00") == 0))) {
+	error( WARNING, string(GRF_JAPANSET));
+}
+*/
+
+/*disable NATS duplication*/
+engine_override("EN\21\01");
+
+//disable the 211
+item(FEAT_TRAINS, JRC211_6, 0x20D) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC211_5, 0x20C) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC211_4, 0x20B) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC211_3, 0x20A) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC211_2, 0x209) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}

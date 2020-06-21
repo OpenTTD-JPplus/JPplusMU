@@ -1,0 +1,108 @@
+//single vehicle such as purchase menu
+template tmpl_purchase (x, y) {
+    [x, y, 65, 15, -35, -10]
+}
+
+template tmpl_purchase_new (x, y) {
+    [x, y, 90, 15, -35, -10]
+}
+
+template tmpl_purchase_dh (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+    [x, y, 65, 15, -21, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+}
+
+template tmpl_purchase_dh_32bpp (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+    [x, y, 65, 15, -21, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+}
+
+template tmpl_std(x,y){
+[x, 		 y,	8, 	24,		-3, 	-13] //short
+[x +9, 	 y,	22,	20,		-13,	-13] //dia1
+[x +32,  y,	32,	17,		-16,	-13] //long
+[x +65,  y,	22,	20,		-5, 	-12] //dia2
+[x +88,  y,	8, 	24,		-3, 	-13] //short
+[x +97,  y,	22,	20,		-13,	-13] //dia1
+[x +120, y,	32,	17,		-16,	-13] //long
+[x+153,  y,	22,	20,		-5, 	-12] //dia2
+}
+
+template tmpl_std_rev(x,y){
+[x +88,  y,	8, 	24,		-3, 	-13] //short
+[x +97,  y,	22,	20,		-13,	-13] //dia1
+[x +120, y,	32,	17,		-16,	-13] //long
+[x+153,  y,	22,	20,		-5, 	-12] //dia2
+[x, 		 y,	8, 	24,		-3, 	-13] //short
+[x +9, 	 y,	22,	20,		-13,	-13] //dia1
+[x +32,  y,	32,	17,		-16,	-13] //long
+[x +65,  y,	22,	20,		-5, 	-12] //dia2
+}
+
+//25 high on the short sides for the pantograph
+template tmpl_std_panto25(x,y){
+[x, 		 y,	8, 	25,		-3, 	-14] //short
+[x +9, 	 y,	22,	20,		-13,	-13] //dia1
+[x +32,  y,	32,	17,		-16,	-13] //long
+[x +65,  y,	22,	20,		-5, 	-12] //dia2
+[x +88,  y,	8, 	25,		-3, 	-14] //short
+[x +97,  y,	22,	20,		-13,	-13] //dia1
+[x +120, y,	32,	17,		-16,	-13] //long
+[x+153,  y,	22,	20,		-5, 	-12] //dia2
+}
+
+template tmpl_std_panto25_rev(x,y){
+[x +88,  y,	8, 	25,		-3, 	-14] //short
+[x +97,  y,	22,	20,		-13,	-13] //dia1
+[x +120, y,	32,	17,		-16,	-13] //long
+[x+153,  y,	22,	20,		-5, 	-12] //dia2
+[x, 		 y,	8, 	25,		-3, 	-14] //short
+[x +9, 	 y,	22,	20,		-13,	-13] //dia1
+[x +32,  y,	32,	17,		-16,	-13] //long
+[x +65,  y,	22,	20,		-5, 	-12] //dia2
+}
+
+template tmpl_dhloco(x,y){
+[x, 		 y,	8, 	24,		-3, 	-13] //short
+[x +9, 	 y,	22,	20,		-13,	-14] //dia1
+[x +32,  y,	32,	17,		-16,	-13] //long
+[x +65,  y,	22,	20,		-6, 	-13] //dia2
+[x +88,  y,	8, 	24,		-3, 	-13] //short
+[x +97,  y,	22,	20,		-13,	-14] //dia1
+[x +120, y,	32,	17,		-16,	-13] //long
+[x+153,  y,	22,	20,		-6, 	-13] //dia2
+}
+
+template tmpl_dhloco_short(x,y){
+[x, 		 y,	8, 	24,		-3, 	-12] //short
+[x +9, 	 y,	22,	20,		-15,	-12] //dia1
+[x +32,  y,	28,	17,		-16,	-13] //long
+[x +65,  y,	22,	20,		-7, 	-14] //dia2
+[x +88,  y,	8, 	24,		-3, 	-15] //short
+[x +97,  y,	22,	20,		-12,	-14] //dia1
+[x +120, y,	28,	17,		-12,	-13] //long
+[x+153,  y,	22,	20,		-6, 	-13] //dia2
+}
+
+template tmpl_std_orginal(x,y){
+[x, 		 y,	8, 	24,		0, 		-13]
+[x +9, 	 y,	22,	20,		-13,	-11]
+[x +32,  y,	32,	17,		-16,	-12]
+[x +65,  y,	22,	20,		-5, 	-11]
+[x +88,  y,	8, 	24,		-3, 	-11]
+[x +97,  y,	22,	20,		-13,	-11]
+[x +120, y,	32,	17,		-16,	-12]
+[x+153,  y,	22,	20,		-5, 	-11]
+}

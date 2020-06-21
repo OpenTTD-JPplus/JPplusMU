@@ -1,0 +1,51 @@
+/*---HEADER--*/
+
+//Define the GRF
+#include "src/header.pnml"
+
+//Helpers
+#include "src/basecosts.pnml"
+#include "src/railtypetable.pnml"
+#include "src/cargotable.pnml"
+#include "src/parameters.pnml"
+#include "src/template.pnml"
+
+//IDs
+#include "src/vehicleid.pnml"
+
+//Coupliung Rules
+//#include "src/attach_kiha_group.pnml"
+//#include "src/attach_211_213_group.pnml"
+
+//Sorting
+#include "src/sorting.pnml"
+
+//Final Settings
+#include "src/grfintegration.pnml"
+
+
+/*---TRAINS---*/
+
+//Wagons
+#include "src/OTHER/mucar.pnml"
+
+//JNR
+
+//JR-Hokkaido
+
+
+//JR-East
+#include "src/JRE/EMU/E235_series.pnml"
+#include "src/JRE/EMU/E233_series.pnml"
+#include "src/JRE/EMU/E231_series.pnml"
+#include "src/JRE/EMU/E217_series.pnml"
+
+
+//JR-Central
+
+
+//JR-West
+
+//JR-Shikoku
+
+//JR-Kyushu

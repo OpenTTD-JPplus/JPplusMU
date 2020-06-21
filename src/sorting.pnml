@@ -1,0 +1,50 @@
+sort(FEAT_TRAINS, [
+
+/* **EMU** */
+
+/*JNR*/
+dmu_kiha40,
+dmu_kiha48,
+dmu_kiha54,
+dmu_kiha58,
+emu_205,
+emu_211,
+emu_213,
+/*JR East*/
+dmu_kiha100,
+dmu_kiha111,
+emu_107,
+emu_209,
+emu_E217,
+emu_E231,
+emu_E233,
+emu_E235,
+emu_719,
+emu_7195000,
+/*JR West*/
+emu_jrw207,
+/*JR Central*/
+emu_21156,
+/*JR Kyushu*/
+/*JR Hokkaido*/
+dmu_kiha141,
+dmu_kiha150,
+dmu_kiha201,
+dmu_kiha261,
+dmu_kiha281,
+emu_711,
+emu_721,
+emu_731,
+emu_733,
+emu_735,
+emu_781,
+emu_785,
+emu_789,
+/*JR Shikoku*/
+emu_6000,
+/*MU Cars*/
+mu_car,
+mu_cab,
+mu_cardd,
+
+]);

@@ -1,0 +1,154 @@
+//Shamelessly stolen from the 2cc set.
+
+//Check vehicle ID of the vehicle in front of the unit wagon being attached
+//The offset for var 61 is determined by position_in_consist_from_end, which results in the last wagon before the vehicle being attached
+
+//Here's Item collections things whatever.
+//Assigns all trains a number and all sets a range
+
+//Nagoya Municipal Subway
+#define RANGE_NMS		0x000..0x01F
+
+#define ITEM_NMS5000	0x000
+#define ITEM_NMS5050	0x001
+#define ITEM_NMSN1000	0x002
+#define ITEM_NMS2000	0x003
+#define ITEM_NMS3000_6	0x004
+#define ITEM_NMS3000_4	0x00A
+#define ITEM_NMS3050	0x005
+#define ITEM_NMSN3000	0x006
+#define ITEM_NMS6000	0x007
+#define ITEM_NMS6050	0x008
+#define ITEM_NMS7000	0x009
+#define ITEM_NMS1000	0x00B
+#define ITEM_NMS100		0x00C
+
+//Kintetsu
+#define RANGE_KINTETSU	0x100..0x1FF
+#define RANGE_KINTETSU_LTD_EX	0x100..0x14F
+#define ITEM_KIN12400	0x400
+#define ITEM_KIN12410	0x401
+#define ITEM_KIN15200_2	0x402
+#define ITEM_KIN15200_4	0x403
+#define ITEM_KIN15400	0x404
+#define ITEM_KIN22000_2	0x405
+#define ITEM_KIN22000_4	0x406
+#define ITEM_KIN22600_2	0x407
+#define ITEM_KIN22600_4	0x408
+#define ITEM_KIN30000	0x409
+
+//JR Central
+#define RANGE_JRC		0x200..0x2FF
+#define RANGE_JRC_COM	0x200..0x24F
+#define ITEM_JRCKIHA11	0x200
+#define ITEM_JRCKIHA25	0x201
+#define ITEM_JRCKIHA75	0x202
+#define ITEM_JRC119_1	0x203
+#define ITEM_JRC119_2	0x204
+#define ITEM_JRC311		0x205
+#define ITEM_JRC313_2	0x205
+#define ITEM_JRC313_3	0x206
+#define ITEM_JRC313_4	0x207
+#define ITEM_JRC313_6	0x208
+#define ITEM_JRC211_2	0x209
+#define ITEM_JRC211_3	0x20A
+#define ITEM_JRC211_4	0x20B
+#define ITEM_JRC211_5	0x20C
+#define ITEM_JRC211_6	0x20D
+#define RANGE_JRC_LTD_EX 0x250..0x2FF
+#define ITEM_JRC373		0x250
+
+//Meitetsu
+#define RANGE_MEITETSU	0x300..0x3FF
+#define RANGE_MEITETSU_LTD_EX	0x300..0x34F
+#define ITEM_MEI1000	0x300
+#define ITEM_MEI1030	0x301
+#define ITEM_MEI1200	0x302
+#define ITEM_MEI1230	0x303
+#define ITEM_MEI1380	0x304
+#define ITEM_MEI1800	0x305
+#define ITEM_MEI2000	0x306
+#define ITEM_MEI2200	0x307
+#define ITEM_MEI2300	0x308
+#define ITEM_MEIEL120	0x3FF
+
+//Minor Lines
+#define RANGE_MINOR		0xF00..0xFFF
+
+////Aichi 0xFFX -- Done
+///Aonami
+#define ITEM_AONAMI1000	0xFF0
+///Aichi Loop Lines
+#define ITEM_ALL2000	0xFF1
+#define ITEM_ALL100		0xFF2
+#define ITEM_ALL300_3	0xFF3
+#define ITEM_ALL300_4	0xFF4
+///Toyotetsu
+#define ITEM_TYT7300	0xFF5
+#define ITEM_TYT1900	0xFF6
+#define ITEM_TYT1800	0xFF7
+///Johoku
+#define ITEM_JHKKIHA11	0xFF8
+#define ITEM_JHKKIHA40	0xFF9
+
+/////Gifu F5X
+///Akechi
+#define ITEM_AKE1		0xF50
+#define ITEM_AKE10		0xF51
+#define ITEM_AKE100		0xF52
+///Tarumi
+#define ITEM_TARU180	0xF53
+#define ITEM_TARU230	0xF54
+#define ITEM_TARU610	0xF55
+#define ITEM_TARU510	0xF56
+#define ITEM_TARU330	0xF57
+///Nagaragawa
+#define ITEM_NGR1		0xF58
+#define ITEM_NGR2		0xF59
+#define ITEM_NGR3		0xF5A
+#define ITEM_NGR500		0xF5B
+
+////Mie 0xF1X
+///Yoro
+#define ITEM_YORO600_2	0xF10
+#define ITEM_YORO600_3	0xF12
+#define ITEM_YORO6441	0xF13
+#define ITEM_YORO6421_2	0xF14
+#define ITEM_YORO6421_3	0xF15
+///ISE
+#define ITEM_ISE1		0xF20
+#define ITEM_ISE2		0xF21
+#define ITEM_ISE3		0xF22
+
+
+
+switch(FEAT_TRAINS, PARENT, switch_can_attach_COM, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	RANGE_NMS: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Allow
+	RANGE_MINOR: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Allow
+	RANGE_JRC_COM: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	CB_RESULT_ATTACH_DISALLOW;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_can_attach_LTD, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	RANGE_KINTETSU_LTD_EX: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; //Allow
+	RANGE_MEITETSU_LTD_EX: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	RANGE_JRC_LTD_EX: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	CB_RESULT_ATTACH_DISALLOW;
+}
+
+/*	Check vehicle ID to determine which case we have. 
+ *	Engines are always allowed
+ *	Wagons depend on vehicle in front of it
+*/
+switch(FEAT_TRAINS, SELF, switch_can_attach_vehicle, vehicle_type_id) {
+	//Commuter
+	RANGE_NMS: switch_can_attach_COM;
+	RANGE_MINOR: switch_can_attach_COM;
+	RANGE_JRC_COM: switch_can_attach_COM;
+	//Limited Express
+	RANGE_KINTETSU_LTD_EX: switch_can_attach_LTD;
+	RANGE_MEITETSU_LTD_EX: switch_can_attach_LTD;
+	RANGE_JRC_LTD_EX: switch_can_attach_LTD;
+	ITEM_MEIEL120: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	CB_RESULT_ATTACH_DISALLOW;
+}

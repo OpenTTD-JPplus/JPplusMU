@@ -1,0 +1,44 @@
+item(FEAT_TRAINS, mu_car, 1000) {} //mucar 				0x3E8
+item(FEAT_TRAINS, mu_cardd, 1001) {} //mucardd 		0x3E9
+item(FEAT_TRAINS, mu_cab, 1002) {} //mucab 				0x3EA
+
+item(FEAT_TRAINS, dmu_kiha40, 1500) {} //kiha40    0x5DC
+item(FEAT_TRAINS, dmu_kiha201, 1501) {} //kiha201  0x5DD
+item(FEAT_TRAINS, dmu_kiha261, 1502) {} //kiha261  0x5DE
+item(FEAT_TRAINS, dmu_kiha281, 1503) {} //kiha281  0x5DF
+item(FEAT_TRAINS, dmu_kiha48, 1504) {} //kiha281 	 0x5E0
+item(FEAT_TRAINS, dmu_kiha54, 1505) {} //kiha281	 0x5E1
+item(FEAT_TRAINS, dmu_kiha58, 1506) {} //kiha281	 0x5E2
+item(FEAT_TRAINS, dmu_kiha141, 1507) {} //kiha281	 0x5E3
+item(FEAT_TRAINS, dmu_kiha150, 1508) {} //kiha281  0x5E4
+item(FEAT_TRAINS, dmu_kiha100, 1509) {} //kiha281  0x5E5
+item(FEAT_TRAINS, dmu_kiha111, 1510) {} //kiha281  0x5E6
+
+
+item(FEAT_TRAINS, emu_107, 2018) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_205, 2019) {} //205emu 0x7E2
+item(FEAT_TRAINS, emu_209, 2021) {} //107emu 0x7E3
+item(FEAT_TRAINS, emu_211, 2000) {} //211emu 0x7D0
+item(FEAT_TRAINS, emu_E217, 2001) {} //E217emu 0x7D1
+item(FEAT_TRAINS, emu_711, 2002) {} //711emu 0x7D2
+item(FEAT_TRAINS, emu_721, 2003) {} //721emu 0x7D3
+item(FEAT_TRAINS, emu_731, 2004) {} //731emu 0x7D4
+item(FEAT_TRAINS, emu_733, 2005) {} //733emu 0x7D5
+item(FEAT_TRAINS, emu_735, 2006) {} //735emu 0x7D6
+item(FEAT_TRAINS, emu_781, 2007) {} //781emu 0x7D7
+item(FEAT_TRAINS, emu_785, 2008) {} //785emu 0x7D8
+item(FEAT_TRAINS, emu_789, 2009) {} //789emu 0x7D9
+item(FEAT_TRAINS, emu_213, 2010) {} //213emu 0x7DA
+item(FEAT_TRAINS, emu_6000, 2011) {} //213emu 0x7DB
+item(FEAT_TRAINS, emu_719, 2012) {} //213emu 0x7DC
+item(FEAT_TRAINS, emu_E231, 2020) {} //107emu 0x7E4
+item(FEAT_TRAINS, emu_E235, 2013) {} //213emu 0x7DD
+item(FEAT_TRAINS, emu_7195000, 2014) {} //213emu 0x7DE
+item(FEAT_TRAINS, emu_21156, 2015) {} //211emu 0x7DF
+item(FEAT_TRAINS, emu_E233, 2016) {} //211emu 0x7E0
+item(FEAT_TRAINS, emu_jrw207, 2017) {} //211emu 0x7E1
+
+
+item(FEAT_TRAINS, DH_E851, 4000) {} //E851
+item(FEAT_TRAINS, DH_EF210, 4001) {} //EF210
+item(FEAT_TRAINS, DH_ED75, 4002) {} //ED75

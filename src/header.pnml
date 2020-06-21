@@ -1,0 +1,67 @@
+grf {
+	grfid:	"BS\13\20";
+	name:	string(STR_GRF_NAME);
+	desc:	string(STR_GRF_DESC);
+	version:	1;
+	min_compatible_version: 1;
+		//basecosts
+		param 0 {
+				param_basecostbuy {
+						type: int;
+						name: string(STR_PARAM_NAME_BASECOSTMODBUY);
+						desc: string(STR_PARAM_DESC_BASECOSTMODBUY);
+						min_value: 0;
+						max_value: 2;
+						def_value: 1;
+						names: {
+												0: string(STR_PARAM_LOW);
+												1: string(STR_PARAM_NORMAL);
+												2: string(STR_PARAM_HIGH);
+						};
+				}
+		}
+		//runningcosts
+		param 1 {
+				param_basecostrun {
+						type: int;
+						name: string(STR_PARAM_NAME_BASECOSTMODRUN);
+						desc: string(STR_PARAM_DESC_BASECOSTMODRUN);
+						min_value: 0;
+						max_value: 4;
+						def_value: 2;
+						names: {
+												0: string(STR_PARAM_VLOW);
+												1: string(STR_PARAM_LOW);
+												2: string(STR_PARAM_NORMAL);
+												3: string(STR_PARAM_HIGH);
+												4: string(STR_PARAM_VHIGH);
+						};
+				}
+		}
+		//pax capacity
+		param 2 {
+				param_basecapacity {
+						type: int;
+						name: string(STR_PARAM_NAME_BASECAPACITY);
+						desc: string(STR_PARAM_DESC_BASECAPACITY);
+						min_value: 0;
+						max_value: 4;
+						def_value: 1;
+						names: {
+												0: string(STR_PARAM_LOW);
+												1: string(STR_PARAM_NORMAL);
+												2: string(STR_PARAM_HIGH);
+												3: string(STR_PARAM_VHIGH);
+												4: string(STR_PARAM_REAL);
+						};
+				}
+		}
+		param 3 {
+			 param_boostcapacity {
+					name: string(STR_PARAM_NAME_BOOSTCAPACITY);
+					desc: string(STR_PARAM_DESC_BOOSTCAPACITY);
+					type: bool;
+					bit:  0;
+			 }
+		}
+}

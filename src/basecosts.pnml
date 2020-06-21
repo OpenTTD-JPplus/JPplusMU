@@ -1,0 +1,5 @@
+basecost {
+		 PR_BUILD_VEHICLE : param_basecostbuy -1;
+		 PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
+		 PR_RUNNING: param_basecostrun +1; //3
+}

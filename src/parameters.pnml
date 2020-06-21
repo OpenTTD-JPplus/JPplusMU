@@ -1,0 +1,76 @@
+/*	CAPCITY BOOST	*/
+if (param_boostcapacity == 1)
+{
+boostlocal = 15;
+}
+else
+{
+boostlocal = 0;
+}
+
+/*	PAX CAPACITIES	*/
+if (param_basecapacity == 0) {
+	param_capacity_local = 60 + boostlocal;
+	param_capacity_rapid = 50;
+	param_capacity_express = 40;
+}
+
+if (param_basecapacity == 1) {
+param_capacity_local = 75 + boostlocal;
+param_capacity_rapid = 65;
+param_capacity_express = 50;
+}
+
+if (param_basecapacity == 2) {
+param_capacity_local = 90 + boostlocal;
+param_capacity_rapid = 75;
+param_capacity_express = 60;
+}
+
+if (param_basecapacity == 3) {
+param_capacity_local = 105 + boostlocal;
+param_capacity_rapid = 90;
+param_capacity_express = 70;
+}
+if (param_basecapacity == 4) {
+param_capacity_local = 1;
+param_capacity_rapid = 1;
+param_capacity_express = 1;
+}
+
+/*	LOADING SPEEDS	*/
+if (param_basecapacity == 0) {
+	param_loading_1D = 5; // 1 door //
+	param_loading_2D = 10; // 2 doors //
+	param_loading_3D = 20; // 3 doors //
+	param_loading_4D = 40; // 4 doors //
+	param_loading_5D = 45; // 5 doors //
+	param_loading_6D = 55; // 6 doors //
+}
+
+if (param_basecapacity == 1) {
+	param_loading_1D = 10; // 1 door //
+	param_loading_2D = 20; // 2 doors //
+	param_loading_3D = 30; // 3 doors //
+	param_loading_4D = 50; // 4 doors //
+	param_loading_5D = 55; // 5 doors //
+	param_loading_6D = 65; // 6 doors //
+}
+
+if (param_basecapacity == 2) {
+	param_loading_1D = 20; // 1 door //
+	param_loading_2D = 30; // 2 doors //
+	param_loading_3D = 40; // 3 doors //
+	param_loading_4D = 60; // 4 doors //
+	param_loading_5D = 65; // 5 doors //
+	param_loading_6D = 75; // 6 doors //
+}
+
+if (param_basecapacity >= 3) {
+	param_loading_1D = 30; // 1 door //
+	param_loading_2D = 40; // 2 doors //
+	param_loading_3D = 50; // 3 doors //
+	param_loading_4D = 80; // 4 doors //
+	param_loading_5D = 85; // 5 doors //
+	param_loading_6D = 95; // 6 doors //
+}
