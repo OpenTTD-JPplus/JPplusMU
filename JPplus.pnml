@@ -39,6 +39,7 @@
 #include "src/JRE/EMU/E233_series.pnml"
 #include "src/JRE/EMU/E231_series.pnml"
 #include "src/JRE/EMU/E217_series.pnml"
+#include "src/JRE/EMU/209_series.pnml"
 
 
 //JR-Central
