@@ -179,6 +179,7 @@ JRH731_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs
 JRH201_UNIQUE  :You can only attach MU cars or KiHa 201 Series DMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with the 731 Series EMU.
 JRH711_UNIQUE  :You can only attach MU cars or the 711 Series EMU to this consist!
 MU_UNIQUE: You can only attach MU cars or other EMUs of the same design.
+SAME_UNIQUE: Yor can only attach other EMUs of the same design.
 
 # Consist Errors
 MU_NEEDMID        :You require more {GREEN}JP+ MU Cars{WHITE} before you can attach this.
@@ -233,10 +234,10 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JNR_kiha58_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East{WHITE} (58) {ORANGE}Central{WHITE} (58) {BLUE}West{WHITE} (58) {DKGREEN}Hokkaido{WHITE} (56) {RED}Kyushu{WHITE} (58) {LTBLUE}Shikoku{WHITE} (57/58){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
 
 # 107 Series
-    JRE_107_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+    JRE_107_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 209 Series
-    JRE_209_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+    JRE_209_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 211 Series
     JNR_211_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central{}{BLACK}Liveries: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached to add bilevel cars. Formation:{}{}211-MU-MU{GREEN}-SC-SC-{WHITE}MU-MU-MU-MU-CC{}211-MU-CC{GREEN}-SC-SC-{WHITE}211-MU-MU-MU-CC{}

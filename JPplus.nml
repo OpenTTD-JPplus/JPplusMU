@@ -2752,6 +2752,223 @@ item(FEAT_TRAINS, emu_209) {
 
 }
 # 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/107_series.pnml" 1
+/*---GFX: Spritesets---*/
+
+//Purchase Sprites
+spriteset (spriteset_107_purchase,	                                                     "gfx/JRE/emu107/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_107_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/emu107/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//107 Standard "Sandwich Train" Livery
+spriteset (spriteset_107_front_std,	 	"gfx/JRE/emu107/emu107.png")     	{ tmpl_std(0, 0) }
+spriteset (spriteset_107_back_std,	   	"gfx/JRE/emu107/emu107.png")     	{ tmpl_std_rev(0, 25) }
+alternative_sprites(spriteset_107_front_std, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_32bpp.png") {tmpl_std(0, 0)}
+alternative_sprites(spriteset_107_back_std, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_32bpp.png") {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_107_front_std_rev,	 	"gfx/JRE/emu107/emu107_rev.png")     	{ tmpl_std(0, 0) }
+spriteset (spriteset_107_back_std_rev,	   	"gfx/JRE/emu107/emu107_rev.png")     	{ tmpl_std_rev(0, 25) }
+alternative_sprites(spriteset_107_front_std_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_rev_32bpp.png") {tmpl_std(0, 0)}
+alternative_sprites(spriteset_107_back_std_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_rev_32bpp.png") {tmpl_std_rev(0, 25)}
+//107 Joshin Electric Railway
+spriteset (spriteset_107_front_joshin,    	"gfx/JRE/emu107/emu107.png")          	{ tmpl_std(0, 50) }
+spriteset (spriteset_107_back_joshin,   	  "gfx/JRE/emu107/emu107.png")          	{ tmpl_std_rev(0, 75) }
+alternative_sprites(spriteset_107_front_joshin, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_32bpp.png") {tmpl_std(0, 50)}
+alternative_sprites(spriteset_107_back_joshin, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_32bpp.png") {tmpl_std_rev(0, 75)}
+
+spriteset (spriteset_107_front_joshin_rev,    	"gfx/JRE/emu107/emu107_rev.png")          	{ tmpl_std(0, 50) }
+spriteset (spriteset_107_back_joshin_rev,   	  "gfx/JRE/emu107/emu107_rev.png")          	{ tmpl_std_rev(0, 75) }
+alternative_sprites(spriteset_107_front_joshin_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_rev_32bpp.png") {tmpl_std(0, 50)}
+alternative_sprites(spriteset_107_back_joshin_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_rev_32bpp.png") {tmpl_std_rev(0, 75)}
+//107 Nikko Line Red
+spriteset (spriteset_107_front_nikkored,	 	"gfx/JRE/emu107/emu107.png")   	{ tmpl_std(0, 100) }
+spriteset (spriteset_107_back_nikkored,	 	"gfx/JRE/emu107/emu107.png")   	{ tmpl_std_rev(0, 125) }
+alternative_sprites(spriteset_107_front_nikkored, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_32bpp.png") {tmpl_std(0, 100)}
+alternative_sprites(spriteset_107_back_nikkored, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_32bpp.png") {tmpl_std_rev(0, 125)}
+
+spriteset (spriteset_107_front_nikkored_rev,	 	"gfx/JRE/emu107/emu107_rev.png")   	{ tmpl_std(0, 100) }
+spriteset (spriteset_107_back_nikkored_rev,	 	"gfx/JRE/emu107/emu107_rev.png")   	{ tmpl_std_rev(0, 125) }
+alternative_sprites(spriteset_107_front_nikkored_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_rev_32bpp.png") {tmpl_std(0, 100)}
+alternative_sprites(spriteset_107_back_nikkored_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_rev_32bpp.png") {tmpl_std_rev(0, 125)}
+//107 Nikko Line "N"
+spriteset (spriteset_107_front_nikko,	 	"gfx/JRE/emu107/emu107.png")   	{ tmpl_std(0, 150) }
+spriteset (spriteset_107_back_nikko,	 	"gfx/JRE/emu107/emu107.png")   	{ tmpl_std_rev(0, 175) }
+alternative_sprites(spriteset_107_front_nikko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_32bpp.png") {tmpl_std(0, 150)}
+alternative_sprites(spriteset_107_back_nikko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_32bpp.png") {tmpl_std_rev(0, 175)}
+
+spriteset (spriteset_107_front_nikko_rev,	 	"gfx/JRE/emu107/emu107_rev.png")   	{ tmpl_std(0, 150) }
+spriteset (spriteset_107_back_nikko_rev,	 	"gfx/JRE/emu107/emu107_rev.png")   	{ tmpl_std_rev(0, 175) }
+alternative_sprites(spriteset_107_front_nikko_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_rev_32bpp.png") {tmpl_std(0, 150)}
+alternative_sprites(spriteset_107_back_nikko_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emu107/emu107_rev_32bpp.png") {tmpl_std_rev(0, 175)}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_107_gfx_rev_cab_livery_back, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  3: spriteset_107_back_joshin_rev;
+  2: spriteset_107_back_nikkored_rev;
+  1: spriteset_107_back_nikko_rev;
+  0: spriteset_107_back_std_rev;
+}
+switch(FEAT_TRAINS,SELF, sw_107_gfx_rev_cab_livery_front, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  3: spriteset_107_front_joshin_rev;
+  2: spriteset_107_front_nikkored_rev;
+  1: spriteset_107_front_nikko_rev;
+  0: spriteset_107_front_std_rev;
+}
+switch(FEAT_TRAINS,SELF, sw_107_gfx_rev_cab_livery_front_flipped, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  3: spriteset_107_back_joshin_rev;
+  2: spriteset_107_back_nikkored_rev;
+  1: spriteset_107_back_nikko_rev;
+  0: spriteset_107_back_std_rev;
+}
+
+//ID Testing
+switch(FEAT_TRAINS, SELF, sw_107_gfx_rev_poscheck, position_in_consist%2){
+  0: sw_107_gfx_rev_cab_livery_back;
+  1: sw_107_gfx_rev_cab_livery_front;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//107 Standard "Sandwich Train" Livery
+switch(FEAT_TRAINS, PARENT, sw_107_gfx_front_revcheck_std, vehicle_is_reversed){
+   0: spriteset_107_front_std;
+   default: sw_107_gfx_rev_poscheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_107_gfx_back_revcheck_std, vehicle_is_reversed){
+ 0: spriteset_107_back_std;
+ default: sw_107_gfx_rev_poscheck;
+}
+switch(FEAT_TRAINS, SELF, sw_107_gfx_frontback_std, vehicle_is_flipped) {
+  1: sw_107_gfx_back_revcheck_std;
+ default: sw_107_gfx_front_revcheck_std;
+}
+
+//107 Joshin Electric Railway
+switch(FEAT_TRAINS, PARENT, sw_107_gfx_front_revcheck_joshin, vehicle_is_reversed){
+   0: spriteset_107_front_joshin;
+   default: sw_107_gfx_rev_poscheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_107_gfx_back_revcheck_joshin, vehicle_is_reversed){
+ 0: spriteset_107_back_joshin;
+ default: sw_107_gfx_rev_poscheck;
+}
+switch(FEAT_TRAINS, SELF, sw_107_gfx_frontback_joshin, vehicle_is_flipped) {
+  1: sw_107_gfx_back_revcheck_joshin;
+ default: sw_107_gfx_front_revcheck_joshin;
+}
+
+//107 Nikko Line Red
+switch(FEAT_TRAINS, PARENT, sw_107_gfx_front_revcheck_nikkored, vehicle_is_reversed){
+   0: spriteset_107_front_nikkored;
+   default: sw_107_gfx_rev_poscheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_107_gfx_back_revcheck_nikkored, vehicle_is_reversed){
+ 0: spriteset_107_back_nikkored;
+ default: sw_107_gfx_rev_poscheck;
+}
+switch(FEAT_TRAINS, SELF, sw_107_gfx_frontback_nikkored, vehicle_is_flipped) {
+  1: sw_107_gfx_back_revcheck_nikkored;
+ default: sw_107_gfx_front_revcheck_nikkored;
+}
+
+//107 Nikko Line "N"
+switch(FEAT_TRAINS, PARENT, sw_107_gfx_front_revcheck_nikko, vehicle_is_reversed){
+   0: spriteset_107_front_nikko;
+   default: sw_107_gfx_rev_poscheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_107_gfx_back_revcheck_nikko, vehicle_is_reversed){
+ 0: spriteset_107_back_nikko;
+ default: sw_107_gfx_rev_poscheck;
+}
+switch(FEAT_TRAINS, SELF, sw_107_gfx_frontback_nikko, vehicle_is_flipped) {
+  1: sw_107_gfx_back_revcheck_nikko;
+ default: sw_107_gfx_front_revcheck_nikko;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_107_gfx_main,  cargo_subtype) {
+  3: sw_107_gfx_frontback_joshin;
+  2: sw_107_gfx_frontback_nikkored;
+  1: sw_107_gfx_frontback_nikko;
+  0: sw_107_gfx_frontback_std;
+}
+
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_107_subtypetext_main, cargo_subtype) {
+  3: return string(JOSHIN_LV);
+  2: return string(NIKKORED_LV);
+  1: return string(NIKKO_LV);
+	0: string(SANDWICH_LV);
+}
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_107_attach_vehid, [vehicle_type_id == emu_107]) {
+  0: return string(SAME_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, emu_107) {
+    property {
+        name:                         string(JRE_107);
+        introduction_date:            date(1988, 05, 01);
+        model_life:                   3;
+        vehicle_life:                 37;
+        reliability_decay:            13;
+
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  17;
+        running_cost_factor:          51;
+
+        speed:                        100 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        240 kW;
+        weight:                       37 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                sw_107_gfx_main;
+		    purchase:               spriteset_107_purchase;
+		    additional_text:	      return string(JRE_107_DESC);
+        cargo_subtype_text:     sw_107_subtypetext_main;
+        can_attach_wagon:			  sw_107_attach_vehid;
+        //start_stop:                   ;
+    }
+}
+# 1 "JPplus.pnml" 4
 
 
 //JR-Central
