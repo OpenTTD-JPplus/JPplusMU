@@ -131,10 +131,13 @@ JRE_S_LV              : JE East Suburban
 KT_500_LV             : -500 Keihin-Touhoku Livery
 SOBU_500_LV           : -500 Sobu Livery
 
-JRWblue_LV            : JR West Blue
+JRWblue_LV            : JR West Blue (Dual Pantograph)
 JRWbluepanto_LV       : JR West Blue (Single Pantograph)
-JRWnew_LV             : JR West New Scheme
-JRWnewremodel_LV      : JR West Remodel Type New Scheme
+JRWnew_LV             : JR West New Scheme (Cab Pantograph)
+JRWnewpanto_LV        : JR West New Scheme (Mid Pantograph)
+JRWnewremodel_LV      : JR West Remodel Type New Scheme (Cab Pantograph)
+JRWnewremodelpanto_LV : JR West Remodel Type New Scheme (Mid Pantograph)
+
 
 SANDWICH_LV           : Standard "Sandwich" Livery
 NIKKO_LV              : Nikko "N" Livery

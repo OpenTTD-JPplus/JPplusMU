@@ -47,6 +47,8 @@
 
 
 //JR-West
+#include "src/JRW/EMU/207_series.pnml"
+
 
 //JR-Shikoku
 
