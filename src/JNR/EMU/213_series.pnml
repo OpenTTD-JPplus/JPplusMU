@@ -1,4 +1,5 @@
 
+
 /*---GFX: Year Dependent Graphics---*/
 
 //213 Shonan
@@ -29,7 +30,7 @@ switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_flipcheck_jrw, vehicle_is_flipped
  0: sw_213_gfx_front_liverycheck_jrw;
  default: spriteset_213_back_jrw;
 }
-switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_revcheck_jrw, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_frontback_revcheck_jrw, vehicle_is_reversed){
  0: sw_213_gfx_frontback_flipcheck_jrw;
  default: sw_211group_gfx_rev_idcheck;
 }
@@ -39,7 +40,7 @@ switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_flipcheck_shonan, vehicle_is_flip
  0: sw_213_gfx_year_front_shonan;
  default: sw_213_gfx_year_back_shonan_pantograph;
 }
-switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
  0: sw_213_gfx_frontback_flipcheck_shonan;
  default: sw_211group_gfx_rev_idcheck;
 }
@@ -50,13 +51,13 @@ switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_revcheck_shonan, vehicle_is_rever
 /*---GFX: Middle Car Switches---*/
 
 //213 JRwest
-switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
  0: spriteset_213_mid_jrw;
  default: sw_211group_gfx_rev_idcheck;
 }
 
 //213 Shonan
-switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
  0: spriteset_213_mid_jrw;
  default: sw_211group_gfx_rev_idcheck;
 }

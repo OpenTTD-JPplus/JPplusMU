@@ -356,15 +356,34 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_back_flipcheck, vehicle_is_fli
 default: sw_211group_gfx_rev_213_rev_back_livery;
 }
 switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-default:spriteset_213_rev_mid_jrw;
+6:spriteset_213_rev_mid_jrw;
+5:spriteset_213_rev_mid_jrw;
+4:spriteset_213_rev_mid_jrw;
+3:spriteset_213_rev_mid_jrw;
+2:spriteset_213_rev_mid_jrw;
+1:spriteset_213_rev_mid_jrw;
+0:spriteset_213_rev_mid_jrw;
 }
 switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-default:spriteset_213_revflip_mid_jrw;
+6:spriteset_213_revflip_mid_jrw;
+5:spriteset_213_revflip_mid_jrw;
+4:spriteset_213_revflip_mid_jrw;
+3:spriteset_213_revflip_mid_jrw;
+2:spriteset_213_revflip_mid_jrw;
+1:spriteset_213_revflip_mid_jrw;
+0:spriteset_213_revflip_mid_jrw;
 }
+
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_mid_flipcheck, vehicle_is_flipped) {
-  1: sw_211group_gfx_rev_213_revflip_mid_livery;
+ 1: sw_211group_gfx_rev_213_revflip_mid_livery;
  default: sw_211group_gfx_rev_213_rev_mid_livery;
 }
+
+
+
+
+
+
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_rev_front_year, current_year){
  0..2007: spriteset_213_rev_front_old_shonan;
  default: spriteset_213_rev_front_new_shonan;
@@ -395,6 +414,7 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_front_flipcheck, vehicle_is_fl
   1: sw_211group_gfx_rev_213_rev_front_livery;
  default: sw_211group_gfx_rev_213_revflip_front_livery;
 }
+
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback, [
 STORE_TEMP((position_in_consist_from_end-position_in_consist)-1, 0x10F),
 STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],0),
@@ -499,15 +519,15 @@ LOAD_TEMP(1) != 2024
 /*---Main ID Sorting and Detection---*/
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_mucar_idcheck, [
   STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),                //look at opposite vehicle
-  STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41]+1,0),                                     //go to the head car of the opposite vehicle
-  STORE_TEMP((position_in_consist_from_end-position_in_consist)-LOAD_TEMP(0), 0x10F), //look at the head car of the opposite vehicle
+  STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41]+1,1),                                     //go to the head car of the opposite vehicle
+  STORE_TEMP((position_in_consist_from_end-position_in_consist)-LOAD_TEMP(1), 0x10F), //look at the head car of the opposite vehicle
   var[0x61, 0, 0x0000FFFF, 0xC6]                                                      //determine the ID of the opposite vehicle head car
 ]){
   //2000: ; //211
-  2010: sw_211group_gfx_rev_213_mid_flipcheck; //213
-  2015: sw_211group_gfx_rev_21156_mid_flipcheck; //211-50006000
-  2023: sw_211group_gfx_rev_311_mid_flipcheck; //311
-  2024: sw_211group_gfx_rev_313_pantograph_check; //313
+  2010: sw_211group_gfx_rev_213_mid_flipcheck;
+  2015: sw_211group_gfx_rev_21156_mid_flipcheck;
+  2023: sw_211group_gfx_rev_311_mid_flipcheck;
+  2024: sw_211group_gfx_rev_313_pantograph_check;
 }
 
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){

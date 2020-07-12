@@ -1,4 +1,5 @@
 
+
 /*---GFX: Year Dependent Graphics---*/
 
 //311 Tokai
@@ -17,7 +18,7 @@ switch(FEAT_TRAINS, SELF, sw_311_gfx_frontback_flipcheck, vehicle_is_flipped){
  0: spriteset_311_front;
  default: sw_311_gfx_year_back_pantograph;
 }
-switch(FEAT_TRAINS, SELF, sw_311_gfx_frontback_revcheck, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_311_gfx_frontback_revcheck, vehicle_is_reversed){
  0: sw_311_gfx_frontback_flipcheck;
  default: sw_211group_gfx_rev_idcheck;
 }
@@ -28,7 +29,7 @@ switch(FEAT_TRAINS, SELF, sw_311_gfx_frontback_revcheck, vehicle_is_reversed){
 /*---GFX: Middle Car Switches---*/
 
 //311 Tokai
-switch(FEAT_TRAINS, SELF, sw_311_gfx_mucar_revcheck, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_311_gfx_mucar_revcheck, vehicle_is_reversed){
  0: spriteset_311_mid;
  default: sw_211group_gfx_rev_idcheck;
 }

@@ -1,4 +1,7 @@
+
+
 /*---GFX: Year Dependent Graphics---*/
+
 //211 Shonan
 switch(FEAT_TRAINS, SELF, sw_211_gfx_year_back_shonan_pantograph, current_year){
  0..2007: spriteset_211_back_darm_shonan;
@@ -104,7 +107,7 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_chukyo, vehicle_is_flip
  0: spriteset_211_front_chukyo;
  default: spriteset_211_back_chukyo;
 }
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_chukyo, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_chukyo, vehicle_is_reversed){
  0: sw_211_gfx_frontback_flipcheck_chukyo;
  default: sw_211group_gfx_rev_idcheck;
 }
@@ -131,7 +134,7 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_typecheck_shonan, cargo_subtype
 3..4:       sw_211_gfx_frontback_lengthcheck_shonan;
 default: sw_211_gfx_frontback_flipcheck_panto_shonan;
 }
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
  0: sw_211_gfx_frontback_typecheck_shonan;
  default: sw_211group_gfx_rev_idcheck;
 }
@@ -149,7 +152,7 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_typecheck_boso, cargo_subtype) 
 9:sw_211_gfx_frontback_flipcheck_spanto_boso;
 10:sw_211_gfx_frontback_flipcheck_dpanto_boso;
 }
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_boso, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_boso, vehicle_is_reversed){
  0: sw_211_gfx_frontback_typecheck_boso;
  default: sw_211group_gfx_rev_idcheck;
 }
@@ -167,7 +170,7 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_nagano, [STORE_TEMP(p
 0..3:   sw_211_gfx_frontback_flipcheck_panto_nagano;
 4..255: sw_211_gfx_frontback_flipcheck_nopanto_nagano;
 }
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_nagano, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_nagano, vehicle_is_reversed){
  0: sw_211_gfx_frontback_lengthcheck_nagano;
  default: sw_211group_gfx_rev_idcheck;
 }
@@ -179,25 +182,25 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_nagano, vehicle_is_rever
 /*---GFX: Middle Car Switches---*/
 
 //211 Chukyo
-switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar_revcheck_chuko, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_mucar_revcheck_chuko, vehicle_is_reversed){
  0: spriteset_211_mid_chukyo;
  default: sw_211group_gfx_rev_idcheck;
 }
 
 //211 Shonan
-switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
  0: sw_211_gfx_pantograph_pos_shonan_check;
  default: sw_211group_gfx_rev_idcheck;
 }
 
 //211 Boso
-switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar_revcheck_boso, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_mucar_revcheck_boso, vehicle_is_reversed){
  0: spriteset_211_mid_boso;
  default: sw_211group_gfx_rev_idcheck;
 }
 
 //211 Nagano
-switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar_revcheck_nagano, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_mucar_revcheck_nagano, vehicle_is_reversed){
  0: sw_211_gfx_pantograph_pos_nagano_check;
  default: sw_211group_gfx_rev_idcheck;
 }
