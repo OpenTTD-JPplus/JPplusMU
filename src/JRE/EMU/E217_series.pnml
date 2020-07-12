@@ -199,27 +199,43 @@ switch(FEAT_TRAINS, PARENT, sw_E217_gfx_mucar_revcheck_mid_tk, vehicle_is_revers
 /*---GFX: Livery Refitting Switches---*/
 
 //Main Switches
-switch(FEAT_TRAINS, SELF, sw_E217_gfx_mucar,  cargo_subtype) {
-  3: sw_E217_gfx_mucar_revcheck_mid_tk;
-  2: sw_E217_gfx_mucar_revcheck_mid_yk;
+  switch(FEAT_TRAINS, PARENT, sw_E217_gfx_mucar2,  cargo_subtype) {
   1: sw_E217_gfx_mucar_revcheck_mid_tk;
   0: sw_E217_gfx_mucar_revcheck_mid_yk;
 }
-switch(FEAT_TRAINS, SELF, sw_E217_gfx_main,  cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_E217_gfx_mucar,  cargo_subtype) {
+  3: sw_E217_gfx_mucar_revcheck_dd_tk;
+  2: sw_E217_gfx_mucar_revcheck_dd_yk;
+  1: sw_E217_gfx_mucar2;
+  0: sw_E217_gfx_mucar2;
+}
+switch(FEAT_TRAINS, PARENT, sw_E217_gfx_main,  cargo_subtype) {
   1: sw_E217_gfx_frontback_tk;
   0: sw_E217_gfx_frontback_yk;
 }
 
 //Menu Switches
-switch(FEAT_TRAINS, SELF, sw_E217_subtypetext_mucar, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_E217_subtypetext_mucar2, cargo_subtype) {
   3: string(SHONAN_LV_DD);
   2: string(YOKOSUKA_LV_DD);
+  1: string(BLANK);
+  0: string(BLANK);
+}
+switch(FEAT_TRAINS, SELF, sw_E217_subtypetext_mucar, cargo_subtype) {
+  1: string(SHONAN_LV);
+  0: string(YOKOSUKA_LV);
+  sw_E217_subtypetext_mucar2;
+}
+switch(FEAT_TRAINS, SELF, sw_E217_subtypetext_main2, cargo_subtype) {
+  //3: string(BLANK);
+  //2: string(BLANK);
   1: string(SHONAN_LV);
   0: string(YOKOSUKA_LV);
 }
 switch(FEAT_TRAINS, SELF, sw_E217_subtypetext_main, cargo_subtype) {
   1: string(SHONAN_LV);
   0: string(YOKOSUKA_LV);
+  sw_E217_subtypetext_main2;
 }
 /*---END OF SECTION---*/
 

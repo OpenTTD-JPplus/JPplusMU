@@ -1,0 +1,102 @@
+
+/*---GFX: Year Dependent Graphics---*/
+
+//211-56 Tokai
+switch(FEAT_TRAINS, SELF, sw_21156_gfx_year_back_pantograph, current_year){
+ 0..2005: spriteset_21156_back_darm;
+ default: spriteset_21156_back_sarm;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+
+//211-56 Tokai
+switch(FEAT_TRAINS, SELF, sw_21156_gfx_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_21156_front;
+ default: sw_21156_gfx_year_back_pantograph;
+}
+switch(FEAT_TRAINS, SELF, sw_21156_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_21156_gfx_frontback_flipcheck;
+ default: sw_211group_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+//211-56 Tokai
+switch(FEAT_TRAINS, SELF, sw_21156_gfx_mucar_revcheck, vehicle_is_reversed){
+ 0: spriteset_21156_mid;
+ default: sw_211group_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_21156_attach_vehid, [vehicle_type_id == emu_211 || vehicle_type_id == emu_21156 ||vehicle_type_id == emu_213 || vehicle_type_id == emu_313 || vehicle_type_id == emu_311 || vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, emu_21156) {
+    property {
+        name:                         string(JNR_21156);
+        introduction_date:            date(1988, 02, 11);
+        model_life:                   10;
+        vehicle_life:                 40;
+        reliability_decay:            14;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  17;
+        running_cost_factor:          51;
+
+        speed:                        120 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        480 kW;
+        weight:                       35 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_21156_gfx_frontback_revcheck;
+		    purchase:                 spriteset_21156_purchase;
+		    additional_text:	      return string(JNR_21156_DESC);
+        //cargo_subtype_text:           sw_21156_subtypetext_main;
+        can_attach_wagon:			  sw_21156_attach_vehid;
+        //start_stop:                   ;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_21156_gfx_mucar_revcheck;
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        //cargo_subtype_text:           sw_21156_subtypetext_mucar;
+        power: 120;
+        weight: 25;
+      }
+
+}

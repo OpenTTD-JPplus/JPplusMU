@@ -1,0 +1,334 @@
+/*---GFX: Year Dependent Graphics---*/
+//211 Shonan
+switch(FEAT_TRAINS, SELF, sw_211_gfx_year_back_shonan_pantograph, current_year){
+ 0..2007: spriteset_211_back_darm_shonan;
+ default: spriteset_211_back_sarm_shonan;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_year_back_red_shonan_pantograph, current_year){
+ 0..2007: spriteset_211_back_darm_shonan_rev_red;
+ default: spriteset_211_back_sarm_shonan_rev_red;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_year_mid_shonan_pantograph, current_year){
+ 0..2007: spriteset_211_mid_darm_shonan;
+ default: spriteset_211_mid_sarm_shonan;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+//211 Nagano
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_nagano_6car, position_in_vehid_chain%4){
+  1: spriteset_211_mid_sarm_nagano;
+  3: spriteset_211_mid_sarm_nagano;
+  default: spriteset_211_mid_nagano;
+}
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_nagano_check, num_vehs_in_vehid_chain){
+  0..3: spriteset_211_mid_nagano;
+  default: sw_211_gfx_pantograph_pos_nagano_6car;
+}
+
+//211 Shonan
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_tk, position_in_vehid_chain%8){
+1:spriteset_211_mid_darm_shonan;
+6:spriteset_211_mid_darm_shonan;
+default: spriteset_211_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_tk_ddsd, position_in_vehid_chain){
+1:spriteset_211_mid_darm_shonan;
+2:spriteset_211_mid_ddgrnew_shonan;
+3:spriteset_211_mid_sdgrcar_shonan;
+6:spriteset_211_mid_darm_shonan;
+default: spriteset_211_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_tk_dddd, position_in_vehid_chain){
+1:spriteset_211_mid_darm_shonan;
+2:spriteset_211_mid_ddgrnew_shonan;
+3:spriteset_211_mid_ddgrnew_shonan;
+6:spriteset_211_mid_darm_shonan;
+default: spriteset_211_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_ty_ddsd, position_in_vehid_chain){
+1:sw_211_gfx_year_back_red_shonan_pantograph;
+2:spriteset_211_mid_ddgrnew_shonan;
+3:spriteset_211_mid_sdgrcar_shonan;
+4:spriteset_211_front_shonan;
+default: spriteset_211_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_ty_dddd, position_in_vehid_chain){
+1:sw_211_gfx_year_back_red_shonan_pantograph;
+2:spriteset_211_mid_ddgrnew_shonan;
+3:spriteset_211_mid_ddgrnew_shonan;
+4:spriteset_211_front_shonan;
+default: spriteset_211_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_ty_ddddold, position_in_vehid_chain){
+1:sw_211_gfx_year_back_red_shonan_pantograph;
+2:spriteset_211_mid_ddgrnew_shonan;
+3:spriteset_211_mid_ddgrold_shonan;
+4:spriteset_211_front_shonan;
+default: spriteset_211_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_ty_ddolddd, position_in_vehid_chain){
+1:sw_211_gfx_year_back_red_shonan_pantograph;
+2:spriteset_211_mid_ddgrold_shonan;
+3:spriteset_211_mid_ddgrnew_shonan;
+4:spriteset_211_front_shonan;
+default: spriteset_211_mid_shonan;
+}
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_pantograph_pos_shonan_typecheck, cargo_subtype) {
+1:sw_211_gfx_pantograph_pos_shonan_tk;
+2:sw_211_gfx_pantograph_pos_shonan_tk;
+3:sw_211_gfx_pantograph_pos_shonan_tk_dddd;
+4:sw_211_gfx_pantograph_pos_shonan_tk_ddsd;
+5:sw_211_gfx_pantograph_pos_shonan_ty_dddd;
+6:sw_211_gfx_pantograph_pos_shonan_ty_ddddold;
+7:sw_211_gfx_pantograph_pos_shonan_ty_ddolddd;
+8:sw_211_gfx_pantograph_pos_shonan_ty_ddsd;
+}
+switch(FEAT_TRAINS,SELF, sw_211_gfx_pantograph_pos_shonan_check, num_vehs_in_vehid_chain){
+  0..3: spriteset_211_mid_shonan;
+  4..7: sw_211_gfx_pantograph_pos_shonan_tk;
+  default: sw_211_gfx_pantograph_pos_shonan_typecheck;
+}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+
+//211 Chukyo
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_chukyo, vehicle_is_flipped){
+ 0: spriteset_211_front_chukyo;
+ default: spriteset_211_back_chukyo;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_chukyo, vehicle_is_reversed){
+ 0: sw_211_gfx_frontback_flipcheck_chukyo;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+//211 Shonan
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_nopanto_shonan, vehicle_is_flipped){
+ 0: spriteset_211_front_shonan;
+ default: spriteset_211_back_shonan;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_shonan, vehicle_is_flipped){
+ 0: spriteset_211_front_shonan;
+ default: sw_211_gfx_year_back_shonan_pantograph;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_dupanto_shonan, vehicle_is_flipped){
+ 0: spriteset_211_front_shonan;
+ default: spriteset_211_back_dual_shonan;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_shonan, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+0..3:    sw_211_gfx_frontback_flipcheck_panto_shonan;
+default: sw_211_gfx_frontback_flipcheck_nopanto_shonan;
+}
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_typecheck_shonan, cargo_subtype) {
+2:       sw_211_gfx_frontback_flipcheck_dupanto_shonan;
+3..4:       sw_211_gfx_frontback_lengthcheck_shonan;
+default: sw_211_gfx_frontback_flipcheck_panto_shonan;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
+ 0: sw_211_gfx_frontback_typecheck_shonan;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+//211 Boso
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_spanto_boso, vehicle_is_flipped){
+ 0: spriteset_211_front_chukyo;
+ default: spriteset_211_back_chukyo;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_dpanto_boso, vehicle_is_flipped){
+ 0: spriteset_211_front_chukyo;
+ default: spriteset_211_back_chukyo;
+}
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_typecheck_boso, cargo_subtype) {
+9:sw_211_gfx_frontback_flipcheck_spanto_boso;
+10:sw_211_gfx_frontback_flipcheck_dpanto_boso;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_boso, vehicle_is_reversed){
+ 0: sw_211_gfx_frontback_typecheck_boso;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+//211 Nagano
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_nopanto_nagano, vehicle_is_flipped){
+ 0: spriteset_211_front_nagano;
+ default: spriteset_211_back_nagano;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_nagano, vehicle_is_flipped){
+ 0: spriteset_211_front_nagano;
+ default: spriteset_211_back_sarm_nagano;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_nagano, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+0..3:   sw_211_gfx_frontback_flipcheck_panto_nagano;
+4..255: sw_211_gfx_frontback_flipcheck_nopanto_nagano;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_revcheck_nagano, vehicle_is_reversed){
+ 0: sw_211_gfx_frontback_lengthcheck_nagano;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+//211 Chukyo
+switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar_revcheck_chuko, vehicle_is_reversed){
+ 0: spriteset_211_mid_chukyo;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+//211 Shonan
+switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
+ 0: sw_211_gfx_pantograph_pos_shonan_check;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+//211 Boso
+switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar_revcheck_boso, vehicle_is_reversed){
+ 0: spriteset_211_mid_boso;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+//211 Nagano
+switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar_revcheck_nagano, vehicle_is_reversed){
+ 0: sw_211_gfx_pantograph_pos_nagano_check;
+ default: sw_211group_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+
+//Main Switches
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_mucar,  cargo_subtype) {
+11: sw_211_gfx_mucar_revcheck_nagano;
+10: sw_211_gfx_mucar_revcheck_boso;
+9:  sw_211_gfx_mucar_revcheck_boso;
+8:  sw_211_gfx_mucar_revcheck_shonan;
+7:  sw_211_gfx_mucar_revcheck_shonan;
+6:  sw_211_gfx_mucar_revcheck_shonan;
+5:  sw_211_gfx_mucar_revcheck_shonan;
+4:  sw_211_gfx_mucar_revcheck_shonan;
+3:  sw_211_gfx_mucar_revcheck_shonan;
+2:  sw_211_gfx_mucar_revcheck_shonan;
+1:  sw_211_gfx_mucar_revcheck_shonan;
+0:  sw_211_gfx_mucar_revcheck_chuko;
+}
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_main,  cargo_subtype) {
+11: sw_211_gfx_frontback_revcheck_nagano;
+10: sw_211_gfx_frontback_revcheck_boso;
+9:  sw_211_gfx_frontback_revcheck_boso;
+8:  sw_211_gfx_frontback_revcheck_shonan;
+7:  sw_211_gfx_frontback_revcheck_shonan;
+6:  sw_211_gfx_frontback_revcheck_shonan;
+5:  sw_211_gfx_frontback_revcheck_shonan;
+4:  sw_211_gfx_frontback_revcheck_shonan;
+3:  sw_211_gfx_frontback_revcheck_shonan;
+2:  sw_211_gfx_frontback_revcheck_shonan;
+1:  sw_211_gfx_frontback_revcheck_shonan;
+0:  sw_211_gfx_frontback_revcheck_chukyo;
+}
+
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_211_subtypetext_mucar, cargo_subtype) {
+11: string(NAGANO_LV);
+10: string(CHIBA_LV_TWOP);
+9: string(CHIBA_LV);
+8: string(SHONAN_TY_DDSD_LV);
+7: string(SHONAN_TY_DDoldDD_LV);
+6: string(SHONAN_TY_DDDDold_LV);
+5: string(SHONAN_TY_DDDD_LV);
+4: string(SHONAN_TK_DDSD_LV);
+3: string(SHONAN_TK_DDDD_LV);
+2: string(SHONAN_LV_TWOP);
+1: string(SHONAN_LV);
+0: string(CHUKYO_LV);
+}
+switch(FEAT_TRAINS, SELF, sw_211_subtypetext_main, cargo_subtype) {
+11: string(NAGANO_LV);
+10: string(CHIBA_LV_TWOP);
+9: string(CHIBA_LV);
+8: string(SHONAN_TY_DDSD_LV);
+7: string(SHONAN_TY_DDoldDD_LV);
+6: string(SHONAN_TY_DDDDold_LV);
+5: string(SHONAN_TY_DDDD_LV);
+4: string(SHONAN_TK_DDSD_LV);
+3: string(SHONAN_TK_DDDD_LV);
+2: string(SHONAN_LV_TWOP);
+1: string(SHONAN_LV);
+0: string(CHUKYO_LV);
+}
+/*---END OF SECTION---*/
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_211_attach_vehid, [vehicle_type_id == emu_211 || vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+item(FEAT_TRAINS, emu_211) {
+    property {
+        name:                         string(JNR_211);
+        introduction_date:            date(1985, 02, 11);
+        model_life:                   12;
+        vehicle_life:                 40;
+        reliability_decay:            14;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  17;
+        running_cost_factor:          51;
+
+        speed:                        110 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        480 kW;
+        weight:                       35 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_211_gfx_main;
+		    purchase:                 spriteset_211_purchase;
+		    additional_text:	      return string(JNR_211_DESC);
+        cargo_subtype_text:           sw_211_subtypetext_main;
+        can_attach_wagon:			  sw_211_attach_vehid;
+        //start_stop:                   ;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_211_gfx_mucar;
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cargo_subtype_text:           sw_211_subtypetext_mucar;
+        power: 120;
+        weight: 25;
+      }
+
+}

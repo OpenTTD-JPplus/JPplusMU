@@ -1,0 +1,521 @@
+
+
+/*---GFX: Spritesets---*/
+
+/*---211---*/
+//211 Purchase Sprites
+spriteset (spriteset_211_purchase,	                                                     "gfx/JNR/emu211/211_purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_211_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu211/211_purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//211 Chukyo
+spriteset (spriteset_211_front_chukyo,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_chukyo,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_chukyo,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_211_front_chukyo, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/chukyo/211-2-1_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_back_chukyo,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/chukyo/211-2-2_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_chukyo,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/chukyo/211-2-3_32bpp.png")        {tmpl_std(0, 1)}
+
+//211 Shonan
+spriteset (spriteset_211_front_shonan,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_shonan,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_dual_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_shonan,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_sdgrcar_shonan,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_ddgrold_shonan,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_ddgrnew_shonan,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_211_back_darm_shonan_rev_red,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_sarm_shonan_rev_red,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+
+alternative_sprites(spriteset_211_front_shonan,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_back_shonan,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-1_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_211_back_darm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-2_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_back_sarm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-3_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_back_dual_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-4_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_shonan,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-5_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_darm_shonan,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-6_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_sarm_shonan,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-7_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_sdgrcar_shonan, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-8_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_ddgrold_shonan, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-9_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_ddgrnew_shonan, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-10_32bpp.png")        {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_211_back_darm_shonan_rev_red,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-2_32bpp.png")         {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_211_back_sarm_shonan_rev_red,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/shonan/211-1-3_32bpp.png")         {tmpl_std_rev(0, 1)}
+
+
+//211 Boso
+spriteset (spriteset_211_front_boso,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_darm_boso,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_dual_boso,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_boso,    	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_211_front_boso,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/boso/211-3-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_back_darm_boso,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/boso/211-3-2_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_back_dual_boso,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/boso/211-3-3_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_boso,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/boso/211-3-4_32bpp.png")         {tmpl_std(0, 1)}
+
+//211 Nagano
+spriteset (spriteset_211_front_nagano,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_nagano,    	       	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_back_sarm_nagano,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_nagano,    	      	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_211_mid_sarm_nagano,    	      	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_211_front_nagano,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/nagano/211-4-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_back_nagano,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/nagano/211-4-1_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_211_back_sarm_nagano,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/nagano/211-4-2_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_nagano,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/nagano/211-4-3_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_211_mid_sarm_nagano,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/nagano/211-4-4_32bpp.png")         {tmpl_std_rev(0, 1)}
+
+
+/*---211_5000_6000---*/
+//211-56 Purchase Sprites
+spriteset (spriteset_21156_purchase,	                                                     "gfx/JNR/emu211/211_purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_21156_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu211/211_5000_Purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//211-56 Tokai
+spriteset (spriteset_21156_front,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_back_darm,   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_back_sarm,       "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_mid,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_21156_rev_front,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_rev_mid,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_rev_back_darm,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_rev_back_sarm,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_21156_revflip_front,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_revflip_mid,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_revflip_back_darm,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_21156_revflip_back_sarm,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+
+alternative_sprites(spriteset_21156_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-1_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_21156_back_darm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-2_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_21156_back_sarm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-3_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_21156_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-4_32bpp.png")        {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_21156_rev_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-1_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_21156_rev_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-4_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_21156_rev_back_darm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-2_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_21156_rev_back_sarm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-3_32bpp.png")        {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_21156_revflip_front,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-1_32bpp.png")        {tmpl_std(0, 26)}
+alternative_sprites(spriteset_21156_revflip_mid,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-4_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_21156_revflip_back_darm,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-2_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_21156_revflip_back_sarm,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-3_32bpp.png")        {tmpl_std_rev(0, 1)}
+
+
+/*---213---*/
+//213 Purchase Sprites
+spriteset (spriteset_213_purchase,	                                                     "gfx/JNR/emu213/213_purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_213_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu213/213_purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//213 JRwest
+spriteset (spriteset_213_front_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_back_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_mid_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_213_rev_front_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_back_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_mid_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_213_revflip_front_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_back_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_mid_jrw,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_213_front_jrw, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-1_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_back_jrw,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-2_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_mid_jrw,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-3_32bpp.png")        {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_213_rev_front_jrw, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-1_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_rev_back_jrw,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-2_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_rev_mid_jrw,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-3_32bpp.png")        {tmpl_std_rev(0, 1)}
+
+alternative_sprites(spriteset_213_revflip_front_jrw, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-1_32bpp.png")        {tmpl_std(0, 26)}
+alternative_sprites(spriteset_213_revflip_back_jrw,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-2_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_213_revflip_mid_jrw,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-1-3_32bpp.png")        {tmpl_std(0, 1)}
+
+//213 Shonan
+spriteset (spriteset_213_front_old_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_new_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_back_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_back_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_213_rev_front_old_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_front_new_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_back_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_back_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_213_revflip_front_old_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_front_new_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_back_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_back_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_213_front_old_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_new_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_back_darm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-2_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_back_sarm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-2_32bpp.png")         {tmpl_std_rev(0, 26)}
+
+alternative_sprites(spriteset_213_rev_front_old_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-1_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_rev_front_new_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-1_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_rev_back_darm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-2_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_rev_back_sarm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-2_32bpp.png")         {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_213_revflip_front_old_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-1_32bpp.png")         {tmpl_std(0, 26)}
+alternative_sprites(spriteset_213_revflip_front_new_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-1_32bpp.png")         {tmpl_std(0, 26)}
+alternative_sprites(spriteset_213_revflip_back_darm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-2_32bpp.png")         {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_213_revflip_back_sarm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-2_32bpp.png")         {tmpl_std_rev(0, 1)}
+
+//213 JRwest Super Saloon Yumeji
+spriteset (spriteset_213_front_s1,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_s2,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_s3,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_s4,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_front_s5,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_213_rev_front_s1,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_front_s2,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_front_s3,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_front_s4,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_front_s5,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_213_revflip_front_s1,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_front_s2,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_front_s3,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_front_s4,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_front_s5,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_213_front_s1,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-1_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_s2,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-2_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_s3,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-3_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_s4,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-4_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_front_s5,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-5_32bpp.png")         {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_213_rev_front_s1,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-1_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_rev_front_s2,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-2_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_rev_front_s3,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-3_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_rev_front_s4,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-4_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_rev_front_s5,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-5_32bpp.png")         {tmpl_std_rev(0, 26)}
+
+alternative_sprites(spriteset_213_revflip_front_s1,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-1_32bpp.png")         {tmpl_std(0, 26)}
+alternative_sprites(spriteset_213_revflip_front_s2,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-2_32bpp.png")         {tmpl_std(0, 26)}
+alternative_sprites(spriteset_213_revflip_front_s3,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-3_32bpp.png")         {tmpl_std(0, 26)}
+alternative_sprites(spriteset_213_revflip_front_s4,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-4_32bpp.png")         {tmpl_std(0, 26)}
+alternative_sprites(spriteset_213_revflip_front_s5,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-5_32bpp.png")         {tmpl_std(0, 26)}
+/*---311---*/
+//311 Purchase Sprites
+spriteset (spriteset_311_purchase,	                                                    "gfx/JRC/emu311/311_Purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_311_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRC/emu311/311_Purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//311 Tokai
+spriteset (spriteset_311_front,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_back_darm,   "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_back_sarm,   "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_mid,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_311_rev_mid,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_rev_front,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_rev_back_darm,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_rev_back_sarm,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_311_revflip_mid,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_revflip_front,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_revflip_back_darm,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_311_revflip_back_sarm,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_311_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-1_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_311_back_darm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-2_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_311_back_sarm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-3_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_311_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-4_32bpp.png")        {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_311_rev_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-1_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_311_rev_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-4_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_311_rev_back_darm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-2_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_311_rev_back_sarm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-3_32bpp.png")        {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_311_revflip_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-1_32bpp.png")        {tmpl_std(0, 26)}
+alternative_sprites(spriteset_311_revflip_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-4_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_311_revflip_back_darm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-2_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_311_revflip_back_sarm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu311/311-1-3_32bpp.png")        {tmpl_std_rev(0, 1)}
+
+/*---313---*/
+//313 Purchase Sprites
+spriteset (spriteset_313_purchase,	  "gfx/JRC/emu313/313_Purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_313_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRC/emu313/313_Purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//313 Tokai
+spriteset (spriteset_313_front,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_back_onep,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_back_twop,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_mid_onep,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_mid,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_313_rev_front,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_rev_back_onep,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_rev_back_twop,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_rev_mid_onep,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_rev_mid,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_313_revflip_front,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_revflip_back_onep,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_revflip_back_twop,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_revflip_mid_onep,      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_313_revflip_mid,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_313_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-1_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_313_back_onep, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-2_32bpp.png")        {tmpl_std_panto25_rev(0, 27)}
+alternative_sprites(spriteset_313_back_twop, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-3_32bpp.png")        {tmpl_std_panto25_rev(0, 27)}
+alternative_sprites(spriteset_313_mid_onep,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-4_32bpp.png")        {tmpl_std_panto25(0, 0)}
+alternative_sprites(spriteset_313_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-5_32bpp.png")        {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_313_rev_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-1_32bpp.png")        {tmpl_std_rev(0, 27)}
+alternative_sprites(spriteset_313_rev_back_onep, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-2_32bpp.png")        {tmpl_std_panto25(0, 0)}
+alternative_sprites(spriteset_313_rev_back_twop, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-3_32bpp.png")        {tmpl_std_panto25(0, 0)}
+alternative_sprites(spriteset_313_rev_mid_onep,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-4_32bpp.png")        {tmpl_std_panto25_rev(0, 0)}
+alternative_sprites(spriteset_313_rev_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-5_32bpp.png")        {tmpl_std_rev(0, 0)}
+
+alternative_sprites(spriteset_313_revflip_front,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-1_32bpp.png")        {tmpl_std(0, 27)}
+alternative_sprites(spriteset_313_revflip_back_onep, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-2_32bpp.png")        {tmpl_std_panto25_rev(0, 0)}
+alternative_sprites(spriteset_313_revflip_back_twop, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-3_32bpp.png")        {tmpl_std_panto25_rev(0, 0)}
+alternative_sprites(spriteset_313_revflip_mid_onep,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-4_32bpp.png")        {tmpl_std_panto25(0, 0)}
+alternative_sprites(spriteset_313_revflip_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRC/emu313/313-1-5_32bpp.png")        {tmpl_std(0, 0)}
+
+
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: GROUPED Train Reversing Switch for 211, 213, 311 and 313 Series EMUs---*/
+
+
+
+
+/*---211_50006000-*/
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_back_darm_flipcheck, vehicle_is_flipped) {
+  1: spriteset_21156_revflip_back_darm;
+ default: spriteset_21156_rev_back_darm;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_back_sarm_flipcheck, vehicle_is_flipped) {
+  1: spriteset_21156_revflip_back_sarm;
+ default: spriteset_21156_rev_back_sarm;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_front_flipcheck, vehicle_is_flipped) {
+  1: spriteset_21156_rev_front;
+ default: spriteset_21156_revflip_front;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_mid_flipcheck, vehicle_is_flipped) {
+  1: spriteset_21156_revflip_mid;
+ default: spriteset_21156_rev_mid;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback_year_back_pantograph, current_year){
+ 0..2005: sw_211group_gfx_rev_21156_back_darm_flipcheck;
+ default: sw_211group_gfx_rev_21156_back_sarm_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback, [
+STORE_TEMP((position_in_consist_from_end-position_in_consist)-1, 0x10F),
+STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],0),
+STORE_TEMP((position_in_consist_from_end-position_in_consist)+1, 0x10F),
+STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],1),
+LOAD_TEMP(0) == 1000
+||
+LOAD_TEMP(0) == 2015
+&&
+LOAD_TEMP(1) != 2015
+]){
+ 1: sw_211group_gfx_rev_21156_frontback_year_back_pantograph;
+ 0: sw_211group_gfx_rev_21156_front_flipcheck;
+}
+
+/*---213---*/
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_rev_back_year_pantograph, current_year){
+ 0..2007: spriteset_213_back_darm_shonan;
+ default: spriteset_213_back_sarm_shonan;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_revflip_back_year_pantograph, current_year){
+ 0..2007: spriteset_213_revflip_back_darm_shonan;
+ default: spriteset_213_revflip_back_sarm_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+1:sw_211group_gfx_rev_213_rev_back_year_pantograph;
+default:spriteset_213_rev_back_jrw;
+}
+switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+1:sw_211group_gfx_rev_213_revflip_back_year_pantograph;
+default:spriteset_213_revflip_back_jrw;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_back_flipcheck, vehicle_is_flipped) {
+1:sw_211group_gfx_rev_213_revflip_back_livery;
+default: sw_211group_gfx_rev_213_rev_back_livery;
+}
+switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+default:spriteset_213_rev_mid_jrw;
+}
+switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+default:spriteset_213_revflip_mid_jrw;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_mid_flipcheck, vehicle_is_flipped) {
+  1: sw_211group_gfx_rev_213_revflip_mid_livery;
+ default: sw_211group_gfx_rev_213_rev_mid_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_rev_front_year, current_year){
+ 0..2007: spriteset_213_rev_front_old_shonan;
+ default: spriteset_213_rev_front_new_shonan;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_revflip_front_year, current_year){
+ 0..2007: spriteset_213_revflip_front_old_shonan;
+ default: spriteset_213_revflip_front_new_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+6:spriteset_213_rev_front_s5;
+5:spriteset_213_rev_front_s4;
+4:spriteset_213_rev_front_s3;
+3:spriteset_213_rev_front_s2;
+2:spriteset_213_rev_front_s1;
+1:sw_211group_gfx_rev_213_rev_front_year;
+0:spriteset_213_rev_front_jrw;
+}
+switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+6:spriteset_213_revflip_front_s5;
+5:spriteset_213_revflip_front_s4;
+4:spriteset_213_revflip_front_s3;
+3:spriteset_213_revflip_front_s2;
+2:spriteset_213_revflip_front_s1;
+1:sw_211group_gfx_rev_213_revflip_front_year;
+0:spriteset_213_revflip_front_jrw;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_front_flipcheck, vehicle_is_flipped) {
+  1: sw_211group_gfx_rev_213_rev_front_livery;
+ default: sw_211group_gfx_rev_213_revflip_front_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback, [
+STORE_TEMP((position_in_consist_from_end-position_in_consist)-1, 0x10F),
+STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],0),
+STORE_TEMP((position_in_consist_from_end-position_in_consist)+1, 0x10F),
+STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],1),
+LOAD_TEMP(0) == 1000
+||
+LOAD_TEMP(0) == 2010
+&&
+LOAD_TEMP(1) != 2010
+]){
+ 1: sw_211group_gfx_rev_213_back_flipcheck;
+ 0: sw_211group_gfx_rev_213_front_flipcheck;
+}
+
+/*---311---*/
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_back_darm_flipcheck, vehicle_is_flipped) {
+  1: spriteset_311_revflip_back_darm;
+ default: spriteset_311_rev_back_darm;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_back_sarm_flipcheck, vehicle_is_flipped) {
+  1: spriteset_311_revflip_back_sarm;
+ default: spriteset_311_rev_back_sarm;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_front_flipcheck, vehicle_is_flipped) {
+  1: spriteset_311_rev_front;
+ default: spriteset_311_revflip_front;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_mid_flipcheck, vehicle_is_flipped) {
+  1: spriteset_311_revflip_mid;
+ default: spriteset_311_rev_mid;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback_year_back_pantograph, current_year){
+ 0..2007: sw_211group_gfx_rev_311_back_darm_flipcheck;
+ default: sw_211group_gfx_rev_311_back_sarm_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback, 
+[
+STORE_TEMP((position_in_consist_from_end-position_in_consist)-1, 0x10F),
+STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],0),
+STORE_TEMP((position_in_consist_from_end-position_in_consist)+1, 0x10F),
+STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],1),
+LOAD_TEMP(0) == 1000
+||
+LOAD_TEMP(0) == 2023
+&&
+LOAD_TEMP(1) != 2023
+]){
+ 1: sw_211group_gfx_rev_311_frontback_year_back_pantograph;
+ 0: sw_211group_gfx_rev_311_front_flipcheck;
+}
+
+/*---313---*/
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_back_onep_flipcheck, vehicle_is_flipped) {
+  1: spriteset_313_revflip_back_onep;
+ default: spriteset_313_rev_back_onep;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_back_twop_flipcheck, vehicle_is_flipped) {
+  1: spriteset_313_revflip_back_twop;
+ default: spriteset_313_rev_back_twop;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_front_flipcheck, vehicle_is_flipped) {
+  1: spriteset_313_rev_front;
+ default: spriteset_313_revflip_front;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_mid_flipcheck, vehicle_is_flipped) {
+  1: spriteset_313_revflip_mid;
+ default: spriteset_313_rev_mid;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_mid_onep_flipcheck, vehicle_is_flipped) {
+  1: spriteset_313_revflip_mid_onep;
+ default: spriteset_313_rev_mid_onep;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+  0: sw_211group_gfx_rev_313_mid_onep_flipcheck;
+  default: sw_211group_gfx_rev_313_mid_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_pantograph_check, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){ 
+  0..1: sw_211group_gfx_rev_313_mid_flipcheck;
+  default: sw_211group_gfx_rev_313_pantograph_pos;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback_refit_pantograph, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+ 1: sw_211group_gfx_rev_313_back_twop_flipcheck;
+ 0: sw_211group_gfx_rev_313_back_onep_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback, 
+[
+STORE_TEMP((position_in_consist_from_end-position_in_consist)-1, 0x10F),
+STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],0),
+STORE_TEMP((position_in_consist_from_end-position_in_consist)+1, 0x10F),
+STORE_TEMP(var[0x61, 0, 0x0000FFFF, 0xC6],1),
+LOAD_TEMP(0) == 1000
+||
+LOAD_TEMP(0) == 2024
+&&
+LOAD_TEMP(1) != 2024
+]){
+ 1: sw_211group_gfx_rev_313_frontback_refit_pantograph;
+ 0: sw_211group_gfx_rev_313_front_flipcheck;
+}
+
+/*---Main ID Sorting and Detection---*/
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_mucar_idcheck, [
+  STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),                //look at opposite vehicle
+  STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41]+1,0),                                     //go to the head car of the opposite vehicle
+  STORE_TEMP((position_in_consist_from_end-position_in_consist)-LOAD_TEMP(0), 0x10F), //look at the head car of the opposite vehicle
+  var[0x61, 0, 0x0000FFFF, 0xC6]                                                      //determine the ID of the opposite vehicle head car
+]){
+  //2000: ; //211
+  2010: sw_211group_gfx_rev_213_mid_flipcheck; //213
+  2015: sw_211group_gfx_rev_21156_mid_flipcheck; //211-50006000
+  2023: sw_211group_gfx_rev_311_mid_flipcheck; //311
+  2024: sw_211group_gfx_rev_313_pantograph_check; //313
+}
+
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_211group_gfx_rev_mucar_idcheck;
+  //2000: ; //211
+  2010: sw_211group_gfx_rev_213_frontback; //213
+  2015: sw_211group_gfx_rev_21156_frontback; //211-50006000
+  2023: sw_211group_gfx_rev_311_frontback; //311
+  2024: sw_211group_gfx_rev_313_frontback; //313
+}
+/*---END OF SECTION---*/

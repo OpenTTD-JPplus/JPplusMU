@@ -1,0 +1,163 @@
+
+/*---GFX: Year Dependent Graphics---*/
+
+//213 Shonan
+switch(FEAT_TRAINS, SELF, sw_213_gfx_year_back_shonan_pantograph, current_year){
+ 0..2007: spriteset_213_back_darm_shonan;
+ default: spriteset_213_back_sarm_shonan;
+}
+switch(FEAT_TRAINS, SELF, sw_213_gfx_year_front_shonan, current_year){
+ 0..2010: spriteset_213_front_old_shonan;
+ default: spriteset_213_front_new_shonan;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+
+//213 JRwest
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_front_liverycheck_jrw, cargo_subtype) {
+6:spriteset_213_front_s5;
+5:spriteset_213_front_s4;
+4:spriteset_213_front_s3;
+3:spriteset_213_front_s2;
+2:spriteset_213_front_s1;
+default:spriteset_213_front_jrw;
+}
+switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_flipcheck_jrw, vehicle_is_flipped){
+ 0: sw_213_gfx_front_liverycheck_jrw;
+ default: spriteset_213_back_jrw;
+}
+switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_revcheck_jrw, vehicle_is_reversed){
+ 0: sw_213_gfx_frontback_flipcheck_jrw;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+//213 Shonan
+switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_flipcheck_shonan, vehicle_is_flipped){
+ 0: sw_213_gfx_year_front_shonan;
+ default: sw_213_gfx_year_back_shonan_pantograph;
+}
+switch(FEAT_TRAINS, SELF, sw_213_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
+ 0: sw_213_gfx_frontback_flipcheck_shonan;
+ default: sw_211group_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+//213 JRwest
+switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
+ 0: spriteset_213_mid_jrw;
+ default: sw_211group_gfx_rev_idcheck;
+}
+
+//213 Shonan
+switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
+ 0: spriteset_213_mid_jrw;
+ default: sw_211group_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+
+//Main Switches
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar,  cargo_subtype) {
+1:  sw_213_gfx_mucar_revcheck_shonan;
+default:  sw_213_gfx_mucar_revcheck_jrw;
+}
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_main,  cargo_subtype) {
+1:  sw_213_gfx_frontback_revcheck_shonan;
+default:  sw_213_gfx_frontback_revcheck_jrw;
+}
+
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_213_subtypetext_mucar, cargo_subtype) {
+6: string(JRWyumeji5_LV);
+5: string(JRWyumeji4_LV);
+4: string(JRWyumeji3_LV);
+3: string(JRWyumeji2_LV);
+2: string(JRWyumeji1_LV);
+1: string(SHONAN_LV);
+0: string(JRWbluestd_LV);
+}
+switch(FEAT_TRAINS, SELF, sw_213_subtypetext_main, cargo_subtype) {
+6: string(JRWyumeji5_LV);
+5: string(JRWyumeji4_LV);
+4: string(JRWyumeji3_LV);
+3: string(JRWyumeji2_LV);
+2: string(JRWyumeji1_LV);
+1: string(SHONAN_LV);
+0: string(JRWbluestd_LV);
+}
+/*---END OF SECTION---*/
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_213_attach_vehid, [vehicle_type_id == emu_213 || vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+item(FEAT_TRAINS, emu_213) {
+    property {
+        name:                         string(JNR_213);
+        introduction_date:            date(1987, 03, 11);
+        model_life:                   4;
+        vehicle_life:                 40;
+        reliability_decay:            14;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  17;
+        running_cost_factor:          51;
+
+        speed:                        110 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        480 kW;
+        weight:                       35 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_213_gfx_main;
+		    purchase:                 spriteset_213_purchase;
+		    additional_text:	      return string(JNR_213_DESC);
+        cargo_subtype_text:           sw_213_subtypetext_main;
+        can_attach_wagon:			  sw_213_attach_vehid;
+        //start_stop:                   ;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_213_gfx_mucar;
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_2D;
+        cargo_subtype_text:           sw_213_subtypetext_mucar;
+        power: 120;
+        weight: 25;
+      }
+
+}

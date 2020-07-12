@@ -23,6 +23,9 @@
 //Final Settings
 #include "src/grfintegration.pnml"
 
+//Reversing
+#include "src/reversing/reversing_211_213_311_313_group.pnml"
+
 
 /*---TRAINS---*/
 
@@ -30,11 +33,15 @@
 #include "src/OTHER/mucar.pnml"
 
 //JNR
+#include "src/JNR/EMU/211_series.pnml"
+#include "src/JNR/EMU/213_series.pnml"
+
 
 //JR-Hokkaido
 
 
 //JR-East
+#include "src/JRE/EMU/E331_series.pnml"
 #include "src/JRE/EMU/E235_series.pnml"
 #include "src/JRE/EMU/E233_series.pnml"
 #include "src/JRE/EMU/E231_series.pnml"
@@ -44,6 +51,9 @@
 
 
 //JR-Central
+#include "src/JRC/EMU/211_56_series.pnml"
+#include "src/JRC/EMU/311_series.pnml"
+#include "src/JRC/EMU/313_series.pnml"
 
 
 //JR-West

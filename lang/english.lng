@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+Set v0.1
+STR_GRF_NAME        :JP+Set v0.1 DEMO
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene. Trains require narrow gauge tracks.{}{}{BLACK}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}Licence: CC BY-NC-SA 4.0
 
 # Parameters
@@ -51,6 +51,10 @@ DH_EF210:JRF EF210-300 {WHITE}(Electric Loco)
 DH_E851:Seibu E851 {WHITE}(Electric Loco)
 DH_ED75:JNR ED75 {WHITE}(Electric Loco)
 
+JRC_311:311 Series {WHITE}(EMU)
+JRC_313:313 Series {WHITE}(EMU)
+
+
 JRE_kiha100:KiHa 100/110 Series {WHITE}(DMU)
 JRE_kiha111:KiHa 111/112 Series {WHITE}(DMU)
 
@@ -60,6 +64,7 @@ JRE_E217:E217 Series {WHITE}(EMU)
 JRE_E231:E231 Series {WHITE}(EMU)
 JRE_E233:E233 Series {WHITE}(EMU)
 JRE_E235:E235 Series {WHITE}(EMU)
+JRE_E331:E331 Series {WHITE}(EMU)
 JRE_719:719 Series {WHITE}(EMU)
 JRE_7195000:719-5000 Series {WHITE}(EMU)
 
@@ -81,6 +86,7 @@ JRS_6000:6000 Series {WHITE}(EMU)
 
 
 # Livery Name
+BLANK                 : {RED}A{ORANGE}U{YELLOW}T{GREEN}O{BLUE}M{PURPLE}A{CREAM}T{RED}I{ORANGE}C
 OLD_LV                : Original livery
 STANDARD_LV           : Standard livery
 NEW_LV                : New livery
@@ -91,19 +97,33 @@ CHUKYO_LV             : Chukyo Livery
 NAGANO_LV             : Nagano Livery
 CHIBA_LV              : Chiba Livery
 CHIBA_LV_TWOP         : Chiba Livery (Dual Pantograph)
-SHONAN_LV_DD          : {GREEN}Shonan Livery (DD Green Car)
+
+SHONAN_LV               : Shonan Livery
+SHONAN_LV_TWOP          : Shonan Livery (Dual Pantograph)
+SHONAN_TK_DDDD_LV       : Shonan Livery (Tokaido DD)
+SHONAN_TK_DDSD_LV       : Shonan Livery (Tokaido DD/SD)
+SHONAN_TY_DDDD_LV       : Shonan Livery (Takasaki/Tohoku DD)
+SHONAN_TY_DDDDold_LV    : Shonan Livery (Takasaki/Tohoku DD New/Old)
+SHONAN_TY_DDoldDD_LV    : Shonan Livery (Takasaki/Tohoku DD Old/New)
+SHONAN_TY_DDSD_LV       : Shonan Livery (Takasaki/Tohoku DD/SD)
+
+
+
+SHONAN_LV_DD          : Shonan Livery (DD Green Car)
 SHONAN_LV_SD          : Shonan Livery (SD Green Car)
 SHONAN_LV_MIX         : Shonan Livery (DD/SD Mixed Green Cars)
-SHONAN_LV_TWOP        : Shonan Livery (Dual Pantograph)
+
+
 TOKAI_211_LV          : Tokai Spec (-5000/-6000 Type)
+TOKAI_313_PANTO       : Tokai Livery (Single Pantograph)
+TOKAI_313_TWOPANTO    : Tokai Livery (Dual Pantograph)
 
 OKAYAMA_LV              : Okayama Livery
 TOKAI_LV                : Tokai Livery
 
 
-SHONAN_LV             : Shonan Livery
 YOKOSUKA_LV           : Yokosuka Livery
-YOKOSUKA_LV_DD        : {GREEN}Yokosuka Livery (DD Green Car)
+YOKOSUKA_LV_DD        : Yokosuka Livery (DD Green Car)
 
 YAMANOTE_LV           : Yamanote Livery
 
@@ -131,12 +151,20 @@ JRE_S_LV              : JE East Suburban
 KT_500_LV             : -500 Keihin-Touhoku Livery
 SOBU_500_LV           : -500 Sobu Livery
 
+JRWbluestd_LV         : JR West Blue
 JRWblue_LV            : JR West Blue (Dual Pantograph)
 JRWbluepanto_LV       : JR West Blue (Single Pantograph)
 JRWnew_LV             : JR West New Scheme (Cab Pantograph)
 JRWnewpanto_LV        : JR West New Scheme (Mid Pantograph)
 JRWnewremodel_LV      : JR West Remodel Type New Scheme (Cab Pantograph)
 JRWnewremodelpanto_LV : JR West Remodel Type New Scheme (Mid Pantograph)
+
+JRWyumeji1_LV         : JR West Super Saloon Yumeji (212-1)
+JRWyumeji2_LV         : JR West Super Saloon Yumeji (212-2)
+JRWyumeji3_LV         : JR West Super Saloon Yumeji (212-3)
+JRWyumeji4_LV         : JR West Super Saloon Yumeji (212-4)
+JRWyumeji5_LV         : JR West Super Saloon Yumeji (212-5)
+
 
 
 SANDWICH_LV           : Standard "Sandwich" Livery
@@ -313,3 +341,12 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 207 Series
     JRW_207_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange
+
+# E331 Series
+    JRE_E331_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+
+# 311 Series
+    JRC_311_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+
+# 313 Series
+    JRC_313_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}

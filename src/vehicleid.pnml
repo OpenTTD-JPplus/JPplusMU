@@ -37,6 +37,9 @@ item(FEAT_TRAINS, emu_7195000, 2014) {} //213emu 0x7DE
 item(FEAT_TRAINS, emu_21156, 2015) {} //211emu 0x7DF
 item(FEAT_TRAINS, emu_E233, 2016) {} //211emu 0x7E0
 item(FEAT_TRAINS, emu_jrw207, 2017) {} //211emu 0x7E1
+item(FEAT_TRAINS, emu_E331, 2022) {} //211emu 0x7E1
+item(FEAT_TRAINS, emu_311, 2023) {} //211emu 0x7E1
+item(FEAT_TRAINS, emu_313, 2024) {} //211emu 0x7E1
 
 
 item(FEAT_TRAINS, DH_E851, 4000) {} //E851

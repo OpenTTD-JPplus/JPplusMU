@@ -29,8 +29,32 @@ template tmpl_purchase_dh_32bpp (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
 
+template tmpl_new_purchase_dh (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+    [x, y, 88, 15, -21, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+}
+
+template tmpl_new_purchase_dh_32bpp (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+    [x, y, 88, 15, -21, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+}
+
+
+
 template tmpl_std(x,y){
-[x, 		 y,	8, 	24,		-3, 	-13] //short
+[x, 	 y,	8, 	24,		-3, 	-13] //short
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
 [x +32,  y,	32,	17,		-16,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
@@ -45,7 +69,7 @@ template tmpl_std_rev(x,y){
 [x +97,  y,	22,	20,		-13,	-13] //dia1
 [x +120, y,	32,	17,		-16,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
-[x, 		 y,	8, 	24,		-3, 	-13] //short
+[x, 	 y,	8, 	24,		-3, 	-13] //short
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
 [x +32,  y,	32,	17,		-16,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
@@ -53,22 +77,22 @@ template tmpl_std_rev(x,y){
 
 //25 high on the short sides for the pantograph
 template tmpl_std_panto25(x,y){
-[x, 		 y,	8, 	25,		-3, 	-14] //short
+[x, 		 y,	8, 	25,		-3, 	-14] //short25
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
 [x +32,  y,	32,	17,		-16,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
-[x +88,  y,	8, 	25,		-3, 	-14] //short
+[x +88,  y,	8, 	25,		-3, 	-14] //short25
 [x +97,  y,	22,	20,		-13,	-13] //dia1
 [x +120, y,	32,	17,		-16,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
 }
 
 template tmpl_std_panto25_rev(x,y){
-[x +88,  y,	8, 	25,		-3, 	-14] //short
+[x +88,  y,	8, 	25,		-3, 	-14] //short25
 [x +97,  y,	22,	20,		-13,	-13] //dia1
 [x +120, y,	32,	17,		-16,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
-[x, 		 y,	8, 	25,		-3, 	-14] //short
+[x, 		 y,	8, 	25,		-3, 	-14] //short25
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
 [x +32,  y,	32,	17,		-16,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
@@ -105,4 +129,50 @@ template tmpl_std_orginal(x,y){
 [x +97,  y,	22,	20,		-13,	-11]
 [x +120, y,	32,	17,		-16,	-12]
 [x+153,  y,	22,	20,		-5, 	-11]
+}
+
+
+
+template tmpl_28px_7l(x,y){
+[x, 	 y,	8, 	23,		-3, 	-16] //short A
+[x +9, 	 y,	20,	19,		-13,	-12] //dia1 
+[x +30,  y,	28,	15,		-16,	-11] //long C
+[x +59,  y,	20,	19,		-5, 	-12] //dia2
+[x +80,  y,	8, 	23,		-3, 	-16] //short E
+[x +89,  y,	20,	19,		-13,	-12] //dia1
+[x +110, y,	28,	15,		-16,	-11] //long
+[x +139, y,	20,	19,		-5, 	-12] //dia2
+}
+
+template tmpl_20px_5l(x,y){
+[x, 	 y,	8, 	19,		-3, 	-16] //short A
+[x +9, 	 y,	16,	17,		-9,	    -12] //dia1 
+[x +26,  y,	20,	15,		-8,	    -11] //long 
+[x +47,  y,	16,	17,		-1, 	-10] //dia2 
+[x +64,  y,	8, 	19,		-3, 	-12] //short E
+[x +73,  y,	16,	17,		-13,	-10] //dia1 
+[x +90, y,	20,	15,		-16,	-11] //long 
+[x+111,  y,	16,	17,		-5, 	-12] //dia2 
+}
+
+template tmpl_28px_7l_rev(x,y){
+[x +80,  y,	8, 	23,		-3, 	-16] //short E
+[x +89,  y,	20,	19,		-13,	-12] //dia1
+[x +110, y,	28,	15,		-16,	-11] //long
+[x +139, y,	20,	19,		-5, 	-12] //dia2
+[x, 	 y,	8, 	23,		-3, 	-16] //short A
+[x +9, 	 y,	20,	19,		-13,	-12] //dia1 
+[x +30,  y,	28,	15,		-16,	-11] //long C
+[x +59,  y,	20,	19,		-5, 	-12] //dia2
+}
+
+template tmpl_20px_5l_rev(x,y){
+[x +64,  y,	8, 	19,		-3, 	-16] //short E
+[x +73,  y,	16,	17,		-9,	    -12] //dia1 
+[x +90, y,	20,	15,		-8,	    -11] //long 
+[x+111,  y,	16,	17,		-1, 	-10] //dia2 
+[x, 	 y,	8, 	19,		-3, 	-12] //short A
+[x +9, 	 y,	16,	17,		-13,    -10] //dia1 
+[x +26,  y,	20,	15,		-16,    -11] //long 
+[x +47,  y,	16,	17,		-5, 	-12] //dia2 
 }
