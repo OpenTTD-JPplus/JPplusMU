@@ -125,7 +125,7 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_dupanto_shonan, vehicle
  0: spriteset_211_front_shonan;
  default: spriteset_211_back_dual_shonan;
 }
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_shonan, [STORE_TEMP(position_in_consist-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_shonan, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
 0..3:    sw_211_gfx_frontback_flipcheck_panto_shonan;
 default: sw_211_gfx_frontback_flipcheck_nopanto_shonan;
 }
@@ -141,12 +141,12 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_shonan, vehicle_is_rev
 
 //211 Boso
 switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_spanto_boso, vehicle_is_flipped){
- 0: spriteset_211_front_chukyo;
- default: spriteset_211_back_chukyo;
+ 0: spriteset_211_front_boso;
+ default: spriteset_211_back_darm_boso;
 }
 switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_dpanto_boso, vehicle_is_flipped){
- 0: spriteset_211_front_chukyo;
- default: spriteset_211_back_chukyo;
+ 0: spriteset_211_front_boso;
+ default: spriteset_211_back_dual_boso;
 }
 switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_typecheck_boso, cargo_subtype) {
 9:sw_211_gfx_frontback_flipcheck_spanto_boso;
@@ -166,7 +166,7 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_nagano, vehicle_i
  0: spriteset_211_front_nagano;
  default: spriteset_211_back_sarm_nagano;
 }
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_nagano, [STORE_TEMP(position_in_consist-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_nagano, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
 0..3:   sw_211_gfx_frontback_flipcheck_panto_nagano;
 4..255: sw_211_gfx_frontback_flipcheck_nopanto_nagano;
 }
@@ -211,7 +211,7 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_mucar_revcheck_nagano, vehicle_is_reverse
 /*---GFX: Livery Refitting Switches---*/
 
 //Main Switches
-switch(FEAT_TRAINS, PARENT, sw_211_gfx_mucar,  cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_211_gfx_mucar,  cargo_subtype) {
 11: sw_211_gfx_mucar_revcheck_nagano;
 10: sw_211_gfx_mucar_revcheck_boso;
 9:  sw_211_gfx_mucar_revcheck_boso;
@@ -225,7 +225,7 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_mucar,  cargo_subtype) {
 1:  sw_211_gfx_mucar_revcheck_shonan;
 0:  sw_211_gfx_mucar_revcheck_chuko;
 }
-switch(FEAT_TRAINS, PARENT, sw_211_gfx_main,  cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_211_gfx_main,  cargo_subtype) {
 11: sw_211_gfx_frontback_revcheck_nagano;
 10: sw_211_gfx_frontback_revcheck_boso;
 9:  sw_211_gfx_frontback_revcheck_boso;
