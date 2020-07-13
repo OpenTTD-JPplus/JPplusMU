@@ -603,7 +603,7 @@ switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_211_mid_shonan_typecheck, [STORE_TE
 }
 switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_211_mid_shonan_pantocheck,  [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   0..3: sw_211group_gfx_rev_211_mid_flipcheck;
-  4..7: sw_211group_gfx_rev_211_mid_shonan_typecheck;
+  4..7: sw_211group_gfx_rev_211_gfx_pantograph_pos_shonan_tk;
   default: sw_211group_gfx_rev_211_mid_shonan_typecheck;
 }
 switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_211_gfx_pantograph_pos_nagano, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
