@@ -125,11 +125,11 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_dupanto_shonan, vehicle
  0: spriteset_211_front_shonan;
  default: spriteset_211_back_dual_shonan;
 }
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_shonan, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_shonan, [STORE_TEMP(position_in_consist-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
 0..3:    sw_211_gfx_frontback_flipcheck_panto_shonan;
-default: sw_211_gfx_frontback_flipcheck_nopanto_shonan;
+4..99: sw_211_gfx_frontback_flipcheck_nopanto_shonan;
 }
-switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_typecheck_shonan, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_typecheck_shonan, cargo_subtype) {
 2:       sw_211_gfx_frontback_flipcheck_dupanto_shonan;
 3..4:       sw_211_gfx_frontback_lengthcheck_shonan;
 default: sw_211_gfx_frontback_flipcheck_panto_shonan;

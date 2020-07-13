@@ -28,29 +28,8 @@ switch(FEAT_TRAINS, PARENT, sw_313_gfx_frontback_revcheck, vehicle_is_reversed){
  0: sw_313_gfx_frontback_flipcheck;
  default: sw_211group_gfx_rev_idcheck;
 }
-/*
-switch(FEAT_TRAINS, SELF, sw_313_gfx_frontback_flipcheck, vehicle_is_flipped){
- 0: spriteset_313_front;
- default: sw_313_gfx_back_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_313_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: sw_313_gfx_frontback_flipcheck;
- default: sw_211group_gfx_rev_idcheck;
-*/
-/*
-switch(FEAT_TRAINS, PARENT, sw_313_gfx_front_flipcheck, vehicle_is_reversed){
-   0: spriteset_313_front;
-   default: sw_211group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_313_gfx_back_flipcheck, vehicle_is_reversed){
- 0: sw_313_gfx_back_livery;
- default: sw_211group_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_313_gfx_frontback_revcheck, vehicle_is_flipped) {
-  1: sw_313_gfx_back_flipcheck;
- default: sw_313_gfx_front_flipcheck;
-}
-*/
+
+
 
 /*---END OF SECTION---*/
 
@@ -59,7 +38,7 @@ switch(FEAT_TRAINS, SELF, sw_313_gfx_frontback_revcheck, vehicle_is_flipped) {
 /*---GFX: Middle Car Switches---*/
 
 //313 Tokai
-switch(FEAT_TRAINS, SELF, sw_313_gfx_mucar_revcheck, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_313_gfx_mucar_revcheck, vehicle_is_reversed){
  0: sw_313_gfx_pantograph_pos_check;
  default: sw_211group_gfx_rev_idcheck;
 }
