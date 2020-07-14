@@ -269,7 +269,7 @@ switch(FEAT_TRAINS, SELF, sw_211_subtypetext_main, cargo_subtype) {
 
 
 //Coupling
-  switch(FEAT_TRAINS, SELF, sw_211_attach_vehid, [vehicle_type_id == emu_211 || vehicle_type_id == mu_car]) {
+  switch(FEAT_TRAINS, SELF, sw_211_attach_vehid, [vehicle_type_id == emu_211 || vehicle_type_id == emu_21156 ||vehicle_type_id == emu_213 || vehicle_type_id == emu_313 || vehicle_type_id == emu_311 || vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }
 
