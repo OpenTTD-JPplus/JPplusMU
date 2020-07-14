@@ -18,7 +18,7 @@ switch(FEAT_TRAINS, SELF, sw_213_gfx_year_front_shonan, current_year){
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 
 //213 JRwest
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_front_liverycheck_jrw, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_213_gfx_front_liverycheck_jrw, cargo_subtype) {
 6:spriteset_213_front_s5;
 5:spriteset_213_front_s4;
 4:spriteset_213_front_s3;
@@ -51,13 +51,13 @@ switch(FEAT_TRAINS, PARENT, sw_213_gfx_frontback_revcheck_shonan, vehicle_is_rev
 /*---GFX: Middle Car Switches---*/
 
 //213 JRwest
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
+switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
  0: spriteset_213_mid_jrw;
  default: sw_211group_gfx_rev_idcheck;
 }
 
 //213 Shonan
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
  0: spriteset_213_mid_jrw;
  default: sw_211group_gfx_rev_idcheck;
 }
@@ -68,11 +68,11 @@ switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reverse
 /*---GFX: Livery Refitting Switches---*/
 
 //Main Switches
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar,  cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar,  cargo_subtype) {
 1:  sw_213_gfx_mucar_revcheck_shonan;
 default:  sw_213_gfx_mucar_revcheck_jrw;
 }
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_main,  cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_213_gfx_main,  cargo_subtype) {
 1:  sw_213_gfx_frontback_revcheck_shonan;
 default:  sw_213_gfx_frontback_revcheck_jrw;
 }

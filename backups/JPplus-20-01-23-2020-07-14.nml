@@ -1640,7 +1640,7 @@ item(FEAT_TRAINS, mu_car) {
 spriteset (spriteset_115_purchase,	                                                    "gfx/JNR/emu115/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_115_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu115/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
 
-//115 Shonan Original
+//115 Shonan Orginal
 spriteset (spriteset_115_front_shonan,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_115_back_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_115_mid_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -2442,7 +2442,7 @@ switch(FEAT_TRAINS, SELF, sw_213_gfx_year_front_shonan, current_year){
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 
 //213 JRwest
-switch(FEAT_TRAINS, SELF, sw_213_gfx_front_liverycheck_jrw, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_front_liverycheck_jrw, cargo_subtype) {
 6:spriteset_213_front_s5;
 5:spriteset_213_front_s4;
 4:spriteset_213_front_s3;
@@ -2492,11 +2492,11 @@ switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reverse
 /*---GFX: Livery Refitting Switches---*/
 
 //Main Switches
-switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar,  cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar,  cargo_subtype) {
 1:  sw_213_gfx_mucar_revcheck_shonan;
 default:  sw_213_gfx_mucar_revcheck_jrw;
 }
-switch(FEAT_TRAINS, SELF, sw_213_gfx_main,  cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_main,  cargo_subtype) {
 1:  sw_213_gfx_frontback_revcheck_shonan;
 default:  sw_213_gfx_frontback_revcheck_jrw;
 }

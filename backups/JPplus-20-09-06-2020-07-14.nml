@@ -2442,7 +2442,7 @@ switch(FEAT_TRAINS, SELF, sw_213_gfx_year_front_shonan, current_year){
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 
 //213 JRwest
-switch(FEAT_TRAINS, SELF, sw_213_gfx_front_liverycheck_jrw, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, sw_213_gfx_front_liverycheck_jrw, cargo_subtype) {
 6:spriteset_213_front_s5;
 5:spriteset_213_front_s4;
 4:spriteset_213_front_s3;
