@@ -663,22 +663,34 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_front_flipcheck, vehicle_is_fl
  default: sw_211group_gfx_rev_211_revflip_front_livery;
 }
 
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_frontback_sameid_vehid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
-1:sw_211group_gfx_rev_211_front_flipcheck;
-0:sw_211group_gfx_rev_211_back_flipcheck;
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_211_front_flipcheck;
+  0:sw_211group_gfx_rev_211_back_flipcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2000:sw_211group_gfx_rev_211_frontback_sameid_vehid;
-1000:sw_211group_gfx_rev_211_front_flipcheck;
-default:sw_211group_gfx_rev_211_back_flipcheck;
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_frontback_aftermucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_211_back_flipcheck;
+  0:sw_211group_gfx_rev_211_front_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_frontback_mucarcheck, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000:sw_211group_gfx_rev_211_frontback_aftermucars;
+  default:sw_211group_gfx_rev_211_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  2000:sw_211group_gfx_rev_211_frontback_mucarcheck;
+  1000:sw_211group_gfx_rev_211_front_flipcheck;
+  default:sw_211group_gfx_rev_211_back_flipcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2000:sw_211group_gfx_rev_211_frontback_sameid;
-1000:sw_211group_gfx_rev_211_back_flipcheck;
-default:sw_211group_gfx_rev_211_front_flipcheck;
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  2000:sw_211group_gfx_rev_211_sameid;
+  1000:sw_211group_gfx_rev_211_back_flipcheck;
+  default:sw_211group_gfx_rev_211_front_flipcheck;
 }
 
 /*---211_50006000-*/
@@ -703,22 +715,34 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback_year_back_pantogra
  default: sw_211group_gfx_rev_21156_back_sarm_flipcheck;
 }
 
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback_sameid_vehid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
-1:sw_211group_gfx_rev_21156_front_flipcheck;
-0:sw_211group_gfx_rev_21156_frontback_year_back_pantograph;
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_21156_front_flipcheck;
+  0:sw_211group_gfx_rev_21156_frontback_year_back_pantograph;
 }
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2015:sw_211group_gfx_rev_21156_frontback_sameid_vehid;
-1000:sw_211group_gfx_rev_21156_front_flipcheck;
-default:sw_211group_gfx_rev_21156_frontback_year_back_pantograph;
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback_aftermucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_21156_frontback_year_back_pantograph;
+  0:sw_211group_gfx_rev_21156_front_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback_mucarcheck, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000:sw_211group_gfx_rev_21156_frontback_aftermucars;
+  default:sw_211group_gfx_rev_21156_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  2015:sw_211group_gfx_rev_21156_frontback_mucarcheck;
+  1000:sw_211group_gfx_rev_21156_front_flipcheck;
+  default:sw_211group_gfx_rev_21156_frontback_year_back_pantograph;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2015:sw_211group_gfx_rev_21156_frontback_sameid;
-1000:sw_211group_gfx_rev_21156_frontback_year_back_pantograph;
-default:sw_211group_gfx_rev_21156_front_flipcheck;
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  2015:sw_211group_gfx_rev_21156_sameid;
+  1000:sw_211group_gfx_rev_21156_frontback_year_back_pantograph;
+  default:sw_211group_gfx_rev_21156_front_flipcheck;
 }
 
 /*---213---*/
@@ -795,22 +819,34 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_front_flipcheck, vehicle_is_fl
  default: sw_211group_gfx_rev_213_revflip_front_livery;
 }
 
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback_sameid_vehid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
-1:sw_211group_gfx_rev_213_front_flipcheck;
-0:sw_211group_gfx_rev_213_back_flipcheck;
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_213_front_flipcheck;
+  0:sw_211group_gfx_rev_213_back_flipcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2010:sw_211group_gfx_rev_213_frontback_sameid_vehid;
-1000:sw_211group_gfx_rev_213_front_flipcheck;
-default:sw_211group_gfx_rev_213_back_flipcheck;
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback_aftermucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_213_back_flipcheck;
+  0:sw_211group_gfx_rev_213_front_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback_mucarcheck, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000:sw_211group_gfx_rev_213_frontback_aftermucars;
+  default:sw_211group_gfx_rev_213_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  2015:sw_211group_gfx_rev_213_frontback_mucarcheck;
+  1000:sw_211group_gfx_rev_213_front_flipcheck;
+  default:sw_211group_gfx_rev_213_back_flipcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2010:sw_211group_gfx_rev_213_frontback_sameid;
-1000:sw_211group_gfx_rev_213_back_flipcheck;
-default:sw_211group_gfx_rev_213_front_flipcheck;
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  2015:sw_211group_gfx_rev_213_sameid;
+  1000:sw_211group_gfx_rev_213_back_flipcheck;
+  default:sw_211group_gfx_rev_213_front_flipcheck;
 }
 
 /*---311---*/
@@ -835,22 +871,35 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback_year_back_pantograph
  default: sw_211group_gfx_rev_311_back_sarm_flipcheck;
 }
 
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback_sameid_vehid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
-1:sw_211group_gfx_rev_311_front_flipcheck;
-0:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
+
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_311_front_flipcheck;
+  0:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
 }
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2023:sw_211group_gfx_rev_311_frontback_sameid_vehid;
-1000:sw_211group_gfx_rev_311_front_flipcheck;
-default:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback_aftermucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
+  0:sw_211group_gfx_rev_311_front_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback_mucarcheck, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000:sw_211group_gfx_rev_311_frontback_aftermucars;
+  default:sw_211group_gfx_rev_311_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  2015:sw_211group_gfx_rev_311_frontback_mucarcheck;
+  1000:sw_211group_gfx_rev_311_front_flipcheck;
+  default:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2023:sw_211group_gfx_rev_311_frontback_sameid;
-1000:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
-default:sw_211group_gfx_rev_311_front_flipcheck;
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  2015:sw_211group_gfx_rev_311_sameid;
+  1000:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
+  default:sw_211group_gfx_rev_311_front_flipcheck;
 }
 
 /*---313---*/
@@ -887,22 +936,35 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback_refit_pantograph, [S
  0: sw_211group_gfx_rev_313_back_onep_flipcheck;
 }
 
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback_sameid_vehid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
-1:sw_211group_gfx_rev_313_front_flipcheck;
-0:sw_211group_gfx_rev_313_frontback_refit_pantograph;
+
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_313_front_flipcheck;
+  0:sw_211group_gfx_rev_313_frontback_refit_pantograph;
 }
-switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2024:sw_211group_gfx_rev_313_frontback_sameid_vehid;
-1000:sw_211group_gfx_rev_313_front_flipcheck;
-default:sw_211group_gfx_rev_313_frontback_refit_pantograph;
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback_aftermucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_211group_gfx_rev_313_frontback_refit_pantograph;
+  0:sw_211group_gfx_rev_313_front_flipcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback_mucarcheck, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000:sw_211group_gfx_rev_313_frontback_aftermucars;
+  default:sw_211group_gfx_rev_313_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  2015:sw_211group_gfx_rev_313_frontback_mucarcheck;
+  1000:sw_211group_gfx_rev_313_front_flipcheck;
+  default:sw_211group_gfx_rev_313_frontback_refit_pantograph;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-2024:sw_211group_gfx_rev_313_frontback_sameid;
-1000:sw_211group_gfx_rev_313_frontback_refit_pantograph;
-default:sw_211group_gfx_rev_313_front_flipcheck;
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  2015:sw_211group_gfx_rev_313_sameid;
+  1000:sw_211group_gfx_rev_313_frontback_refit_pantograph;
+  default:sw_211group_gfx_rev_313_front_flipcheck;
 }
 
 /*---Main ID Sorting and Detection---*/

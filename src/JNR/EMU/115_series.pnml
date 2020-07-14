@@ -170,7 +170,7 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback_aftermucars,
   1:sw_115_gfx_rev_back_pantocheck;
   0:sw_115_gfx_rev_front_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback2, 
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback_mucarcheck, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
 STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
 var[0x61, 0, 0x0000FFFF, 0xC6]]){
@@ -179,7 +179,7 @@ var[0x61, 0, 0x0000FFFF, 0xC6]]){
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback_sameid, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2025:sw_115_gfx_rev_frontback2;
+  2025:sw_115_gfx_rev_frontback_mucarcheck;
   1000:sw_115_gfx_rev_front_flippedcheck;
   default:sw_115_gfx_rev_back_pantocheck;
 }
