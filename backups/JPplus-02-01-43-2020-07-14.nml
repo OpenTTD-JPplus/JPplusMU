@@ -1686,13 +1686,9 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_chukyo, vehicle_is_rev
 }
 
 //211 Shonan
-switch(FEAT_TRAINS, SELF, sw_211_gfx_back_shonan_pantograph_check, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-0..3:    spriteset_211_back_darm_shonan;
-4..255:   spriteset_211_back_shonan;
-}
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_withcheck_shonan, vehicle_is_flipped){
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_nopanto_shonan, vehicle_is_flipped){
  0: spriteset_211_front_shonan;
- default: sw_211_gfx_back_shonan_pantograph_check;
+ default: spriteset_211_back_shonan;
 }
 switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_shonan, vehicle_is_flipped){
  0: spriteset_211_front_shonan;
@@ -1702,9 +1698,13 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_dupanto_shonan, vehicle
  0: spriteset_211_front_shonan;
  default: spriteset_211_back_dual_shonan;
 }
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_shonan, [STORE_TEMP(position_in_consist-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+0..3:    sw_211_gfx_frontback_flipcheck_panto_shonan;
+4..99: sw_211_gfx_frontback_flipcheck_nopanto_shonan;
+}
 switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_typecheck_shonan, cargo_subtype) {
 2:       sw_211_gfx_frontback_flipcheck_dupanto_shonan;
-3..4:       sw_211_gfx_frontback_flipcheck_panto_withcheck_shonan;
+3..4:       sw_211_gfx_frontback_lengthcheck_shonan;
 default: sw_211_gfx_frontback_flipcheck_panto_shonan;
 }
 switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
@@ -1731,16 +1731,20 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_boso, vehicle_is_rever
 }
 
 //211 Nagano
-switch(FEAT_TRAINS, SELF, sw_211_gfx_back_nagano_pantograph_check, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-0..3:    spriteset_211_back_sarm_nagano;
-4..255:   spriteset_211_back_nagano;
-}
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_nagano, vehicle_is_flipped){
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_nopanto_nagano, vehicle_is_flipped){
  0: spriteset_211_front_nagano;
- default: sw_211_gfx_back_nagano_pantograph_check;
+ default: spriteset_211_back_nagano;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_nagano, vehicle_is_flipped){
+ 0: spriteset_211_front_nagano;
+ default: spriteset_211_back_sarm_nagano;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_nagano, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+0..3:   sw_211_gfx_frontback_flipcheck_panto_nagano;
+4..255: sw_211_gfx_frontback_flipcheck_nopanto_nagano;
 }
 switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_nagano, vehicle_is_reversed){
- 0: sw_211_gfx_frontback_flipcheck_nagano;
+ 0: sw_211_gfx_frontback_lengthcheck_nagano;
  default: sw_211group_gfx_rev_idcheck;
 }
 

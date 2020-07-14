@@ -1686,13 +1686,14 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_chukyo, vehicle_is_rev
 }
 
 //211 Shonan
-switch(FEAT_TRAINS, SELF, sw_211_gfx_back_shonan_pantograph_check, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-0..3:    spriteset_211_back_darm_shonan;
-4..255:   spriteset_211_back_shonan;
+switch(FEAT_TRAINS, PARENT, sw_211_gfx_year_back_shonan_pantograph_check, [STORE_TEMP(position_in_consist+1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+0..3:    spriteset_211_back_chukyo;
+4..99:   spriteset_211_back_shonan;
 }
+
 switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_withcheck_shonan, vehicle_is_flipped){
  0: spriteset_211_front_shonan;
- default: sw_211_gfx_back_shonan_pantograph_check;
+ default: sw_211_gfx_year_back_shonan_pantograph_check;
 }
 switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_shonan, vehicle_is_flipped){
  0: spriteset_211_front_shonan;
@@ -1731,16 +1732,20 @@ switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_boso, vehicle_is_rever
 }
 
 //211 Nagano
-switch(FEAT_TRAINS, SELF, sw_211_gfx_back_nagano_pantograph_check, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-0..3:    spriteset_211_back_sarm_nagano;
-4..255:   spriteset_211_back_nagano;
-}
-switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_nagano, vehicle_is_flipped){
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_nopanto_nagano, vehicle_is_flipped){
  0: spriteset_211_front_nagano;
- default: sw_211_gfx_back_nagano_pantograph_check;
+ default: spriteset_211_back_nagano;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_flipcheck_panto_nagano, vehicle_is_flipped){
+ 0: spriteset_211_front_nagano;
+ default: spriteset_211_back_sarm_nagano;
+}
+switch(FEAT_TRAINS, SELF, sw_211_gfx_frontback_lengthcheck_nagano, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+0..3:   sw_211_gfx_frontback_flipcheck_panto_nagano;
+4..255: sw_211_gfx_frontback_flipcheck_nopanto_nagano;
 }
 switch(FEAT_TRAINS, PARENT, sw_211_gfx_frontback_revcheck_nagano, vehicle_is_reversed){
- 0: sw_211_gfx_frontback_flipcheck_nagano;
+ 0: sw_211_gfx_frontback_lengthcheck_nagano;
  default: sw_211group_gfx_rev_idcheck;
 }
 
