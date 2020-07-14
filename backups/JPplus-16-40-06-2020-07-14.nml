@@ -1696,7 +1696,7 @@ switch(FEAT_TRAINS,SELF, sw_115_gfx_pantograph_pos_shonan_over7, position_in_veh
 switch(FEAT_TRAINS,SELF, sw_115_gfx_pantograph_pos_shonan_8cars, position_in_vehid_chain%7){
   0: spriteset_115_mid_panto_shonan;
   1: spriteset_115_revflip_front_shonan;
-  4: spriteset_115_front_shonan;
+  4: spriteset_115_rev_front_shonan;
   5: spriteset_115_mid_panto_shonan;
   default: spriteset_115_mid_shonan;
 }
@@ -1804,7 +1804,7 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_over7, [STORE_TEMP(posit
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_8cars, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%7]){ //look at opposite position_in_vehID_chain
   0: sw_115_gfx_rev_mid_panto_flippedcheck;
   1: sw_115_gfx_rev_back_flippedcheck;
-  4: sw_115_gfx_rev_front_flippedcheck;
+  4: sw_115_gfx_rev_back_flippedcheck;
   5: sw_115_gfx_rev_mid_panto_flippedcheck;
   default: sw_115_gfx_rev_mid_flippedcheck;
 }

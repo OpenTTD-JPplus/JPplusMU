@@ -1696,7 +1696,7 @@ switch(FEAT_TRAINS,SELF, sw_115_gfx_pantograph_pos_shonan_over7, position_in_veh
 switch(FEAT_TRAINS,SELF, sw_115_gfx_pantograph_pos_shonan_8cars, position_in_vehid_chain%7){
   0: spriteset_115_mid_panto_shonan;
   1: spriteset_115_revflip_front_shonan;
-  4: spriteset_115_front_shonan;
+  4: spriteset_115_rev_front_shonan;
   5: spriteset_115_mid_panto_shonan;
   default: spriteset_115_mid_shonan;
 }
