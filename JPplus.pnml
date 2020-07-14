@@ -33,6 +33,7 @@
 #include "src/OTHER/mucar.pnml"
 
 //JNR
+#include "src/JNR/EMU/115_series.pnml"
 #include "src/JNR/EMU/211_series.pnml"
 #include "src/JNR/EMU/213_series.pnml"
 

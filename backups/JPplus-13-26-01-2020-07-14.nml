@@ -1699,15 +1699,15 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //115 Shonan
-switch(FEAT_TRAINS, SELF, sw_115_gfx_back_pantocheck_shonan, position_in_vehid_chain){
- 0: spriteset_115_back_shonan;
- default: spriteset_115_back_panto_shonan;
+switch(FEAT_TRAINS, SELF, sw_115_gfx_back_pantocheck_shonan, [STORE_TEMP(position_in_vehid_chain+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+ 2025: spriteset_115_back_panto_shonan;
+ default:spriteset_115_back_shonan;
 }
 switch(FEAT_TRAINS, PARENT, sw_115_gfx_front_revcheck_shonan, vehicle_is_reversed){
  0: spriteset_115_front_shonan;
 //default: sw_115_gfx_rev_idcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_back_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_115_gfx_back_revcheck_shonan, vehicle_is_reversed){
  0: sw_115_gfx_back_pantocheck_shonan;
  //default: sw_115_gfx_rev_idcheck;
 }

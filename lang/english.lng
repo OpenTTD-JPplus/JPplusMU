@@ -39,6 +39,10 @@ JNR_kiha40 :KiHa 40 Series {WHITE}(DMU)
 JNR_kiha48 :KiHa 48 Series {WHITE}(DMU)
 JNR_kiha54 :KiHa 54 Series {WHITE}(DMU)
 JNR_kiha58 :KiHa 56/57/58 Series {WHITE}(DMU)
+
+JNR_115 :115 Series {WHITE}(EMU)
+
+
 JNR_205  :205 Series {WHITE}(EMU)
 JNR_211  :211 Series {WHITE}(EMU)
 JNR_21156:211-5000/6000 Series {WHITE}(EMU)
@@ -350,3 +354,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 313 Series
     JRC_313_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+
+# 115 Series
+    JNR_115_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)

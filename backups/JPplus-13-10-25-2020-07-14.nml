@@ -404,7 +404,6 @@ item(FEAT_TRAINS, emu_jrw207, 2017) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_E331, 2022) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_311, 2023) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_313, 2024) {} //211emu 0x7E1
-item(FEAT_TRAINS, emu_115, 2025) {} //107emu 0x7E2
 
 
 item(FEAT_TRAINS, DH_E851, 4000) {} //E851
@@ -427,7 +426,6 @@ dmu_kiha40,
 dmu_kiha48,
 dmu_kiha54,
 dmu_kiha58,
-emu_115,
 emu_205,
 emu_211,
 emu_213,
@@ -1699,15 +1697,15 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //115 Shonan
-switch(FEAT_TRAINS, SELF, sw_115_gfx_back_pantocheck_shonan, position_in_vehid_chain){
- 0: spriteset_115_back_shonan;
- default: spriteset_115_back_panto_shonan;
+switch(FEAT_TRAINS, SELF, sw_115_gfx_back_pantocheck_shonan, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+ 0: spriteset_115_back_panto_shonan;
+ default: spriteset_115_back_shonan;
 }
 switch(FEAT_TRAINS, PARENT, sw_115_gfx_front_revcheck_shonan, vehicle_is_reversed){
  0: spriteset_115_front_shonan;
 //default: sw_115_gfx_rev_idcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_back_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_115_gfx_back_revcheck_shonan, vehicle_is_reversed){
  0: sw_115_gfx_back_pantocheck_shonan;
  //default: sw_115_gfx_rev_idcheck;
 }

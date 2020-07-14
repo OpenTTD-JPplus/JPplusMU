@@ -404,7 +404,6 @@ item(FEAT_TRAINS, emu_jrw207, 2017) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_E331, 2022) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_311, 2023) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_313, 2024) {} //211emu 0x7E1
-item(FEAT_TRAINS, emu_115, 2025) {} //107emu 0x7E2
 
 
 item(FEAT_TRAINS, DH_E851, 4000) {} //E851
@@ -427,7 +426,6 @@ dmu_kiha40,
 dmu_kiha48,
 dmu_kiha54,
 dmu_kiha58,
-emu_115,
 emu_205,
 emu_211,
 emu_213,
@@ -1575,8 +1573,8 @@ item(FEAT_TRAINS, mu_car) {
 # 1 "src/JNR/EMU/115_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
-spriteset (spriteset_115_purchase,	                                                    "gfx/JNR/emu115/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_115_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu115/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+spriteset (spriteset_115_purchase,	                                                     "gfx/JRE/emu115/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_115_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emu115/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
 
 //115 Shonan
 spriteset (spriteset_115_front_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -1586,10 +1584,10 @@ spriteset (spriteset_115_back_panto_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_
 spriteset (spriteset_115_mid_panto_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_115_front_shonan,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std(0, 1)}
-alternative_sprites(spriteset_115_back_shonan,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_115_back_shonan,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std(0, 26)}
 alternative_sprites(spriteset_115_mid_shonan,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-3_32bpp.png")        {tmpl_std(0, 1)}
-alternative_sprites(spriteset_115_back_panto_shonan,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-2_32bpp.png")        {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_115_mid_panto_shonan,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-4_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_115_back_panto_shonan,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-3_32bpp.png")        {tmpl_std(0, 26)}
+alternative_sprites(spriteset_115_mid_panto_shonan,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-2_32bpp.png")        {tmpl_std(0, 26)}
 
 /*---END OF SECTION---*/
 
@@ -1608,7 +1606,7 @@ switch(FEAT_TRAINS,SELF, sw_115_gfx_pantograph_pos_shonan_over7, position_in_veh
   default: spriteset_115_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_115_gfx_pantograph_pos_shonan, num_vehs_in_vehid_chain){
-  0..4: sw_115_gfx_pantograph_pos_shonan_under7;
+  0..3: sw_115_gfx_pantograph_pos_shonan_under7;
   default: sw_115_gfx_pantograph_pos_shonan_over7;
 }
 /*---END OF SECTION---*/
@@ -1699,15 +1697,15 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //115 Shonan
-switch(FEAT_TRAINS, SELF, sw_115_gfx_back_pantocheck_shonan, position_in_vehid_chain){
- 0: spriteset_115_back_shonan;
- default: spriteset_115_back_panto_shonan;
+switch(FEAT_TRAINS, PARENT, sw_115_gfx_back_pantocheck_shonan, [STORE_TEMP(position_in_vehid_chain-1, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+ 0: spriteset_115_back_panto_shonan;
+ default: spriteset_115_back_shonan;
 }
 switch(FEAT_TRAINS, PARENT, sw_115_gfx_front_revcheck_shonan, vehicle_is_reversed){
  0: spriteset_115_front_shonan;
 //default: sw_115_gfx_rev_idcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_back_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_115_gfx_back_revcheck_shonan, vehicle_is_reversed){
  0: sw_115_gfx_back_pantocheck_shonan;
  //default: sw_115_gfx_rev_idcheck;
 }
@@ -1801,7 +1799,7 @@ item(FEAT_TRAINS, emu_115) {
       graphics {
         default:                      sw_115_gfx_main;
 		    purchase:                 spriteset_115_purchase;
-		    additional_text:	      return string(JNR_115_DESC);
+		    additional_text:	      return string(JRE_115_DESC);
         cargo_subtype_text:           sw_115_subtypetext_main;
         can_attach_wagon:			  sw_115_attach_vehid;
         //start_stop:                   ;
