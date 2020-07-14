@@ -1579,41 +1579,17 @@ spriteset (spriteset_115_purchase,	                                             
 alternative_sprites(spriteset_115_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu115/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
 
 //115 Shonan
-spriteset (spriteset_115_front_shonan,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_back_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_mid_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_115_front_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_115_back_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_115_mid_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_115_back_panto_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_115_mid_panto_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_115_rev_front_shonan,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_rev_back_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_rev_mid_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_rev_back_panto_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_rev_mid_panto_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_115_revflip_front_shonan,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_revflip_back_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_revflip_mid_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_revflip_back_panto_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_115_revflip_mid_panto_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_115_front_shonan,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std(0, 1)}
 alternative_sprites(spriteset_115_back_shonan,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_115_mid_shonan,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-3_32bpp.png")        {tmpl_std(0, 1)}
 alternative_sprites(spriteset_115_back_panto_shonan,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-2_32bpp.png")        {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_115_mid_panto_shonan,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-4_32bpp.png")        {tmpl_std(0, 1)}
-
-alternative_sprites(spriteset_115_rev_front_shonan,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_115_rev_back_shonan,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std(0, 1)}
-alternative_sprites(spriteset_115_rev_mid_shonan,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-3_32bpp.png")        {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_115_rev_back_panto_shonan,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-2_32bpp.png")        {tmpl_std(0, 1)}
-alternative_sprites(spriteset_115_rev_mid_panto_shonan,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-4_32bpp.png")        {tmpl_std_rev(0, 1)}
-
-alternative_sprites(spriteset_115_revflip_front_shonan,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std(0, 26)}
-alternative_sprites(spriteset_115_revflip_back_shonan,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-1_32bpp.png")        {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_115_revflip_mid_shonan,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-3_32bpp.png")        {tmpl_std(0, 1)}
-alternative_sprites(spriteset_115_revflip_back_panto_shonan,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-2_32bpp.png")        {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_115_revflip_mid_panto_shonan,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu115/shonan/115-1-4_32bpp.png")        {tmpl_std(0, 1)}
 
 /*---END OF SECTION---*/
 
@@ -1640,135 +1616,83 @@ switch(FEAT_TRAINS,SELF, sw_115_gfx_pantograph_pos_shonan, num_vehs_in_vehid_cha
 
 
 /*---GFX: Train Reversing Switches---*/
+/*
 //Livery Selection
-switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_rev_front_shonan;
+switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_cab_livery_back, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  //1: spriteset_115_back_tk_rev;
+  0: spriteset_115_back_yk_rev;
 }
-switch(FEAT_TRAINS,SELF, sw_115_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_revflip_front_shonan;
+switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_cab_livery_front, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  //1: spriteset_115_front_tk_rev;
+  0: spriteset_115_front_yk_rev;
 }
-
-switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_rev_mid_panto_shonan;
+switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_cab_livery_front_flipped, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  //1: spriteset_115_front_tk;
+  0: spriteset_115_front_yk;
 }
-switch(FEAT_TRAINS,SELF, sw_115_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_revflip_mid_panto_shonan;
+switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_mucar_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  //1: spriteset_115_middle_tk_rev;
+  0: spriteset_115_middle_yk_rev;
 }
-
-switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_rev_mid_shonan;
+switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_mucar_livery_flipped, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  //1: spriteset_115_middle_tk;
+  0: spriteset_115_middle_yk;
 }
-switch(FEAT_TRAINS,SELF, sw_115_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_revflip_mid_shonan;
+switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_pantograph_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  //1: spriteset_115_midpan_tk_rev;
+  0: spriteset_115_midpan_yk_rev;
 }
-
-switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_rev_back_shonan;
-}
-switch(FEAT_TRAINS,SELF, sw_115_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_revflip_back_shonan;
-}
-
-switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_rev_back_panto_shonan;
-}
-switch(FEAT_TRAINS,SELF, sw_115_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-//1: ;
-0:spriteset_115_revflip_back_panto_shonan;
+switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_pantograph_livery_flipped, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  //1: spriteset_115_midpan_tk;
+  0: spriteset_115_midpan_yk;
 }
 
 //Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
-  1: sw_115_gfx_rev_front_livery;
- default: sw_115_gfx_revflip_front_livery;
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_flippedcheck_cab_front, vehicle_is_flipped) {
+  1: sw_115_gfx_rev_cab_livery_back;
+ default: sw_115_gfx_rev_cab_livery_front;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_mid_panto_flippedcheck, vehicle_is_flipped) {
-  1: sw_115_gfx_revflip_mid_panto_livery;
- default: sw_115_gfx_rev_mid_panto_livery;
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_flippedcheck_cab_back, vehicle_is_flipped) {
+  1: sw_115_gfx_rev_cab_livery_front;
+ default: sw_115_gfx_rev_cab_livery_back;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_mid_flippedcheck, vehicle_is_flipped) {
-  1: sw_115_gfx_revflip_mid_livery;
- default: sw_115_gfx_rev_mid_livery;
+
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_flippedcheck_pantograph_single, vehicle_is_flipped) {
+  1: sw_115_gfx_rev_pantograph_livery_flipped;
+ default: sw_115_gfx_rev_pantograph_livery;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_panto_flippedcheck, vehicle_is_flipped) {
-  1: sw_115_gfx_revflip_back_panto_livery;
- default: sw_115_gfx_rev_back_panto_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
-  1: sw_115_gfx_revflip_back_livery;
- default: sw_115_gfx_rev_back_livery;
+
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_flippedcheck_mucar, vehicle_is_flipped) {
+  1: sw_115_gfx_rev_mucar_livery_flipped;
+ default: sw_115_gfx_rev_mucar_livery;
 }
 
 //Pantograph Position Testing
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_under7, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){ //look at opposite position_in_vehID_chain
-  0: sw_115_gfx_rev_mid_panto_flippedcheck;
-  2: sw_115_gfx_rev_mid_panto_flippedcheck;
-  default: sw_115_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_over7, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){ //look at opposite position_in_vehID_chain
-  0: sw_115_gfx_rev_mid_panto_flippedcheck;
-  3: sw_115_gfx_rev_mid_panto_flippedcheck;
-  default: sw_115_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){ //look at opposite num_vehs_in_vehid_chain
-  0..4: sw_115_gfx_rev_pantograph_pos_under7;
-  default: sw_115_gfx_rev_pantograph_pos_over7;
-}
-switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_mid_refitcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){ //look at opposite refit livery id
-//1: ;
-0: sw_115_gfx_rev_pantograph_pos;
-}
-
-//Back Car Pantograph Testing
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){ //look at opposite position_in_vehID_chain
- 0: sw_115_gfx_rev_back_flippedcheck;
- default: sw_115_gfx_rev_back_panto_flippedcheck;
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){ //look at opposte position_in_vehID_chain
+  1: sw_115_gfx_rev_flippedcheck_pantograph_single;
+  7: sw_115_gfx_rev_flippedcheck_pantograph_single;
+  default: sw_115_gfx_rev_flippedcheck_mucar;
 }
 
 //ID Testing
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback_nomucars, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_115_gfx_rev_front_flippedcheck;
-  0:sw_115_gfx_rev_back_pantocheck;
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_cab_idcheck_behind, [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_115_gfx_rev_flippedcheck_cab_front;
+  2001: sw_115_gfx_rev_flippedcheck_cab_back;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback_aftermucars, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_115_gfx_rev_back_pantocheck;
-  0:sw_115_gfx_rev_front_flippedcheck;
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_cab_idcheck_infront, [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_115_gfx_rev_flippedcheck_cab_back;
+  2001: sw_115_gfx_rev_flippedcheck_cab_front;
+  default: sw_115_gfx_rev_cab_idcheck_behind;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback2, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
-STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
-var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000:sw_115_gfx_rev_frontback_aftermucars;
-  default:sw_115_gfx_rev_frontback_nomucars;
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_cab_frontcheck, position_in_consist){
+  0: sw_115_gfx_rev_cab_livery_front_flipped;
+  default: sw_115_gfx_rev_cab_idcheck_infront;
 }
-
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2025:sw_115_gfx_rev_frontback2;
-  1000:sw_115_gfx_rev_front_flippedcheck;
-  default:sw_115_gfx_rev_back_pantocheck;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
-  2025:sw_115_gfx_rev_frontback_sameid;
-  1000:sw_115_gfx_rev_back_pantocheck;
-  default:sw_115_gfx_rev_front_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
   1000: sw_115_gfx_rev_pantograph_pos;
-  2025: sw_115_gfx_rev_frontback;
+  2001: sw_115_gfx_rev_cab_frontcheck;
 }
+*/
 /*---END OF SECTION---*/
 
 
@@ -1779,13 +1703,27 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_back_pantocheck_shonan, position_in_vehid_c
  0: spriteset_115_back_shonan;
  default: spriteset_115_back_panto_shonan;
 }
+switch(FEAT_TRAINS, PARENT, sw_115_gfx_front_revcheck_shonan, vehicle_is_reversed){
+ 0: spriteset_115_front_shonan;
+//default: sw_115_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_115_gfx_back_revcheck_shonan, vehicle_is_reversed){
+ 0: sw_115_gfx_back_pantocheck_shonan;
+ //default: sw_115_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_115_gfx_frontback_shonan, vehicle_is_flipped) {
+  1: sw_115_gfx_back_revcheck_shonan;
+ default: sw_115_gfx_front_revcheck_shonan;
+}
+
+
 switch(FEAT_TRAINS, SELF, sw_115_gfx_frontback_flipcheck_shonan, vehicle_is_flipped){
  0: spriteset_115_front_shonan;
  default: sw_115_gfx_back_pantocheck_shonan;
 }
 switch(FEAT_TRAINS, PARENT, sw_115_gfx_frontback_revcheck_shonan, vehicle_is_reversed){
  0: sw_115_gfx_frontback_flipcheck_shonan;
- default: sw_115_gfx_rev_idcheck;
+ //default: sw_211group_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
 
@@ -1795,7 +1733,7 @@ switch(FEAT_TRAINS, PARENT, sw_115_gfx_frontback_revcheck_shonan, vehicle_is_rev
 //115 Shonan
 switch(FEAT_TRAINS, PARENT, sw_115_gfx_mucar_revcheck_mid_shonan, vehicle_is_reversed){
     0: sw_115_gfx_pantograph_pos_shonan;
-    default: sw_115_gfx_rev_idcheck;
+    //default: sw_115_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
 
