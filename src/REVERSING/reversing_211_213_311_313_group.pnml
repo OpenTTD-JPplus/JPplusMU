@@ -838,13 +838,13 @@ var[0x61, 0, 0x0000FFFF, 0xC6]]){
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_sameid, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2015:sw_211group_gfx_rev_213_frontback_mucarcheck;
+  2010:sw_211group_gfx_rev_213_frontback_mucarcheck;
   1000:sw_211group_gfx_rev_213_front_flipcheck;
   default:sw_211group_gfx_rev_213_back_flipcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_frontback, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
-  2015:sw_211group_gfx_rev_213_sameid;
+  2010:sw_211group_gfx_rev_213_sameid;
   1000:sw_211group_gfx_rev_213_back_flipcheck;
   default:sw_211group_gfx_rev_213_front_flipcheck;
 }
@@ -891,13 +891,13 @@ var[0x61, 0, 0x0000FFFF, 0xC6]]){
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_sameid, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2015:sw_211group_gfx_rev_311_frontback_mucarcheck;
+  2023:sw_211group_gfx_rev_311_frontback_mucarcheck;
   1000:sw_211group_gfx_rev_311_front_flipcheck;
   default:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_311_frontback, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
-  2015:sw_211group_gfx_rev_311_sameid;
+  2023:sw_211group_gfx_rev_311_sameid;
   1000:sw_211group_gfx_rev_311_frontback_year_back_pantograph;
   default:sw_211group_gfx_rev_311_front_flipcheck;
 }
@@ -956,13 +956,13 @@ var[0x61, 0, 0x0000FFFF, 0xC6]]){
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_sameid, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2015:sw_211group_gfx_rev_313_frontback_mucarcheck;
+  2024:sw_211group_gfx_rev_313_frontback_mucarcheck;
   1000:sw_211group_gfx_rev_313_front_flipcheck;
   default:sw_211group_gfx_rev_313_frontback_refit_pantograph;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_313_frontback, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
-  2015:sw_211group_gfx_rev_313_sameid;
+  2024:sw_211group_gfx_rev_313_sameid;
   1000:sw_211group_gfx_rev_313_frontback_refit_pantograph;
   default:sw_211group_gfx_rev_313_front_flipcheck;
 }
