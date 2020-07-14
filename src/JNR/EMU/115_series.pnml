@@ -3,7 +3,7 @@
 spriteset (spriteset_115_purchase,	                                                    "gfx/JNR/emu115/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_115_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu115/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
 
-//115 Shonan Orginal
+//115 Shonan Original
 spriteset (spriteset_115_front_shonan,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_115_back_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_115_mid_shonan,    		      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
