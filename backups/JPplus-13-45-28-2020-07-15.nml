@@ -2475,13 +2475,13 @@ switch(FEAT_TRAINS, PARENT, sw_213_gfx_frontback_revcheck_shonan, vehicle_is_rev
 /*---GFX: Middle Car Switches---*/
 
 //213 JRwest
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
+switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
  0: spriteset_213_mid_jrw;
  default: sw_211group_gfx_rev_idcheck;
 }
 
 //213 Shonan
-switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
+switch(FEAT_TRAINS, SELF, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
  0: spriteset_213_mid_jrw;
  default: sw_211group_gfx_rev_idcheck;
 }
