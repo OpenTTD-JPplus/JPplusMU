@@ -192,169 +192,382 @@ switch(FEAT_TRAINS, SELF, sw_113_gfx_spriteset_113_mid_sdgrcar_shonan, current_y
 
 
 /*---GFX: Pantograph Positions---*/
-
+ 
+//113 Shonan
 /*
-From 111 File:
-0-3: 0
-4: 0,2
-
-5: 0,3 + 2 CAB]
-5: 0,3 + 2 GRCAR
-
-6: 0,4, + 2 GRCAR, 3 [CAB
-6: 0,4, + 2 GRCAR, 3 GRCAR
-
-7: 0,3,5 + 2 CAB]
-7: 0,3,5 + 2 GRCAR
-
-8:  0,4,6 + 2 GRCAR, 3 [CAB
-8:  0,4,6 + 2 GRCAR, 3 GRCAR
-
-9:  0,4,7 + 2 GRCAR, 3 GRCAR, 6 for CAB]
-
-From 113 File Missing Consists not in 111:
-5: 0,3
-5: 0,3 + 2 GRCAR_NOBELT
-
-6: 0,4 + 2 GRCAR_NOBELT, 3 [CAB
-6: 0,4 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT
-6: 0,4 + 2 DD_OLD, 3 GRCAR_NOBELT
-6: 0,4 + 2 DD_NEW, 3 GRCAR_NOBELT
-
-7: 0,2,5 + 4 CAB]
-7: 0,3,5 + 2 GRCAR_NOBELT
-7: 0,5 + 2 GRCAR, 3 GRCAR, 4 [CAB
-7: 0,4 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT
-7: 0,4 + 2 DD_OLD, 3 GRCAR_NOBELT
-7: 0,4 + 2 DD_NEW, 3 GRCAR_NOBELT
-
-8: 0,4,6 + 2 GRCAR_NOBELT, 3 [CAB
-8: 0,3,6 + 2 GRCAR
-8: 0,3,6 + 2 GRCAR_NOBELT
-8: 0,4,6 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT
-8: 0,4,6 + 2 DD_OLD , 3 GRCAR_NOBELT
-8: 0,4,6 + 2 DD_NEW , 3 GRCAR_NOBELT
-9: 0,4,7 + 2 GRCAR, 3 GRCAR
-9: 0,4,7 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT
-9: 0,4,7 + 2 DD_OLD, 3 GRCAR_NOBELT
-9: 0,4,7 + 2 DD_NEW, 3 GRCAR_NOBELT
-
 COMBINED:
 0-3: 0                                      ALL - a,b,c,d,e,f,g,h
 4: 0,2                                      ALL - a,b,c,d,e,f,g,h
 
-5: 0,3 + 2 CAB]                             111 - b,g    
-5: 0,3 + 2 GRCAR                            111 - a,h
-5: 0,3                                      113 - c,d
-5: 0,3 + 2 GRCAR_NOBELT                     113 - e,f
+5a: 0,3 + 2 CAB]                             111 - a
+5b: 0,3 + 2 GRCAR                            111 - b
+5c: 0,3 + 2 GRCAR_NOBELT                     113 - c,d,e,g,h
+5d: 0,3                                      113 - f
 
-6: 0,4, + 2 GRCAR, 3 [CAB                   111 - b,g
-6: 0,4, + 2 GRCAR, 3 GRCAR                  111 - a,h
-6: 0,4 + 2 GRCAR_NOBELT, 3 [CAB             113 - f
-6: 0,4 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT     113 - e
-6: 0,4 + 2 DD_OLD, 3 GRCAR_NOBELT           113 - c
-6: 0,4 + 2 DD_NEW, 3 GRCAR_NOBELT           113 - d
+6a: 0,4, + 2 GRCAR, 3 [CAB                   111 - a
+6b: 0,4, + 2 GRCAR, 3 GRCAR                  111 - b,e
+6c: 0,4 + 2 GRCAR_NOBELT, 3 [CAB             113 - d,f
+6d: 0,4 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT     113 - c
+6e: 0,4 + 2 DD_OLD, 3 GRCAR_NOBELT           113 - g
+6f: 0,4 + 2 DD_NEW, 3 GRCAR_NOBELT           113 - h
 
+7a: 0,3,5 + 2 CAB]                           111 - a
+7b: 0,3,5 + 2 GRCAR                          111 - b
+7c: 0,2,5 + 4 CAB]                           113 - f
+7d: 0,3,5 + 2 GRCAR_NOBELT                   113 - d
+7e: 0,5 + 2 GRCAR, 3 GRCAR, 4 [CAB           113 - e
+7f: 0,4 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT     113 - c
+7g: 0,4 + 2 DD_OLD, 3 GRCAR_NOBELT           113 - g
+7h: 0,4 + 2 DD_NEW, 3 GRCAR_NOBELT           113 - h
 
-7: 0,3,5 + 2 CAB]                           111 - b
-7: 0,3,5 + 2 GRCAR                          111 - a
-7: 0,2,5 + 4 CAB]                           113 - g
-7: 0,3,5 + 2 GRCAR_NOBELT                   113 - f
-7: 0,5 + 2 GRCAR, 3 GRCAR, 4 [CAB           113 - h
-7: 0,4 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT     113 - e
-7: 0,4 + 2 DD_OLD, 3 GRCAR_NOBELT           113 - c
-7: 0,4 + 2 DD_NEW, 3 GRCAR_NOBELT           113 - d
+8a: 0,4,6 + 2 GRCAR, 3 [CAB                  111 - a
+8b: 0,4,6 + 2 GRCAR, 3 GRCAR                 111 - b
+8c: 0,4,6 + 2 GRCAR_NOBELT, 3 [CAB           113 - d
+8d: 0,3,6 + 2 GRCAR                          113 - e
+8e: 0,3,6 + 2 GRCAR_NOBELT                   113 - f
+8f: 0,4,6 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT   113 - c
+8g: 0,4,6 + 2 DD_OLD , 3 GRCAR_NOBELT        113 - g
+8h: 0,4,6 + 2 DD_NEW , 3 GRCAR_NOBELT        113 - h
 
+9a: 0,4,7 + 2 GRCAR, 3 GRCAR, 6 for CAB]     111 - a,b
+9b: 0,4,7 + 2 GRCAR, 3 GRCAR                 113 - e,f
+9c: 0,4,7 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT   113 - c,d
+9d: 0,4,7 + 2 DD_OLD, 3 GRCAR_NOBELT         113 - g
+9e: 0,4,7 + 2 DD_NEW, 3 GRCAR_NOBELT         113 - h
 
-8: 0,4,6 + 2 GRCAR, 3 [CAB                  111 - b
-8: 0,4,6 + 2 GRCAR, 3 GRCAR                 111 - a
-8: 0,4,6 + 2 GRCAR_NOBELT, 3 [CAB           113 - g
-8: 0,3,6 + 2 GRCAR                          113 - h
-8: 0,3,6 + 2 GRCAR_NOBELT                   113 - f
-8: 0,4,6 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT   113 - e
-8: 0,4,6 + 2 DD_OLD , 3 GRCAR_NOBELT        113 - c
-8: 0,4,6 + 2 DD_NEW , 3 GRCAR_NOBELT        113 - d
-
-
-9: 0,4,7 + 2 GRCAR, 3 GRCAR, 6 for CAB]     111 - a,b,g
-9: 0,4,7 + 2 GRCAR, 3 GRCAR                 113 - h
-9: 0,4,7 + 2 GRCAR_NOBELT, 3 GRCAR_NOBELT   113 - e,f
-9: 0,4,7 + 2 DD_OLD, 3 GRCAR_NOBELT         113 - c
-9: 0,4,7 + 2 DD_NEW, 3 GRCAR_NOBELT         113 - d
-
-
-
-111 Shonan refit A:
->: 0
-4: 0,2
-5: 0,3  + 2 GRCAR
-6: 0,4  + 2 GRCAR + 3 GRCAR
-7: 0,3,5 +2 GRCAR
-8: 0,4,6 +2 GRCAR + 3 GRCAR
-9: 0,4,7 +2 GRCAR + 3 GRCAR + 6 CAB]
-
-111 Shonan refit B:
->: 0
-4: 0,2
-5: 0,3  + 2 CAB]
-6: 0,4  + 2 GRCAR + 3 [CAB
-7: 0,3,5 +2 CAB]
-8: 0,4,6 +2 GRCAR + 3 [CAB
-9: 0,4,7 +2 GRCAR + 3 GRCAR + 6 CAB]
-
-
-
-
-
-
-
-
-
-
+Shonan Livery (NO Green Car or SD Green Car Variations) f   0
+Shonan Livery (1 SD Green Car w/belt Variations) a          1
+Shonan Livery (1 SD Green Car Variations) d                 2
+Shonan Livery (1 or 2 SD Green Car w/belt Variations) e     3
+Shonan Livery (2 SD Green Car w/belt Variations) b          4
+Shonan Livery (2 SD Green Car Variations) c                 5
+Shonan Livery (DD Old/SD Green Car Variations) g            6
+Shonan Livery (DD New/SD Green Car Variations) h            7
 */
 
-
-
-
-
-
-
-
-//113 Shonan
-switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_under7, position_in_vehid_chain%4){
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_under3, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_4mucars, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
   2: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
-switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_over7, position_in_vehid_chain%5){
+
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_5_a, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //CAB]
+  3: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_5_b, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR
+  3: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_5_c, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_5_d, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
   3: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
-switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8cars, position_in_vehid_chain%7){
+
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_a, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  1: sw_113_gfx_spriteset_113_revflip_front_shonan;
-  4: sw_113_gfx_spriteset_113_front_shonan;
+  2: ; //GRCAR
+  3: ; //[CAB
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_b, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR
+  3: ; //GRCAR
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_c, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: ; //[CAB  
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_d, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_e, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //DD_OLD
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_f, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //DD_NEW
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_a, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //CAB] 
+  3: sw_113_gfx_spriteset_113_mid_panto_shonan;
   5: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
-switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8cars_greencar, position_in_vehid_chain%7){
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_b, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  1: sw_113_gfx_spriteset_113_revflip_front_shonan;
-  //3:165 Series Green Car;
-  4: sw_113_gfx_spriteset_113_front_shonan;
+  2: ; //GRCAR
+  3: sw_113_gfx_spriteset_113_mid_panto_shonan;
   5: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
-switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8cars_refitcheck, cargo_subtype){
-  //1: sw_113_gfx_pantograph_pos_shonan_8cars_greencar;
-  0: sw_113_gfx_pantograph_pos_shonan_8cars;
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_c, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  4: ; //CAB] 
+  5: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
 }
-switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan, num_vehs_in_vehid_chain){
-  0..4: sw_113_gfx_pantograph_pos_shonan_under7;
-  6: sw_113_gfx_pantograph_pos_shonan_8cars_refitcheck;
-  default: sw_113_gfx_pantograph_pos_shonan_over7;
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_d, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  5: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
 }
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_e, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR
+  3: ; //GRCAR
+  4: ; //[CAB
+  5: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_f, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_g, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //DD_OLD
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_h, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //DD_NEW
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_a, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR
+  3: ; //[CAB 
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_b, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR
+  3: ; //GRCAR
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_c, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: ; //[CAB
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_d, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR
+  3: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_e, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_f, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_g, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //DD_OLD
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_h, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //DD_NEW
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_a, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR
+  3: ; //GRCAR
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  6: ; //CAB]
+  7: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_b, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR
+  3: ; //GRCAR
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  7: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_c, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //GRCAR_NOBELT
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  7: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_d, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //DD_OLD
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  7: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_e, position_in_vehid_chain){
+  0: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  2: ; //DD_NEW
+  3: ; //GRCAR_NOBELT
+  4: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  7: sw_113_gfx_spriteset_113_mid_panto_shonan;
+  default: sw_113_gfx_spriteset_113_mid_shonan;
+}
+
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_0, num_vehs_in_vehid_chain){
+  0..3: sw_113_gfx_pantograph_pos_shonan_under3;
+  4: sw_113_gfx_pantograph_pos_shonan_4mucars;
+  5: sw_113_gfx_pantograph_pos_shonan_5_d;
+  6: sw_113_gfx_pantograph_pos_shonan_6_c;
+  7: sw_113_gfx_pantograph_pos_shonan_7_c;
+  8: sw_113_gfx_pantograph_pos_shonan_8_e;
+  default: sw_113_gfx_pantograph_pos_shonan_9_b;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_1, num_vehs_in_vehid_chain){
+  0..3: sw_113_gfx_pantograph_pos_shonan_under3;
+  4: sw_113_gfx_pantograph_pos_shonan_4mucars;
+  5: sw_113_gfx_pantograph_pos_shonan_5_a;
+  6: sw_113_gfx_pantograph_pos_shonan_6_a;
+  7: sw_113_gfx_pantograph_pos_shonan_7_a;
+  8: sw_113_gfx_pantograph_pos_shonan_8_a;
+  default: sw_113_gfx_pantograph_pos_shonan_9_a;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_2, num_vehs_in_vehid_chain){
+  0..3: sw_113_gfx_pantograph_pos_shonan_under3;
+  4: sw_113_gfx_pantograph_pos_shonan_4mucars;
+  5: sw_113_gfx_pantograph_pos_shonan_5_c;
+  6: sw_113_gfx_pantograph_pos_shonan_6_c;
+  7: sw_113_gfx_pantograph_pos_shonan_7_d;
+  8: sw_113_gfx_pantograph_pos_shonan_8_c;
+  default: sw_113_gfx_pantograph_pos_shonan_9_c;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_3, num_vehs_in_vehid_chain){
+  0..3: sw_113_gfx_pantograph_pos_shonan_under3;
+  4: sw_113_gfx_pantograph_pos_shonan_4mucars;
+  5: sw_113_gfx_pantograph_pos_shonan_5_c;
+  6: sw_113_gfx_pantograph_pos_shonan_6_b;
+  7: sw_113_gfx_pantograph_pos_shonan_7_e;
+  8: sw_113_gfx_pantograph_pos_shonan_8_d;
+  default: sw_113_gfx_pantograph_pos_shonan_9_b;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_4, num_vehs_in_vehid_chain){
+  0..3: sw_113_gfx_pantograph_pos_shonan_under3;
+  4: sw_113_gfx_pantograph_pos_shonan_4mucars;
+  5: sw_113_gfx_pantograph_pos_shonan_5_b;
+  6: sw_113_gfx_pantograph_pos_shonan_6_b;
+  7: sw_113_gfx_pantograph_pos_shonan_7_b;
+  8: sw_113_gfx_pantograph_pos_shonan_8_b;
+  default: sw_113_gfx_pantograph_pos_shonan_9_a;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_5, num_vehs_in_vehid_chain){
+  0..3: sw_113_gfx_pantograph_pos_shonan_under3;
+  4: sw_113_gfx_pantograph_pos_shonan_4mucars;
+  5: sw_113_gfx_pantograph_pos_shonan_5_c;
+  6: sw_113_gfx_pantograph_pos_shonan_6_d;
+  7: sw_113_gfx_pantograph_pos_shonan_7_f;
+  8: sw_113_gfx_pantograph_pos_shonan_8_f;
+  default: sw_113_gfx_pantograph_pos_shonan_9_c;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6, num_vehs_in_vehid_chain){
+  0..3: sw_113_gfx_pantograph_pos_shonan_under3;
+  4: sw_113_gfx_pantograph_pos_shonan_4mucars;
+  5: sw_113_gfx_pantograph_pos_shonan_5_c;
+  6: sw_113_gfx_pantograph_pos_shonan_6_e;
+  7: sw_113_gfx_pantograph_pos_shonan_7_g;
+  8: sw_113_gfx_pantograph_pos_shonan_8_g;
+  default: sw_113_gfx_pantograph_pos_shonan_9_d;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7, num_vehs_in_vehid_chain){
+  0..3: sw_113_gfx_pantograph_pos_shonan_under3;
+  4: sw_113_gfx_pantograph_pos_shonan_4mucars;
+  5: sw_113_gfx_pantograph_pos_shonan_5_c;
+  6: sw_113_gfx_pantograph_pos_shonan_6_f;
+  7: sw_113_gfx_pantograph_pos_shonan_7_h;
+  8: sw_113_gfx_pantograph_pos_shonan_8_h;
+  default: sw_113_gfx_pantograph_pos_shonan_9_e;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan, cargo_subtype){
+  0: sw_113_gfx_pantograph_pos_shonan_0;
+  1: sw_113_gfx_pantograph_pos_shonan_1;
+  2: sw_113_gfx_pantograph_pos_shonan_2;
+  3: sw_113_gfx_pantograph_pos_shonan_3;
+  4: sw_113_gfx_pantograph_pos_shonan_4;
+  5: sw_113_gfx_pantograph_pos_shonan_5;
+  6: sw_113_gfx_pantograph_pos_shonan_6;
+  7: sw_113_gfx_pantograph_pos_shonan_7;
+}
+
 /*---END OF SECTION---*/
 
 
