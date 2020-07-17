@@ -428,7 +428,6 @@ dmu_kiha40,
 dmu_kiha48,
 dmu_kiha54,
 dmu_kiha58,
-emu_113,
 emu_115,
 emu_205,
 emu_211,
@@ -1695,7 +1694,7 @@ spriteset (spriteset_113_mid_panto_shonan_ac,    		      "gfx/OTHER/mucar.png") 
 spriteset (spriteset_113_mid_sdgrcarbelt_shonan_ac,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_113_mid_sdgrcarnobelt_shonan_ac,    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_113_mid_ddgrcarold_shonan_ac,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_113_mid_ddgrcarnew_shonan_ac,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_113_mid_ddgrcarnew__shonan_ac,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 spriteset (spriteset_113_rev_front_shonan_ac,    	    	      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_113_rev_back_shonan_ac,    		          "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -1705,7 +1704,7 @@ spriteset (spriteset_113_rev_mid_panto_shonan_ac,    		      "gfx/OTHER/mucar.pn
 spriteset (spriteset_113_rev_mid_sdgrcarbelt_shonan_ac,     	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_113_rev_mid_sdgrcarnobelt_shonan_ac,     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_113_rev_mid_ddgrcarold_shonan_ac,        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_113_rev_mid_ddgrcarnew_shonan_ac,  	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_113_rev_mid_ddgrcarnew__shonan_ac,  	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 spriteset (spriteset_113_revflip_front_shonan_ac,    	                "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_113_revflip_back_shonan_ac,    		              "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -1715,7 +1714,7 @@ spriteset (spriteset_113_revflip_mid_panto_shonan_ac,    	            "gfx/OTHER
 spriteset (spriteset_113_revflip_mid_sdgrcarbelt_shonan_ac,    	      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac,    		  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_113_revflip_mid_ddgrcarold_shonan_ac,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
-spriteset (spriteset_113_revflip_mid_ddgrcarnew_shonan_ac,           "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_113_revflip_mid_ddgrcarnew__shonan_ac,           "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_113_front_shonan_ac,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-1_32bpp.png")        {tmpl_std(0, 1)}
 alternative_sprites(spriteset_113_back_shonan_ac,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-1_32bpp.png")        {tmpl_std_rev(0, 26)}
@@ -1724,8 +1723,8 @@ alternative_sprites(spriteset_113_back_panto_shonan_ac,            ZOOM_LEVEL_NO
 alternative_sprites(spriteset_113_mid_panto_shonan_ac,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-4_32bpp.png")        {tmpl_std(0, 1)}
 alternative_sprites(spriteset_113_mid_sdgrcarbelt_shonan_ac,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std(0, 1)}
 alternative_sprites(spriteset_113_mid_sdgrcarnobelt_shonan_ac,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-6_32bpp.png")        {tmpl_std(0, 1)}
-alternative_sprites(spriteset_113_mid_ddgrcarold_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-7_32bpp.png")        {tmpl_std(0, 1)}
-alternative_sprites(spriteset_113_mid_ddgrcarnew_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-8_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_113_mid_ddgrcarold_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std(0, 1)}
+alternative_sprites(spriteset_113_mid_ddgrcarnew__shonan_ac,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std(0, 1)}
 
 alternative_sprites(spriteset_113_rev_front_shonan_ac,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-1_32bpp.png")        {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_113_rev_back_shonan_ac,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-1_32bpp.png")        {tmpl_std(0, 1)}
@@ -1734,8 +1733,8 @@ alternative_sprites(spriteset_113_rev_back_panto_shonan_ac,            ZOOM_LEVE
 alternative_sprites(spriteset_113_rev_mid_panto_shonan_ac,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-4_32bpp.png")        {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_113_rev_mid_sdgrcarbelt_shonan_ac,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_113_rev_mid_sdgrcarnobelt_shonan_ac,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-6_32bpp.png")        {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_113_rev_mid_ddgrcarold_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-7_32bpp.png")        {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_113_rev_mid_ddgrcarnew_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-8_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_113_rev_mid_ddgrcarold_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_113_rev_mid_ddgrcarnew__shonan_ac,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std_rev(0, 1)}
 
 alternative_sprites(spriteset_113_revflip_front_shonan_ac,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-1_32bpp.png")        {tmpl_std(0, 26)}
 alternative_sprites(spriteset_113_revflip_back_shonan_ac,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-1_32bpp.png")        {tmpl_std_rev(0, 1)}
@@ -1744,8 +1743,8 @@ alternative_sprites(spriteset_113_revflip_back_panto_shonan_ac,            ZOOM_
 alternative_sprites(spriteset_113_revflip_mid_panto_shonan_ac,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-4_32bpp.png")        {tmpl_std(0, 1)}
 alternative_sprites(spriteset_113_revflip_mid_sdgrcarbelt_shonan_ac,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-6_32bpp.png")        {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_113_revflip_mid_ddgrcarold_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-7_32bpp.png")        {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_113_revflip_mid_ddgrcarnew_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-8_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_113_revflip_mid_ddgrcarold_shonan_ac,        ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_113_revflip_mid_ddgrcarnew_shonan_ac,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu111_113/shonan/113-1-5_32bpp.png")        {tmpl_std_rev(0, 1)}
 /*---END OF SECTION---*/
 
 
@@ -1910,7 +1909,7 @@ switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_5_b, position_in_vehid
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_5_c, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   3: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
@@ -1929,36 +1928,36 @@ switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_a, position_in_vehid
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_b, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: sw_113_gfx_spriteset_113_mid_sdgrcar_shonan; //GRCAR
-  3: sw_113_gfx_spriteset_113_mid_sdgrcar_shonan; //GRCAR
+  2: sw_113_gfx_spriteset_113_rev_mid_sdgrcar_shonan; //GRCAR
+  3: sw_113_gfx_spriteset_113_rev_mid_sdgrcar_shonan; //GRCAR
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_c, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   3: sw_113_gfx_spriteset_113_front_shonan; //[CAB  
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_d, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_e, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_ddgrcarold_shonan_ac; //DD_OLD
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_ddgrcarold_shonan_ac; //DD_OLD
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_6_f, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_ddgrcarnew_shonan_ac; //DD_NEW
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_ddgrcarnew_shonan_ac; //DD_NEW
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
@@ -1986,7 +1985,7 @@ switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_c, position_in_vehid
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_d, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   3: sw_113_gfx_spriteset_113_mid_panto_shonan;
   5: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
@@ -2001,22 +2000,22 @@ switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_e, position_in_vehid
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_f, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_g, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_ddgrcarold_shonan_ac; //DD_OLD
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_ddgrcarold_shonan_ac; //DD_OLD
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_7_h, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_ddgrcarnew_shonan_ac; //DD_NEW
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_ddgrcarnew_shonan_ac; //DD_NEW
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
@@ -2039,7 +2038,7 @@ switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_b, position_in_vehid
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_c, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   3: sw_113_gfx_spriteset_113_front_shonan; //[CAB
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   6: sw_113_gfx_spriteset_113_mid_panto_shonan;
@@ -2054,31 +2053,31 @@ switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_d, position_in_vehid
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_e, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   3: sw_113_gfx_spriteset_113_mid_panto_shonan;
   6: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_f, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   6: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_g, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_ddgrcarold_shonan_ac; //DD_OLD
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_ddgrcarold_shonan_ac; //DD_OLD
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   6: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_8_h, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_ddgrcarnew_shonan_ac; //DD_NEW
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_ddgrcarnew_shonan_ac; //DD_NEW
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   6: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
@@ -2103,24 +2102,24 @@ switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_b, position_in_vehid
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_c, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   7: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_d, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_ddgrcarold_shonan_ac; //DD_OLD
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_ddgrcarold_shonan_ac; //DD_OLD
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   7: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_pantograph_pos_shonan_9_e, position_in_vehid_chain){
   0: sw_113_gfx_spriteset_113_mid_panto_shonan;
-  2: spriteset_113_mid_ddgrcarnew_shonan_ac; //DD_NEW
-  3: spriteset_113_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
+  2: spriteset_113_revflip_mid_ddgrcarnew_shonan_ac; //DD_NEW
+  3: spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac; //GRCAR_NOBELT
   4: sw_113_gfx_spriteset_113_mid_panto_shonan;
   7: sw_113_gfx_spriteset_113_mid_panto_shonan;
   default: sw_113_gfx_spriteset_113_mid_shonan;
@@ -2261,6 +2260,15 @@ sw_113_gfx_spriteset_113_revflip_back_panto_shonan;
 }
 
 switch(FEAT_TRAINS,SELF, sw_113_gfx_rev_mid_sdgrcar_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+
+sw_113_gfx_spriteset_113_rev_mid_sdgrcar_shonan;
+}
+switch(FEAT_TRAINS,SELF, sw_113_gfx_revflip_mid_sdgrcar_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+
+sw_113_gfx_spriteset_113_revflip_mid_sdgrcar_shonan;
+}
+
+switch(FEAT_TRAINS,SELF, sw_113_gfx_rev_mid_sdgrcar_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 4: sw_113_gfx_spriteset_113_rev_mid_sdgrcar_shonan;
 1: sw_113_gfx_spriteset_113_rev_mid_sdgrcar_shonan;
 
@@ -2275,11 +2283,11 @@ spriteset_113_revflip_mid_sdgrcarnobelt_shonan_ac;
 
 switch(FEAT_TRAINS,SELF, sw_113_gfx_rev_mid_ddgrcar_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 6: spriteset_113_rev_mid_ddgrcarold_shonan_ac;
-spriteset_113_rev_mid_ddgrcarnew_shonan_ac;
+spriteset_113_rev_mid_ddgrcarnew__shonan_ac;
 }
 switch(FEAT_TRAINS,SELF, sw_113_gfx_revflip_mid_ddgrcar_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 6: spriteset_113_revflip_mid_ddgrcarold_shonan_ac;
-spriteset_113_revflip_mid_ddgrcarnew_shonan_ac;
+spriteset_113_revflip_mid_ddgrcarnew__shonan_ac;
 }
 
 //Check for flipped vehicles (dual_headed)
@@ -2677,7 +2685,7 @@ switch(FEAT_TRAINS, SELF, sw_113_gfx_rev_frontback,
 
 //ID Testing
 switch(FEAT_TRAINS, SELF, sw_113_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
-  1000: sw_113_gfx_rev_mid_refitcheck;
+  1000: sw_113_gfx_rev_pantograph_pos;
   2026: sw_113_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
@@ -2773,7 +2781,7 @@ item(FEAT_TRAINS, emu_113) {
     property {
         name:                         string(JNR_113);
         introduction_date:            date(1962, 03, 01);
-        model_life:                   19;
+        model_life:                   20;
         vehicle_life:                 39;
         reliability_decay:            11;
 

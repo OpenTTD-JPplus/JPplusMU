@@ -40,6 +40,7 @@ JNR_kiha48 :KiHa 48 Series {WHITE}(DMU)
 JNR_kiha54 :KiHa 54 Series {WHITE}(DMU)
 JNR_kiha58 :KiHa 56/57/58 Series {WHITE}(DMU)
 
+JNR_113 :111/113 Series {WHITE}(EMU)
 JNR_115 :115 Series {WHITE}(EMU)
 
 
@@ -207,6 +208,16 @@ KIHA111liv_HACHIKO    : Hachiko Line
 HKDLINER_LV           : Hakodate Liner
 
 
+SHONAN_113_LV_0       : Shonan Livery (NO Green Car or SD Green Car Variations)
+SHONAN_113_LV_1       : Shonan Livery (1 SD Green Car w/belt Variations)
+SHONAN_113_LV_2       : Shonan Livery (1 SD Green Car Variations)
+SHONAN_113_LV_3       : Shonan Livery (1 or 2 SD Green Car w/belt Variations)
+SHONAN_113_LV_4       : Shonan Livery (2 SD Green Car w/belt Variations)
+SHONAN_113_LV_5       : Shonan Livery (2 SD Green Car Variations)
+SHONAN_113_LV_6       : Shonan Livery (DD Old/SD Green Car Variations)
+SHONAN_113_LV_7       : Shonan Livery (DD New/SD Green Car Variations)
+
+
 # Coupling Rejection
 JNR211_UNIQUE  :You can only attach MU cars, DD-MU cars or the 211 Series EMU to this consist!
 JRH735_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs to this consist!
@@ -357,3 +368,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 115 Series
     JNR_115_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 113 Series
+    JNR_113_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
