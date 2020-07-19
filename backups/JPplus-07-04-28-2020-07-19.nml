@@ -2800,7 +2800,7 @@ item(FEAT_TRAINS, emu_113) {
 
         speed:                        110 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        480 kW;
+        power:                        220 kW;
         weight:                       37 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -2837,7 +2837,7 @@ item(FEAT_TRAINS, emu_113) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cargo_subtype_text:           sw_113_subtypetext_mucar;
-        power: 120;
+        power: 110;
         weight: 27;
       }
 
@@ -3252,7 +3252,7 @@ item(FEAT_TRAINS, emu_115) {
 
         speed:                        110 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        480 kW;
+        power:                        220 kW;
         weight:                       37 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -3289,7 +3289,7 @@ item(FEAT_TRAINS, emu_115) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cargo_subtype_text:           sw_115_subtypetext_mucar;
-        power: 120;
+        power: 110;
         weight: 27;
       }
 
@@ -3963,7 +3963,7 @@ item(FEAT_TRAINS, emu_E331) {
 
         speed:                        120 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        640 kW;
+        power:                        160 kW;
         weight:                       31 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -3998,7 +3998,7 @@ item(FEAT_TRAINS, emu_E331) {
         default:                      sw_E331_gfx_mucar_revcheck;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
-        power: 80;
+        power: 160;
         weight: 20;
         length: sw_E331_length_pos_flipped;
       }
@@ -7275,7 +7275,7 @@ item(FEAT_TRAINS, emu_jrw207) {
 
         speed:                        120 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        880 kW;
+        power:                        220 kW;
         weight:                       36 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -7312,7 +7312,7 @@ item(FEAT_TRAINS, emu_jrw207) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         cargo_subtype_text:           sw_207_subtypetext_mucar;
-        power: 220;
+        power: 190;
         weight: 26;
       }
 

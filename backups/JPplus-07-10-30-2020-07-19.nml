@@ -3963,7 +3963,7 @@ item(FEAT_TRAINS, emu_E331) {
 
         speed:                        120 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        640 kW;
+        power:                        160 kW;
         weight:                       31 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -3998,7 +3998,7 @@ item(FEAT_TRAINS, emu_E331) {
         default:                      sw_E331_gfx_mucar_revcheck;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
-        power: 80;
+        power: 160;
         weight: 20;
         length: sw_E331_length_pos_flipped;
       }
