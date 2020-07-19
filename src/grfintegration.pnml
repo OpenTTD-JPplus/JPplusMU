@@ -14,6 +14,9 @@ if (((grf_current_status("SZ\0D\00") == 0) && (grf_current_status("DP\30\00") ==
 	error( WARNING, string(GRF_JAPANSET));
 }
 */
+if (grf_order_behind("BS\42\13") == 0) {
+	error(FATAL, string(GRF_JPPLUSSET));
+}
 
 
 
