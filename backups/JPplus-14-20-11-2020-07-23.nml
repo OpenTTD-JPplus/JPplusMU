@@ -602,11 +602,6 @@ item(FEAT_TRAINS, japanset_113, 0x49) {
 		climates_available: NO_CLIMATE;
 	}
 } 
-item(FEAT_TRAINS, japanset_789, 0x64) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
 # 1 "JPplus.pnml" 4
 
 //Reversing

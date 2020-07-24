@@ -497,15 +497,15 @@ if (((grf_current_status("SZ\0D\00") == 0) && (grf_current_status("DP\30\00") ==
 if (grf_order_behind("BS\42\13") == 0) {
 	error(FATAL, string(GRF_JPPLUSSET));
 }
-/*
 if (grf_order_behind("EN\21\01") == 0) {
 	error(WARNING, string(GRF_NATSSET));
-}*/
+}
 if (grf_order_behind("SZ\0D\00") == 0) {
 	error(WARNING, string(GRF_JAPANSETTRAINS));
 }
 
-/*NATS DUPLICATION DEPRECIATED
+
+/*disable NATS duplication*/
 engine_override("EN\21\01");
 
 //disable the 211
@@ -559,6 +559,7 @@ item(FEAT_TRAINS, JRC311, 0x205) {
 		climates_available: NO_CLIMATE;
 	}
 }
+/*
 item(FEAT_TRAINS, JRCKIHA25, 0x201) {
 	property {
 		climates_available: NO_CLIMATE;
@@ -589,20 +590,11 @@ item(FEAT_TRAINS, JRC373, 0x250) {
 		climates_available: NO_CLIMATE;
 	}
 }
-
 */
-
-
-//JPSet3 DUPLICATION DEPRECIATED
 
 engine_override("SZ\0D\00");
 
-item(FEAT_TRAINS, japanset_113, 0x49) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_789, 0x64) {
+item(FEAT_TRAINS, whateveriputheredoesntmatterlol, 0x49) {
 	property {
 		climates_available: NO_CLIMATE;
 	}
