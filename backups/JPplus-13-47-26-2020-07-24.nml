@@ -3396,8 +3396,8 @@ alternative_sprites(spriteset_205_midhd_yama,           ZOOM_LEVEL_NORMAL, BIT_D
 alternative_sprites(spriteset_205_mid_yama,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 75)}
 alternative_sprites(spriteset_205_midpan_yama,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 100)}
 
-alternative_sprites(spriteset_205_rev_front_yama,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_205_rev_back_yama,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_205_rev_front_yama,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 25)}
+alternative_sprites(spriteset_205_rev_back_yama,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_205_rev_midhd_yama,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 50)}
 alternative_sprites(spriteset_205_rev_mid_yama,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 75)}
 alternative_sprites(spriteset_205_rev_midpan_yama,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 100)}
@@ -3429,8 +3429,8 @@ alternative_sprites(spriteset_205_back_keto,            ZOOM_LEVEL_NORMAL, BIT_D
 alternative_sprites(spriteset_205_mid_keto,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 75)}
 alternative_sprites(spriteset_205_midpan_keto,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 100)}
 
-alternative_sprites(spriteset_205_rev_front_keto,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_205_rev_back_keto,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_205_rev_front_keto,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_205_rev_back_keto,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 25)}
 alternative_sprites(spriteset_205_rev_mid_keto,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 75)}
 alternative_sprites(spriteset_205_rev_midpan_keto,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 100)}
 

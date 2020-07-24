@@ -7,7 +7,7 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	2;
+	version:	1;
 	min_compatible_version: 1;
 		//basecosts
 		param 0 {
@@ -3368,27 +3368,27 @@ item(FEAT_TRAINS, emu_115) {
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
-spriteset (spriteset_205_purchase,	                                                     "gfx/JNR/emu205/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_205_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JNR/emu205/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+spriteset (spriteset_205_purchase,	                                                     "gfx/JRE/emu205/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_205_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/emu205/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
 
 //205 Yamanote
 spriteset (spriteset_205_front_yama,	  	"gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_back_yama,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_midhd_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_mid_yama,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_midpan_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
+spriteset (spriteset_205_back_yama,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 25) }
+spriteset (spriteset_205_midhd_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 50) }
+spriteset (spriteset_205_mid_yama,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 75) }
+spriteset (spriteset_205_midpan_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 100) }
 
 spriteset (spriteset_205_rev_front_yama,	  	"gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_rev_back_yama,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_rev_midhd_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_rev_mid_yama,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_rev_midpan_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
+spriteset (spriteset_205_rev_back_yama,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 25) }
+spriteset (spriteset_205_rev_midhd_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 50) }
+spriteset (spriteset_205_rev_mid_yama,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 75) }
+spriteset (spriteset_205_rev_midpan_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 100) }
 
 spriteset (spriteset_205_revflip_front_yama,	  	"gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_revflip_back_yama,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_revflip_midhd_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_revflip_mid_yama,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_revflip_midpan_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
+spriteset (spriteset_205_revflip_back_yama,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 25) }
+spriteset (spriteset_205_revflip_midhd_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 50) }
+spriteset (spriteset_205_revflip_mid_yama,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 75) }
+spriteset (spriteset_205_revflip_midpan_yama,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 100) }
 
 alternative_sprites(spriteset_205_front_yama,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 0)}
 alternative_sprites(spriteset_205_back_yama,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 25)}
@@ -3396,8 +3396,8 @@ alternative_sprites(spriteset_205_midhd_yama,           ZOOM_LEVEL_NORMAL, BIT_D
 alternative_sprites(spriteset_205_mid_yama,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 75)}
 alternative_sprites(spriteset_205_midpan_yama,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 100)}
 
-alternative_sprites(spriteset_205_rev_front_yama,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_205_rev_back_yama,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_205_rev_front_yama,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_205_rev_back_yama,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std(0, 25)}
 alternative_sprites(spriteset_205_rev_midhd_yama,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 50)}
 alternative_sprites(spriteset_205_rev_mid_yama,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 75)}
 alternative_sprites(spriteset_205_rev_midpan_yama,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_Yamanote_32bpp.png")        {tmpl_std_rev(0, 100)}
@@ -3410,27 +3410,27 @@ alternative_sprites(spriteset_205_revflip_midpan_yama,          ZOOM_LEVEL_NORMA
 
 //205 Keto
 spriteset (spriteset_205_front_keto,	  	"gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_back_keto,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_mid_keto,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_midpan_keto,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
+spriteset (spriteset_205_back_keto,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 25) }
+spriteset (spriteset_205_mid_keto,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 75) }
+spriteset (spriteset_205_midpan_keto,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 100) }
 
 spriteset (spriteset_205_rev_front_keto,	  	"gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_rev_back_keto,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_rev_mid_keto,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_rev_midpan_keto,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
+spriteset (spriteset_205_rev_back_keto,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 25) }
+spriteset (spriteset_205_rev_mid_keto,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 75) }
+spriteset (spriteset_205_rev_midpan_keto,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 100) }
 
 spriteset (spriteset_205_revflip_front_keto,	  	"gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
-spriteset (spriteset_205_revflip_back_keto,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_revflip_mid_keto,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_205_revflip_midpan_keto,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 0) }
+spriteset (spriteset_205_revflip_back_keto,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 25) }
+spriteset (spriteset_205_revflip_mid_keto,		    "gfx/OTHER/mucar.png")          { tmpl_std(0, 75) }
+spriteset (spriteset_205_revflip_midpan_keto,	    "gfx/OTHER/mucar.png")         	{ tmpl_std(0, 100) }
 
 alternative_sprites(spriteset_205_front_keto,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 0)}
 alternative_sprites(spriteset_205_back_keto,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_205_mid_keto,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 75)}
 alternative_sprites(spriteset_205_midpan_keto,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 100)}
 
-alternative_sprites(spriteset_205_rev_front_keto,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_205_rev_back_keto,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_205_rev_front_keto,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_205_rev_back_keto,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std(0, 25)}
 alternative_sprites(spriteset_205_rev_mid_keto,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 75)}
 alternative_sprites(spriteset_205_rev_midpan_keto,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu205/205_0_KH_32bpp.png")        {tmpl_std_rev(0, 100)}
 
