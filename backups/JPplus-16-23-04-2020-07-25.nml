@@ -1728,17 +1728,17 @@ spriteset (spriteset_nade6100_revflip_front,	  "gfx/OTHER/mucar.png")          {
 spriteset (spriteset_nade6100_revflip_back,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
 spriteset (spriteset_nade6100_revflip_mid,		  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_nade6100_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 0)}
+alternative_sprites(spriteset_nade6100_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 0)}
 alternative_sprites(spriteset_nade6100_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 96)}
 alternative_sprites(spriteset_nade6100_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 48)}
 
 alternative_sprites(spriteset_nade6100_rev_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 24)}
-alternative_sprites(spriteset_nade6100_rev_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 72)}
-alternative_sprites(spriteset_nade6100_rev_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 48)}
+alternative_sprites(spriteset_nade6100_rev_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 0)}
+alternative_sprites(spriteset_nade6100_rev_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 72)}
 
 alternative_sprites(spriteset_nade6100_revflip_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 24)}
-alternative_sprites(spriteset_nade6100_revflip_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 72)}
-alternative_sprites(spriteset_nade6100_revflip_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 48)}
+alternative_sprites(spriteset_nade6100_revflip_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 0)}
+alternative_sprites(spriteset_nade6100_revflip_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 72)}
 /*---END OF SECTION---*/
 
 
@@ -1901,7 +1901,7 @@ item(FEAT_TRAINS, emu_nade6100) {
         tractive_effort_coefficient:  0.2;
         air_drag_coefficient:         0.07;
         bitmask_vehicle_info:         0;
-        length: 7;
+        length: 8;
     }
     /*Graphics and Callbacks*/
       graphics {
@@ -1920,7 +1920,6 @@ item(FEAT_TRAINS, emu_nade6100) {
         //cargo_subtype_text:           sw_nade6100_subtypetext_mucar;
         power: 120;
         weight: 23;
-        length: 7;
       }
 
 }

@@ -1733,11 +1733,11 @@ alternative_sprites(spriteset_nade6100_back,            ZOOM_LEVEL_NORMAL, BIT_D
 alternative_sprites(spriteset_nade6100_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 48)}
 
 alternative_sprites(spriteset_nade6100_rev_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 24)}
-alternative_sprites(spriteset_nade6100_rev_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 72)}
+alternative_sprites(spriteset_nade6100_rev_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 72)}
 alternative_sprites(spriteset_nade6100_rev_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 48)}
 
 alternative_sprites(spriteset_nade6100_revflip_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 24)}
-alternative_sprites(spriteset_nade6100_revflip_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 72)}
+alternative_sprites(spriteset_nade6100_revflip_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l_rev(0, 72)}
 alternative_sprites(spriteset_nade6100_revflip_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emunade6100/Nade6100.png")        {tmpl_28px_7l(0, 48)}
 /*---END OF SECTION---*/
 

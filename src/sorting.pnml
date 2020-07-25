@@ -2,6 +2,8 @@ sort(FEAT_TRAINS, [
 
 /* **EMU** */
 
+/*JGR*/
+emu_nade6100,
 /*JNR*/
 dmu_kiha40,
 dmu_kiha48,

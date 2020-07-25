@@ -38,6 +38,8 @@ MUCAR   :JP+ MU Car {WHITE}(MU)
 MUCAB   :JP+ MU Cab/Control Car {WHITE}(CC)
 MUCARDD :JP+ MU Special Cars {WHITE}(SC)
 
+JGR_nade6100:Nade 6100 {WHITE}(EMU)
+
 JNR_kiha40 :KiHa 40 Series {WHITE}(DMU)
 JNR_kiha48 :KiHa 48 Series {WHITE}(DMU)
 JNR_kiha54 :KiHa 54 Series {WHITE}(DMU)
@@ -377,3 +379,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 205 Series
     JNR_205_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# Nade 6100 Series
+    JGR_nade6100_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JGR / JNR{}

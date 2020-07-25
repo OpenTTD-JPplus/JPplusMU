@@ -32,6 +32,10 @@
 //Wagons
 #include "src/OTHER/mucar.pnml"
 
+//JGR
+#include "src/JGR/EMU/Nade6100.pnml"
+
+
 //JNR
 #include "src/JNR/EMU/111_113_series.pnml"
 #include "src/JNR/EMU/115_series.pnml"
