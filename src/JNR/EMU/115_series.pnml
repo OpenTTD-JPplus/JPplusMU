@@ -384,8 +384,8 @@ switch(FEAT_TRAINS, SELF, sw_115_subtypetext_main, cargo_subtype) {
 
 
 
-//Coupling
-  switch(FEAT_TRAINS, SELF, sw_115_attach_vehid, [vehicle_type_id == emu_115 || vehicle_type_id == mu_car]) {
+//Coupling ((1040 is EF63))
+  switch(FEAT_TRAINS, SELF, sw_115_attach_vehid, [vehicle_type_id == emu_115 || vehicle_type_id == mu_car || vehicle_type_id == 1040]) {
   0: return string(MU_UNIQUE);
   }
 

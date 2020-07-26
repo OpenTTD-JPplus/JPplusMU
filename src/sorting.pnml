@@ -3,12 +3,13 @@ sort(FEAT_TRAINS, [
 /* **EMU** */
 
 /*JGR*/
-emu_nade6100,
+emu_6340,
 /*JNR*/
 dmu_kiha40,
 dmu_kiha48,
 dmu_kiha54,
 dmu_kiha58,
+emu_101,
 emu_113,
 emu_115,
 emu_205,

@@ -33,10 +33,11 @@
 #include "src/OTHER/mucar.pnml"
 
 //JGR
-#include "src/JGR/EMU/Nade6100.pnml"
+#include "src/JGR/EMU/6340_series.pnml"
 
 
 //JNR
+#include "src/JNR/EMU/101_series.pnml"
 #include "src/JNR/EMU/111_113_series.pnml"
 #include "src/JNR/EMU/115_series.pnml"
 #include "src/JNR/EMU/205_series.pnml"

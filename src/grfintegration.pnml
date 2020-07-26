@@ -25,7 +25,8 @@ if (grf_order_behind("SZ\0D\00") == 0) {
 	error(WARNING, string(GRF_JAPANSETTRAINS));
 }
 
-/*NATS DUPLICATION DEPRECIATED
+/*
+NATS DUPLICATION DEPRECIATED
 engine_override("EN\21\01");
 
 //disable the 211
@@ -172,3 +173,6 @@ item(FEAT_TRAINS, japanset_789, 0x64) {
 	}
 }
 */
+
+//engine_override("JD\A1\E1"); jpsecret
+//jnr_ef63, 1040

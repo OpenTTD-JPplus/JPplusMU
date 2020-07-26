@@ -406,7 +406,7 @@ item(FEAT_TRAINS, emu_311, 2023) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_313, 2024) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_115, 2025) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_113, 2026) {} //107emu 0x7E2
-item(FEAT_TRAINS, emu_6340, 2027) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_nade6100, 2027) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_101, 2028) {} //107emu 0x7E2
 
 
@@ -510,8 +510,7 @@ if (grf_order_behind("SZ\0D\00") == 0) {
 	error(WARNING, string(GRF_JAPANSETTRAINS));
 }
 
-/*
-NATS DUPLICATION DEPRECIATED
+/*NATS DUPLICATION DEPRECIATED
 engine_override("EN\21\01");
 
 //disable the 211
@@ -658,9 +657,6 @@ item(FEAT_TRAINS, japanset_789, 0x64) {
 	}
 }
 */
-
-//engine_override("JD\A1\E1"); jpsecret
-//jnr_ef63, 1040
 # 1 "JPplus.pnml" 4
 
 //Reversing
@@ -3774,13 +3770,9 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback,
 }
 
 //ID Testing
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
   1000: sw_115_gfx_rev_pantograph_pos;
   2025: sw_115_gfx_rev_frontback;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //look for opposite type
-  1000: sw_115_gfx_rev_idcheck2;
-  2025: sw_115_gfx_rev_idcheck2;
 }
 /*---END OF SECTION---*/
 
@@ -3839,7 +3831,7 @@ switch(FEAT_TRAINS, SELF, sw_115_subtypetext_main, cargo_subtype) {
 
 
 //Coupling
-  switch(FEAT_TRAINS, SELF, sw_115_attach_vehid, [vehicle_type_id == emu_115 || vehicle_type_id == mu_car || vehicle_type_id == 1040]) {
+  switch(FEAT_TRAINS, SELF, sw_115_attach_vehid, [vehicle_type_id == emu_115 || vehicle_type_id == mu_car || vehicle_type_id == 0x410]) {
   0: return string(MU_UNIQUE);
   }
 

@@ -38,13 +38,14 @@ MUCAR   :JP+ MU Car {WHITE}(MU)
 MUCAB   :JP+ MU Cab/Control Car {WHITE}(CC)
 MUCARDD :JP+ MU Special Cars {WHITE}(SC)
 
-JGR_nade6100:Nade 6100 {WHITE}(EMU)
+JGR_6340:6340 Series {WHITE}(EMU)
 
 JNR_kiha40 :KiHa 40 Series {WHITE}(DMU)
 JNR_kiha48 :KiHa 48 Series {WHITE}(DMU)
 JNR_kiha54 :KiHa 54 Series {WHITE}(DMU)
 JNR_kiha58 :KiHa 56/57/58 Series {WHITE}(DMU)
 
+JNR_101 :101 Series {WHITE}(EMU)
 JNR_113 :111/113 Series {WHITE}(EMU)
 JNR_115 :115 Series {WHITE}(EMU)
 
@@ -101,7 +102,7 @@ OLD_LV                : Original livery
 STANDARD_LV           : Standard livery
 NEW_LV                : New livery
 TOKAIDO_LV            : Tokaido Area
-
+ORANGE_LV             : Orange Vermillion Livery
 
 CHUKYO_LV             : Chukyo Livery
 NAGANO_LV             : Nagano Livery
@@ -381,4 +382,7 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JNR_205_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
 
 # Nade 6100 Series
-    JGR_nade6100_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
+    JGR_6340_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
+
+# 101 Series
+    JNR_101_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)

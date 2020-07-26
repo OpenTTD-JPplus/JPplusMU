@@ -42,7 +42,8 @@ item(FEAT_TRAINS, emu_311, 2023) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_313, 2024) {} //211emu 0x7E1
 item(FEAT_TRAINS, emu_115, 2025) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_113, 2026) {} //107emu 0x7E2
-item(FEAT_TRAINS, emu_nade6100, 2027) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_6340, 2027) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_101, 2028) {} //107emu 0x7E2
 
 
 item(FEAT_TRAINS, DH_E851, 4000) {} //E851
