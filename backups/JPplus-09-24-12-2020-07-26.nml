@@ -510,73 +510,6 @@ if (grf_order_behind("SZ\0D\00") == 0) {
 	error(WARNING, string(GRF_JAPANSETTRAINS));
 }
 
-
-//JPSet3 DUPLICATION
-engine_override("SZ\0D\00");
-
-item(FEAT_TRAINS, japanset_113, 0x49) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_151, 0x13) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_485, 0x38) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-
-item(FEAT_TRAINS, japanset_101, 0x30) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_201, 0x25) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_205, 0x28) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_209, 0x68) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_209, 0x68) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_E231, 0x44) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_E233, 0x5B) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_281, 0x41) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-}
-item(FEAT_TRAINS, japanset_789, 0x64) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-}
-
-
 /*
 NATS DUPLICATION DEPRECIATED
 engine_override("EN\21\01");
@@ -662,8 +595,69 @@ item(FEAT_TRAINS, JRC373, 0x250) {
 		climates_available: NO_CLIMATE;
 	}
 }
+
 */
 
+
+//JPSet3 DUPLICATION DEPRECIATED
+/*
+engine_override("SZ\0D\00");
+
+item(FEAT_TRAINS, japanset_113, 0x49) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_151, 0x13) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_485, 0x38) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+
+item(FEAT_TRAINS, japanset_205, 0x24) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_209, 0x68) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_209, 0x68) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_E231, 0x44) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_E233, 0x5B) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+
+
+
+item(FEAT_TRAINS, japanset_281, 0x41) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, japanset_789, 0x64) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+*/
 
 //engine_override("JD\A1\E1"); jpsecret
 //jnr_ef63, 1040
@@ -3780,9 +3774,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_frontback,
 }
 
 //ID Testing
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
   1000: sw_115_gfx_rev_pantograph_pos;
   2025: sw_115_gfx_rev_frontback;
+}
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //look for opposite type
+  1000: sw_115_gfx_rev_idcheck2;
+  2025: sw_115_gfx_rev_idcheck2;
 }
 /*---END OF SECTION---*/
 
@@ -3840,7 +3838,7 @@ switch(FEAT_TRAINS, SELF, sw_115_subtypetext_main, cargo_subtype) {
 
 
 
-//Coupling ((1040 is EF63))
+//Coupling
   switch(FEAT_TRAINS, SELF, sw_115_attach_vehid, [vehicle_type_id == emu_115 || vehicle_type_id == mu_car || vehicle_type_id == 1040]) {
   0: return string(MU_UNIQUE);
   }

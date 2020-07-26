@@ -535,11 +535,6 @@ item(FEAT_TRAINS, japanset_101, 0x30) {
 		climates_available: NO_CLIMATE;
 	}
 } 
-item(FEAT_TRAINS, japanset_201, 0x25) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
 item(FEAT_TRAINS, japanset_205, 0x28) {
 	property {
 		climates_available: NO_CLIMATE;

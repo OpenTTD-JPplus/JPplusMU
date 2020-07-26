@@ -510,73 +510,6 @@ if (grf_order_behind("SZ\0D\00") == 0) {
 	error(WARNING, string(GRF_JAPANSETTRAINS));
 }
 
-
-//JPSet3 DUPLICATION
-engine_override("SZ\0D\00");
-
-item(FEAT_TRAINS, japanset_113, 0x49) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_151, 0x13) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_485, 0x38) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-
-item(FEAT_TRAINS, japanset_101, 0x30) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_201, 0x25) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_205, 0x28) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_209, 0x68) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_209, 0x68) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_E231, 0x44) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_E233, 0x5B) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_281, 0x41) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-}
-item(FEAT_TRAINS, japanset_789, 0x64) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-}
-
-
 /*
 NATS DUPLICATION DEPRECIATED
 engine_override("EN\21\01");
@@ -662,7 +595,64 @@ item(FEAT_TRAINS, JRC373, 0x250) {
 		climates_available: NO_CLIMATE;
 	}
 }
+
 */
+
+
+//JPSet3 DUPLICATION
+engine_override("SZ\0D\00");
+
+item(FEAT_TRAINS, japanset_113, 0x49) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_151, 0x13) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_485, 0x38) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+
+item(FEAT_TRAINS, japanset_205, 0x24) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_209, 0x68) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_209, 0x68) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_E231, 0x44) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_E233, 0x5B) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_281, 0x41) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, japanset_789, 0x64) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
 
 
 //engine_override("JD\A1\E1"); jpsecret
