@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+Set v0.1.1
+STR_GRF_NAME        :JP+Set v0.1.2
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene. Trains require narrow gauge tracks.{}{}{BLACK}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}Licence: CC BY-NC-SA 4.0
 
 # Parameters
@@ -29,9 +29,9 @@ STR_PARAM_DESC_BOOSTCAPACITY     :Boosts the capacities of commuter trains. TIAS
 GRF_OTTDVER       : You are below the required OpenTTD version to run this NewGRF. Please update your version of OpenTTD.
 GRF_JAPANSET      : {WHITE}Please load...{}{YELLOW}JapanSet3 Trains{WHITE}{}and/or{}{YELLOW}JapanSet3 Tracks{WHITE}{}before {GREEN}JP+Set.
 GRF_JPPLUSSET     : JP+ Set must be loaded AFTER the JP+ Legacy version.
-GRF_NATSSET       : JP+ Set should be loaded AFTER Nagoya Area Train Set (NATS) to avoid train duplication. 
+GRF_NATSSET       : JP+ Set NATS Duplicate Trains Disabler should be loaded together with Nagoya Area Train Set (NATS) to avoid train duplication. 
 GRF_JAPANSETTRAINS: JP+ Set should be loaded AFTER Japan Set3: Trains to avoid train duplication.
-
+GRF_JAPANSECRETORDER:  JP+ Set should be loaded AFTER Japan Set Secret Engines for compatibility.
 
 # Vehicle Name
 MUCAR   :JP+ MU Car {WHITE}(MU)
@@ -46,10 +46,11 @@ JNR_kiha54 :KiHa 54 Series {WHITE}(DMU)
 JNR_kiha58 :KiHa 56/57/58 Series {WHITE}(DMU)
 
 JNR_101 :101 Series {WHITE}(EMU)
+JNR_103 :103 Series {WHITE}(EMU)
 JNR_113 :111/113 Series {WHITE}(EMU)
 JNR_115 :115 Series {WHITE}(EMU)
 
-
+JNR_201  :201 Series {WHITE}(EMU)
 JNR_205  :205 Series {WHITE}(EMU)
 JNR_211  :211 Series {WHITE}(EMU)
 JNR_21156:211-5000/6000 Series {WHITE}(EMU)
@@ -386,3 +387,9 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 101 Series
     JNR_101_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# 103 Series
+    JNR_103_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# 201 Series
+    JNR_201_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)

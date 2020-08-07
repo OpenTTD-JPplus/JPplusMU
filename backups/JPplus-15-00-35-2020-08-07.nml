@@ -4085,17 +4085,17 @@ spriteset (spriteset_201_revflip_mid_orange,    		      "gfx/OTHER/mucar.png") 	
 spriteset (spriteset_201_revflip_mid_panto_orange,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_201_front_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_back_orange,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_201_back_orange,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_mid_orange,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std_rev(0, 50)}
 alternative_sprites(spriteset_201_mid_panto_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std_rev(0, 75)}
 
 alternative_sprites(spriteset_201_rev_front_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_201_rev_back_orange,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_back_orange,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_mid_orange,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std(0, 50)}
 alternative_sprites(spriteset_201_rev_mid_panto_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std(0, 75)}
 
 alternative_sprites(spriteset_201_revflip_front_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std(0, 25)}
-alternative_sprites(spriteset_201_revflip_back_orange,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_back_orange,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_mid_orange,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std_rev(0, 50)}
 alternative_sprites(spriteset_201_revflip_mid_panto_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu201/201-1-1.png")        {tmpl_std_rev(0, 75)}
 /*---END OF SECTION---*/
@@ -4160,7 +4160,7 @@ switch(FEAT_TRAINS,SELF, sw_201_gfx_rev_back_panto_livery, [STORE_TEMP(position_
 }
 switch(FEAT_TRAINS,SELF, sw_201_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 //1: ;
-0:spriteset_201_revflip_back_orange;
+0:spriteset_201_revflip_back_panto_orange;
 }
 
 //Check for flipped vehicles (dual_headed)
@@ -4249,7 +4249,7 @@ switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 //201 orange
 switch(FEAT_TRAINS, SELF, sw_201_gfx_back_pantocheck_orange, position_in_vehid_chain){
  //0: spriteset_201_back_panto_orange; <--disable panto if mucars are between this and the head
- default: spriteset_201_back_orange;
+ default: spriteset_201_back_panto_orange;
 }
 switch(FEAT_TRAINS, SELF, sw_201_gfx_frontback_flipcheck_orange, vehicle_is_flipped){
  0: spriteset_201_front_orange;

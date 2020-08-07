@@ -38,8 +38,10 @@
 
 //JNR
 #include "src/JNR/EMU/101_series.pnml"
+#include "src/JNR/EMU/103_series.pnml"
 #include "src/JNR/EMU/111_113_series.pnml"
 #include "src/JNR/EMU/115_series.pnml"
+#include "src/JNR/EMU/201_series.pnml"
 #include "src/JNR/EMU/205_series.pnml"
 #include "src/JNR/EMU/211_series.pnml"
 #include "src/JNR/EMU/213_series.pnml"
@@ -71,3 +73,8 @@
 //JR-Shikoku
 
 //JR-Kyushu
+
+
+//GRF OVERRIDE
+#include "src/grfoverrides.pnml"
+

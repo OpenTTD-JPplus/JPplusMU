@@ -1,0 +1,167 @@
+
+//JPSet3 DUPLICATION
+engine_override("SZ\0D\00");
+
+basecost {
+		 PR_BUILD_VEHICLE : param_basecostbuy -1;
+		 PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
+		 PR_RUNNING: param_basecostrun -2; //3
+		 PR_RUNNING_TRAIN_STEAM: param_basecostrun -2;
+         PR_RUNNING_TRAIN_DIESEL: param_basecostrun +1;
+         PR_RUNNING_TRAIN_ELECTRIC:param_basecostrun -2;
+
+}
+
+item(FEAT_TRAINS, japanset_113, 0x49) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_151, 0x13) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_485, 0x38) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+
+item(FEAT_TRAINS, japanset_101, 0x30) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_201, 0x25) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_205, 0x28) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_209, 0x68) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_209, 0x68) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_E231, 0x44) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_E233, 0x5B) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_281, 0x41) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, japanset_789, 0x64) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+
+
+/*
+NATS DUPLICATION DEPRECIATED
+engine_override("EN\21\01");
+
+//disable the 211
+item(FEAT_TRAINS, JRC211_6, 0x20D) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC211_5, 0x20C) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC211_4, 0x20B) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC211_3, 0x20A) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC211_2, 0x209) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC313_2, 0x205) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC313_3, 0x206) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC313_4, 0x207) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC313_6, 0x208) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC311, 0x205) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRCKIHA25, 0x201) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRCKIHA75, 0x202) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRCKIHA11, 0x200) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC119_1, 0x203) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC119_2, 0x204) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, JRC373, 0x250) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+*/
+
+
+//engine_override("JD\A1\E1"); jpsecret
+//jnr_ef63, 1040
