@@ -1833,11 +1833,11 @@ spriteset (spriteset_80_rev_mid_panto,    	  	  "gfx/OTHER/mucar.png") 	{ tmpl_s
 spriteset (spriteset_80_rev_midgr,    	      	  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_80_rev_front_1,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 25)}
-alternative_sprites(spriteset_80_rev_back_1,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 0)}
+alternative_sprites(spriteset_80_rev_back_1,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_80_rev_front_2,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 150)}
-alternative_sprites(spriteset_80_rev_back_2,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 125)}
+alternative_sprites(spriteset_80_rev_back_2,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 125)}
 alternative_sprites(spriteset_80_rev_front_3,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 200)}
-alternative_sprites(spriteset_80_rev_back_3,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 175)}
+alternative_sprites(spriteset_80_rev_back_3,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 175)}
 alternative_sprites(spriteset_80_rev_mid,                     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 75)}
 alternative_sprites(spriteset_80_rev_mid_panto,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 50)}
 alternative_sprites(spriteset_80_rev_midgr,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 100)}
@@ -1855,7 +1855,7 @@ spriteset (spriteset_80_revflip_midgr,    	      	  "gfx/OTHER/mucar.png") 	{ tm
 alternative_sprites(spriteset_80_revflip_front_1,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_80_revflip_back_1,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_80_revflip_front_2,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 150)}
-alternative_sprites(spriteset_80_revflip_back_2,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_80_revflip_back_2,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 125)}
 alternative_sprites(spriteset_80_revflip_front_3,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std_rev(0, 200)}
 alternative_sprites(spriteset_80_revflip_back_3,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 175)}
 alternative_sprites(spriteset_80_revflip_mid,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 75)}
@@ -1895,12 +1895,12 @@ switch(FEAT_TRAINS,SELF, sw_80_gfx_revflip_front_livery, [STORE_TEMP(position_in
 }
 
 switch(FEAT_TRAINS,SELF, sw_80_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-2:spriteset_80_rev_back_2;
+2:spriteset_80_rev_back_3;
 1:spriteset_80_rev_back_2;
 0:spriteset_80_rev_back_1;
 }
 switch(FEAT_TRAINS,SELF, sw_80_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-2:spriteset_80_revflip_back_2;
+2:spriteset_80_revflip_back_3;
 1:spriteset_80_revflip_back_2;  
 0:spriteset_80_revflip_back_1;
 }
@@ -2068,7 +2068,7 @@ switch(FEAT_TRAINS, PARENT, sw_80_gfx_862_frontback_revcheck, vehicle_is_reverse
 //80 series 85 front
 switch(FEAT_TRAINS, SELF, sw_80_gfx_85_frontback_flipcheck, vehicle_is_flipped){
  0: spriteset_80_front_3;
- default: spriteset_80_back_2;
+ default: spriteset_80_back_3;
 }
 switch(FEAT_TRAINS, PARENT, sw_80_gfx_85_frontback_revcheck, vehicle_is_reversed){
  0: sw_80_gfx_85_frontback_flipcheck;
@@ -2117,8 +2117,8 @@ switch(FEAT_TRAINS, SELF, sw_80_subtypetext_mucar, cargo_subtype) {
 }
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_main, cargo_subtype) {
   2: string(jnr80_85); 
-  1: string(jnr80_861);
-  0: string(jnr80_862);
+  1: string(jnr80_862);
+  0: string(jnr80_861);
 }
 /*---END OF SECTION---*/
 

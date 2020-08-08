@@ -242,8 +242,8 @@ switch(FEAT_TRAINS, SELF, sw_201_subtypetext_main, cargo_subtype) {
 item(FEAT_TRAINS, emu_201) {
     property {
         name:                         string(JNR_201);
-        introduction_date:            date(1957, 12, 13);
-        model_life:                   12;
+        introduction_date:            date(1979, 08, 20);
+        model_life:                   6;
         vehicle_life:                 39;
         reliability_decay:            11;
 
@@ -254,7 +254,7 @@ item(FEAT_TRAINS, emu_201) {
 
         speed:                        100 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        480 kW;
+        power:                        600 kW;
         weight:                       37 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -291,7 +291,7 @@ item(FEAT_TRAINS, emu_201) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         cargo_subtype_text:           sw_201_subtypetext_mucar;
-        power: 120;
+        power: 300;
         weight: 27;
       }
 

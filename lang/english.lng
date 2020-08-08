@@ -45,10 +45,13 @@ JNR_kiha48 :KiHa 48 Series {WHITE}(DMU)
 JNR_kiha54 :KiHa 54 Series {WHITE}(DMU)
 JNR_kiha58 :KiHa 56/57/58 Series {WHITE}(DMU)
 
+JNR_80 :80 Series {WHITE}(EMU)
 JNR_101 :101 Series {WHITE}(EMU)
 JNR_103 :103 Series {WHITE}(EMU)
 JNR_113 :111/113 Series {WHITE}(EMU)
 JNR_115 :115 Series {WHITE}(EMU)
+JNR_181 :151/161/181 Series {WHITE}(EMU)
+
 
 JNR_201  :201 Series {WHITE}(EMU)
 JNR_205  :205 Series {WHITE}(EMU)
@@ -99,6 +102,22 @@ JRS_6000:6000 Series {WHITE}(EMU)
 
 # Livery Name
 BLANK                 : {RED}A{ORANGE}U{YELLOW}T{GREEN}O{BLUE}M{PURPLE}A{CREAM}T{RED}I{ORANGE}C
+
+jnr151_LV : 151 Series JNR Express Livery
+jnr181_LV : 181 Series JNR Express Livery
+jnr181_LVa : 151/161/181 Green Car
+jnr181_LVb : 151/161/181 SaShi Car
+jnr181_LVc : 151/161/181 MoHaShi Car
+jnr181_LVd : 151/161/181 Panto Car
+jnr181_LVe : 151/161/181 Green Panto Car
+
+jnr80_861 : Shonan Livery (86-1 Type)
+jnr80_862 : Shonan Livery (86-2 Type)
+jnr80_85 : Shonan Livery (85 Type)
+jnr80_gr : Shonan Livery (Green Car)
+jnr80_pt : Shonan Livery (Pantograph Car)
+
+
 OLD_LV                : Original livery
 STANDARD_LV           : Standard livery
 NEW_LV                : New livery
@@ -393,3 +412,9 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 201 Series
     JNR_201_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# 181 Series
+    JNR_181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 80 Series
+    JNR_80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)

@@ -2117,8 +2117,8 @@ switch(FEAT_TRAINS, SELF, sw_80_subtypetext_mucar, cargo_subtype) {
 }
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_main, cargo_subtype) {
   2: string(jnr80_85); 
-  1: string(jnr80_861);
-  0: string(jnr80_862);
+  1: string(jnr80_862);
+  0: string(jnr80_861);
 }
 /*---END OF SECTION---*/
 
