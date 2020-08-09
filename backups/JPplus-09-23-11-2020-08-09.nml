@@ -2164,13 +2164,12 @@ switch(FEAT_TRAINS, PARENT, sw_80_gfx_mucar_revcheck_mid, vehicle_is_reversed){
 switch(FEAT_TRAINS, SELF, sw_80_gfx_mucar,  cargo_subtype) {
   default: sw_80_gfx_mucar_revcheck_mid;
 }
-switch(FEAT_TRAINS, SELF, sw_80_gfx_main,  cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, sw_80_gfx_main,  cargo_subtype) {
   3: sw_80_gfx_862_kansai_frontback_revcheck;
   2: sw_80_gfx_85_frontback_revcheck;
   1: sw_80_gfx_862_frontback_revcheck;
   0: sw_80_gfx_861_frontback_revcheck;
 }
-
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_mucar, cargo_subtype) {

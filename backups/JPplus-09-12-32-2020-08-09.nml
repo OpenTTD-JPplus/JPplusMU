@@ -7,8 +7,8 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	4;
-	min_compatible_version: 4;
+	version:	3;
+	min_compatible_version: 3;
 		//basecosts
 		param 0 {
 				param_basecostbuy {
@@ -2164,13 +2164,12 @@ switch(FEAT_TRAINS, PARENT, sw_80_gfx_mucar_revcheck_mid, vehicle_is_reversed){
 switch(FEAT_TRAINS, SELF, sw_80_gfx_mucar,  cargo_subtype) {
   default: sw_80_gfx_mucar_revcheck_mid;
 }
-switch(FEAT_TRAINS, SELF, sw_80_gfx_main,  cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, sw_80_gfx_main,  cargo_subtype) {
   3: sw_80_gfx_862_kansai_frontback_revcheck;
   2: sw_80_gfx_85_frontback_revcheck;
   1: sw_80_gfx_862_frontback_revcheck;
   0: sw_80_gfx_861_frontback_revcheck;
 }
-
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_mucar, cargo_subtype) {
@@ -2201,7 +2200,7 @@ switch(FEAT_TRAINS, SELF, sw_80_subtypetext_main, cargo_subtype) {
 item(FEAT_TRAINS, emu_80) {
     property {
         name:                         string(JNR_80);
-        introduction_date:            date(1950, 11, 12);
+        introduction_date:            date(1958, 11, 12);
         model_life:                   20;
         vehicle_life:                 39;
         reliability_decay:            11;
@@ -5040,7 +5039,7 @@ alternative_sprites(spriteset_165_rev_mid,                        ZOOM_LEVEL_NOR
 alternative_sprites(spriteset_165_rev_mid_panto,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-3.png")             {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_165_rev_midgr_belt,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-4.png")             {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_165_rev_midgr_nobelt,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-5.png")             {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_165_rev_mid_sashashi,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-6.png")             {tmpl_std(0, 1)}
+alternative_sprites(spriteset_165_rev_mid_sashashi,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-6.png")             {tmpl_std_rev(0, 1)}
 
 spriteset (spriteset_165_revflip_front,    	               "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_165_revflip_back,                     "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -5056,7 +5055,7 @@ alternative_sprites(spriteset_165_revflip_mid,                        ZOOM_LEVEL
 alternative_sprites(spriteset_165_revflip_mid_panto,                  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-3.png")             {tmpl_std(0, 1)}
 alternative_sprites(spriteset_165_revflip_midgr_belt,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-4.png")             {tmpl_std(0, 1)}
 alternative_sprites(spriteset_165_revflip_midgr_nobelt,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-5.png")             {tmpl_std(0, 1)}
-alternative_sprites(spriteset_165_revflip_mid_sashashi,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-6.png")             {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_165_revflip_mid_sashashi,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu165_169/Shonan/165-1-6.png")             {tmpl_std(0, 1)}
 /*---END OF SECTION---*/
 
 

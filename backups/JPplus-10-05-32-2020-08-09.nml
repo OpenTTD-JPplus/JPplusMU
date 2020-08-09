@@ -2171,7 +2171,6 @@ switch(FEAT_TRAINS, SELF, sw_80_gfx_main,  cargo_subtype) {
   0: sw_80_gfx_861_frontback_revcheck;
 }
 
-
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_mucar, cargo_subtype) {
   5: string(jnr80_pt);

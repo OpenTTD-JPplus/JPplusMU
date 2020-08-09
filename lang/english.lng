@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+Set v0.1.2
+STR_GRF_NAME        :JP+Set v0.1.3
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene. Trains require narrow gauge tracks.{}{}{BLACK}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}Licence: CC BY-NC-SA 4.0
 
 # Parameters
@@ -50,6 +50,7 @@ JNR_101 :101 Series {WHITE}(EMU)
 JNR_103 :103 Series {WHITE}(EMU)
 JNR_113 :111/113 Series {WHITE}(EMU)
 JNR_115 :115 Series {WHITE}(EMU)
+JNR_165 :165/169 Series {WHITE}(EMU)
 JNR_181 :151/161/181 Series {WHITE}(EMU)
 
 
@@ -114,8 +115,14 @@ jnr181_LVe : 151/161/181 Green Panto Car
 jnr80_861 : Shonan Livery (86-1 Type)
 jnr80_862 : Shonan Livery (86-2 Type)
 jnr80_85 : Shonan Livery (85 Type)
-jnr80_gr : Shonan Livery (Green Car)
-jnr80_pt : Shonan Livery (Pantograph Car)
+jnr80_ka : Kansai Livery (86-2 Type)
+jnr80_gr : Green Car
+jnr80_pt : Pantograph Car
+
+jnr165_grb : Green Car (Belt)
+jnr165_grnb: Green Car (No Belt)
+jnr165_sashashi: SaShaShi Car
+
 
 
 OLD_LV                : Original livery
@@ -418,3 +425,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 80 Series
     JNR_80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 80 Series
+    JNR_165_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)

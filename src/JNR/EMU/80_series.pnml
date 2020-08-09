@@ -63,6 +63,39 @@ alternative_sprites(spriteset_80_revflip_back_3,              ZOOM_LEVEL_NORMAL,
 alternative_sprites(spriteset_80_revflip_mid,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 75)}
 alternative_sprites(spriteset_80_revflip_mid_panto,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 50)}
 alternative_sprites(spriteset_80_revflip_midgr,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80.png")             {tmpl_std(0, 100)}
+
+//80 Series Kansai
+spriteset (spriteset_80_front_kansai,    	           "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_back_kansai,                 "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_mid_kansai,                  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_mid_panto_kansai,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_80_front_kansai,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std(0, 0)}
+alternative_sprites(spriteset_80_back_kansai,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_80_mid_kansai,                     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std(0, 75)}
+alternative_sprites(spriteset_80_mid_panto_kansai,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std(0, 50)}
+
+spriteset (spriteset_80_rev_front_kansai,    	           "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_rev_back_kansai,                 "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_rev_mid_kansai,                  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_rev_mid_panto_kansai,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_80_rev_front_kansai,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std(0, 25)}
+alternative_sprites(spriteset_80_rev_back_kansai,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std(0, 0)}
+alternative_sprites(spriteset_80_rev_mid_kansai,                     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_80_rev_mid_panto_kansai,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std_rev(0, 50)}
+
+spriteset (spriteset_80_revflip_front_kansai,    	           "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_revflip_back_kansai,                 "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_revflip_mid_kansai,                  "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_80_revflip_mid_panto_kansai,            "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_80_revflip_front_kansai,                   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_80_revflip_back_kansai,                    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_80_revflip_mid_kansai,                     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std(0, 75)}
+alternative_sprites(spriteset_80_revflip_mid_panto_kansai,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu80/80_kansai.png")             {tmpl_std(0, 50)}
+
+
 /*---END OF SECTION---*/
 
 
@@ -86,67 +119,77 @@ switch(FEAT_TRAINS,SELF, sw_80_gfx_pantograph_pos, num_vehs_in_vehid_chain){
 /*---GFX: Train Reversing Switches---*/
 //Livery Selection
 switch(FEAT_TRAINS,SELF, sw_80_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+3:spriteset_80_rev_front_kansai;
 2:spriteset_80_rev_front_3;
 1:spriteset_80_rev_front_2;
 0:spriteset_80_rev_front_1;
 }
 switch(FEAT_TRAINS,SELF, sw_80_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+3:spriteset_80_revflip_front_kansai;
 2:spriteset_80_revflip_front_3;
 1:spriteset_80_revflip_front_2;
 0:spriteset_80_revflip_front_1;
 }
 
 switch(FEAT_TRAINS,SELF, sw_80_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+3:spriteset_80_rev_back_kansai;
 2:spriteset_80_rev_back_2;
 1:spriteset_80_rev_back_2;
 0:spriteset_80_rev_back_1;
 }
 switch(FEAT_TRAINS,SELF, sw_80_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+3:spriteset_80_revflip_back_kansai;
 2:spriteset_80_revflip_back_2;
 1:spriteset_80_revflip_back_2;  
 0:spriteset_80_revflip_back_1;
 }
 
 switch(FEAT_TRAINS,SELF, sw_80_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+5:spriteset_80_rev_mid;
 4:spriteset_80_rev_mid;
-3:spriteset_80_rev_mid;
+3:spriteset_80_rev_mid_kansai;
 2:spriteset_80_rev_mid;
 1:spriteset_80_rev_mid;
 0:spriteset_80_rev_mid;
 }
 switch(FEAT_TRAINS,SELF, sw_80_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+5:spriteset_80_revflip_mid;
 4:spriteset_80_revflip_mid;
-3:spriteset_80_revflip_mid;
+3:spriteset_80_revflip_mid_kansai;
 2:spriteset_80_revflip_mid;
 1:spriteset_80_revflip_mid;
 0:spriteset_80_revflip_mid;
 }
 
-switch(FEAT_TRAINS,SELF, sw_80_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+switch(FEAT_TRAINS,PARENT, sw_80_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+5:spriteset_80_rev_mid_panto;
 4:spriteset_80_rev_mid_panto;
-3:spriteset_80_rev_mid_panto;
+3:spriteset_80_rev_mid_panto_kansai;
 2:spriteset_80_rev_mid_panto;
 1:spriteset_80_rev_mid_panto;
 0:spriteset_80_rev_mid_panto;
 }
-switch(FEAT_TRAINS,SELF, sw_80_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+switch(FEAT_TRAINS,PARENT, sw_80_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+5:spriteset_80_revflip_mid_panto;
 4:spriteset_80_revflip_mid_panto;
-3:spriteset_80_revflip_mid_panto;
+3:spriteset_80_revflip_mid_panto_kansai;
 2:spriteset_80_revflip_mid_panto;
 1:spriteset_80_revflip_mid_panto;
 0:spriteset_80_revflip_mid_panto;
 }
 
 switch(FEAT_TRAINS,SELF, sw_80_gfx_rev_midgr_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+5:spriteset_80_rev_midgr;
 4:spriteset_80_rev_midgr;
-3:spriteset_80_rev_midgr;
+3:spriteset_80_rev_mid_kansai;
 2:spriteset_80_rev_midgr;
 1:spriteset_80_rev_midgr;
 0:spriteset_80_rev_midgr;
 }
 switch(FEAT_TRAINS,SELF, sw_80_gfx_revflip_midgr_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+5:spriteset_80_revflip_midgr;
 4:spriteset_80_revflip_midgr;
-3:spriteset_80_revflip_midgr;
+3:spriteset_80_revflip_mid_kansai;
 2:spriteset_80_revflip_midgr;
 1:spriteset_80_revflip_midgr;
 0:spriteset_80_revflip_midgr;
@@ -175,8 +218,9 @@ switch(FEAT_TRAINS, SELF, sw_80_gfx_rev_midgr_flippedcheck, vehicle_is_flipped) 
 }
 
 switch(FEAT_TRAINS,SELF, sw_80_gfx_rev_templiv, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  4: sw_80_gfx_rev_mid_panto_flippedcheck;
-  3: sw_80_gfx_rev_midgr_flippedcheck;
+  5: sw_80_gfx_rev_mid_panto_flippedcheck;
+  4: sw_80_gfx_rev_midgr_flippedcheck;
+  3: sw_80_gfx_rev_mid_flippedcheck;
   2: sw_80_gfx_rev_mid_flippedcheck;
   1: sw_80_gfx_rev_mid_flippedcheck;
   0: sw_80_gfx_rev_mid_flippedcheck;
@@ -276,15 +320,32 @@ switch(FEAT_TRAINS, PARENT, sw_80_gfx_85_frontback_revcheck, vehicle_is_reversed
  0: sw_80_gfx_85_frontback_flipcheck;
  default: sw_80_gfx_rev_idcheck;
 }
+
+//80 series kansai 86-2 front
+switch(FEAT_TRAINS, SELF, sw_80_gfx_862_kansai_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_80_front_kansai;
+ default: spriteset_80_back_kansai;
+}
+switch(FEAT_TRAINS, PARENT, sw_80_gfx_862_kansai_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_80_gfx_862_kansai_frontback_flipcheck;
+ default: sw_80_gfx_rev_idcheck;
+}
 /*---END OF SECTION---*/
 
 
 
 /*---GFX: Middle Car Switches---*/
 //80
+switch(FEAT_TRAINS, PARENT, sw_80_gfx_spriteset_80_mid_panto, cargo_subtype){
+  3: spriteset_80_mid_panto_kansai;
+  2: spriteset_80_mid_panto;
+  1: spriteset_80_mid_panto;
+  0: spriteset_80_mid_panto;
+}
 switch(FEAT_TRAINS, SELF, sw_80_gfx_cargosubtype, cargo_subtype){
-  4: spriteset_80_mid_panto;
-  3: spriteset_80_midgr;
+  5: sw_80_gfx_spriteset_80_mid_panto;
+  4: spriteset_80_midgr;
+  3: spriteset_80_mid_kansai;
   2: spriteset_80_mid;
   1: spriteset_80_mid;
   0: spriteset_80_mid;
@@ -303,21 +364,25 @@ switch(FEAT_TRAINS, PARENT, sw_80_gfx_mucar_revcheck_mid, vehicle_is_reversed){
 switch(FEAT_TRAINS, SELF, sw_80_gfx_mucar,  cargo_subtype) {
   default: sw_80_gfx_mucar_revcheck_mid;
 }
-switch(FEAT_TRAINS, PARENT, sw_80_gfx_main,  cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_80_gfx_main,  cargo_subtype) {
+  3: sw_80_gfx_862_kansai_frontback_revcheck;
   2: sw_80_gfx_85_frontback_revcheck;
   1: sw_80_gfx_862_frontback_revcheck;
   0: sw_80_gfx_861_frontback_revcheck;
 }
 
+
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_mucar, cargo_subtype) {
-  4: string(jnr80_pt);
-  3: string(jnr80_gr);
+  5: string(jnr80_pt);
+  4: string(jnr80_gr);
+  3: string(jnr80_ka); 
   2: string(jnr80_85); 
-  1: string(jnr80_862);
-  0: string(jnr80_861);
+  1: string(jnr80_861);
+  0: string(jnr80_862);
 }
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_main, cargo_subtype) {
+  3: string(jnr80_ka); 
   2: string(jnr80_85); 
   1: string(jnr80_861);
   0: string(jnr80_862);
@@ -336,12 +401,12 @@ switch(FEAT_TRAINS, SELF, sw_80_subtypetext_main, cargo_subtype) {
 item(FEAT_TRAINS, emu_80) {
     property {
         name:                         string(JNR_80);
-        introduction_date:            date(1958, 11, 12);
+        introduction_date:            date(1950, 11, 12);
         model_life:                   20;
         vehicle_life:                 39;
         reliability_decay:            11;
 
-        cargo_capacity:               param_capacity_express;
+        cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
         cost_factor:                  17;
         running_cost_factor:          51;
@@ -382,7 +447,7 @@ item(FEAT_TRAINS, emu_80) {
     /*Multiple Unit Car*/
       livery_override(mu_car){
         default:                      sw_80_gfx_mucar;
-        cargo_capacity:               param_capacity_express;
+        cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
         cargo_subtype_text:           sw_80_subtypetext_mucar;
         power: 120;
