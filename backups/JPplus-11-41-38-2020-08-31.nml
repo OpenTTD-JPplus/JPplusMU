@@ -11533,7 +11533,7 @@ item(FEAT_TRAINS, emu_6000) {
         ai_special_flag:              AI_FLAG_PASSENGER;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         misc_flags:                   bitmask(TRAIN_FLAG_MU);
-        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        //refittable_cargo_classes:     bitmask(CC_PASSENGERS);
         non_refittable_cargo_classes: bitmask();
         refit_cost:                   0;
         dual_headed:                  1;

@@ -56,7 +56,6 @@ item(FEAT_TRAINS, emu_811, 2037) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_813, 2038) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_303, 2039) {} //107emu 0x7E2
 
-
 item(FEAT_TRAINS, DH_E851, 4000) {} //E851
 item(FEAT_TRAINS, DH_EF210, 4001) {} //EF210
 item(FEAT_TRAINS, DH_ED75, 4002) {} //ED75

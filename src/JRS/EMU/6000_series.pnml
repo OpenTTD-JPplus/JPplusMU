@@ -1,0 +1,229 @@
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_6000_purchase,	                                                     "gfx/JRW/emu207/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_6000_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRS/emu6000/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//6000
+spriteset (spriteset_6000_front,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_6000_back,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_6000_mid,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_6000_rev_front,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_6000_rev_back,        	    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_6000_rev_mid,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_6000_revflip_front,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_6000_revflip_back,    		    "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_6000_revflip_mid,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_6000_front,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-1.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_6000_back,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-2.png")        {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_6000_mid,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-3.png")           {tmpl_std_rev(0, 1)}
+
+alternative_sprites(spriteset_6000_rev_front,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-1.png")          {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_6000_rev_back,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-2.png")       {tmpl_std(0, 1)}
+alternative_sprites(spriteset_6000_rev_mid,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-3.png")          {tmpl_std(0, 1)}
+
+alternative_sprites(spriteset_6000_revflip_front,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-1.png")        {tmpl_std(0, 26)}
+alternative_sprites(spriteset_6000_revflip_back,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-2.png")     {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_6000_revflip_mid,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRS/emu6000/6000-1-3.png")        {tmpl_std_rev(0, 1)}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_6000_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0: spriteset_6000_rev_front;
+}
+switch(FEAT_TRAINS,SELF, sw_6000_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0: spriteset_6000_revflip_front;
+}
+
+switch(FEAT_TRAINS,SELF, sw_6000_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0: spriteset_6000_rev_mid;
+}
+switch(FEAT_TRAINS,SELF, sw_6000_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0: spriteset_6000_revflip_mid;
+}
+
+switch(FEAT_TRAINS,SELF, sw_6000_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0: spriteset_6000_rev_back;
+}
+switch(FEAT_TRAINS,SELF, sw_6000_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+
+0: spriteset_6000_revflip_back;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
+  1: sw_6000_gfx_rev_front_livery;
+ default: sw_6000_gfx_revflip_front_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_mid_flippedcheck, vehicle_is_flipped) {
+  1: sw_6000_gfx_revflip_mid_livery;
+ default: sw_6000_gfx_rev_mid_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
+  1: sw_6000_gfx_revflip_back_livery;
+ default: sw_6000_gfx_rev_back_livery;
+}
+
+//Front/Back Car Position Testing
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_6000_gfx_rev_front_flippedcheck;
+  0:sw_6000_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_frontback_aftermucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_6000_gfx_rev_back_flippedcheck;
+  0:sw_6000_gfx_rev_front_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_frontback_mucarcheck, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000:sw_6000_gfx_rev_frontback_aftermucars;
+  default:sw_6000_gfx_rev_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_frontback_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  2011:sw_6000_gfx_rev_frontback_mucarcheck;
+  1000:sw_6000_gfx_rev_front_flippedcheck;
+  default:sw_6000_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_frontback, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  2011:sw_6000_gfx_rev_frontback_sameid;
+  1000:sw_6000_gfx_rev_back_flippedcheck;
+  default:sw_6000_gfx_rev_front_flippedcheck;
+}
+
+//ID Testing
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
+  1000: sw_6000_gfx_rev_mid_flippedcheck;
+  2011: sw_6000_gfx_rev_frontback;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//6000
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_6000_front;
+ default: spriteset_6000_back;
+}
+switch(FEAT_TRAINS, PARENT, sw_6000_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_6000_gfx_frontback_flipcheck;
+ default: sw_6000_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+//6000
+switch(FEAT_TRAINS, PARENT, sw_6000_gfx_mucar_revcheck_mid, vehicle_is_reversed){
+    0: spriteset_6000_mid;
+    default: sw_6000_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_mucar, cargo_subtype){
+  0: sw_6000_gfx_mucar_revcheck_mid;
+}
+switch(FEAT_TRAINS, SELF, sw_6000_gfx_main, cargo_subtype) {
+  0: sw_6000_gfx_frontback_revcheck;
+}
+
+//Menu Switches
+/*
+switch(FEAT_TRAINS, SELF, sw_6000_subtypetext_mucar, cargo_subtype) {
+  4: string(JRS6000_SPACEWORLD2);
+  3: string(JRS6000_SPACEWORLD);
+  2: string(JRS6000_GREENLAND);
+  1: string(JRS6000_RENEWAL);
+  0: string(JRS6000_INITIAL);
+}
+switch(FEAT_TRAINS, SELF, sw_6000_subtypetext_main, cargo_subtype) {
+  4: string(JRS6000_SPACEWORLD2);
+  3: string(JRS6000_SPACEWORLD);
+  2: string(JRS6000_GREENLAND);
+  1: string(JRS6000_RENEWAL);
+  0: string(JRS6000_INITIAL);
+}
+*/
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_6000_attach_vehid, [vehicle_type_id == emu_6000 || vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, emu_6000) {
+    property {
+        name:                         string(JRS_6000);
+        introduction_date:            date(1995, 04, 16);
+        model_life:                   2;
+        vehicle_life:                 30;
+        reliability_decay:            16;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  17;
+        running_cost_factor:          51;
+
+        speed:                        110 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        520 kW;
+        weight:                       37 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_6000_gfx_main;
+		    purchase:                 spriteset_6000_purchase;
+		    additional_text:	      return string(JRS_6000_DESC);
+        //cargo_subtype_text:           sw_6000_subtypetext_main;
+        can_attach_wagon:			  sw_6000_attach_vehid;
+        //start_stop:                   ;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_6000_gfx_mucar;
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        //cargo_subtype_text:           sw_6000_subtypetext_mucar;
+        power: 120;
+        weight: 27;
+      }
+
+}
