@@ -71,11 +71,17 @@
 
 //JR-West
 #include "src/JRW/EMU/207_series.pnml"
+#include "src/JRW/EMU/221_series.pnml"
+#include "src/JRW/EMU/223_0_series.pnml"
+#include "src/JRW/EMU/223_1000_series.pnml"
 
 
 //JR-Shikoku
 
 //JR-Kyushu
+#include "src/JRK/EMU/303_series.pnml"
+#include "src/JRK/EMU/811_series.pnml"
+#include "src/JRK/EMU/813_series.pnml"
 
 
 //GRF OVERRIDE

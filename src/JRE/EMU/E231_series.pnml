@@ -311,7 +311,7 @@ switch(FEAT_TRAINS, PARENT, sw_E231_gfx_front_revcheck_500sobu, vehicle_is_rever
  default: sw_E231_gfx_rev_idcheck;
 }
 switch(FEAT_TRAINS, PARENT, sw_E231_gfx_back_revcheck_500sobu, vehicle_is_reversed){
- 0: spriteset_E231_500_front_sobu_rev;
+ 0: spriteset_E231_500_back_sobu_rev;
  default: sw_E231_gfx_rev_idcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_E231_gfx_frontback_500sobu, vehicle_is_flipped) {

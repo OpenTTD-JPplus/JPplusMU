@@ -49,6 +49,12 @@ item(FEAT_TRAINS, emu_201, 2030) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_181, 2031) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_80, 2032) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_165, 2033) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_223_0, 2034) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_223_1000, 2035) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_221, 2036) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_811, 2037) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_813, 2038) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_303, 2039) {} //107emu 0x7E2
 
 
 item(FEAT_TRAINS, DH_E851, 4000) {} //E851

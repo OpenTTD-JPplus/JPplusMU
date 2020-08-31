@@ -2,8 +2,8 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	4;
-	min_compatible_version: 4;
+	version:	5;
+	min_compatible_version: 5;
 		//basecosts
 		param 0 {
 				param_basecostbuy {

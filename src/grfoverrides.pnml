@@ -27,8 +27,17 @@ item(FEAT_TRAINS, japanset_485, 0x38) {
 		climates_available: NO_CLIMATE;
 	}
 } 
-
+item(FEAT_TRAINS, japanset_80, 0x11) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
 item(FEAT_TRAINS, japanset_101, 0x30) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+} 
+item(FEAT_TRAINS, japanset_103, 0x60) {
 	property {
 		climates_available: NO_CLIMATE;
 	}
@@ -48,11 +57,11 @@ item(FEAT_TRAINS, japanset_209, 0x68) {
 		climates_available: NO_CLIMATE;
 	}
 } 
-item(FEAT_TRAINS, japanset_209, 0x68) {
+item(FEAT_TRAINS, japanset_223, 0x42) {
 	property {
 		climates_available: NO_CLIMATE;
 	}
-} 
+}
 item(FEAT_TRAINS, japanset_E231, 0x44) {
 	property {
 		climates_available: NO_CLIMATE;
@@ -64,6 +73,11 @@ item(FEAT_TRAINS, japanset_E233, 0x5B) {
 	}
 } 
 item(FEAT_TRAINS, japanset_281, 0x41) {
+	property {
+		climates_available: NO_CLIMATE;
+	}
+}
+item(FEAT_TRAINS, japanset_415, 0x62) {
 	property {
 		climates_available: NO_CLIMATE;
 	}

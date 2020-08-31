@@ -34,11 +34,17 @@ emu_719,
 emu_7195000,
 /*JR West*/
 emu_jrw207,
+emu_221,
+emu_223_0,
+emu_223_1000,
 /*JR Central*/
 emu_21156,
 emu_311,
 emu_313,
 /*JR Kyushu*/
+emu_303,
+emu_811,
+emu_813,
 /*JR Hokkaido*/
 dmu_kiha141,
 dmu_kiha150,
