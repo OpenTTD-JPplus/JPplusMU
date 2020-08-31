@@ -6609,10 +6609,10 @@ alternative_sprites(spriteset_711_back_beam,            ZOOM_LEVEL_NORMAL, BIT_D
 alternative_sprites(spriteset_711_mid_darm,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-3.png")           {tmpl_std(0, 1)}
 alternative_sprites(spriteset_711_mid_sarm,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-4.png")           {tmpl_std(0, 1)}
 
-alternative_sprites(spriteset_711_rev_front_nobeam,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-1.png")           {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_711_rev_back_nobeam,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-1.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_711_rev_front_beam,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-2.png")           {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_711_rev_back_beam,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-2.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_711_rev_front_nobeam,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-1.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_711_rev_back_nobeam,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-1.png")           {tmpl_std(0, 26)}
+alternative_sprites(spriteset_711_rev_front_beam,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-2.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_711_rev_back_beam,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-2.png")           {tmpl_std(0, 26)}
 alternative_sprites(spriteset_711_rev_mid_darm,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-3.png")           {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_711_rev_mid_sarm,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-1-4.png")           {tmpl_std_rev(0, 1)}
 
@@ -6664,12 +6664,12 @@ alternative_sprites(spriteset_711_mid_refurb_darm,              ZOOM_LEVEL_NORMA
 alternative_sprites(spriteset_711_mid_refurb_sarm,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-4.png")           {tmpl_std(0, 1)}
 alternative_sprites(spriteset_711_mid_refurb_ac,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-3-2.png")           {tmpl_std(0, 1)}
 
-alternative_sprites(spriteset_711_rev_front_refurb_2door,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-1.png")           {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_711_rev_back_refurb_2door,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-1.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_711_rev_front_refurb_3door,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-2.png")           {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_711_rev_back_refurb_3door,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-2.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_711_rev_front_refurb_ac,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-3-1.png")           {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_711_rev_back_refurb_ac,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-3-1.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_711_rev_front_refurb_2door,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-1.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_711_rev_back_refurb_2door,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-1.png")           {tmpl_std(0, 26)}
+alternative_sprites(spriteset_711_rev_front_refurb_3door,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-2.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_711_rev_back_refurb_3door,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-2.png")           {tmpl_std(0, 26)}
+alternative_sprites(spriteset_711_rev_front_refurb_ac,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-3-1.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_711_rev_back_refurb_ac,                ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-3-1.png")           {tmpl_std(0, 26)}
 alternative_sprites(spriteset_711_rev_mid_refurb_darm,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-3.png")           {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_711_rev_mid_refurb_sarm,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-2-4.png")           {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_711_rev_mid_refurb_ac,                 ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/711-3-2.png")           {tmpl_std_rev(0, 1)}
@@ -6949,7 +6949,7 @@ switch(FEAT_TRAINS, SELF, sw_711_subtypetext_main, cargo_subtype) {
 item(FEAT_TRAINS, emu_711) {
     property {
         name:                         string(JNR_711);
-        introduction_date:            date(1968, 02, 02);
+        introduction_date:            date(1968, 24, 02);
         model_life:                   13;
         vehicle_life:                 30;
         reliability_decay:            16;

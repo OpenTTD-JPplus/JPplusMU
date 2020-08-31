@@ -231,6 +231,10 @@ JRK813_STD2          : Standard Livery (Middle Pantograph)
 JRK813_FUKU          : Fukuhoku Yutaka Livery (End Pantograph)
 JRK813_FUKU2         : Fukuhoku Yutaka Livery (Middle Pantograph)
 
+JNR711_OLD           : Original Livery
+JNR711_NEW2D         : New Livery (2 Doors)
+JNR711_NEW3D         : New Livery (3 Doors) 
+JNR711_NEWAC         : New Livery (AirCon) 
 
 SANDWICH_LV           : Standard "Sandwich" Livery
 NIKKO_LV              : Nikko "N" Livery
@@ -346,7 +350,7 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JRE_209_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 211 Series
-    JNR_211_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central{}{BLACK}Liveries: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached to add bilevel cars. Formation:{}{}211-MU-MU{GREEN}-SC-SC-{WHITE}MU-MU-MU-MU-CC{}211-MU-CC{GREEN}-SC-SC-{WHITE}211-MU-MU-MU-CC{}
+    JNR_211_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central{}{BLACK}Liveries: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}
 
 # 211-5000/6000 Series
     JNR_21156_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
@@ -355,7 +359,7 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JNR_213_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West {ORANGE}Central{}{BLACK}Liveries: {BLUE}Okayama, {ORANGE}Tokai (1989+){}
 
 # E217 Series
-    JRE_E217_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yokosuka, Shonan (2006+){}{}{TINYFONT}{GREEN}JP+ MU Car{WHITE} can be refit to add bilevel cars.
+    JRE_E217_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yokosuka, Shonan (2006+){}
 
 # KiHa 141
   JRH_kiha141_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido
@@ -371,9 +375,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # KiHa 201
   JRH_kiha201_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
-
-# 711 Series
-  JRH_711emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Original, Stripe {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}
 
 # 721 Series
   JRH_721emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
@@ -406,13 +407,13 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JRE_7195000_DESC  :{BLACK}Gauge:{GOLD} Standard/Kōki (4ft8.5in/​1,435mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: Yamagata{}
 
 # E235 Series
-    JRE_E235_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yamanote, Yokosuka (2020+){GREEN}{}{}{TINYFONT}{GREEN}JP+ MU Car{WHITE} can be refit to add bilevel cars.
+    JRE_E235_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yamanote, Yokosuka (2020+){GREEN}{}
 
 # E233 Series
-    JRE_E233_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Chou, Keihin-Toukohu (2007+), Shonan (2007+), Joban Local (2009+),  Keiyo (2010+),  Saikyo (2013+), Yokohama (2014+), Nanbu (2014+){GREEN}{}{}{TINYFONT}{GREEN}JP+ MU Car{WHITE} can be refit to add bilevel cars.
+    JRE_E233_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Chou, Keihin-Toukohu (2007+), Shonan (2007+), Joban Local (2009+),  Keiyo (2010+),  Saikyo (2013+), Yokohama (2014+), Nanbu (2014+){GREEN}{}
 
 # E231 Series
-    JRE_E231_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}{}{TINYFONT}{GREEN}JP+ MU Car{WHITE} can be refit to add bilevel cars.
+    JRE_E231_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
 
 # 207 Series
     JRW_207_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange
@@ -473,3 +474,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 303 Series
     JRK_303_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}
+
+# 711 Series
+    JNR_711_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Original, Stripe {GREEN}(refittable){}
