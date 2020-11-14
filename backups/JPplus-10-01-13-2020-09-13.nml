@@ -7,8 +7,8 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	6;
-	min_compatible_version: 6;
+	version:	5;
+	min_compatible_version: 5;
 		//basecosts
 		param 0 {
 				param_basecostbuy {
@@ -10050,7 +10050,7 @@ spriteset (spriteset_207_back_sp_jrw,	  	"gfx/JRW/emu207/jrw207_original.png")  
 spriteset (spriteset_207_back_np_jrw,	  	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std(0, 129) }
 spriteset (spriteset_207_mid_sp_jrw,	  	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std_panto25(0, 154) }
 spriteset (spriteset_207_mid_tp_jrw,	  	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std_panto25(0, 180) }
-spriteset (spriteset_207_mid_jrw,	      	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std(0, 206) }
+spriteset (spriteset_207_mid_jrw,	      	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std(0, 129) }
 
 spriteset (spriteset_207_front_tp_jrw_rev,	 	"gfx/JRW/emu207/jrw207_original.png")           	{ tmpl_std_panto25_rev(0, 0) }
 spriteset (spriteset_207_front_sp_jrw_rev,	 	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std_panto25_rev(0, 26) }
@@ -10060,7 +10060,7 @@ spriteset (spriteset_207_back_sp_jrw_rev,	  	"gfx/JRW/emu207/jrw207_original.png
 spriteset (spriteset_207_back_np_jrw_rev,	  	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std_rev(0, 129) }
 spriteset (spriteset_207_mid_sp_jrw_rev,	  	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std_panto25_rev(0, 154) }
 spriteset (spriteset_207_mid_tp_jrw_rev,	  	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std_panto25_rev(0, 180) }
-spriteset (spriteset_207_mid_jrw_rev,	      	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std_rev(0, 206) }
+spriteset (spriteset_207_mid_jrw_rev,	      	"gfx/JRW/emu207/jrw207_original.png")          	{ tmpl_std_rev(0, 129) }
 
 //207 Repaint
 spriteset (spriteset_207_front_tp_repaint,	  "gfx/JRW/emu207/jrw207_repaint.png")          	{ tmpl_std_panto25(0, 0) }

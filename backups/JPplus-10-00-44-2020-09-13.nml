@@ -7,8 +7,8 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	6;
-	min_compatible_version: 6;
+	version:	5;
+	min_compatible_version: 5;
 		//basecosts
 		param 0 {
 				param_basecostbuy {
@@ -10101,16 +10101,16 @@ spriteset (spriteset_207_mid_refurb_rev,	       	"gfx/JRW/emu207/jrw207_refurb.p
 switch(FEAT_TRAINS,SELF, sw_207_gfx_pantograph_pos_jrw_middle, position_in_vehid_chain%7){
   0: spriteset_207_mid_tp_jrw;
   4: spriteset_207_mid_tp_jrw;
-  default: spriteset_207_mid_jrw;
+  default: spriteset_207_mid_repaint;
 }
 switch(FEAT_TRAINS,SELF, sw_207_gfx_pantograph_pos_jrw_end, position_in_vehid_chain%5){
   1: spriteset_207_mid_sp_jrw;
   3: spriteset_207_mid_sp_jrw;
-  default: spriteset_207_mid_jrw;
+  default: spriteset_207_mid_repaint;
 }
 switch(FEAT_TRAINS,SELF, sw_207_gfx_pantograph_pos_jrw_end_4car, position_in_vehid_chain%4){
   2: spriteset_207_mid_sp_jrw;
-  default: spriteset_207_mid_jrw;
+  default: spriteset_207_mid_repaint;
 }
 switch(FEAT_TRAINS,SELF, sw_207_gfx_pantograph_pos_jrw_end_maincounter, num_vehs_in_vehid_chain){
 0..2:sw_207_gfx_pantograph_pos_jrw_end;
