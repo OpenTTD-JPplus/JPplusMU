@@ -69,8 +69,15 @@ JRC_311:311 Series {WHITE}(EMU){BLACK}
 JRC_313:313 Series {WHITE}(EMU){BLACK}
 
 
-JRE_kiha100:KiHa 100/110 Series {WHITE}(DMU){BLACK}
-JRE_kiha111:KiHa 111/112 Series {WHITE}(DMU){BLACK}
+
+
+JRE_KH100:KiHa 100/101 Series {WHITE}(DMU){BLACK}
+JRE_KH110:KiHa 110 Series {WHITE}(DMU){BLACK}
+JRE_KH111:KiHa 111/112 Series {WHITE}(DMU){BLACK}
+
+JRE_KHE120:KiHa E120 Series {WHITE}(DMU){BLACK}
+JRE_KHE130:KiHa E130 Series {WHITE}(DMU){BLACK}
+JRE_KHE131:KiHa E131/E132 Series {WHITE}(DMU){BLACK}
 
 JRE_107:107 Series {WHITE}(EMU){BLACK}
 JRE_209:209 Series {WHITE}(EMU){BLACK}
@@ -281,6 +288,13 @@ SHONAN_113_LV_5       : Shonan Livery (2 SD Green Car Variations)
 SHONAN_113_LV_6       : Shonan Livery (DD Old/SD Green Car Variations)
 SHONAN_113_LV_7       : Shonan Livery (DD New/SD Green Car Variations)
 
+JREKHE120_OR    : Beech Forest Orange Livery
+JREKHE120_GR    : Tohoku Green Livery
+
+JREKHE130_SU    : -0 Suigun Line
+JREKHE130_KU    : -100 Kurui Line
+JREKHE130_HA    : -500 Hachinohe Line
+
 
 # Coupling Rejection
 JNR211_UNIQUE  :You can only attach MU cars, DD-MU cars or the 211 Series EMU to this consist!
@@ -364,11 +378,11 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # KiHa 141
   JRH_kiha141_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido
 
-# KiHa 100/110
-  JRE_kiha100_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Green, Aterazawa (1993+), Akita Relay (1996+), Rikuu (1998+), Koumi Red (2015+){}
+# KiHa 110
+  JRE_KH110_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Green, Akita Relay, Rikuu, Koumi Red, Iiyama Voiture Amitie{}
 
 # KiHa 111/112
-  JRE_kiha111_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Green, Akita Relay (1996+), Rikuu (1998+), Hachiko (2014+), Koumi Express (2015+){}
+  JRE_KH111_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Green, Akita Relay (1996+), Rikuu (1998+), Hachiko (2014+), Koumi Express (2015+){}
 
 # KiHa 150
   JRH_kiha150_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.
@@ -477,3 +491,12 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 711 Series
     JNR_711_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Original, Stripe {GREEN}(refittable){}
+
+# KiHa E120
+    JRE_KHE120_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Orange, Green{}
+
+# KiHa E130
+    JRE_KHE130_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Kurui, Hachinohe{}
+
+# KiHa E130
+    JRE_KHE131_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Hachinohe{}

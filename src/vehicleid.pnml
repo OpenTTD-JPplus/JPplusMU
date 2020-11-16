@@ -11,8 +11,11 @@ item(FEAT_TRAINS, dmu_kiha54, 1505) {} //kiha281	 0x5E1
 item(FEAT_TRAINS, dmu_kiha58, 1506) {} //kiha281	 0x5E2
 item(FEAT_TRAINS, dmu_kiha141, 1507) {} //kiha281	 0x5E3
 item(FEAT_TRAINS, dmu_kiha150, 1508) {} //kiha281  0x5E4
-item(FEAT_TRAINS, dmu_kiha100, 1509) {} //kiha281  0x5E5
+item(FEAT_TRAINS, dmu_KH110, 1509) {} //kiha281  0x5E5
 item(FEAT_TRAINS, dmu_kiha111, 1510) {} //kiha281  0x5E6
+item(FEAT_TRAINS, dmu_KHE120, 1511) {} //kiha281  0x5E6
+item(FEAT_TRAINS, dmu_KHE130, 1512) {} //kiha281  0x5E6
+item(FEAT_TRAINS, dmu_KHE131, 1513) {} //kiha281  0x5E6
 
 
 item(FEAT_TRAINS, emu_107, 2018) {} //107emu 0x7E2
