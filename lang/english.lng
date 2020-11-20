@@ -295,6 +295,14 @@ JREKHE130_SU    : -0 Suigun Line
 JREKHE130_KU    : -100 Kurui Line
 JREKHE130_HA    : -500 Hachinohe Line
 
+JREKH110_GREEN      : Corporate Green
+JREKH110_GREENBL    : Corporate Green (Black Ends)
+JREKH110_RIKKU      : Rikuu Line
+JREKH110_AKITA      : Akita Relay
+JREKH110_VOITAMI    : Iiyama "Voiture Amitié"
+JREKH110_METRORED   : Koumi "Metropolitan" Red
+
+
 
 # Coupling Rejection
 JNR211_UNIQUE  :You can only attach MU cars, DD-MU cars or the 211 Series EMU to this consist!

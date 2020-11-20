@@ -8,18 +8,18 @@ spriteset (spriteset_KH110_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl
 spriteset (spriteset_KH110_rev_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH110_revflip_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_KH110_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std_rev(0, 25)}
 
 //KH110 JR Green Black Front
 spriteset (spriteset_KH110_greenblack,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH110_rev_greenblack,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH110_revflip_greenblack,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_KH110_greenblack,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_greenblack,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_greenblack, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH110_greenblack,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_greenblack,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_greenblack, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 25)}
 
 //KH110 Rikku East Line
 spriteset (spriteset_KH110_rikku,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -101,19 +101,34 @@ switch(FEAT_TRAINS, SELF, sw_KH110_gfx_rev_idcheck, [STORE_TEMP(position_in_cons
 
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
-//KH110 Suigun
-switch(FEAT_TRAINS, PARENT, sw_KH110_suigun_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_suigun;
+//KH110 JR Green
+switch(FEAT_TRAINS, PARENT, sw_KH110_green_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH110_green;
  default: sw_KH110_gfx_rev_idcheck;
 }
-//KH110 Kurui
-switch(FEAT_TRAINS, PARENT, sw_KH110_kurui_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_kurui;
+//KH110 JR Green Black Front
+switch(FEAT_TRAINS, PARENT, sw_KH110_greenblack_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH110_greenblack;
  default: sw_KH110_gfx_rev_idcheck;
 }
-//KH110 Hachi
-switch(FEAT_TRAINS, PARENT, sw_KH110_hachi_gfx_frontback_revcheck, vehicle_is_reversed){
- 0: spriteset_KH110_hachi;
+//KH110 Rikku East Line
+switch(FEAT_TRAINS, PARENT, sw_KH110_rikku_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH110_rikku;
+ default: sw_KH110_gfx_rev_idcheck;
+}
+//KH110 Akita Relay
+switch(FEAT_TRAINS, PARENT, sw_KH110_akita_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH110_akita;
+ default: sw_KH110_gfx_rev_idcheck;
+}
+//KH110 VOITURE AMITIE
+switch(FEAT_TRAINS, PARENT, sw_KH110_voitami_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH110_voitami;
+ default: sw_KH110_gfx_rev_idcheck;
+}
+//KH110 Metropolitan Koumi Line Special
+switch(FEAT_TRAINS, PARENT, sw_KH110_metrored_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH110_metrored;
  default: sw_KH110_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
@@ -129,16 +144,22 @@ switch(FEAT_TRAINS, PARENT, sw_KH110_hachi_gfx_frontback_revcheck, vehicle_is_re
 /*---GFX: Livery Refitting Switches---*/
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH110_gfx_main, cargo_subtype) {
-  2: sw_KH110_hachi_gfx_frontback_revcheck;
-  1: sw_KH110_kurui_gfx_frontback_revcheck;
-  0: sw_KH110_suigun_gfx_frontback_revcheck;
+  5: sw_KH110_metrored_gfx_frontback_revcheck;
+  4: sw_KH110_voitami_gfx_frontback_revcheck;
+  3: sw_KH110_akita_gfx_frontback_revcheck;
+  2: sw_KH110_rikku_gfx_frontback_revcheck;
+  1: sw_KH110_greenblack_gfx_frontback_revcheck;
+  0: sw_KH110_green_gfx_frontback_revcheck;
 }
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH110_subtypetext_main, cargo_subtype) {
-  2: string(JREKH110_HA);
-  1: string(JREKH110_KU);
-  0: string(JREKH110_SU);
+  5: string(JREKH110_METRORED);
+  4: string(JREKH110_VOITAMI);
+  3: string(JREKH110_AKITA);
+  2: string(JREKH110_RIKKU);
+  1: string(JREKH110_GREENBL);
+  0: string(JREKH110_GREEN);
 }
 
 /*---END OF SECTION---*/

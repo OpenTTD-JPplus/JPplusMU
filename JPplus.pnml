@@ -58,6 +58,8 @@
 
 
 //JR-East
+#include "src/JRE/DMU/KH110_series.pnml"
+
 #include "src/JRE/DMU/KHE120_series.pnml"
 #include "src/JRE/DMU/KHE130_series.pnml"
 #include "src/JRE/DMU/KHE131_series.pnml"
