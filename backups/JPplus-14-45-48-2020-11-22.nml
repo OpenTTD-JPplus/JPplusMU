@@ -11069,41 +11069,23 @@ switch(FEAT_TRAINS,SELF, sw_207_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_
   0: sw_207_gfx_rev_pantograph_pos_jrw_stdmid;
 }
 
-//Front/Back Car Position Testing
-switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_frontback_nomucars, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_207_gfx_rev_flippedcheck_cab_front;
-  0:sw_207_gfx_rev_flippedcheck_cab_back;
-}
-switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_frontback_aftermucars, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_207_gfx_rev_flippedcheck_cab_back;
-  0:sw_207_gfx_rev_flippedcheck_cab_front;
-}
-switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_frontback_mucarcheck, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),  //look at opposite position_in_vehID_chain
-STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),                               //look at what is ahead of the first vehicle in the vehID_chain
-var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000:sw_207_gfx_rev_frontback_aftermucars;
-  default:sw_207_gfx_rev_frontback_nomucars;
-}
-switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_frontback_sameid, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2017:sw_207_gfx_rev_frontback_mucarcheck;
-  1000:sw_207_gfx_rev_flippedcheck_cab_front;
-  default:sw_207_gfx_rev_flippedcheck_cab_back;
-}
-switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_frontback, 
-[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
-  2017:sw_207_gfx_rev_frontback_sameid;
-  1000:sw_207_gfx_rev_flippedcheck_cab_back;
-  default:sw_207_gfx_rev_flippedcheck_cab_front;
-}
-
 //ID Testing
+switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_cab_idcheck_behind, [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_207_gfx_rev_flippedcheck_cab_front;
+  2017: sw_207_gfx_rev_flippedcheck_cab_back;
+}
+switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_cab_idcheck_infront, [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_207_gfx_rev_flippedcheck_cab_back;
+  2017: sw_207_gfx_rev_flippedcheck_cab_front;
+  default: sw_207_gfx_rev_cab_idcheck_behind;
+}
+switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_cab_frontcheck, position_in_consist){
+  0: sw_207_gfx_rev_cab_livery_front_flipped;
+  default: sw_207_gfx_rev_cab_idcheck_infront;
+}
 switch(FEAT_TRAINS, SELF, sw_207_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
   1000: sw_207_gfx_rev_pantograph_pos;
-  2017: sw_207_gfx_rev_frontback;
+  2017: sw_207_gfx_rev_cab_frontcheck;
 }
 /*---END OF SECTION---*/
 
