@@ -81,6 +81,9 @@ JRE_KHE131:KiHa E131/E132 Series {WHITE}(DMU){BLACK}
 
 JRE_107:107 Series {WHITE}(EMU){BLACK}
 JRE_209:209 Series {WHITE}(EMU){BLACK}
+
+JRE_E127:E127 Series {WHITE}(EMU){BLACK}
+
 JRE_E217:E217 Series {WHITE}(EMU){BLACK}
 JRE_E231:E231 Series {WHITE}(EMU){BLACK}
 JRE_E233:E233 Series {WHITE}(EMU){BLACK}
@@ -293,8 +296,13 @@ JREKH110_RIKKU      : Rikuu Line
 JREKH110_AKITA      : Akita Relay
 JREKH110_VOITAMI    : Iiyama "Voiture Amitié"
 JREKH110_METRORED   : Koumi "Metropolitan" Red
-JREKH111_HACHIKO   : Hachiko Line
+JREKH111_HACHIKO    : Hachiko Line
 JREKH111_EXPRED     : Koumi "Express" Vermillion/Cream
+
+E127_NIIG    : -0 Niigata Livery
+E127_NIIG2   : -0 Niigata Livery (Extra Pantograph)
+E127_MSMT    : -100 Matsumoto Livery (Extra Pantograph)
+E127_MSMT2   : -100 Matsumoto Livery (Extra Pantograph)
 
 
 
@@ -502,3 +510,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # KiHa E130
     JRE_KHE131_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Hachinohe{}
+
+# E127 Series
+    JRE_E127_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Niigata, Matsumoto{}

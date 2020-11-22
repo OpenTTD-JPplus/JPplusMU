@@ -444,6 +444,7 @@ item(FEAT_TRAINS, emu_221, 2036) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_811, 2037) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_813, 2038) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_303, 2039) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_E127, 2040) {} //107emu 0x7E2
 
 item(FEAT_TRAINS, DH_E851, 4000) {} //E851
 item(FEAT_TRAINS, DH_EF210, 4001) {} //EF210
@@ -487,6 +488,7 @@ dmu_KHE130,
 dmu_KHE131,
 emu_107,
 emu_209,
+emu_E127,
 emu_E217,
 emu_E231,
 emu_E233,
@@ -10142,6 +10144,259 @@ item(FEAT_TRAINS, emu_E217) {
         weight: 25;
       }
 
+}
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E127_series.pnml" 1
+/*---GFX: Spritesets---*/
+
+//Purchase Sprites
+spriteset (spriteset_E127_purchase,	                                                     "gfx/JRE/emuE127/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_E127_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE127/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//E127-0 Niigata Livery
+spriteset (spriteset_E127_front_niigata,    	          	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_back_niigata,        	          "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_frontpan_niigata,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_E127_rev_front_niigata,   	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_rev_back_niigata,        	      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_rev_frontpan_niigata,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_E127_revflip_front_niigata,    	      	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_revflip_back_niigata,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_revflip_frontpan_niigata,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_E127_front_niigata,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E127_back_niigata,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")           {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_E127_frontpan_niigata,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")           {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_E127_rev_front_niigata,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_E127_rev_back_niigata,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")           {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_E127_rev_frontpan_niigata,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")           {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_E127_revflip_front_niigata,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")       {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E127_revflip_back_niigata,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")       {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E127_revflip_frontpan_niigata,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_0.png")       {tmpl_std(0, 125)}
+
+//E127-100 Matsumoto Livery
+spriteset (spriteset_E127_front_matsum,    	          	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_back_matsum,        	          "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_frontpan_matsum,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_E127_rev_front_matsum,   	        	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_rev_back_matsum,        	      "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_rev_frontpan_matsum,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_E127_revflip_front_matsum,    	      	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_revflip_back_matsum,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_E127_revflip_frontpan_matsum,    		        "gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_E127_front_matsum,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_E127_back_matsum,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")           {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_E127_frontpan_matsum,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")           {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_E127_rev_front_matsum,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_E127_rev_back_matsum,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")           {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_E127_rev_frontpan_matsum,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")           {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_E127_revflip_front_matsum,              ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")       {tmpl_std(0, 25)}
+alternative_sprites(spriteset_E127_revflip_back_matsum,               ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")       {tmpl_std(0, 50)}
+alternative_sprites(spriteset_E127_revflip_frontpan_matsum,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE127/E127_100.png")       {tmpl_std(0, 125)}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_E127_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  3: spriteset_E127_rev_frontpan_matsum;
+  2: spriteset_E127_rev_front_matsum;
+  1: spriteset_E127_rev_frontpan_niigata;
+  0: spriteset_E127_rev_front_niigata;
+}
+switch(FEAT_TRAINS,SELF, sw_E127_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  3: spriteset_E127_revflip_frontpan_matsum;
+  2: spriteset_E127_revflip_front_matsum;
+  1: spriteset_E127_revflip_frontpan_niigata;
+  0: spriteset_E127_revflip_front_niigata;
+}
+
+switch(FEAT_TRAINS,SELF, sw_E127_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  3: spriteset_E127_rev_back_matsum;
+  2: spriteset_E127_rev_back_matsum;
+  1: spriteset_E127_rev_back_niigata;
+  0: spriteset_E127_rev_back_niigata;
+}
+switch(FEAT_TRAINS,SELF, sw_E127_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  3: spriteset_E127_revflip_back_matsum;
+  2: spriteset_E127_revflip_back_matsum;
+  1: spriteset_E127_revflip_back_niigata;
+  0: spriteset_E127_revflip_back_niigata;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_E127_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
+  1: sw_E127_gfx_rev_front_livery;
+ default: sw_E127_gfx_revflip_front_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_E127_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
+  1: sw_E127_gfx_rev_back_livery;
+ default: sw_E127_gfx_revflip_back_livery;
+}
+
+//Front/Back Car Position Testing
+switch(FEAT_TRAINS, SELF, sw_E127_gfx_rev_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_E127_gfx_rev_front_flippedcheck;
+  0:sw_E127_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E127_gfx_rev_frontback_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  2040:sw_E127_gfx_rev_frontback_nomucars;
+  default:sw_E127_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E127_gfx_rev_frontback, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  2040:sw_E127_gfx_rev_frontback_sameid;
+  default:sw_E127_gfx_rev_front_flippedcheck;
+}
+
+//ID Testing
+switch(FEAT_TRAINS, SELF, sw_E127_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
+  2040: sw_E127_gfx_rev_frontback;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//E127-0 Niigata
+switch(FEAT_TRAINS, SELF, sw_E127_niigata_gfx_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_E127_front_niigata;
+ default: spriteset_E127_back_niigata;
+}
+switch(FEAT_TRAINS, PARENT, sw_E127_niigata_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_E127_niigata_gfx_frontback_flipcheck;
+ default: sw_E127_gfx_rev_idcheck;
+}
+//E127-0 Niigata Extra Pantogaph
+switch(FEAT_TRAINS, SELF, sw_E127_niigata2_gfx_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_E127_frontpan_niigata;
+ default: spriteset_E127_back_niigata;
+}
+switch(FEAT_TRAINS, PARENT, sw_E127_niigata2_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_E127_niigata2_gfx_frontback_flipcheck;
+ default: sw_E127_gfx_rev_idcheck;
+}
+//E127-100 Matsumoto
+switch(FEAT_TRAINS, SELF, sw_E127_matsum_gfx_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_E127_front_matsum;
+ default: spriteset_E127_back_matsum;
+}
+switch(FEAT_TRAINS, PARENT, sw_E127_matsum_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_E127_matsum_gfx_frontback_flipcheck;
+ default: sw_E127_gfx_rev_idcheck;
+}
+//E127-100 Matsumoto Extra Pantogaph
+switch(FEAT_TRAINS, SELF, sw_E127_matsum2_gfx_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_E127_frontpan_matsum;
+ default: spriteset_E127_back_matsum;
+}
+switch(FEAT_TRAINS, PARENT, sw_E127_matsum2_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_E127_matsum2_gfx_frontback_flipcheck;
+ default: sw_E127_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_E127_gfx_main, cargo_subtype) {
+  3: sw_E127_matsum2_gfx_frontback_revcheck;
+  2: sw_E127_matsum_gfx_frontback_revcheck;
+  1: sw_E127_niigata2_gfx_frontback_revcheck;
+  0: sw_E127_niigata_gfx_frontback_revcheck;
+}
+
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_E127_subtypetext_main, cargo_subtype) {
+  3: string(E127_MSMT2);
+  2: string(E127_MSMT);
+  1: string(E127_NIIG2);
+  0: string(E127_NIIG);
+}
+
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_E127_attach_vehid, [vehicle_type_id == emu_E127]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, emu_E127) {
+    property {
+        name:                         string(JRE_E127);
+        introduction_date:            date(1995, 05, 08);
+        model_life:                   3;
+        vehicle_life:                 35;
+        reliability_decay:            12;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  17;
+        running_cost_factor:          51;
+
+        speed:                        110 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        240 kW;
+        weight:                       31 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_E127_gfx_main;
+		    purchase:                 spriteset_E127_purchase;
+		    additional_text:	      return string(JRE_E127_DESC);
+        cargo_subtype_text:           sw_E127_subtypetext_main;
+        can_attach_wagon:			  sw_E127_attach_vehid;
+        //start_stop:                   ;
+    }
 }
 # 1 "JPplus.pnml" 4
 # 1 "src/JRE/EMU/209_series.pnml" 1
