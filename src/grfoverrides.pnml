@@ -1,4 +1,4 @@
-
+if (param_japansetdisable == 1) {
 //JPSet3 DUPLICATION
 engine_override("SZ\0D\00");
 
@@ -179,3 +179,5 @@ item(FEAT_TRAINS, JRC373, 0x250) {
 
 //engine_override("JD\A1\E1"); jpsecret
 //jnr_ef63, 1040
+
+}

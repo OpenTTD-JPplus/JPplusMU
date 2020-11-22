@@ -26,6 +26,9 @@ STR_PARAM_NAME_BASECAPACITY      :Passenger capacities
 STR_PARAM_DESC_BASECAPACITY      :Adjusts passenger capacities inline with JapanSet3. Realistic option is based on real-world data for seating/standing capacity and is not balanced against other sets or gameplay.
 STR_PARAM_NAME_BOOSTCAPACITY     :Boost capacities
 STR_PARAM_DESC_BOOSTCAPACITY     :Boosts the capacities of commuter trains. TIAS and NATS offer higher per-car capacities than JapanSet3 for commuter trains, enabling this boosts the capacities of JP+Set commuter trains by 15 passengers to better match TIAS and NATS.
+STR_PARAM_NAME_JAPANSETDISABLE   :JapanSet3 removal 
+STR_PARAM_DESC_JAPANSETDISABLE   :Removes duplicate trains found in JapanSet3.
+
 GRF_OTTDVER       : You are below the required OpenTTD version to run this NewGRF. Please update your version of OpenTTD.
 GRF_JAPANSET      : {WHITE}Please load...{}{YELLOW}JapanSet3 Trains{WHITE}{}and/or{}{YELLOW}JapanSet3 Tracks{WHITE}{}before {GREEN}JP+Set.
 GRF_JPPLUSSET     : JP+ Set must be loaded AFTER the JP+ Legacy version.

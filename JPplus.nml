@@ -69,6 +69,15 @@ grf {
 					bit:  0;
 			 }
 		}
+				param 4 {
+			 param_japansetdisable {
+					name: string(STR_PARAM_NAME_JAPANSETDISABLE);
+					desc: string(STR_PARAM_DESC_JAPANSETDISABLE);
+					type: bool;
+					bit:  0;
+					def_value: 1;
+			 }
+		}
 }
 # 1 "JPplus.pnml" 4
 
@@ -1647,7 +1656,7 @@ alternative_sprites(spriteset_KH111_back_green,          ZOOM_LEVEL_NORMAL, BIT_
 alternative_sprites(spriteset_KH111_rev_front_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_KH111_rev_back_green,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 0)}
 
-alternative_sprites(spriteset_KH111_revflip_front_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH111_revflip_front_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 25)}
 alternative_sprites(spriteset_KH111_revflip_back_green,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 0)}
 
 
@@ -1667,7 +1676,7 @@ alternative_sprites(spriteset_KH111_back_hachiko,          ZOOM_LEVEL_NORMAL, BI
 alternative_sprites(spriteset_KH111_rev_front_hachiko,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 75)}
 alternative_sprites(spriteset_KH111_rev_back_hachiko,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 50)}
 
-alternative_sprites(spriteset_KH111_revflip_front_hachiko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_KH111_revflip_front_hachiko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 75)}
 alternative_sprites(spriteset_KH111_revflip_back_hachiko,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 50)}
 
 //KH111 Rikuu Line
@@ -1686,7 +1695,7 @@ alternative_sprites(spriteset_KH111_back_rikuu,          ZOOM_LEVEL_NORMAL, BIT_
 alternative_sprites(spriteset_KH111_rev_front_rikuu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 125)}
 alternative_sprites(spriteset_KH111_rev_back_rikuu,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 100)}
 
-alternative_sprites(spriteset_KH111_revflip_front_rikuu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_KH111_revflip_front_rikuu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 125)}
 alternative_sprites(spriteset_KH111_revflip_back_rikuu,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 100)}
 
 //KH111 Akita Relay
@@ -1705,7 +1714,7 @@ alternative_sprites(spriteset_KH111_back_akita,          ZOOM_LEVEL_NORMAL, BIT_
 alternative_sprites(spriteset_KH111_rev_front_akita,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 175)}
 alternative_sprites(spriteset_KH111_rev_back_akita,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 150)}
 
-alternative_sprites(spriteset_KH111_revflip_front_akita, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 175)}
+alternative_sprites(spriteset_KH111_revflip_front_akita, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 175)}
 alternative_sprites(spriteset_KH111_revflip_back_akita,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 150)}
 
 //KH111 Express Koumi Line Special
@@ -1724,7 +1733,7 @@ alternative_sprites(spriteset_KH111_back_koumi,          ZOOM_LEVEL_NORMAL, BIT_
 alternative_sprites(spriteset_KH111_rev_front_koumi,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 225)}
 alternative_sprites(spriteset_KH111_rev_back_koumi,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 200)}
 
-alternative_sprites(spriteset_KH111_revflip_front_koumi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 225)}
+alternative_sprites(spriteset_KH111_revflip_front_koumi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 225)}
 alternative_sprites(spriteset_KH111_revflip_back_koumi,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 200)}
 
 /*---KHE120---*/
@@ -14492,7 +14501,7 @@ item(FEAT_TRAINS, emu_813) {
 
 //GRF OVERRIDE
 # 1 "src/grfoverrides.pnml" 1
-
+if (param_japansetdisable == 1) {
 //JPSet3 DUPLICATION
 engine_override("SZ\0D\00");
 
@@ -14673,5 +14682,7 @@ item(FEAT_TRAINS, JRC373, 0x250) {
 
 //engine_override("JD\A1\E1"); jpsecret
 //jnr_ef63, 1040
+
+}
 # 1 "JPplus.pnml" 4
 

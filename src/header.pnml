@@ -64,4 +64,13 @@ grf {
 					bit:  0;
 			 }
 		}
+				param 4 {
+			 param_japansetdisable {
+					name: string(STR_PARAM_NAME_JAPANSETDISABLE);
+					desc: string(STR_PARAM_DESC_JAPANSETDISABLE);
+					type: bool;
+					bit:  0;
+					def_value: 1;
+			 }
+		}
 }
