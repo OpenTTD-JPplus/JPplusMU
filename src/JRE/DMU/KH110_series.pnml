@@ -1,7 +1,7 @@
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH110_purchase,	                                                    "gfx/JRE/dmuKH110/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_KH110_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH110/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+alternative_sprites(spriteset_KH110_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH110/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
 //KH110 JR Green
 spriteset (spriteset_KH110_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -176,7 +176,7 @@ switch(FEAT_TRAINS, SELF, sw_KH110_subtypetext_main, cargo_subtype) {
 item(FEAT_TRAINS, dmu_KH110) {
     property {
         name:                         string(JRE_KH110);
-        introduction_date:            date(2007, 01, 19);
+        introduction_date:            date(1989, 02, 02);
         model_life:                   10;
         vehicle_life:                 35;
         reliability_decay:            12;
@@ -188,7 +188,7 @@ item(FEAT_TRAINS, dmu_KH110) {
 
         speed:                        100 km/h;
         track_type:                   NARROW_NOEL;
-        power:                        331 kW;
+        power:                        235 kW;
         weight:                       39 ton;
 
         climates_available:           ALL_CLIMATES;

@@ -200,7 +200,7 @@ template tmpl_purchase_dh (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 }
 
-template tmpl_purchase_dh_32bpp (x, y) {
+template tmpl_purchase_old_dh_32bpp (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
@@ -208,6 +208,28 @@ template tmpl_purchase_dh_32bpp (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
     [x, y, 65, 15, -21, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+}
+
+template tmpl_purchase_dh_32bpp (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+    [x, y, 74, 15, -14, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+}
+
+template tmpl_purchase_32bpp (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+    [x, y, 65, 15, -28, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
 
@@ -236,47 +258,47 @@ template tmpl_new_purchase_dh_32bpp (x, y) {
 
 
 template tmpl_std(x,y){
-[x, 	 y,	8, 	24,		-3, 	-13] //short
+[x, 	 y,	8, 	24,		-3, 	-16] //short
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
-[x +32,  y,	32,	17,		-16,	-13] //long
+[x +32,  y,	32,	17,		-14,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
-[x +88,  y,	8, 	24,		-3, 	-13] //short
+[x +88,  y,	8, 	24,		-3, 	-16] //short
 [x +97,  y,	22,	20,		-13,	-13] //dia1
-[x +120, y,	32,	17,		-16,	-13] //long
+[x +120, y,	32,	17,		-14,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
 }
 
 template tmpl_std_rev(x,y){
-[x +88,  y,	8, 	24,		-3, 	-13] //short
+[x +88,  y,	8, 	24,		-3, 	-16] //short
 [x +97,  y,	22,	20,		-13,	-13] //dia1
-[x +120, y,	32,	17,		-16,	-13] //long
+[x +120, y,	32,	17,		-14,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
-[x, 	 y,	8, 	24,		-3, 	-13] //short
+[x, 	 y,	8, 	24,		-3, 	-16] //short
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
-[x +32,  y,	32,	17,		-16,	-13] //long
+[x +32,  y,	32,	17,		-14,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
 }
 
 //25 high on the short sides for the pantograph
 template tmpl_std_panto25(x,y){
-[x, 		 y,	8, 	25,		-3, 	-14] //short25
+[x, 		 y,	8, 	25,		-3, 	-17] //short25
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
-[x +32,  y,	32,	17,		-16,	-13] //long
+[x +32,  y,	32,	17,		-14,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
-[x +88,  y,	8, 	25,		-3, 	-14] //short25
+[x +88,  y,	8, 	25,		-3, 	-17] //short25
 [x +97,  y,	22,	20,		-13,	-13] //dia1
-[x +120, y,	32,	17,		-16,	-13] //long
+[x +120, y,	32,	17,		-14,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
 }
 
 template tmpl_std_panto25_rev(x,y){
-[x +88,  y,	8, 	25,		-3, 	-14] //short25
+[x +88,  y,	8, 	25,		-3, 	-17] //short25
 [x +97,  y,	22,	20,		-13,	-13] //dia1
-[x +120, y,	32,	17,		-16,	-13] //long
+[x +120, y,	32,	17,		-14,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
-[x, 		 y,	8, 	25,		-3, 	-14] //short25
+[x, 		 y,	8, 	25,		-3, 	-17] //short25
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
-[x +32,  y,	32,	17,		-16,	-13] //long
+[x +32,  y,	32,	17,		-14,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
 }
 
@@ -316,46 +338,46 @@ template tmpl_std_orginal(x,y){
 
 
 template tmpl_28px_7l(x,y){
-[x, 	 y,	8, 	23,		-3, 	-16] //short A
+[x, 	 y,	8, 	23,		-3, 	-19] //short A
 [x +9, 	 y,	20,	19,		-13,	-12] //dia1 
-[x +30,  y,	28,	15,		-16,	-11] //long C
+[x +30,  y,	28,	15,		-14,	-11] //long C
 [x +59,  y,	20,	19,		-5, 	-12] //dia2
-[x +80,  y,	8, 	23,		-3, 	-16] //short E
+[x +80,  y,	8, 	23,		-3, 	-19] //short E
 [x +89,  y,	20,	19,		-13,	-12] //dia1
-[x +110, y,	28,	15,		-16,	-11] //long
+[x +110, y,	28,	15,		-14,	-11] //long
 [x +139, y,	20,	19,		-5, 	-12] //dia2
 }
 
 template tmpl_20px_5l(x,y){
-[x, 	 y,	8, 	19,		-3, 	-16] //short A
+[x, 	 y,	8, 	19,		-3, 	-19] //short A
 [x +9, 	 y,	16,	17,		-9,	    -12] //dia1 
-[x +26,  y,	20,	15,		-8,	    -11] //long 
+[x +26,  y,	20,	15,		-6,	    -11] //long 
 [x +47,  y,	16,	17,		-1, 	-10] //dia2 
-[x +64,  y,	8, 	19,		-3, 	-12] //short E
+[x +64,  y,	8, 	19,		-3, 	-15] //short E
 [x +73,  y,	16,	17,		-13,	-10] //dia1 
-[x +90, y,	20,	15,		-16,	-11] //long 
+[x +90, y,	20,	15,		-14,	-11] //long 
 [x+111,  y,	16,	17,		-5, 	-12] //dia2 
 }
 
 template tmpl_28px_7l_rev(x,y){
-[x +80,  y,	8, 	23,		-3, 	-16] //short E
+[x +80,  y,	8, 	23,		-3, 	-19] //short E
 [x +89,  y,	20,	19,		-13,	-12] //dia1
-[x +110, y,	28,	15,		-16,	-11] //long
+[x +110, y,	28,	15,		-14,	-11] //long
 [x +139, y,	20,	19,		-5, 	-12] //dia2
-[x, 	 y,	8, 	23,		-3, 	-16] //short A
+[x, 	 y,	8, 	23,		-3, 	-19] //short A
 [x +9, 	 y,	20,	19,		-13,	-12] //dia1 
-[x +30,  y,	28,	15,		-16,	-11] //long C
+[x +30,  y,	28,	15,		-14,	-11] //long C
 [x +59,  y,	20,	19,		-5, 	-12] //dia2
 }
 
 template tmpl_20px_5l_rev(x,y){
-[x +64,  y,	8, 	19,		-3, 	-16] //short E
+[x +64,  y,	8, 	19,		-3, 	-19] //short E
 [x +73,  y,	16,	17,		-9,	    -12] //dia1 
-[x +90, y,	20,	15,		-8,	    -11] //long 
+[x +90, y,	20,	15,		-6,	    -11] //long 
 [x+111,  y,	16,	17,		-1, 	-10] //dia2 
-[x, 	 y,	8, 	19,		-3, 	-12] //short A
+[x, 	 y,	8, 	19,		-3, 	-15] //short A
 [x +9, 	 y,	16,	17,		-13,    -10] //dia1 
-[x +26,  y,	20,	15,		-16,    -11] //long 
+[x +26,  y,	20,	15,		-14,    -11] //long 
 [x +47,  y,	16,	17,		-5, 	-12] //dia2 
 }
 # 1 "JPplus.pnml" 4
@@ -7020,25 +7042,25 @@ item(FEAT_TRAINS, emu_711) {
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH110_purchase,	                                                    "gfx/JRE/dmuKH110/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_KH110_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH110/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+alternative_sprites(spriteset_KH110_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH110/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
 //KH110 JR Green
 spriteset (spriteset_KH110_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH110_rev_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH110_revflip_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_KH110_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std_rev(0, 25)}
 
 //KH110 JR Green Black Front
 spriteset (spriteset_KH110_greenblack,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH110_rev_greenblack,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH110_revflip_greenblack,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_KH110_greenblack,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_greenblack,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_greenblack, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH110_greenblack,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_greenblack,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_greenblack, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 25)}
 
 //KH110 Rikku East Line
 spriteset (spriteset_KH110_rikku,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -7195,7 +7217,7 @@ switch(FEAT_TRAINS, SELF, sw_KH110_subtypetext_main, cargo_subtype) {
 item(FEAT_TRAINS, dmu_KH110) {
     property {
         name:                         string(JRE_KH110);
-        introduction_date:            date(2007, 01, 19);
+        introduction_date:            date(1989, 02, 02);
         model_life:                   10;
         vehicle_life:                 35;
         reliability_decay:            12;
@@ -7207,7 +7229,7 @@ item(FEAT_TRAINS, dmu_KH110) {
 
         speed:                        100 km/h;
         track_type:                   NARROW_NOEL;
-        power:                        331 kW;
+        power:                        235 kW;
         weight:                       39 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -7245,7 +7267,7 @@ item(FEAT_TRAINS, dmu_KH110) {
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KHE120_purchase,	                                                    "gfx/JRE/dmuKHE120/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_KHE120_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE120/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+alternative_sprites(spriteset_KHE120_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE120/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
 //KHE120 Orginal Orange
 spriteset (spriteset_KHE120_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -7397,7 +7419,7 @@ item(FEAT_TRAINS, dmu_KHE120) {
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KHE130_purchase,	                                                    "gfx/JRE/dmuKHE130/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_KHE130_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE130/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+alternative_sprites(spriteset_KHE130_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE130/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
 //KHE130 -0 Orginal Red Suigun Line
 spriteset (spriteset_KHE130_suigun,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }

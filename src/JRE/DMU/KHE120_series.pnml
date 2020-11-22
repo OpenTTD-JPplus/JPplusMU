@@ -1,7 +1,7 @@
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KHE120_purchase,	                                                    "gfx/JRE/dmuKHE120/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_KHE120_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE120/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+alternative_sprites(spriteset_KHE120_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE120/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
 //KHE120 Orginal Orange
 spriteset (spriteset_KHE120_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
