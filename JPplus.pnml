@@ -25,6 +25,7 @@
 
 //Reversing
 #include "src/reversing/reversing_211_213_311_313_group.pnml"
+#include "src/reversing/reversing_KH_110_111_E120_E130_E131_group.pnml"
 
 
 /*---TRAINS---*/
@@ -59,6 +60,7 @@
 
 //JR-East
 #include "src/JRE/DMU/KH110_series.pnml"
+#include "src/JRE/DMU/KH111_series.pnml"
 
 #include "src/JRE/DMU/KHE120_series.pnml"
 #include "src/JRE/DMU/KHE130_series.pnml"

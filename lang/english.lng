@@ -267,15 +267,6 @@ KIHA150liv_hokkaido   : -0 Hokkaido
 KIHA150liv_asahi      : -0 Hokkaido Asahikawa
 KIHA150liv_100        : -100 Hokkaido (no AC)
 
-KIHA100liv_JRE        : JR East Green
-KIHA100liv_ATERAZAWA  : Aterazawa Line
-KIHA100liv_AKITA      : Akita Relay
-KIHA100liv_RIKUU      : Rikuu Line
-KIHA100liv_KOUMI      : Koumi "Metropolitan" Red
-KIHA100liv_IIYAMA     : Iiyama "Voiture Amitié"
-KIHA111liv_KOUMI      : Koumi "Express" Vermillion/Cream
-KIHA111liv_HACHIKO    : Hachiko Line
-
 HKDLINER_LV           : Hakodate Liner
 
 
@@ -295,12 +286,15 @@ JREKHE130_SU    : -0 Suigun Line
 JREKHE130_KU    : -100 Kurui Line
 JREKHE130_HA    : -500 Hachinohe Line
 
+JREKH100_ATZWA      : Aterazawa Line
 JREKH110_GREEN      : Corporate Green
 JREKH110_GREENBL    : Corporate Green (Black Ends)
 JREKH110_RIKKU      : Rikuu Line
 JREKH110_AKITA      : Akita Relay
 JREKH110_VOITAMI    : Iiyama "Voiture Amitié"
 JREKH110_METRORED   : Koumi "Metropolitan" Red
+JREKH111_HACHIKO   : Hachiko Line
+JREKH111_EXPRED     : Koumi "Express" Vermillion/Cream
 
 
 
@@ -387,10 +381,10 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
   JRH_kiha141_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido
 
 # KiHa 110
-  JRE_KH110_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Green, Akita Relay, Rikuu, Koumi Red, Iiyama Voiture Amitie{}
+  JRE_KH110_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
 
 # KiHa 111/112
-  JRE_KH111_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Green, Akita Relay (1996+), Rikuu (1998+), Hachiko (2014+), Koumi Express (2015+){}
+  JRE_KH111_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
 
 # KiHa 150
   JRH_kiha150_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.

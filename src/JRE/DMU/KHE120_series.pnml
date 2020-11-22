@@ -1,25 +1,4 @@
 /*---GFX: Spritesets---*/
-//Purchase Sprites
-spriteset (spriteset_KHE120_purchase,	                                                    "gfx/JRE/dmuKHE120/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_KHE120_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE120/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
-
-//KHE120 Orginal Orange
-spriteset (spriteset_KHE120_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KHE120_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KHE120_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_KHE120_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KHE120_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KHE120_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std_rev(0, 0)}
-
-//KHE120 New Green
-spriteset (spriteset_KHE120_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KHE120_rev_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KHE120_revflip_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_KHE120_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std(0, 75)}
-alternative_sprites(spriteset_KHE120_rev_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_KHE120_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std(0, 50)}
 
 /*---END OF SECTION---*/
 
@@ -32,26 +11,7 @@ alternative_sprites(spriteset_KHE120_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH
 
 
 /*---GFX: Train Reversing Switches---*/
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_KHE120_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-1: spriteset_KHE120_rev_green;
-0: spriteset_KHE120_rev_orange;
-}
-switch(FEAT_TRAINS,SELF, sw_KHE120_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-1: spriteset_KHE120_revflip_green;
-0: spriteset_KHE120_revflip_orange;
-}
 
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_KHE120_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KHE120_gfx_rev_livery;
- default: sw_KHE120_gfx_revflip_livery;
-}
-
-//ID Testing
-switch(FEAT_TRAINS, SELF, sw_KHE120_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
-  1511: sw_KHE120_gfx_rev_flippedcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -60,12 +20,12 @@ switch(FEAT_TRAINS, SELF, sw_KHE120_gfx_rev_idcheck, [STORE_TEMP(position_in_con
 //KHE120 Orange
 switch(FEAT_TRAINS, PARENT, sw_KHE120_orange_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KHE120_orange;
- default: sw_KHE120_gfx_rev_idcheck;
+ default: sw_JREKHgroup_gfx_rev_idcheck;
 }
 //KHE120 Green
 switch(FEAT_TRAINS, PARENT, sw_KHE120_green_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KHE120_green;
- default: sw_KHE120_gfx_rev_idcheck;
+ default: sw_JREKHgroup_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
 
@@ -95,7 +55,7 @@ switch(FEAT_TRAINS, SELF, sw_KHE120_subtypetext_main, cargo_subtype) {
 
 
 //Coupling
-  switch(FEAT_TRAINS, SELF, sw_KHE120_attach_vehid, [vehicle_type_id == dmu_KHE120]) {
+  switch(FEAT_TRAINS, SELF, sw_KHE120_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
   0: return string(MU_UNIQUE);
   }
 

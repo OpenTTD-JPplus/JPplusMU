@@ -1,61 +1,4 @@
 /*---GFX: Spritesets---*/
-//Purchase Sprites
-spriteset (spriteset_KH110_purchase,	                                                    "gfx/JRE/dmuKH110/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_KH110_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH110/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
-
-//KH110 JR Green
-spriteset (spriteset_KH110_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_rev_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_revflip_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_KH110_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std_rev(0, 25)}
-
-//KH110 JR Green Black Front
-spriteset (spriteset_KH110_greenblack,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_rev_greenblack,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_revflip_greenblack,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_KH110_greenblack,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_greenblack,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_greenblack, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 25)}
-
-//KH110 Rikku East Line
-spriteset (spriteset_KH110_rikku,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_rev_rikku,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_revflip_rikku,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_KH110_rikku,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-3.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_rikku,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-3.png")           {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_rikku, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-3.png")           {tmpl_std(0, 25)}
-
-//KH110 Akita Relay
-spriteset (spriteset_KH110_akita,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_rev_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_revflip_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_KH110_akita,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-4.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_akita,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-4.png")           {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_akita, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-4.png")           {tmpl_std(0, 25)}
-
-//KH110 VOITURE AMITIE
-spriteset (spriteset_KH110_voitami,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_rev_voitami,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_revflip_voitami,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_KH110_voitami,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-5.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_voitami,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-5.png")           {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_voitami, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-5.png")           {tmpl_std(0, 25)}
-
-//KH110 Metropolitan Koumi Line Special
-spriteset (spriteset_KH110_metrored,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_rev_metrored,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH110_revflip_metrored,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_KH110_metrored,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-6.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH110_rev_metrored,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-6.png")           {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_KH110_revflip_metrored, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-6.png")           {tmpl_std(0, 25)}
 
 /*---END OF SECTION---*/
 
@@ -68,34 +11,7 @@ alternative_sprites(spriteset_KH110_revflip_metrored, ZOOM_LEVEL_NORMAL, BIT_DEP
 
 
 /*---GFX: Train Reversing Switches---*/
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_KH110_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  5: spriteset_KH110_rev_metrored;  
-  4: spriteset_KH110_rev_voitami;
-  3: spriteset_KH110_rev_akita;
-  2: spriteset_KH110_rev_rikku;
-  1: spriteset_KH110_rev_greenblack;
-  0: spriteset_KH110_rev_green;
-}
-switch(FEAT_TRAINS,SELF, sw_KH110_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  5: spriteset_KH110_revflip_metrored;  
-  4: spriteset_KH110_revflip_voitami;
-  3: spriteset_KH110_revflip_akita;
-  2: spriteset_KH110_revflip_rikku;
-  1: spriteset_KH110_revflip_greenblack;
-  0: spriteset_KH110_revflip_green;
-}
 
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_KH110_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH110_gfx_rev_livery;
- default: sw_KH110_gfx_revflip_livery;
-}
-
-//ID Testing
-switch(FEAT_TRAINS, SELF, sw_KH110_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
-  1509: sw_KH110_gfx_rev_flippedcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -104,32 +20,32 @@ switch(FEAT_TRAINS, SELF, sw_KH110_gfx_rev_idcheck, [STORE_TEMP(position_in_cons
 //KH110 JR Green
 switch(FEAT_TRAINS, PARENT, sw_KH110_green_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH110_green;
- default: sw_KH110_gfx_rev_idcheck;
+ default: sw_JREKHgroup_gfx_rev_idcheck;
 }
 //KH110 JR Green Black Front
 switch(FEAT_TRAINS, PARENT, sw_KH110_greenblack_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH110_greenblack;
- default: sw_KH110_gfx_rev_idcheck;
+ default: sw_JREKHgroup_gfx_rev_idcheck;
 }
 //KH110 Rikku East Line
 switch(FEAT_TRAINS, PARENT, sw_KH110_rikku_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH110_rikku;
- default: sw_KH110_gfx_rev_idcheck;
+ default: sw_JREKHgroup_gfx_rev_idcheck;
 }
 //KH110 Akita Relay
 switch(FEAT_TRAINS, PARENT, sw_KH110_akita_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH110_akita;
- default: sw_KH110_gfx_rev_idcheck;
+ default: sw_JREKHgroup_gfx_rev_idcheck;
 }
 //KH110 VOITURE AMITIE
 switch(FEAT_TRAINS, PARENT, sw_KH110_voitami_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH110_voitami;
- default: sw_KH110_gfx_rev_idcheck;
+ default: sw_JREKHgroup_gfx_rev_idcheck;
 }
 //KH110 Metropolitan Koumi Line Special
 switch(FEAT_TRAINS, PARENT, sw_KH110_metrored_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH110_metrored;
- default: sw_KH110_gfx_rev_idcheck;
+ default: sw_JREKHgroup_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
 
@@ -167,7 +83,7 @@ switch(FEAT_TRAINS, SELF, sw_KH110_subtypetext_main, cargo_subtype) {
 
 
 //Coupling
-  switch(FEAT_TRAINS, SELF, sw_KH110_attach_vehid, [vehicle_type_id == dmu_KH110]) {
+  switch(FEAT_TRAINS, SELF, sw_KH110_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
   0: return string(MU_UNIQUE);
   }
 

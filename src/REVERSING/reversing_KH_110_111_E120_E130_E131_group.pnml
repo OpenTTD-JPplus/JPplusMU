@@ -1,0 +1,455 @@
+
+
+/*---GFX: Spritesets---*/
+
+/*---KH110---*/
+//Purchase Sprites
+spriteset (spriteset_KH110_purchase,	                                                    "gfx/JRE/dmuKH110/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH110_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH110/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH110 JR Green
+spriteset (spriteset_KH110_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_rev_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_revflip_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-2.png")           {tmpl_std_rev(0, 25)}
+
+//KH110 JR Green Black Front
+spriteset (spriteset_KH110_greenblack,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_rev_greenblack,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_revflip_greenblack,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_greenblack,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_greenblack,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_greenblack, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-1.png")           {tmpl_std(0, 25)}
+
+//KH110 Rikku East Line
+spriteset (spriteset_KH110_rikku,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_rev_rikku,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_revflip_rikku,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_rikku,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-3.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_rikku,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-3.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_rikku, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-3.png")           {tmpl_std(0, 25)}
+
+//KH110 Akita Relay
+spriteset (spriteset_KH110_akita,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_rev_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_revflip_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_akita,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-4.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_akita,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-4.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_akita, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-4.png")           {tmpl_std(0, 25)}
+
+//KH110 VOITURE AMITIE
+spriteset (spriteset_KH110_voitami,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_rev_voitami,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_revflip_voitami,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_voitami,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-5.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_voitami,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-5.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_voitami, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-5.png")           {tmpl_std(0, 25)}
+
+//KH110 Metropolitan Koumi Line Special
+spriteset (spriteset_KH110_metrored,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_rev_metrored,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH110_revflip_metrored,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH110_metrored,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-6.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH110_rev_metrored,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-6.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH110_revflip_metrored, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH110/110-6.png")           {tmpl_std(0, 25)}
+
+/*---KH111---*/
+//Purchase Sprites
+spriteset (spriteset_KH111_purchase,	                                                    "gfx/JRE/dmuKH111/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH111_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKH111/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//KH111 Green
+spriteset (spriteset_KH111_front_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_rev_front_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_rev_back_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_revflip_front_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_revflip_back_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH111_back_green,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 25)}
+ 
+alternative_sprites(spriteset_KH111_rev_front_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH111_rev_back_green,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_KH111_revflip_front_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH111_revflip_back_green,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 0)}
+
+
+//KH111 Hachiko Line
+spriteset (spriteset_KH111_front_hachiko,           	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_hachiko,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_rev_front_hachiko,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_rev_back_hachiko,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_revflip_front_hachiko,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_revflip_back_hachiko,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_hachiko,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 50)}
+alternative_sprites(spriteset_KH111_back_hachiko,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 75)}
+ 
+alternative_sprites(spriteset_KH111_rev_front_hachiko,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_KH111_rev_back_hachiko,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 50)}
+
+alternative_sprites(spriteset_KH111_revflip_front_hachiko, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_KH111_revflip_back_hachiko,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 50)}
+
+//KH111 Rikuu Line
+spriteset (spriteset_KH111_front_rikuu,           	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_rikuu,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_rev_front_rikuu,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_rev_back_rikuu,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_revflip_front_rikuu,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_revflip_back_rikuu,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_rikuu,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 100)}
+alternative_sprites(spriteset_KH111_back_rikuu,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 125)}
+ 
+alternative_sprites(spriteset_KH111_rev_front_rikuu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_KH111_rev_back_rikuu,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_KH111_revflip_front_rikuu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_KH111_revflip_back_rikuu,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 100)}
+
+//KH111 Akita Relay
+spriteset (spriteset_KH111_front_akita,           	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_akita,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_rev_front_akita,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_rev_back_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_revflip_front_akita,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_revflip_back_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_akita,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 150)}
+alternative_sprites(spriteset_KH111_back_akita,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 175)}
+ 
+alternative_sprites(spriteset_KH111_rev_front_akita,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 175)}
+alternative_sprites(spriteset_KH111_rev_back_akita,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 150)}
+
+alternative_sprites(spriteset_KH111_revflip_front_akita, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 175)}
+alternative_sprites(spriteset_KH111_revflip_back_akita,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 150)}
+
+//KH111 Express Koumi Line Special
+spriteset (spriteset_KH111_front_koumi,           	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_back_koumi,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_rev_front_koumi,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_rev_back_koumi,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH111_revflip_front_koumi,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH111_revflip_back_koumi,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH111_front_koumi,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 200)}
+alternative_sprites(spriteset_KH111_back_koumi,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 225)}
+ 
+alternative_sprites(spriteset_KH111_rev_front_koumi,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 225)}
+alternative_sprites(spriteset_KH111_rev_back_koumi,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 200)}
+
+alternative_sprites(spriteset_KH111_revflip_front_koumi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std_rev(0, 225)}
+alternative_sprites(spriteset_KH111_revflip_back_koumi,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKH111/kiha111_32bpp.png")           {tmpl_std(0, 200)}
+
+/*---KHE120---*/
+//Purchase Sprites
+spriteset (spriteset_KHE120_purchase,	                                                    "gfx/JRE/dmuKHE120/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KHE120_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE120/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KHE120 Orginal Orange
+spriteset (spriteset_KHE120_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE120_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE120_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KHE120_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KHE120_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KHE120_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std_rev(0, 0)}
+
+//KHE120 New Green
+spriteset (spriteset_KHE120_green,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE120_rev_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE120_revflip_green,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KHE120_green,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std(0, 75)}
+alternative_sprites(spriteset_KHE120_rev_green,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_KHE120_revflip_green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE120/kihaE120.png")           {tmpl_std(0, 50)}
+
+/*---KHE130---*/
+//Purchase Sprites
+spriteset (spriteset_KHE130_purchase,	                                                    "gfx/JRE/dmuKHE130/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KHE130_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE130/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KHE130 -0 Orginal Red Suigun Line
+spriteset (spriteset_KHE130_suigun,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE130_rev_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE130_revflip_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KHE130_suigun,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KHE130_rev_suigun,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KHE130_revflip_suigun, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std_rev(0, 0)}
+
+//KHE130 -100 Kurui Line
+spriteset (spriteset_KHE130_kurui,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE130_rev_kurui,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE130_revflip_kurui,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KHE130_kurui,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std(0, 75)}
+alternative_sprites(spriteset_KHE130_rev_kurui,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_KHE130_revflip_kurui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std(0, 50)}
+
+//KHE130 -500 Hachinohe Line
+spriteset (spriteset_KHE130_hachi,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE130_rev_hachi,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE130_revflip_hachi,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KHE130_hachi,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std(0, 125)}
+alternative_sprites(spriteset_KHE130_rev_hachi,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_KHE130_revflip_hachi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE130/kihaE130.png")           {tmpl_std(0, 100)}
+
+/*---KHE131---*/
+//Purchase Sprites
+spriteset (spriteset_KHE131_purchase,	                                                    "gfx/JRE/dmuKHE131/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KHE131_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/dmuKHE131/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+
+//KHE131 -0 Orginal Turquoise Suigun Line
+spriteset (spriteset_KHE131_front_suigun,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE131_back_suigun,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KHE131_rev_front_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE131_rev_back_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KHE131_revflip_front_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE131_revflip_back_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KHE131_front_suigun,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KHE131_back_suigun,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std(0, 75)}
+ 
+alternative_sprites(spriteset_KHE131_rev_front_suigun,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KHE131_rev_back_suigun,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std(0, 50)}
+
+alternative_sprites(spriteset_KHE131_revflip_front_suigun, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KHE131_revflip_back_suigun,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std_rev(0, 50)}
+
+
+//KHE131 -500 Hachinohe Line
+spriteset (spriteset_KHE131_front_hachi,         	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE131_back_hachi,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KHE131_rev_front_hachi,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE131_rev_back_hachi,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KHE131_revflip_front_hachi,       	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KHE131_revflip_back_hachi,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KHE131_front_hachi,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std(0, 125)}
+alternative_sprites(spriteset_KHE131_back_hachi,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std(0, 175)}
+ 
+alternative_sprites(spriteset_KHE131_rev_front_hachi,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_KHE131_rev_back_hachi,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std(0, 150)}
+
+alternative_sprites(spriteset_KHE131_revflip_front_hachi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std(0, 100)}
+alternative_sprites(spriteset_KHE131_revflip_back_hachi,  ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRE/dmuKHE131/KihaE131-kihaE132.png")           {tmpl_std_rev(0, 150)}
+
+
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: GROUPED Train Reversing Switch for KiHa 110, 111/112, E120, E130, E131/E132 Series DMUs---*/
+
+
+
+/*---KH110---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KH110_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  5: spriteset_KH110_rev_metrored;  
+  4: spriteset_KH110_rev_voitami;
+  3: spriteset_KH110_rev_akita;
+  2: spriteset_KH110_rev_rikku;
+  1: spriteset_KH110_rev_greenblack;
+  0: spriteset_KH110_rev_green;
+}
+switch(FEAT_TRAINS,SELF, sw_KH110_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  5: spriteset_KH110_revflip_metrored;  
+  4: spriteset_KH110_revflip_voitami;
+  3: spriteset_KH110_revflip_akita;
+  2: spriteset_KH110_revflip_rikku;
+  1: spriteset_KH110_revflip_greenblack;
+  0: spriteset_KH110_revflip_green;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KH110_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH110_gfx_rev_livery;
+ default: sw_KH110_gfx_revflip_livery;
+}
+
+/*---KH111---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KH111_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  4: spriteset_KH111_rev_front_koumi;
+  3: spriteset_KH111_rev_front_akita;
+  2: spriteset_KH111_rev_front_rikuu;
+  1: spriteset_KH111_rev_front_hachiko;
+  0: spriteset_KH111_rev_front_green;
+}
+switch(FEAT_TRAINS,SELF, sw_KH111_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  4: spriteset_KH111_revflip_front_koumi;
+  3: spriteset_KH111_revflip_front_akita;
+  2: spriteset_KH111_revflip_front_rikuu;
+  1: spriteset_KH111_revflip_front_hachiko;
+  0: spriteset_KH111_revflip_front_green;
+}
+
+switch(FEAT_TRAINS,SELF, sw_KH111_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  4: spriteset_KH111_rev_back_koumi;
+  3: spriteset_KH111_rev_back_akita;
+  2: spriteset_KH111_rev_back_rikuu;
+  1: spriteset_KH111_rev_back_hachiko;
+  0: spriteset_KH111_rev_back_green;
+}
+switch(FEAT_TRAINS,SELF, sw_KH111_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  4: spriteset_KH111_revflip_back_koumi;
+  3: spriteset_KH111_revflip_back_akita;
+  2: spriteset_KH111_revflip_back_rikuu;
+  1: spriteset_KH111_revflip_back_hachiko;
+  0: spriteset_KH111_revflip_back_green;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KH111_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH111_gfx_rev_front_livery;
+ default: sw_KH111_gfx_revflip_front_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_KH111_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH111_gfx_rev_back_livery;
+ default: sw_KH111_gfx_revflip_back_livery;
+}
+
+//Front/Back Car Position Testing
+switch(FEAT_TRAINS, SELF, sw_KH111_gfx_rev_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_KH111_gfx_rev_front_flippedcheck;
+  0:sw_KH111_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KH111_gfx_rev_frontback_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  1510:sw_KH111_gfx_rev_frontback_nomucars;
+  default:sw_KH111_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KH111_gfx_rev_frontback, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  1510:sw_KH111_gfx_rev_frontback_sameid;
+  default:sw_KH111_gfx_rev_front_flippedcheck;
+}
+
+/*---KHE120---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KHE120_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+1: spriteset_KHE120_rev_green;
+0: spriteset_KHE120_rev_orange;
+}
+switch(FEAT_TRAINS,SELF, sw_KHE120_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+1: spriteset_KHE120_revflip_green;
+0: spriteset_KHE120_revflip_orange;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KHE120_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KHE120_gfx_rev_livery;
+ default: sw_KHE120_gfx_revflip_livery;
+}
+
+/*---KHE130---*/
+
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KHE130_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  2: spriteset_KHE130_rev_hachi;
+  1: spriteset_KHE130_rev_kurui;
+  0: spriteset_KHE130_rev_suigun;
+}
+switch(FEAT_TRAINS,SELF, sw_KHE130_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  2: spriteset_KHE130_revflip_hachi;
+  1: spriteset_KHE130_revflip_kurui;
+  0: spriteset_KHE130_revflip_suigun;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KHE130_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KHE130_gfx_rev_livery;
+ default: sw_KHE130_gfx_revflip_livery;
+}
+
+/*---KHE131---*/
+
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KHE131_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KHE131_rev_front_hachi;
+  0: spriteset_KHE131_rev_front_suigun;
+}
+switch(FEAT_TRAINS,SELF, sw_KHE131_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KHE131_revflip_front_hachi;
+  0: spriteset_KHE131_revflip_front_suigun;
+}
+
+switch(FEAT_TRAINS,SELF, sw_KHE131_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KHE131_rev_back_hachi;
+  0: spriteset_KHE131_rev_back_suigun;
+}
+switch(FEAT_TRAINS,SELF, sw_KHE131_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KHE131_revflip_back_hachi;
+  0: spriteset_KHE131_revflip_back_suigun;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KHE131_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
+  1: sw_KHE131_gfx_rev_front_livery;
+ default: sw_KHE131_gfx_revflip_front_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_KHE131_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
+  1: sw_KHE131_gfx_rev_back_livery;
+ default: sw_KHE131_gfx_revflip_back_livery;
+}
+
+//Front/Back Car Position Testing
+switch(FEAT_TRAINS, SELF, sw_KHE131_gfx_rev_frontback_nomucars, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
+  1:sw_KHE131_gfx_rev_front_flippedcheck;
+  0:sw_KHE131_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KHE131_gfx_rev_frontback_sameid, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
+  1513:sw_KHE131_gfx_rev_frontback_nomucars;
+  default:sw_KHE131_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KHE131_gfx_rev_frontback, 
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
+  1513:sw_KHE131_gfx_rev_frontback_sameid;
+  default:sw_KHE131_gfx_rev_front_flippedcheck;
+}
+
+
+
+/*---Main ID Sorting and Detection---*/
+switch(FEAT_TRAINS, SELF, sw_JREKHgroup_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1509: sw_KH110_gfx_rev_flippedcheck;
+  1510: sw_KH111_gfx_rev_frontback;
+  1511: sw_KHE120_gfx_rev_flippedcheck;
+  1512: sw_KHE130_gfx_rev_flippedcheck;
+  1513: sw_KHE131_gfx_rev_frontback;
+}
+/*---END OF SECTION---*/
+
+

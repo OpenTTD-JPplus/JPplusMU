@@ -212,7 +212,6 @@ alternative_sprites(spriteset_21156_revflip_mid,           ZOOM_LEVEL_NORMAL, BI
 alternative_sprites(spriteset_21156_revflip_back_darm,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-2_32bpp.png")        {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_21156_revflip_back_sarm,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu211/tokai/211-5-3_32bpp.png")        {tmpl_std_rev(0, 1)}
 
-
 /*---213---*/
 //213 Purchase Sprites
 spriteset (spriteset_213_purchase,	                                                     "gfx/JNR/emu213/213_purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -310,6 +309,7 @@ alternative_sprites(spriteset_213_revflip_front_s2,   ZOOM_LEVEL_NORMAL, BIT_DEP
 alternative_sprites(spriteset_213_revflip_front_s3,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-3_32bpp.png")         {tmpl_std(0, 26)}
 alternative_sprites(spriteset_213_revflip_front_s4,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-4_32bpp.png")         {tmpl_std(0, 26)}
 alternative_sprites(spriteset_213_revflip_front_s5,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/west/213-3-5_32bpp.png")         {tmpl_std(0, 26)}
+
 /*---311---*/
 //311 Purchase Sprites
 spriteset (spriteset_311_purchase,	                                                    "gfx/JRC/emu311/311_Purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -693,7 +693,7 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_frontback,
   default:sw_211group_gfx_rev_211_front_flipcheck;
 }
 
-/*---211_50006000-*/
+/*---211_50006000--*/
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_back_darm_flipcheck, vehicle_is_flipped) {
   1: spriteset_21156_revflip_back_darm;
  default: spriteset_21156_rev_back_darm;
