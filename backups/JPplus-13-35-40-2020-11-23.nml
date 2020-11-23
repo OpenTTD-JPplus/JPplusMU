@@ -189,29 +189,14 @@ if (param_basecapacity >= 3) {
 }
 # 1 "JPplus.pnml" 4
 # 1 "src/template.pnml" 1
-
-
+//single vehicle such as purchase menu
 template tmpl_purchase (x, y) {
-		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-    [x, y, 76, 15, -28, -10]
-		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-}
-template tmpl_purchase_32bpp (x, y) {
-		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"] 
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
     [x, y, 65, 15, -28, -10]
-		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
 
+template tmpl_purchase_new (x, y) {
+    [x, y, 90, 15, -35, -10]
+}
 
 template tmpl_purchase_dh (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
@@ -220,9 +205,21 @@ template tmpl_purchase_dh (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-    [x, y, 76, 15, -14, -10]
+    [x, y, 74, 15, -14, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 }
+
+template tmpl_purchase_old_dh_32bpp (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+    [x, y, 65, 15, -21, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+}
+
 template tmpl_purchase_dh_32bpp (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
@@ -230,9 +227,43 @@ template tmpl_purchase_dh_32bpp (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-    [x, y, 75, 15, -14, -10]
+    [x, y, 74, 15, -14, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
+
+template tmpl_purchase_32bpp (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+    [x, y, 65, 15, -28, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+}
+
+template tmpl_new_purchase_dh (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+    [x, y, 88, 15, -21, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+}
+
+template tmpl_new_purchase_dh_32bpp (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+    [x, y, 88, 15, -21, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+}
+
 
 
 template tmpl_std(x,y){
@@ -1999,6 +2030,7 @@ switch(FEAT_TRAINS, SELF, sw_JREKHgroup_gfx_rev_idcheck, [STORE_TEMP(position_in
 
 # 1 "JPplus.pnml" 4
 
+train_width_32_px = 1;
 /*---TRAINS---*/
 
 //Wagons

@@ -1,3 +1,6 @@
+disable_item(FEAT_TRAINS, 0, 115); //Disables original vehicles
+
+
 if (param_japansetdisable == 1) {
 //JPSet3 DUPLICATION
 engine_override("SZ\0D\00");

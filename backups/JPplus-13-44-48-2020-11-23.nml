@@ -198,7 +198,7 @@ template tmpl_purchase (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-    [x, y, 76, 15, -28, -10]
+    [x, y, 65, 15, -28, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 }
 template tmpl_purchase_32bpp (x, y) {
@@ -220,7 +220,7 @@ template tmpl_purchase_dh (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-    [x, y, 76, 15, -14, -10]
+    [x, y, 87, 12+h+d, -43+14+15, -6-h]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 }
 template tmpl_purchase_dh_32bpp (x, y) {
@@ -230,7 +230,7 @@ template tmpl_purchase_dh_32bpp (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-    [x, y, 75, 15, -14, -10]
+    [x, y, 87, 12+h+d, -43+14+15, -6-h]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
 

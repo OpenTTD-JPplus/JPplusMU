@@ -1,11 +1,26 @@
-//single vehicle such as purchase menu
+
+
 template tmpl_purchase (x, y) {
-    [x, y, 65, 15, -35, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+    [x, y, 76, 15, -28, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
+}
+template tmpl_purchase_32bpp (x, y) {
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"] 
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
+    [x, y, 65, 15, -28, -10]
+		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
 
-template tmpl_purchase_new (x, y) {
-    [x, y, 90, 15, -35, -10]
-}
 
 template tmpl_purchase_dh (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
@@ -14,21 +29,9 @@ template tmpl_purchase_dh (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-    [x, y, 65, 15, -21, -10]
+    [x, y, 76, 15, -14, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 }
-
-template tmpl_purchase_old_dh_32bpp (x, y) {
-		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-    [x, y, 65, 15, -21, -10]
-		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-}
-
 template tmpl_purchase_dh_32bpp (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
@@ -36,43 +39,9 @@ template tmpl_purchase_dh_32bpp (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-    [x, y, 74, 15, -14, -10]
+    [x, y, 75, 15, -14, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
-
-template tmpl_purchase_32bpp (x, y) {
-		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-    [x, y, 65, 15, -28, -10]
-		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-}
-
-template tmpl_new_purchase_dh (x, y) {
-		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-    [x, y, 88, 15, -21, -10]
-		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
-}
-
-template tmpl_new_purchase_dh_32bpp (x, y) {
-		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-    [x, y, 88, 15, -21, -10]
-		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-}
-
 
 
 template tmpl_std(x,y){

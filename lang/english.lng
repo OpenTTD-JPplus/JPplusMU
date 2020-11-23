@@ -2,8 +2,11 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+Set v0.1.6
+STR_GRF_NAME        :JP+Set v0.1.7
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene. Trains require narrow gauge tracks.{}{}{BLACK}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}Licence: CC BY-NC-SA 4.0
+
+
+
 
 # Parameters
 STR_NO  :No
@@ -36,6 +39,9 @@ GRF_NATSSET       : JP+ Set NATS Duplicate Trains Disabler should be loaded toge
 GRF_JAPANSETTRAINS: JP+ Set should be loaded AFTER Japan Set3: Trains to avoid train duplication.
 GRF_JAPANSECRETORDER:  JP+ Set should be loaded AFTER Japan Set Secret Engines for compatibility.
 
+
+
+
 # Vehicle Name
 MUCAR   :JP+ MU Car {WHITE}(MU){BLACK}
 MUCAB   :JP+ MU Cab/Control Car {WHITE}(CC){BLACK}
@@ -64,15 +70,8 @@ JNR_213  :213 Series {WHITE}(EMU){BLACK}
 JNR_711 :711 Series {WHITE}(EMU){BLACK}
 JNR_781 :781 Series {WHITE}(EMU){BLACK}
 
-DH_EF210:JRF EF210-300 {WHITE}(Electric Loco)
-DH_E851:Seibu E851 {WHITE}(Electric Loco)
-DH_ED75:JNR ED75 {WHITE}(Electric Loco)
-
 JRC_311:311 Series {WHITE}(EMU){BLACK}
 JRC_313:313 Series {WHITE}(EMU){BLACK}
-
-
-
 
 JRE_KH100:KiHa 100/101 Series {WHITE}(DMU){BLACK}
 JRE_KH110:KiHa 110 Series {WHITE}(DMU){BLACK}
@@ -104,7 +103,6 @@ JRK_303:303 Series {WHITE}(EMU){BLACK}
 JRK_811:811 Series {WHITE}(EMU){BLACK}
 JRK_813:813 Series {WHITE}(EMU){BLACK}
 
-
 JRH_721:721 Series {WHITE}(EMU){BLACK}
 JRH_731:731 Series {WHITE}(EMU){BLACK}
 JRH_733:733 Series {WHITE}(EMU){BLACK}
@@ -118,6 +116,8 @@ JRH_785:785 Series {WHITE}(EMU){BLACK}
 JRH_789:789 Series {WHITE}(EMU){BLACK}
 
 JRS_6000:6000 Series {WHITE}(EMU){BLACK}
+
+
 
 
 # Livery Name
