@@ -5785,77 +5785,23 @@ switch(FEAT_TRAINS,SELF, sw_165_gfx_pantograph_pos, num_vehs_in_vehid_chain){
 /*---GFX: Train Reversing Switches---*/
 //Livery Selection
 switch(FEAT_TRAINS,SELF, sw_165_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-8:spriteset_165_rev_back;
-7:spriteset_165_rev_front;
-6:spriteset_165_rev_mid_sashashi;
-5:spriteset_165_rev_mid;
-4:spriteset_165_rev_mid_panto;
-3:spriteset_165_rev_midgr_nobelt;
-2:spriteset_165_rev_midgr_belt;
-
-1:spriteset_165_rev_front;
 0:spriteset_165_rev_front;
 }
 switch(FEAT_TRAINS,SELF, sw_165_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-8:spriteset_165_revflip_back;
-7:spriteset_165_revflip_front;
-6:spriteset_165_revflip_mid_sashashi;
-5:spriteset_165_revflip_mid;
-4:spriteset_165_revflip_mid_panto;
-3:spriteset_165_revflip_midgr_nobelt;
-2:spriteset_165_revflip_midgr_belt;
-
-1:spriteset_165_revflip_front;
 0:spriteset_165_revflip_front;
 }
 
 switch(FEAT_TRAINS,SELF, sw_165_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-8:spriteset_165_rev_back;
-7:spriteset_165_rev_front;
-6:spriteset_165_rev_mid_sashashi;
-5:spriteset_165_rev_mid;
-4:spriteset_165_rev_mid_panto;
-3:spriteset_165_rev_midgr_nobelt;
-2:spriteset_165_rev_midgr_belt;
-
-1:spriteset_165_rev_back;
 0:spriteset_165_rev_back;
 }
 switch(FEAT_TRAINS,SELF, sw_165_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-8:spriteset_165_revflip_back;
-7:spriteset_165_revflip_front;
-6:spriteset_165_revflip_mid_sashashi;
-5:spriteset_165_revflip_mid;
-4:spriteset_165_revflip_mid_panto;
-3:spriteset_165_revflip_midgr_nobelt;
-2:spriteset_165_revflip_midgr_belt;
-
-1:spriteset_165_revflip_back;
 0:spriteset_165_revflip_back;
 }
 
 switch(FEAT_TRAINS,SELF, sw_165_gfx_rev_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-8:spriteset_165_rev_back;
-7:spriteset_165_rev_front;
-6:spriteset_165_rev_mid_sashashi;
-5:spriteset_165_rev_mid;
-4:spriteset_165_rev_mid_panto;
-3:spriteset_165_rev_midgr_nobelt;
-2:spriteset_165_rev_midgr_belt;
-
-1:spriteset_165_rev_back_panto;
 0:spriteset_165_rev_back_panto;
 }
 switch(FEAT_TRAINS,SELF, sw_165_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-8:spriteset_165_revflip_back;
-7:spriteset_165_revflip_front;
-6:spriteset_165_revflip_mid_sashashi;
-5:spriteset_165_revflip_mid;
-4:spriteset_165_revflip_mid_panto;
-3:spriteset_165_revflip_midgr_nobelt;
-2:spriteset_165_revflip_midgr_belt;
-
-1:spriteset_165_revflip_back_panto;
 0:spriteset_165_revflip_back_panto;
 }
 
@@ -5979,6 +5925,7 @@ switch(FEAT_TRAINS,SELF, sw_165_gfx_revflip_mid_sashashi_livery, [STORE_TEMP(pos
 4:spriteset_165_revflip_mid_panto;
 3:spriteset_165_revflip_midgr_nobelt;
 2:spriteset_165_revflip_midgr_belt;
+
 1:spriteset_165_revflip_mid_sashashi;
 0:spriteset_165_revflip_mid_sashashi;
 }
@@ -6072,16 +6019,7 @@ switch(FEAT_TRAINS, SELF, sw_165_gfx_rev_pantograph_pos, [STORE_TEMP(position_in
   default: sw_165_gfx_rev_pantograph_pos_default_main;
 }
 switch(FEAT_TRAINS,SELF, sw_165_gfx_rev_mid_refitcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){ //look at opposite refit livery id
-  8: sw_165_gfx_rev_back_flippedcheck;
-  7: sw_165_gfx_rev_front_flippedcheck;
-  6: sw_165_gfx_rev_mid_sashashi_flippedcheck;
-  5: sw_165_gfx_rev_mid_flippedcheck;
-  4: sw_165_gfx_rev_mid_panto_flippedcheck;
-  3: sw_165_gfx_rev_midgr_nobelt_flippedcheck;
-  2: sw_165_gfx_rev_midgr_belt_flippedcheck;
-
-  1: sw_165_gfx_rev_pantograph_pos;
-  0: sw_165_gfx_rev_pantograph_pos;
+  0..8: sw_165_gfx_rev_pantograph_pos;
 }
 
 

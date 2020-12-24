@@ -146,10 +146,15 @@ jnr80_kansai_mu : Kansai Standard Car
 jnr80_pt : Pantograph
 jnr80_gr : Pantograph
 
-
-jnr165_grb : Green Car (Belt)
-jnr165_grnb: Green Car (No Belt)
-jnr165_sashashi: SaShaShi Car
+jnr165_SHONAN : Shonan Livery
+jnr165_DIV_shonan:{RED}---- Shonan Livery Options ----
+jnr165_shonan_grb : Shonan Green Car (Belt)
+jnr165_shonan_grnb: Shonan Green Car (No Belt)
+jnr165_shonan_pt: Shonan Pantograph Car
+jnr165_shonan_mu: Shonan Standard Car
+jnr165_shonan_sashashi: Shonan SaShaShi Car (Buffet Car)
+jnr165_shonan_cabfr: Shonan Cab Car (Front Facing)
+jnr165_shonan_cabbk: Shonan Cab Car (Rear Facing)
 
 
 
@@ -316,7 +321,6 @@ E127_NIIG2   : -0 Niigata Livery (Extra Pantograph)
 E127_MSMT    : -100 Matsumoto Livery (Extra Pantograph)
 E127_MSMT2   : -100 Matsumoto Livery (Extra Pantograph)
 
-JNR165_SHONAN : Shonan Livery
 
 
 # Coupling Rejection
