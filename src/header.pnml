@@ -52,7 +52,7 @@ grf {
 												1: string(STR_PARAM_NORMAL);
 												2: string(STR_PARAM_HIGH);
 												3: string(STR_PARAM_VHIGH);
-												4: string(STR_PARAM_REAL);
+												//4: string(STR_PARAM_REAL);
 						};
 				}
 		}

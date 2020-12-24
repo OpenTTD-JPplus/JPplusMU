@@ -27,6 +27,18 @@ spriteset (spriteset_E235_middle_yoko_rev,		"gfx/JRE/emuE235/yokosuka.png")     
 spriteset (spriteset_E235_midpan_yoko_rev,		"gfx/JRE/emuE235/yokosuka.png") 	        { tmpl_std_rev(0, 75) }
 spriteset (spriteset_E235_midpant_yoko_rev, 	"gfx/JRE/emuE235/yokosuka.png")          { tmpl_std_rev(0, 100) }
 spriteset (spriteset_E235_middd_yoko_rev,   	"gfx/JRE/emuE235/yokosuka.png")          { tmpl_std_rev(0, 125) }
+
+
+
+//pantograph_test
+spriteset (spriteset_panto_single,   	"gfx/OTHER/pantographs_8bpp.png")          { tmpl_std(0, 25) }
+
+spritegroup spritegroup_E235_back_yama {
+	loading: [spriteset_E235_back_yama_rev,spriteset_panto_single];
+	loaded:  [spriteset_E235_back_yama_rev,spriteset_panto_single];
+}
+
+
 /*---END OF SECTION---*/
 
 
@@ -169,7 +181,7 @@ switch(FEAT_TRAINS, PARENT, sw_E235_gfx_front_revcheck_yama, vehicle_is_reversed
    default: sw_E235_gfx_rev_idcheck;
 }
 switch(FEAT_TRAINS, PARENT, sw_E235_gfx_back_revcheck_yama, vehicle_is_reversed){
- 0: spriteset_E235_back_yama_rev;
+ 0: spritegroup_E235_back_yama;
  default: sw_E235_gfx_rev_idcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_E235_gfx_frontback_yama, vehicle_is_flipped) {

@@ -135,8 +135,17 @@ jnr80_861 : Shonan Livery (86-1 Type)
 jnr80_862 : Shonan Livery (86-2 Type)
 jnr80_85 : Shonan Livery (85 Type)
 jnr80_ka : Kansai Livery (86-2 Type)
-jnr80_gr : Green Car
-jnr80_pt : Pantograph Car
+jnr_80_DIV_shonan:{RED}---- Shonan Livery Options ----
+jnr80_shonan_gr : Shonan Green Car
+jnr80_shonan_pt : Shonan Pantograph Car
+jnr80_shonan_mu : Shonan Standard Car
+jnr_80_DIV_kansai:{RED}---- Kansai Livery Options ----
+jnr80_kansai_pt : Kansai Pantograph Car
+jnr80_kansai_mu : Kansai Standard Car
+
+jnr80_pt : Pantograph
+jnr80_gr : Pantograph
+
 
 jnr165_grb : Green Car (Belt)
 jnr165_grnb: Green Car (No Belt)
@@ -307,6 +316,7 @@ E127_NIIG2   : -0 Niigata Livery (Extra Pantograph)
 E127_MSMT    : -100 Matsumoto Livery (Extra Pantograph)
 E127_MSMT2   : -100 Matsumoto Livery (Extra Pantograph)
 
+JNR165_SHONAN : Shonan Livery
 
 
 # Coupling Rejection
