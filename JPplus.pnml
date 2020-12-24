@@ -39,19 +39,19 @@
 //JNR
 #include "src/JNR/EMU/80_series.pnml"
 
-#include "src/JNR/EMU/101_series.pnml"
-#include "src/JNR/EMU/103_series.pnml"
-#include "src/JNR/EMU/111_113_series.pnml"
-#include "src/JNR/EMU/115_series.pnml"
-#include "src/JNR/EMU/151_161_181_series.pnml"
+//#include "src/JNR/EMU/101_series.pnml"
+//#include "src/JNR/EMU/103_series.pnml"
+//#include "src/JNR/EMU/111_113_series.pnml"
+//#include "src/JNR/EMU/115_series.pnml"
+//#include "src/JNR/EMU/151_161_181_series.pnml"
 #include "src/JNR/EMU/165_169_series.pnml"
 
-#include "src/JNR/EMU/201_series.pnml"
-#include "src/JNR/EMU/205_series.pnml"
-#include "src/JNR/EMU/211_series.pnml"
+//#include "src/JNR/EMU/201_series.pnml"
+//#include "src/JNR/EMU/205_series.pnml"
+//#include "src/JNR/EMU/211_series.pnml"
 #include "src/JNR/EMU/213_series.pnml"
 
-#include "src/JNR/EMU/711_series.pnml"
+//#include "src/JNR/EMU/711_series.pnml"
 
 
 //JR-Hokkaido
@@ -65,13 +65,13 @@
 #include "src/JRE/DMU/KHE130_series.pnml"
 #include "src/JRE/DMU/KHE131_series.pnml"
 
-#include "src/JRE/EMU/E331_series.pnml"
-#include "src/JRE/EMU/E235_series.pnml"
-#include "src/JRE/EMU/E233_series.pnml"
-#include "src/JRE/EMU/E231_series.pnml"
-#include "src/JRE/EMU/E217_series.pnml"
-#include "src/JRE/EMU/E127_series.pnml"
-#include "src/JRE/EMU/209_series.pnml"
+//#include "src/JRE/EMU/E331_series.pnml"
+//#include "src/JRE/EMU/E235_series.pnml"
+//#include "src/JRE/EMU/E233_series.pnml"
+//#include "src/JRE/EMU/E231_series.pnml"
+//#include "src/JRE/EMU/E217_series.pnml"
+//#include "src/JRE/EMU/E127_series.pnml"
+//#include "src/JRE/EMU/209_series.pnml"
 #include "src/JRE/EMU/107_series.pnml"
 
 
@@ -82,7 +82,7 @@
 
 
 //JR-West
-#include "src/JRW/EMU/207_series.pnml"
+//#include "src/JRW/EMU/207_series.pnml"
 #include "src/JRW/EMU/221_series.pnml"
 #include "src/JRW/EMU/223_0_series.pnml"
 #include "src/JRW/EMU/223_1000_series.pnml"
@@ -92,7 +92,7 @@
 #include "src/JRS/EMU/6000_series.pnml"
 
 //JR-Kyushu
-#include "src/JRK/EMU/303_series.pnml"
+//#include "src/JRK/EMU/303_series.pnml"
 #include "src/JRK/EMU/811_series.pnml"
 #include "src/JRK/EMU/813_series.pnml"
 
