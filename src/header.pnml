@@ -70,7 +70,7 @@ grf {
 					desc: string(STR_PARAM_DESC_JAPANSETDISABLE);
 					type: bool;
 					bit:  0;
-					def_value: 1;
+					def_value: 0;
 			 }
 		}
 }
