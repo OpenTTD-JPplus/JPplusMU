@@ -17,7 +17,7 @@ template tmpl_purchase_32bpp (x, y) {
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"] 
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
-    [x, y, 65, 15, -28, -10]
+    [x, y, 75, 15, -28, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
 
