@@ -431,8 +431,10 @@ item(FEAT_TRAINS, DH_ED75, 4002) {} //ED75
 # 1 "JPplus.pnml" 4
 
 //Coupliung Rules
-//#include "src/attach_kiha_group.pnml"
-//#include "src/attach_211_213_group.pnml"
+# 1 "src/attach_kiha_group.pnml" 1
+# 1 "JPplus.pnml" 4
+# 1 "src/attach_211_213_group.pnml" 1
+# 1 "JPplus.pnml" 4
 
 //Sorting
 # 1 "src/sorting.pnml" 1
