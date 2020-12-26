@@ -157,6 +157,11 @@ jnr165_shonan_sashashi: Shonan SaShaShi Car (Buffet Car)
 jnr165_shonan_cabfr: Shonan Cab Car (Front Facing)
 jnr165_shonan_cabbk: Shonan Cab Car (Rear Facing)
 
+jreE235_LV_yamanote: Yamanote Livery
+jreE235_LV_yokosuka: Yokosuka Livery
+jreE235_DIV_yokosuka:{RED}---- Yokosuka Livery Options ---- 
+jreE235_LV_yokosuka_mu: Yokosuka Standard Car
+jreE235_LV_yokosuka_dd: Yokosuka DD Green Car
 
 
 OLD_LV                : Original livery
