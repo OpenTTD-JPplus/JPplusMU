@@ -8569,42 +8569,19 @@ spriteset (spriteset_E331_mid_nonartic_rev,	  "gfx/JRE/emuE331/E331.png")       
 spriteset (spriteset_E331_mid_artic_rev,	  	"gfx/JRE/emuE331/E331.png")          	{ tmpl_20px_5l_rev(0, 72) }
 spriteset (spriteset_E331_mid_articpan_rev,		"gfx/JRE/emuE331/E331.png") 	          { tmpl_20px_5l_rev(0, 92) }
 
-spriteset (spriteset_E331_back_panto,	             	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l_rev(0, 24) }
-spriteset (spriteset_E331_back_panto_rev,	        	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l(0, 0) }
-
 /*---END OF SECTION---*/
 
 
 
 /*---GFX: Pantograph Positions---*/
 //E331-0 Keto
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_pantograph_pos_artic_default, position_in_vehid_chain%7){
+switch(FEAT_TRAINS,SELF, sw_E331_gfx_pantograph_pos, position_in_vehid_chain){
   1: spriteset_E331_mid_articpan;
+  5: spriteset_E331_mid_nonartic;
+  6: spriteset_E331_mid_nonartic_rev;
+  8: spriteset_E331_mid_articpan;
   default: spriteset_E331_mid_artic;
 }
-
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_pantograph_pos_artics, num_vehs_in_consist){
-  0..3: spriteset_E331_mid_articpan;
-  default: sw_E331_gfx_pantograph_pos_artic_default;
-}
-
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_pos_flipped_car2, [position_in_consist == ((num_vehs_in_consist/2)-1)]) {
-  1: spriteset_E331_mid_nonartic;
-  default: sw_E331_gfx_pantograph_pos_artics;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_pos_flipped_car1, [position_in_consist == (num_vehs_in_consist/2)]) {
-  1: spriteset_E331_mid_nonartic_rev;
-  default: sw_E331_gfx_pos_flipped_car2;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_pantograph_pos_lengthsw, num_vehs_in_consist%2) {
-  1: sw_E331_gfx_pantograph_pos_artics;
-  0: sw_E331_gfx_pos_flipped_car1;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_pantograph_pos, num_vehs_in_consist) {
-  0..7:sw_E331_gfx_pantograph_pos_artics;
-  default: sw_E331_gfx_pantograph_pos_lengthsw;
-}
-
 /*---END OF SECTION---*/
 
 
@@ -8673,17 +8650,17 @@ switch(FEAT_TRAINS, SELF, sw_E331_gfx_rev_idcheck, [STORE_TEMP(position_in_consi
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //E331-0 Keto
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_pantocheck, position_in_vehid_chain){
+switch(FEAT_TRAINS, PARENT, sw_E331_gfx_front_revcheck, vehicle_is_reversed){
+   0: spriteset_E331_front;
+   default: sw_E331_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_E331_gfx_back_revcheck, vehicle_is_reversed){
  0: spriteset_E331_back_rev;
- default: spriteset_E331_back_panto;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_gfx_frontback_flipcheck, vehicle_is_flipped){
- 0: spriteset_E331_front;
- default: sw_E331_gfx_pantocheck;
-}
-switch(FEAT_TRAINS, PARENT, sw_E331_gfx_frontback, vehicle_is_reversed){
- 0: sw_E331_gfx_frontback_flipcheck;
  default: sw_E331_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E331_gfx_frontback, vehicle_is_flipped) {
+  1: sw_E331_gfx_back_revcheck;
+ default: sw_E331_gfx_front_revcheck;
 }
 /*---END OF SECTION---*/
 
@@ -8703,21 +8680,30 @@ switch(FEAT_TRAINS, PARENT, sw_E331_gfx_mucar_revcheck, vehicle_is_reversed){
   }
 
 //Length for MU Cars
-switch(FEAT_TRAINS, SELF, sw_E331_length_pos_flipped_car2, [position_in_consist == ((num_vehs_in_consist/2)-1)]) {
-  1: 7;
+switch(FEAT_TRAINS, SELF, sw_E331_length_pos, position_in_vehid_chain){
+  5: 7;
+  6: 7;
   default: 5;
 }
-switch(FEAT_TRAINS, SELF, sw_E331_length_pos_flipped_car1, [position_in_consist == (num_vehs_in_consist/2)]) {
-  1: 7;
-  default: sw_E331_length_pos_flipped_car2;
+switch(FEAT_TRAINS, SELF, sw_E331_length_pos_rev, position_in_vehid_chain_from_end){
+  5: 7;
+  6: 7;
+  default: 5;
 }
-switch(FEAT_TRAINS, SELF, sw_E331_length_pos_flipped_evencheck, num_vehs_in_consist%2) {
+switch(FEAT_TRAINS, PARENT, sw_E331_length_pos_flippedx, vehicle_is_reversed) {
+  1: sw_E331_length_pos_rev;
+  0: sw_E331_length_pos;
+}
+
+
+switch(FEAT_TRAINS, PARENT, sw_E331_length_pos_flipped2, [STORE_TEMP(num_vehs_in_consist/2, 0), position_in_consist]) {
+  LOAD_TEMP(0): 7;
+  LOAD_TEMP(0)-1: 7;
+  default: 5;
+}
+switch(FEAT_TRAINS, PARENT, sw_E331_length_pos_flipped, num_vehs_in_consist%2) {
   1: 5;
-  0: sw_E331_length_pos_flipped_car1;
-}
-switch(FEAT_TRAINS, SELF, sw_E331_length_pos_flipped, num_vehs_in_consist) {
-  0..7: 5;
-  default: sw_E331_length_pos_flipped_evencheck;
+  0: sw_E331_length_pos_flipped2;
 }
 
 item(FEAT_TRAINS, emu_E331) {

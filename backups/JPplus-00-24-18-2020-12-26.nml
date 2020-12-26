@@ -8569,7 +8569,7 @@ spriteset (spriteset_E331_mid_nonartic_rev,	  "gfx/JRE/emuE331/E331.png")       
 spriteset (spriteset_E331_mid_artic_rev,	  	"gfx/JRE/emuE331/E331.png")          	{ tmpl_20px_5l_rev(0, 72) }
 spriteset (spriteset_E331_mid_articpan_rev,		"gfx/JRE/emuE331/E331.png") 	          { tmpl_20px_5l_rev(0, 92) }
 
-spriteset (spriteset_E331_back_panto,	             	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l_rev(0, 24) }
+spriteset (spriteset_E331_back_panto,	             	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l(0, 24) }
 spriteset (spriteset_E331_back_panto_rev,	        	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l(0, 0) }
 
 /*---END OF SECTION---*/

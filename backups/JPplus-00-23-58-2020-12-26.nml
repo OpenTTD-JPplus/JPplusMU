@@ -8569,7 +8569,7 @@ spriteset (spriteset_E331_mid_nonartic_rev,	  "gfx/JRE/emuE331/E331.png")       
 spriteset (spriteset_E331_mid_artic_rev,	  	"gfx/JRE/emuE331/E331.png")          	{ tmpl_20px_5l_rev(0, 72) }
 spriteset (spriteset_E331_mid_articpan_rev,		"gfx/JRE/emuE331/E331.png") 	          { tmpl_20px_5l_rev(0, 92) }
 
-spriteset (spriteset_E331_back_panto,	             	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l_rev(0, 24) }
+spriteset (spriteset_E331_back_panto,	             	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l(0, 24) }
 spriteset (spriteset_E331_back_panto_rev,	        	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l(0, 0) }
 
 /*---END OF SECTION---*/
@@ -8681,7 +8681,7 @@ switch(FEAT_TRAINS, SELF, sw_E331_gfx_frontback_flipcheck, vehicle_is_flipped){
  0: spriteset_E331_front;
  default: sw_E331_gfx_pantocheck;
 }
-switch(FEAT_TRAINS, PARENT, sw_E331_gfx_frontback, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_E331_gfx_frontback_revcheck, vehicle_is_reversed){
  0: sw_E331_gfx_frontback_flipcheck;
  default: sw_E331_gfx_rev_idcheck;
 }
