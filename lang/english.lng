@@ -144,9 +144,6 @@ jnr_80_DIV_kansai:{RED}---- Kansai Livery Options ----
 jnr80_kansai_pt : Kansai Pantograph Car
 jnr80_kansai_mu : Kansai Standard Car
 
-jnr80_pt : Pantograph
-jnr80_gr : Pantograph
-
 jnr165_SHONAN : Shonan Livery
 jnr165_DIV_shonan:{RED}---- Shonan Livery Options ----
 jnr165_shonan_grb : Shonan Green Car (Belt)
@@ -162,6 +159,19 @@ jreE235_LV_yokosuka: Yokosuka Livery
 jreE235_DIV_yokosuka:{RED}---- Yokosuka Livery Options ---- 
 jreE235_LV_yokosuka_mu: Yokosuka Standard Car
 jreE235_LV_yokosuka_dd: Yokosuka DD Green Car
+
+jreE233_LV_chou: Chou Livery
+jreE233_LV_kt: Keihin-Tohoku Livery
+jreE233_LV_shonan_e: Shonan Livery (Early Production)
+jreE233_LV_shonan_p: Shonan Livery (Mass Production)
+jreE233_LV_keiyo: Keiyo Livery
+jreE233_LV_joban: Joban Livery
+jreE233_LV_yokohama: Yokohama Livery
+jreE233_LV_saikyo: Saikyo Livery
+jreE233_LV_nanbu: Nanbu Livery
+jreE235_DIV_shonan:{RED}---- Shonan Livery Options ---- 
+jreE233_LV_shonan_mu: Shonan Standard Car
+jreE233_LV_shonan_dd: Shonan DD Green Car
 
 
 OLD_LV                : Original livery
