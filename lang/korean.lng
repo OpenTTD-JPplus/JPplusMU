@@ -121,21 +121,21 @@ JRS_6000:6000계 {WHITE}(EMU){BLACK}
 
 
 
-# Livery Name
-BLANK                 : {RED}A{ORANGE}U{YELLOW}T{GREEN}O{BLUE}M{PURPLE}A{CREAM}T{RED}I{ORANGE}C
+# 도색명
+BLANK                 : {RED}오{ORANGE}토{YELLOW}매{GREEN}틱
 
-jnr151_LV : 151 Series JNR Express Livery
-jnr181_LV : 181 Series JNR Express Livery
-jnr181_LVa : 151/161/181 Green Car
-jnr181_LVb : 151/161/181 SaShi Car
-jnr181_LVc : 151/161/181 MoHaShi Car
-jnr181_LVd : 151/161/181 Panto Car
-jnr181_LVe : 151/161/181 Green Panto Car
+jnr151_LV : 151계 국철 급행 도장
+jnr181_LV : 181계 국철 급행 도장
+jnr181_LVa : 151/161/181계 그린샤
+jnr181_LVb : 151/161/181계 식당차(사시)
+jnr181_LVc : 151/161/181계 식당차(모하시)
+jnr181_LVd : 151/161/181계 팬터그래프 차량
+jnr181_LVe : 151/161/181계 그린샤(팬터그래프)
 
-jnr80_861 : Shonan Livery (KUHA 86 initial face type)
-jnr80_862 : Shonan Livery (KUHA 86 Shonan face type)
-jnr80_85 : Shonan Livery (KUHA 85 type + KUHA 86 initial type)
-jnr80_ka : Kansai Livery (KUHA 86 Shonan face type)
+jnr80_861 : 쇼난색 (쿠하 86형 초기 선두부 형태)
+jnr80_862 : 쇼난색 (쿠하 86형 쇼난 선두부 형태)
+jnr80_85 : 쇼난색 (쿠하 85형 + 쿠하 86형 초기형)
+jnr80_ka : 간사이 도장 (쿠하 86형 쇼난 선두부)
 jnr80_852 : Shonan Livery (KUHA 85 type + KUHA 86 Shonan face type)
 jnr_80_DIV_shonan:{RED}---- Shonan Livery Options ----
 jnr80_shonan_gr : Shonan Green Car
