@@ -20,7 +20,11 @@ STR_PARAM_REAL       :現実的
 STR_PARAM_NAME_DISABLETRAINS  :列車を無効化する
 STR_PARAM_DESC_DISABLETRAINS  :なんでこれを使うかわからないけど、設定はあるよ。{} ただ単にこの車両セットにある自動車を使いたいのかな？
 STR_PARAM_NAME_DISABLERV  :自動車・路面電車を無効化する
+<<<<<<< Updated upstream
 STR_PARAM_DESC_DISABLERV  :なんでこれを選ぶのかい？選択肢は君にあって、こっちに決める権限なんてないけどね。{} 自動車は気に食わないのかな？
+=======
+STR_PARAM_DESC_DISABLERV  :なんでこれを選ぶのかい？まあ選択肢は君にあって、こっちに決める権限なんてないけどね。{} 自動車は気に食わないのかな？
+>>>>>>> Stashed changes
 STR_PARAM_NAME_BASECOSTMODBUY    :購入料金
 STR_PARAM_DESC_BASECOSTMODBUY    :車両の購入時の価格を上げる/下げる。(JapanSet3 基準)
 STR_PARAM_NAME_BASECOSTMODRUN    :運用費
