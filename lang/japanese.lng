@@ -1,0 +1,538 @@
+##grflangid 0x39
+# This is the Japanese language file
+
+# GRF name and description definitions
+STR_GRF_NAME        :JP+Set v0.1.8
+STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}は日本の風景をもっと豊かにするために鉄道車両を追加します。当GRF利用の際には、狭軌を含むレールセットが必要です。{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
+
+
+
+
+# Parameters
+STR_NO  :いいえ
+STR_YES :はい
+STR_PARAM_NORMAL     :普通
+STR_PARAM_VLOW       :僅少
+STR_PARAM_LOW        :低め
+STR_PARAM_HIGH       :高め
+STR_PARAM_VHIGH      :大量
+STR_PARAM_REAL       :現実的
+STR_PARAM_NAME_DISABLETRAINS  :列車を無効化する
+STR_PARAM_DESC_DISABLETRAINS  :なんでこれを使うかわからないけど、設定はあるよ。{} ただ単にこの車両セットにある自動車を使いたいのかな？
+STR_PARAM_NAME_DISABLERV  :自動車・路面電車を無効化する
+STR_PARAM_DESC_DISABLERV  :なんでこれを選ぶのかい？選択肢は君にあって、こっちに決める権限なんてないけどね。{} 自動車は気に食わないのかな？
+STR_PARAM_NAME_BASECOSTMODBUY    :購入料金
+STR_PARAM_DESC_BASECOSTMODBUY    :車両の購入時の価格を上げる/下げる。(JapanSet3 基準)
+STR_PARAM_NAME_BASECOSTMODRUN    :運用費
+STR_PARAM_DESC_BASECOSTMODRUN    :車両の運用費を上げる/下げる。(JapanSet3 基準)
+STR_PARAM_NAME_BASECAPACITY      :車両定員
+STR_PARAM_DESC_BASECAPACITY      :車両定員を調整します。(JapanSet3 基準) {} 「現実的」設定は実物の車両の定員数データを基に算出しております。他の車両セット等との互換性は考慮しておりません。
+STR_PARAM_NAME_BOOSTCAPACITY     :定員数ボーナス
+STR_PARAM_DESC_BOOSTCAPACITY     :通勤車両に対して定員数を増やします。TIASやNATS車両セットは比較的高めの定員数で設定されいます。この設定をオンにするとJP+Setに含まれる通勤車両の定員数を15名増やし、定員数をTIASやNATSに近づけられます。
+STR_PARAM_NAME_JAPANSETDISABLE   :JapanSet3車両を取り除く 
+STR_PARAM_DESC_JAPANSETDISABLE   :JapanSet3から重複している車両を取り除きます。
+
+GRF_OTTDVER       : このNewGRFはこのバージョンのOpenTTDではご利用になれません。OpenTTDをアップデートしてください。
+GRF_JAPANSET      : {YELLOW}JapanSet3 Trains{WHITE}{}および・また{}{YELLOW}JapanSet3 Tracks{WHITE}{}を{GREEN}JP+Set{WHITE}より上にロードしてください。
+GRF_JPPLUSSET     : JP+ Set must be loaded AFTER the JP+ Legacy version.
+GRF_NATSSET       : JP+ Set NATS Duplicate Trains Disabler should be loaded together with Nagoya Area Train Set (NATS) to avoid train duplication. 
+GRF_JAPANSETTRAINS: JP+ Set should be loaded AFTER Japan Set3: Trains to avoid train duplication.
+GRF_JAPANSECRETORDER:  JP+ Set should be loaded AFTER Japan Set Secret Engines for compatibility.
+
+
+
+
+# Vehicle Name
+MUCAR   :JP+ MU Car {WHITE}(MU){BLACK}
+MUCAB   :JP+ MU Cab/Control Car {WHITE}(CC){BLACK}
+MUCARDD :JP+ MU Special Cars {WHITE}(SC){BLACK}
+
+JGR_6340:デハ63400形 {WHITE}(EMU){BLACK}
+
+JNR_kiha40 :キハ40系 {WHITE}(DMU){BLACK}
+JNR_kiha48 :キハ48系 {WHITE}(DMU){BLACK}
+JNR_kiha54 :キハ54系 {WHITE}(DMU){BLACK}
+JNR_kiha58 :キハ56/57/58系 {WHITE}(DMU){BLACK}
+
+JNR_80 :80系 {WHITE}(EMU){BLACK}
+JNR_101 :101系 {WHITE}(EMU){BLACK}
+JNR_103 :103系 {WHITE}(EMU){BLACK}
+JNR_113 :111/113系 {WHITE}(EMU){BLACK}
+JNR_115 :115系 {WHITE}(EMU){BLACK}
+JNR_165 :165/169系 {WHITE}(EMU){BLACK}
+JNR_181 :151/161/181系 {WHITE}(EMU){BLACK}
+
+JNR_201  :201系 {WHITE}(EMU){BLACK}
+JNR_205  :205系 {WHITE}(EMU){BLACK}
+JNR_211  :211系 {WHITE}(EMU){BLACK}
+JNR_21156:211系 5000/6000番台 {WHITE}(EMU){BLACK}
+JNR_213  :213系 {WHITE}(EMU){BLACK}
+JNR_711 :711系 {WHITE}(EMU){BLACK}
+JNR_781 :781系 {WHITE}(EMU){BLACK}
+
+JRC_311:311系 {WHITE}(EMU){BLACK}
+JRC_313:313系 {WHITE}(EMU){BLACK}
+
+JRE_KH100:キハ100/101系 {WHITE}(DMU){BLACK。
+JRE_KH110:キハ110系 {WHITE}(DMU){BLACK}
+JRE_KH111:キハ111/112系 {WHITE}(DMU){BLACK}
+
+JRE_KHE120:キハE120系 {WHITE}(DMU){BLACK}
+JRE_KHE130:キハE130系 {WHITE}(DMU){BLACK}
+JRE_KHE131:キハE131/E132系 {WHITE}(DMU){BLACK}
+
+JRE_107:107系 {WHITE}(EMU){BLACK}
+JRE_209:209系 {WHITE}(EMU){BLACK}
+
+JRE_E127:E127系 {WHITE}(EMU){BLACK}
+
+JRE_E217:E217系 {WHITE}(EMU){BLACK}
+JRE_E231:E231系 {WHITE}(EMU){BLACK}
+JRE_E233:E233系 {WHITE}(EMU){BLACK}
+JRE_E235:E235系 {WHITE}(EMU){BLACK}
+JRE_E331:E331系 {WHITE}(EMU){BLACK}
+JRE_719:719系 {WHITE}(EMU){BLACK}
+JRE_7195000:719系 5000番台 {WHITE}(EMU){BLACK}
+
+JRW_207:207系 {WHITE}(EMU){BLACK}
+JRW_221:221系 {WHITE}(EMU){BLACK}
+JRW_223_0:223系 0/2500/5500/6000番台 {WHITE}(EMU){BLACK}
+JRW_223_1000:223系 1000/2000/5000番台 {WHITE}(EMU){BLACK}
+
+JRK_303:303系 {WHITE}(EMU){BLACK}
+JRK_811:811系 {WHITE}(EMU){BLACK}
+JRK_813:813系 {WHITE}(EMU){BLACK}
+
+JRH_721:721系 {WHITE}(EMU){BLACK}
+JRH_731:731系 {WHITE}(EMU){BLACK}
+JRH_733:733系 {WHITE}(EMU){BLACK}
+JRH_735:735系 {WHITE}(EMU){BLACK}
+JRH_kiha150:キハ150系 {WHITE}(DMU){BLACK}
+JRH_kiha141:キハ141系 {WHITE}(DMU){BLACK}
+JRH_201:キハ201系 {WHITE}(DMU){BLACK}
+JRH_261:キハ261系 {WHITE}(DMU){BLACK}
+JRH_281:キハ281系 {WHITE}(DMU){BLACK}
+JRH_785:785系 {WHITE}(EMU){BLACK}
+JRH_789:789系 {WHITE}(EMU){BLACK}
+
+JRS_6000:6000系 {WHITE}(EMU){BLACK}
+
+
+
+
+# Livery Name
+BLANK                 : {RED}A{ORANGE}U{YELLOW}T{GREEN}O{BLUE}M{PURPLE}A{CREAM}T{RED}I{ORANGE}C
+
+jnr151_LV : 151 Series JNR Express Livery
+jnr181_LV : 181 Series JNR Express Livery
+jnr181_LVa : 151/161/181 Green Car
+jnr181_LVb : 151/161/181 SaShi Car
+jnr181_LVc : 151/161/181 MoHaShi Car
+jnr181_LVd : 151/161/181 Panto Car
+jnr181_LVe : 151/161/181 Green Panto Car
+
+jnr80_861 : Shonan Livery (KUHA 86 initial face type)
+jnr80_862 : Shonan Livery (KUHA 86 Shonan face type)
+jnr80_85 : Shonan Livery (KUHA 85 type + KUHA 86 initial type)
+jnr80_ka : Kansai Livery (KUHA 86 Shonan face type)
+jnr80_852 : Shonan Livery (KUHA 85 type + KUHA 86 Shonan face type)
+jnr_80_DIV_shonan:{RED}---- Shonan Livery Options ----
+jnr80_shonan_gr : Shonan Green Car
+jnr80_shonan_pt : Shonan Pantograph Car
+jnr80_shonan_mu : Shonan Standard Car
+jnr_80_DIV_kansai:{RED}---- Kansai Livery Options ----
+jnr80_kansai_pt : Kansai Pantograph Car
+jnr80_kansai_mu : Kansai Standard Car
+
+jnr80_pt : Pantograph
+jnr80_gr : Pantograph
+
+jnr165_SHONAN : Shonan Livery
+jnr165_DIV_shonan:{RED}---- Shonan Livery Options ----
+jnr165_shonan_grb : Shonan Green Car (Belt)
+jnr165_shonan_grnb: Shonan Green Car (No Belt)
+jnr165_shonan_pt: Shonan Pantograph Car
+jnr165_shonan_mu: Shonan Standard Car
+jnr165_shonan_sashashi: Shonan SaShaShi Car (Buffet Car)
+jnr165_shonan_cabfr: Shonan Cab Car (Front Facing)
+jnr165_shonan_cabbk: Shonan Cab Car (Rear Facing)
+
+jreE235_LV_yamanote: Yamanote Livery
+jreE235_LV_yokosuka: Yokosuka Livery
+jreE235_DIV_yokosuka:{RED}---- Yokosuka Livery Options ---- 
+jreE235_LV_yokosuka_mu: Yokosuka Standard Car
+jreE235_LV_yokosuka_dd: Yokosuka DD Green Car
+
+
+OLD_LV                : Original livery
+STANDARD_LV           : Standard livery
+NEW_LV                : New livery
+TOKAIDO_LV            : Tokaido Area
+ORANGE_LV             : Orange Vermillion Livery
+
+CHUKYO_LV             : Chukyo Livery
+NAGANO_LV             : Nagano Livery
+CHIBA_LV              : Chiba Livery
+CHIBA_LV_TWOP         : Chiba Livery (Dual Pantograph)
+
+SHONAN_LV               : Shonan Livery
+SHONAN_LV_TWOP          : Shonan Livery (Dual Pantograph)
+SHONAN_TK_DDDD_LV       : Shonan Livery (Tokaido DD)
+SHONAN_TK_DDSD_LV       : Shonan Livery (Tokaido DD/SD)
+SHONAN_TY_DDDD_LV       : Shonan Livery (Takasaki/Tohoku DD)
+SHONAN_TY_DDDDold_LV    : Shonan Livery (Takasaki/Tohoku DD New/Old)
+SHONAN_TY_DDoldDD_LV    : Shonan Livery (Takasaki/Tohoku DD Old/New)
+SHONAN_TY_DDSD_LV       : Shonan Livery (Takasaki/Tohoku DD/SD)
+
+
+
+SHONAN_LV_DD          : Shonan Livery (DD Green Car)
+SHONAN_LV_SD          : Shonan Livery (SD Green Car)
+SHONAN_LV_MIX         : Shonan Livery (DD/SD Mixed Green Cars)
+
+
+TOKAI_211_LV          : Tokai Spec (-5000/-6000 Type)
+TOKAI_313_PANTO       : Tokai Livery (Single Pantograph)
+TOKAI_313_TWOPANTO    : Tokai Livery (Dual Pantograph)
+
+OKAYAMA_LV              : Okayama Livery
+TOKAI_LV                : Tokai Livery
+
+
+YOKOSUKA_LV           : Yokosuka Livery
+YOKOSUKA_LV_DD        : Yokosuka Livery (DD Green Car)
+
+YAMANOTE_LV           : Yamanote Livery
+
+SENDAI_LV             : Sendai Livery
+YAMAGATA_LV           : Yamagata Livery (-5000 Type)
+AKITA_LV              : Akita Livery
+BANETSU_LV            : Banetsukoshi Livery
+
+SHONAN_LV_EP          : Shonan Livery (Early Production)
+SHONAN_LV_PR          : Shonan Livery (Mass Production)
+CHOU_LV               : Chou Livery
+KT_LV                 : Keihin-Touhoku Livery
+JOBAN_LV              : Joban Livery
+KEIYO_LV              : Keiyo Livery
+YK_LV                 : Yokohama Livery
+SAIKYO_LV             : Saikyo Livery
+NANNBU_LV             : Nannbu Livery
+NANBU_LV              : Nanbu Livery
+BOUSOU_LV             : Bousou Livery
+SOBU_0_LV             : -0 Sobu Livery
+
+JRE_S_LV              : JE East Suburban
+
+
+KT_500_LV             : -500 Keihin-Touhoku Livery
+SOBU_500_LV           : -500 Sobu Livery
+
+JRWbluestd_LV         : JR West Blue
+JRWblue_LV            : JR West Blue (Dual Pantograph)
+JRWbluepanto_LV       : JR West Blue (Single Pantograph)
+JRWnew_LV             : JR West New Scheme (Cab Pantograph)
+JRWnewpanto_LV        : JR West New Scheme (Mid Pantograph)
+JRWnewremodel_LV      : JR West Remodel Type New Scheme (Cab Pantograph)
+JRWnewremodelpanto_LV : JR West Remodel Type New Scheme (Mid Pantograph)
+
+JRWyumeji1_LV         : JR West Super Saloon Yumeji (212-1)
+JRWyumeji2_LV         : JR West Super Saloon Yumeji (212-2)
+JRWyumeji3_LV         : JR West Super Saloon Yumeji (212-3)
+JRWyumeji4_LV         : JR West Super Saloon Yumeji (212-4)
+JRWyumeji5_LV         : JR West Super Saloon Yumeji (212-5)
+
+JRW223_0_LV            : -0 JR West Blue Livery
+JRW223_2500_LV         : -2500 JR West Blue Livery
+JRW223_5500_LV         : -5500 JR West Beige Livery
+JRW223_6000_LV         : -6000 JR West Beige Livery
+JRW223_1000_LV         : -1000 JR West Beige Livery
+JRW223_1000as_LV       : -1000 JR West A-SEAT/Beige Livery
+JRW223_2000_LV         : -2000 JR West Beige Livery
+
+JRW221_SP_LV           : JR West Beige (Single Pantograph)
+JRW221_DP_LV           : JR West Beige (Dual Pantograph)
+
+JRK811_INITIAL           : Initial Livery
+JRK811_RENEWAL           : Renewal Livery
+JRK811_GREENLAND         : Greenland Livery
+JRK811_SPACEWORLD        : Spaceworld Initial Livery
+JRK811_SPACEWORLD2       : Spaceworld Renewal Livery    
+
+JRK813_STD           : Standard Livery (End Pantograph)
+JRK813_STD2          : Standard Livery (Middle Pantograph)
+JRK813_FUKU          : Fukuhoku Yutaka Livery (End Pantograph)
+JRK813_FUKU2         : Fukuhoku Yutaka Livery (Middle Pantograph)
+
+JNR711_OLD           : Original Livery
+JNR711_NEW2D         : New Livery (2 Doors)
+JNR711_NEW3D         : New Livery (3 Doors) 
+JNR711_NEWAC         : New Livery (AirCon) 
+
+SANDWICH_LV           : Standard "Sandwich" Livery
+NIKKO_LV              : Nikko "N" Livery
+NIKKORED_LV           : Nikko "Red" Livery
+JOSHIN_LV             : Joshin Electric Livery
+
+CHOU_LV_DD            : Chou Livery (DD Green Cars)
+
+GRSD             : Singledecker Greencar
+GRDD             : Doubledecker Greencar
+
+KIHA40liv_RED         : JNR Red (Cold Area Type)
+KIHA40liv_REDW        : JNR Red
+KIHA40liv_HOKKAIDO    : Hokkaido (Cold Area Type)
+KIHA40liv_HIDAKA      : Hidaka Line (Cold Area Type)
+
+KIHA54liv_500red      : -500 Red Stripe
+KIHA54liv_500rebun    : -500 Rebun (Double Red Stripe)
+KIHA54liv_500snowA    : -500 Ryuhyo Monogatari Blue
+KIHA54liv_500snowB    : -500 Ryuhyo Monogatari White
+
+KIHA150liv_hokkaido   : -0 Hokkaido
+KIHA150liv_asahi      : -0 Hokkaido Asahikawa
+KIHA150liv_100        : -100 Hokkaido (no AC)
+
+HKDLINER_LV           : Hakodate Liner
+
+
+SHONAN_113_LV_0       : Shonan Livery (NO Green Car or SD Green Car Variations)
+SHONAN_113_LV_1       : Shonan Livery (1 SD Green Car w/belt Variations)
+SHONAN_113_LV_2       : Shonan Livery (1 SD Green Car Variations)
+SHONAN_113_LV_3       : Shonan Livery (1 or 2 SD Green Car w/belt Variations)
+SHONAN_113_LV_4       : Shonan Livery (2 SD Green Car w/belt Variations)
+SHONAN_113_LV_5       : Shonan Livery (2 SD Green Car Variations)
+SHONAN_113_LV_6       : Shonan Livery (DD Old/SD Green Car Variations)
+SHONAN_113_LV_7       : Shonan Livery (DD New/SD Green Car Variations)
+
+JREKHE120_OR    : Beech Forest Orange Livery
+JREKHE120_GR    : Tohoku Green Livery
+
+JREKHE130_SU    : -0 Suigun Line
+JREKHE130_KU    : -100 Kurui Line
+JREKHE130_HA    : -500 Hachinohe Line
+
+JREKH100_ATZWA      : Aterazawa Line
+JREKH110_GREEN      : Corporate Green
+JREKH110_GREENBL    : Corporate Green (Black Ends)
+JREKH110_RIKKU      : Rikuu Line
+JREKH110_AKITA      : Akita Relay
+JREKH110_VOITAMI    : Iiyama "Voiture Amitié"
+JREKH110_METRORED   : Koumi "Metropolitan" Red
+JREKH111_HACHIKO    : Hachiko Line
+JREKH111_EXPRED     : Koumi "Express" Vermillion/Cream
+
+E127_NIIG    : -0 Niigata Livery
+E127_NIIG2   : -0 Niigata Livery (Extra Pantograph)
+E127_MSMT    : -100 Matsumoto Livery (Extra Pantograph)
+E127_MSMT2   : -100 Matsumoto Livery (Extra Pantograph)
+
+
+
+# Coupling Rejection
+JNR211_UNIQUE  :You can only attach MU cars, DD-MU cars or the 211 Series EMU to this consist!
+JRH735_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs to this consist!
+JRH731_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with only the 731 Series EMU.
+JRH201_UNIQUE  :You can only attach MU cars or KiHa 201 Series DMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with the 731 Series EMU.
+JRH711_UNIQUE  :You can only attach MU cars or the 711 Series EMU to this consist!
+MU_UNIQUE: You can only attach MU cars or other EMUs of the same design.
+SAME_UNIQUE: Yor can only attach other EMUs of the same design.
+
+# Consist Errors
+MU_NEEDMID        :You require more {GREEN}JP+ MU Cars{WHITE} before you can attach this.
+JNR211_DDATT      :Bilevel cars can only be attached after a {GREEN}MU Cab/Control Car{WHITE} on the JNR 211 Series EMU. {TINYFONT}{}You will need to attach a {GREEN}JNR 211 Series EMU {WHITE} after.
+MU_FRONTBACK      :You can only attach this behind {GREEN}JP+ MU Cab/Control Cars.
+MU_ONEBACKCAB     :You can only attach one {GREEN}JP+ MU Cab/Control Car {WHITE} to the rear of a consist.
+JNR211_CABTODDATT :You must attach the {GREEN}JNR 211 Series EMU{WHITE} behind bilevel cars on the JNR 211 Series EMU.
+MU_CARATT         :You can only attach this behind an EMU lead car.
+MU_MAXMULENGTH    :Maximum allowed number of {GREEN}JP+ MU Motor/Trailer Car{WHITE} in this unit has been reached.{}{} Attach a {GREEN}JP+ MU Cab/Control Car{WHITE} to complete the unit.
+MU_MAXDD          :Maximum number of {GREEN}JP+ MU Special Cars{WHITE} is reached.
+MU_MAX            :Maximum number of units has been reached. You cannot make this consist any longer!{}{}{TINYFONT}Perhaps try adding more {GREEN}JP+ MU Motor/Trailer Car{WHITE} in the consist?
+MU_REARCABERROR   :You need to add a {GREEN}MU Cab/Control Car{WHITE} to the rear of this consist. {TINYFONT}{}{}A multiple unit requires a cab car at the rear.
+MU_CONSISTERROR   :There are not enough cars in this consist. You need to add {GREEN}JP+ MU Cars{WHITE} to the rear of this consist. {}{}{TINYFONT}{GREEN}JP+ MU Motor/Trailer Car:{LTBLUE} Adds middle cars to the MU. {}{TINYFONT}{GREEN}JP+ MU Cab/Control Car:{LTBLUE} Adds cabs to the MU. Always required at rear. {}{TINYFONT}{GREEN}JP+ MU Special Cars:{LTBLUE} Adds special cars to the MU. See individual MU for details.
+JNR211_MIDATTACH  :You need to attach one more JNR 211 Series EMU at the rear of the consist before you can attach more MU cars. {}{TINYFONT}Max 5 cars per unit.{}If detaching, remove all MU cars behind the driving car first.
+
+MU_NODD          :You cannot attach {GREEN}JP+ MU Special Cars{WHITE} to this unit.
+MU_ADDMOREMU     :You need to attach more {GREEN}JP+ MU Cars{WHITE} to this unit, before attaching anything else.
+MU_CABTOEND      :You need to attach a {GREEN}JP+ MU Cab/Control Car{WHITE} to the end of this unit, before attaching anything else.
+MU_ATTONMU       :You can only attach this behind {GREEN}JP+ MU Cars{WHITE}.
+MU_CHECKCONSIS   :You cannot attach {GREEN}JP+ MU Special Cars{WHITE} here, check the train info for details on where to attach this.
+
+MU_ATTEMU209     :You can only attach other {GREEN}209 Series{WHITE} EMUs to this unit.
+MU_ATTEMUE217    :You can only attach other {GREEN}E217 Series{WHITE} EMUs to this unit.
+MU_ATTEMUE231    :You can only attach other {GREEN}E231 Series{WHITE} EMUs to this unit.
+
+MU_MORECARS      :A unit in the consist has an invalid length. You might need to add or take away some MU cars.
+
+MU_MORESP        :You need to attach more {GREEN}JP+ MU Special Cars{WHITE} to the rear of the consist.
+MU_CABb4SP       :You can only attach {GREEN}JP+ MU Special Cars{WHITE} after a {GREEN}JP+ MU Cab/Control Car{WHITE}.
+
+
+# Description
+
+MUCAR_DESC  :{BLUE}Used to represent  {GREEN}motor and trailer cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
+MUCAB_DESC  :{BLUE}Used to represent {GREEN}cab/control cars{BLUE} within an EMU formation. {}{RED}Must be the rear of an EMU consist, but can be placed within.
+MUCARDD_DESC  :{BLUE}Used to represent special cars, such as {GREEN}bilevel cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
+
+DH_EF210_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Freight helper/banker{}{BLACK}Operators: {GOLD}JR {GRAY}Freight{}
+DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Heavy freight{}{BLACK}Operators: {YELLOW}Seibu{}
+
+
+# KiHa 40
+    JNR_kiha40_DESC:{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {DKGREEN}Hokkaido {RED}Kyushu {LTBLUE}Shikoku{}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
+
+# KiHa 48
+    JNR_kiha48_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {DKGREEN}Hokkaido {}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
+
+# KiHa 54
+    JNR_kiha54_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {WHITE}(-500) {LTBLUE}Shikoku{}
+
+# KiHa 56/57/58
+    JNR_kiha58_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East{WHITE} (58) {ORANGE}Central{WHITE} (58) {BLUE}West{WHITE} (58) {DKGREEN}Hokkaido{WHITE} (56) {RED}Kyushu{WHITE} (58) {LTBLUE}Shikoku{WHITE} (57/58){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
+
+# 107 Series
+    JRE_107_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
+# 209 Series
+    JRE_209_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
+# 211 Series
+    JNR_211_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central{}{BLACK}Liveries: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}
+
+# 211-5000/6000 Series
+    JNR_21156_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+
+# 213 Series
+    JNR_213_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West {ORANGE}Central{}{BLACK}Liveries: {BLUE}Okayama, {ORANGE}Tokai (1989+){}
+
+# E217 Series
+    JRE_E217_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yokosuka, Shonan (2006+){}
+
+# KiHa 141
+  JRH_kiha141_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido
+
+# KiHa 110
+  JRE_KH110_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+
+# KiHa 111/112
+  JRE_KH111_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+
+# KiHa 150
+  JRH_kiha150_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.
+
+# KiHa 201
+  JRH_kiha201_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
+
+# 721 Series
+  JRH_721emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
+
+# 731 Series
+  JRH_731emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with KiHa 201 DMU OR 721-735 series EMUs.{}
+
+# 733 Series
+  JRH_733emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Original, Hakodate Liner {GREEN}(refittable){}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+
+# 735 Series
+  JRH_735emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+
+# 781 Series
+  JRH_781emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers{}{BLACK}Liveries: {GOLD}JNR & JR Hokkaido {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}
+
+# 785 Series
+  JRH_785emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
+
+# 789 Series
+  JRH_789emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers{}{BLACK}Liveries: {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}{}
+
+# 6000 Series
+    JRS_6000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku
+
+# 719 Series
+    JRE_719_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Sendai, Banetsukoshi (2007+), Akita (2017+){}
+
+# 719-5000 Series
+    JRE_7195000_DESC  :{BLACK}Gauge:{GOLD} Standard/Kōki (4ft8.5in/​1,435mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: Yamagata{}
+
+# E235 Series
+    JRE_E235_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yamanote, Yokosuka (2020+){GREEN}{}
+
+# E233 Series
+    JRE_E233_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Chou, Keihin-Toukohu (2007+), Shonan (2007+), Joban Local (2009+),  Keiyo (2010+),  Saikyo (2013+), Yokohama (2014+), Nanbu (2014+){GREEN}{}
+
+# E231 Series
+    JRE_E231_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+
+# 207 Series
+    JRW_207_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange
+
+# E331 Series
+    JRE_E331_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+
+# 311 Series
+    JRC_311_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+
+# 313 Series
+    JRC_313_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+
+# 115 Series
+    JNR_115_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 113 Series
+    JNR_113_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 205 Series
+    JNR_205_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# Nade 6100 Series
+    JGR_6340_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
+
+# 101 Series
+    JNR_101_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# 103 Series
+    JNR_103_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# 201 Series
+    JNR_201_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# 181 Series
+    JNR_181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 80 Series
+    JNR_80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 80 Series
+    JNR_165_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 221 Series
+    JRW_221_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
+
+# 223_0 Series
+    JRW_223_0_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 223_1000 Series
+    JRW_223_1000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 811 Series
+    JRK_811_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 813 Series
+    JRK_813_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+
+# 303 Series
+    JRK_303_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}
+
+# 711 Series
+    JNR_711_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Original, Stripe {GREEN}(refittable){}
+
+# KiHa E120
+    JRE_KHE120_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Orange, Green{}
+
+# KiHa E130
+    JRE_KHE130_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Kurui, Hachinohe{}
+
+# KiHa E130
+    JRE_KHE131_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Hachinohe{}
+
+# E127 Series
+    JRE_E127_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Niigata, Matsumoto{}
