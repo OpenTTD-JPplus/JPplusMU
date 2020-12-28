@@ -173,6 +173,20 @@ jreE235_DIV_shonan:{RED}---- Shonan Livery Options ----
 jreE233_LV_shonan_mu: Shonan Standard Car
 jreE233_LV_shonan_dd: Shonan DD Green Car
 
+JRE_E231_LV_SOBU_0: -0 Sobu Livery
+JRE_E231_LV_SOBU_500: -500 Sobu Livery
+JRE_E231_LV_YAMANOTE: -500 Yamanote Livery
+JRE_E231_LV_CHSOTO: -800 Chuo-Sobu/Tozai Livery
+JRE_E231_LV_SHONAN: -1000 Shonan Livery
+JRE_E231_DIV_SOBU:{RED}---- Sobu Livery Options ---- 
+JRE_E231_DIV_YAMANOTE:{RED}---- Yamanote Livery Options ---- 
+JRE_E231_DIV_SHONAN:{RED}---- Shonan Livery Options ---- 
+JRE_E231_OPT_SOBU_MU: Sobu Standard Car
+JRE_E231_OPT_SOBU_HD: Sobu HD Car
+JRE_E231_OPT_YAMANOTE_MU: Yamanote Standard Car
+JRE_E231_OPT_YAMANOTE_HD: Yamanote HD Car
+JRE_E231_OPT_SHONAN_MU: Shonan Standard Car
+JRE_E231_OPT_SHONAN_DD: Shonan DD Green Car
 
 OLD_LV                : Original livery
 STANDARD_LV           : Standard livery
