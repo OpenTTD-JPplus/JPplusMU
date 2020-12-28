@@ -188,6 +188,17 @@ JRE_E231_OPT_YAMANOTE_HD: Yamanote HD Car
 JRE_E231_OPT_SHONAN_MU: Shonan Standard Car
 JRE_E231_OPT_SHONAN_DD: Shonan DD Green Car
 
+JRE_E217_LV_YOKO: Yokosuka Livery
+JRE_E217_LV_SHONAN: Shonan Livery
+JRE_E217_DIV_YOKO:{RED}---- Yokosuka Livery Options ---- 
+JRE_E217_DIV_SHONAN:{RED}---- Shonan Livery Options ---- 
+JRE_E217_OPT_YOKO_MU: Yokosuka Standard Car
+JRE_E217_OPT_YOKO_DD: Yokosuka DD Green Car
+JRE_E217_OPT_SHONAN_MU: Shonan Standard Car
+JRE_E217_OPT_SHONAN_DD: Shonan DD Green Car
+
+
+
 OLD_LV                : Original livery
 STANDARD_LV           : Standard livery
 NEW_LV                : New livery
