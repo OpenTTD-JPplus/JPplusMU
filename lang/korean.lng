@@ -4,7 +4,7 @@
 
 # GRF 이름과 설명
 STR_GRF_NAME        :JP+Set v0.1.8
-STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}는 여러분의 일본 풍경을 더욱 풍요롭게 만들어줄것입니다. 본 GRF의 열차들은 협궤를 필요로 합니다.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
+STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}는 여러분의 게임을 더욱 일본과 비슷하게 만들어줄것입니다. 본 GRF의 열차들은 협궤를 필요로 합니다.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
 
@@ -30,23 +30,23 @@ STR_PARAM_NAME_BASECAPACITY      :승객 수용량
 STR_PARAM_DESC_BASECAPACITY      :JapanSet3와 비슷하게 승객 수용량을 조정합니다. 현실적인 옵션은 좌석/입석 수용량에 대한 실제 데이터를 기반으로 하며 다른 세트나 게임 플레이와 균형을 이루지 않습니다.
 STR_PARAM_NAME_BOOSTCAPACITY     :수용량 증가
 STR_PARAM_DESC_BOOSTCAPACITY     :통근형 열차의 수용량을 증가시킵니다. TIAS 와 NATS는 통근형 열차의 차량당 승객 수용량을 JapanSet3보다 더 높게 책정되어있습니다. 이 옵션을 활성화 시킴으로서 TIAS와 NATS와 유사한 수준으로 수용량을 증가시킬 수 있습니다.
-STR_PARAM_NAME_JAPANSETDISABLE   :JapanSet3 removal 
-STR_PARAM_DESC_JAPANSETDISABLE   :Removes duplicate trains found in JapanSet3.
+STR_PARAM_NAME_JAPANSETDISABLE   :JapanSet3 차량 제거
+STR_PARAM_DESC_JAPANSETDISABLE   :JapanSet3와 중복되는 열차들을 제거합니다.
 
-GRF_OTTDVER       : You are below the required OpenTTD version to run this NewGRF. Please update your version of OpenTTD.
-GRF_JAPANSET      : {WHITE}Please load...{}{YELLOW}JapanSet3 Trains{WHITE}{}and/or{}{YELLOW}JapanSet3 Tracks{WHITE}{}before {GREEN}JP+Set.
-GRF_JPPLUSSET     : JP+ Set must be loaded AFTER the JP+ Legacy version.
-GRF_NATSSET       : JP+ Set NATS Duplicate Trains Disabler should be loaded together with Nagoya Area Train Set (NATS) to avoid train duplication. 
-GRF_JAPANSETTRAINS: JP+ Set should be loaded AFTER Japan Set3: Trains to avoid train duplication.
-GRF_JAPANSECRETORDER:  JP+ Set should be loaded AFTER Japan Set Secret Engines for compatibility.
-
-
+GRF_OTTDVER       : OpenTTD 버전이 낮아 NewGRF를 불러올 수 없습니다. OpenTTD 버전을 업데이트 해주십시오.
+GRF_JAPANSET      : {GREEN}JP+Set{White}전에...{}{YELLOW}JapanSet3 Trains{WHITE}{}그리고/또는{}{YELLOW}JapanSet3 Tracks{}{WHITE}를 불러와주십시오.
+GRF_JPPLUSSET     : JP+ Set는 반드시 JP+ Set 예전 버전 뒤에 로딩되어야합니다.
+GRF_NATSSET       : JP+ Set NATS Duplicate Trains Disabler는 열차 중복을 방지하기위해 Nagoya Area Train Set (NATS)와 함께 불러와주십시오.
+GRF_JAPANSETTRAINS: JP+ Set은 열차 중복을 방지하기위해 Japan Set3: Trains 뒤에 불러와야합니다.
+GRF_JAPANSECRETORDER:  JP+ Set은 호환성을 위해 Japan Set Secret Engines 뒤에 불러와야합니다.
 
 
-# Vehicle Name
-MUCAR   :JP+ MU Car {WHITE}(MU){BLACK}
-MUCAB   :JP+ MU Cab/Control Car {WHITE}(CC){BLACK}
-MUCARDD :JP+ MU Special Cars {WHITE}(SC){BLACK}
+
+
+# 차량 이름
+MUCAR   :JP+ 객차 {WHITE}(MU){BLACK}
+MUCAB   :JP+ 운전차 {WHITE}(CC){BLACK}
+MUCARDD :JP+ 특수차량 {WHITE}(SC){BLACK}
 
 JGR_6340:6340계 {WHITE}(EMU){BLACK}
 
