@@ -380,10 +380,10 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 
 # KiHa 40
-    JNR_kiha40_DESC:{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {DKGREEN}Hokkaido {RED}Kyushu {LTBLUE}Shikoku{}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
+    JNR_kiha40_DESC:{BLACK}궤간:{GOLD} 협궤/Kyōki (3ft6in/​1,067mm){}{BLACK}용도: {BLUE}통근열차{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}운용주체: {GOLD}일본국유철도(JNR) / JR {GREEN}동일본 {ORANGE}도카이 {BLUE}서일본 {DKGREEN}훗카이도 {RED}규슈 {LTBLUE}시코쿠{}{}{TINYFONT}{GOLD}극한지 사양은 창문 크기가 작은 이중창 구조로 되어있습니다.{}
 
 # KiHa 48
-    JNR_kiha48_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {DKGREEN}Hokkaido {}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
+    JNR_kiha48_DESC :{BLACK}궤간:{GOLD} 협궤/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {DKGREEN}Hokkaido {}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
 
 # KiHa 54
     JNR_kiha54_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Passengers{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {WHITE}(-500) {LTBLUE}Shikoku{}
