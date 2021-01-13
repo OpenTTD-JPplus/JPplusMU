@@ -64,15 +64,11 @@ spriteset (spriteset_2095_midpan_sobu_rev,	  "gfx/JRE/emu209/209-500_sobu.png") 
 
 /*---GFX: Pantograph Positions---*/
 //209-0 Keto
-switch(FEAT_TRAINS,SELF, sw_209_gfx_rearend_midcheck_keto, position_in_vehid_chain%10){
+switch(FEAT_TRAINS,SELF, sw_209_gfx_pantograph_pos_keto, position_in_vehid_chain%10){
   1: spriteset_209_midpan_keto;
   4: spriteset_209_midhd_keto;
   6: spriteset_209_midpan_keto;
   default: spriteset_209_mid_keto;
-}
-switch(FEAT_TRAINS,SELF, sw_209_gfx_pantograph_pos_keto, position_in_vehid_chain_from_end){
-  0: spriteset_209_back_keto;
-  default: sw_209_gfx_rearend_midcheck_keto;
 }
 
 //209-0 Nanbu
@@ -255,7 +251,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //209-0 Keto
-/*
 switch(FEAT_TRAINS, PARENT, sw_209_gfx_front_revcheck_keto, vehicle_is_reversed){
    0: spriteset_209_front_keto;
    default: sw_209_gfx_rev_idcheck;
@@ -268,35 +263,6 @@ switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_keto, vehicle_is_flipped) {
   1: sw_209_gfx_back_revcheck_keto;
  default: sw_209_gfx_front_revcheck_keto;
 }
-*/
-
-
-
-switch(FEAT_TRAINS, SELF, spriteset_209_artic2check_keto, [STORE_TEMP(position_in_consist+3, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000: spriteset_209_midpan_keto;
-  2021: spriteset_209_back_keto;
-  0: spriteset_209_back_keto;
-}
-switch(FEAT_TRAINS, SELF, spriteset_209_artic1check_keto, [STORE_TEMP(position_in_consist+3, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000: spriteset_209_mid_keto;
-  2021: spriteset_209_midpan_keto;
-  0: spriteset_209_midpan_keto;
-}
-switch(FEAT_TRAINS,SELF, sw_209_gfx_articparts_keto, position_in_articulated_veh){
-  0: spriteset_209_front_keto;
-  1: spriteset_209_artic1check_keto;
-  2: spriteset_209_artic2check_keto;
-  default: spriteset_209_mid_keto;
-}
-
-switch(FEAT_TRAINS, SELF, sw_209_gfx_frontback_keto, vehicle_is_reversed){
- 0: sw_209_gfx_articparts_keto;
- default: sw_209_gfx_rev_idcheck;
-}
-
-
-
-
 
 //209-0 Nanbu
 switch(FEAT_TRAINS, PARENT, sw_209_gfx_front_revcheck_nanbu, vehicle_is_reversed){
@@ -433,11 +399,7 @@ switch(FEAT_TRAINS, SELF, sw_209_subtypetext_main, cargo_subtype) {
   0: return string(MU_UNIQUE);
   }
 
-//Articulated Parts
-switch(FEAT_TRAINS, PARENT, sw_209_artic_parts, extra_callback_info1) {
-    1..2: return mu_car;
-    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
-}
+
 
 item(FEAT_TRAINS, emu_209) {
     property {
@@ -464,7 +426,7 @@ item(FEAT_TRAINS, emu_209) {
         refittable_cargo_classes:     bitmask(CC_PASSENGERS);
         non_refittable_cargo_classes: bitmask();
         refit_cost:                   0;
-        dual_headed:                  0;
+        dual_headed:                  1;
         ai_engine_rank:               0;
 
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -483,7 +445,6 @@ item(FEAT_TRAINS, emu_209) {
 		    additional_text:	      return string(JRE_209_DESC);
         cargo_subtype_text:           sw_209_subtypetext_main;
         can_attach_wagon:			  sw_209_attach_vehid;
-        articulated_part:       sw_209_artic_parts;
         //start_stop:                   ;
     }
     /*Multiple Unit Car*/
