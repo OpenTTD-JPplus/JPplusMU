@@ -197,6 +197,17 @@ JRE_E217_OPT_YOKO_DD: Yokosuka DD Green Car
 JRE_E217_OPT_SHONAN_MU: Shonan Standard Car
 JRE_E217_OPT_SHONAN_DD: Shonan DD Green Car
 
+JRE_209_LV_KT_0: -0 Keihin Tohoku Livery
+JRE_209_LV_NANNBU: -0 Nannbu Livery
+JRE_209_LV_BOSO: -0 Boso Livery
+JRE_209_LV_HK_0: -0 Hachiko Livery
+JRE_209_LV_SOBU: -500 Sobu Livery
+JRE_209_LV_KT_500: -500 Keihin Tohoku Livery
+JRE_209_LV_KEIYO: -500 Keiyo Livery
+JRE_209_LV_MUSA: -500 Musashino Livery
+JRE_209_LV_JOBAN: -1000 Joban Livery
+JRE_209_LV_CHOU: -1000 Chuo Livery
+JRE_209_LV_HK_3500: -3500 Hachiko Livery
 
 
 OLD_LV                : Original livery
