@@ -226,6 +226,50 @@ switch(FEAT_TRAINS, SELF, sw_711_revflip_gfx_spriteset_713_mid_panto_refurb, cur
  default: spriteset_711_revflip_mid_refurb_sarm;
 }
 
+//711 Orginal BACK Pantograph Ver
+switch(FEAT_TRAINS, SELF, sw_711_gfx_spriteset_backpanto, current_year){
+ 0..1978: spriteset_711_back_nobeam_darm;
+ 1979..2004: spriteset_711_back_beam_darm;
+ default: spriteset_711_back_beam_sarm;
+}
+switch(FEAT_TRAINS, SELF, sw_711_rev_gfx_spriteset_backpanto, current_year){
+ 0..1978: spriteset_711_rev_back_nobeam_darm;
+ 1979..2004: spriteset_711_rev_back_beam_darm;
+ default: spriteset_711_rev_back_beam_sarm;
+}
+switch(FEAT_TRAINS, SELF, sw_711_revflip_gfx_spriteset_backpanto, current_year){
+ 0..1978: spriteset_711_revflip_back_nobeam_darm;
+ 1979..2004: spriteset_711_revflip_back_beam_darm;
+ default: spriteset_711_revflip_back_beam_sarm;
+}
+
+//711 Refurb BACK 2door
+switch(FEAT_TRAINS, SELF, sw_711_gfx_spriteset_backpanto_refurb_2d, current_year){
+ 0..2004: spriteset_711_back_refurb_2door_darm;
+ default: spriteset_711_back_refurb_2door_sarm;
+}
+switch(FEAT_TRAINS, SELF, sw_711_rev_gfx_spriteset_backpanto_refurb_2d, current_year){
+ 0..2004: spriteset_711_rev_back_refurb_2door_darm;
+ default: spriteset_711_rev_back_refurb_2door_sarm;
+}
+switch(FEAT_TRAINS, SELF, sw_711_revflip_gfx_spriteset_backpanto_refurb_2d, current_year){
+ 0..2004: spriteset_711_revflip_back_refurb_2door_darm;
+ default: spriteset_711_revflip_back_refurb_2door_sarm;
+}
+
+//711 Refurb BACK 3door
+switch(FEAT_TRAINS, SELF, sw_711_gfx_spriteset_backpanto_refurb_3d, current_year){
+ 0..2004: spriteset_711_back_refurb_3door_darm;
+ default: spriteset_711_back_refurb_3door_sarm;
+}
+switch(FEAT_TRAINS, SELF, sw_711_rev_gfx_spriteset_backpanto_refurb_3d, current_year){
+ 0..2004: spriteset_711_rev_back_refurb_3door_darm;
+ default: spriteset_711_rev_back_refurb_3door_sarm;
+}
+switch(FEAT_TRAINS, SELF, sw_711_revflip_gfx_spriteset_backpanto_refurb_3d, current_year){
+ 0..2004: spriteset_711_revflip_back_refurb_3door_darm;
+ default: spriteset_711_revflip_back_refurb_3door_sarm;
+}
 /*---END OF SECTION---*/
 
 
@@ -271,6 +315,19 @@ switch(FEAT_TRAINS,SELF, sw_711_gfx_revflip_back_livery, [STORE_TEMP(position_in
 0: sw_711_revflip_gfx_spriteset_back;
 }
 
+switch(FEAT_TRAINS,SELF, sw_711_gfx_rev_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+3: spriteset_711_rev_back_refurb_ac_sarm;
+2: sw_711_rev_gfx_spriteset_backpanto_refurb_3d;
+1: sw_711_rev_gfx_spriteset_backpanto_refurb_2d;
+0: sw_711_rev_gfx_spriteset_backpanto;
+}
+switch(FEAT_TRAINS,SELF, sw_711_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+3: spriteset_711_revflip_back_refurb_ac_sarm;
+2: sw_711_revflip_gfx_spriteset_backpanto_refurb_3d;
+1: sw_711_revflip_gfx_spriteset_backpanto_refurb_2d;
+0: sw_711_revflip_gfx_spriteset_backpanto;
+}
+
 //Check for flipped vehicles (dual_headed)
 switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
   1: sw_711_gfx_rev_front_livery;
@@ -284,16 +341,26 @@ switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_back_flippedcheck, vehicle_is_flipped) 
   1: sw_711_gfx_revflip_back_livery;
  default: sw_711_gfx_rev_back_livery;
 }
+switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_back_panto_flippedcheck, vehicle_is_flipped) {
+  1: sw_711_gfx_revflip_back_panto_livery;
+ default: sw_711_gfx_rev_back_panto_livery;
+}
+
+//Back Car Pantograph Testing
+switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){ //look at opposite position_in_vehID_chain
+ 0: sw_711_gfx_rev_back_flippedcheck;
+ default: sw_711_gfx_rev_back_panto_flippedcheck;
+}
 
 //Front/Back Car Position Testing
 switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_frontback_nomucars, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
   1:sw_711_gfx_rev_front_flippedcheck;
-  0:sw_711_gfx_rev_back_flippedcheck;
+  0:sw_711_gfx_rev_back_pantocheck;
 }
 switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_frontback_aftermucars, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){ //look at opposite position_in_vehID_chain
-  1:sw_711_gfx_rev_back_flippedcheck;
+  1:sw_711_gfx_rev_back_pantocheck;
   0:sw_711_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_frontback_mucarcheck, 
@@ -307,12 +374,12 @@ switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_frontback_sameid,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
   2002:sw_711_gfx_rev_frontback_mucarcheck;
   1000:sw_711_gfx_rev_front_flippedcheck;
-  default:sw_711_gfx_rev_back_flippedcheck;
+  default:sw_711_gfx_rev_back_pantocheck;
 }
 switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_frontback, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
   2002:sw_711_gfx_rev_frontback_sameid;
-  1000:sw_711_gfx_rev_back_flippedcheck;
+  1000:sw_711_gfx_rev_back_pantocheck;
   default:sw_711_gfx_rev_front_flippedcheck;
 }
 
@@ -327,9 +394,13 @@ switch(FEAT_TRAINS, SELF, sw_711_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 //711 Orginal
+switch(FEAT_TRAINS, SELF, sw_711_gfx_pantocheck, position_in_vehid_chain){
+ 0: sw_711_gfx_spriteset_back;
+ default: sw_711_gfx_spriteset_backpanto;
+}
 switch(FEAT_TRAINS, SELF, sw_711_gfx_frontback_flipcheck, vehicle_is_flipped){
  0: sw_711_gfx_spriteset_front;
- default: sw_711_gfx_spriteset_back;
+ default: sw_711_gfx_pantocheck;
 }
 switch(FEAT_TRAINS, PARENT, sw_711_gfx_frontback_revcheck, vehicle_is_reversed){
  0: sw_711_gfx_frontback_flipcheck;
@@ -337,9 +408,13 @@ switch(FEAT_TRAINS, PARENT, sw_711_gfx_frontback_revcheck, vehicle_is_reversed){
 }
 
 //711 New Livery
+switch(FEAT_TRAINS, SELF, sw_711_gfx_pantocheck_refurb_2door, position_in_vehid_chain){
+ 0: spriteset_711_back_refurb_2door;
+ default: sw_711_gfx_spriteset_backpanto_refurb_2d;
+}
 switch(FEAT_TRAINS, SELF, sw_711_gfx_frontback_flipcheck_refurb_2door, vehicle_is_flipped){
  0: spriteset_711_front_refurb_2door;
- default: spriteset_711_back_refurb_2door;
+ default: sw_711_gfx_pantocheck_refurb_2door;
 }
 switch(FEAT_TRAINS, PARENT, sw_711_gfx_frontback_revcheck_refurb_2door, vehicle_is_reversed){
  0: sw_711_gfx_frontback_flipcheck_refurb_2door;
@@ -347,9 +422,13 @@ switch(FEAT_TRAINS, PARENT, sw_711_gfx_frontback_revcheck_refurb_2door, vehicle_
 }
 
 //711 New Livery 3 Doors
+switch(FEAT_TRAINS, SELF, sw_711_gfx_pantocheck_refurb_3door, position_in_vehid_chain){
+ 0: spriteset_711_back_refurb_3door;
+ default: sw_711_gfx_spriteset_backpanto_refurb_3d;
+}
 switch(FEAT_TRAINS, SELF, sw_711_gfx_frontback_flipcheck_refurb_3door, vehicle_is_flipped){
  0: spriteset_711_front_refurb_3door;
- default: spriteset_711_back_refurb_3door;
+ default: sw_711_gfx_pantocheck_refurb_3door;
 }
 switch(FEAT_TRAINS, PARENT, sw_711_gfx_frontback_revcheck_refurb_3door, vehicle_is_reversed){
  0: sw_711_gfx_frontback_flipcheck_refurb_3door;
@@ -357,9 +436,13 @@ switch(FEAT_TRAINS, PARENT, sw_711_gfx_frontback_revcheck_refurb_3door, vehicle_
 }
 
 //711 New Livery AC
+switch(FEAT_TRAINS, SELF, sw_711_gfx_pantocheck_refurb_ac, position_in_vehid_chain){
+ 0: spriteset_711_back_refurb_ac;
+ default: spriteset_711_back_refurb_ac_sarm;
+}
 switch(FEAT_TRAINS, SELF, sw_711_gfx_frontback_flipcheck_refurb_ac, vehicle_is_flipped){
  0: spriteset_711_front_refurb_ac;
- default: spriteset_711_back_refurb_ac;
+ default: sw_711_gfx_pantocheck_refurb_ac;
 }
 switch(FEAT_TRAINS, PARENT, sw_711_gfx_frontback_revcheck_refurb_ac, vehicle_is_reversed){
  0: sw_711_gfx_frontback_flipcheck_refurb_ac;
