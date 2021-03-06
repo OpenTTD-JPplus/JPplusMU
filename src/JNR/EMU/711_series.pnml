@@ -62,13 +62,13 @@ alternative_sprites(spriteset_711_back_nobeam_darm,        ZOOM_LEVEL_NORMAL, BI
 alternative_sprites(spriteset_711_back_beam_darm,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-dpanto.png")           {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_711_back_beam_sarm,          ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-spanto.png")           {tmpl_std_rev(0, 26)}
 
-alternative_sprites(spriteset_711_rev_back_beam,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-1-dpanto.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_711_rev_back_beam,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-dpanto.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_711_rev_back_beam,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-spanto.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_711_rev_back_nobeam_darm,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-1-dpanto.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_711_rev_back_beam_darm,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-dpanto.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_711_rev_back_beam_sarm,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-spanto.png")           {tmpl_std(0, 1)}
 
-alternative_sprites(spriteset_711_revflip_back_beam,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-1-dpanto.png")           {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_711_revflip_back_beam,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-dpanto.png")           {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_711_revflip_back_beam,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-spanto.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_711_revflip_back_nobeam_darm,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-1-dpanto.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_711_revflip_back_beam_darm,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-dpanto.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_711_revflip_back_beam_sarm,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu711/back_panto/711-1-2-spanto.png")           {tmpl_std_rev(0, 1)}
 
 //711 Repainted
 spriteset (spriteset_711_front_refurb_2door,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
