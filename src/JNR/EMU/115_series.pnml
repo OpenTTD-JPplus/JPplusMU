@@ -83,10 +83,15 @@ alternative_sprites(spriteset_115_revflip_mid_panto_shonan_ac,     ZOOM_LEVEL_NO
 
 /*---GFX: Year Dependent Switches---*/
 //115 Shonan
+switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_front_shonan, [build_year>1972 || date_of_last_service>date(1972,1,1)] ){
+ 1: spriteset_115_front_shonan_ac;
+ default: spriteset_115_front_shonan;
+ }
+/*
 switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_front_shonan, current_year){
  0..1972: spriteset_115_front_shonan;
  default: spriteset_115_front_shonan_ac;
-}
+}*/
 switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_back_shonan, current_year){
  0..1972: spriteset_115_back_shonan;
  default: spriteset_115_back_shonan_ac;
@@ -378,8 +383,18 @@ switch(FEAT_TRAINS, SELF, sw_115_subtypetext_mucar, cargo_subtype) {
 }
 switch(FEAT_TRAINS, SELF, sw_115_subtypetext_main, cargo_subtype) {
   //1: string(); <--with 165 green car in 8-car formation
-  0: string(SHONAN_LV);
+  0: string(LV_TEST_A);
+  1: string(LV_VARITION_END);
+  2: string(LV_TEST_B);
+  3: string(LV_VARITION_MID);
+  4: string(LV_SPECIAL_END);
+  5: string(LV_TEST_C);
+  6: string(LV_TEST_D);
+  7: string(LV_VARITION_END);
 }
+
+
+
 /*---END OF SECTION---*/
 
 

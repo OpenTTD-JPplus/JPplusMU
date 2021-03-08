@@ -67,6 +67,9 @@ JNR_205  :205 Series {WHITE}(EMU){BLACK}
 JNR_211  :211 Series {WHITE}(EMU){BLACK}
 JNR_21156:211-5000/6000 Series {WHITE}(EMU){BLACK}
 JNR_213  :213 Series {WHITE}(EMU){BLACK}
+
+JNR_415 :415 Series {WHITE}(EMU){BLACK}
+
 JNR_711 :711 Series {WHITE}(EMU){BLACK}
 JNR_781 :781 Series {WHITE}(EMU){BLACK}
 
@@ -121,7 +124,18 @@ JRS_6000:6000 Series {WHITE}(EMU){BLACK}
 
 
 # Livery Name
-BLANK                 : {RED}A{ORANGE}U{YELLOW}T{GREEN}O{BLUE}M{PURPLE}A{CREAM}T{RED}I{ORANGE}C
+BLANK                 : 
+LV_START: {WHITE}•{BLACK}
+LV_VARITION_MID: {WHITE}├{BLACK} Livery Variation
+LV_VARITION_END: {WHITE}└{BLACK} Livery Variation
+LV_SPECIAL_MID: {WHITE}├{BLACK} Special Variation
+LV_SPECIAL_END: {WHITE}└{BLACK} Special Variation
+
+LV_TEST_A: {WHITE}•{BLACK} Niigata Livery
+LV_TEST_B: {WHITE}•{BLACK} Hiroshima Livery
+LV_TEST_C: {WHITE}•{BLACK} JR West Livery
+LV_TEST_D: {WHITE}•{BLACK} JR West Renewal Livery
+
 
 jnr151_LV : 151 Series JNR Express Livery
 jnr181_LV : 181 Series JNR Express Livery
@@ -209,6 +223,17 @@ JRE_209_LV_JOBAN: -1000 Joban Livery
 JRE_209_LV_CHUO: -1000 Chuo Livery
 JRE_209_LV_HK_3500: -3500 Hachiko Livery
 
+JNR_415_LV_401421_INIT: 401/421 Series Initial Livery
+JNR_415_LV_401_JOBAN: 401 Series Joban Livery
+JNR_415_LV_421_KYUSHU: 421 Series Kyushu Livery
+
+JNR_415_LV_403423_INIT: 403/423 Series Initial Livery
+JNR_415_LV_403_JOBAN: 403 Series Joban Livery
+JNR_415_LV_423_KYUSHU: 423 Series Kyushu Livery
+JNR_415_LV_415_INIT: 415 Series Initial Livery
+JNR_415_LV_415_JOBAN: 415 Series Joban Livery
+JNR_415_LV_415_KYUSHU: 415 Series Kyushu Livery
+JNR_415_LV_415_KYUSHU_NOVENT: 415 Series Kyushu Livery (No Ventilators)
 
 OLD_LV                : Original livery
 STANDARD_LV           : Standard livery
@@ -582,3 +607,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # E127 Series
     JRE_E127_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Niigata, Matsumoto{}
+
+# 415 Series
+    JNR_415_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Local/Rapid Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West {RED}Kyushu{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
