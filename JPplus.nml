@@ -7142,6 +7142,7 @@ alternative_sprites(spriteset_115_revflip_mid_panto_ac_sarm_shinano,     ZOOM_LE
 
 /*---END OF SECTION---*/
 
+
 /*---GFX: Override Reverse Spriteset Switches---*/
 switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_front_shonan_1, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_115_rev_front_ac_shonan_1;
@@ -8049,242 +8050,242 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
   1 : sw_115_gfx_rev_back_panto_livery;
   default : sw_115_gfx_revflip_back_panto_livery;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shonan_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shonan_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shonan_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shonan_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shonan_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shonan_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shonan_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shonan_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yamasuka_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yamasuka_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yamasuka_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yamasuka_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yamasuka_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yamasuka_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yamasuka_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yamasuka_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_minobu_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_minobu_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_minobu_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_minobu_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_3_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_3_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_3_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_3_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_4_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_4_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_4_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_niigata_4_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yahiko_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yahiko_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yahiko_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yahiko_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yahiko_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yahiko_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yahiko_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_yahiko_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_nagano_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_nagano_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_nagano_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_nagano_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_nagano_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_nagano_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_nagano_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_nagano_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_fukuchiyama_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_fukuchiyama_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_fukuchiyama_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_fukuchiyama_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_fukuchiyama_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_fukuchiyama_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_fukuchiyama_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_fukuchiyama_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_setouchi_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_setouchi_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_setouchi_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_setouchi_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_hiroshima_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_hiroshima_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_hiroshima_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_hiroshima_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_3_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_3_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_3_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_3_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_3_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_3_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_3_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_refurb_3_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shinano_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shinano_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shinano_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_shinano_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
@@ -8764,242 +8765,242 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_mid_panto_shinano, [build_yea
 }
 /*---END OF SECTION---*/
 /*---GFX: Pantograph Positions---*/
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shonan_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shonan_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_shonan_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_shonan_1;
  default : sw_115_gfx_spriteset_115_mid_shonan_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shonan_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shonan_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_shonan_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_shonan_1;
  default : sw_115_gfx_spriteset_115_mid_shonan_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shonan_2_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shonan_2_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_shonan_2;
  2 : spriteset_115_mid_panto_shonan_2;
  default : spriteset_115_mid_shonan_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shonan_2_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shonan_2_sw2, position_in_vehid_chain%5){
  0 : spriteset_115_mid_panto_shonan_2;
  3 : spriteset_115_mid_panto_shonan_2;
  default : spriteset_115_mid_shonan_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yamasuka_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yamasuka_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_yamasuka_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_yamasuka_1;
  default : sw_115_gfx_spriteset_115_mid_yamasuka_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yamasuka_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yamasuka_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_yamasuka_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_yamasuka_1;
  default : sw_115_gfx_spriteset_115_mid_yamasuka_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yamasuka_2_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yamasuka_2_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_yamasuka_2;
  2 : spriteset_115_mid_panto_yamasuka_2;
  default : spriteset_115_mid_yamasuka_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yamasuka_2_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yamasuka_2_sw2, position_in_vehid_chain%5){
  0 : spriteset_115_mid_panto_yamasuka_2;
  3 : spriteset_115_mid_panto_yamasuka_2;
  default : spriteset_115_mid_yamasuka_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_minobu_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_minobu_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_minobu_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_minobu_1;
  default : sw_115_gfx_spriteset_115_mid_minobu_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_minobu_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_minobu_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_minobu_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_minobu_1;
  default : sw_115_gfx_spriteset_115_mid_minobu_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_niigata_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_niigata_1;
  default : sw_115_gfx_spriteset_115_mid_niigata_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_niigata_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_niigata_1;
  default : sw_115_gfx_spriteset_115_mid_niigata_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_2_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_2_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_niigata_2;
  2 : sw_115_gfx_spriteset_115_mid_panto_niigata_2;
  default : spriteset_115_mid_niigata_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_2_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_2_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_niigata_2;
  3 : sw_115_gfx_spriteset_115_mid_panto_niigata_2;
  default : spriteset_115_mid_niigata_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_3_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_3_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_niigata_3;
  2 : sw_115_gfx_spriteset_115_mid_panto_niigata_3;
  default : spriteset_115_mid_niigata_3;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_3_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_3_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_niigata_3;
  3 : sw_115_gfx_spriteset_115_mid_panto_niigata_3;
  default : spriteset_115_mid_niigata_3;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_4_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_4_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_niigata_4;
  2 : spriteset_115_mid_panto_niigata_4;
  default : spriteset_115_mid_niigata_4;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_4_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_niigata_4_sw2, position_in_vehid_chain%5){
  0 : spriteset_115_mid_panto_niigata_4;
  3 : spriteset_115_mid_panto_niigata_4;
  default : spriteset_115_mid_niigata_4;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yahiko_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yahiko_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_yahiko_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_yahiko_1;
  default : sw_115_gfx_spriteset_115_mid_yahiko_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yahiko_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yahiko_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_yahiko_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_yahiko_1;
  default : sw_115_gfx_spriteset_115_mid_yahiko_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yahiko_2_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yahiko_2_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_yahiko_2;
  2 : sw_115_gfx_spriteset_115_mid_panto_yahiko_2;
  default : spriteset_115_mid_yahiko_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yahiko_2_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_yahiko_2_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_yahiko_2;
  3 : sw_115_gfx_spriteset_115_mid_panto_yahiko_2;
  default : spriteset_115_mid_yahiko_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_nagano_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_nagano_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_nagano_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_nagano_1;
  default : sw_115_gfx_spriteset_115_mid_nagano_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_nagano_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_nagano_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_nagano_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_nagano_1;
  default : sw_115_gfx_spriteset_115_mid_nagano_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_nagano_2_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_nagano_2_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_nagano_2;
  2 : sw_115_gfx_spriteset_115_mid_panto_nagano_2;
  default : sw_115_gfx_spriteset_115_mid_nagano_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_nagano_2_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_nagano_2_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_nagano_2;
  3 : sw_115_gfx_spriteset_115_mid_panto_nagano_2;
  default : sw_115_gfx_spriteset_115_mid_nagano_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_fukuchiyama_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_fukuchiyama_1;
  default : sw_115_gfx_spriteset_115_mid_fukuchiyama_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_fukuchiyama_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_fukuchiyama_1;
  default : sw_115_gfx_spriteset_115_mid_fukuchiyama_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_2_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_2_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_fukuchiyama_2;
  2 : spriteset_115_mid_panto_fukuchiyama_2;
  default : spriteset_115_mid_fukuchiyama_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_2_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_2_sw2, position_in_vehid_chain%5){
  0 : spriteset_115_mid_panto_fukuchiyama_2;
  3 : spriteset_115_mid_panto_fukuchiyama_2;
  default : spriteset_115_mid_fukuchiyama_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_setouchi_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_setouchi_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_setouchi_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_setouchi_1;
  default : sw_115_gfx_spriteset_115_mid_setouchi_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_setouchi_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_setouchi_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_setouchi_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_setouchi_1;
  default : sw_115_gfx_spriteset_115_mid_setouchi_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_hiroshima_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_hiroshima_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_hiroshima_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_hiroshima_1;
  default : sw_115_gfx_spriteset_115_mid_hiroshima_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_hiroshima_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_hiroshima_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_hiroshima_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_hiroshima_1;
  default : sw_115_gfx_spriteset_115_mid_hiroshima_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_1_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_jrw_regional_1;
  2 : spriteset_115_mid_panto_jrw_regional_1;
  default : spriteset_115_mid_jrw_regional_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_1_sw2, position_in_vehid_chain%5){
  0 : spriteset_115_mid_panto_jrw_regional_1;
  3 : spriteset_115_mid_panto_jrw_regional_1;
  default : spriteset_115_mid_jrw_regional_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_2_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_2_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_jrw_regional_2;
  2 : spriteset_115_mid_panto_jrw_regional_2;
  default : spriteset_115_mid_jrw_regional_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_2_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_2_sw2, position_in_vehid_chain%5){
  0 : spriteset_115_mid_panto_jrw_regional_2;
  3 : spriteset_115_mid_panto_jrw_regional_2;
  default : spriteset_115_mid_jrw_regional_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_3_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_3_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_jrw_regional_3;
  2 : spriteset_115_mid_panto_jrw_regional_3;
  default : spriteset_115_mid_jrw_regional_3;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_3_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_3_sw2, position_in_vehid_chain%5){
  0 : spriteset_115_mid_panto_jrw_regional_3;
  3 : spriteset_115_mid_panto_jrw_regional_3;
  default : spriteset_115_mid_jrw_regional_3;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_1_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_1_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1;
  2 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1;
  default : sw_115_gfx_spriteset_115_mid_jrw_refurb_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_1_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_1_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1;
  3 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1;
  default : sw_115_gfx_spriteset_115_mid_jrw_refurb_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_2_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_2_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_2;
  2 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_2;
  default : sw_115_gfx_spriteset_115_mid_jrw_refurb_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_2_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_2_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_2;
  3 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_2;
  default : sw_115_gfx_spriteset_115_mid_jrw_refurb_2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_3_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_3_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_jrw_refurb_3;
  2 : spriteset_115_mid_panto_jrw_refurb_3;
  default : spriteset_115_mid_jrw_refurb_3;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_3_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_3_sw2, position_in_vehid_chain%5){
  0 : spriteset_115_mid_panto_jrw_refurb_3;
  3 : spriteset_115_mid_panto_jrw_refurb_3;
  default : spriteset_115_mid_jrw_refurb_3;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shinano_sw1, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shinano_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_shinano;
  2 : sw_115_gfx_spriteset_115_mid_panto_shinano;
  default : spriteset_115_mid_shinano;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shinano_sw2, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_shinano_sw2, position_in_vehid_chain%5){
  0 : sw_115_gfx_spriteset_115_mid_panto_shinano;
  3 : sw_115_gfx_spriteset_115_mid_panto_shinano;
  default : spriteset_115_mid_shinano;
