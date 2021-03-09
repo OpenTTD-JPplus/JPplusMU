@@ -8,6 +8,11 @@ if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 2, 
 	error(FATAL, REQUIRES_OPENTTD, string(GRF_OTTDVER));
 }
 
+// 8bpp //
+if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 2, 0, 22723)) {
+	error(FATAL, string(GRF_OTTDVER));
+}
+
 // Warn if "JapanSet3: Trains isn't optimal" //
 /*
 if (((grf_current_status("SZ\0D\00") == 0) && (grf_current_status("DP\30\00") == 0)) || ((grf_future_status("SZ\0D\00") == 0) && (grf_future_status("DP\30\00") == 0)) || ((grf_order_behind("SZ\0D\00") == 0) && (grf_order_behind("DP\30\00") == 0))) {
