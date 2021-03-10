@@ -1,12 +1,4 @@
 /*---GFX: Override Spriteset Switches---*/
-switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_mid_panto_kyushu, [build_year>1997 || date_of_last_service>date(1997,1,1)] ){
-  1: spriteset_4151500_mid_panto_nv_kyushu;
-  default: spriteset_4151500_mid_panto_kyushu;
-}
-switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_back_panto_kyushu, [build_year>1997 || date_of_last_service>date(1997,1,1)] ){
-  1: spriteset_4151500_back_panto_nv_kyushu;
-  default: spriteset_4151500_back_panto_kyushu;
-}
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_mid_kyushu, [build_year>1997 || date_of_last_service>date(1997,1,1)] ){
   1: spriteset_4151500_mid_nv_kyushu;
   default: spriteset_4151500_mid_kyushu;
@@ -15,9 +7,17 @@ switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_back_kyushu, [build_y
   1: spriteset_4151500_back_nv_kyushu;
   default: spriteset_4151500_back_kyushu;
 }
+switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_mid_panto_kyushu, [build_year>1997 || date_of_last_service>date(1997,1,1)] ){
+  1: spriteset_4151500_mid_panto_nv_kyushu;
+  default: spriteset_4151500_mid_panto_kyushu;
+}
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_front_kyushu, [build_year>1997 || date_of_last_service>date(1997,1,1)] ){
   1: spriteset_4151500_front_nv_kyushu;
   default: spriteset_4151500_front_kyushu;
+}
+switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_back_panto_kyushu, [build_year>1997 || date_of_last_service>date(1997,1,1)] ){
+  1: spriteset_4151500_back_panto_nv_kyushu;
+  default: spriteset_4151500_back_panto_kyushu;
 }
 /*---END OF SECTION---*/
 /*---GFX: Pantograph Positions---*/
@@ -29,6 +29,10 @@ switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban2_sw1, position_in_
  0 : spriteset_4151500_mid_panto_joban2;
  default : spriteset_4151500_mid_joban2;
 }
+switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban3_sw1, position_in_vehid_chain){
+ 0 : spriteset_4151500_mid_panto_joban3;
+ default : spriteset_4151500_mid_joban3;
+}
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_kyushu_sw1, position_in_vehid_chain){
  0 : sw_4151500_gfx_spriteset_4151500_mid_panto_kyushu;
  default : sw_4151500_gfx_spriteset_4151500_mid_kyushu;
@@ -38,6 +42,9 @@ switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban1, num_vehs_in_vehi
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban2, num_vehs_in_vehid_chain){
   default : sw_4151500_gfx_pantograph_pos_joban2_sw1;
+}
+switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban3, num_vehs_in_vehid_chain){
+  default : sw_4151500_gfx_pantograph_pos_joban3_sw1;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_kyushu, num_vehs_in_vehid_chain){
   default : sw_4151500_gfx_pantograph_pos_kyushu_sw1;
@@ -68,6 +75,18 @@ switch(FEAT_TRAINS, PARENT, sw_4151500_gfx_frontback_joban2, vehicle_is_reversed
  0: sw_4151500_gfx_frontback_flipcheck_joban2;
  default: sw_415group_gfx_rev_idcheck;
 }
+switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantocheck_joban3, position_in_vehid_chain){
+ 0: spriteset_4151500_back_joban3;
+default: spriteset_4151500_back_panto_joban3;
+}
+switch(FEAT_TRAINS, SELF, sw_4151500_gfx_frontback_flipcheck_joban3, vehicle_is_flipped){
+ 0: spriteset_4151500_front_joban3;
+ default: sw_4151500_gfx_pantocheck_joban3;
+}
+switch(FEAT_TRAINS, PARENT, sw_4151500_gfx_frontback_joban3, vehicle_is_reversed){
+ 0: sw_4151500_gfx_frontback_flipcheck_joban3;
+ default: sw_415group_gfx_rev_idcheck;
+}
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantocheck_kyushu, position_in_vehid_chain){
  0: sw_4151500_gfx_spriteset_4151500_back_kyushu;
 default: sw_4151500_gfx_spriteset_4151500_back_panto_kyushu;
@@ -90,6 +109,10 @@ switch(FEAT_TRAINS, PARENT, sw_4151500_gfx_mucar_revcheck_mid_joban2, vehicle_is
  0: sw_4151500_gfx_pantograph_pos_joban2_sw1; //manual edit
  default: sw_415group_gfx_rev_idcheck;
 }
+switch(FEAT_TRAINS, PARENT, sw_4151500_gfx_mucar_revcheck_mid_joban3, vehicle_is_reversed){
+ 0: sw_4151500_gfx_pantograph_pos_joban3_sw1; //manual edit
+ default: sw_415group_gfx_rev_idcheck;
+}
 switch(FEAT_TRAINS, PARENT, sw_4151500_gfx_mucar_revcheck_mid_kyushu, vehicle_is_reversed){
  0: sw_4151500_gfx_pantograph_pos_kyushu_sw1; //manual edit
  default: sw_415group_gfx_rev_idcheck;
@@ -99,24 +122,28 @@ switch(FEAT_TRAINS, PARENT, sw_4151500_gfx_mucar_revcheck_mid_kyushu, vehicle_is
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_mucar,  cargo_subtype) {
 0 : sw_4151500_gfx_mucar_revcheck_mid_joban1;
 1 : sw_4151500_gfx_mucar_revcheck_mid_joban2;
-2 : sw_4151500_gfx_mucar_revcheck_mid_kyushu;
+2 : sw_4151500_gfx_mucar_revcheck_mid_joban3;
+3 : sw_4151500_gfx_mucar_revcheck_mid_kyushu;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_main,  cargo_subtype) {
 0 : sw_4151500_gfx_frontback_joban1;
 1 : sw_4151500_gfx_frontback_joban2;
-2 : sw_4151500_gfx_frontback_kyushu;
+2 : sw_4151500_gfx_frontback_joban3;
+3 : sw_4151500_gfx_frontback_kyushu;
 }
 /*---END OF SECTION---*/
 /*---GFX: Livery Menu Switches---*/
 switch(FEAT_TRAINS, SELF, sw_4151500_subtypetext_mucar, cargo_subtype) {
 0 : string(LV_JOBAN);
-1 : string(LV_VARITION_END1);
-2 : string(LV_KYUSHU);
+1 : string(LV_VARITION_MID1);
+2 : string(LV_VARITION_END1);
+3 : string(LV_KYUSHU);
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_subtypetext_main, cargo_subtype) {
 0 : string(LV_JOBAN);
-1 : string(LV_VARITION_END1);
-2 : string(LV_KYUSHU);
+1 : string(LV_VARITION_MID1);
+2 : string(LV_VARITION_END1);
+3 : string(LV_KYUSHU);
 }
 /*---END OF SECTION---*/
 /*---Coupling Switch---*/
