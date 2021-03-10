@@ -7141,8 +7141,6 @@ alternative_sprites(spriteset_115_revflip_back_panto_ac_sarm_shinano,     ZOOM_L
 alternative_sprites(spriteset_115_revflip_mid_panto_ac_sarm_shinano,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu115/Shinano/115-13-1-6.png")      {tmpl_std_rev(0, 1)}
 
 /*---END OF SECTION---*/
-
-
 /*---GFX: Override Reverse Spriteset Switches---*/
 switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_front_shonan_1, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_115_rev_front_ac_shonan_1;
@@ -7632,86 +7630,6 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_back_panto_setouchi_1
   1: spriteset_115_revflip_back_panto_nv_setouchi_1;
   default: spriteset_115_revflip_back_panto_setouchi_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_front_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_front_nv_hiroshima_1;
-  default: spriteset_115_rev_front_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_front_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_front_nv_hiroshima_1;
-  default: spriteset_115_revflip_front_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_back_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_back_nv_hiroshima_1;
-  default: spriteset_115_rev_back_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_back_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_back_nv_hiroshima_1;
-  default: spriteset_115_revflip_back_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_mid_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_mid_nv_hiroshima_1;
-  default: spriteset_115_rev_mid_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_mid_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_mid_nv_hiroshima_1;
-  default: spriteset_115_revflip_mid_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_mid_panto_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_mid_panto_nv_hiroshima_1;
-  default: spriteset_115_rev_mid_panto_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_mid_panto_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_mid_panto_nv_hiroshima_1;
-  default: spriteset_115_revflip_mid_panto_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_back_panto_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_back_panto_nv_hiroshima_1;
-  default: spriteset_115_rev_back_panto_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_back_panto_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_back_panto_nv_hiroshima_1;
-  default: spriteset_115_revflip_back_panto_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_front_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_front_nv_jrw_refurb_1;
-  default: spriteset_115_rev_front_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_front_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_front_nv_jrw_refurb_1;
-  default: spriteset_115_revflip_front_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_back_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_back_nv_jrw_refurb_1;
-  default: spriteset_115_rev_back_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_back_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_back_nv_jrw_refurb_1;
-  default: spriteset_115_revflip_back_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_mid_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_mid_nv_jrw_refurb_1;
-  default: spriteset_115_rev_mid_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_mid_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_mid_nv_jrw_refurb_1;
-  default: spriteset_115_revflip_mid_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_mid_panto_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_mid_panto_nv_jrw_refurb_1;
-  default: spriteset_115_rev_mid_panto_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_mid_panto_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_mid_panto_nv_jrw_refurb_1;
-  default: spriteset_115_revflip_mid_panto_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_back_panto_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_rev_back_panto_nv_jrw_refurb_1;
-  default: spriteset_115_rev_back_panto_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_revflip_back_panto_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_revflip_back_panto_nv_jrw_refurb_1;
-  default: spriteset_115_revflip_back_panto_jrw_refurb_1;
-}
 switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_rev_front_jrw_refurb_2, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
   1: spriteset_115_rev_front_nv_jrw_refurb_2;
   default: spriteset_115_rev_front_jrw_refurb_2;
@@ -7787,14 +7705,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_front_livery, [STORE_TEMP(position_in_c
 13 : sw_115_gfx_spriteset_115_rev_front_fukuchiyama_1;
 14 : spriteset_115_rev_front_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_rev_front_setouchi_1;
-16 : sw_115_gfx_spriteset_115_rev_front_hiroshima_1;
-17 : spriteset_115_rev_front_jrw_regional_1;
-18 : spriteset_115_rev_front_jrw_regional_2;
-19 : spriteset_115_rev_front_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_rev_front_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_rev_front_jrw_refurb_2;
-22 : spriteset_115_rev_front_jrw_refurb_3;
-23 : spriteset_115_rev_front_shinano;
+16 : spriteset_115_rev_front_jrw_regional_1;
+17 : spriteset_115_rev_front_jrw_regional_2;
+18 : spriteset_115_rev_front_jrw_regional_3;
+19 : spriteset_115_rev_front_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_rev_front_jrw_refurb_2;
+21 : spriteset_115_rev_front_jrw_refurb_3;
+22 : spriteset_115_rev_front_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_revflip_front_shonan_1;
@@ -7813,14 +7730,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_front_livery, [STORE_TEMP(position_
 13 : sw_115_gfx_spriteset_115_revflip_front_fukuchiyama_1;
 14 : spriteset_115_revflip_front_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_revflip_front_setouchi_1;
-16 : sw_115_gfx_spriteset_115_revflip_front_hiroshima_1;
-17 : spriteset_115_revflip_front_jrw_regional_1;
-18 : spriteset_115_revflip_front_jrw_regional_2;
-19 : spriteset_115_revflip_front_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_revflip_front_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_revflip_front_jrw_refurb_2;
-22 : spriteset_115_revflip_front_jrw_refurb_3;
-23 : spriteset_115_revflip_front_shinano;
+16 : spriteset_115_revflip_front_jrw_regional_1;
+17 : spriteset_115_revflip_front_jrw_regional_2;
+18 : spriteset_115_revflip_front_jrw_regional_3;
+19 : spriteset_115_revflip_front_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_revflip_front_jrw_refurb_2;
+21 : spriteset_115_revflip_front_jrw_refurb_3;
+22 : spriteset_115_revflip_front_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_rev_back_shonan_1;
@@ -7839,14 +7755,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_livery, [STORE_TEMP(position_in_co
 13 : sw_115_gfx_spriteset_115_rev_back_fukuchiyama_1;
 14 : spriteset_115_rev_back_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_rev_back_setouchi_1;
-16 : sw_115_gfx_spriteset_115_rev_back_hiroshima_1;
-17 : spriteset_115_rev_back_jrw_regional_1;
-18 : spriteset_115_rev_back_jrw_regional_2;
-19 : spriteset_115_rev_back_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_rev_back_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_rev_back_jrw_refurb_2;
-22 : spriteset_115_rev_back_jrw_refurb_3;
-23 : spriteset_115_rev_back_shinano;
+16 : spriteset_115_rev_back_jrw_regional_1;
+17 : spriteset_115_rev_back_jrw_regional_2;
+18 : spriteset_115_rev_back_jrw_regional_3;
+19 : spriteset_115_rev_back_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_rev_back_jrw_refurb_2;
+21 : spriteset_115_rev_back_jrw_refurb_3;
+22 : spriteset_115_rev_back_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_revflip_back_shonan_1;
@@ -7865,14 +7780,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_back_livery, [STORE_TEMP(position_i
 13 : sw_115_gfx_spriteset_115_revflip_back_fukuchiyama_1;
 14 : spriteset_115_revflip_back_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_revflip_back_setouchi_1;
-16 : sw_115_gfx_spriteset_115_revflip_back_hiroshima_1;
-17 : spriteset_115_revflip_back_jrw_regional_1;
-18 : spriteset_115_revflip_back_jrw_regional_2;
-19 : spriteset_115_revflip_back_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_revflip_back_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_revflip_back_jrw_refurb_2;
-22 : spriteset_115_revflip_back_jrw_refurb_3;
-23 : spriteset_115_revflip_back_shinano;
+16 : spriteset_115_revflip_back_jrw_regional_1;
+17 : spriteset_115_revflip_back_jrw_regional_2;
+18 : spriteset_115_revflip_back_jrw_regional_3;
+19 : spriteset_115_revflip_back_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_revflip_back_jrw_refurb_2;
+21 : spriteset_115_revflip_back_jrw_refurb_3;
+22 : spriteset_115_revflip_back_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_rev_mid_shonan_1;
@@ -7891,14 +7805,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_mid_livery, [STORE_TEMP(position_in_con
 13 : sw_115_gfx_spriteset_115_rev_mid_fukuchiyama_1;
 14 : spriteset_115_rev_mid_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_rev_mid_setouchi_1;
-16 : sw_115_gfx_spriteset_115_rev_mid_hiroshima_1;
-17 : spriteset_115_rev_mid_jrw_regional_1;
-18 : spriteset_115_rev_mid_jrw_regional_2;
-19 : spriteset_115_rev_mid_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_rev_mid_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_rev_mid_jrw_refurb_2;
-22 : spriteset_115_rev_mid_jrw_refurb_3;
-23 : spriteset_115_rev_mid_shinano;
+16 : spriteset_115_rev_mid_jrw_regional_1;
+17 : spriteset_115_rev_mid_jrw_regional_2;
+18 : spriteset_115_rev_mid_jrw_regional_3;
+19 : spriteset_115_rev_mid_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_rev_mid_jrw_refurb_2;
+21 : spriteset_115_rev_mid_jrw_refurb_3;
+22 : spriteset_115_rev_mid_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_revflip_mid_shonan_1;
@@ -7917,14 +7830,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_mid_livery, [STORE_TEMP(position_in
 13 : sw_115_gfx_spriteset_115_revflip_mid_fukuchiyama_1;
 14 : spriteset_115_revflip_mid_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_revflip_mid_setouchi_1;
-16 : sw_115_gfx_spriteset_115_revflip_mid_hiroshima_1;
-17 : spriteset_115_revflip_mid_jrw_regional_1;
-18 : spriteset_115_revflip_mid_jrw_regional_2;
-19 : spriteset_115_revflip_mid_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_revflip_mid_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_revflip_mid_jrw_refurb_2;
-22 : spriteset_115_revflip_mid_jrw_refurb_3;
-23 : spriteset_115_revflip_mid_shinano;
+16 : spriteset_115_revflip_mid_jrw_regional_1;
+17 : spriteset_115_revflip_mid_jrw_regional_2;
+18 : spriteset_115_revflip_mid_jrw_regional_3;
+19 : spriteset_115_revflip_mid_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_revflip_mid_jrw_refurb_2;
+21 : spriteset_115_revflip_mid_jrw_refurb_3;
+22 : spriteset_115_revflip_mid_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_rev_mid_panto_shonan_1;
@@ -7943,14 +7855,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_mid_panto_livery, [STORE_TEMP(position_
 13 : sw_115_gfx_spriteset_115_rev_mid_panto_fukuchiyama_1;
 14 : spriteset_115_rev_mid_panto_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_rev_mid_panto_setouchi_1;
-16 : sw_115_gfx_spriteset_115_rev_mid_panto_hiroshima_1;
-17 : spriteset_115_rev_mid_panto_jrw_regional_1;
-18 : spriteset_115_rev_mid_panto_jrw_regional_2;
-19 : spriteset_115_rev_mid_panto_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_rev_mid_panto_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_rev_mid_panto_jrw_refurb_2;
-22 : spriteset_115_rev_mid_panto_jrw_refurb_3;
-23 : sw_115_gfx_spriteset_115_rev_mid_panto_shinano;
+16 : spriteset_115_rev_mid_panto_jrw_regional_1;
+17 : spriteset_115_rev_mid_panto_jrw_regional_2;
+18 : spriteset_115_rev_mid_panto_jrw_regional_3;
+19 : spriteset_115_rev_mid_panto_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_rev_mid_panto_jrw_refurb_2;
+21 : spriteset_115_rev_mid_panto_jrw_refurb_3;
+22 : sw_115_gfx_spriteset_115_rev_mid_panto_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_revflip_mid_panto_shonan_1;
@@ -7969,14 +7880,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_mid_panto_livery, [STORE_TEMP(posit
 13 : sw_115_gfx_spriteset_115_revflip_mid_panto_fukuchiyama_1;
 14 : spriteset_115_revflip_mid_panto_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_revflip_mid_panto_setouchi_1;
-16 : sw_115_gfx_spriteset_115_revflip_mid_panto_hiroshima_1;
-17 : spriteset_115_revflip_mid_panto_jrw_regional_1;
-18 : spriteset_115_revflip_mid_panto_jrw_regional_2;
-19 : spriteset_115_revflip_mid_panto_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_revflip_mid_panto_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_revflip_mid_panto_jrw_refurb_2;
-22 : spriteset_115_revflip_mid_panto_jrw_refurb_3;
-23 : sw_115_gfx_spriteset_115_revflip_mid_panto_shinano;
+16 : spriteset_115_revflip_mid_panto_jrw_regional_1;
+17 : spriteset_115_revflip_mid_panto_jrw_regional_2;
+18 : spriteset_115_revflip_mid_panto_jrw_regional_3;
+19 : spriteset_115_revflip_mid_panto_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_revflip_mid_panto_jrw_refurb_2;
+21 : spriteset_115_revflip_mid_panto_jrw_refurb_3;
+22 : sw_115_gfx_spriteset_115_revflip_mid_panto_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_rev_back_panto_shonan_1;
@@ -7995,14 +7905,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_panto_livery, [STORE_TEMP(position
 13 : sw_115_gfx_spriteset_115_rev_back_panto_fukuchiyama_1;
 14 : spriteset_115_rev_back_panto_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_rev_back_panto_setouchi_1;
-16 : sw_115_gfx_spriteset_115_rev_back_panto_hiroshima_1;
-17 : spriteset_115_rev_back_panto_jrw_regional_1;
-18 : spriteset_115_rev_back_panto_jrw_regional_2;
-19 : spriteset_115_rev_back_panto_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_rev_back_panto_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_rev_back_panto_jrw_refurb_2;
-22 : spriteset_115_rev_back_panto_jrw_refurb_3;
-23 : sw_115_gfx_spriteset_115_rev_back_panto_shinano;
+16 : spriteset_115_rev_back_panto_jrw_regional_1;
+17 : spriteset_115_rev_back_panto_jrw_regional_2;
+18 : spriteset_115_rev_back_panto_jrw_regional_3;
+19 : spriteset_115_rev_back_panto_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_rev_back_panto_jrw_refurb_2;
+21 : spriteset_115_rev_back_panto_jrw_refurb_3;
+22 : sw_115_gfx_spriteset_115_rev_back_panto_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_115_gfx_spriteset_115_revflip_back_panto_shonan_1;
@@ -8021,14 +7930,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_revflip_back_panto_livery, [STORE_TEMP(posi
 13 : sw_115_gfx_spriteset_115_revflip_back_panto_fukuchiyama_1;
 14 : spriteset_115_revflip_back_panto_fukuchiyama_2;
 15 : sw_115_gfx_spriteset_115_revflip_back_panto_setouchi_1;
-16 : sw_115_gfx_spriteset_115_revflip_back_panto_hiroshima_1;
-17 : spriteset_115_revflip_back_panto_jrw_regional_1;
-18 : spriteset_115_revflip_back_panto_jrw_regional_2;
-19 : spriteset_115_revflip_back_panto_jrw_regional_3;
-20 : sw_115_gfx_spriteset_115_revflip_back_panto_jrw_refurb_1;
-21 : sw_115_gfx_spriteset_115_revflip_back_panto_jrw_refurb_2;
-22 : spriteset_115_revflip_back_panto_jrw_refurb_3;
-23 : sw_115_gfx_spriteset_115_revflip_back_panto_shinano;
+16 : spriteset_115_revflip_back_panto_jrw_regional_1;
+17 : spriteset_115_revflip_back_panto_jrw_regional_2;
+18 : spriteset_115_revflip_back_panto_jrw_regional_3;
+19 : spriteset_115_revflip_back_panto_jrw_refurb_1;
+20 : sw_115_gfx_spriteset_115_revflip_back_panto_jrw_refurb_2;
+21 : spriteset_115_revflip_back_panto_jrw_refurb_3;
+22 : sw_115_gfx_spriteset_115_revflip_back_panto_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
   1 : sw_115_gfx_rev_front_livery;
@@ -8210,16 +8118,6 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_setouchi_1_sw2, [STORE_T
  3 : sw_115_gfx_rev_mid_panto_flippedcheck;
  default : sw_115_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_hiroshima_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
- 0 : sw_115_gfx_rev_mid_panto_flippedcheck;
- 2 : sw_115_gfx_rev_mid_panto_flippedcheck;
- default : sw_115_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_hiroshima_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
- 0 : sw_115_gfx_rev_mid_panto_flippedcheck;
- 3 : sw_115_gfx_rev_mid_panto_flippedcheck;
- default : sw_115_gfx_rev_mid_flippedcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
  0 : sw_115_gfx_rev_mid_panto_flippedcheck;
  2 : sw_115_gfx_rev_mid_panto_flippedcheck;
@@ -8354,10 +8252,6 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_setouchi_1, [STORE_TEMP(
   0..4 : sw_115_gfx_rev_pantograph_pos_setouchi_1_sw1;
   default : sw_115_gfx_rev_pantograph_pos_setouchi_1_sw2;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_hiroshima_1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..4 : sw_115_gfx_rev_pantograph_pos_hiroshima_1_sw1;
-  default : sw_115_gfx_rev_pantograph_pos_hiroshima_1_sw2;
-}
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_pantograph_pos_jrw_regional_1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   0..4 : sw_115_gfx_rev_pantograph_pos_jrw_regional_1_sw1;
   default : sw_115_gfx_rev_pantograph_pos_jrw_regional_1_sw2;
@@ -8403,14 +8297,13 @@ switch(FEAT_TRAINS,SELF, sw_115_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_
 13 : sw_115_gfx_rev_pantograph_pos_fukuchiyama_1;
 14 : sw_115_gfx_rev_pantograph_pos_fukuchiyama_2;
 15 : sw_115_gfx_rev_pantograph_pos_setouchi_1;
-16 : sw_115_gfx_rev_pantograph_pos_hiroshima_1;
-17 : sw_115_gfx_rev_pantograph_pos_jrw_regional_1;
-18 : sw_115_gfx_rev_pantograph_pos_jrw_regional_2;
-19 : sw_115_gfx_rev_pantograph_pos_jrw_regional_3;
-20 : sw_115_gfx_rev_pantograph_pos_jrw_refurb_1;
-21 : sw_115_gfx_rev_pantograph_pos_jrw_refurb_2;
-22 : sw_115_gfx_rev_pantograph_pos_jrw_refurb_3;
-23 : sw_115_gfx_rev_pantograph_pos_shinano;
+16 : sw_115_gfx_rev_pantograph_pos_jrw_regional_1;
+17 : sw_115_gfx_rev_pantograph_pos_jrw_regional_2;
+18 : sw_115_gfx_rev_pantograph_pos_jrw_regional_3;
+19 : sw_115_gfx_rev_pantograph_pos_jrw_refurb_1;
+20 : sw_115_gfx_rev_pantograph_pos_jrw_refurb_2;
+21 : sw_115_gfx_rev_pantograph_pos_jrw_refurb_3;
+22 : sw_115_gfx_rev_pantograph_pos_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_115_gfx_rev_back_flippedcheck;
@@ -8695,46 +8588,6 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_back_panto_setouchi_1, [build
   1: spriteset_115_back_panto_nv_setouchi_1;
   default: spriteset_115_back_panto_setouchi_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_front_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_front_nv_hiroshima_1;
-  default: spriteset_115_front_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_back_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_back_nv_hiroshima_1;
-  default: spriteset_115_back_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_mid_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_mid_nv_hiroshima_1;
-  default: spriteset_115_mid_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_mid_panto_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_mid_panto_nv_hiroshima_1;
-  default: spriteset_115_mid_panto_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_back_panto_hiroshima_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_back_panto_nv_hiroshima_1;
-  default: spriteset_115_back_panto_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_front_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_front_nv_jrw_refurb_1;
-  default: spriteset_115_front_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_back_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_back_nv_jrw_refurb_1;
-  default: spriteset_115_back_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_mid_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_mid_nv_jrw_refurb_1;
-  default: spriteset_115_mid_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_mid_panto_nv_jrw_refurb_1;
-  default: spriteset_115_mid_panto_jrw_refurb_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_back_panto_jrw_refurb_1, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
-  1: spriteset_115_back_panto_nv_jrw_refurb_1;
-  default: spriteset_115_back_panto_jrw_refurb_1;
-}
 switch(FEAT_TRAINS, SELF, sw_115_gfx_spriteset_115_front_jrw_refurb_2, [build_year>2009 || date_of_last_service>date(2009,1,1)] ){
   1: spriteset_115_front_nv_jrw_refurb_2;
   default: spriteset_115_front_jrw_refurb_2;
@@ -8925,16 +8778,6 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_setouchi_1_sw2, position_in_
  3 : sw_115_gfx_spriteset_115_mid_panto_setouchi_1;
  default : sw_115_gfx_spriteset_115_mid_setouchi_1;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_hiroshima_1_sw1, position_in_vehid_chain%4){
- 0 : sw_115_gfx_spriteset_115_mid_panto_hiroshima_1;
- 2 : sw_115_gfx_spriteset_115_mid_panto_hiroshima_1;
- default : sw_115_gfx_spriteset_115_mid_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_hiroshima_1_sw2, position_in_vehid_chain%5){
- 0 : sw_115_gfx_spriteset_115_mid_panto_hiroshima_1;
- 3 : sw_115_gfx_spriteset_115_mid_panto_hiroshima_1;
- default : sw_115_gfx_spriteset_115_mid_hiroshima_1;
-}
 switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_1_sw1, position_in_vehid_chain%4){
  0 : spriteset_115_mid_panto_jrw_regional_1;
  2 : spriteset_115_mid_panto_jrw_regional_1;
@@ -8966,14 +8809,14 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_3_sw2, position
  default : spriteset_115_mid_jrw_regional_3;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_1_sw1, position_in_vehid_chain%4){
- 0 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1;
- 2 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1;
- default : sw_115_gfx_spriteset_115_mid_jrw_refurb_1;
+ 0 : spriteset_115_mid_panto_jrw_refurb_1;
+ 2 : spriteset_115_mid_panto_jrw_refurb_1;
+ default : spriteset_115_mid_jrw_refurb_1;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_1_sw2, position_in_vehid_chain%5){
- 0 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1;
- 3 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_1;
- default : sw_115_gfx_spriteset_115_mid_jrw_refurb_1;
+ 0 : spriteset_115_mid_panto_jrw_refurb_1;
+ 3 : spriteset_115_mid_panto_jrw_refurb_1;
+ default : spriteset_115_mid_jrw_refurb_1;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_refurb_2_sw1, position_in_vehid_chain%4){
  0 : sw_115_gfx_spriteset_115_mid_panto_jrw_refurb_2;
@@ -9068,10 +8911,6 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_fukuchiyama_2, num_vehs_in_v
 switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_setouchi_1, num_vehs_in_vehid_chain){
   0..4 : sw_115_gfx_pantograph_pos_setouchi_1_sw1;
   default : sw_115_gfx_pantograph_pos_setouchi_1_sw2;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_hiroshima_1, num_vehs_in_vehid_chain){
-  0..4 : sw_115_gfx_pantograph_pos_hiroshima_1_sw1;
-  default : sw_115_gfx_pantograph_pos_hiroshima_1_sw2;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_pantograph_pos_jrw_regional_1, num_vehs_in_vehid_chain){
   0..4 : sw_115_gfx_pantograph_pos_jrw_regional_1_sw1;
@@ -9295,18 +9134,6 @@ switch(FEAT_TRAINS, PARENT, sw_115_gfx_frontback_setouchi_1, vehicle_is_reversed
  0: sw_115_gfx_frontback_flipcheck_setouchi_1;
  default: sw_115_gfx_rev_idcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_115_gfx_pantocheck_hiroshima_1, position_in_vehid_chain){
- 0: sw_115_gfx_spriteset_115_back_hiroshima_1;
-default: sw_115_gfx_spriteset_115_back_panto_hiroshima_1;
-}
-switch(FEAT_TRAINS, SELF, sw_115_gfx_frontback_flipcheck_hiroshima_1, vehicle_is_flipped){
- 0: sw_115_gfx_spriteset_115_front_hiroshima_1;
- default: sw_115_gfx_pantocheck_hiroshima_1;
-}
-switch(FEAT_TRAINS, PARENT, sw_115_gfx_frontback_hiroshima_1, vehicle_is_reversed){
- 0: sw_115_gfx_frontback_flipcheck_hiroshima_1;
- default: sw_115_gfx_rev_idcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_115_gfx_pantocheck_jrw_regional_1, position_in_vehid_chain){
  0: spriteset_115_back_jrw_regional_1;
 default: spriteset_115_back_panto_jrw_regional_1;
@@ -9344,11 +9171,11 @@ switch(FEAT_TRAINS, PARENT, sw_115_gfx_frontback_jrw_regional_3, vehicle_is_reve
  default: sw_115_gfx_rev_idcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_pantocheck_jrw_refurb_1, position_in_vehid_chain){
- 0: sw_115_gfx_spriteset_115_back_jrw_refurb_1;
-default: sw_115_gfx_spriteset_115_back_panto_jrw_refurb_1;
+ 0: spriteset_115_back_jrw_refurb_1;
+default: spriteset_115_back_panto_jrw_refurb_1;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_frontback_flipcheck_jrw_refurb_1, vehicle_is_flipped){
- 0: sw_115_gfx_spriteset_115_front_jrw_refurb_1;
+ 0: spriteset_115_front_jrw_refurb_1;
  default: sw_115_gfx_pantocheck_jrw_refurb_1;
 }
 switch(FEAT_TRAINS, PARENT, sw_115_gfx_frontback_jrw_refurb_1, vehicle_is_reversed){
@@ -9457,10 +9284,6 @@ switch(FEAT_TRAINS, PARENT, sw_115_gfx_mucar_revcheck_mid_setouchi_1, vehicle_is
  0: sw_115_gfx_pantograph_pos_setouchi_1;
  default: sw_115_gfx_rev_idcheck;
 }
-switch(FEAT_TRAINS, PARENT, sw_115_gfx_mucar_revcheck_mid_hiroshima_1, vehicle_is_reversed){
- 0: sw_115_gfx_pantograph_pos_hiroshima_1;
- default: sw_115_gfx_rev_idcheck;
-}
 switch(FEAT_TRAINS, PARENT, sw_115_gfx_mucar_revcheck_mid_jrw_regional_1, vehicle_is_reversed){
  0: sw_115_gfx_pantograph_pos_jrw_regional_1;
  default: sw_115_gfx_rev_idcheck;
@@ -9508,14 +9331,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_mucar,  cargo_subtype) {
 13 : sw_115_gfx_mucar_revcheck_mid_fukuchiyama_1;
 14 : sw_115_gfx_mucar_revcheck_mid_fukuchiyama_2;
 15 : sw_115_gfx_mucar_revcheck_mid_setouchi_1;
-16 : sw_115_gfx_mucar_revcheck_mid_hiroshima_1;
-17 : sw_115_gfx_mucar_revcheck_mid_jrw_regional_1;
-18 : sw_115_gfx_mucar_revcheck_mid_jrw_regional_2;
-19 : sw_115_gfx_mucar_revcheck_mid_jrw_regional_3;
-20 : sw_115_gfx_mucar_revcheck_mid_jrw_refurb_1;
-21 : sw_115_gfx_mucar_revcheck_mid_jrw_refurb_2;
-22 : sw_115_gfx_mucar_revcheck_mid_jrw_refurb_3;
-23 : sw_115_gfx_mucar_revcheck_mid_shinano;
+16 : sw_115_gfx_mucar_revcheck_mid_jrw_regional_1;
+17 : sw_115_gfx_mucar_revcheck_mid_jrw_regional_2;
+18 : sw_115_gfx_mucar_revcheck_mid_jrw_regional_3;
+19 : sw_115_gfx_mucar_revcheck_mid_jrw_refurb_1;
+20 : sw_115_gfx_mucar_revcheck_mid_jrw_refurb_2;
+21 : sw_115_gfx_mucar_revcheck_mid_jrw_refurb_3;
+22 : sw_115_gfx_mucar_revcheck_mid_shinano;
 }
 switch(FEAT_TRAINS, SELF, sw_115_gfx_main,  cargo_subtype) {
 0 : sw_115_gfx_frontback_shonan_1;
@@ -9534,14 +9356,13 @@ switch(FEAT_TRAINS, SELF, sw_115_gfx_main,  cargo_subtype) {
 13 : sw_115_gfx_frontback_fukuchiyama_1;
 14 : sw_115_gfx_frontback_fukuchiyama_2;
 15 : sw_115_gfx_frontback_setouchi_1;
-16 : sw_115_gfx_frontback_hiroshima_1;
-17 : sw_115_gfx_frontback_jrw_regional_1;
-18 : sw_115_gfx_frontback_jrw_regional_2;
-19 : sw_115_gfx_frontback_jrw_regional_3;
-20 : sw_115_gfx_frontback_jrw_refurb_1;
-21 : sw_115_gfx_frontback_jrw_refurb_2;
-22 : sw_115_gfx_frontback_jrw_refurb_3;
-23 : sw_115_gfx_frontback_shinano;
+16 : sw_115_gfx_frontback_jrw_regional_1;
+17 : sw_115_gfx_frontback_jrw_regional_2;
+18 : sw_115_gfx_frontback_jrw_regional_3;
+19 : sw_115_gfx_frontback_jrw_refurb_1;
+20 : sw_115_gfx_frontback_jrw_refurb_2;
+21 : sw_115_gfx_frontback_jrw_refurb_3;
+22 : sw_115_gfx_frontback_shinano;
 }
 /*---END OF SECTION---*/
 /*---GFX: Livery Menu Switches---*/
@@ -9562,14 +9383,13 @@ switch(FEAT_TRAINS, SELF, sw_115_subtypetext_mucar, cargo_subtype) {
 13 : string(LV_FUKUCHIYAMA);
 14 : string(LV_VARITION_END6);
 15 : string(LV_SETOUCHI);
-16 : string(LV_HIROSHIMA);
-17 : string(LV_JRW_REGIONAL);
-18 : string(LV_VARITION_MID3);
-19 : string(LV_VARITION_END7);
-20 : string(LV_JRW_RENEWAL);
-21 : string(LV_VARITION_MID4);
-22 : string(LV_VARITION_END8);
-23 : string(LV_SHINANO);
+16 : string(LV_JRW_REGIONAL);
+17 : string(LV_VARITION_MID3);
+18 : string(LV_VARITION_END7);
+19 : string(LV_JRW_RENEWAL);
+20 : string(LV_VARITION_MID4);
+21 : string(LV_VARITION_END8);
+22 : string(LV_SHINANO);
 }
 switch(FEAT_TRAINS, SELF, sw_115_subtypetext_main, cargo_subtype) {
 0 : string(LV_SHONAN);
@@ -9588,14 +9408,13 @@ switch(FEAT_TRAINS, SELF, sw_115_subtypetext_main, cargo_subtype) {
 13 : string(LV_FUKUCHIYAMA);
 14 : string(LV_VARITION_END6);
 15 : string(LV_SETOUCHI);
-16 : string(LV_HIROSHIMA);
-17 : string(LV_JRW_REGIONAL);
-18 : string(LV_VARITION_MID3);
-19 : string(LV_VARITION_END7);
-20 : string(LV_JRW_RENEWAL);
-21 : string(LV_VARITION_MID4);
-22 : string(LV_VARITION_END8);
-23 : string(LV_SHINANO);
+16 : string(LV_JRW_REGIONAL);
+17 : string(LV_VARITION_MID3);
+18 : string(LV_VARITION_END7);
+19 : string(LV_JRW_RENEWAL);
+20 : string(LV_VARITION_MID4);
+21 : string(LV_VARITION_END8);
+22 : string(LV_SHINANO);
 }
 /*---END OF SECTION---*/
 /*---Coupling Switch---*/
