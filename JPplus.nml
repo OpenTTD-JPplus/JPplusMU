@@ -5568,23 +5568,436 @@ alternative_sprites(spriteset_103_revflip_mid_ac_orange_highcab_2,     ZOOM_LEVE
 alternative_sprites(spriteset_103_revflip_mid_panto_ac_orange_highcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/orange/103-2-4.png")      {tmpl_std_rev(0, 75)}
 alternative_sprites(spriteset_103_revflip_back_panto_ac_orange_highcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/orange/103-2-4.png")      {tmpl_std(0, 100)}
 
+
+//green_lowcab_1 Spriteset
+spriteset(spriteset_103_front_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_rev_front_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_revflip_front_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_103_front_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/101-2-1-1.png")      {tmpl_std(0, 100)}
+
+//green_lowcab_1 OVERRIDE Spriteset
+spriteset(spriteset_103_back_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_rev_back_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_revflip_back_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_ac_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_sk_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_nv_green_lowcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_103_front_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_ac_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-1.png")      {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_103_front_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_sk_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-2.png")      {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_103_front_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_nv_green_lowcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-1-4.png")      {tmpl_std(0, 100)}
+
+//green_highcab_1 Spriteset
+spriteset(spriteset_103_front_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_rev_front_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_revflip_front_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_103_front_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-1.png")      {tmpl_std(0, 100)}
+
+//green_highcab_1 OVERRIDE Spriteset
+spriteset(spriteset_103_back_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_rev_back_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_revflip_back_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_ac_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_sk_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_nv_green_highcab_1,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_103_front_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_ac_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-2.png")      {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_103_front_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_sk_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-3.png")      {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_103_front_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_nv_green_highcab_1,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green/103-2-2-5.png")      {tmpl_std(0, 100)}
+
+//green_lowcab_2 Spriteset
+spriteset(spriteset_103_front_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_rev_front_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_revflip_front_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_103_front_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/101-3-1-1.png")      {tmpl_std(0, 100)}
+
+//green_lowcab_2 OVERRIDE Spriteset
+spriteset(spriteset_103_back_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_panto_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_back_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_front_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_mid_panto_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_rev_back_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_panto_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_back_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_front_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_rev_mid_panto_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+spriteset(spriteset_103_revflip_back_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_ac_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_sk_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_panto_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_back_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_front_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+spriteset(spriteset_103_revflip_mid_panto_nv_green_lowcab_2,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
+
+alternative_sprites(spriteset_103_front_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_ac_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-1.png")      {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_103_front_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_sk_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-2.png")      {tmpl_std(0, 100)}
+
+alternative_sprites(spriteset_103_front_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_103_back_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std_rev(0, 125)}
+alternative_sprites(spriteset_103_mid_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_mid_panto_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_back_panto_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std_rev(0, 125)}
+
+alternative_sprites(spriteset_103_rev_front_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_103_rev_back_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std_rev(0, 100)}
+alternative_sprites(spriteset_103_rev_mid_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_103_rev_mid_panto_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_103_rev_back_panto_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std_rev(0, 100)}
+
+alternative_sprites(spriteset_103_revflip_front_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_103_revflip_back_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std(0, 100)}
+alternative_sprites(spriteset_103_revflip_mid_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_103_revflip_mid_panto_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_103_revflip_back_panto_nv_green_lowcab_2,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu101_103/green_stripe/103-3-1-4.png")      {tmpl_std(0, 100)}
+
 /*---END OF SECTION---*/
 /*---GFX: Override Reverse Spriteset Switches---*/
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_mid_panto_ac_orange_lowcab_1;
-  default: spriteset_103_rev_mid_panto_orange_lowcab_1;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_ac_orange_lowcab_1;
+  default: spriteset_103_rev_back_orange_lowcab_1;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_mid_panto_ac_orange_lowcab_1;
-  default: spriteset_103_revflip_mid_panto_orange_lowcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_front_ac_orange_lowcab_1;
-  default: spriteset_103_rev_front_orange_lowcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_front_ac_orange_lowcab_1;
-  default: spriteset_103_revflip_front_orange_lowcab_1;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_ac_orange_lowcab_1;
+  default: spriteset_103_revflip_back_orange_lowcab_1;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_rev_back_panto_ac_orange_lowcab_1;
@@ -5594,6 +6007,22 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_low
   1: spriteset_103_revflip_back_panto_ac_orange_lowcab_1;
   default: spriteset_103_revflip_back_panto_orange_lowcab_1;
 }
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_front_ac_orange_lowcab_1;
+  default: spriteset_103_rev_front_orange_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_front_ac_orange_lowcab_1;
+  default: spriteset_103_revflip_front_orange_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_panto_ac_orange_lowcab_1;
+  default: spriteset_103_rev_mid_panto_orange_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_ac_orange_lowcab_1;
+  default: spriteset_103_revflip_mid_panto_orange_lowcab_1;
+}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_rev_mid_ac_orange_lowcab_1;
   default: spriteset_103_rev_mid_orange_lowcab_1;
@@ -5601,22 +6030,6 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1_1973,
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_revflip_mid_ac_orange_lowcab_1;
   default: spriteset_103_revflip_mid_orange_lowcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_back_ac_orange_lowcab_1;
-  default: spriteset_103_rev_back_orange_lowcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_back_ac_orange_lowcab_1;
-  default: spriteset_103_revflip_back_orange_lowcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_rev_mid_panto_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1_1973;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_revflip_mid_panto_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1_1973;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
   1: spriteset_103_rev_back_panto_sk_orange_lowcab_1;
@@ -5626,13 +6039,21 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_low
   1: spriteset_103_revflip_back_panto_sk_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_revflip_back_panto_orange_lowcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_rev_mid_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_back_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_orange_lowcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_revflip_mid_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_back_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_mid_panto_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1_1973;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
   1: spriteset_103_rev_front_sk_orange_lowcab_1;
@@ -5642,21 +6063,21 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_1
   1: spriteset_103_revflip_front_sk_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_rev_back_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_rev_back_orange_lowcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_mid_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_revflip_back_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_mid_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_rev_mid_panto_nv_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1_1986;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_nv_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_revflip_mid_panto_nv_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1_1986;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_nv_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1_1986;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
   1: spriteset_103_rev_back_panto_nv_orange_lowcab_1;
@@ -5674,14 +6095,6 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1,
   1: spriteset_103_revflip_back_nv_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_rev_mid_nv_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1_1986;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_revflip_mid_nv_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1_1986;
-}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
   1: spriteset_103_rev_front_nv_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_rev_front_orange_lowcab_1_1986;
@@ -5690,37 +6103,13 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_1
   1: spriteset_103_revflip_front_nv_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_mid_panto_ac_orange_highcab_1;
-  default: spriteset_103_rev_mid_panto_orange_highcab_1;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_panto_nv_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_mid_panto_ac_orange_highcab_1;
-  default: spriteset_103_revflip_mid_panto_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_front_ac_orange_highcab_1;
-  default: spriteset_103_rev_front_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_front_ac_orange_highcab_1;
-  default: spriteset_103_revflip_front_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_back_panto_ac_orange_highcab_1;
-  default: spriteset_103_rev_back_panto_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_back_panto_ac_orange_highcab_1;
-  default: spriteset_103_revflip_back_panto_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_mid_ac_orange_highcab_1;
-  default: spriteset_103_rev_mid_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_mid_ac_orange_highcab_1;
-  default: spriteset_103_revflip_mid_orange_highcab_1;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_nv_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1_1986;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_rev_back_ac_orange_highcab_1;
@@ -5730,13 +6119,37 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_highcab_1
   1: spriteset_103_revflip_back_ac_orange_highcab_1;
   default: spriteset_103_revflip_back_orange_highcab_1;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_rev_mid_panto_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_panto_ac_orange_highcab_1;
+  default: spriteset_103_rev_back_panto_orange_highcab_1;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_revflip_mid_panto_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_panto_ac_orange_highcab_1;
+  default: spriteset_103_revflip_back_panto_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_front_ac_orange_highcab_1;
+  default: spriteset_103_rev_front_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_front_ac_orange_highcab_1;
+  default: spriteset_103_revflip_front_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_panto_ac_orange_highcab_1;
+  default: spriteset_103_rev_mid_panto_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_ac_orange_highcab_1;
+  default: spriteset_103_revflip_mid_panto_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_ac_orange_highcab_1;
+  default: spriteset_103_rev_mid_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_ac_orange_highcab_1;
+  default: spriteset_103_revflip_mid_orange_highcab_1;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
   1: spriteset_103_rev_back_panto_sk_orange_highcab_1;
@@ -5746,13 +6159,21 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_hig
   1: spriteset_103_revflip_back_panto_sk_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_revflip_back_panto_orange_highcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_rev_mid_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_back_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_orange_highcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_revflip_mid_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_back_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_orange_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_mid_panto_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1_1973;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
   1: spriteset_103_rev_front_sk_orange_highcab_1;
@@ -5762,21 +6183,21 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_highcab_
   1: spriteset_103_revflip_front_sk_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_revflip_front_orange_highcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_rev_back_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_rev_back_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_mid_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_revflip_back_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_back_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_mid_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_rev_mid_panto_nv_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1_1986;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_nv_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_revflip_mid_panto_nv_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1_1986;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_nv_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1_1986;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
   1: spriteset_103_rev_back_panto_nv_orange_highcab_1;
@@ -5794,14 +6215,6 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_highcab_1
   1: spriteset_103_revflip_back_nv_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_revflip_back_orange_highcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_rev_mid_nv_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1_1986;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_revflip_mid_nv_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1_1986;
-}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
   1: spriteset_103_rev_front_nv_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_rev_front_orange_highcab_1_1986;
@@ -5810,37 +6223,13 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_highcab_
   1: spriteset_103_revflip_front_nv_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_revflip_front_orange_highcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_mid_panto_ac_orange_lowcab_2;
-  default: spriteset_103_rev_mid_panto_orange_lowcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_panto_nv_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_mid_panto_ac_orange_lowcab_2;
-  default: spriteset_103_revflip_mid_panto_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_front_ac_orange_lowcab_2;
-  default: spriteset_103_rev_front_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_front_ac_orange_lowcab_2;
-  default: spriteset_103_revflip_front_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_back_panto_ac_orange_lowcab_2;
-  default: spriteset_103_rev_back_panto_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_back_panto_ac_orange_lowcab_2;
-  default: spriteset_103_revflip_back_panto_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_mid_ac_orange_lowcab_2;
-  default: spriteset_103_rev_mid_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_mid_ac_orange_lowcab_2;
-  default: spriteset_103_revflip_mid_orange_lowcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_nv_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1_1986;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_rev_back_ac_orange_lowcab_2;
@@ -5850,37 +6239,37 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_2,
   1: spriteset_103_revflip_back_ac_orange_lowcab_2;
   default: spriteset_103_revflip_back_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_mid_panto_ac_orange_highcab_2;
-  default: spriteset_103_rev_mid_panto_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_panto_ac_orange_lowcab_2;
+  default: spriteset_103_rev_back_panto_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_mid_panto_ac_orange_highcab_2;
-  default: spriteset_103_revflip_mid_panto_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_panto_ac_orange_lowcab_2;
+  default: spriteset_103_revflip_back_panto_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_front_ac_orange_highcab_2;
-  default: spriteset_103_rev_front_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_front_ac_orange_lowcab_2;
+  default: spriteset_103_rev_front_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_front_ac_orange_highcab_2;
-  default: spriteset_103_revflip_front_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_front_ac_orange_lowcab_2;
+  default: spriteset_103_revflip_front_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_back_panto_ac_orange_highcab_2;
-  default: spriteset_103_rev_back_panto_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_panto_ac_orange_lowcab_2;
+  default: spriteset_103_rev_mid_panto_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_back_panto_ac_orange_highcab_2;
-  default: spriteset_103_revflip_back_panto_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_ac_orange_lowcab_2;
+  default: spriteset_103_revflip_mid_panto_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_rev_mid_ac_orange_highcab_2;
-  default: spriteset_103_rev_mid_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_ac_orange_lowcab_2;
+  default: spriteset_103_rev_mid_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_revflip_mid_ac_orange_highcab_2;
-  default: spriteset_103_revflip_mid_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_ac_orange_lowcab_2;
+  default: spriteset_103_revflip_mid_orange_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_rev_back_ac_orange_highcab_2;
@@ -5890,6 +6279,398 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_orange_highcab_2
   1: spriteset_103_revflip_back_ac_orange_highcab_2;
   default: spriteset_103_revflip_back_orange_highcab_2;
 }
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_panto_ac_orange_highcab_2;
+  default: spriteset_103_rev_back_panto_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_panto_ac_orange_highcab_2;
+  default: spriteset_103_revflip_back_panto_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_front_ac_orange_highcab_2;
+  default: spriteset_103_rev_front_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_front_ac_orange_highcab_2;
+  default: spriteset_103_revflip_front_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_panto_ac_orange_highcab_2;
+  default: spriteset_103_rev_mid_panto_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_ac_orange_highcab_2;
+  default: spriteset_103_revflip_mid_panto_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_ac_orange_highcab_2;
+  default: spriteset_103_rev_mid_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_ac_orange_highcab_2;
+  default: spriteset_103_revflip_mid_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_ac_green_lowcab_1;
+  default: spriteset_103_rev_back_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_ac_green_lowcab_1;
+  default: spriteset_103_revflip_back_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_panto_ac_green_lowcab_1;
+  default: spriteset_103_rev_back_panto_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_panto_ac_green_lowcab_1;
+  default: spriteset_103_revflip_back_panto_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_front_ac_green_lowcab_1;
+  default: spriteset_103_rev_front_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_front_ac_green_lowcab_1;
+  default: spriteset_103_revflip_front_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_panto_ac_green_lowcab_1;
+  default: spriteset_103_rev_mid_panto_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_ac_green_lowcab_1;
+  default: spriteset_103_revflip_mid_panto_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_ac_green_lowcab_1;
+  default: spriteset_103_rev_mid_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_ac_green_lowcab_1;
+  default: spriteset_103_revflip_mid_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_back_panto_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_back_panto_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_back_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_back_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_mid_panto_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_front_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_front_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_front_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_front_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_mid_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_mid_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_back_panto_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_back_panto_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_back_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_back_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_front_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_front_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_front_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_front_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_panto_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_ac_green_highcab_1;
+  default: spriteset_103_rev_back_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_ac_green_highcab_1;
+  default: spriteset_103_revflip_back_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_panto_ac_green_highcab_1;
+  default: spriteset_103_rev_back_panto_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_panto_ac_green_highcab_1;
+  default: spriteset_103_revflip_back_panto_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_front_ac_green_highcab_1;
+  default: spriteset_103_rev_front_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_front_ac_green_highcab_1;
+  default: spriteset_103_revflip_front_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_panto_ac_green_highcab_1;
+  default: spriteset_103_rev_mid_panto_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_ac_green_highcab_1;
+  default: spriteset_103_revflip_mid_panto_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_ac_green_highcab_1;
+  default: spriteset_103_rev_mid_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_ac_green_highcab_1;
+  default: spriteset_103_revflip_mid_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_back_panto_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_panto_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_back_panto_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_panto_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_back_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_back_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_mid_panto_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_front_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_front_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_front_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_front_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_rev_mid_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_revflip_mid_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_back_panto_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_panto_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_back_panto_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_panto_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_back_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_back_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_back_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_back_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_front_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_front_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_front_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_front_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_panto_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_ac_green_lowcab_2;
+  default: spriteset_103_rev_back_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_ac_green_lowcab_2;
+  default: spriteset_103_revflip_back_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_back_panto_ac_green_lowcab_2;
+  default: spriteset_103_rev_back_panto_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_back_panto_ac_green_lowcab_2;
+  default: spriteset_103_revflip_back_panto_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_front_ac_green_lowcab_2;
+  default: spriteset_103_rev_front_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_front_ac_green_lowcab_2;
+  default: spriteset_103_revflip_front_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_panto_ac_green_lowcab_2;
+  default: spriteset_103_rev_mid_panto_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_ac_green_lowcab_2;
+  default: spriteset_103_revflip_mid_panto_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_rev_mid_ac_green_lowcab_2;
+  default: spriteset_103_rev_mid_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_revflip_mid_ac_green_lowcab_2;
+  default: spriteset_103_revflip_mid_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_rev_back_panto_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_revflip_back_panto_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_rev_back_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_back_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_revflip_back_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_back_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_rev_mid_panto_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_rev_front_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_front_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_revflip_front_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_front_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_rev_mid_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_mid_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_revflip_mid_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_mid_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_back_panto_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_back_panto_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_back_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_back_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_back_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_back_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_back_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_back_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_front_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_front_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_front_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_front_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_front_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_front_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_rev_mid_panto_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_revflip_mid_panto_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_2_1990;
+}
 /*---END OF SECTION---*/
 /*---GFX: Train Reversing Switches---*/
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
@@ -5897,60 +6678,90 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_front_livery, [STORE_TEMP(position_in_c
 1 : sw_103_gfx_spriteset_103_rev_front_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_rev_front_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_rev_front_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_rev_front_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_rev_front_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_rev_front_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_revflip_front_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_revflip_front_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_revflip_front_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_revflip_front_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_revflip_front_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_revflip_front_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_rev_back_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_rev_back_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_rev_back_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_rev_back_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_rev_back_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_rev_back_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_rev_back_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_revflip_back_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_revflip_back_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_revflip_back_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_revflip_back_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_revflip_back_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_revflip_back_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_rev_mid_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_rev_mid_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_rev_mid_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_rev_mid_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_rev_mid_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_rev_mid_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_revflip_mid_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_revflip_mid_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_revflip_mid_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_revflip_mid_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_rev_mid_panto_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_rev_mid_panto_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_rev_mid_panto_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_rev_mid_panto_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_revflip_mid_panto_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_revflip_mid_panto_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_revflip_mid_panto_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_revflip_mid_panto_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_rev_back_panto_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_rev_back_panto_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_rev_back_panto_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_rev_back_panto_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_rev_back_panto_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_rev_back_panto_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_spriteset_103_revflip_back_panto_orange_lowcab_1;
 1 : sw_103_gfx_spriteset_103_revflip_back_panto_orange_highcab_1;
 2 : sw_103_gfx_spriteset_103_revflip_back_panto_orange_lowcab_2;
 3 : sw_103_gfx_spriteset_103_revflip_back_panto_orange_highcab_2;
+4 : sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_1;
+5 : sw_103_gfx_spriteset_103_revflip_back_panto_green_highcab_1;
+6 : sw_103_gfx_spriteset_103_revflip_back_panto_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
   1 : sw_103_gfx_rev_front_livery;
@@ -6004,27 +6815,66 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_orange_highcab_2_sw2, [S
  3 : sw_103_gfx_rev_mid_panto_flippedcheck;
  default : sw_103_gfx_rev_mid_flippedcheck;
 }
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_lowcab_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+ default : sw_103_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_lowcab_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%10]){
+ 0 : sw_103_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_103_gfx_rev_mid_panto_flippedcheck;
+ default : sw_103_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_highcab_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+ default : sw_103_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_highcab_1_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%10]){
+ 0 : sw_103_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_103_gfx_rev_mid_panto_flippedcheck;
+ default : sw_103_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_lowcab_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+ default : sw_103_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_lowcab_2_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%10]){
+ 0 : sw_103_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_103_gfx_rev_mid_panto_flippedcheck;
+ default : sw_103_gfx_rev_mid_flippedcheck;
+}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_orange_lowcab_1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_103_gfx_rev_mid_flippedcheck;
+  0..1 : sw_103_gfx_rev_mid_flippedcheck; //manual edit
   default : sw_103_gfx_rev_pantograph_pos_orange_lowcab_1_sw2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_orange_highcab_1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_103_gfx_rev_mid_flippedcheck;
+  0..1 : sw_103_gfx_rev_mid_flippedcheck; //manual edit
   default : sw_103_gfx_rev_pantograph_pos_orange_highcab_1_sw2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_orange_lowcab_2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_103_gfx_rev_mid_flippedcheck;
+  0..1 : sw_103_gfx_rev_mid_flippedcheck; //manual edit
   default : sw_103_gfx_rev_pantograph_pos_orange_lowcab_2_sw2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_orange_highcab_2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_103_gfx_rev_mid_flippedcheck;
+  0..1 : sw_103_gfx_rev_mid_flippedcheck; //manual edit
   default : sw_103_gfx_rev_pantograph_pos_orange_highcab_2_sw2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_lowcab_1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  0..1 : sw_103_gfx_rev_mid_flippedcheck; //manual edit
+  default : sw_103_gfx_rev_pantograph_pos_green_lowcab_1_sw2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_highcab_1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  0..1 : sw_103_gfx_rev_mid_flippedcheck; //manual edit
+  default : sw_103_gfx_rev_pantograph_pos_green_highcab_1_sw2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_pantograph_pos_green_lowcab_2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  0..1 : sw_103_gfx_rev_mid_flippedcheck; //manual edit
+  default : sw_103_gfx_rev_pantograph_pos_green_lowcab_2_sw2;
 }
 switch(FEAT_TRAINS,SELF, sw_103_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_103_gfx_rev_pantograph_pos_orange_lowcab_1;
 1 : sw_103_gfx_rev_pantograph_pos_orange_highcab_1;
 2 : sw_103_gfx_rev_pantograph_pos_orange_lowcab_2;
 3 : sw_103_gfx_rev_pantograph_pos_orange_highcab_2;
+4 : sw_103_gfx_rev_pantograph_pos_green_lowcab_1;
+5 : sw_103_gfx_rev_pantograph_pos_green_highcab_1;
+6 : sw_103_gfx_rev_pantograph_pos_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_103_gfx_rev_back_flippedcheck;
@@ -6065,49 +6915,49 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 }
 /*---END OF SECTION---*/
 /*---GFX: Override Spriteset Switches---*/
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_mid_panto_ac_orange_lowcab_1;
-  default: spriteset_103_mid_panto_orange_lowcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_front_ac_orange_lowcab_1;
-  default: spriteset_103_front_orange_lowcab_1;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_ac_orange_lowcab_1;
+  default: spriteset_103_back_orange_lowcab_1;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_back_panto_ac_orange_lowcab_1;
   default: spriteset_103_back_panto_orange_lowcab_1;
 }
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_front_ac_orange_lowcab_1;
+  default: spriteset_103_front_orange_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_panto_ac_orange_lowcab_1;
+  default: spriteset_103_mid_panto_orange_lowcab_1;
+}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_mid_ac_orange_lowcab_1;
   default: spriteset_103_mid_orange_lowcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_back_ac_orange_lowcab_1;
-  default: spriteset_103_back_orange_lowcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_mid_panto_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1_1973;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
   1: spriteset_103_back_panto_sk_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_back_panto_orange_lowcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_mid_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_mid_orange_lowcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_back_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_back_orange_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_mid_panto_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1_1973;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
   1: spriteset_103_front_sk_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_front_orange_lowcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_back_sk_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_back_orange_lowcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_mid_sk_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_mid_orange_lowcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_mid_panto_nv_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1_1986;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_nv_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_mid_orange_lowcab_1_1986;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
   1: spriteset_103_back_panto_nv_orange_lowcab_1;
@@ -6117,57 +6967,57 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_lowcab_1, [build_
   1: spriteset_103_back_nv_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_back_orange_lowcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_mid_nv_orange_lowcab_1;
-  default: sw_103_gfx_spriteset_103_mid_orange_lowcab_1_1986;
-}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
   1: spriteset_103_front_nv_orange_lowcab_1;
   default: sw_103_gfx_spriteset_103_front_orange_lowcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_mid_panto_ac_orange_highcab_1;
-  default: spriteset_103_mid_panto_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_front_ac_orange_highcab_1;
-  default: spriteset_103_front_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_back_panto_ac_orange_highcab_1;
-  default: spriteset_103_back_panto_orange_highcab_1;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_mid_ac_orange_highcab_1;
-  default: spriteset_103_mid_orange_highcab_1;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_panto_nv_orange_lowcab_1;
+  default: sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_1_1986;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_back_ac_orange_highcab_1;
   default: spriteset_103_back_orange_highcab_1;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_mid_panto_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_panto_ac_orange_highcab_1;
+  default: spriteset_103_back_panto_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_front_ac_orange_highcab_1;
+  default: spriteset_103_front_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_panto_ac_orange_highcab_1;
+  default: spriteset_103_mid_panto_orange_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_ac_orange_highcab_1;
+  default: spriteset_103_mid_orange_highcab_1;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
   1: spriteset_103_back_panto_sk_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_back_panto_orange_highcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_mid_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_mid_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_back_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_back_orange_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_mid_panto_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1_1973;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
   1: spriteset_103_front_sk_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_front_orange_highcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
-  1: spriteset_103_back_sk_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_back_orange_highcab_1_1973;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_mid_sk_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_mid_orange_highcab_1_1973;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_mid_panto_nv_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1_1986;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_nv_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_mid_orange_highcab_1_1986;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
   1: spriteset_103_back_panto_nv_orange_highcab_1;
@@ -6177,53 +7027,233 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_highcab_1, [build
   1: spriteset_103_back_nv_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_back_orange_highcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
-  1: spriteset_103_mid_nv_orange_highcab_1;
-  default: sw_103_gfx_spriteset_103_mid_orange_highcab_1_1986;
-}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
   1: spriteset_103_front_nv_orange_highcab_1;
   default: sw_103_gfx_spriteset_103_front_orange_highcab_1_1986;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_mid_panto_ac_orange_lowcab_2;
-  default: spriteset_103_mid_panto_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_front_ac_orange_lowcab_2;
-  default: spriteset_103_front_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_back_panto_ac_orange_lowcab_2;
-  default: spriteset_103_back_panto_orange_lowcab_2;
-}
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_mid_ac_orange_lowcab_2;
-  default: spriteset_103_mid_orange_lowcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_panto_nv_orange_highcab_1;
+  default: sw_103_gfx_spriteset_103_mid_panto_orange_highcab_1_1986;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_back_ac_orange_lowcab_2;
   default: spriteset_103_back_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_mid_panto_ac_orange_highcab_2;
-  default: spriteset_103_mid_panto_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_panto_ac_orange_lowcab_2;
+  default: spriteset_103_back_panto_orange_lowcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_front_ac_orange_highcab_2;
-  default: spriteset_103_front_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_front_ac_orange_lowcab_2;
+  default: spriteset_103_front_orange_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_panto_ac_orange_lowcab_2;
+  default: spriteset_103_mid_panto_orange_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_lowcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_ac_orange_lowcab_2;
+  default: spriteset_103_mid_orange_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_ac_orange_highcab_2;
+  default: spriteset_103_back_orange_highcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_back_panto_ac_orange_highcab_2;
   default: spriteset_103_back_panto_orange_highcab_2;
 }
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_front_ac_orange_highcab_2;
+  default: spriteset_103_front_orange_highcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_panto_ac_orange_highcab_2;
+  default: spriteset_103_mid_panto_orange_highcab_2;
+}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
   1: spriteset_103_mid_ac_orange_highcab_2;
   default: spriteset_103_mid_orange_highcab_2;
 }
-switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_orange_highcab_2, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
-  1: spriteset_103_back_ac_orange_highcab_2;
-  default: spriteset_103_back_orange_highcab_2;
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_ac_green_lowcab_1;
+  default: spriteset_103_back_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_panto_ac_green_lowcab_1;
+  default: spriteset_103_back_panto_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_front_ac_green_lowcab_1;
+  default: spriteset_103_front_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_panto_ac_green_lowcab_1;
+  default: spriteset_103_mid_panto_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_lowcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_ac_green_lowcab_1;
+  default: spriteset_103_mid_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_back_panto_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_back_panto_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_back_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_back_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_mid_panto_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_mid_panto_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_front_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_front_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_lowcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_mid_sk_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_mid_green_lowcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_mid_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_back_panto_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_back_panto_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_back_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_back_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_front_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_front_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_lowcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_panto_nv_green_lowcab_1;
+  default: sw_103_gfx_spriteset_103_mid_panto_green_lowcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_ac_green_highcab_1;
+  default: spriteset_103_back_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_panto_ac_green_highcab_1;
+  default: spriteset_103_back_panto_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_front_ac_green_highcab_1;
+  default: spriteset_103_front_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_panto_ac_green_highcab_1;
+  default: spriteset_103_mid_panto_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_highcab_1_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_ac_green_highcab_1;
+  default: spriteset_103_mid_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_back_panto_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_back_panto_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_back_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_back_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_mid_panto_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_mid_panto_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_front_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_front_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_highcab_1_1986, [build_year>1986 || date_of_last_service>date(1986,1,1)] ){
+  1: spriteset_103_mid_sk_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_mid_green_highcab_1_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_mid_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_back_panto_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_back_panto_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_back_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_back_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_front_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_front_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_highcab_1, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_panto_nv_green_highcab_1;
+  default: sw_103_gfx_spriteset_103_mid_panto_green_highcab_1_1986;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_ac_green_lowcab_2;
+  default: spriteset_103_back_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_back_panto_ac_green_lowcab_2;
+  default: spriteset_103_back_panto_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_front_ac_green_lowcab_2;
+  default: spriteset_103_front_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_panto_ac_green_lowcab_2;
+  default: spriteset_103_mid_panto_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_lowcab_2_1973, [build_year>1973 || date_of_last_service>date(1973,1,1)] ){
+  1: spriteset_103_mid_ac_green_lowcab_2;
+  default: spriteset_103_mid_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_back_panto_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_back_panto_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_back_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_back_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_mid_panto_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_mid_panto_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_front_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_front_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_lowcab_2_1990, [build_year>1990 || date_of_last_service>date(1990,1,1)] ){
+  1: spriteset_103_mid_sk_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_mid_green_lowcab_2_1973;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_mid_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_panto_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_back_panto_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_back_panto_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_back_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_back_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_back_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_front_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_front_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_front_green_lowcab_2_1990;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_spriteset_103_mid_panto_green_lowcab_2, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_103_mid_panto_nv_green_lowcab_2;
+  default: sw_103_gfx_spriteset_103_mid_panto_green_lowcab_2_1990;
 }
 /*---END OF SECTION---*/
 /*---GFX: Pantograph Positions---*/
@@ -6259,6 +7289,30 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_orange_highcab_2_sw2, positi
  3 : sw_103_gfx_spriteset_103_mid_panto_orange_highcab_2;
  default : sw_103_gfx_spriteset_103_mid_orange_highcab_2;
 }
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_lowcab_1_sw1, position_in_vehid_chain){
+ default : sw_103_gfx_spriteset_103_mid_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_lowcab_1_sw2, position_in_vehid_chain%10){
+ 0 : sw_103_gfx_spriteset_103_mid_panto_green_lowcab_1;
+ 3 : sw_103_gfx_spriteset_103_mid_panto_green_lowcab_1;
+ default : sw_103_gfx_spriteset_103_mid_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_highcab_1_sw1, position_in_vehid_chain){
+ default : sw_103_gfx_spriteset_103_mid_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_highcab_1_sw2, position_in_vehid_chain%10){
+ 0 : sw_103_gfx_spriteset_103_mid_panto_green_highcab_1;
+ 3 : sw_103_gfx_spriteset_103_mid_panto_green_highcab_1;
+ default : sw_103_gfx_spriteset_103_mid_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_lowcab_2_sw1, position_in_vehid_chain){
+ default : sw_103_gfx_spriteset_103_mid_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_lowcab_2_sw2, position_in_vehid_chain%10){
+ 0 : sw_103_gfx_spriteset_103_mid_panto_green_lowcab_2;
+ 3 : sw_103_gfx_spriteset_103_mid_panto_green_lowcab_2;
+ default : sw_103_gfx_spriteset_103_mid_green_lowcab_2;
+}
 switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_orange_lowcab_1, num_vehs_in_vehid_chain){
   0..1 : sw_103_gfx_pantograph_pos_orange_lowcab_1_sw1;
   default : sw_103_gfx_pantograph_pos_orange_lowcab_1_sw2;
@@ -6274,6 +7328,18 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_orange_lowcab_2, num_vehs_in
 switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_orange_highcab_2, num_vehs_in_vehid_chain){
   0..1 : sw_103_gfx_pantograph_pos_orange_highcab_2_sw1;
   default : sw_103_gfx_pantograph_pos_orange_highcab_2_sw2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_lowcab_1, num_vehs_in_vehid_chain){
+  0..1 : sw_103_gfx_pantograph_pos_green_lowcab_1_sw1;
+  default : sw_103_gfx_pantograph_pos_green_lowcab_1_sw2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_highcab_1, num_vehs_in_vehid_chain){
+  0..1 : sw_103_gfx_pantograph_pos_green_highcab_1_sw1;
+  default : sw_103_gfx_pantograph_pos_green_highcab_1_sw2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantograph_pos_green_lowcab_2, num_vehs_in_vehid_chain){
+  0..1 : sw_103_gfx_pantograph_pos_green_lowcab_2_sw1;
+  default : sw_103_gfx_pantograph_pos_green_lowcab_2_sw2;
 }
 /*---END OF SECTION---*/
 /*---GFX: Front/Back Cab Car Switches---*/
@@ -6325,6 +7391,42 @@ switch(FEAT_TRAINS, PARENT, sw_103_gfx_frontback_orange_highcab_2, vehicle_is_re
  0: sw_103_gfx_frontback_flipcheck_orange_highcab_2;
  default: sw_103_gfx_rev_idcheck;
 }
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantocheck_green_lowcab_1, position_in_vehid_chain){
+ 0: sw_103_gfx_spriteset_103_back_green_lowcab_1;
+default: sw_103_gfx_spriteset_103_back_panto_green_lowcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_frontback_flipcheck_green_lowcab_1, vehicle_is_flipped){
+ 0: sw_103_gfx_spriteset_103_front_green_lowcab_1;
+ default: sw_103_gfx_pantocheck_green_lowcab_1;
+}
+switch(FEAT_TRAINS, PARENT, sw_103_gfx_frontback_green_lowcab_1, vehicle_is_reversed){
+ 0: sw_103_gfx_frontback_flipcheck_green_lowcab_1;
+ default: sw_103_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantocheck_green_highcab_1, position_in_vehid_chain){
+ 0: sw_103_gfx_spriteset_103_back_green_highcab_1;
+default: sw_103_gfx_spriteset_103_back_panto_green_highcab_1;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_frontback_flipcheck_green_highcab_1, vehicle_is_flipped){
+ 0: sw_103_gfx_spriteset_103_front_green_highcab_1;
+ default: sw_103_gfx_pantocheck_green_highcab_1;
+}
+switch(FEAT_TRAINS, PARENT, sw_103_gfx_frontback_green_highcab_1, vehicle_is_reversed){
+ 0: sw_103_gfx_frontback_flipcheck_green_highcab_1;
+ default: sw_103_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_pantocheck_green_lowcab_2, position_in_vehid_chain){
+ 0: sw_103_gfx_spriteset_103_back_green_lowcab_2;
+default: sw_103_gfx_spriteset_103_back_panto_green_lowcab_2;
+}
+switch(FEAT_TRAINS, SELF, sw_103_gfx_frontback_flipcheck_green_lowcab_2, vehicle_is_flipped){
+ 0: sw_103_gfx_spriteset_103_front_green_lowcab_2;
+ default: sw_103_gfx_pantocheck_green_lowcab_2;
+}
+switch(FEAT_TRAINS, PARENT, sw_103_gfx_frontback_green_lowcab_2, vehicle_is_reversed){
+ 0: sw_103_gfx_frontback_flipcheck_green_lowcab_2;
+ default: sw_103_gfx_rev_idcheck;
+}
 /*---END OF SECTION---*/
 /*---GFX: Middle Car Switches---*/
 switch(FEAT_TRAINS, PARENT, sw_103_gfx_mucar_revcheck_mid_orange_lowcab_1, vehicle_is_reversed){
@@ -6343,6 +7445,18 @@ switch(FEAT_TRAINS, PARENT, sw_103_gfx_mucar_revcheck_mid_orange_highcab_2, vehi
  0: sw_103_gfx_pantograph_pos_orange_highcab_2;
  default: sw_103_gfx_rev_idcheck;
 }
+switch(FEAT_TRAINS, PARENT, sw_103_gfx_mucar_revcheck_mid_green_lowcab_1, vehicle_is_reversed){
+ 0: sw_103_gfx_pantograph_pos_green_lowcab_1;
+ default: sw_103_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_103_gfx_mucar_revcheck_mid_green_highcab_1, vehicle_is_reversed){
+ 0: sw_103_gfx_pantograph_pos_green_highcab_1;
+ default: sw_103_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_103_gfx_mucar_revcheck_mid_green_lowcab_2, vehicle_is_reversed){
+ 0: sw_103_gfx_pantograph_pos_green_lowcab_2;
+ default: sw_103_gfx_rev_idcheck;
+}
 /*---END OF SECTION---*/
 /*---GFX: Livery Refitting Switches---*/
 switch(FEAT_TRAINS, SELF, sw_103_gfx_mucar,  cargo_subtype) {
@@ -6350,12 +7464,18 @@ switch(FEAT_TRAINS, SELF, sw_103_gfx_mucar,  cargo_subtype) {
 1 : sw_103_gfx_mucar_revcheck_mid_orange_highcab_1;
 2 : sw_103_gfx_mucar_revcheck_mid_orange_lowcab_2;
 3 : sw_103_gfx_mucar_revcheck_mid_orange_highcab_2;
+4 : sw_103_gfx_mucar_revcheck_mid_green_lowcab_1;
+5 : sw_103_gfx_mucar_revcheck_mid_green_highcab_1;
+6 : sw_103_gfx_mucar_revcheck_mid_green_lowcab_2;
 }
 switch(FEAT_TRAINS, SELF, sw_103_gfx_main,  cargo_subtype) {
 0 : sw_103_gfx_frontback_orange_lowcab_1;
 1 : sw_103_gfx_frontback_orange_highcab_1;
 2 : sw_103_gfx_frontback_orange_lowcab_2;
 3 : sw_103_gfx_frontback_orange_highcab_2;
+4 : sw_103_gfx_frontback_green_lowcab_1;
+5 : sw_103_gfx_frontback_green_highcab_1;
+6 : sw_103_gfx_frontback_green_lowcab_2;
 }
 /*---END OF SECTION---*/
 /*---GFX: Livery Menu Switches---*/
@@ -6364,12 +7484,18 @@ switch(FEAT_TRAINS, SELF, sw_103_subtypetext_mucar, cargo_subtype) {
 1 : string(LV_VARITION_MID1);
 2 : string(LV_VARITION_MID2);
 3 : string(LV_VARITION_END1);
+4 : string(LV_YELLOW_GREEN);
+5 : string(LV_VARITION_MID3);
+6 : string(LV_VARITION_END2);
 }
 switch(FEAT_TRAINS, SELF, sw_103_subtypetext_main, cargo_subtype) {
 0 : string(LV_ORANGE_VERMILLION);
 1 : string(LV_VARITION_MID1);
 2 : string(LV_VARITION_MID2);
 3 : string(LV_VARITION_END1);
+4 : string(LV_YELLOW_GREEN);
+5 : string(LV_VARITION_MID3);
+6 : string(LV_VARITION_END2);
 }
 /*---END OF SECTION---*/
 /*---Coupling Switch---*/
