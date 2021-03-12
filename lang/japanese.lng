@@ -2,7 +2,7 @@
 # This is the Japanese language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+Set v0.1.8
+STR_GRF_NAME        :JP+Set - JGR/JNR/JR Japanese Trains (v0.1.9)
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}は日本の風景をもっと豊かに鉄道車両を追加します。当GRF利用の際には、狭軌を含むレールセットが必要です。{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -54,11 +54,13 @@ JNR_kiha48 :キハ48系 気動車{WHITE}(DMU){BLACK}
 JNR_kiha54 :キハ54系 気動車{WHITE}(DMU){BLACK}
 JNR_kiha58 :キハ56/57/58系 気動車{WHITE}(DMU){BLACK}
 
+JNR_70 :70系 電車{WHITE}(EMU){BLACK}
 JNR_80 :80系 電車{WHITE}(EMU){BLACK}
-JNR_101 :101系 電車{WHITE}(EMU){BLACK}
-JNR_103 :103系 電車{WHITE}(EMU){BLACK}
+JNR_101 :101/103系 電車{WHITE}(EMU){BLACK}
+JNR_103 :101/103系 電車{WHITE}(EMU){BLACK}
 JNR_113 :111/113系 電車{WHITE}(EMU){BLACK}
 JNR_115 :115系 電車{WHITE}(EMU){BLACK}
+JNR_1153000 :115系 3000/3500番台 電車{WHITE}(EMU){BLACK}
 JNR_165 :165/169系 電車{WHITE}(EMU){BLACK}
 JNR_181 :151/161/181系 電車{WHITE}(EMU){BLACK}
 
@@ -67,6 +69,12 @@ JNR_205  :205系 電車{WHITE}(EMU){BLACK}
 JNR_211  :211系 電車{WHITE}(EMU){BLACK}
 JNR_21156:211系 5000/6000番台 電車{WHITE}(EMU){BLACK}
 JNR_213  :213系 電車{WHITE}(EMU){BLACK}
+
+JNR_401421 :401/421系 電車{WHITE}(EMU){BLACK}
+JNR_403423 :403/423系 電車{WHITE}(EMU){BLACK}
+JNR_415 :415系 電車{WHITE}(EMU){BLACK}
+JNR_4151500:415系 1500番台 電車{WHITE}(EMU){BLACK}
+
 JNR_711 :711系 電車{WHITE}(EMU){BLACK}
 JNR_781 :781系 電車{WHITE}(EMU){BLACK}
 
