@@ -182,15 +182,15 @@ switch(FEAT_TRAINS, SELF, sw_415_subtypetext_mucar, cargo_subtype) {
 0 : string(LV_INITIAL);
 1 : string(LV_JOBAN);
 2 : string(LV_KYUSHU);
-3 : string(LV_JRW_REGIONAL);
-4 : string(LV_VARITION_END1);
+3 : string(LV_NANAO);
+4 : string(LV_JRW_REGIONAL);
 }
 switch(FEAT_TRAINS, SELF, sw_415_subtypetext_main, cargo_subtype) {
 0 : string(LV_INITIAL);
 1 : string(LV_JOBAN);
 2 : string(LV_KYUSHU);
-3 : string(LV_JRW_REGIONAL);
-4 : string(LV_VARITION_END1);
+3 : string(LV_NANAO);
+4 : string(LV_JRW_REGIONAL);
 }
 /*---END OF SECTION---*/
 /*---Coupling Switch---*/
