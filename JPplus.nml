@@ -25619,98 +25619,126 @@ item(FEAT_TRAINS, emu_813) {
 
 //GRF OVERRIDE
 # 1 "src/grfoverrides.pnml" 1
-disable_item(FEAT_TRAINS, 0, 115); //Disables original vehicles
+if (param_japansetdisable == 0) {
+	disable_item(FEAT_TRAINS, 0, 115); //Disables original vehicles
+}
 
-
-if (param_japansetdisable == 1) {
 //JPSet3 DUPLICATION
-engine_override("SZ\0D\00");
+if (param_japansetdisable == 1) {
+	engine_override("SZ\0D\00");
 
-basecost {
-		 PR_BUILD_VEHICLE : param_basecostbuy -1;
-		 PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
-		 PR_RUNNING: param_basecostrun -2; //3
-		 PR_RUNNING_TRAIN_STEAM: param_basecostrun -2;
-         PR_RUNNING_TRAIN_DIESEL: param_basecostrun +1;
-         PR_RUNNING_TRAIN_ELECTRIC:param_basecostrun -2;
+	basecost {
+			PR_BUILD_VEHICLE : param_basecostbuy -1;
+			PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
+			PR_RUNNING: param_basecostrun -2; //3
+			PR_RUNNING_TRAIN_STEAM: param_basecostrun -2;
+			PR_RUNNING_TRAIN_DIESEL: param_basecostrun +1;
+			PR_RUNNING_TRAIN_ELECTRIC:param_basecostrun -2;
 
+	}
+
+	item(FEAT_TRAINS, japanset_113, 0x49) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_151, 0x13) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_485, 0x38) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_80, 0x11) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_101, 0x30) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_103, 0x60) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_201, 0x25) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_205, 0x28) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_209, 0x68) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_223, 0x42) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	}
+	item(FEAT_TRAINS, japanset_E231, 0x44) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_E233, 0x5B) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	} 
+	item(FEAT_TRAINS, japanset_281, 0x41) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	}
+	item(FEAT_TRAINS, japanset_415, 0x62) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	}
+	item(FEAT_TRAINS, japanset_789, 0x64) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	}
 }
 
-item(FEAT_TRAINS, japanset_113, 0x49) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_151, 0x13) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_485, 0x38) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_80, 0x11) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_101, 0x30) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_103, 0x60) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_201, 0x25) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_205, 0x28) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_209, 0x68) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_223, 0x42) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-}
-item(FEAT_TRAINS, japanset_E231, 0x44) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_E233, 0x5B) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-} 
-item(FEAT_TRAINS, japanset_281, 0x41) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-}
-item(FEAT_TRAINS, japanset_415, 0x62) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-}
-item(FEAT_TRAINS, japanset_789, 0x64) {
-	property {
-		climates_available: NO_CLIMATE;
-	}
-}
+
+
+/* 
+JapanSet3 IDs
+
+01 8620 Steam
+02 ED17 Electric
+03 D50 Steam
+04 C53 Steam
+05 C11 Steam
+06 C12 Steam
+07 40 Series EMU
+08 EF10 Electric
+
+
+*/
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -25798,12 +25826,13 @@ item(FEAT_TRAINS, JRC373, 0x250) {
 		climates_available: NO_CLIMATE;
 	}
 }
-*/
+
 
 
 //engine_override("JD\A1\E1"); jpsecret
 //jnr_ef63, 1040
 
 }
+*/
 # 1 "JPplus.pnml" 4
 
