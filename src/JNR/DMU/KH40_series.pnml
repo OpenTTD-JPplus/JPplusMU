@@ -8,9 +8,9 @@ spriteset (spriteset_KH40_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl
 spriteset (spriteset_KH40_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH40_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std(0, 26)}
+alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std_rev(0, 26)}
 
 /*---END OF SECTION---*/
 
