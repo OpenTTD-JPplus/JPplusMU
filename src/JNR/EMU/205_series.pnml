@@ -312,13 +312,13 @@ item(FEAT_TRAINS, emu_205) {
         name:                         string(JNR_205);
         introduction_date:            date(1984, 03, 25);
         model_life:                   10;
-        vehicle_life:                 38;
-        reliability_decay:            12;
+        vehicle_life:                 34;
+        reliability_decay:            19;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         cost_factor:                  17;
-        running_cost_factor:          51;
+        running_cost_factor:          46;
 
         speed:                        100 km/h;
         track_type:                   NARROW_OHLE;
@@ -359,8 +359,8 @@ item(FEAT_TRAINS, emu_205) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         cargo_subtype_text:           sw_205_subtypetext_mucar;
-        power: 120;
-        weight: 23;
+        power: 480/2;
+        weight: 24;
       }
 
 }

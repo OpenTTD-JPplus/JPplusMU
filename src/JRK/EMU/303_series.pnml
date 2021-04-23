@@ -232,18 +232,18 @@ item(FEAT_TRAINS, emu_303) {
         name:                         string(JRK_303);
         introduction_date:            date(2000, 01, 22);
         model_life:                   3;
-        vehicle_life:                 39;
-        reliability_decay:            11;
+        vehicle_life:                 35;
+        reliability_decay:            24;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  20;
+        running_cost_factor:          50;
 
         speed:                        85 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        480 kW;
-        weight:                       37 ton;
+        power:                        600 kW;
+        weight:                       33 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
@@ -279,8 +279,8 @@ item(FEAT_TRAINS, emu_303) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         //cargo_subtype_text:           sw_303_subtypetext_mucar;
-        power: 120;
-        weight: 27;
+        power: 600/2;
+        weight: 28;
       }
 
 }

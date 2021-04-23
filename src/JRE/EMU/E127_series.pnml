@@ -207,18 +207,18 @@ item(FEAT_TRAINS, emu_E127) {
         name:                         string(JRE_E127);
         introduction_date:            date(1995, 05, 08);
         model_life:                   3;
-        vehicle_life:                 35;
-        reliability_decay:            12;
+        vehicle_life:                 45;
+        reliability_decay:            23;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  20;
+        running_cost_factor:          50;
 
         speed:                        110 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        240 kW;
-        weight:                       31 ton;
+        power:                        480 kW;
+        weight:                       33 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;

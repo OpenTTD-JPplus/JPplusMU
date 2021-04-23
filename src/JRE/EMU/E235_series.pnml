@@ -383,18 +383,18 @@ item(FEAT_TRAINS, emu_E235) {
         name:                         string(JRE_E235);
         introduction_date:            date(2015, 11, 30);
         model_life:                   0;
-        vehicle_life:                 40;
-        reliability_decay:            12;
+        vehicle_life:                 35;
+        reliability_decay:            19;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         cost_factor:                  17;
-        running_cost_factor:          51;
+        running_cost_factor:          46;
 
         speed:                       	120 km/h;
         track_type:                   NARROW_OHLE;
         power:                        560 kW;
-        weight:                       32 ton;
+        weight:                       31 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
@@ -430,8 +430,8 @@ item(FEAT_TRAINS, emu_E235) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         cargo_subtype_text:           sw_E235_subtypetext_mucar;
-        power: 280;
-        weight: 23;
+        power: 560/2;
+        weight: 29;
       }
 
 }

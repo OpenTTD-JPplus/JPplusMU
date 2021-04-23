@@ -555,18 +555,18 @@ item(FEAT_TRAINS, emu_165) {
         name:                         string(JNR_165);
         introduction_date:            date(1963, 02, 22);
         model_life:                   7;
-        vehicle_life:                 39;
-        reliability_decay:            11;
+        vehicle_life:                 40;
+        reliability_decay:            21;
 
         cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  19;
+        running_cost_factor:          48;
 
         speed:                        110 km/h;
         track_type:                   NARROW_OHLE;
         power:                        480 kW;
-        weight:                       37 ton;
+        weight:                       40 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
@@ -602,8 +602,8 @@ item(FEAT_TRAINS, emu_165) {
         cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
         cargo_subtype_text:           sw_165_subtypetext_mucar;
-        power: 120;
-        weight: 27;
+        power: 480/2;
+        weight: 29;
       }
 
 }

@@ -362,18 +362,18 @@ item(FEAT_TRAINS, emu_E233) {
         name:                         string(JRE_E233);
         introduction_date:            date(2006, 09, 21);
         model_life:                   0;
-        vehicle_life:                 40;
-        reliability_decay:            12;
+        vehicle_life:                 34;
+        reliability_decay:            13;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  13;
+        running_cost_factor:          41;
 
         speed:                       	120 km/h;
         track_type:                   NARROW_OHLE;
         power:                        560 kW;
-        weight:                       35 ton;
+        weight:                       32 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
@@ -409,8 +409,8 @@ item(FEAT_TRAINS, emu_E233) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         cargo_subtype_text:           sw_E233_subtypetext_mucar;
-        power: 280;
-        weight: 25;
+        power: 560/2;
+        weight: 28;
       }
 
 }

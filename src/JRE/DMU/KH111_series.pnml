@@ -107,18 +107,18 @@ item(FEAT_TRAINS, dmu_KH111) {
         name:                         string(JRE_KH111);
         introduction_date:            date(1990, 06, 02);
         model_life:                   10;
-        vehicle_life:                 35;
-        reliability_decay:            12;
+        vehicle_life:                 50;
+        reliability_decay:            22;
 
         cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  20;
+        running_cost_factor:          49;
 
         speed:                        100 km/h;
         track_type:                   NARROW_NOEL;
-        power:                        235 kW;
-        weight:                       39 ton;
+        power:                        308 kW;
+        weight:                       31 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;

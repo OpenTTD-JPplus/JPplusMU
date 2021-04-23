@@ -323,18 +323,18 @@ item(FEAT_TRAINS, emu_70) {
         name:                         string(JNR_70);
         introduction_date:            date(1951, 11, 12);
         model_life:                   7;
-        vehicle_life:                 39;
+        vehicle_life:                 26;
         reliability_decay:            11;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  19;
+        running_cost_factor:          49;
 
         speed:                        100 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        470 kW;
-        weight:                       37 ton;
+        power:                        568 kW;
+        weight:                       46 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
@@ -370,8 +370,8 @@ item(FEAT_TRAINS, emu_70) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cargo_subtype_text:           sw_70_subtypetext_mucar;
-        power: 120;
-        weight: 27;
+        power: 568/2;
+        weight: 32;
       }
 
 }

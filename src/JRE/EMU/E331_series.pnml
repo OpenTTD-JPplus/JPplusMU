@@ -219,18 +219,18 @@ item(FEAT_TRAINS, emu_E331) {
         name:                         string(JRE_E331);
         introduction_date:            date(2006, 02, 04);
         model_life:                   1;
-        vehicle_life:                 20;
-        reliability_decay:            18;
+        vehicle_life:                 8;
+        reliability_decay:            25;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
-        cost_factor:                  19;
-        running_cost_factor:          54;
+        cost_factor:                  20;
+        running_cost_factor:          50;
 
         speed:                        120 km/h;
         track_type:                   NARROW_OHLE;
         power:                        640 kW;
-        weight:                       31 ton;
+        weight:                       24 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
@@ -262,10 +262,10 @@ item(FEAT_TRAINS, emu_E331) {
     /*Multiple Unit Car*/
       livery_override(mu_car){
         default:                      sw_E331_gfx_mucar_revcheck;
-        cargo_capacity:               param_capacity_local;
+        cargo_capacity:               param_capacity_local-30;
         loading_speed:                param_loading_3D;
-        power: 80;
-        weight: 20;
+        power: 640/4;
+        weight: 16;
         length: sw_E331_length_pos_flipped;
       }
 

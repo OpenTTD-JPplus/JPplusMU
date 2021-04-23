@@ -175,17 +175,17 @@ item(FEAT_TRAINS, emu_6000) {
         name:                         string(JRS_6000);
         introduction_date:            date(1995, 04, 16);
         model_life:                   2;
-        vehicle_life:                 30;
-        reliability_decay:            16;
+        vehicle_life:                 31;
+        reliability_decay:            23;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  20;
+        running_cost_factor:          50;
 
         speed:                        110 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        520 kW;
+        power:                        640 kW;
         weight:                       37 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -222,8 +222,8 @@ item(FEAT_TRAINS, emu_6000) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         //cargo_subtype_text:           sw_6000_subtypetext_mucar;
-        power: 120;
-        weight: 27;
+        power: 640/2;
+        weight: 28;
       }
 
 }

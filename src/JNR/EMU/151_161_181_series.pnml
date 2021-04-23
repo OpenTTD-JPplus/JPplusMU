@@ -704,17 +704,18 @@ item(FEAT_TRAINS, emu_151) {
         name:                         string(JNR_181);
         introduction_date:            date(1958, 11, 12);
         model_life:                   20;
-        vehicle_life:                 39;
-        reliability_decay:            11;
+        vehicle_life:                 28
+        ;
+        reliability_decay:            22;
 
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  19;
+        running_cost_factor:          49;
 
         speed:                        110 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        480 kW;
+        power:                        400 kW;
         weight:                       37 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -751,8 +752,8 @@ item(FEAT_TRAINS, emu_151) {
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
         cargo_subtype_text:           sw_151_subtypetext_mucar;
-        power: 120;
-        weight: 27;
+        power: 400/2;
+        weight: 30;
       }
 
 }

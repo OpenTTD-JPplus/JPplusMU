@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.2.0)
+STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.3.0)
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Emperor Jake{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 

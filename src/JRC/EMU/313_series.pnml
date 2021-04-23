@@ -69,13 +69,13 @@ item(FEAT_TRAINS, emu_313) {
         name:                         string(JRC_313);
         introduction_date:            date(1999, 07, 25);
         model_life:                   20;
-        vehicle_life:                 40;
-        reliability_decay:            12;
+        vehicle_life:                 41;
+        reliability_decay:            21;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  19;
+        running_cost_factor:          49;
 
         speed:                        130 km/h;
         track_type:                   NARROW_OHLE;
@@ -116,7 +116,7 @@ item(FEAT_TRAINS, emu_313) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cargo_subtype_text:           sw_313_subtypetext_mucar;
-        power: 185;
+        power: 740/2;
         weight: 24;
       }
 

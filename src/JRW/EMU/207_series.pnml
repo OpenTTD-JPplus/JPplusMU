@@ -502,13 +502,13 @@ item(FEAT_TRAINS, emu_jrw207) {
         name:                         string(JRW_207);
         introduction_date:            date(1991, 04, 20);
         model_life:                   12;
-        vehicle_life:                 38;
-        reliability_decay:            12;
+        vehicle_life:                 45;
+        reliability_decay:            21;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  19;
+        running_cost_factor:          49;
 
         speed:                        120 km/h;
         track_type:                   NARROW_OHLE;
@@ -549,8 +549,8 @@ item(FEAT_TRAINS, emu_jrw207) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
         cargo_subtype_text:           sw_207_subtypetext_mucar;
-        power: 220;
-        weight: 26;
+        power: 880/2;
+        weight: 25;
       }
 
 }

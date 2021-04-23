@@ -357,17 +357,17 @@ item(FEAT_TRAINS, emu_223_1000) {
         name:                         string(JRW_223_1000);
         introduction_date:            date(1995, 12, 08);
         model_life:                   13;
-        vehicle_life:                 39;
-        reliability_decay:            11;
+        vehicle_life:                 45;
+        reliability_decay:            20;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  18;
+        running_cost_factor:          48;
 
         speed:                        130 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        480 kW;
+        power:                        880 kW;
         weight:                       37 ton;
 
         climates_available:           ALL_CLIMATES;
@@ -404,8 +404,8 @@ item(FEAT_TRAINS, emu_223_1000) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cargo_subtype_text:           sw_223_1000_subtypetext_mucar;
-        power: 120;
-        weight: 27;
+        power: 880/2;
+        weight: 29;
       }
 
 }

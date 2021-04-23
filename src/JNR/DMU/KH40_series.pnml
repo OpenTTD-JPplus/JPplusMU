@@ -86,18 +86,18 @@ item(FEAT_TRAINS, dmu_kiha40) {
         name:                         string(JNR_kiha40);
         introduction_date:            date(1977, 01, 05);
         model_life:                   6;
-        vehicle_life:                 45;
-        reliability_decay:            10;
+        vehicle_life:                 44;
+        reliability_decay:            20;
 
         cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
-        cost_factor:                  17;
-        running_cost_factor:          51;
+        cost_factor:                  18;
+        running_cost_factor:          48;
 
         speed:                        95 km/h;
         track_type:                   NARROW_NOEL;
-        power:                        200 kW;
-        weight:                       41 ton;
+        power:                        162 kW;
+        weight:                       37 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
