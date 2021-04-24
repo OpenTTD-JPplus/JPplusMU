@@ -920,18 +920,22 @@ switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_back_panto_flippedcheck, vehicle_is
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_joban1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
  default : sw_4151500_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_joban2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
  default : sw_4151500_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_joban3_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
  default : sw_4151500_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_kyushu_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
  default : sw_4151500_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_joban1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
@@ -1084,22 +1088,27 @@ switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_initial_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_joban_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_kyushu_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_jrw_regional_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_jrw_regional_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_initial, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
@@ -1236,14 +1245,17 @@ switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_pantograph_pos_initial_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_403_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_403_gfx_rev_mid_panto_flippedcheck;
  default : sw_403_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_pantograph_pos_joban_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_403_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_403_gfx_rev_mid_panto_flippedcheck;
  default : sw_403_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_pantograph_pos_kyushu_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_403_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_403_gfx_rev_mid_panto_flippedcheck;
  default : sw_403_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_pantograph_pos_initial, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
@@ -1372,14 +1384,17 @@ switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_pantograph_pos_initial_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_401_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_401_gfx_rev_mid_panto_flippedcheck;
  default : sw_401_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_pantograph_pos_joban_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_401_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_401_gfx_rev_mid_panto_flippedcheck;
  default : sw_401_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_pantograph_pos_kyushu_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_401_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_401_gfx_rev_mid_panto_flippedcheck;
  default : sw_401_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_pantograph_pos_initial, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){

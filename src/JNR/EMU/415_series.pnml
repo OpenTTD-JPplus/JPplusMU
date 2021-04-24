@@ -43,22 +43,27 @@ switch(FEAT_TRAINS, SELF, sw_415_gfx_spriteset_415_back_panto_jrw_regional_1, [b
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_initial_sw1, position_in_vehid_chain){
  0 : spriteset_415_mid_panto_initial;
+ 3 : spriteset_415_mid_panto_initial;
  default : spriteset_415_mid_initial;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_joban_sw1, position_in_vehid_chain){
  0 : spriteset_415_mid_panto_joban;
+ 3 : spriteset_415_mid_panto_joban;
  default : spriteset_415_mid_joban;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_kyushu_sw1, position_in_vehid_chain){
  0 : sw_415_gfx_spriteset_415_mid_panto_kyushu;
+ 3 : sw_415_gfx_spriteset_415_mid_panto_kyushu;
  default : sw_415_gfx_spriteset_415_mid_kyushu;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_jrw_regional_1_sw1, position_in_vehid_chain){
  0 : sw_415_gfx_spriteset_415_mid_panto_jrw_regional_1;
+ 3 : sw_415_gfx_spriteset_415_mid_panto_jrw_regional_1;
  default : sw_415_gfx_spriteset_415_mid_jrw_regional_1;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_jrw_regional_2_sw1, position_in_vehid_chain){
  0 : spriteset_415_mid_panto_jrw_regional_2;
+ 3 : spriteset_415_mid_panto_jrw_regional_2;
  default : spriteset_415_mid_jrw_regional_2;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_initial, num_vehs_in_vehid_chain){

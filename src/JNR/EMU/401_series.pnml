@@ -1,14 +1,17 @@
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_initial_sw1, position_in_vehid_chain){
  0 : spriteset_401_mid_panto_initial;
+ 3 : spriteset_401_mid_panto_initial;
  default : spriteset_401_mid_initial;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_joban_sw1, position_in_vehid_chain){
  0 : spriteset_401_mid_panto_joban;
+ 3 : spriteset_401_mid_panto_joban;
  default : spriteset_401_mid_joban;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_kyushu_sw1, position_in_vehid_chain){
  0 : spriteset_401_mid_panto_kyushu;
+ 3 : spriteset_401_mid_panto_kyushu;
  default : spriteset_401_mid_kyushu;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_initial, num_vehs_in_vehid_chain){

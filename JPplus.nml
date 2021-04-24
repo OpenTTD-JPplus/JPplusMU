@@ -3839,18 +3839,22 @@ switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_back_panto_flippedcheck, vehicle_is
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_joban1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
  default : sw_4151500_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_joban2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
  default : sw_4151500_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_joban3_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
  default : sw_4151500_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_kyushu_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_4151500_gfx_rev_mid_panto_flippedcheck;
  default : sw_4151500_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_rev_pantograph_pos_joban1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
@@ -4003,22 +4007,27 @@ switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_initial_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_joban_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_kyushu_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_jrw_regional_1_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_jrw_regional_2_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_415_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_415_gfx_rev_mid_panto_flippedcheck;
  default : sw_415_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_rev_pantograph_pos_initial, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
@@ -4155,14 +4164,17 @@ switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_pantograph_pos_initial_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_403_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_403_gfx_rev_mid_panto_flippedcheck;
  default : sw_403_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_pantograph_pos_joban_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_403_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_403_gfx_rev_mid_panto_flippedcheck;
  default : sw_403_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_pantograph_pos_kyushu_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_403_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_403_gfx_rev_mid_panto_flippedcheck;
  default : sw_403_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_rev_pantograph_pos_initial, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
@@ -4291,14 +4303,17 @@ switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_pantograph_pos_initial_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_401_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_401_gfx_rev_mid_panto_flippedcheck;
  default : sw_401_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_pantograph_pos_joban_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_401_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_401_gfx_rev_mid_panto_flippedcheck;
  default : sw_401_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_pantograph_pos_kyushu_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_401_gfx_rev_mid_panto_flippedcheck;
+ 3 : sw_401_gfx_rev_mid_panto_flippedcheck;
  default : sw_401_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_rev_pantograph_pos_initial, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
@@ -16397,14 +16412,17 @@ item(FEAT_TRAINS, emu_213) {
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_initial_sw1, position_in_vehid_chain){
  0 : spriteset_401_mid_panto_initial;
+ 3 : spriteset_401_mid_panto_initial;
  default : spriteset_401_mid_initial;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_joban_sw1, position_in_vehid_chain){
  0 : spriteset_401_mid_panto_joban;
+ 3 : spriteset_401_mid_panto_joban;
  default : spriteset_401_mid_joban;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_kyushu_sw1, position_in_vehid_chain){
  0 : spriteset_401_mid_panto_kyushu;
+ 3 : spriteset_401_mid_panto_kyushu;
  default : spriteset_401_mid_kyushu;
 }
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_initial, num_vehs_in_vehid_chain){
@@ -16563,14 +16581,17 @@ item(FEAT_TRAINS, emu_401) {
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_403_gfx_pantograph_pos_initial_sw1, position_in_vehid_chain){
  0 : spriteset_403_mid_panto_initial;
+ 3 : spriteset_403_mid_panto_initial;
  default : spriteset_403_mid_initial;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_pantograph_pos_joban_sw1, position_in_vehid_chain){
  0 : spriteset_403_mid_panto_joban;
+ 3 : spriteset_403_mid_panto_joban;
  default : spriteset_403_mid_joban;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_pantograph_pos_kyushu_sw1, position_in_vehid_chain){
  0 : spriteset_403_mid_panto_kyushu;
+ 3 : spriteset_403_mid_panto_kyushu;
  default : spriteset_403_mid_kyushu;
 }
 switch(FEAT_TRAINS, SELF, sw_403_gfx_pantograph_pos_initial, num_vehs_in_vehid_chain){
@@ -16769,22 +16790,27 @@ switch(FEAT_TRAINS, SELF, sw_415_gfx_spriteset_415_back_panto_jrw_regional_1, [b
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_initial_sw1, position_in_vehid_chain){
  0 : spriteset_415_mid_panto_initial;
+ 3 : spriteset_415_mid_panto_initial;
  default : spriteset_415_mid_initial;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_joban_sw1, position_in_vehid_chain){
  0 : spriteset_415_mid_panto_joban;
+ 3 : spriteset_415_mid_panto_joban;
  default : spriteset_415_mid_joban;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_kyushu_sw1, position_in_vehid_chain){
  0 : sw_415_gfx_spriteset_415_mid_panto_kyushu;
+ 3 : sw_415_gfx_spriteset_415_mid_panto_kyushu;
  default : sw_415_gfx_spriteset_415_mid_kyushu;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_jrw_regional_1_sw1, position_in_vehid_chain){
  0 : sw_415_gfx_spriteset_415_mid_panto_jrw_regional_1;
+ 3 : sw_415_gfx_spriteset_415_mid_panto_jrw_regional_1;
  default : sw_415_gfx_spriteset_415_mid_jrw_regional_1;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_jrw_regional_2_sw1, position_in_vehid_chain){
  0 : spriteset_415_mid_panto_jrw_regional_2;
+ 3 : spriteset_415_mid_panto_jrw_regional_2;
  default : spriteset_415_mid_jrw_regional_2;
 }
 switch(FEAT_TRAINS, SELF, sw_415_gfx_pantograph_pos_initial, num_vehs_in_vehid_chain){
@@ -17009,18 +17035,22 @@ switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_back_panto_kyushu, [b
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban1_sw1, position_in_vehid_chain){
  0 : spriteset_4151500_mid_panto_joban1;
+ 3 : spriteset_4151500_mid_panto_joban1;
  default : spriteset_4151500_mid_joban1;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban2_sw1, position_in_vehid_chain){
  0 : spriteset_4151500_mid_panto_joban2;
+ 3 : spriteset_4151500_mid_panto_joban2;
  default : spriteset_4151500_mid_joban2;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban3_sw1, position_in_vehid_chain){
  0 : spriteset_4151500_mid_panto_joban3;
+ 3 : spriteset_4151500_mid_panto_joban3;
  default : spriteset_4151500_mid_joban3;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_kyushu_sw1, position_in_vehid_chain){
  0 : sw_4151500_gfx_spriteset_4151500_mid_panto_kyushu;
+ 3 : sw_4151500_gfx_spriteset_4151500_mid_panto_kyushu;
  default : sw_4151500_gfx_spriteset_4151500_mid_kyushu;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban1, num_vehs_in_vehid_chain){

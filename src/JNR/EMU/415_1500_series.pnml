@@ -23,18 +23,22 @@ switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_back_panto_kyushu, [b
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban1_sw1, position_in_vehid_chain){
  0 : spriteset_4151500_mid_panto_joban1;
+ 3 : spriteset_4151500_mid_panto_joban1;
  default : spriteset_4151500_mid_joban1;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban2_sw1, position_in_vehid_chain){
  0 : spriteset_4151500_mid_panto_joban2;
+ 3 : spriteset_4151500_mid_panto_joban2;
  default : spriteset_4151500_mid_joban2;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban3_sw1, position_in_vehid_chain){
  0 : spriteset_4151500_mid_panto_joban3;
+ 3 : spriteset_4151500_mid_panto_joban3;
  default : spriteset_4151500_mid_joban3;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_kyushu_sw1, position_in_vehid_chain){
  0 : sw_4151500_gfx_spriteset_4151500_mid_panto_kyushu;
+ 3 : sw_4151500_gfx_spriteset_4151500_mid_panto_kyushu;
  default : sw_4151500_gfx_spriteset_4151500_mid_kyushu;
 }
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_pantograph_pos_joban1, num_vehs_in_vehid_chain){
