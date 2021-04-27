@@ -179,7 +179,7 @@ spriteset (spriteset_E233_middd_tk,   	                                         
 alternative_sprites(spriteset_E233_front_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 0)}
 alternative_sprites(spriteset_E233_back_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 25)}
 alternative_sprites(spriteset_E233_middle_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 50)}
-alternative_sprites(spriteset_E233_midpan_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 75)}
+alternative_sprites(spriteset_E233_midpan_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std_rev(0, 75)}
 alternative_sprites(spriteset_E233_midpant_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 100)}
 alternative_sprites(spriteset_E233_middd_tk, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 125)}
 spriteset (spriteset_E233_front_tk_rev,	 	                                               "gfx/JRE/emuE233/E233-3000_v2.png") 	         {tmpl_std_rev(0, 0)}
@@ -191,7 +191,7 @@ spriteset (spriteset_E233_middd_tk_rev, 	                                       
 alternative_sprites(spriteset_E233_front_tk_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_E233_back_tk_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,      "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_E233_middle_tk_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,    "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std_rev(0, 50)}
-alternative_sprites(spriteset_E233_midpan_tk_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,    "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_E233_midpan_tk_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,    "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std(0, 75)}
 alternative_sprites(spriteset_E233_midpant_tk_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,   "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std_rev(0, 100)}
 alternative_sprites(spriteset_E233_middd_tk_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE233/E233-3000_v2_32bpp.png")     {tmpl_std_rev(0, 125)}
 
@@ -773,7 +773,14 @@ switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_normal_default, [STORE_
   7: sw_E233_gfx_rev_flippedcheck_pantograph_single;
   default: sw_E233_gfx_rev_flippedcheck_mucar;
 }
-switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_tokaido_dd, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){ //look at opposte position_in_vehID_chain
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_tokaido_dd1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){ //look at opposte position_in_vehID_chain
+  1: sw_E233_gfx_rev_flippedcheck_pantograph_single;
+  2..3: sw_E233_gfx_rev_flippedcheck_ddcar;
+  5: sw_E233_gfx_rev_flippedcheck_pantograph_single;
+  7: sw_E233_gfx_rev_pantograph_numofcars;
+  default: sw_E233_gfx_rev_flippedcheck_mucar;
+}
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_tokaido_dd2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){ //look at opposte position_in_vehID_chain
   1: sw_E233_gfx_rev_pantograph_numofcars;
   2..3: sw_E233_gfx_rev_flippedcheck_ddcar;
   5: sw_E233_gfx_rev_flippedcheck_pantograph_single;
@@ -784,14 +791,21 @@ switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_normal, [STORE_TEMP(pos
   0..1: sw_E233_gfx_rev_flippedcheck_pantograph_single;
   default: sw_E233_gfx_rev_pantograph_pos_normal_default;
 }
-switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_tokaido, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){ //look at opposte num_vehs_in_vehid_chain
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_tokaido1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){ //look at opposte num_vehs_in_vehid_chain
   0..1: sw_E233_gfx_rev_flippedcheck_pantograph_single;
   2..7: sw_E233_gfx_rev_pantograph_pos_normal_default;
-  default: sw_E233_gfx_rev_pantograph_pos_tokaido_dd;
+  default: sw_E233_gfx_rev_pantograph_pos_tokaido_dd1;
 }
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_tokaido2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){ //look at opposte num_vehs_in_vehid_chain
+  0..1: sw_E233_gfx_rev_flippedcheck_pantograph_single;
+  2..7: sw_E233_gfx_rev_pantograph_pos_normal_default;
+  default: sw_E233_gfx_rev_pantograph_pos_tokaido_dd2;
+}
+
+
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  3: sw_E233_gfx_rev_pantograph_pos_tokaido;
-  2: sw_E233_gfx_rev_pantograph_pos_tokaido;
+  3: sw_E233_gfx_rev_pantograph_pos_tokaido2;
+  2: sw_E233_gfx_rev_pantograph_pos_tokaido1;
   default: sw_E233_gfx_rev_pantograph_pos_normal;
 }
 

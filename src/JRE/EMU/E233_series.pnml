@@ -31,28 +31,48 @@ switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_kt, num_vehs_in_vehid_chain)
   default: sw_E233_gfx_pantograph_pos_kt_default;
 }
 
-//E233-3000 Tokaido
+//E233-3000 Tokaido production
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_numofcars_tk, num_vehs_in_vehid_chain){
   0..5: spriteset_E233_midpan_tk;
   default: spriteset_E233_midpant_tk;
 }
-switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk_default_dd, position_in_vehid_chain%8){
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk1_default_dd, position_in_vehid_chain%8){
   1: sw_E233_gfx_pantograph_numofcars_tk;
   2..3: spriteset_E233_middd_tk;
   5: spriteset_E233_midpan_tk;
   7: spriteset_E233_midpan_tk;
   default: spriteset_E233_middle_tk;
 }
-switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk_default, position_in_vehid_chain%8){
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk1_default, position_in_vehid_chain%8){
   1: sw_E233_gfx_pantograph_numofcars_tk;
   5: spriteset_E233_midpan_tk;
   7: spriteset_E233_midpan_tk;
   default: spriteset_E233_middle_tk;
 }
-switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk, num_vehs_in_vehid_chain){
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk1, num_vehs_in_vehid_chain){
   0..1: spriteset_E233_midpan_tk;
-  2..7: sw_E233_gfx_pantograph_pos_tk_default;
-  default: sw_E233_gfx_pantograph_pos_tk_default_dd;
+  2..7: sw_E233_gfx_pantograph_pos_tk1_default;
+  default: sw_E233_gfx_pantograph_pos_tk1_default_dd;
+}
+
+//E233-3000 Tokaido early
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk2_default_dd, position_in_vehid_chain%8){
+  1: spriteset_E233_midpan_tk;
+  2..3: spriteset_E233_middd_tk;
+  5: spriteset_E233_midpan_tk;
+  7: sw_E233_gfx_pantograph_numofcars_tk;
+  default: spriteset_E233_middle_tk;
+}
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk2_default, position_in_vehid_chain%8){
+  1: spriteset_E233_midpan_tk;
+  5: spriteset_E233_midpan_tk;
+  7: sw_E233_gfx_pantograph_numofcars_tk;
+  default: spriteset_E233_middle_tk;
+}
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_tk2, num_vehs_in_vehid_chain){
+  0..1: spriteset_E233_midpan_tk;
+  2..7: sw_E233_gfx_pantograph_pos_tk2_default;
+  default: sw_E233_gfx_pantograph_pos_tk2_default_dd;
 }
 
 //E233-5000 Keiyo Line
@@ -261,8 +281,12 @@ switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_sd_tk, vehicle_is_reverse
  0: spriteset_E233_middle_tk;
  default: sw_E231group_gfx_rev_idcheck;
 }
-switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_tk, vehicle_is_reversed){
- 0: sw_E233_gfx_pantograph_pos_tk;
+switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_tk1, vehicle_is_reversed){
+ 0: sw_E233_gfx_pantograph_pos_tk1;
+ default: sw_E231group_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_tk2, vehicle_is_reversed){
+ 0: sw_E233_gfx_pantograph_pos_tk2;
  default: sw_E231group_gfx_rev_idcheck;
 }
 
@@ -297,15 +321,15 @@ switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_nanbu, vehicle_is_rev
 
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_mucar,  cargo_subtype) {
-  10: sw_E233_gfx_mucar_revcheck_dd_tk;
-  9: sw_E233_gfx_mucar_revcheck_sd_tk;
-  8: sw_E233_gfx_mucar_revcheck_mid_tk;
+  //10: sw_E233_gfx_mucar_revcheck_dd_tk;
+  //9: sw_E233_gfx_mucar_revcheck_sd_tk;
+  //8: sw_E233_gfx_mucar_revcheck_mid_tk;
   7: sw_E233_gfx_mucar_revcheck_mid_nanbu;
   6: sw_E233_gfx_mucar_revcheck_mid_saikyo;
   5: sw_E233_gfx_mucar_revcheck_mid_yoko;
   4: sw_E233_gfx_mucar_revcheck_mid_keiyo;
-  3: sw_E233_gfx_mucar_revcheck_mid_tk;
-  2: sw_E233_gfx_mucar_revcheck_mid_tk;
+  3: sw_E233_gfx_mucar_revcheck_mid_tk1;
+  2: sw_E233_gfx_mucar_revcheck_mid_tk2;
   1: sw_E233_gfx_mucar_revcheck_mid_kt;
   0: sw_E233_gfx_mucar_revcheck_mid_chou;
 }
@@ -322,9 +346,9 @@ switch(FEAT_TRAINS, SELF, sw_E233_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_mucar, cargo_subtype) {
-  10: string(jreE233_LV_shonan_dd);
-  9: string(jreE233_LV_shonan_mu);
-  8: string(jreE235_DIV_shonan);
+  //10: string(jreE233_LV_shonan_dd);
+  //9: string(jreE233_LV_shonan_mu);
+  //8: string(jreE235_DIV_shonan);
   7: string(jreE233_LV_nanbu);
   6: string(jreE233_LV_saikyo);
   5: string(jreE233_LV_yokohama);
