@@ -526,18 +526,18 @@ switch(FEAT_TRAINS, PARENT, sw_165_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_165_subtypetext_mucar, cargo_subtype) {
-  8: string(jnr165_shonan_cabbk);
-  7: string(jnr165_shonan_cabfr);
-  6: string(jnr165_shonan_sashashi);
-  5: string(jnr165_shonan_mu);
-  4: string(jnr165_shonan_pt);
-  3: string(jnr165_shonan_grnb);
-  2: string(jnr165_shonan_grb);
-  1: string(jnr165_DIV_shonan);
-  0: string(jnr165_SHONAN);
+  //8: string(jnr165_shonan_cabbk);
+  //7: string(jnr165_shonan_cabfr);
+  //6: string(jnr165_shonan_sashashi);
+  //5: string(jnr165_shonan_mu);
+  //4: string(jnr165_shonan_pt);
+  //3: string(jnr165_shonan_grnb);
+  //2: string(jnr165_shonan_grb);
+  //1: string(jnr165_DIV_shonan);
+  0: string(LV_SHONAN);
 }
 switch(FEAT_TRAINS, SELF, sw_165_subtypetext_main, cargo_subtype) {
-  0: string(jnr165_SHONAN);
+  0: string(LV_SHONAN);
 }
 /*---END OF SECTION---*/
 

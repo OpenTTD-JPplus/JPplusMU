@@ -534,13 +534,13 @@ switch(FEAT_TRAINS, PARENT, sw_80_gfx_862_kansai_frontback_revcheck, vehicle_is_
 /*---GFX: Middle Car Switches---*/
 //80
 switch(FEAT_TRAINS, SELF, sw_80_gfx_cargosubtype, cargo_subtype){
-  11: spriteset_80_mid_panto_kansai;
-  10: spriteset_80_mid_kansai;
-  9: sw_80_gfx_kansai_pantograph_pos;
-  8: spriteset_80_midgr;
-  7: spriteset_80_mid_panto;
-  6: spriteset_80_mid;
-  5: sw_80_gfx_pantograph_pos;
+  //11: spriteset_80_mid_panto_kansai;
+  //10: spriteset_80_mid_kansai;
+  //9: sw_80_gfx_kansai_pantograph_pos;
+  //8: spriteset_80_midgr;
+  //7: spriteset_80_mid_panto;
+  //6: spriteset_80_mid;
+  //5: sw_80_gfx_pantograph_pos;
   4: sw_80_gfx_kansai_pantograph_pos;
   3: sw_80_gfx_pantograph_pos;
   2: sw_80_gfx_pantograph_pos;
@@ -572,25 +572,25 @@ switch(FEAT_TRAINS, SELF, sw_80_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_mucar, cargo_subtype) {
-  11: string(jnr80_kansai_pt);
-  10: string(jnr80_kansai_mu);
-  9: string(jnr_80_DIV_kansai);
-  8: string(jnr80_shonan_gr);
-  7: string(jnr80_shonan_pt);
-  6: string(jnr80_shonan_mu);
-  5: string(jnr_80_DIV_shonan);
-  4: string(jnr80_ka);
-  3: string(jnr80_852);  
-  2: string(jnr80_85); 
-  1: string(jnr80_861);
-  0: string(jnr80_862);
+  //11: string(jnr80_kansai_pt);
+  //10: string(jnr80_kansai_mu);
+  //9: string(jnr_80_DIV_kansai);
+  //8: string(jnr80_shonan_gr);
+  //7: string(jnr80_shonan_pt);
+  //6: string(jnr80_shonan_mu);
+  //5: string(jnr_80_DIV_shonan);
+  4: string(LV_KANSAI); //Kansai Livery (KUHA 86 Shonan face type)
+  3: string(LV_VARITION_END1); //Shonan Livery (KUHA 85 type + KUHA 86 Shonan face type)
+  2: string(LV_VARITION_MID2); //Shonan Livery (KUHA 85 type + KUHA 86 initial type)
+  1: string(LV_VARITION_MID1); //Shonan Livery (KUHA 86 initial face type)
+  0: string(LV_SHONAN); //Shonan Livery (KUHA 86 Shonan face type)
 }
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_main, cargo_subtype) {
-  4: string(jnr80_ka);
-  3: string(jnr80_852);  
-  2: string(jnr80_85); 
-  1: string(jnr80_861);
-  0: string(jnr80_862);
+  4: string(LV_KANSAI); //Kansai Livery (KUHA 86 Shonan face type)
+  3: string(LV_VARITION_END1); //Shonan Livery (KUHA 85 type + KUHA 86 Shonan face type)
+  2: string(LV_VARITION_MID2); //Shonan Livery (KUHA 85 type + KUHA 86 initial type)
+  1: string(LV_VARITION_MID1); //Shonan Livery (KUHA 86 initial face type)
+  0: string(LV_SHONAN); //Shonan Livery (KUHA 86 Shonan face type)
 }
 /*---END OF SECTION---*/
 

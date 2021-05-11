@@ -302,10 +302,10 @@ switch(FEAT_TRAINS, SELF, sw_70_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_70_subtypetext_mucar, cargo_subtype) {
-  0: string(LV_YAMASUKA);
+  0: string(LV_YOKOSUKA);
 }
 switch(FEAT_TRAINS, SELF, sw_70_subtypetext_main, cargo_subtype) {
-  0: string(LV_YAMASUKA);
+  0: string(LV_YOKOSUKA);
 }
 /*---END OF SECTION---*/
 

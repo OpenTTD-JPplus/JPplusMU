@@ -49,6 +49,7 @@ MUCARDD :JP+ MU Special Cars {WHITE}(SC){BLACK}
 
 JGR_6340:6340 Series {WHITE}(EMU){BLACK}
 
+JNR_kiha30 :KiHa 30 Series {WHITE}(DMU){BLACK}
 JNR_kiha40 :KiHa 40 Series {WHITE}(DMU){BLACK}
 JNR_kiha48 :KiHa 48 Series {WHITE}(DMU){BLACK}
 JNR_kiha54 :KiHa 54 Series {WHITE}(DMU){BLACK}
@@ -147,15 +148,24 @@ LV_VARITION_END7: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} Livery Variation
 LV_VARITION_END8: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} Livery Variation
 
 
+
 LV_INITIAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Initial Livery
+
+LV_TOKAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Tokai Livery  
+
+LV_SHONAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Shonan Livery
+
+LV_SHONAN_TOKAIDO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} Tokaido Formation (Shonan Livery)
+
+LV_SHONAN_TAKATOHO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} Takasaki/Tohoku Formation (Shonan Livery)
 
 LV_JOBAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Joban Livery
 
 LV_KYUSHU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Kyushu Livery
 
-LV_SHONAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Shonan Livery
-
 LV_YAMASUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Yamasuka Livery
+
+LV_YOKOSUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Yokosuka Livery
 
 LV_MINOBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Minobu Livery
 
@@ -179,11 +189,39 @@ LV_SHINANO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Shinano Railway Livery
 
 LV_ORANGE_VERMILLION:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Orange Vermillion Livery
 
+LV_ORANGE_CREAM:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Vermillion and Cream Livery
+
 LV_YELLOW_GREEN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Yellow Green Livery
 
 LV_JNR_EXPRESS: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JNR Express Livery
 
 LV_NANAO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Nanao Livery
+
+LV_KANSAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Kansai Livery
+
+LV_CHIBA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Chiba Livery
+
+LV_CHUKYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Chukyo Livery
+
+LV_JRW_BLUE: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR West Blue Livery
+
+LV_JRW_YUMEJI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR West "Super Saloon Yumeji"
+
+LV_YAMANOTE: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Yamanote Livery 
+
+LV_KEIHIN_TOUHOKU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Keihin-Touhoku Livery
+
+LV_CHOU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Chou Livery
+
+LV_KEIYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Keiyo Livery
+
+LV_YOKOHAMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Yokohama Livery
+
+LV_SAIKYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Saikyo Livery
+
+LV_NAMBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Nambu Livery
+
+# Legacy - No need to edit/translate
 
 jnr151_LV : 151 Series JNR Express Livery
 jnr181_LV : 181 Series JNR Express Livery
@@ -193,18 +231,6 @@ jnr181_LVc : 151/161/181 MoHaShi Car
 jnr181_LVd : 151/161/181 Panto Car
 jnr181_LVe : 151/161/181 Green Panto Car
 
-jnr80_861 : Shonan Livery (KUHA 86 initial face type)
-jnr80_862 : Shonan Livery (KUHA 86 Shonan face type)
-jnr80_85 : Shonan Livery (KUHA 85 type + KUHA 86 initial type)
-jnr80_ka : Kansai Livery (KUHA 86 Shonan face type)
-jnr80_852 : Shonan Livery (KUHA 85 type + KUHA 86 Shonan face type)
-jnr_80_DIV_shonan:{RED}---- Shonan Livery Options ----
-jnr80_shonan_gr : Shonan Green Car
-jnr80_shonan_pt : Shonan Pantograph Car
-jnr80_shonan_mu : Shonan Standard Car
-jnr_80_DIV_kansai:{RED}---- Kansai Livery Options ----
-jnr80_kansai_pt : Kansai Pantograph Car
-jnr80_kansai_mu : Kansai Standard Car
 
 jnr165_SHONAN : Shonan Livery
 jnr165_DIV_shonan:{RED}---- Shonan Livery Options ----

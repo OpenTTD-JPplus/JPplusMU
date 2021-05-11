@@ -79,22 +79,22 @@ default:  sw_213_gfx_frontback_revcheck_jrw;
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_213_subtypetext_mucar, cargo_subtype) {
-6: string(JRWyumeji5_LV);
-5: string(JRWyumeji4_LV);
-4: string(JRWyumeji3_LV);
-3: string(JRWyumeji2_LV);
-2: string(JRWyumeji1_LV);
-1: string(SHONAN_LV);
-0: string(JRWbluestd_LV);
+6: string(LV_VARITION_END1); //212-5
+5: string(LV_VARITION_MID3); //212-4
+4: string(LV_VARITION_MID2); //212-3
+3: string(LV_VARITION_MID1); //212-2
+2: string(LV_JRW_YUMEJI); //212-1
+1: string(LV_SHONAN);
+0: string(LV_JRW_BLUE);
 }
 switch(FEAT_TRAINS, SELF, sw_213_subtypetext_main, cargo_subtype) {
-6: string(JRWyumeji5_LV);
-5: string(JRWyumeji4_LV);
-4: string(JRWyumeji3_LV);
-3: string(JRWyumeji2_LV);
-2: string(JRWyumeji1_LV);
-1: string(SHONAN_LV);
-0: string(JRWbluestd_LV);
+6: string(LV_VARITION_END1); //212-5
+5: string(LV_VARITION_MID3); //212-4
+4: string(LV_VARITION_MID2); //212-3
+3: string(LV_VARITION_MID1); //212-2
+2: string(LV_JRW_YUMEJI); //212-1
+1: string(LV_SHONAN);
+0: string(LV_JRW_BLUE);
 }
 /*---END OF SECTION---*/
 

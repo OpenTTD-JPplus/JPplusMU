@@ -238,32 +238,32 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_211_subtypetext_mucar, cargo_subtype) {
-11: string(NAGANO_LV);
-10: string(CHIBA_LV_TWOP);
-9: string(CHIBA_LV);
-8: string(SHONAN_TY_DDSD_LV);
-7: string(SHONAN_TY_DDoldDD_LV);
-6: string(SHONAN_TY_DDDDold_LV);
-5: string(SHONAN_TY_DDDD_LV);
-4: string(SHONAN_TK_DDSD_LV);
-3: string(SHONAN_TK_DDDD_LV);
-2: string(SHONAN_LV_TWOP);
-1: string(SHONAN_LV);
-0: string(CHUKYO_LV);
+11: string(LV_NAGANO);
+10: string(LV_VARITION_END1);
+9: string(LV_CHIBA);
+8: string(LV_VARITION_END2); //Shonan Livery (Takasaki/Tohoku DD/SD)
+7: string(LV_VARITION_MID1); //Shonan Livery (Takasaki/Tohoku DD Old/New)
+6: string(LV_VARITION_MID2); //Shonan Livery (Takasaki/Tohoku DD New/Old)
+5: string(LV_SHONAN_TAKATOHO); //Shonan Livery (Takasaki/Tohoku DD)
+4: string(LV_VARITION_END3); //Shonan Livery (Tokaido DD/SD)
+3: string(LV_SHONAN_TOKAIDO); //Shonan Livery (Tokaido DD)
+2: string(LV_VARITION_END4); //shonan dual panto
+1: string(LV_SHONAN);
+0: string(LV_CHUKYO);
 }
 switch(FEAT_TRAINS, SELF, sw_211_subtypetext_main, cargo_subtype) {
-11: string(NAGANO_LV);
-10: string(CHIBA_LV_TWOP);
-9: string(CHIBA_LV);
-8: string(SHONAN_TY_DDSD_LV);
-7: string(SHONAN_TY_DDoldDD_LV);
-6: string(SHONAN_TY_DDDDold_LV);
-5: string(SHONAN_TY_DDDD_LV);
-4: string(SHONAN_TK_DDSD_LV);
-3: string(SHONAN_TK_DDDD_LV);
-2: string(SHONAN_LV_TWOP);
-1: string(SHONAN_LV);
-0: string(CHUKYO_LV);
+11: string(LV_NAGANO);
+10: string(LV_VARITION_END1);
+9: string(LV_CHIBA);
+8: string(LV_VARITION_END2); //Shonan Livery (Takasaki/Tohoku DD/SD)
+7: string(LV_VARITION_MID1); //Shonan Livery (Takasaki/Tohoku DD Old/New)
+6: string(LV_VARITION_MID2); //Shonan Livery (Takasaki/Tohoku DD New/Old)
+5: string(LV_SHONAN_TAKATOHO); //Shonan Livery (Takasaki/Tohoku DD)
+4: string(LV_VARITION_END3); //Shonan Livery (Tokaido DD/SD)
+3: string(LV_SHONAN_TOKAIDO); //Shonan Livery (Tokaido DD)
+2: string(LV_VARITION_END4); //shonan dual panto
+1: string(LV_SHONAN);
+0: string(LV_CHUKYO);
 }
 /*---END OF SECTION---*/
 

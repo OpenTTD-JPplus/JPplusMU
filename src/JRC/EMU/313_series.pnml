@@ -49,12 +49,12 @@ switch(FEAT_TRAINS, PARENT, sw_313_gfx_mucar_revcheck, vehicle_is_reversed){
 /*---GFX: Livery Refitting Switches---*/
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_313_subtypetext_mucar, cargo_subtype) {
-1: string(TOKAI_313_TWOPANTO);
-0: string(TOKAI_313_PANTO);
+1: string(LV_VARITION_END1);
+0: string(LV_TOKAI);
 }
 switch(FEAT_TRAINS, SELF, sw_313_subtypetext_main, cargo_subtype) {
-1: string(TOKAI_313_TWOPANTO);
-0: string(TOKAI_313_PANTO);
+1: string(LV_VARITION_END1);
+0: string(LV_TOKAI);
 }
 /*---END OF SECTION---*/
 

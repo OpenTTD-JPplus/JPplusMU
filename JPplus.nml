@@ -381,6 +381,7 @@ item(FEAT_TRAINS, dmu_KH111, 1510) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_KHE120, 1511) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_KHE130, 1512) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_KHE131, 1513) {} //kiha281  0x5E6
+item(FEAT_TRAINS, dmu_kiha30, 1514) {} //kiha40    0x5DC
 
 
 item(FEAT_TRAINS, emu_107, 2018) {} //107emu 0x7E2
@@ -450,6 +451,7 @@ sort(FEAT_TRAINS, [
 /*JGR*/
 emu_6340,
 /*JNR*/
+dmu_kiha30,
 dmu_kiha40,
 dmu_kiha48,
 dmu_kiha54,
@@ -4682,6 +4684,155 @@ item(FEAT_TRAINS, emu_6340) {
 
 
 //JNR
+# 1 "src/JNR/DMU/KH30_series.pnml" 1
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_KH30_purchase,	                                                    "gfx/JNR/dmuKH30/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH30_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JNR/dmuKH30/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH30 JNR Vermillion Cream
+spriteset (spriteset_KH30_orangecream,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH30_rev_orangecream,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH30_revflip_orangecream,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH30_orangecream,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-1.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_KH30_rev_orangecream,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-1.png")           {tmpl_std(0, 26)}
+alternative_sprites(spriteset_KH30_revflip_orangecream, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-1.png")           {tmpl_std_rev(0, 26)}
+
+//KH30 JNR Orange Vermillion
+spriteset (spriteset_KH30_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH30_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH30_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH30_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-2.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_KH30_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-2.png")           {tmpl_std(0, 26)}
+alternative_sprites(spriteset_KH30_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH30/KIHA30-2.png")           {tmpl_std_rev(0, 26)}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KH30_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KH30_rev_orange;
+  0: spriteset_KH30_rev_orangecream;
+}
+switch(FEAT_TRAINS,SELF, sw_KH30_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KH30_revflip_orange;
+  0: spriteset_KH30_revflip_orangecream;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH30_gfx_rev_livery;
+ default: sw_KH30_gfx_revflip_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1500: sw_KH30_gfx_rev_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//KH30 JR Orange Vermillion
+switch(FEAT_TRAINS, PARENT, sw_KH30_orangecream_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH30_orangecream;
+ default: sw_KH30_gfx_rev_flippedcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH30_orange_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH30_orange;
+ default: sw_KH30_gfx_rev_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_KH30_gfx_main, cargo_subtype) {
+  1: sw_KH30_orange_gfx_frontback_revcheck;
+  0: sw_KH30_orangecream_gfx_frontback_revcheck;
+}
+
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_KH30_subtypetext_main, cargo_subtype) {
+  1: string(LV_ORANGE_VERMILLION);  
+  0: string(LV_ORANGE_CREAM);
+}
+
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_KH30_attach_vehid, [vehicle_type_id == dmu_kiha30]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, dmu_kiha30) {
+    property {
+        name:                         string(JNR_kiha30);
+        introduction_date:            date(1961, 12, 01);
+        model_life:                   5;
+        vehicle_life:                 51;
+        reliability_decay:            22;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  19;
+        running_cost_factor:          49;
+
+        speed:                        95 km/h;
+        track_type:                   NARROW_NOEL;
+        power:                        132 kW;
+        weight:                       32 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_KH30_gfx_main;
+		    purchase:                 spriteset_KH30_purchase;
+		    additional_text:	      return string(JNR_kiha40_DESC);
+        cargo_subtype_text:           sw_KH30_subtypetext_main;
+        can_attach_wagon:			  sw_KH30_attach_vehid;
+        //start_stop:                   ;
+    }
+}
+# 1 "JPplus.pnml" 4
 # 1 "src/JNR/DMU/KH40_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
@@ -5119,10 +5270,10 @@ switch(FEAT_TRAINS, SELF, sw_70_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_70_subtypetext_mucar, cargo_subtype) {
-  0: string(LV_YAMASUKA);
+  0: string(LV_YOKOSUKA);
 }
 switch(FEAT_TRAINS, SELF, sw_70_subtypetext_main, cargo_subtype) {
-  0: string(LV_YAMASUKA);
+  0: string(LV_YOKOSUKA);
 }
 /*---END OF SECTION---*/
 
@@ -5730,13 +5881,13 @@ switch(FEAT_TRAINS, PARENT, sw_80_gfx_862_kansai_frontback_revcheck, vehicle_is_
 /*---GFX: Middle Car Switches---*/
 //80
 switch(FEAT_TRAINS, SELF, sw_80_gfx_cargosubtype, cargo_subtype){
-  11: spriteset_80_mid_panto_kansai;
-  10: spriteset_80_mid_kansai;
-  9: sw_80_gfx_kansai_pantograph_pos;
-  8: spriteset_80_midgr;
-  7: spriteset_80_mid_panto;
-  6: spriteset_80_mid;
-  5: sw_80_gfx_pantograph_pos;
+  //11: spriteset_80_mid_panto_kansai;
+  //10: spriteset_80_mid_kansai;
+  //9: sw_80_gfx_kansai_pantograph_pos;
+  //8: spriteset_80_midgr;
+  //7: spriteset_80_mid_panto;
+  //6: spriteset_80_mid;
+  //5: sw_80_gfx_pantograph_pos;
   4: sw_80_gfx_kansai_pantograph_pos;
   3: sw_80_gfx_pantograph_pos;
   2: sw_80_gfx_pantograph_pos;
@@ -5768,25 +5919,25 @@ switch(FEAT_TRAINS, SELF, sw_80_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_mucar, cargo_subtype) {
-  11: string(jnr80_kansai_pt);
-  10: string(jnr80_kansai_mu);
-  9: string(jnr_80_DIV_kansai);
-  8: string(jnr80_shonan_gr);
-  7: string(jnr80_shonan_pt);
-  6: string(jnr80_shonan_mu);
-  5: string(jnr_80_DIV_shonan);
-  4: string(jnr80_ka);
-  3: string(jnr80_852);  
-  2: string(jnr80_85); 
-  1: string(jnr80_861);
-  0: string(jnr80_862);
+  //11: string(jnr80_kansai_pt);
+  //10: string(jnr80_kansai_mu);
+  //9: string(jnr_80_DIV_kansai);
+  //8: string(jnr80_shonan_gr);
+  //7: string(jnr80_shonan_pt);
+  //6: string(jnr80_shonan_mu);
+  //5: string(jnr_80_DIV_shonan);
+  4: string(LV_KANSAI); //Kansai Livery (KUHA 86 Shonan face type)
+  3: string(LV_VARITION_END1); //Shonan Livery (KUHA 85 type + KUHA 86 Shonan face type)
+  2: string(LV_VARITION_MID2); //Shonan Livery (KUHA 85 type + KUHA 86 initial type)
+  1: string(LV_VARITION_MID1); //Shonan Livery (KUHA 86 initial face type)
+  0: string(LV_SHONAN); //Shonan Livery (KUHA 86 Shonan face type)
 }
 switch(FEAT_TRAINS, SELF, sw_80_subtypetext_main, cargo_subtype) {
-  4: string(jnr80_ka);
-  3: string(jnr80_852);  
-  2: string(jnr80_85); 
-  1: string(jnr80_861);
-  0: string(jnr80_862);
+  4: string(LV_KANSAI); //Kansai Livery (KUHA 86 Shonan face type)
+  3: string(LV_VARITION_END1); //Shonan Livery (KUHA 85 type + KUHA 86 Shonan face type)
+  2: string(LV_VARITION_MID2); //Shonan Livery (KUHA 85 type + KUHA 86 initial type)
+  1: string(LV_VARITION_MID1); //Shonan Livery (KUHA 86 initial face type)
+  0: string(LV_SHONAN); //Shonan Livery (KUHA 86 Shonan face type)
 }
 /*---END OF SECTION---*/
 
@@ -15168,18 +15319,18 @@ switch(FEAT_TRAINS, PARENT, sw_165_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_165_subtypetext_mucar, cargo_subtype) {
-  8: string(jnr165_shonan_cabbk);
-  7: string(jnr165_shonan_cabfr);
-  6: string(jnr165_shonan_sashashi);
-  5: string(jnr165_shonan_mu);
-  4: string(jnr165_shonan_pt);
-  3: string(jnr165_shonan_grnb);
-  2: string(jnr165_shonan_grb);
-  1: string(jnr165_DIV_shonan);
-  0: string(jnr165_SHONAN);
+  //8: string(jnr165_shonan_cabbk);
+  //7: string(jnr165_shonan_cabfr);
+  //6: string(jnr165_shonan_sashashi);
+  //5: string(jnr165_shonan_mu);
+  //4: string(jnr165_shonan_pt);
+  //3: string(jnr165_shonan_grnb);
+  //2: string(jnr165_shonan_grb);
+  //1: string(jnr165_DIV_shonan);
+  0: string(LV_SHONAN);
 }
 switch(FEAT_TRAINS, SELF, sw_165_subtypetext_main, cargo_subtype) {
-  0: string(jnr165_SHONAN);
+  0: string(LV_SHONAN);
 }
 /*---END OF SECTION---*/
 
@@ -15476,11 +15627,11 @@ switch(FEAT_TRAINS, PARENT, sw_201_gfx_main,  cargo_subtype) {
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_201_subtypetext_mucar, cargo_subtype) {
   //1: string(); <--with 165 green car in 8-car formation
-  0: string(ORANGE_LV);
+  0: string(LV_ORANGE_VERMILLION);
 }
 switch(FEAT_TRAINS, SELF, sw_201_subtypetext_main, cargo_subtype) {
   //1: string(); <--with 165 green car in 8-car formation
-  0: string(ORANGE_LV);
+  0: string(LV_ORANGE_VERMILLION);
 }
 /*---END OF SECTION---*/
 
@@ -15843,12 +15994,12 @@ switch(FEAT_TRAINS, SELF, sw_205_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_205_subtypetext_mucar, cargo_subtype) {
-  1: string(KT_LV);
-  0: string(YAMANOTE_LV);
+  1: string(LV_KEIHIN_TOUHOKU);
+  0: string(LV_YAMANOTE);
 }
 switch(FEAT_TRAINS, SELF, sw_205_subtypetext_main, cargo_subtype) {
-  1: string(KT_LV);
-  0: string(YAMANOTE_LV);
+  1: string(LV_KEIHIN_TOUHOKU);
+  0: string(LV_YAMANOTE);
 }
 /*---END OF SECTION---*/
 
@@ -16160,32 +16311,32 @@ switch(FEAT_TRAINS, SELF, sw_211_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_211_subtypetext_mucar, cargo_subtype) {
-11: string(NAGANO_LV);
-10: string(CHIBA_LV_TWOP);
-9: string(CHIBA_LV);
-8: string(SHONAN_TY_DDSD_LV);
-7: string(SHONAN_TY_DDoldDD_LV);
-6: string(SHONAN_TY_DDDDold_LV);
-5: string(SHONAN_TY_DDDD_LV);
-4: string(SHONAN_TK_DDSD_LV);
-3: string(SHONAN_TK_DDDD_LV);
-2: string(SHONAN_LV_TWOP);
-1: string(SHONAN_LV);
-0: string(CHUKYO_LV);
+11: string(LV_NAGANO);
+10: string(LV_VARITION_END1);
+9: string(LV_CHIBA);
+8: string(LV_VARITION_END2); //Shonan Livery (Takasaki/Tohoku DD/SD)
+7: string(LV_VARITION_MID1); //Shonan Livery (Takasaki/Tohoku DD Old/New)
+6: string(LV_VARITION_MID2); //Shonan Livery (Takasaki/Tohoku DD New/Old)
+5: string(LV_SHONAN_TAKATOHO); //Shonan Livery (Takasaki/Tohoku DD)
+4: string(LV_VARITION_END3); //Shonan Livery (Tokaido DD/SD)
+3: string(LV_SHONAN_TOKAIDO); //Shonan Livery (Tokaido DD)
+2: string(LV_VARITION_END4); //shonan dual panto
+1: string(LV_SHONAN);
+0: string(LV_CHUKYO);
 }
 switch(FEAT_TRAINS, SELF, sw_211_subtypetext_main, cargo_subtype) {
-11: string(NAGANO_LV);
-10: string(CHIBA_LV_TWOP);
-9: string(CHIBA_LV);
-8: string(SHONAN_TY_DDSD_LV);
-7: string(SHONAN_TY_DDoldDD_LV);
-6: string(SHONAN_TY_DDDDold_LV);
-5: string(SHONAN_TY_DDDD_LV);
-4: string(SHONAN_TK_DDSD_LV);
-3: string(SHONAN_TK_DDDD_LV);
-2: string(SHONAN_LV_TWOP);
-1: string(SHONAN_LV);
-0: string(CHUKYO_LV);
+11: string(LV_NAGANO);
+10: string(LV_VARITION_END1);
+9: string(LV_CHIBA);
+8: string(LV_VARITION_END2); //Shonan Livery (Takasaki/Tohoku DD/SD)
+7: string(LV_VARITION_MID1); //Shonan Livery (Takasaki/Tohoku DD Old/New)
+6: string(LV_VARITION_MID2); //Shonan Livery (Takasaki/Tohoku DD New/Old)
+5: string(LV_SHONAN_TAKATOHO); //Shonan Livery (Takasaki/Tohoku DD)
+4: string(LV_VARITION_END3); //Shonan Livery (Tokaido DD/SD)
+3: string(LV_SHONAN_TOKAIDO); //Shonan Livery (Tokaido DD)
+2: string(LV_VARITION_END4); //shonan dual panto
+1: string(LV_SHONAN);
+0: string(LV_CHUKYO);
 }
 /*---END OF SECTION---*/
 
@@ -16336,22 +16487,22 @@ default:  sw_213_gfx_frontback_revcheck_jrw;
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_213_subtypetext_mucar, cargo_subtype) {
-6: string(JRWyumeji5_LV);
-5: string(JRWyumeji4_LV);
-4: string(JRWyumeji3_LV);
-3: string(JRWyumeji2_LV);
-2: string(JRWyumeji1_LV);
-1: string(SHONAN_LV);
-0: string(JRWbluestd_LV);
+6: string(LV_VARITION_END1); //212-5
+5: string(LV_VARITION_MID3); //212-4
+4: string(LV_VARITION_MID2); //212-3
+3: string(LV_VARITION_MID1); //212-2
+2: string(LV_JRW_YUMEJI); //212-1
+1: string(LV_SHONAN);
+0: string(LV_JRW_BLUE);
 }
 switch(FEAT_TRAINS, SELF, sw_213_subtypetext_main, cargo_subtype) {
-6: string(JRWyumeji5_LV);
-5: string(JRWyumeji4_LV);
-4: string(JRWyumeji3_LV);
-3: string(JRWyumeji2_LV);
-2: string(JRWyumeji1_LV);
-1: string(SHONAN_LV);
-0: string(JRWbluestd_LV);
+6: string(LV_VARITION_END1); //212-5
+5: string(LV_VARITION_MID3); //212-4
+4: string(LV_VARITION_MID2); //212-3
+3: string(LV_VARITION_MID1); //212-2
+2: string(LV_JRW_YUMEJI); //212-1
+1: string(LV_SHONAN);
+0: string(LV_JRW_BLUE);
 }
 /*---END OF SECTION---*/
 
@@ -19100,15 +19251,15 @@ switch(FEAT_TRAINS, SELF, sw_E235_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_E235_subtypetext_mucar, cargo_subtype) {
-  4: string(jreE235_LV_yokosuka_dd); 
-  3: string(jreE235_LV_yokosuka_mu);
-  2: string(jreE235_DIV_yokosuka);
-  1: string(jreE235_LV_yokosuka);
-  0: string(jreE235_LV_yamanote);
+  //4: string(jreE235_LV_yokosuka_dd); 
+  //3: string(jreE235_LV_yokosuka_mu);
+  //2: string(jreE235_DIV_yokosuka);
+  1: string(LV_YOKOSUKA);
+  0: string(LV_YAMANOTE);
 }
 switch(FEAT_TRAINS, SELF, sw_E235_subtypetext_main, cargo_subtype) {
-  1: string(jreE235_LV_yokosuka);
-  0: string(jreE235_LV_yamanote);
+  1: string(LV_YOKOSUKA);
+  0: string(LV_YAMANOTE);
 }
 /*---END OF SECTION---*/
 
@@ -19531,26 +19682,26 @@ switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_mucar, cargo_subtype) {
   //10: string(jreE233_LV_shonan_dd);
   //9: string(jreE233_LV_shonan_mu);
   //8: string(jreE235_DIV_shonan);
-  7: string(jreE233_LV_nanbu);
-  6: string(jreE233_LV_saikyo);
-  5: string(jreE233_LV_yokohama);
-  4: string(jreE233_LV_keiyo);
+  7: string(LV_NAMBU);
+  6: string(LV_SAIKYO);
+  5: string(LV_YOKOHAMA);
+  4: string(LV_KEIYO);
   //4: string(jreE233_LV_joban);
-  3: string(jreE233_LV_shonan_p);
-  2: string(jreE233_LV_shonan_e);
-  1: string(jreE233_LV_kt);
-  0: string(jreE233_LV_chou);
+  3: string(LV_VARITION_END1);
+  2: string(LV_SHONAN);
+  1: string(LV_KEIHIN_TOUHOKU);
+  0: string(LV_CHOU);
 }
 switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_main, cargo_subtype) {
-  7: string(jreE233_LV_nanbu);
-  6: string(jreE233_LV_saikyo);
-  5: string(jreE233_LV_yokohama);
-  4: string(jreE233_LV_keiyo);
+  7: string(LV_NAMBU);
+  6: string(LV_SAIKYO);
+  5: string(LV_YOKOHAMA);
+  4: string(LV_KEIYO);
   //4: string(jreE233_LV_joban);
-  3: string(jreE233_LV_shonan_p);
-  2: string(jreE233_LV_shonan_e);
-  1: string(jreE233_LV_kt);
-  0: string(jreE233_LV_chou);
+  3: string(LV_VARITION_END1);
+  2: string(LV_SHONAN);
+  1: string(LV_KEIHIN_TOUHOKU);
+  0: string(LV_CHOU);
 }
 /*---END OF SECTION---*/
 
@@ -22481,12 +22632,12 @@ switch(FEAT_TRAINS, PARENT, sw_313_gfx_mucar_revcheck, vehicle_is_reversed){
 /*---GFX: Livery Refitting Switches---*/
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_313_subtypetext_mucar, cargo_subtype) {
-1: string(TOKAI_313_TWOPANTO);
-0: string(TOKAI_313_PANTO);
+1: string(LV_VARITION_END1);
+0: string(LV_TOKAI);
 }
 switch(FEAT_TRAINS, SELF, sw_313_subtypetext_main, cargo_subtype) {
-1: string(TOKAI_313_TWOPANTO);
-0: string(TOKAI_313_PANTO);
+1: string(LV_VARITION_END1);
+0: string(LV_TOKAI);
 }
 /*---END OF SECTION---*/
 

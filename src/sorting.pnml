@@ -5,6 +5,7 @@ sort(FEAT_TRAINS, [
 /*JGR*/
 emu_6340,
 /*JNR*/
+dmu_kiha30,
 dmu_kiha40,
 dmu_kiha48,
 dmu_kiha54,

@@ -349,26 +349,26 @@ switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_mucar, cargo_subtype) {
   //10: string(jreE233_LV_shonan_dd);
   //9: string(jreE233_LV_shonan_mu);
   //8: string(jreE235_DIV_shonan);
-  7: string(jreE233_LV_nanbu);
-  6: string(jreE233_LV_saikyo);
-  5: string(jreE233_LV_yokohama);
-  4: string(jreE233_LV_keiyo);
+  7: string(LV_NAMBU);
+  6: string(LV_SAIKYO);
+  5: string(LV_YOKOHAMA);
+  4: string(LV_KEIYO);
   //4: string(jreE233_LV_joban);
-  3: string(jreE233_LV_shonan_p);
-  2: string(jreE233_LV_shonan_e);
-  1: string(jreE233_LV_kt);
-  0: string(jreE233_LV_chou);
+  3: string(LV_VARITION_END1);
+  2: string(LV_SHONAN);
+  1: string(LV_KEIHIN_TOUHOKU);
+  0: string(LV_CHOU);
 }
 switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_main, cargo_subtype) {
-  7: string(jreE233_LV_nanbu);
-  6: string(jreE233_LV_saikyo);
-  5: string(jreE233_LV_yokohama);
-  4: string(jreE233_LV_keiyo);
+  7: string(LV_NAMBU);
+  6: string(LV_SAIKYO);
+  5: string(LV_YOKOHAMA);
+  4: string(LV_KEIYO);
   //4: string(jreE233_LV_joban);
-  3: string(jreE233_LV_shonan_p);
-  2: string(jreE233_LV_shonan_e);
-  1: string(jreE233_LV_kt);
-  0: string(jreE233_LV_chou);
+  3: string(LV_VARITION_END1);
+  2: string(LV_SHONAN);
+  1: string(LV_KEIHIN_TOUHOKU);
+  0: string(LV_CHOU);
 }
 /*---END OF SECTION---*/
 

@@ -289,12 +289,12 @@ switch(FEAT_TRAINS, SELF, sw_205_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_205_subtypetext_mucar, cargo_subtype) {
-  1: string(KT_LV);
-  0: string(YAMANOTE_LV);
+  1: string(LV_KEIHIN_TOUHOKU);
+  0: string(LV_YAMANOTE);
 }
 switch(FEAT_TRAINS, SELF, sw_205_subtypetext_main, cargo_subtype) {
-  1: string(KT_LV);
-  0: string(YAMANOTE_LV);
+  1: string(LV_KEIHIN_TOUHOKU);
+  0: string(LV_YAMANOTE);
 }
 /*---END OF SECTION---*/
 

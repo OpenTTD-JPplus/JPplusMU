@@ -222,11 +222,11 @@ switch(FEAT_TRAINS, PARENT, sw_201_gfx_main,  cargo_subtype) {
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_201_subtypetext_mucar, cargo_subtype) {
   //1: string(); <--with 165 green car in 8-car formation
-  0: string(ORANGE_LV);
+  0: string(LV_ORANGE_VERMILLION);
 }
 switch(FEAT_TRAINS, SELF, sw_201_subtypetext_main, cargo_subtype) {
   //1: string(); <--with 165 green car in 8-car formation
-  0: string(ORANGE_LV);
+  0: string(LV_ORANGE_VERMILLION);
 }
 /*---END OF SECTION---*/
 
