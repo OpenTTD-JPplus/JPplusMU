@@ -20146,8 +20146,8 @@ spriteset (spriteset_E217_front_yk_revflip,    		"gfx/JRE/emuE217/yokosuka.png")
 spriteset (spriteset_E217_back_yk,	       	"gfx/JRE/emuE217/yokosuka.png") 	{ tmpl_std_rev(0, 25) }
 spriteset (spriteset_E217_backpan_yk,	       	"gfx/JRE/emuE217/yokosuka-extra.png") 	{ tmpl_std_rev(0, 25) }
 
-spriteset (spriteset_E217_back_yk_rev, 	   	"gfx/JRE/emuE217/yokosuka.png")   	{ tmpl_std_rev(0, 0) }
-spriteset (spriteset_E217_back_yk_revflip, 	   	"gfx/JRE/emuE217/yokosuka.png")   	{ tmpl_std_rev(0, 0) }
+spriteset (spriteset_E217_back_yk_rev, 	   	"gfx/JRE/emuE217/yokosuka.png")   	{ tmpl_std(0, 0) }
+spriteset (spriteset_E217_back_yk_revflip, 	   	"gfx/JRE/emuE217/yokosuka.png")   	{ tmpl_std(0, 0) }
 
 spriteset (spriteset_E217_backpan_yk_rev, 	   	"gfx/JRE/emuE217/yokosuka-extra.png")   	{ tmpl_std(0, 0) }
 spriteset (spriteset_E217_backpan_yk_revflip, 	   	"gfx/JRE/emuE217/yokosuka-extra.png")   	{ tmpl_std(0, 0) }
@@ -20169,8 +20169,8 @@ spriteset (spriteset_E217_front_tk_revflip, 	   	"gfx/JRE/emuE217/shonan.png")  
 spriteset (spriteset_E217_back_tk,	   	"gfx/JRE/emuE217/shonan.png")   	{ tmpl_std_rev(0, 25) }
 spriteset (spriteset_E217_backpan_tk,	   	"gfx/JRE/emuE217/shonan-extra.png")   	{ tmpl_std_rev(0, 25) }
 
-spriteset (spriteset_E217_back_tk_rev, 	   	"gfx/JRE/emuE217/shonan.png")   	{ tmpl_std_rev(0, 0) }
-spriteset (spriteset_E217_back_tk_revflip, 	   	"gfx/JRE/emuE217/shonan.png")   	{ tmpl_std_rev(0, 0) }
+spriteset (spriteset_E217_back_tk_rev, 	   	"gfx/JRE/emuE217/shonan.png")   	{ tmpl_std(0, 0) }
+spriteset (spriteset_E217_back_tk_revflip, 	   	"gfx/JRE/emuE217/shonan.png")   	{ tmpl_std(0, 0) }
 
 spriteset (spriteset_E217_backpan_tk_rev, 	   	"gfx/JRE/emuE217/shonan-extra.png")   	{ tmpl_std(0, 0) }
 spriteset (spriteset_E217_backpan_tk_revflip, 	   	"gfx/JRE/emuE217/shonan-extra.png")   	{ tmpl_std(0, 0) }
@@ -20468,12 +20468,12 @@ switch(FEAT_TRAINS, PARENT, sw_E217_gfx_mucar_revcheck_mid_tk, vehicle_is_revers
 
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_E217_gfx_mucar,  cargo_subtype) {
-      7: sw_E217_gfx_mucar_revcheck_dd_tk;
-      6: sw_E217_gfx_mucar_revcheck_mu_tk;     
-      4: sw_E217_gfx_mucar_revcheck_dd_yk;
-      3: sw_E217_gfx_mucar_revcheck_mu_yk;  
-    5: sw_E217_gfx_mucar_revcheck_dd_tk;
-    2: sw_E217_gfx_mucar_revcheck_dd_yk;
+      //7: sw_E217_gfx_mucar_revcheck_dd_tk;
+      //6: sw_E217_gfx_mucar_revcheck_mu_tk;     
+      //4: sw_E217_gfx_mucar_revcheck_dd_yk;
+      //3: sw_E217_gfx_mucar_revcheck_mu_yk;  
+    //5: sw_E217_gfx_mucar_revcheck_dd_tk;
+    //2: sw_E217_gfx_mucar_revcheck_dd_yk;
   1: sw_E217_gfx_mucar_revcheck_mid_tk;
   0: sw_E217_gfx_mucar_revcheck_mid_yk;
 }
@@ -20484,12 +20484,12 @@ switch(FEAT_TRAINS, PARENT, sw_E217_gfx_main,  cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_E217_subtypetext_mucar, cargo_subtype) {
-      7: string(JRE_E217_OPT_SHONAN_DD);
-      6: string(JRE_E217_OPT_SHONAN_MU);     
-      4: string(JRE_E217_OPT_YOKO_DD);
-      3: string(JRE_E217_OPT_YOKO_MU);
-    5: string(JRE_E217_DIV_SHONAN);
-    2: string(JRE_E217_DIV_YOKO);
+      //7: string(JRE_E217_OPT_SHONAN_DD);
+      //6: string(JRE_E217_OPT_SHONAN_MU);     
+      //4: string(JRE_E217_OPT_YOKO_DD);
+      //3: string(JRE_E217_OPT_YOKO_MU);
+    //5: string(JRE_E217_DIV_SHONAN);
+    //2: string(JRE_E217_DIV_YOKO);
   1: string(JRE_E217_LV_SHONAN);
   0: string(JRE_E217_LV_YOKO);
 }

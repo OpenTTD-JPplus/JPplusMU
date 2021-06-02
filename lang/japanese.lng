@@ -49,6 +49,7 @@ MUCARDD :JP+ MU 特別車 {WHITE}(SC){BLACK}
 
 JGR_6340:デハ63400形 電車{WHITE}(EMU){BLACK}
 
+JNR_kiha30 :キハ30系 気動車{WHITE}(DMU){BLACK}
 JNR_kiha40 :キハ40系 気動車{WHITE}(DMU){BLACK}
 JNR_kiha48 :キハ48系 気動車{WHITE}(DMU){BLACK}
 JNR_kiha54 :キハ54系 気動車{WHITE}(DMU){BLACK}
