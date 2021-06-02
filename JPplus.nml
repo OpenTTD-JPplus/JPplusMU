@@ -19690,7 +19690,7 @@ switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_mucar, cargo_subtype) {
   3: string(LV_VARITION_END1);
   2: string(LV_SHONAN);
   1: string(LV_KEIHIN_TOUHOKU);
-  0: string(LV_CHOU);
+  0: string(LV_CHUO);
 }
 switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_main, cargo_subtype) {
   7: string(LV_NAMBU);
@@ -19701,7 +19701,7 @@ switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_main, cargo_subtype) {
   3: string(LV_VARITION_END1);
   2: string(LV_SHONAN);
   1: string(LV_KEIHIN_TOUHOKU);
-  0: string(LV_CHOU);
+  0: string(LV_CHUO);
 }
 /*---END OF SECTION---*/
 
