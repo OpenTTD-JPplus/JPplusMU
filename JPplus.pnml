@@ -101,6 +101,7 @@
 //JR-Shikoku
 #include "src/JRS/EMU/121_series.pnml"
 #include "src/JRS/EMU/6000_series.pnml"
+#include "src/JRS/EMU/7200_series.pnml"
 
 //JR-Kyushu
 #include "src/JRK/EMU/303_series.pnml"
