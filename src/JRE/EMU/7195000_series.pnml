@@ -129,20 +129,20 @@ switch(FEAT_TRAINS, SELF, sw_7195000_attach_vehid, [vehicle_type_id == emu_71950
 item(FEAT_TRAINS, emu_7195000) {
     property {
         name:                         string(JRE_7195000);
-        introduction_date:            date(1987, 03, 23);
+        introduction_date:            date(1991, 10, 03);
         model_life:                   1;
-        vehicle_life:                 47;
-        reliability_decay:            23;
+        vehicle_life:                 39;
+        reliability_decay:            24;
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cost_factor:                  20;
         running_cost_factor:          50;
 
-        speed:                        100 km/h;
+        speed:                        110 km/h;
         track_type:                   STANDARD_OHLE;
-        power:                        440 kW;
-        weight:                       35 ton;
+        power:                        480 kW;
+        weight:                       36 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
