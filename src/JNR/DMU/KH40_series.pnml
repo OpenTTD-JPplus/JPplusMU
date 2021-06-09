@@ -67,7 +67,7 @@ switch(FEAT_TRAINS, SELF, sw_KH40_gfx_main, cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH40_subtypetext_main, cargo_subtype) {
-  0: string(LV_ORANGE_VERMILLION);
+  0: string(LV_ORANGE_CAPITAL);
 }
 
 /*---END OF SECTION---*/

@@ -4776,8 +4776,8 @@ switch(FEAT_TRAINS, SELF, sw_KH30_gfx_main, cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH30_subtypetext_main, cargo_subtype) {
-  1: string(LV_ORANGE_VERMILLION);  
-  0: string(LV_ORANGE_CREAM);
+  1: string(LV_ORANGE_CAPITAL);  
+  0: string(LV_STANDARD);
 }
 
 /*---END OF SECTION---*/
@@ -4909,7 +4909,7 @@ switch(FEAT_TRAINS, SELF, sw_KH40_gfx_main, cargo_subtype) {
 
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH40_subtypetext_main, cargo_subtype) {
-  0: string(LV_ORANGE_VERMILLION);
+  0: string(LV_ORANGE_CAPITAL);
 }
 
 /*---END OF SECTION---*/
