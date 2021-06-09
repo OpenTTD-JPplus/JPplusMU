@@ -18,6 +18,7 @@ item(FEAT_TRAINS, dmu_KHE120, 1511) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_KHE130, 1512) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_KHE131, 1513) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_kiha30, 1514) {} //kiha40    0x5DC
+item(FEAT_TRAINS, dmu_kiha80, 1515) {} //kiha80    0x5DC
 
 
 item(FEAT_TRAINS, emu_107, 2018) {} //107emu 0x7E2
