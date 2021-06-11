@@ -233,9 +233,6 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_mid_bft_flippedcheck, vehicle_is_flipp
   1 : sw_KH80_gfx_rev_mid_bft_livery;
   default : sw_KH80_gfx_revflip_mid_bft_livery;
 }
-switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha81_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
- default : sw_KH80_gfx_rev_mid_flippedcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha81_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_KH80_gfx_rev_mid_gr_flippedcheck;
  default : sw_KH80_gfx_rev_mid_flippedcheck;
@@ -261,9 +258,6 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha81_sw6, [STORE_TEMP
  0 : sw_KH80_gfx_rev_mid_gr_flippedcheck;
  1 : sw_KH80_gfx_rev_mid_gr_flippedcheck;
  2 : sw_KH80_gfx_rev_mid_bft_flippedcheck;
- default : sw_KH80_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha82_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  default : sw_KH80_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha82_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
@@ -297,7 +291,7 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha82_sw6, [STORE_TEMP
  default : sw_KH80_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha81, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_KH80_gfx_rev_pantograph_pos_kiha81_sw1;
+  0..1 : sw_KH80_gfx_rev_mid_flippedcheck;
   2 : sw_KH80_gfx_rev_pantograph_pos_kiha81_sw2;
   3..5 : sw_KH80_gfx_rev_pantograph_pos_kiha81_sw3;
   6 : sw_KH80_gfx_rev_pantograph_pos_kiha81_sw4;
@@ -305,7 +299,7 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha81, [STORE_TEMP(pos
   default : sw_KH80_gfx_rev_pantograph_pos_kiha81_sw6;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_pantograph_pos_kiha82, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_KH80_gfx_rev_pantograph_pos_kiha82_sw1;
+  0..1 : sw_KH80_gfx_rev_mid_flippedcheck;
   2 : sw_KH80_gfx_rev_pantograph_pos_kiha82_sw2;
   3..5 : sw_KH80_gfx_rev_pantograph_pos_kiha82_sw3;
   6 : sw_KH80_gfx_rev_pantograph_pos_kiha82_sw4;
@@ -316,18 +310,14 @@ switch(FEAT_TRAINS,SELF, sw_KH80_gfx_rev_pantograph_pos, [STORE_TEMP(position_in
 0 : sw_KH80_gfx_rev_pantograph_pos_kiha81;
 1 : sw_KH80_gfx_rev_pantograph_pos_kiha82;
 }
-switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
- 0 : sw_KH80_gfx_rev_back_flippedcheck;
- default : sw_KH80_gfx_rev_back_flippedcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_frontback_nomucars,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
  1 : sw_KH80_gfx_rev_front_flippedcheck;
- 0 : sw_KH80_gfx_rev_back_pantocheck;
+ 0 : sw_KH80_gfx_rev_back_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_frontback_aftermucars,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
- 1 : sw_KH80_gfx_rev_back_pantocheck;
+ 1 : sw_KH80_gfx_rev_back_flippedcheck;
  0 : sw_KH80_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_frontback_mucarcheck,
@@ -341,12 +331,12 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_frontback_sameid,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
  1515 : sw_KH80_gfx_rev_frontback_mucarcheck;
  1000 : sw_KH80_gfx_rev_front_flippedcheck;
- default : sw_KH80_gfx_rev_back_pantocheck;
+ default : sw_KH80_gfx_rev_back_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_frontback,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
  1515 : sw_KH80_gfx_rev_frontback_sameid;
- 1000 : sw_KH80_gfx_rev_back_pantocheck;
+ 1000 : sw_KH80_gfx_rev_back_flippedcheck;
  default : sw_KH80_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
@@ -365,9 +355,6 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_spriteset_KH80_mid_gr_kiha82, [build_year>
 }
 /*---END OF SECTION---*/
 /*---GFX: Pantograph Positions---*/
-switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha81_sw1, position_in_vehid_chain){
- default : spriteset_KH80_mid_kiha81;
-}
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha81_sw2, position_in_vehid_chain){
  0 : sw_KH80_gfx_spriteset_KH80_mid_gr_kiha81;
  default : spriteset_KH80_mid_kiha81;
@@ -394,9 +381,6 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha81_sw6, position_in_veh
  1 : sw_KH80_gfx_spriteset_KH80_mid_gr_kiha81;
  2 : spriteset_KH80_mid_bft_kiha81;
  default : spriteset_KH80_mid_kiha81;
-}
-switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha82_sw1, position_in_vehid_chain){
- default : spriteset_KH80_mid_kiha82;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha82_sw2, position_in_vehid_chain){
  0 : sw_KH80_gfx_spriteset_KH80_mid_gr_kiha82;
@@ -429,7 +413,7 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha82_sw6, position_in_veh
  default : spriteset_KH80_mid_kiha82;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha81, num_vehs_in_vehid_chain){
-  0..1 : sw_KH80_gfx_pantograph_pos_kiha81_sw1;
+  0..1 : spriteset_KH80_mid_kiha81;
   2 : sw_KH80_gfx_pantograph_pos_kiha81_sw2;
   3..5 : sw_KH80_gfx_pantograph_pos_kiha81_sw3;
   6 : sw_KH80_gfx_pantograph_pos_kiha81_sw4;
@@ -437,7 +421,7 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha81, num_vehs_in_vehid_c
   default : sw_KH80_gfx_pantograph_pos_kiha81_sw6;
 }
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha82, num_vehs_in_vehid_chain){
-  0..1 : sw_KH80_gfx_pantograph_pos_kiha82_sw1;
+  0..1 : spriteset_KH80_mid_kiha82;
   2 : sw_KH80_gfx_pantograph_pos_kiha82_sw2;
   3..5 : sw_KH80_gfx_pantograph_pos_kiha82_sw3;
   6 : sw_KH80_gfx_pantograph_pos_kiha82_sw4;
@@ -446,25 +430,17 @@ switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantograph_pos_kiha82, num_vehs_in_vehid_c
 }
 /*---END OF SECTION---*/
 /*---GFX: Front/Back Cab Car Switches---*/
-switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantocheck_kiha81, position_in_vehid_chain){
- 0: spriteset_KH80_back_kiha81;
-default: spriteset_KH80_back_kiha81;
-}
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_frontback_flipcheck_kiha81, vehicle_is_flipped){
  0: spriteset_KH80_front_kiha81;
- default: sw_KH80_gfx_pantocheck_kiha81;
+ default: spriteset_KH80_back_kiha81;
 }
 switch(FEAT_TRAINS, PARENT, sw_KH80_gfx_frontback_kiha81, vehicle_is_reversed){
  0: sw_KH80_gfx_frontback_flipcheck_kiha81;
  default: sw_KH80_gfx_rev_idcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_KH80_gfx_pantocheck_kiha82, position_in_vehid_chain){
- 0: spriteset_KH80_back_kiha82;
-default: spriteset_KH80_back_kiha82;
-}
 switch(FEAT_TRAINS, SELF, sw_KH80_gfx_frontback_flipcheck_kiha82, vehicle_is_flipped){
  0: spriteset_KH80_front_kiha82;
- default: sw_KH80_gfx_pantocheck_kiha82;
+ default: spriteset_KH80_back_kiha82;
 }
 switch(FEAT_TRAINS, PARENT, sw_KH80_gfx_frontback_kiha82, vehicle_is_reversed){
  0: sw_KH80_gfx_frontback_flipcheck_kiha82;
