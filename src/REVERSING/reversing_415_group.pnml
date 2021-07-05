@@ -426,8 +426,8 @@ alternative_sprites(spriteset_415_rev_mid_panto_jrw_regional_1,    ZOOM_LEVEL_NO
 alternative_sprites(spriteset_415_rev_back_panto_jrw_regional_1,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/800/415-5-2-P.png")      {tmpl_std_rev(0, 1)}
 
 alternative_sprites(spriteset_415_revflip_front_jrw_regional_1,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/800/415-5-1.png")      {tmpl_std(0, 26)}
-alternative_sprites(spriteset_415_revflip_back_jrw_regional_1,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/800/415-5-3.png")      {tmpl_std(0, 1)}
-alternative_sprites(spriteset_415_revflip_mid_jrw_regional_1,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/800/415-5-2.png")      {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_415_revflip_back_jrw_regional_1,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/800/415-5-2.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_415_revflip_mid_jrw_regional_1,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/800/415-5-3.png")      {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_415_revflip_mid_panto_jrw_regional_1,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/800/415-5-4.png")      {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_415_revflip_back_panto_jrw_regional_1,    ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu415/800/415-5-2-P.png")      {tmpl_std(0, 1)}
 
