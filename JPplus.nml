@@ -20887,13 +20887,13 @@ switch(FEAT_TRAINS, SELF, sw_E217_gfx_rev_flippedcheck_cab_back_panto, vehicle_i
 }
 
 //Pantograph Position Testing
-switch(FEAT_TRAINS, SELF, sw_E217_gfx_rev_pantograph_pos_default_dd, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){ //look at opposte position_in_vehID_chain
+switch(FEAT_TRAINS, SELF, sw_E217_gfx_rev_pantograph_pos_default_dd, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%11]){ //look at opposte position_in_vehID_chain
   1: sw_E217_gfx_rev_flippedcheck_pantograph_single;
   2..3: sw_E217_gfx_rev_flippedcheck_ddcar;
   7: sw_E217_gfx_rev_flippedcheck_pantograph_single;
   default: sw_E217_gfx_rev_flippedcheck_mucar;
 }
-switch(FEAT_TRAINS, SELF, sw_E217_gfx_rev_pantograph_pos_default, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){ //look at opposte position_in_vehID_chain
+switch(FEAT_TRAINS, SELF, sw_E217_gfx_rev_pantograph_pos_default, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%11]){ //look at opposte position_in_vehID_chain
   1: sw_E217_gfx_rev_flippedcheck_pantograph_single;
   7: sw_E217_gfx_rev_flippedcheck_pantograph_single;
   default: sw_E217_gfx_rev_flippedcheck_mucar;
