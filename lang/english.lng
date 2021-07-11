@@ -104,6 +104,7 @@ JRE_E231:E231 Series {WHITE}(EMU){BLACK}
 JRE_E233:E233 Series {WHITE}(EMU){BLACK}
 JRE_E235:E235 Series {WHITE}(EMU){BLACK}
 JRE_E331:E331 Series {WHITE}(EMU){BLACK}
+JRE_651:651 Series {WHITE}(EMU){BLACK}
 JRE_719:719 Series {WHITE}(EMU){BLACK}
 JRE_7195000:719-5000 Series {WHITE}(EMU){BLACK}
 
@@ -238,6 +239,12 @@ LV_AKITA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Akita Livery
 LV_BANETSUAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Banetsuai Livery 
 
 LV_ORANGE_CAPITAL:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Capital Region Livery
+
+LV_HITACHI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Super Hitachi Livery
+
+LV_SWALLOW: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Swallow Livery
+
+
 
 # Legacy - No need to edit/translate
 
@@ -714,3 +721,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 207-900 Series
     JNR_207900_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East
+
+# 651 Series
+    JRE_651_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
