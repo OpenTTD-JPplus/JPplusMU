@@ -68,6 +68,7 @@ JNR_181 :151/161/181 Series {WHITE}(EMU){BLACK}
 
 JNR_201  :201 Series {WHITE}(EMU){BLACK}
 JNR_205  :205 Series {WHITE}(EMU){BLACK}
+JNR_207900  :207-900 Series {WHITE}(EMU){BLACK}
 JNR_211  :211 Series {WHITE}(EMU){BLACK}
 JNR_21156:211-5000/6000 Series {WHITE}(EMU){BLACK}
 JNR_213  :213 Series {WHITE}(EMU){BLACK}
@@ -710,3 +711,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 415 Series
     JNR_415_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West {RED}Kyushu{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+
+# 207-900 Series
+    JNR_207900_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East
