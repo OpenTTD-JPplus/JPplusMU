@@ -91,6 +91,11 @@ if (param_japansetdisable == 1) {
 			climates_available: NO_CLIMATE;
 		}
 	}
+	item(FEAT_TRAINS, japanset_kh80, 0x48) {
+		property {
+			climates_available: NO_CLIMATE;
+		}
+	}
 }
 
 
