@@ -8,6 +8,6 @@ JP+Set is a NewGRF for [OpenTTD](https://www.openttd.org/), bringing new and ref
 
 Coding: Tintinfan
 
-Graphics: Tintinfan, Azusa, Wicket-303, RIPper_KR
+Graphics: Tintinfan, Azusa, Wicket-303, RIPper_KR, ChuoSpecialRapid201
 
 Thanks to: Romazoon, Doorslammer, Erato, Gwyd & The JapanSet Team
