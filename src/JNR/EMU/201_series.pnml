@@ -26,19 +26,19 @@ spriteset(spriteset_201_revflip_back_panto_orange_std,     "gfx/OTHER/mucar.png"
 alternative_sprites(spriteset_201_front_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-PROTOTYPE.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-PROTOTYPE.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_mid_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_mid_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_back_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1P-PROTOTYPE.png")      {tmpl_std_rev(0, 25)}
 
 alternative_sprites(spriteset_201_rev_front_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-PROTOTYPE.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-PROTOTYPE.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_mid_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_rev_mid_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1P-PROTOTYPE.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_front_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-PROTOTYPE.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-PROTOTYPE.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_mid_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-2.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_201_revflip_mid_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_panto_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1P-PROTOTYPE.png")      {tmpl_std(0, 0)}
 
 //orange_std OVERRIDE Spriteset
@@ -90,7 +90,7 @@ alternative_sprites(spriteset_201_mid_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_
 alternative_sprites(spriteset_201_front_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-AC.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1P-AC.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_back_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-AC.png")      {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_201_mid_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3-AC.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3-AC.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_rev_back_panto_ns_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1P-NOSKIRT.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_ns_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-NOSKIRT.png")      {tmpl_std_rev(0, 0)}
@@ -104,7 +104,7 @@ alternative_sprites(spriteset_201_rev_mid_ac_orange_std,     ZOOM_LEVEL_NORMAL, 
 alternative_sprites(spriteset_201_rev_front_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-AC.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1P-AC.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-AC.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_201_rev_mid_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3-AC.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3-AC.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_back_panto_ns_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1P-NOSKIRT.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_ns_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-NOSKIRT.png")      {tmpl_std(0, 0)}
@@ -118,7 +118,7 @@ alternative_sprites(spriteset_201_revflip_mid_ac_orange_std,     ZOOM_LEVEL_NORM
 alternative_sprites(spriteset_201_revflip_front_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-AC.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1P-AC.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-1-AC.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_revflip_mid_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3-AC.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_ac_orange_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_STANDARD/201-3-AC.png")      {tmpl_std(0, 0)}
 
 //orange_chou Spriteset
 spriteset(spriteset_201_front_orange_chou,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
@@ -142,19 +142,19 @@ spriteset(spriteset_201_revflip_back_panto_orange_chou,     "gfx/OTHER/mucar.png
 alternative_sprites(spriteset_201_front_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-PROTOTYPE.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-PROTOTYPE.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_mid_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_mid_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_back_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-PROTOTYPE.png")      {tmpl_std_rev(0, 25)}
 
 alternative_sprites(spriteset_201_rev_front_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-PROTOTYPE.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-PROTOTYPE.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_mid_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_rev_mid_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-PROTOTYPE.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_front_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-PROTOTYPE.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-PROTOTYPE.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_mid_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-2.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_201_revflip_mid_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_panto_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-PROTOTYPE.png")      {tmpl_std(0, 0)}
 
 //orange_chou OVERRIDE Spriteset
@@ -193,7 +193,7 @@ alternative_sprites(spriteset_201_back_sk_orange_chou,     ZOOM_LEVEL_NORMAL, BI
 alternative_sprites(spriteset_201_front_sk_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-SKIRT.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_panto_sk_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-SKIRT.png")      {tmpl_std_rev(0, 25)}
 
-alternative_sprites(spriteset_201_mid_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3-SINGLEARM.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3-SINGLEARM.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_back_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-SKIRT.png")      {tmpl_std_rev(0, 25)}
 
 alternative_sprites(spriteset_201_rev_back_panto_ns_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-NOSKIRT.png")      {tmpl_std_rev(0, 0)}
@@ -204,7 +204,7 @@ alternative_sprites(spriteset_201_rev_back_sk_orange_chou,     ZOOM_LEVEL_NORMAL
 alternative_sprites(spriteset_201_rev_front_sk_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-SKIRT.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_panto_sk_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-SKIRT.png")      {tmpl_std_rev(0, 0)}
 
-alternative_sprites(spriteset_201_rev_mid_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3-SINGLEARM.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3-SINGLEARM.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-SKIRT.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_back_panto_ns_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-NOSKIRT.png")      {tmpl_std(0, 0)}
@@ -215,7 +215,7 @@ alternative_sprites(spriteset_201_revflip_back_sk_orange_chou,     ZOOM_LEVEL_NO
 alternative_sprites(spriteset_201_revflip_front_sk_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1-SKIRT.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_panto_sk_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-SKIRT.png")      {tmpl_std(0, 0)}
 
-alternative_sprites(spriteset_201_revflip_mid_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3-SINGLEARM.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-3-SINGLEARM.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_panto_sp_orange_chou,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/ORANGE_CHOU/201-1P-SKIRT.png")      {tmpl_std(0, 0)}
 
 //yellow_chousobu Spriteset
@@ -240,19 +240,19 @@ spriteset(spriteset_201_revflip_back_panto_yellow_chousobu,     "gfx/OTHER/mucar
 alternative_sprites(spriteset_201_front_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1-NOSKIRT.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1-NOSKIRT.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_mid_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_mid_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_back_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1P-NOSKIRT.png")      {tmpl_std_rev(0, 25)}
 
 alternative_sprites(spriteset_201_rev_front_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1-NOSKIRT.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1-NOSKIRT.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_mid_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_rev_mid_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1P-NOSKIRT.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_front_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1-NOSKIRT.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1-NOSKIRT.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_mid_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-2.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_201_revflip_mid_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-3.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-3.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_panto_yellow_chousobu,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/YELLOW_CHOUSOBU/201-1P-NOSKIRT.png")      {tmpl_std(0, 0)}
 
 //yellow_chousobu OVERRIDE Spriteset
@@ -296,19 +296,19 @@ spriteset(spriteset_201_revflip_back_panto_blue_keiyo,     "gfx/OTHER/mucar.png"
 alternative_sprites(spriteset_201_front_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_mid_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_mid_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_back_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1P.png")      {tmpl_std_rev(0, 25)}
 
 alternative_sprites(spriteset_201_rev_front_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_mid_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_rev_mid_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1P.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_front_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_mid_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-2.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_201_revflip_mid_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_panto_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1P.png")      {tmpl_std(0, 0)}
 
 //blue_keiyo OVERRIDE Spriteset
@@ -321,13 +321,13 @@ spriteset(spriteset_201_rev_back_panto_sp_blue_keiyo,     "gfx/OTHER/mucar.png")
 spriteset(spriteset_201_revflip_mid_panto_sp_blue_keiyo,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
 spriteset(spriteset_201_revflip_back_panto_sp_blue_keiyo,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
 
-alternative_sprites(spriteset_201_mid_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3-SINGLEARM.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3-SINGLEARM.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_back_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1P-SINGLEARM.png")      {tmpl_std_rev(0, 25)}
 
-alternative_sprites(spriteset_201_rev_mid_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3-SINGLEARM.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3-SINGLEARM.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1P-SINGLEARM.png")      {tmpl_std_rev(0, 0)}
 
-alternative_sprites(spriteset_201_revflip_mid_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3-SINGLEARM.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-3-SINGLEARM.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_panto_sp_blue_keiyo,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIYO/201-1P-SINGLEARM.png")      {tmpl_std(0, 0)}
 
 //blue_keihanshin Spriteset
@@ -352,19 +352,19 @@ spriteset(spriteset_201_revflip_back_panto_blue_keihanshin,     "gfx/OTHER/mucar
 alternative_sprites(spriteset_201_front_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-NOSKIRT.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-NOSKIRT.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_mid_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_mid_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_back_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1P-NOSKIRT.png")      {tmpl_std_rev(0, 25)}
 
 alternative_sprites(spriteset_201_rev_front_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-NOSKIRT.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-NOSKIRT.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_mid_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_rev_mid_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1P-NOSKIRT.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_front_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-NOSKIRT.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-NOSKIRT.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_mid_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-2.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_201_revflip_mid_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_panto_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1P-NOSKIRT.png")      {tmpl_std(0, 0)}
 
 //blue_keihanshin OVERRIDE Spriteset
@@ -403,7 +403,7 @@ alternative_sprites(spriteset_201_mid_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL,
 alternative_sprites(spriteset_201_front_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-AC.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1P-AC.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_back_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-AC.png")      {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_201_mid_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3-AC.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3-AC.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_rev_back_sk_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-SKIRT.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_front_sk_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-SKIRT.png")      {tmpl_std_rev(0, 25)}
@@ -413,7 +413,7 @@ alternative_sprites(spriteset_201_rev_mid_ac_blue_keihanshin,     ZOOM_LEVEL_NOR
 alternative_sprites(spriteset_201_rev_front_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-AC.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1P-AC.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-AC.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_201_rev_mid_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3-AC.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3-AC.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_back_sk_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-SKIRT.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_front_sk_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-SKIRT.png")      {tmpl_std(0, 25)}
@@ -423,7 +423,7 @@ alternative_sprites(spriteset_201_revflip_mid_ac_blue_keihanshin,     ZOOM_LEVEL
 alternative_sprites(spriteset_201_revflip_front_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-AC.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1P-AC.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-1-AC.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_revflip_mid_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3-AC.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_ac_blue_keihanshin,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/BLUE_KEIHANSHIN/201-3-AC.png")      {tmpl_std(0, 0)}
 
 //green_jrw Spriteset
 spriteset(spriteset_201_front_green_jrw,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
@@ -447,19 +447,19 @@ spriteset(spriteset_201_revflip_back_panto_green_jrw,     "gfx/OTHER/mucar.png")
 alternative_sprites(spriteset_201_front_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_back_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_mid_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_mid_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_mid_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_back_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1P.png")      {tmpl_std_rev(0, 25)}
 
 alternative_sprites(spriteset_201_rev_front_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1.png")      {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_201_rev_back_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_mid_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_201_rev_mid_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-3.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_201_rev_mid_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-3.png")      {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_201_rev_back_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1P.png")      {tmpl_std_rev(0, 0)}
 
 alternative_sprites(spriteset_201_revflip_front_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1.png")      {tmpl_std(0, 25)}
 alternative_sprites(spriteset_201_revflip_back_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_mid_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-2.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_201_revflip_mid_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-3.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_201_revflip_mid_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-3.png")      {tmpl_std(0, 0)}
 alternative_sprites(spriteset_201_revflip_back_panto_green_jrw,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu201/GREEN_JRW/201-1P.png")      {tmpl_std(0, 0)}
 
 /*---END OF SECTION---*/
