@@ -47,24 +47,25 @@ MUCAR   :JP+ MU 中間車・付属車 {WHITE}(MU){BLACK}
 MUCAB   :JP+ MU 先頭車・制御車 {WHITE}(CC){BLACK}
 MUCARDD :JP+ MU 特別車 {WHITE}(SC){BLACK}
 
-JGR_6340:デハ63400形 電車{WHITE}(EMU){BLACK}
+JGR_6340 :デハ63400形 電車{WHITE}(EMU){BLACK}
 
 JNR_101 :101/103系 電車{WHITE}(EMU){BLACK}
 JNR_103 :101/103系 電車{WHITE}(EMU){BLACK}
 JNR_201 :201系 電車{WHITE}(EMU){BLACK}
 JNR_205 :205系 電車{WHITE}(EMU){BLACK}
+JNR_207900 :207系 900番台 電車{WHITE}(EMU){BLACK}
 
 JNR_70 :70系 電車{WHITE}(EMU){BLACK}
 JNR_113 :111/113系 電車{WHITE}(EMU){BLACK}
 JNR_115 :115系 電車{WHITE}(EMU){BLACK}
 JNR_1153000 :115系 3000/3500番台 電車{WHITE}(EMU){BLACK}
-JNR_211  :211系 電車{WHITE}(EMU){BLACK}
-JNR_213  :213系 電車{WHITE}(EMU){BLACK}
+JNR_211 :211系 電車{WHITE}(EMU){BLACK}
+JNR_213 :213系 電車{WHITE}(EMU){BLACK}
 
 JNR_401421 :401/421系 電車{WHITE}(EMU){BLACK}
 JNR_403423 :403/423系 電車{WHITE}(EMU){BLACK}
 JNR_415 :415系 電車{WHITE}(EMU){BLACK}
-JNR_4151500:415系 1500番台 電車{WHITE}(EMU){BLACK}
+JNR_4151500 :415系 1500番台 電車{WHITE}(EMU){BLACK}
 
 JNR_711 :711系 電車{WHITE}(EMU){BLACK}
 
@@ -85,61 +86,65 @@ JNR_kiha54 :キハ54系 気動車{WHITE}(DMU){BLACK}
 
 JNR_kiha58 :キハ56/57/58系 気動車{WHITE}(DMU){BLACK}
 
-JRH_721:721系 電車{WHITE}(EMU){BLACK}
-JRH_731:731系 電車{WHITE}(EMU){BLACK}
-JRH_733:733系 電車{WHITE}(EMU){BLACK}
-JRH_735:735系 電車{WHITE}(EMU){BLACK}
+JNR_kiha80 :キハ80系 気動車{WHITE}(DMU){BLACK}
 
-JRH_785:785系 電車{WHITE}(EMU){BLACK}
-JRH_789:789系 電車{WHITE}(EMU){BLACK}
+JRH_721 :721系 電車{WHITE}(EMU){BLACK}
+JRH_731 :731系 電車{WHITE}(EMU){BLACK}
+JRH_733 :733系 電車{WHITE}(EMU){BLACK}
+JRH_735 :735系 電車{WHITE}(EMU){BLACK}
 
-JRH_kiha141:キハ141系 気動車{WHITE}(DMU){BLACK}
-JRH_kiha150:キハ150系 気動車{WHITE}(DMU){BLACK}
-JRH_201:キハ201系 気動車{WHITE}(DMU){BLACK}
+JRH_785 :785系 電車{WHITE}(EMU){BLACK}
+JRH_789 :789系 電車{WHITE}(EMU){BLACK}
 
-JRH_261:キハ261系 気動車{WHITE}(DMU){BLACK}
-JRH_281:キハ281系 気動車{WHITE}(DMU){BLACK}
+JRH_kiha141 :キハ141系 気動車{WHITE}(DMU){BLACK}
+JRH_kiha150 :キハ150系 気動車{WHITE}(DMU){BLACK}
+JRH_201 :キハ201系 気動車{WHITE}(DMU){BLACK}
 
-JRE_209:209系 電車{WHITE}(EMU){BLACK}
-JRE_E331:E331系 電車{WHITE}(EMU){BLACK}
+JRH_261 :キハ261系 気動車{WHITE}(DMU){BLACK}
+JRH_281 :キハ281系 気動車{WHITE}(DMU){BLACK}
 
-JRE_E217:E217系 電車{WHITE}(EMU){BLACK}
+JRE_209 :209系 電車{WHITE}(EMU){BLACK}
+JRE_E331 :E331系 電車{WHITE}(EMU){BLACK}
 
-JRE_E231:E231系 電車{WHITE}(EMU){BLACK}
-JRE_E233:E233系 電車{WHITE}(EMU){BLACK}
-JRE_E235:E235系 電車{WHITE}(EMU){BLACK}
+JRE_E217 :E217系 電車{WHITE}(EMU){BLACK}
 
-JRE_107:107系 電車{WHITE}(EMU){BLACK}
-JRE_E127:E127系 電車{WHITE}(EMU){BLACK}
+JRE_E231 :E231系 電車{WHITE}(EMU){BLACK}
+JRE_E233 :E233系 電車{WHITE}(EMU){BLACK}
+JRE_E235 :E235系 電車{WHITE}(EMU){BLACK}
 
-JRE_719:719系 電車{WHITE}(EMU){BLACK}
-JRE_7195000:719系 5000番台 電車{WHITE}(EMU){BLACK}
+JRE_107 :107系 電車{WHITE}(EMU){BLACK}
+JRE_E127 :E127系 電車{WHITE}(EMU){BLACK}
 
-JRE_651:651系 電車{WHITE}(EMU){BLACK}
+JRE_719 :719系 電車{WHITE}(EMU){BLACK}
+JRE_7195000 :719系 5000番台 電車{WHITE}(EMU){BLACK}
 
-JRE_KH100:キハ100/101系 気動車{WHITE}(DMU){BLACK}
-JRE_KH110:キハ110系 気動車{WHITE}(DMU){BLACK}
-JRE_KH111:キハ111/112系 気動車{WHITE}(DMU){BLACK}
-JRE_KHE120:キハE120系 気動車{WHITE}(DMU){BLACK}
-JRE_KHE130:キハE130系 気動車{WHITE}(DMU){BLACK}
-JRE_KHE131:キハE131/E132系 気動車{WHITE}(DMU){BLACK}
+JRE_651 :651系 電車{WHITE}(EMU){BLACK}
 
-JNR_21156:211系 5000/6000番台 電車{WHITE}(EMU){BLACK}
-JRC_311:311系 電車{WHITE}(EMU){BLACK}
-JRC_313:313系 電車{WHITE}(EMU){BLACK}
+JRE_KH100 :キハ100/101系 気動車{WHITE}(DMU){BLACK}
+JRE_KH110 :キハ110系 気動車{WHITE}(DMU){BLACK}
+JRE_KH111 :キハ111/112系 気動車{WHITE}(DMU){BLACK}
+JRE_KHE120 :キハE120系 気動車{WHITE}(DMU){BLACK}
+JRE_KHE130 :キハE130系 気動車{WHITE}(DMU){BLACK}
+JRE_KHE131 :キハE131/E132系 気動車{WHITE}(DMU){BLACK}
 
-JRW_207:207系 電車{WHITE}(EMU){BLACK}
+JNR_21156 :211系 5000/6000番台 電車{WHITE}(EMU){BLACK}
+JRC_311 :311系 電車{WHITE}(EMU){BLACK}
+JRC_313 :313系 電車{WHITE}(EMU){BLACK}
 
-JRW_221:221系 電車{WHITE}(EMU){BLACK}
-JRW_223_0:223系 0/2500/5500/6000番台 電車{WHITE}(EMU){BLACK}
-JRW_223_1000:223系 1000/2000/5000番台 電車{WHITE}(EMU){BLACK}
+JRW_207 :207系 電車{WHITE}(EMU){BLACK}
 
-JRS_6000:6000系 電車{WHITE}(EMU){BLACK}
+JRW_221 :221系 電車{WHITE}(EMU){BLACK}
+JRW_223_0 :223系 0/2500/5500/6000番台 電車{WHITE}(EMU){BLACK}
+JRW_223_1000 :223系 1000/2000/5000番台 電車{WHITE}(EMU){BLACK}
 
-JRK_303:303系 電車{WHITE}(EMU){BLACK}
+JRS_121 :121系 電車{WHITE}(EMU){BLACK}
+JRS_6000 :6000系 電車{WHITE}(EMU){BLACK}
+JRS_7200 :7200系 電車{WHITE}(EMU){BLACK}
 
-JRK_811:811系 電車{WHITE}(EMU){BLACK}
-JRK_813:813系 電車{WHITE}(EMU){BLACK}
+JRK_303 :303系 電車{WHITE}(EMU){BLACK}
+
+JRK_811 :811系 電車{WHITE}(EMU){BLACK}
+JRK_813 :813系 電車{WHITE}(EMU){BLACK}
 
 
 
@@ -403,205 +408,212 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 
 # Nade 6100 Series
-    JGR_6340_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}
+    JGR_6340_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}
 
 
 # 101 Series
-    JNR_101_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+    JNR_101_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # 103 Series
-    JNR_103_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+    JNR_103_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # 201 Series
-    JNR_201_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+    JNR_201_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # 205 Series
-    JNR_205_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本 {BLUE}西日本{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+    JNR_205_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
+
+# 207-900 Series
+    JNR_207900_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本{}
 
 
 # 70 Series
-    JNR_70_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JNR_70_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更: {GOLD}横須賀色 / 新潟色 / 阪和色 {GREEN}(改造可能){}
 
 # 113 Series
-    JNR_113_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JNR_113_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # 115 Series
-    JNR_115_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JNR_115_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # 211 Series
-    JNR_211_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本 {ORANGE}東海{}{BLACK}Liveries: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}
+    JNR_211_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本 {ORANGE}東海{}{BLACK}仕様変更: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}
 
 # 213 Series
-    JNR_213_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {ORANGE}東海 {BLUE}西日本{}{BLACK}Liveries: {BLUE}Okayama, {ORANGE}Tokai (1989+){}
+    JNR_213_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更: {BLUE}Okayama, {ORANGE}Tokai (1989+){}
 
 
 # 415 Series
-    JNR_415_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本 {RED}九州{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable)
+    JNR_415_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本 {RED}九州{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 
 # 711 Series
-    JNR_711_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{}{BLACK}Liveries: {GOLD}Original, Stripe {GREEN}(refittable){}
+    JNR_711_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{}{BLACK}仕様変更: {GOLD}Original, Stripe {GREEN}(refittable){}
 
 
 # 80 Series
-    JNR_80_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 (普通/快速/急行){}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JNR_80_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 (普通/快速/急行){}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # 165 Series
-    JNR_165_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 (普通/快速/急行){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JNR_165_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 (普通/快速/急行){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 
 # 181 Series
-    JNR_181_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JNR_181_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 
 # 485 Series
-    JNR_485_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {BLUE}西日本　{RED}九州{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_485_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {BLUE}西日本　{RED}九州{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 
 # 781 Series
-  JRH_781emu_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}国鉄 /　JR {DKGREEN}北海道{}{BLACK}Liveries: {GOLD}JNR & JR Hokkaido {GREEN}(refittable){}
+  JRH_781emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}国鉄 /　JR {DKGREEN}北海道{}{BLACK}仕様変更: {GOLD}JNR & JR Hokkaido {GREEN}(refittable){}
 
 
 # KiHa 30
-    JNR_kiha30_DESC:{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}塗装変更(改造): {GOLD}多数 {GREEN}(改造可能){}
+    JNR_kiha30_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # KiHa 35
-    JNR_kiha35_DESC:{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}塗装変更(改造): {GOLD}多数 {GREEN}(改造可能){}
+    JNR_kiha35_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 
 # KiHa 40
-    JNR_kiha40_DESC:{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {DKGREEN}北海道 {RED}九州 {LTBLUE}四国{}{BLACK}塗装変更(改造): {GOLD}多数 {GREEN}(改造可能){}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
+    JNR_kiha40_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {DKGREEN}北海道 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
 
 # KiHa 48
-    JNR_kiha48_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
+    JNR_kiha48_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
 
 # KiHa 54
-    JNR_kiha54_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {WHITE}(-500) {LTBLUE}四国{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_kiha54_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {WHITE}(-500) {LTBLUE}四国{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 
 # KiHa 56/57/58
-    JNR_kiha58_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 (普通/快速/急行){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{WHITE} (56) {GREEN}東日本{WHITE} (58) {ORANGE}東海{WHITE} (58) {BLUE}西日本{WHITE} (58) {LTBLUE}四国{WHITE} (57/58) {RED}九州{WHITE} (58){}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
+    JNR_kiha58_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 (普通/快速/急行){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{WHITE} (56) {GREEN}東日本{WHITE} (58) {ORANGE}東海{WHITE} (58) {BLUE}西日本{WHITE} (58) {LTBLUE}四国{WHITE} (57/58) {RED}九州{WHITE} (58){}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
+
+
+# KiHa 80 Series
+    JNR_kiha80_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {ORANGE}東海{}{BLACK}仕様変更: {GOLD}キハ81形　/ キハ82形 {GREEN}(改造可能){}
 
 
 # 721 Series
-  JRH_721emu_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
+  JRH_721emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
 
 # 731 Series
-  JRH_731emu_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with KiHa 201 DMU OR 721-735 series EMUs.{}
+  JRH_731emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with KiHa 201 DMU OR 721-735 series EMUs.{}
 
 # 733 Series
-  JRH_733emu_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}Liveries: {GOLD}Original, Hakodate Liner {GREEN}(refittable){}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+  JRH_733emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更: {GOLD}Original, Hakodate Liner {GREEN}(refittable){}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
 
 # 735 Series
-  JRH_735emu_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+  JRH_735emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
 
 
 # 785 Series
-  JRH_785emu_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
+  JRH_785emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
 
 # 789 Series
-  JRH_789emu_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}Liveries: {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}{}
+  JRH_789emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更: {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}{}
 
 
 # KiHa 141
-  JRH_kiha141_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
+  JRH_kiha141_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
 
 # KiHa 150
-  JRH_kiha150_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}Liveries: {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.
+  JRH_kiha150_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更: {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.
 
 # KiHa 201
-  JRH_kiha201_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
+  JRH_kiha201_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
 
 
 # 209 Series
-    JRE_209_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRE_209_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # E331 Series
-    JRE_E331_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
+    JRE_E331_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 
 # E217 Series
-    JRE_E217_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}Liveries: {GREEN}Yokosuka, Shonan (2006+){}
+    JRE_E217_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更: {GREEN}Yokosuka, Shonan (2006+){}
 
 
 # E231 Series
-    JRE_E231_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+    JRE_E231_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # E233 Series
-    JRE_E233_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}Liveries: {GREEN}Chou, Keihin-Toukohu (2007+), Shonan (2007+), Joban Local (2009+),  Keiyo (2010+),  Saikyo (2013+), Yokohama (2014+), Nanbu (2014+){GREEN}{}
+    JRE_E233_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更: {GREEN}Chou, Keihin-Toukohu (2007+), Shonan (2007+), Joban Local (2009+),  Keiyo (2010+),  Saikyo (2013+), Yokohama (2014+), Nanbu (2014+){GREEN}{}
 
 # E235 Series
-    JRE_E235_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}Liveries: {GREEN}Yamanote, Yokosuka (2020+){GREEN}{}
+    JRE_E235_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更: {GREEN}Yamanote, Yokosuka (2020+){GREEN}{}
 
 
 # 107 Series
-    JRE_107_DESC :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRE_107_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # E127 Series
-    JRE_E127_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}Liveries: {GREEN}JR East Niigata, Matsumoto{}
+    JRE_E127_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更: {GREEN}JR East Niigata, Matsumoto{}
 
 
 # 719 Series
-    JRE_719_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}Liveries: {GREEN}Sendai, Banetsukoshi (2007+), Akita (2017+){}
+    JRE_719_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更: {GREEN}Sendai, Banetsukoshi (2007+), Akita (2017+){}
 
 # 719-5000 Series
-    JRE_7195000_DESC  :{BLACK}使用線路:{GOLD} スタンダード / 標準軌 (4ft8.5in/​1,435mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}Liveries: Yamagata{}
+    JRE_7195000_DESC  :{BLACK}使用線路:{GOLD} Standard / 標準軌 (4ft8.5in/​1,435mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更: {GOLD}Yamagata{}
 
 
 # 651 Series
-    JRE_651_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
+    JRE_651_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 
 # KiHa 110
-  JRE_KH110_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行/特急){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+  JRE_KH110_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行/特急){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # KiHa 111/112
-  JRE_KH111_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行/特急){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+  JRE_KH111_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行/特急){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # KiHa E120
-    JRE_KHE120_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}Liveries: {GREEN}JR East Orange, Green{}
+    JRE_KHE120_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更: {GREEN}JR East Orange, Green{}
 
 # KiHa E130
-    JRE_KHE130_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}Liveries: {GREEN}JR East Suigun, Kurui, Hachinohe{}
+    JRE_KHE130_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更: {GREEN}JR East Suigun, Kurui, Hachinohe{}
 
 # KiHa E130
-    JRE_KHE131_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}Liveries: {GREEN}JR East Suigun, Hachinohe{}
+    JRE_KHE131_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更: {GREEN}JR East Suigun, Hachinohe{}
 
 
 # 211-5000/6000 Series
-    JNR_21156_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
+    JNR_21156_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
 # 311 Series
-    JRC_311_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
+    JRC_311_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
 # 313 Series
-    JRC_313_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
+    JRC_313_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
 
 # 207 Series
-    JRW_207_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}Liveries: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange
+    JRW_207_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange
 
 
 # 221 Series
-    JRW_221_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}
+    JRW_221_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}
 
 # 223_0 Series
-    JRW_223_0_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JRW_223_0_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # 223_1000 Series
-    JRW_223_1000_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JRW_223_1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 
 # 6000 Series
-    JRS_6000_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国
+    JRS_6000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国
 
 
 # 303 Series
-    JRK_303_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}
+    JRK_303_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}
 
 
 # 811 Series
-    JRK_811_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JRK_811_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
 
 # 813 Series
-    JRK_813_DESC  :{BLACK}使用線路:{GOLD} ナロー / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable)
+    JRK_813_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更: {GOLD}多数あり {GREEN}(改造可能){}
