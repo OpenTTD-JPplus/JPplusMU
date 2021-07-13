@@ -3,80 +3,135 @@ sort(FEAT_TRAINS, [
 /* **EMU** */
 
 /*JGR*/
+/*JGR Commuter EMU*/
 emu_6340,
 /*JNR*/
-dmu_kiha30,
-dmu_kiha40,
-dmu_kiha48,
-dmu_kiha54,
-dmu_kiha58,
-dmu_kiha80,
-emu_70,
-emu_80,
+/*JNR Commuter EMU*/
 emu_103,
-emu_113,
-emu_115,
-emu_1153000,
-emu_151,
-emu_165,
 emu_201,
 emu_205,
 emu_207900,
+/*JNR Regional DC EMU*/
+emu_70,
+emu_113,
+emu_115,
+emu_1153000,
 emu_211,
 emu_213,
+/*JNR Regional_Local DC EMU*/
+emu_121,
+/*JNR Regional DC_AC EMU*/
 emu_401,
 emu_403,
 emu_415,
 emu_4151500,
-emu_485,
+/*JNR Regional AC EMU*/
 emu_711,
+/*JNR Express DC EMU*/
+emu_80,
+emu_165,
+/*JNR Express DC_AC EMU*/
+/*JNR Limited Express DC EMU*/
+emu_151,
+/*JNR Limited Express DC_AC EMU*/
+emu_485,
+/*JNR Limited Express AC EMU*/
+emu_781,
+/*JNR Commuter DMU*/
+dmu_kiha30,
+dmu_kiha35,
+dmu_kiha38,
+/*JNR General DMU*/
+dmu_kiha40,
+dmu_kiha48,
+dmu_kiha54,
+/*JNR Express DMU*/
+dmu_kiha58,
+/*JNR Limited Express DMU*/
+dmu_kiha80,
+dmu_kiha181,
+/*JR Hokkaido*/
+/*JRH Regional AC EMU*/
+emu_721,
+/*JRH Commuter AC EMU*/
+emu_731,
+emu_733,
+emu_735,
+/*JRH Limited Express AC EMU*/
+emu_785,
+emu_789,
+/*JRH General DMU*/
+dmu_kiha141,
+dmu_kiha150,
+/*JRH Commuter DMU*/
+dmu_kiha201,
+/*JRH Limited Express DMU*/
+dmu_kiha261,
+dmu_kiha281,
 /*JR East*/
+/*JRE Commuter EMU*/
+emu_209,
+emu_E331,
+/*JRE Regional DC EMU*/
+emu_E217,
+/*JRE General DC EMU*/
+emu_E231,
+emu_E233,
+emu_E235,
+/*JRE General_Local DC EMU*/
+emu_107,
+emu_E127,
+/*JRE Regional DC_AC EMU*/
+emu_E531,
+/*JRE Regional AC EMU*/
+emu_719,
+emu_7195000,
+/*JRE Limited Express DC EMU*/
+/*JRE Limited Express DC_AC EMU*/
+emu_651,
+/*JRE Limited Express AC EMU*/
+/*JRE General DMU*/
 dmu_KH110,
 dmu_KH111,
 dmu_KHE120,
 dmu_KHE130,
 dmu_KHE131,
-emu_107,
-emu_209,
-emu_E127,
-emu_E217,
-emu_E231,
-emu_E233,
-emu_E235,
-emu_E331,
-emu_651,
-emu_719,
-emu_7195000,
-/*JR West*/
-emu_jrw207,
-emu_221,
-emu_223_0,
-emu_223_1000,
 /*JR Central*/
+/*JRC Regional DC EMU*/
 emu_21156,
 emu_311,
 emu_313,
-/*JR Kyushu*/
-emu_303,
-emu_811,
-emu_813,
-/*JR Hokkaido*/
-dmu_kiha141,
-dmu_kiha150,
-dmu_kiha201,
-dmu_kiha261,
-dmu_kiha281,
-emu_721,
-emu_731,
-emu_733,
-emu_735,
-emu_781,
-emu_785,
-emu_789,
+/*JRC Limited Express DC EMU*/
+/*JRC General DMU*/
+/*JRC Limited Express DMU*/
+/*JR West*/
+/*JRW Commuter EMU*/
+emu_jrw207,
+/*JRW Regional DC EMU*/
+emu_221,
+emu_223_0,
+emu_223_1000,
+/*JRW Regional DC_AC EMU*/
+/*JRW Limited Express DC EMU*/
+/*JRW Limited Express DC_AC EMU*/
+/*JRW General DMU*/
+/*JRW Limited Express DMU*/
 /*JR Shikoku*/
-emu_121,
+/*JRS Regional DC EMU*/
 emu_6000,
 emu_7200,
+/*JRS Limited Express DC EMU*/
+/*JRS General DMU*/
+/*JRS Limited Express DMU*/
+/*JR Kyushu*/
+/*JRK Commuter EMU*/
+emu_303,
+/*JRK Regional AC EMU*/
+emu_811,
+emu_813,
+/*JRK Limited Express AC EMU*/
+/*JRK General DMU*/
+/*JRK Limited Express DMU*/
 /*MU Cars*/
 mu_car,
 mu_cab,
