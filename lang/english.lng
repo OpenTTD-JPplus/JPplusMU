@@ -708,7 +708,7 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JRE_719_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Sendai, Banetsukoshi (2007+), Akita (2017+){}
 
 # 719-5000 Series
-    JRE_7195000_DESC  :{BLACK}Gauge:{GOLD} Standard/Kōki (4ft8.5in/​1,435mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: Yamagata{}
+    JRE_7195000_DESC  :{BLACK}Gauge:{GOLD} Standard/Hyōjyun (4ft8.5in/​1,435mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: Yamagata{}
 
 
 # 651 Series
