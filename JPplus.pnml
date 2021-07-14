@@ -88,6 +88,7 @@
 #include "src/JRE/EMU/209_series.pnml"
 #include "src/JRE/EMU/107_series.pnml"
 
+#include "src/JRE/EMU/E531_series.pnml"
 #include "src/JRE/EMU/E353_series.pnml"
 #include "src/JRE/EMU/651_series.pnml"
 

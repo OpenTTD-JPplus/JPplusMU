@@ -115,6 +115,9 @@ JRE_E235:E235 Series {WHITE}(EMU){BLACK}
 JRE_107:107 Series {WHITE}(EMU){BLACK}
 JRE_E127:E127 Series {WHITE}(EMU){BLACK}
 
+JRE_E531:E531 Series {WHITE}(EMU){BLACK}
+
+
 JRE_719:719 Series {WHITE}(EMU){BLACK}
 JRE_7195000:719-5000 Series {WHITE}(EMU){BLACK}
 
@@ -705,6 +708,8 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # E127 Series
     JRE_E127_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Niigata, Matsumoto{}
 
+# E531 Series
+    JRE_E531_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}
 
 # 719 Series
     JRE_719_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Sendai, Banetsukoshi (2007+), Akita (2017+){}
