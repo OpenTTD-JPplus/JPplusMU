@@ -3,7 +3,7 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.3.1)
-STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Emperor Jake{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
+STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Erato{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Emperor Jake{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
 
@@ -119,6 +119,8 @@ JRE_719:719 Series {WHITE}(EMU){BLACK}
 JRE_7195000:719-5000 Series {WHITE}(EMU){BLACK}
 
 JRE_651:651 Series {WHITE}(EMU){BLACK}
+
+JRE_E353:E353 Series {WHITE}(EMU){BLACK}
 
 JRE_KH100:KiHa 100/101 Series {WHITE}(DMU){BLACK}
 JRE_KH110:KiHa 110 Series {WHITE}(DMU){BLACK}
@@ -713,6 +715,9 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 651 Series
     JRE_651_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+
+# E353 Series
+    JRE_E353_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
 
 
 # KiHa 110
