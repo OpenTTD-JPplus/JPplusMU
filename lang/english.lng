@@ -602,6 +602,9 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # 213 Series
     JNR_213_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West {ORANGE}Central{}{BLACK}Liveries: {BLUE}Okayama, {ORANGE}Tokai (1989+){}
 
+# 121 Series
+    JNR_121_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / {WHITE}JR {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
 
 # 415 Series
     JNR_415_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West {RED}Kyushu{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}

@@ -28982,7 +28982,7 @@ item(FEAT_TRAINS, emu_121) {
       graphics {
         default:                  sw_121_gfx_main;
 		    purchase:                 spriteset_121_purchase;
-		    additional_text:	        return string(JRS_6000_DESC);
+		    additional_text:	        return string(JNR_121_DESC);
         cargo_subtype_text:       sw_121_subtypetext_main;
         can_attach_wagon:			    sw_121_attach_vehid;
         //start_stop:                   ;
