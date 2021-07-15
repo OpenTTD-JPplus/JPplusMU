@@ -225,7 +225,7 @@ item(FEAT_TRAINS, emu_E331) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cost_factor:                  20;
-        running_cost_factor:          50;
+        running_cost_factor:          67.74; //50
 
         speed:                        120 km/h;
         track_type:                   NARROW_OHLE;

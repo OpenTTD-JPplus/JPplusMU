@@ -35,7 +35,7 @@ alternative_sprites(spriteset_E531_mid_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH
 alternative_sprites(spriteset_E531_mid_gr_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-5.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_E531_mid_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-4.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_E531_back_2_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_E531_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_E531_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1P.png")      {tmpl_std_rev(0, 26)}
 
 alternative_sprites(spriteset_E531_rev_front_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1.png")      {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_E531_rev_back_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1.png")      {tmpl_std_rev(0, 1)}
@@ -43,7 +43,7 @@ alternative_sprites(spriteset_E531_rev_mid_joban_a,     ZOOM_LEVEL_NORMAL, BIT_D
 alternative_sprites(spriteset_E531_rev_mid_gr_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-5.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_E531_rev_mid_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-4.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_E531_rev_back_2_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_E531_rev_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_E531_rev_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1P.png")      {tmpl_std_rev(0, 1)}
 
 alternative_sprites(spriteset_E531_revflip_front_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1.png")      {tmpl_std(0, 26)}
 alternative_sprites(spriteset_E531_revflip_back_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1.png")      {tmpl_std(0, 1)}
@@ -51,7 +51,7 @@ alternative_sprites(spriteset_E531_revflip_mid_joban_a,     ZOOM_LEVEL_NORMAL, B
 alternative_sprites(spriteset_E531_revflip_mid_gr_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-5.png")      {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_E531_revflip_mid_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-4.png")      {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_E531_revflip_back_2_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std(0, 1)}
-alternative_sprites(spriteset_E531_revflip_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_E531_revflip_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1P.png")      {tmpl_std(0, 1)}
 
 //joban_b Spriteset
 spriteset(spriteset_E531_front_joban_b,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}

@@ -39,7 +39,7 @@ alternative_sprites(spriteset_E353_mid_gr_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPT
 alternative_sprites(spriteset_E353_mid_singlepanto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 151)}
 alternative_sprites(spriteset_E353_mid_dualpanto_a_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 301)}
 alternative_sprites(spriteset_E353_mid_dualpanto_b_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 251)}
-alternative_sprites(spriteset_E353_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 76)}
+alternative_sprites(spriteset_E353_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353P.png")      {tmpl_std_rev(0, 76)}
 
 alternative_sprites(spriteset_E353_rev_front_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_E353_rev_back_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 51)}
@@ -48,7 +48,7 @@ alternative_sprites(spriteset_E353_rev_mid_gr_azusa,     ZOOM_LEVEL_NORMAL, BIT_
 alternative_sprites(spriteset_E353_rev_mid_singlepanto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 151)}
 alternative_sprites(spriteset_E353_rev_mid_dualpanto_a_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 301)}
 alternative_sprites(spriteset_E353_rev_mid_dualpanto_b_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 251)}
-alternative_sprites(spriteset_E353_rev_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 51)}
+alternative_sprites(spriteset_E353_rev_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353P.png")      {tmpl_std_rev(0, 51)}
 
 alternative_sprites(spriteset_E353_revflip_front_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 26)}
 alternative_sprites(spriteset_E353_revflip_back_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 51)}
@@ -57,7 +57,7 @@ alternative_sprites(spriteset_E353_revflip_mid_gr_azusa,     ZOOM_LEVEL_NORMAL, 
 alternative_sprites(spriteset_E353_revflip_mid_singlepanto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 151)}
 alternative_sprites(spriteset_E353_revflip_mid_dualpanto_a_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 301)}
 alternative_sprites(spriteset_E353_revflip_mid_dualpanto_b_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 251)}
-alternative_sprites(spriteset_E353_revflip_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 51)}
+alternative_sprites(spriteset_E353_revflip_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353P.png")      {tmpl_std(0, 51)}
 
 /*---END OF SECTION---*/
 /*---GFX: Train Reversing Switches---*/
