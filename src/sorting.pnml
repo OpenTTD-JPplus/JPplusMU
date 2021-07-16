@@ -8,6 +8,7 @@ emu_6340,
 /*JNR*/
 /*JNR Commuter EMU*/
 emu_103,
+//emu_105,
 emu_201,
 emu_205,
 emu_207900,
@@ -16,10 +17,9 @@ emu_70,
 emu_113,
 emu_115,
 emu_1153000,
+emu_121,
 emu_211,
 emu_213,
-/*JNR Regional_Local DC EMU*/
-emu_121,
 /*JNR Regional DC_AC EMU*/
 emu_401,
 emu_403,
@@ -70,27 +70,27 @@ dmu_kiha261,
 dmu_kiha281,
 /*JR East*/
 /*JRE Commuter EMU*/
+emu_107,
+emu_E127,
 emu_209,
-emu_E331,
 /*JRE Regional DC EMU*/
 emu_E217,
 /*JRE General DC EMU*/
 emu_E231,
 emu_E233,
 emu_E235,
-/*JRE General_Local DC EMU*/
-emu_107,
-emu_E127,
+/*JRE Prototype DC EMU*/
+emu_E331,
 /*JRE Regional DC_AC EMU*/
 emu_E531,
 /*JRE Regional AC EMU*/
 emu_719,
 emu_7195000,
 /*JRE Limited Express DC EMU*/
+emu_E353,
 /*JRE Limited Express DC_AC EMU*/
 emu_651,
 /*JRE Limited Express AC EMU*/
-emu_E353,
 /*JRE General DMU*/
 dmu_KH110,
 dmu_KH111,
