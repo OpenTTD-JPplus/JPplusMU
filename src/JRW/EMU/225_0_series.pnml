@@ -383,7 +383,7 @@ item(FEAT_TRAINS, emu_225_0) {
       graphics {
         default:                      sw_225_0_gfx_main;
 		    purchase:                 spriteset_225_0_purchase;
-		    additional_text:	      return string(JRW_223_0_DESC);
+		    additional_text:	      return string(JRW_225_0_DESC);
         cargo_subtype_text:           sw_225_0_subtypetext_main;
         can_attach_wagon:			  sw_225_0_attach_vehid;
         //start_stop:                   ;
