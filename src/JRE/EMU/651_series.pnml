@@ -354,7 +354,7 @@ item(FEAT_TRAINS, emu_651) {
     property {
         name:                         string(JRE_651);
         introduction_date:            date(1988, 09, 06);
-        model_life:                   23;
+        model_life:                   4;
         vehicle_life:                 38;
         reliability_decay:            21;
 

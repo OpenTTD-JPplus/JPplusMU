@@ -265,7 +265,7 @@ item(FEAT_TRAINS, emu_E353) {
         reliability_decay:            21;
 
         cargo_capacity:               param_capacity_express;
-        loading_speed:                param_loading_2D;
+        loading_speed:                param_loading_1D;
         cost_factor:                  18;
         running_cost_factor:          48;
 
@@ -306,7 +306,7 @@ item(FEAT_TRAINS, emu_E353) {
       livery_override(mu_car){
         default:                      sw_E353_gfx_mucar;
         cargo_capacity:               param_capacity_express;
-        loading_speed:                param_loading_2D;
+        loading_speed:                param_loading_1D;
         //cargo_subtype_text:           sw_E353_subtypetext_mucar;
         power: 400/2;
         weight: 30;

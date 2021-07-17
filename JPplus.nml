@@ -9,6 +9,16 @@ grf {
 	desc:	string(STR_GRF_DESC);
 	version:	31;
 	min_compatible_version: 10;
+		//japanset3 removal
+		param 4 {
+			 param_japansetdisable {
+					name: string(STR_PARAM_NAME_JAPANSETDISABLE);
+					desc: string(STR_PARAM_DESC_JAPANSETDISABLE);
+					type: bool;
+					bit:  0;
+					def_value: 0;
+			 }
+		}
 		//basecosts
 		param 0 {
 				param_basecostbuy {
@@ -50,7 +60,7 @@ grf {
 						name: string(STR_PARAM_NAME_BASECAPACITY);
 						desc: string(STR_PARAM_DESC_BASECAPACITY);
 						min_value: 0;
-						max_value: 4;
+						max_value: 3;
 						def_value: 1;
 						names: {
 												0: string(STR_PARAM_LOW);
@@ -61,6 +71,7 @@ grf {
 						};
 				}
 		}
+		//extra capacity for locals
 		param 3 {
 			 param_boostcapacity {
 					name: string(STR_PARAM_NAME_BOOSTCAPACITY);
@@ -69,13 +80,20 @@ grf {
 					bit:  0;
 			 }
 		}
-				param 4 {
-			 param_japansetdisable {
-					name: string(STR_PARAM_NAME_JAPANSETDISABLE);
-					desc: string(STR_PARAM_DESC_JAPANSETDISABLE);
-					type: bool;
-					bit:  0;
-					def_value: 0;
+		//cargo decay
+		param 5 {
+			 param_cargodecay {
+						type: int;
+						name: string(STR_PARAM_NAME_DECAY);
+						desc: string(STR_PARAM_DESC_DECAY);
+						min_value: 0;
+						max_value: 2;
+						def_value: 0;
+						names: {
+												0: string(STR_PARAM_NORMAL);
+												1: string(STR_PARAM_LOW);
+												2: string(STR_PARAM_VLOW);
+						};
 			 }
 		}
 }
@@ -186,6 +204,23 @@ if (param_basecapacity >= 3) {
 	param_loading_4D = 80; // 4 doors //
 	param_loading_5D = 85; // 5 doors //
 	param_loading_6D = 95; // 6 doors //
+}
+
+/*	CARGO DECAY	*/
+if (param_cargodecay == 0) {
+	param_decay_local = 185;
+	param_decay_rapid = 185;
+	param_decay_express = 185;
+}
+if (param_cargodecay == 1) {
+	param_decay_local = 200;
+	param_decay_rapid = 300;
+	param_decay_express = 500;
+}
+if (param_cargodecay >= 2) {
+	param_decay_local = 400;
+	param_decay_rapid = 650;
+	param_decay_express = 1000;
 }
 # 1 "JPplus.pnml" 4
 # 1 "src/template.pnml" 1
@@ -25065,7 +25100,7 @@ alternative_sprites(spriteset_E531_mid_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH
 alternative_sprites(spriteset_E531_mid_gr_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-5.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_E531_mid_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-4.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_E531_back_2_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std_rev(0, 26)}
-alternative_sprites(spriteset_E531_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_E531_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1P.png")      {tmpl_std_rev(0, 26)}
 
 alternative_sprites(spriteset_E531_rev_front_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1.png")      {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_E531_rev_back_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1.png")      {tmpl_std_rev(0, 1)}
@@ -25073,7 +25108,7 @@ alternative_sprites(spriteset_E531_rev_mid_joban_a,     ZOOM_LEVEL_NORMAL, BIT_D
 alternative_sprites(spriteset_E531_rev_mid_gr_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-5.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_E531_rev_mid_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-4.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_E531_rev_back_2_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std_rev(0, 1)}
-alternative_sprites(spriteset_E531_rev_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_E531_rev_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1P.png")      {tmpl_std_rev(0, 1)}
 
 alternative_sprites(spriteset_E531_revflip_front_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1.png")      {tmpl_std(0, 26)}
 alternative_sprites(spriteset_E531_revflip_back_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1.png")      {tmpl_std(0, 1)}
@@ -25081,7 +25116,7 @@ alternative_sprites(spriteset_E531_revflip_mid_joban_a,     ZOOM_LEVEL_NORMAL, B
 alternative_sprites(spriteset_E531_revflip_mid_gr_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-5.png")      {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_E531_revflip_mid_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-4.png")      {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_E531_revflip_back_2_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std(0, 1)}
-alternative_sprites(spriteset_E531_revflip_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-2.png")      {tmpl_std(0, 1)}
+alternative_sprites(spriteset_E531_revflip_back_panto_joban_a,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE531/E531-1-1P.png")      {tmpl_std(0, 1)}
 
 //joban_b Spriteset
 spriteset(spriteset_E531_front_joban_b,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
@@ -25403,7 +25438,7 @@ switch(FEAT_TRAINS, SELF, sw_E531_attach_vehid, [vehicle_type_id == emu_E531 || 
 item(FEAT_TRAINS, emu_E531) {
     property {
         name:                         string(JRE_E531);
-        introduction_date:            date(1988, 09, 06);
+        introduction_date:            date(2005, 06, 09);
         model_life:                   23;
         vehicle_life:                 38;
         reliability_decay:            21;
@@ -25500,7 +25535,7 @@ alternative_sprites(spriteset_E353_mid_gr_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPT
 alternative_sprites(spriteset_E353_mid_singlepanto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 151)}
 alternative_sprites(spriteset_E353_mid_dualpanto_a_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 301)}
 alternative_sprites(spriteset_E353_mid_dualpanto_b_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 251)}
-alternative_sprites(spriteset_E353_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 76)}
+alternative_sprites(spriteset_E353_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353P.png")      {tmpl_std_rev(0, 76)}
 
 alternative_sprites(spriteset_E353_rev_front_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_E353_rev_back_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 51)}
@@ -25509,7 +25544,7 @@ alternative_sprites(spriteset_E353_rev_mid_gr_azusa,     ZOOM_LEVEL_NORMAL, BIT_
 alternative_sprites(spriteset_E353_rev_mid_singlepanto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 151)}
 alternative_sprites(spriteset_E353_rev_mid_dualpanto_a_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 301)}
 alternative_sprites(spriteset_E353_rev_mid_dualpanto_b_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 251)}
-alternative_sprites(spriteset_E353_rev_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std_rev(0, 51)}
+alternative_sprites(spriteset_E353_rev_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353P.png")      {tmpl_std_rev(0, 51)}
 
 alternative_sprites(spriteset_E353_revflip_front_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 26)}
 alternative_sprites(spriteset_E353_revflip_back_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 51)}
@@ -25518,7 +25553,7 @@ alternative_sprites(spriteset_E353_revflip_mid_gr_azusa,     ZOOM_LEVEL_NORMAL, 
 alternative_sprites(spriteset_E353_revflip_mid_singlepanto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 151)}
 alternative_sprites(spriteset_E353_revflip_mid_dualpanto_a_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 301)}
 alternative_sprites(spriteset_E353_revflip_mid_dualpanto_b_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 251)}
-alternative_sprites(spriteset_E353_revflip_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353.png")      {tmpl_std(0, 51)}
+alternative_sprites(spriteset_E353_revflip_back_panto_azusa,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JRE/emuE353/E353P.png")      {tmpl_std(0, 51)}
 
 /*---END OF SECTION---*/
 /*---GFX: Train Reversing Switches---*/
@@ -25726,7 +25761,7 @@ item(FEAT_TRAINS, emu_E353) {
         reliability_decay:            21;
 
         cargo_capacity:               param_capacity_express;
-        loading_speed:                param_loading_2D;
+        loading_speed:                param_loading_1D;
         cost_factor:                  18;
         running_cost_factor:          48;
 
@@ -25767,7 +25802,7 @@ item(FEAT_TRAINS, emu_E353) {
       livery_override(mu_car){
         default:                      sw_E353_gfx_mucar;
         cargo_capacity:               param_capacity_express;
-        loading_speed:                param_loading_2D;
+        loading_speed:                param_loading_1D;
         //cargo_subtype_text:           sw_E353_subtypetext_mucar;
         power: 400/2;
         weight: 30;
@@ -26132,7 +26167,7 @@ item(FEAT_TRAINS, emu_651) {
     property {
         name:                         string(JRE_651);
         introduction_date:            date(1988, 09, 06);
-        model_life:                   23;
+        model_life:                   4;
         vehicle_life:                 38;
         reliability_decay:            21;
 

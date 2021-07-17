@@ -373,7 +373,7 @@ switch(FEAT_TRAINS, SELF, sw_E531_attach_vehid, [vehicle_type_id == emu_E531 || 
 item(FEAT_TRAINS, emu_E531) {
     property {
         name:                         string(JRE_E531);
-        introduction_date:            date(1988, 09, 06);
+        introduction_date:            date(2005, 06, 09);
         model_life:                   23;
         vehicle_life:                 38;
         reliability_decay:            21;

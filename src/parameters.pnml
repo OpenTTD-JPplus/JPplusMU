@@ -74,3 +74,20 @@ if (param_basecapacity >= 3) {
 	param_loading_5D = 85; // 5 doors //
 	param_loading_6D = 95; // 6 doors //
 }
+
+/*	CARGO DECAY	*/
+if (param_cargodecay == 0) {
+	param_decay_local = 185;
+	param_decay_rapid = 185;
+	param_decay_express = 185;
+}
+if (param_cargodecay == 1) {
+	param_decay_local = 200;
+	param_decay_rapid = 300;
+	param_decay_express = 500;
+}
+if (param_cargodecay >= 2) {
+	param_decay_local = 400;
+	param_decay_rapid = 650;
+	param_decay_express = 1000;
+}

@@ -4,6 +4,16 @@ grf {
 	desc:	string(STR_GRF_DESC);
 	version:	31;
 	min_compatible_version: 10;
+		//japanset3 removal
+		param 4 {
+			 param_japansetdisable {
+					name: string(STR_PARAM_NAME_JAPANSETDISABLE);
+					desc: string(STR_PARAM_DESC_JAPANSETDISABLE);
+					type: bool;
+					bit:  0;
+					def_value: 0;
+			 }
+		}
 		//basecosts
 		param 0 {
 				param_basecostbuy {
@@ -45,7 +55,7 @@ grf {
 						name: string(STR_PARAM_NAME_BASECAPACITY);
 						desc: string(STR_PARAM_DESC_BASECAPACITY);
 						min_value: 0;
-						max_value: 4;
+						max_value: 3;
 						def_value: 1;
 						names: {
 												0: string(STR_PARAM_LOW);
@@ -56,6 +66,7 @@ grf {
 						};
 				}
 		}
+		//extra capacity for locals
 		param 3 {
 			 param_boostcapacity {
 					name: string(STR_PARAM_NAME_BOOSTCAPACITY);
@@ -64,13 +75,20 @@ grf {
 					bit:  0;
 			 }
 		}
-				param 4 {
-			 param_japansetdisable {
-					name: string(STR_PARAM_NAME_JAPANSETDISABLE);
-					desc: string(STR_PARAM_DESC_JAPANSETDISABLE);
-					type: bool;
-					bit:  0;
-					def_value: 0;
+		//cargo decay
+		param 5 {
+			 param_cargodecay {
+						type: int;
+						name: string(STR_PARAM_NAME_DECAY);
+						desc: string(STR_PARAM_DESC_DECAY);
+						min_value: 0;
+						max_value: 2;
+						def_value: 0;
+						names: {
+												0: string(STR_PARAM_NORMAL);
+												1: string(STR_PARAM_LOW);
+												2: string(STR_PARAM_VLOW);
+						};
 			 }
 		}
 }
