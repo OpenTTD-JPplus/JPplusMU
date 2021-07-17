@@ -224,8 +224,7 @@ if (param_cargodecay >= 2) {
 }
 # 1 "JPplus.pnml" 4
 # 1 "src/template.pnml" 1
-
-
+/*Purchase Templates*/
 template tmpl_purchase (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
@@ -246,8 +245,6 @@ template tmpl_purchase_32bpp (x, y) {
     [x, y, 75, 15, -28, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
-
-
 template tmpl_purchase_dh (x, y) {
 		[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
 	 	[1 , 1, 1, 1, 0, 0, "gfx/empty.png"]
@@ -268,8 +265,7 @@ template tmpl_purchase_dh_32bpp (x, y) {
     [x, y, 75, 15, -14, -10]
 		[1 , 1, 1, 1, 0, 0, "gfx/empty_32bpp.png"]
 }
-
-
+/*Standard Templates*/
 template tmpl_std(x,y){
 [x, 	 y,	8, 	24,		-3, 	-16] //short
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
@@ -291,30 +287,128 @@ template tmpl_std_rev(x,y){
 [x +32,  y,	32,	17,		-14,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
 }
-
 //25 high on the short sides for the pantograph
 template tmpl_std_panto25(x,y){
 [x, 		 y,	8, 	25,		-3, 	-17] //short25
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
 [x +32,  y,	32,	17,		-14,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
-[x +88,  y,	8, 	25,		-3, 	-17] //short25
+[x +88,  	y,	8, 	25,		-3, 	-17] //short25
 [x +97,  y,	22,	20,		-13,	-13] //dia1
 [x +120, y,	32,	17,		-14,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
 }
 
 template tmpl_std_panto25_rev(x,y){
-[x +88,  y,	8, 	25,		-3, 	-17] //short25
+[x +88,  	y,	8, 	25,		-3, 	-17] //short25
 [x +97,  y,	22,	20,		-13,	-13] //dia1
 [x +120, y,	32,	17,		-14,	-13] //long
 [x+153,  y,	22,	20,		-5, 	-12] //dia2
-[x, 		 y,	8, 	25,		-3, 	-17] //short25
+[x, 		y,	8, 	25,		-3, 	-17] //short25
 [x +9, 	 y,	22,	20,		-13,	-13] //dia1
 [x +32,  y,	32,	17,		-14,	-13] //long
 [x +65,  y,	22,	20,		-5, 	-12] //dia2
 }
 
+
+
+
+
+/*Special for RipperKR*/
+template tmpl_rpstd(x,y){
+[x, 	 y+4,	8, 	24,		-3, 	-16] //short
+[x +16,  y+1,		22,	20,		-13,	-13] //dia1
+[x +48,  y,	32,	16,		-14,	-12] //long
+[x +96,  y+1,		22,	20,		-5, 	-12] //dia2
+[x +128, y+4,	8, 	24,		-3, 	-16] //short
+[x +144, y+1,		22,	20,		-13,	-13] //dia1
+[x +177, y,	32,	16,		-14,	-12] //long
+[x +224, y+1,		22,	20,		-5, 	-12] //dia2
+}
+template tmpl_rpstd_rev(x,y){
+[x +128, y+4,	8, 	24,		-3, 	-16] //short
+[x +144, y+1,		22,	20,		-13,	-13] //dia1
+[x +177, y,	32,	16,		-14,	-12] //long
+[x +224, y+1,		22,	20,		-5, 	-12] //dia2
+[x, 	 y+4,	8, 	24,		-3, 	-16] //short
+[x +16,  y+1,		22,	20,		-13,	-13] //dia1
+[x +48,  y,	32,	16,		-14,	-12] //long
+[x +96,  y+1,		22,	20,		-5, 	-12] //dia2
+}
+//winged trains JRW
+template tmpl_rpstdw(x,y){
+[x, 	 y+4,	8, 	24,		-3, 	-16] //short
+[x +16,  y+1,		22,	20,		-13,	-13] //dia1
+[x +48,  y,	32,	16,		-14,	-12] //long
+	[x +95,  y+1,		23,	20,		-5, 	-12] //dia2
+[x +128, y+4,	8, 	24,		-3, 	-16] //short
+	[x +144, y+1,		23,	20,		-13,	-13] //dia1
+[x +177, y,	32,	16,		-14,	-12] //long
+[x +224, y+1,		22,	20,		-5, 	-12] //dia2
+}
+template tmpl_rpstdw_rev(x,y){
+[x +128, y+4,	8, 	24,		-3, 	-16] //short	
+	[x +144, y+1,		23,	20,		-13,	-13] //dia1
+[x +177, y,	32,	16,		-14,	-12] //long
+[x +224, y+1,		22,	20,		-5, 	-12] //dia2
+[x, 	 y+4,	8, 	24,		-3, 	-16] //short
+[x +16,  y+1,		22,	20,		-13,	-13] //dia1
+[x +48,  y,	32,	16,		-14,	-12] //long
+	[x +95,  y+1,		23,	20,		-5, 	-12] //dia2
+}
+//25 high on the short sides for the pantograph
+template tmpl_rpstd_panto25(x,y){
+[x, 	 	y+3,	8, 	25,		-3, 	-17] //short
+[x +16,  y,		22,	20,		-13,	-14] //dia1
+[x +48,  y,	32,	16,		-14,	-12] //long
+[x +96,  y,		22,	20,		-5, 	-13] //dia2
+[x +128, 	y+3,	8, 	25,		-3, 	-17] //short
+[x +144, y,		22,	20,		-13,	-14] //dia1
+[x +177, y,	32,	16,		-14,	-12] //long
+[x +224, y,		22,	20,		-5, 	-13] //dia2
+}
+template tmpl_rpstd_panto25_rev(x,y){
+[x +128, 	y+3,	8, 	25,		-3, 	-17] //short
+[x +144, y,		22,	20,		-13,	-14] //dia1
+[x +177, y,	32,	16,		-14,	-12] //long
+[x +224, y,		22,	20,		-5, 	-13] //dia2
+[x, 	 	y+3,	8, 	25,		-3, 	-17] //short
+[x +16,  y,		22,	20,		-13,	-14] //dia1
+[x +48,  y,	32,	16,		-14,	-12] //long
+[x +96,  y,		22,	20,		-5, 	-13] //dia2
+}
+//25 high and winged
+template tmpl_rpstdw_panto25(x,y){
+[x, 	 	y+3,	8, 	25,		-3, 	-17] //short
+[x +16,  y,		22,	20,		-13,	-14] //dia1
+[x +48,  y,	32,	16,		-14,	-12] //long
+	[x +95,  y,		23,	20,		-5, 	-13] //dia2
+[x +128, 	y+3,	8, 	25,		-3, 	-17] //short
+	[x +144, y,		23,	20,		-13,	-14] //dia1
+[x +177, y,	32,	16,		-14,	-12] //long
+[x +224, y,		22,	20,		-5, 	-13] //dia2
+}
+template tmpl_rpstdw_panto25_rev(x,y){
+[x +128, 	y+3,	8, 	25,		-3, 	-17] //short
+	[x +144, y,		23,	20,		-13,	-14] //dia1
+[x +177, y,	32,	16,		-14,	-12] //long
+[x +224, y,		22,	20,		-5, 	-13] //dia2
+[x, 	 	y+3,	8, 	25,		-3, 	-17] //short
+[x +16,  y,		22,	20,		-13,	-14] //dia1
+[x +48,  y,	32,	16,		-14,	-12] //long
+	[x +95,  y,		23,	20,		-5, 	-13] //dia2
+}
+
+
+
+
+
+
+
+
+
+
+/*Unused
 template tmpl_dhloco(x,y){
 [x, 		 y,	8, 	24,		-3, 	-13] //short
 [x +9, 	 y,	22,	20,		-13,	-14] //dia1
@@ -347,7 +441,7 @@ template tmpl_std_orginal(x,y){
 [x +120, y,	32,	17,		-16,	-12]
 [x+153,  y,	22,	20,		-5, 	-11]
 }
-
+*/
 
 
 template tmpl_28px_7l(x,y){
@@ -473,6 +567,7 @@ item(FEAT_TRAINS, emu_207900, 2049) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_651, 2050) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_E353, 2051) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_E531, 2052) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_225_0, 2053) {} //107emu 0x7E2
 
 
 
@@ -601,6 +696,7 @@ emu_jrw207,
 emu_221,
 emu_223_0,
 emu_223_1000,
+emu_225_0,
 /*JRW Regional DC_AC EMU*/
 /*JRW Limited Express DC EMU*/
 /*JRW Limited Express DC_AC EMU*/
@@ -28797,6 +28893,409 @@ item(FEAT_TRAINS, emu_223_1000) {
         cargo_subtype_text:           sw_223_1000_subtypetext_mucar;
         power: 880/2;
         weight: 29;
+      }
+
+}
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/225_0_series.pnml" 1
+//Purchase Sprites
+spriteset (spriteset_225_0_purchase,	                                                    "gfx/JRW/emu225/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_225_0_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRW/emu225/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+/*---!!!THIS HAS BEEN GENERATED BY JpyNML!!!---*/
+/*---END OF SECTION---*/
+/*---GFX: Spritesets---*/
+//0type Spriteset
+spriteset(spriteset_225_0_front_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_rev(1, 122)}
+spriteset(spriteset_225_0_back_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_panto25_rev(1, 32)}
+spriteset(spriteset_225_0_mid_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd(1, 92)}
+spriteset(spriteset_225_0_mid_panto_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_panto25(1, 62)}
+
+spriteset(spriteset_225_0_rev_front_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_rev(1, 152)}
+spriteset(spriteset_225_0_rev_back_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_panto25_rev(1, 2)}
+spriteset(spriteset_225_0_rev_mid_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_rev(1, 92)}
+spriteset(spriteset_225_0_rev_mid_panto_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_panto25_rev(1, 62)}
+
+spriteset(spriteset_225_0_revflip_front_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_rev(1, 152)}
+spriteset(spriteset_225_0_revflip_back_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_panto25_rev(1, 2)}
+spriteset(spriteset_225_0_revflip_mid_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_rev(1, 92)}
+spriteset(spriteset_225_0_revflip_mid_panto_0type,     "gfx/JRW/EMU225/0_100/225_0.png")      {tmpl_rpstd_panto25_rev(1, 62)}
+/*
+alternative_sprites(spriteset_225_0_front_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_back_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 26)}
+alternative_sprites(spriteset_225_0_mid_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_mid_panto_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+
+alternative_sprites(spriteset_225_0_rev_front_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 26)}
+alternative_sprites(spriteset_225_0_rev_back_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 1)}
+alternative_sprites(spriteset_225_0_rev_mid_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_rev_mid_panto_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+
+alternative_sprites(spriteset_225_0_revflip_front_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 26)}
+alternative_sprites(spriteset_225_0_revflip_back_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_revflip_mid_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 1)}
+alternative_sprites(spriteset_225_0_revflip_mid_panto_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 1)}
+*/
+//0type OVERRIDE Spriteset
+spriteset(spriteset_225_0_back_wing_0type,     "gfx/JRW/EMU225/0_100/225_0_wing.png")      {tmpl_rpstdw_panto25_rev(1, 32)}
+spriteset(spriteset_225_0_front_wing_0type,     "gfx/JRW/EMU225/0_100/225_0_wing.png")      {tmpl_rpstdw_rev(1, 122)}
+
+spriteset(spriteset_225_0_rev_back_wing_0type,     "gfx/JRW/EMU225/0_100/225_0_wing.png")      {tmpl_rpstdw_panto25_rev(1, 2)}
+spriteset(spriteset_225_0_rev_front_wing_0type,     "gfx/JRW/EMU225/0_100/225_0_wing.png")      {tmpl_rpstdw_rev(1, 152)}
+
+spriteset(spriteset_225_0_revflip_back_wing_0type,     "gfx/JRW/EMU225/0_100/225_0_wing.png")      {tmpl_rpstdw_panto25_rev(1, 2)}
+spriteset(spriteset_225_0_revflip_front_wing_0type,     "gfx/JRW/EMU225/0_100/225_0_wing.png")      {tmpl_rpstdw_rev(1, 152)}
+/*
+alternative_sprites(spriteset_225_0_back_wing_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 26)}
+alternative_sprites(spriteset_225_0_front_wing_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+
+alternative_sprites(spriteset_225_0_rev_back_wing_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 1)}
+alternative_sprites(spriteset_225_0_rev_front_wing_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 26)}
+
+alternative_sprites(spriteset_225_0_revflip_back_wing_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_revflip_front_wing_0type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 26)}
+*/
+//100type Spriteset
+spriteset(spriteset_225_0_front_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_rev(1, 122)}
+spriteset(spriteset_225_0_back_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_panto25_rev(1, 32)}
+spriteset(spriteset_225_0_mid_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd(1, 92)}
+spriteset(spriteset_225_0_mid_panto_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_panto25(1, 62)}
+
+spriteset(spriteset_225_0_rev_front_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_rev(1, 152)}
+spriteset(spriteset_225_0_rev_back_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_panto25_rev(1, 2)}
+spriteset(spriteset_225_0_rev_mid_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_rev(1, 92)}
+spriteset(spriteset_225_0_rev_mid_panto_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_panto25_rev(1, 62)}
+
+spriteset(spriteset_225_0_revflip_front_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_rev(1, 152)}
+spriteset(spriteset_225_0_revflip_back_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_panto25_rev(1, 2)}
+spriteset(spriteset_225_0_revflip_mid_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_rev(1, 92)}
+spriteset(spriteset_225_0_revflip_mid_panto_100type,     "gfx/JRW/EMU225/0_100/225_100.png")      {tmpl_rpstd_panto25_rev(1, 62)}
+/*
+alternative_sprites(spriteset_225_0_front_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_back_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 26)}
+alternative_sprites(spriteset_225_0_mid_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_mid_panto_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+
+alternative_sprites(spriteset_225_0_rev_front_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 26)}
+alternative_sprites(spriteset_225_0_rev_back_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 1)}
+alternative_sprites(spriteset_225_0_rev_mid_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_rev_mid_panto_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+
+alternative_sprites(spriteset_225_0_revflip_front_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 26)}
+alternative_sprites(spriteset_225_0_revflip_back_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd(1, 1)}
+alternative_sprites(spriteset_225_0_revflip_mid_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 1)}
+alternative_sprites(spriteset_225_0_revflip_mid_panto_100type,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu225/LIVERY_REF/225-REF_LV-REF_CR.png")      {tmpl_rpstd_rev(1, 1)}
+*/
+/*---END OF SECTION---*/
+/*---GFX: Override Reverse Spriteset Switches---*/
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_spriteset_225_0_rev_front_0type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_225_0_rev_front_wing_0type;
+  default: spriteset_225_0_rev_front_0type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_spriteset_225_0_revflip_front_0type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_225_0_revflip_front_wing_0type;
+  default: spriteset_225_0_revflip_front_0type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_spriteset_225_0_rev_back_0type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_225_0_rev_back_wing_0type;
+  default: spriteset_225_0_rev_back_0type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_spriteset_225_0_revflip_back_0type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_225_0_revflip_back_wing_0type;
+  default: spriteset_225_0_revflip_back_0type;
+}
+/*---END OF SECTION---*/
+/*---GFX: Train Reversing Switches---*/
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : sw_225_0_gfx_spriteset_225_0_rev_front_0type;
+1 : spriteset_225_0_rev_front_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : sw_225_0_gfx_spriteset_225_0_revflip_front_0type;
+1 : spriteset_225_0_revflip_front_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : sw_225_0_gfx_spriteset_225_0_rev_back_0type;
+1 : spriteset_225_0_rev_back_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : sw_225_0_gfx_spriteset_225_0_revflip_back_0type;
+1 : spriteset_225_0_revflip_back_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : spriteset_225_0_rev_mid_0type;
+1 : spriteset_225_0_rev_mid_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : spriteset_225_0_revflip_mid_0type;
+1 : spriteset_225_0_revflip_mid_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : spriteset_225_0_rev_mid_panto_0type;
+1 : spriteset_225_0_rev_mid_panto_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : spriteset_225_0_revflip_mid_panto_0type;
+1 : spriteset_225_0_revflip_mid_panto_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
+  1 : sw_225_0_gfx_rev_front_livery;
+  default : sw_225_0_gfx_revflip_front_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
+  1 : sw_225_0_gfx_rev_back_livery;
+  default : sw_225_0_gfx_revflip_back_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_mid_flippedcheck, vehicle_is_flipped) {
+  1 : sw_225_0_gfx_rev_mid_livery;
+  default : sw_225_0_gfx_revflip_mid_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_mid_panto_flippedcheck, vehicle_is_flipped) {
+  1 : sw_225_0_gfx_rev_mid_panto_livery;
+  default : sw_225_0_gfx_revflip_mid_panto_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_pantograph_pos_0type_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+ 0 : sw_225_0_gfx_rev_mid_panto_flippedcheck;
+ default : sw_225_0_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_pantograph_pos_0type_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+ 1 : sw_225_0_gfx_rev_mid_panto_flippedcheck;
+ default : sw_225_0_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_pantograph_pos_0type_sw3, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){
+ 1 : sw_225_0_gfx_rev_mid_panto_flippedcheck;
+ 2 : sw_225_0_gfx_rev_mid_panto_flippedcheck;
+ default : sw_225_0_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_pantograph_pos_100type_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+ 0 : sw_225_0_gfx_rev_mid_panto_flippedcheck;
+ default : sw_225_0_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_pantograph_pos_100type_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+ 1 : sw_225_0_gfx_rev_mid_panto_flippedcheck;
+ default : sw_225_0_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_pantograph_pos_100type_sw3, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){
+ 1 : sw_225_0_gfx_rev_mid_panto_flippedcheck;
+ 2 : sw_225_0_gfx_rev_mid_panto_flippedcheck;
+ default : sw_225_0_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_pantograph_pos_0type, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  0..2 : sw_225_0_gfx_rev_pantograph_pos_0type_sw1;
+  3..4 : sw_225_0_gfx_rev_pantograph_pos_0type_sw2;
+  default : sw_225_0_gfx_rev_pantograph_pos_0type_sw3;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_pantograph_pos_100type, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  0..2 : sw_225_0_gfx_rev_pantograph_pos_100type_sw1;
+  3..4 : sw_225_0_gfx_rev_pantograph_pos_100type_sw2;
+  default : sw_225_0_gfx_rev_pantograph_pos_100type_sw3;
+}
+switch(FEAT_TRAINS,SELF, sw_225_0_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+0 : sw_225_0_gfx_rev_pantograph_pos_0type;
+1 : sw_225_0_gfx_rev_pantograph_pos_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+ 0 : sw_225_0_gfx_rev_back_flippedcheck;
+ default : sw_225_0_gfx_rev_back_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_frontback_nomucars,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+ 1 : sw_225_0_gfx_rev_front_flippedcheck;
+ 0 : sw_225_0_gfx_rev_back_pantocheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_frontback_aftermucars,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+ 1 : sw_225_0_gfx_rev_back_pantocheck;
+ 0 : sw_225_0_gfx_rev_front_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_frontback_mucarcheck,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+ 1000 : sw_225_0_gfx_rev_frontback_aftermucars;
+ default : sw_225_0_gfx_rev_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_frontback_sameid,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+ 2053 : sw_225_0_gfx_rev_frontback_mucarcheck;
+ 1000 : sw_225_0_gfx_rev_front_flippedcheck;
+ default : sw_225_0_gfx_rev_back_pantocheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_frontback,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+ 2053 : sw_225_0_gfx_rev_frontback_sameid;
+ 1000 : sw_225_0_gfx_rev_back_pantocheck;
+ default : sw_225_0_gfx_rev_front_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+ 1000 : sw_225_0_gfx_rev_pantograph_pos;
+ 2053 : sw_225_0_gfx_rev_frontback;
+}
+/*---END OF SECTION---*/
+/*---GFX: Override Spriteset Switches---*/
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_spriteset_225_0_front_0type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_225_0_front_wing_0type;
+  default: spriteset_225_0_front_0type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_spriteset_225_0_back_0type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_225_0_back_wing_0type;
+  default: spriteset_225_0_back_0type;
+}
+/*---END OF SECTION---*/
+/*---GFX: Pantograph Positions---*/
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantograph_pos_0type_sw1, position_in_vehid_chain){
+ 0 : spriteset_225_0_mid_panto_0type;
+ default : spriteset_225_0_mid_0type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantograph_pos_0type_sw2, position_in_vehid_chain){
+ 1 : spriteset_225_0_mid_panto_0type;
+ default : spriteset_225_0_mid_0type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantograph_pos_0type_sw3, position_in_vehid_chain%8){
+ 1 : spriteset_225_0_mid_panto_0type;
+ 2 : spriteset_225_0_mid_panto_0type;
+ default : spriteset_225_0_mid_0type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantograph_pos_100type_sw1, position_in_vehid_chain){
+ 0 : spriteset_225_0_mid_panto_100type;
+ default : spriteset_225_0_mid_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantograph_pos_100type_sw2, position_in_vehid_chain){
+ 1 : spriteset_225_0_mid_panto_100type;
+ default : spriteset_225_0_mid_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantograph_pos_100type_sw3, position_in_vehid_chain%8){
+ 1 : spriteset_225_0_mid_panto_100type;
+ 2 : spriteset_225_0_mid_panto_100type;
+ default : spriteset_225_0_mid_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantograph_pos_0type, num_vehs_in_vehid_chain){
+  0..2 : sw_225_0_gfx_pantograph_pos_0type_sw1;
+  3..4 : sw_225_0_gfx_pantograph_pos_0type_sw2;
+  default : sw_225_0_gfx_pantograph_pos_0type_sw3;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantograph_pos_100type, num_vehs_in_vehid_chain){
+  0..2 : sw_225_0_gfx_pantograph_pos_100type_sw1;
+  3..4 : sw_225_0_gfx_pantograph_pos_100type_sw2;
+  default : sw_225_0_gfx_pantograph_pos_100type_sw3;
+}
+/*---END OF SECTION---*/
+/*---GFX: Front/Back Cab Car Switches---*/
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantocheck_0type, position_in_vehid_chain){
+ 0: sw_225_0_gfx_spriteset_225_0_back_0type;
+default: sw_225_0_gfx_spriteset_225_0_back_0type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_frontback_flipcheck_0type, vehicle_is_flipped){
+ 0: sw_225_0_gfx_spriteset_225_0_front_0type;
+ default: sw_225_0_gfx_pantocheck_0type;
+}
+switch(FEAT_TRAINS, PARENT, sw_225_0_gfx_frontback_0type, vehicle_is_reversed){
+ 0: sw_225_0_gfx_frontback_flipcheck_0type;
+ default: sw_225_0_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_pantocheck_100type, position_in_vehid_chain){
+ 0: spriteset_225_0_back_100type;
+default: spriteset_225_0_back_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_frontback_flipcheck_100type, vehicle_is_flipped){
+ 0: spriteset_225_0_front_100type;
+ default: sw_225_0_gfx_pantocheck_100type;
+}
+switch(FEAT_TRAINS, PARENT, sw_225_0_gfx_frontback_100type, vehicle_is_reversed){
+ 0: sw_225_0_gfx_frontback_flipcheck_100type;
+ default: sw_225_0_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+/*---GFX: Middle Car Switches---*/
+switch(FEAT_TRAINS, PARENT, sw_225_0_gfx_mucar_revcheck_mid_0type, vehicle_is_reversed){
+ 0: sw_225_0_gfx_pantograph_pos_0type;
+ default: sw_225_0_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_225_0_gfx_mucar_revcheck_mid_100type, vehicle_is_reversed){
+ 0: sw_225_0_gfx_pantograph_pos_100type;
+ default: sw_225_0_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+/*---GFX: Livery Refitting Switches---*/
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_mucar,  cargo_subtype) {
+0 : sw_225_0_gfx_mucar_revcheck_mid_0type;
+1 : sw_225_0_gfx_mucar_revcheck_mid_100type;
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_gfx_main,  cargo_subtype) {
+0 : sw_225_0_gfx_frontback_0type;
+1 : sw_225_0_gfx_frontback_100type;
+}
+/*---END OF SECTION---*/
+/*---GFX: Livery Menu Switches---*/
+switch(FEAT_TRAINS, SELF, sw_225_0_subtypetext_mucar, cargo_subtype) {
+0 : string(LV_JRW_RENEWAL);
+1 : string(LV_VARITION_END1);
+}
+switch(FEAT_TRAINS, SELF, sw_225_0_subtypetext_main, cargo_subtype) {
+0 : string(LV_JRW_RENEWAL);
+1 : string(LV_VARITION_END1);
+}
+/*---END OF SECTION---*/
+/*---Coupling Switch---*/
+switch(FEAT_TRAINS, SELF, sw_225_0_attach_vehid, [vehicle_type_id == emu_225_0 || vehicle_type_id == mu_car]) {
+ 0: return string(MU_UNIQUE);
+}
+/*---END OF SECTION---*/
+
+
+item(FEAT_TRAINS, emu_225_0) {
+    property {
+        name:                         string(JRW_225_0);
+        introduction_date:            date(2010, 07, 12);
+        model_life:                   21;
+        vehicle_life:                 46;
+        reliability_decay:            21;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  18;
+        running_cost_factor:          48;
+
+        speed:                        130 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        540 kW;
+        weight:                       41 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_225_0_gfx_main;
+		    purchase:                 spriteset_225_0_purchase;
+		    additional_text:	      return string(JRW_223_0_DESC);
+        cargo_subtype_text:           sw_225_0_subtypetext_main;
+        can_attach_wagon:			  sw_225_0_attach_vehid;
+        //start_stop:                   ;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_225_0_gfx_mucar;
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cargo_subtype_text:           sw_225_0_subtypetext_mucar;
+        power: 540/2;
+        weight: 38;
       }
 
 }

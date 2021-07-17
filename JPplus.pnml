@@ -107,6 +107,7 @@
 #include "src/JRW/EMU/221_series.pnml"
 #include "src/JRW/EMU/223_0_series.pnml"
 #include "src/JRW/EMU/223_1000_series.pnml"
+#include "src/JRW/EMU/225_0_series.pnml"
 
 
 //JR-Shikoku
