@@ -221,7 +221,7 @@ switch(FEAT_TRAINS, PARENT, sw_323_gfx_323_revcheck_mid_std, vehicle_is_reversed
 }
 /*---END OF SECTION---*/
 /*---GFX: Livery Refitting Switches---*/
-switch(FEAT_TRAINS, SELF, sw_323_gfx_323,  cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_323_gfx_mucar,  cargo_subtype) {
 0 : sw_323_gfx_323_revcheck_mid_std;
 }
 switch(FEAT_TRAINS, SELF, sw_323_gfx_main,  cargo_subtype) {
@@ -229,7 +229,7 @@ switch(FEAT_TRAINS, SELF, sw_323_gfx_main,  cargo_subtype) {
 }
 /*---END OF SECTION---*/
 /*---GFX: Livery Menu Switches---*/
-switch(FEAT_TRAINS, SELF, sw_323_subtypetext_323, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_323_subtypetext_mucar, cargo_subtype) {
 //0 : string(emu_323_LV_std);
 }
 switch(FEAT_TRAINS, SELF, sw_323_subtypetext_main, cargo_subtype) {
@@ -293,7 +293,7 @@ item(FEAT_TRAINS, emu_323) {
     }
     /*Multiple Unit Car*/
       livery_override(mu_car){
-        default:                      sw_323_gfx_323;
+        default:                      sw_323_gfx_mucar;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         //cargo_subtype_text:           sw_323_subtypetext_323;

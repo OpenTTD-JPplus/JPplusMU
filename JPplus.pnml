@@ -100,6 +100,8 @@
 #include "src/JRC/EMU/211_56_series.pnml"
 #include "src/JRC/EMU/311_series.pnml"
 #include "src/JRC/EMU/313_series.pnml"
+#include "src/JRC/EMU/373_series.pnml"
+#include "src/JRC/EMU/383_series.pnml"
 
 
 //JR-West

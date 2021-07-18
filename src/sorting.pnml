@@ -103,6 +103,8 @@ emu_21156,
 emu_311,
 emu_313,
 /*JRC Limited Express DC EMU*/
+emu_373,
+emu_383,
 /*JRC General DMU*/
 /*JRC Limited Express DMU*/
 /*JR West*/
