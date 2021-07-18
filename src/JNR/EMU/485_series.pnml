@@ -682,7 +682,7 @@ item(FEAT_TRAINS, emu_485) {
       graphics {
         default:                      sw_485_gfx_main;
 		    purchase:                 spriteset_485_purchase;
-		    additional_text:	      return string(JNR_181_DESC);
+		    additional_text:	      return string(JNR_485_DESC);
         cargo_subtype_text:           sw_485_subtypetext_main;
         can_attach_wagon:			  sw_485_attach_vehid;
         //start_stop:                   ;
