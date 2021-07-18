@@ -445,7 +445,7 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JNR_113_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
 
 # 115 Series
-    JNR_115_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速/{BLUE}急行{SILVER})){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+    JNR_115_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
 
 # 1153000 Series
     JNR_1153000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}瀬戸内色 / 広島快速色 / 広島更新色 / 中国地域色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
