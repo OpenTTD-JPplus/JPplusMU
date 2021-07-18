@@ -114,6 +114,7 @@
 #include "src/JRW/EMU/227_series.pnml"
 #include "src/JRW/EMU/321_series.pnml"
 #include "src/JRW/EMU/323_series.pnml"
+#include "src/JRW/DMU/KH33_series.pnml"
 
 
 //JR-Shikoku

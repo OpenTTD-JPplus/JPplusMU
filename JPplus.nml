@@ -512,6 +512,7 @@ item(FEAT_TRAINS, dmu_KHE130, 1512) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_KHE131, 1513) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_kiha30, 1514) {} //kiha40    0x5DC
 item(FEAT_TRAINS, dmu_kiha80, 1515) {} //kiha80    0x5DC
+item(FEAT_TRAINS, dmu_KH33, 1516) {} //kiha80    0x5DC
 
 
 item(FEAT_TRAINS, emu_107, 2018) {} //107emu 0x7E2
@@ -713,6 +714,7 @@ emu_227,
 /*JRW Limited Express DC EMU*/
 /*JRW Limited Express DC_AC EMU*/
 /*JRW General DMU*/
+dmu_KH33,
 /*JRW Limited Express DMU*/
 /*JR Shikoku*/
 /*JRS Regional DC EMU*/
@@ -31330,6 +31332,155 @@ item(FEAT_TRAINS, emu_323) {
         weight: 36;
       }
 
+}
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/DMU/KH33_series.pnml" 1
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_KH33_purchase,	                                                    "gfx/JRW/dmuKH33/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH33_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JRW/dmuKH33/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH33 JRW Initial Livery
+spriteset (spriteset_KH33_inital,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH33_rev_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH33_revflip_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH33_inital,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRW/dmuKH33/KIHA33-1.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH33_rev_inital,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRW/dmuKH33/KIHA33-1.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH33_revflip_inital, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRW/dmuKH33/KIHA33-1.png")           {tmpl_std_rev(0, 25)}
+
+//KH33 JRW Orange Vermillion
+spriteset (spriteset_KH33_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH33_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH33_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH33_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRW/dmuKH33/KIHA33-2.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH33_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRW/dmuKH33/KIHA33-2.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH33_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRW/dmuKH33/KIHA33-2.png")           {tmpl_std_rev(0, 25)}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KH33_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KH33_rev_orange;
+  0: spriteset_KH33_rev_inital;
+}
+switch(FEAT_TRAINS,SELF, sw_KH33_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KH33_revflip_orange;
+  0: spriteset_KH33_revflip_inital;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KH33_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH33_gfx_rev_livery;
+ default: sw_KH33_gfx_revflip_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_KH33_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1516: sw_KH33_gfx_rev_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//KH33 JR Orange Vermillion
+switch(FEAT_TRAINS, PARENT, sw_KH33_inital_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH33_inital;
+ default: sw_KH33_gfx_rev_flippedcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH33_orange_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH33_orange;
+ default: sw_KH33_gfx_rev_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_KH33_gfx_main, cargo_subtype) {
+  1: sw_KH33_orange_gfx_frontback_revcheck;
+  0: sw_KH33_inital_gfx_frontback_revcheck;
+}
+
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_KH33_subtypetext_main, cargo_subtype) {
+  0: string(LV_INITIAL);  
+  1: string(LV_ORANGE_CAPITAL);
+}
+
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_KH33_attach_vehid, [vehicle_type_id == dmu_KH33]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, dmu_KH33) {
+    property {
+        name:                         string(JRW_KH33);
+        introduction_date:            date(1988, 07, 21);
+        model_life:                   1;
+        vehicle_life:                 51;
+        reliability_decay:            22;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  19;
+        running_cost_factor:          49;
+
+        speed:                        95 km/h;
+        track_type:                   NARROW_NOEL;
+        power:                        184 kW;
+        weight:                       34 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_KH33_gfx_main;
+		    purchase:                 spriteset_KH33_purchase;
+		    additional_text:	      return string(JRW_KH33_DESC);
+        cargo_subtype_text:           sw_KH33_subtypetext_main;
+        can_attach_wagon:			  sw_KH33_attach_vehid;
+        //start_stop:                   ;
+    }
 }
 # 1 "JPplus.pnml" 4
 

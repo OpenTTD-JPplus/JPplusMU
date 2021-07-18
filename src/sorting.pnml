@@ -123,6 +123,7 @@ emu_227,
 /*JRW Limited Express DC EMU*/
 /*JRW Limited Express DC_AC EMU*/
 /*JRW General DMU*/
+dmu_KH33,
 /*JRW Limited Express DMU*/
 /*JR Shikoku*/
 /*JRS Regional DC EMU*/

@@ -154,6 +154,8 @@ JRW_225_5000:225-5000/5100/6000 Series {WHITE}(EMU){BLACK}
 JRW_227:227 Series {WHITE}(EMU){BLACK}
 JRW_323:323 Series {WHITE}(EMU){BLACK}
 
+JRW_KH33:KiHa 33 Series {WHITE}(DMU){BLACK}
+
 JRS_121:121 Series {WHITE}(EMU){BLACK}
 JRS_6000:6000 Series {WHITE}(EMU){BLACK}
 JRS_7200:7200 Series {WHITE}(EMU){BLACK}
@@ -801,6 +803,8 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # 227 Series
     JRW_227_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
+# KiHa 33 Series
+    JRW_KH33_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 6000 Series
     JRS_6000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
