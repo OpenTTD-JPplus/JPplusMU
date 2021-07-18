@@ -490,12 +490,9 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # KiHa 30
     JNR_kiha30_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
-# KiHa 35
-    JNR_kiha35_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
-
 
 # KiHa 40
-    JNR_kiha40_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {DKGREEN}北海道 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JNR_kiha40_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {LTBLUE}四国 {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa 48
     JNR_kiha48_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
