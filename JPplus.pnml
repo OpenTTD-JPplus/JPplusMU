@@ -69,7 +69,7 @@
 
 
 //JR-Hokkaido
-
+//#include "src/JRH/DMU/KH201_series.pnml"
 
 //JR-East
 #include "src/JRE/DMU/KH110_series.pnml"

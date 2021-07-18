@@ -166,7 +166,7 @@ switch(FEAT_TRAINS, SELF, sw_373_attach_vehid, [vehicle_type_id == emu_373 || ve
 item(FEAT_TRAINS, emu_373) {
     property {
         name:                         string(JRC_373);
-        introduction_date:            date(1195, 10, 11);
+        introduction_date:            date(1995, 10, 11);
         model_life:                   1;
         vehicle_life:                 46;
         reliability_decay:            21;
