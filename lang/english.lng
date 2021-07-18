@@ -142,11 +142,15 @@ JRC_311:311 Series {WHITE}(EMU){BLACK}
 JRC_313:313 Series {WHITE}(EMU){BLACK}
 
 JRW_207:207 Series {WHITE}(EMU){BLACK}
+JRW_321:321 Series {WHITE}(EMU){BLACK}
 
 JRW_221:221 Series {WHITE}(EMU){BLACK}
 JRW_223_0:223-0/2500/5500/6000 Series {WHITE}(EMU){BLACK}
 JRW_223_1000:223-1000/2000/5000 Series {WHITE}(EMU){BLACK}
 JRW_225_0:225-0/100 Series {WHITE}(EMU){BLACK}
+JRW_225_5000:225-5000/5100/6000 Series {WHITE}(EMU){BLACK}
+JRW_227:227 Series {WHITE}(EMU){BLACK}
+JRW_323:323 Series {WHITE}(EMU){BLACK}
 
 JRS_121:121 Series {WHITE}(EMU){BLACK}
 JRS_6000:6000 Series {WHITE}(EMU){BLACK}
@@ -763,6 +767,9 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # 207 Series
     JRW_207_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange{}
 
+# 321 Series
+    JRW_321_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
+
 
 # 221 Series
     JRW_221_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
@@ -773,9 +780,14 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # 223_1000 Series
     JRW_223_1000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
-# 225_0 Series
+# 225_0 and 225_5000 Series
     JRW_225_0_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
+# 227 Series
+    JRW_227_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
+# 323 Series
+    JRW_323_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
 
 
 # 6000 Series

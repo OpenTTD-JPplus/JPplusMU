@@ -108,11 +108,15 @@ emu_313,
 /*JR West*/
 /*JRW Commuter EMU*/
 emu_jrw207,
+emu_321,
 /*JRW Regional DC EMU*/
 emu_221,
 emu_223_0,
 emu_223_1000,
 emu_225_0,
+emu_225_5000,
+emu_227,
+emu_323,
 /*JRW Regional DC_AC EMU*/
 /*JRW Limited Express DC EMU*/
 /*JRW Limited Express DC_AC EMU*/
