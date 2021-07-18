@@ -151,6 +151,7 @@ JRW_323:323系 {WHITE}(電車){BLACK}
 JRS_121 :121系 {WHITE}(電車){BLACK}
 JRS_6000 :6000系 {WHITE}(電車){BLACK}
 JRS_7200 :7200系 {WHITE}(電車){BLACK}
+JRS_KH1000:キハ1000系 {WHITE}(気動車){BLACK}
 
 JRK_303 :303系 {WHITE}(電車){BLACK}
 
@@ -655,6 +656,9 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 7200 Series
     JRS_7200_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+
+# Kiha1000 Series
+    JRS_KH1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # 303 Series
