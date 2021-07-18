@@ -1,0 +1,130 @@
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_KH1000_purchase,	                                                    "gfx/JRS/dmuKH1000/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH1000_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRS/dmuKH1000/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH1000 JR Orange Vermillion
+spriteset (spriteset_KH1000_inital,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH1000_rev_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH1000_revflip_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH1000_inital,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRS/dmuKH1000/1000-1-1.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_KH1000_rev_inital,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRS/dmuKH1000/1000-1-1.png")           {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_KH1000_revflip_inital, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRS/dmuKH1000/1000-1-1.png")           {tmpl_std(0, 26)}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KH1000_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH1000_rev_inital;
+}
+switch(FEAT_TRAINS,SELF, sw_KH1000_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH1000_revflip_inital;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KH1000_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH1000_gfx_rev_livery;
+ default: sw_KH1000_gfx_revflip_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_KH1000_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1517: sw_KH1000_gfx_rev_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//KH1000 JR Orange Vermillion
+switch(FEAT_TRAINS, PARENT, sw_KH1000_inital_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH1000_inital;
+ default: sw_KH1000_gfx_rev_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_KH1000_gfx_main, cargo_subtype) {
+  0: sw_KH1000_inital_gfx_frontback_revcheck;
+}
+
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_KH1000_subtypetext_main, cargo_subtype) {
+  0: string(LV_ORANGE_CAPITAL);
+}
+
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_KH1000_attach_vehid, [vehicle_type_id == dmu_KH1000]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, dmu_KH1000) {
+    property {
+        name:                         string(JRS_KH1000);
+        introduction_date:            date(1990, 03, 02);
+        model_life:                   7;
+        vehicle_life:                 44;
+        reliability_decay:            20;
+
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  18;
+        running_cost_factor:          48;
+
+        speed:                        110 km/h;
+        track_type:                   NARROW_NOEL;
+        power:                        295 kW;
+        weight:                       31 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_KH1000_gfx_main;
+		    purchase:                 spriteset_KH1000_purchase;
+		    additional_text:	      return string(JRS_KH1000_DESC);
+        cargo_subtype_text:           sw_KH1000_subtypetext_main;
+        can_attach_wagon:			  sw_KH1000_attach_vehid;
+        //start_stop:                   ;
+    }
+}

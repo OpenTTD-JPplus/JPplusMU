@@ -131,6 +131,7 @@ emu_6000,
 emu_7200,
 /*JRS Limited Express DC EMU*/
 /*JRS General DMU*/
+dmu_KH1000,
 /*JRS Limited Express DMU*/
 /*JR Kyushu*/
 /*JRK Commuter EMU*/

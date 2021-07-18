@@ -159,6 +159,7 @@ JRW_KH33:KiHa 33 Series {WHITE}(DMU){BLACK}
 JRS_121:121 Series {WHITE}(EMU){BLACK}
 JRS_6000:6000 Series {WHITE}(EMU){BLACK}
 JRS_7200:7200 Series {WHITE}(EMU){BLACK}
+JRS_KH1000:KiHa 1000 Series {WHITE}(DMU){BLACK}
 
 JRK_303:303 Series {WHITE}(EMU){BLACK}
 
@@ -812,13 +813,17 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # 6000 Series
     JRS_6000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
 
+# 813 Series
+    JRS_KH1000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
+
+
 
 # 303 Series
     JRK_303_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}
-
 
 # 811 Series
     JRK_811_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 813 Series
     JRK_813_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
