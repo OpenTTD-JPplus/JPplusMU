@@ -666,6 +666,10 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JNR_kiha58_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{WHITE} (56) {GREEN}East{WHITE} (58) {ORANGE}Central{WHITE} (58) {BLUE}West{WHITE} (58) {LTBLUE}Shikoku{WHITE} (57/58) {RED}Kyushu{WHITE} (58){}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
 
 
+# KiHa 80 Series
+    JNR_kiha80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {ORANGE}Central{}{BLACK}Liveries: {GOLD}Kiha81　/ Kiha82{}
+
+
 # 721 Series
   JRH_721emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
 
@@ -778,6 +782,9 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # 321 Series
     JRW_321_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
 
+# 323 Series
+    JRW_323_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
+
 
 # 221 Series
     JRW_221_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
@@ -793,9 +800,6 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 227 Series
     JRW_227_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
-
-# 323 Series
-    JRW_323_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
 
 
 # 6000 Series
