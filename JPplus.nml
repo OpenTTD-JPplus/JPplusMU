@@ -5041,7 +5041,7 @@ item(FEAT_TRAINS, dmu_kiha30) {
       graphics {
         default:                      sw_KH30_gfx_main;
 		    purchase:                 spriteset_KH30_purchase;
-		    additional_text:	      return string(JNR_kiha40_DESC);
+		    additional_text:	      return string(JNR_kiha30_DESC);
         cargo_subtype_text:           sw_KH30_subtypetext_main;
         can_attach_wagon:			  sw_KH30_attach_vehid;
         //start_stop:                   ;
@@ -10950,7 +10950,7 @@ item(FEAT_TRAINS, emu_1153000) {
       graphics {
         default:                      sw_1153000_gfx_main;
 		    purchase:                 spriteset_1153000_purchase;
-		    additional_text:	      return string(JNR_115_DESC);
+		    additional_text:	      return string(JNR_1153000_DESC);
         cargo_subtype_text:           sw_1153000_subtypetext_main;
         can_attach_wagon:			  sw_1153000_attach_vehid;
         //start_stop:                   ;
@@ -20178,7 +20178,7 @@ item(FEAT_TRAINS, emu_485) {
       graphics {
         default:                      sw_485_gfx_main;
 		    purchase:                 spriteset_485_purchase;
-		    additional_text:	      return string(JNR_181_DESC);
+		    additional_text:	      return string(JNR_485_DESC);
         cargo_subtype_text:           sw_485_subtypetext_main;
         can_attach_wagon:			  sw_485_attach_vehid;
         //start_stop:                   ;
