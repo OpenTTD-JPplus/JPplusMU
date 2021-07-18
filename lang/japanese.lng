@@ -134,12 +134,19 @@ JRE_KHE131 :キハE131/E132系 {WHITE}(気動車){BLACK}
 JNR_21156 :211系 5000/6000番台 {WHITE}(電車){BLACK}
 JRC_311 :311系 {WHITE}(電車){BLACK}
 JRC_313 :313系 {WHITE}(電車){BLACK}
+JRC_373:373系 {WHITE}(電車){BLACK}
+JRC_383:383系 {WHITE}(電車){BLACK}
 
 JRW_207 :207系 {WHITE}(電車){BLACK}
+JRW_321:321系 {WHITE}(電車){BLACK}
 
 JRW_221 :221系 {WHITE}(電車){BLACK}
 JRW_223_0 :223系 0/2500/5500/6000番台 {WHITE}(電車){BLACK}
 JRW_223_1000 :223系 1000/2000/5000番台 {WHITE}(電車){BLACK}
+JRW_225_0:225系 0/100番台 {WHITE}(電車){BLACK}
+JRW_225_5000:225系 5000/5100/6000番台 {WHITE}(電車){BLACK}
+JRW_227:227系 {WHITE}(電車){BLACK}
+JRW_323:323系 {WHITE}(電車){BLACK}
 
 JRS_121 :121系 {WHITE}(電車){BLACK}
 JRS_6000 :6000系 {WHITE}(電車){BLACK}
@@ -610,9 +617,21 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # 313 Series
     JRC_313_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
 
+# 373 Series
+    JRC_373_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+
+# 383 Series
+    JRC_383_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}Various {GREEN}(refittable){GREEN}{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+
 
 # 207 Series
     JRW_207_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}旧塗装 / 新塗装 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+
+# 321 Series
+    JRW_321_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+
+# 323 Series
+    JRW_323_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
 
 
 # 221 Series
@@ -624,12 +643,21 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 # 223_1000 Series
     JRW_223_1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
 
-# 321 Series
-    JRW_321_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+# 225_0 Series
+    JRW_225_0_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+
+# 225_5000 Series
+    JRW_225_5000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}関空・紀州路快速仕様 / 新快速仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+
+# 227 Series
+    JRW_227_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}広島エリア仕様 / 奈良･和歌山エリア仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
 
 
 # 6000 Series
     JRS_6000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。{}
+
+# 7200 Series
+    JRS_7200_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # 303 Series
