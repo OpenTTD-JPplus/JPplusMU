@@ -97,7 +97,7 @@ switch(FEAT_TRAINS, SELF, sw_KH111_subtypetext_main, cargo_subtype) {
 
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KH111_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
-  0: return string(MU_UNIQUE);
+  0: return string(SAME_UNIQUE);
   }
 
 

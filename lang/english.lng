@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.3.2)
+STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.4.0)
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Erato{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Emperor Jake{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -538,7 +538,7 @@ JRH731_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs
 JRH201_UNIQUE  :You can only attach MU cars or KiHa 201 Series DMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with the 731 Series EMU.
 JRH711_UNIQUE  :You can only attach MU cars or the 711 Series EMU to this consist!
 MU_UNIQUE: You can only attach MU cars or other EMUs of the same design.
-SAME_UNIQUE: Yor can only attach other EMUs of the same design.
+SAME_UNIQUE: You can only attach other EMUs of the same design. MU cars are not permitted.
 
 # Consist Errors
 MU_NEEDMID        :You require more {GREEN}JP+ MU Cars{WHITE} before you can attach this.
@@ -612,7 +612,7 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
     JNR_115_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 115-1500 Series
-    JNR_1153000_DESC  :    
+    JNR_1153000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}   
 
 # 211 Series
     JNR_211_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central{}{BLACK}Liveries: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}

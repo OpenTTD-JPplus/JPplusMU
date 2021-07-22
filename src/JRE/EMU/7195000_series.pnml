@@ -123,7 +123,7 @@ switch(FEAT_TRAINS, SELF, sw_7195000_subtypetext_main, cargo_subtype) {
 /*---END OF SECTION---*/
 /*---Coupling Switch---*/
 switch(FEAT_TRAINS, SELF, sw_7195000_attach_vehid, [vehicle_type_id == emu_7195000]) {
- 0: return string(MU_UNIQUE);
+ 0: return string(SAME_UNIQUE);
 }
 /*---END OF SECTION---*/
 item(FEAT_TRAINS, emu_7195000) {

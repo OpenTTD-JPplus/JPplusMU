@@ -7,7 +7,7 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	32;
+	version:	40;
 	min_compatible_version: 10;
 		//japanset3 removal
 		param 4 {
@@ -21016,7 +21016,7 @@ switch(FEAT_TRAINS, SELF, sw_KH111_subtypetext_main, cargo_subtype) {
 
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KH111_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
-  0: return string(MU_UNIQUE);
+  0: return string(SAME_UNIQUE);
   }
 
 
@@ -21129,7 +21129,7 @@ switch(FEAT_TRAINS, SELF, sw_KHE120_subtypetext_main, cargo_subtype) {
 
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KHE120_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
-  0: return string(MU_UNIQUE);
+  0: return string(SAME_UNIQUE);
   }
 
 
@@ -21248,7 +21248,7 @@ switch(FEAT_TRAINS, SELF, sw_KHE130_subtypetext_main, cargo_subtype) {
 
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KHE130_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
-  0: return string(MU_UNIQUE);
+  0: return string(SAME_UNIQUE);
   }
 
 
@@ -21368,7 +21368,7 @@ switch(FEAT_TRAINS, SELF, sw_KHE131_subtypetext_main, cargo_subtype) {
 
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_KHE131_attach_vehid, [vehicle_type_id == dmu_KH110 || vehicle_type_id == dmu_KH111 || vehicle_type_id == dmu_KHE120 || vehicle_type_id == dmu_KHE130 || vehicle_type_id == dmu_KHE131]) {
-  0: return string(MU_UNIQUE);
+  0: return string(SAME_UNIQUE);
   }
 
 
@@ -23571,7 +23571,7 @@ switch(FEAT_TRAINS, SELF, sw_E127_subtypetext_main, cargo_subtype) {
 
 //Coupling
   switch(FEAT_TRAINS, SELF, sw_E127_attach_vehid, [vehicle_type_id == emu_E127]) {
-  0: return string(MU_UNIQUE);
+  0: return string(SAME_UNIQUE);
   }
 
 
@@ -26543,7 +26543,7 @@ switch(FEAT_TRAINS, SELF, sw_719_subtypetext_main, cargo_subtype) {
 /*---END OF SECTION---*/
 /*---Coupling Switch---*/
 switch(FEAT_TRAINS, SELF, sw_719_attach_vehid, [vehicle_type_id == emu_719]) {
- 0: return string(MU_UNIQUE);
+ 0: return string(SAME_UNIQUE);
 }
 /*---END OF SECTION---*/
 item(FEAT_TRAINS, emu_719) {
@@ -26720,7 +26720,7 @@ switch(FEAT_TRAINS, SELF, sw_7195000_subtypetext_main, cargo_subtype) {
 /*---END OF SECTION---*/
 /*---Coupling Switch---*/
 switch(FEAT_TRAINS, SELF, sw_7195000_attach_vehid, [vehicle_type_id == emu_7195000]) {
- 0: return string(MU_UNIQUE);
+ 0: return string(SAME_UNIQUE);
 }
 /*---END OF SECTION---*/
 item(FEAT_TRAINS, emu_7195000) {
