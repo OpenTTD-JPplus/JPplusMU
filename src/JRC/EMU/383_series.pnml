@@ -131,8 +131,8 @@ switch(FEAT_TRAINS, SELF, sw_383_gfx_rev_pantograph_pos_view, [STORE_TEMP(positi
   default : sw_383_gfx_rev_pantograph_pos_view_sw1;
 }
 switch(FEAT_TRAINS,SELF, sw_383_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-0 : sw_383_gfx_rev_pantograph_pos_std;
-1 : sw_383_gfx_rev_pantograph_pos_view;
+0 : sw_383_gfx_rev_pantograph_pos_std_sw1;
+1 : sw_383_gfx_rev_pantograph_pos_view_sw1;
 }
 switch(FEAT_TRAINS, SELF, sw_383_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_383_gfx_rev_back_flippedcheck;

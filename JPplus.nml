@@ -17047,27 +17047,27 @@ switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_green_jrw_sw2, [STORE_TE
  6 : sw_201_gfx_rev_mid_panto_flippedcheck;
  default : sw_201_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_orange_std, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 06, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_orange_std, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   0..4 : sw_201_gfx_rev_pantograph_pos_orange_std_sw1;
   default : sw_201_gfx_rev_pantograph_pos_orange_std_sw2;
 }
-switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_orange_chou, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 06, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_orange_chou, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   0..4 : sw_201_gfx_rev_pantograph_pos_orange_chou_sw1;
   default : sw_201_gfx_rev_pantograph_pos_orange_chou_sw2;
 }
-switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_yellow_chousobu, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 06, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_yellow_chousobu, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   0..4 : sw_201_gfx_rev_pantograph_pos_yellow_chousobu_sw1;
   default : sw_201_gfx_rev_pantograph_pos_yellow_chousobu_sw2;
 }
-switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_blue_keiyo, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 06, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_blue_keiyo, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   0..4 : sw_201_gfx_rev_pantograph_pos_blue_keiyo_sw1;
   default : sw_201_gfx_rev_pantograph_pos_blue_keiyo_sw2;
 }
-switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_blue_keihanshin, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 06, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_blue_keihanshin, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   0..4 : sw_201_gfx_rev_pantograph_pos_blue_keihanshin_sw1;
   default : sw_201_gfx_rev_pantograph_pos_blue_keihanshin_sw2;
 }
-switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_green_jrw, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 06, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_201_gfx_rev_pantograph_pos_green_jrw, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   0..4 : sw_201_gfx_rev_pantograph_pos_green_jrw_sw1;
   default : sw_201_gfx_rev_pantograph_pos_green_jrw_sw2;
 }
@@ -27180,7 +27180,7 @@ switch(FEAT_TRAINS, SELF, sw_373_gfx_rev_pantograph_pos_std, [STORE_TEMP(positio
   default : sw_373_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS,SELF, sw_373_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-0 : sw_373_gfx_rev_pantograph_pos_std;
+0 : sw_373_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_373_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_373_gfx_rev_back_flippedcheck;
@@ -27467,8 +27467,8 @@ switch(FEAT_TRAINS, SELF, sw_383_gfx_rev_pantograph_pos_view, [STORE_TEMP(positi
   default : sw_383_gfx_rev_pantograph_pos_view_sw1;
 }
 switch(FEAT_TRAINS,SELF, sw_383_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-0 : sw_383_gfx_rev_pantograph_pos_std;
-1 : sw_383_gfx_rev_pantograph_pos_view;
+0 : sw_383_gfx_rev_pantograph_pos_std_sw1;
+1 : sw_383_gfx_rev_pantograph_pos_view_sw1;
 }
 switch(FEAT_TRAINS, SELF, sw_383_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_383_gfx_rev_back_flippedcheck;
@@ -30603,7 +30603,8 @@ switch(FEAT_TRAINS, SELF, sw_227_gfx_rev_pantograph_pos_1000type, [STORE_TEMP(po
 switch(FEAT_TRAINS,SELF, sw_227_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 //0 : sw_227_gfx_rev_pantograph_pos_0type;
 //1 : sw_227_gfx_rev_pantograph_pos_1000type;
-default : sw_227_gfx_rev_mid_flippedcheck;
+0 : sw_227_gfx_rev_mid_flippedcheck;
+1 : sw_227_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_227_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_227_gfx_rev_back_flippedcheck;
@@ -30869,7 +30870,7 @@ switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_pantograph_pos_std_sw2, [STORE_TEMP(pos
  default : sw_321_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_pantograph_pos_std, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_321_gfx_rev_pantograph_pos_std_sw1;
+  0..1 : sw_321_gfx_rev_mid_flippedcheck;
   default : sw_321_gfx_rev_pantograph_pos_std_sw2;
 }
 switch(FEAT_TRAINS,SELF, sw_321_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
@@ -31160,7 +31161,7 @@ switch(FEAT_TRAINS, SELF, sw_323_gfx_rev_pantograph_pos_std_sw4, [STORE_TEMP(pos
  default : sw_323_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_323_gfx_rev_pantograph_pos_std, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_323_gfx_rev_pantograph_pos_std_sw1;
+  0..1 : sw_323_gfx_rev_mid_flippedcheck;
   2..3 : sw_323_gfx_rev_pantograph_pos_std_sw2;
   4 : sw_323_gfx_rev_pantograph_pos_std_sw3;
   default : sw_323_gfx_rev_pantograph_pos_std_sw4;

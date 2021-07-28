@@ -107,7 +107,8 @@ switch(FEAT_TRAINS, SELF, sw_227_gfx_rev_pantograph_pos_1000type, [STORE_TEMP(po
 switch(FEAT_TRAINS,SELF, sw_227_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 //0 : sw_227_gfx_rev_pantograph_pos_0type;
 //1 : sw_227_gfx_rev_pantograph_pos_1000type;
-default : sw_227_gfx_rev_mid_flippedcheck;
+0 : sw_227_gfx_rev_mid_flippedcheck;
+1 : sw_227_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_227_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_227_gfx_rev_back_flippedcheck;

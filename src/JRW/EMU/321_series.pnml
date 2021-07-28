@@ -86,7 +86,7 @@ switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_pantograph_pos_std_sw2, [STORE_TEMP(pos
  default : sw_321_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_pantograph_pos_std, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1 : sw_321_gfx_rev_pantograph_pos_std_sw1;
+  0..1 : sw_321_gfx_rev_mid_flippedcheck;
   default : sw_321_gfx_rev_pantograph_pos_std_sw2;
 }
 switch(FEAT_TRAINS,SELF, sw_321_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
