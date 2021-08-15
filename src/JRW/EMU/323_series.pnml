@@ -23,7 +23,7 @@ spriteset(spriteset_323_revflip_front_std,     "gfx/JRW/EMU323/323.png")      {t
 spriteset(spriteset_323_revflip_back_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_panto25_rev(1, 2)}
 spriteset(spriteset_323_revflip_mid_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_rev(1, 92)}
 spriteset(spriteset_323_revflip_mid_dpanto_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_panto25_rev(1, 122)}
-spriteset(spriteset_323_revflip_mid_spanto_std,     "gfx/JRW/EMU323/323.png")      {tmpl_std(1, 62)}
+spriteset(spriteset_323_revflip_mid_spanto_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_panto25_rev(1, 62)}
 spriteset(spriteset_323_revflip_mid_gr_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_rev(1, 152)}
 /*
 alternative_sprites(spriteset_323_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu323/LIVERY_REF/323-REF_LV-REF_CR.png")      {tmpl_std(1, 1)}

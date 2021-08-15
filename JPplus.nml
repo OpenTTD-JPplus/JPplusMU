@@ -513,6 +513,7 @@ item(FEAT_TRAINS, dmu_KHE131, 1513) {} //kiha281  0x5E6
 item(FEAT_TRAINS, dmu_kiha30, 1514) {} //kiha40    0x5DC
 item(FEAT_TRAINS, dmu_kiha80, 1515) {} //kiha80    0x5DC
 item(FEAT_TRAINS, dmu_KH33, 1516) {} //kiha80    0x5DC
+item(FEAT_TRAINS, dmu_KH1000, 1517) {} //kiha80    0x5DC
 
 
 item(FEAT_TRAINS, emu_107, 2018) {} //107emu 0x7E2
@@ -31056,7 +31057,7 @@ spriteset(spriteset_323_revflip_front_std,     "gfx/JRW/EMU323/323.png")      {t
 spriteset(spriteset_323_revflip_back_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_panto25_rev(1, 2)}
 spriteset(spriteset_323_revflip_mid_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_rev(1, 92)}
 spriteset(spriteset_323_revflip_mid_dpanto_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_panto25_rev(1, 122)}
-spriteset(spriteset_323_revflip_mid_spanto_std,     "gfx/JRW/EMU323/323.png")      {tmpl_std(1, 62)}
+spriteset(spriteset_323_revflip_mid_spanto_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_panto25_rev(1, 62)}
 spriteset(spriteset_323_revflip_mid_gr_std,     "gfx/JRW/EMU323/323.png")      {tmpl_rpstd_rev(1, 152)}
 /*
 alternative_sprites(spriteset_323_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu323/LIVERY_REF/323-REF_LV-REF_CR.png")      {tmpl_std(1, 1)}
