@@ -2,7 +2,7 @@
 # This is the Japanese language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.4.1)
+STR_GRF_NAME        :{BLACK}JP+ Multiple Units - JGR/JNR/JR Trains (v0.4.1){}
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}は日本の風景をもっと豊かに鉄道車両を追加します。当GRF利用の際には、狭軌を含むレールセットが必要です。{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -422,253 +422,256 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 
 # Nade 6100 Series
-    JGR_6340_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JGR_6340_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 101 Series
-    JNR_101_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_101_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 103 Series
-    JNR_103_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_103_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 201 Series
-    JNR_201_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_201_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 205 Series
-    JNR_205_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_205_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 207-900 Series
-    JNR_207900_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_207900_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 70 Series
-    JNR_70_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}横須賀色 / 新潟色 / 阪和色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_70_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}スカ色 / 新潟色 / 阪和色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 113 Series
-    JNR_113_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_113_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 115 Series
-    JNR_115_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_115_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 1153000 Series
-    JNR_1153000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}瀬戸内色 / 広島快速色 / 広島更新色 / 中国地域色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_1153000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}瀬戸内色 / 広島快速色 / 広島更新色 / 中国地域色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 211 Series
-    JNR_211_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本 {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}湘南色 / 中京色 / 房総色 / 長野色 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_211_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本 {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}湘南色 / 中京色 / 房総色 / 長野色 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 213 Series
-    JNR_213_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}JR西日本仕様 / JR東海仕様 (1989+) {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_213_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}JR西日本仕様 / JR東海仕様 (1989+) {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 121 Series
-    JNR_121_DESC  :{BLACK}Gauge:{GOLD} Narrow/狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}初期塗装 / JR四国色{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JNR_121_DESC  :{BLACK}Gauge:{GOLD} Narrow/狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}初期塗装 / JR四国色{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # 415 Series
-    JNR_415_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本 {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_415_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本 {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 711 Series
-    JNR_711_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}旧塗色, 新塗色 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_711_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}旧塗色, 新塗色 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 80 Series
-    JNR_80_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_80_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形直流電車 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 165 Series
-    JNR_165_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_165_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形直流電車 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 181 Series
-    JNR_181_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}151系 / 161系 / 181系{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+    JNR_181_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形直流電車 (特急){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}151系 / 161系 / 181系{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
 
 
 # 485 Series
-    JNR_485_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {BLUE}西日本　{RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+    JNR_485_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交直流電車 (特急){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {BLUE}西日本　{RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
 
 
 # 781 Series
-  JRH_781emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}国鉄 /　JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}国鉄色 / 新塗装色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+  JRH_781emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交流電車 (特急){}{BLACK}所属会社: {WHITE}国鉄 /　JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}国鉄色 / 新塗装色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
 
 
 # KiHa 30
-    JNR_kiha30_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JNR_kiha30_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # KiHa 40
-    JNR_kiha40_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/急行){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {LTBLUE}四国 {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JNR_kiha40_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速/急行){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {LTBLUE}四国 {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa 48
-    JNR_kiha48_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JNR_kiha48_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa 54
-    JNR_kiha54_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {WHITE}(-500) {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JNR_kiha54_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {WHITE}(-500) {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # KiHa 56/57/58
-    JNR_kiha58_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{WHITE} (56) {GREEN}東日本{WHITE} (58) {ORANGE}東海{WHITE} (58) {BLUE}西日本{WHITE} (58) {LTBLUE}四国{WHITE} (57/58) {RED}九州{WHITE} (58){}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
+    JNR_kiha58_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形気動車 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{WHITE} (56) {GREEN}東日本{WHITE} (58) {ORANGE}東海{WHITE} (58) {BLUE}西日本{WHITE} (58) {LTBLUE}四国{WHITE} (57/58) {RED}九州{WHITE} (58){}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
 
 
 # KiHa 80 Series
-    JNR_kiha80_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}キハ81形　/ キハ82形{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+    JNR_kiha80_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形気動車 (特急){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}キハ81形仕様(ボンネット型)　/ キハ82形仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
 
 
 # 721 Series
-  JRH_721emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
+  JRH_721emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
 
 # 731 Series
-  JRH_731emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with KiHa 201 DMU OR 721-735 series EMUs.{}
+  JRH_731emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with KiHa 201 DMU OR 721-735 series EMUs.{}
 
 # 733 Series
-  JRH_733emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Original, Hakodate Liner {GREEN}(refittable){}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+  JRH_733emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Original, Hakodate Liner {GREEN}(refittable){}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
 
 # 735 Series
-  JRH_735emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+  JRH_735emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
 
 
 # 785 Series
-  JRH_785emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
+  JRH_785emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交流電車 (特急){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
 
 # 789 Series
-  JRH_789emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}{}
+  JRH_789emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交流電車 (特急){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}{}
 
 
 # KiHa 141
-  JRH_kiha141_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
+  JRH_kiha141_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
 
 # KiHa 150
-  JRH_kiha150_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.
+  JRH_kiha150_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.
 
 # KiHa 201
-  JRH_kiha201_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
-
-
-# 209 Series
-    JRE_209_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
-
-# E331 Series
-    JRE_E331_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
-
-
-# E217 Series
-    JRE_E217_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}横須賀色 / 湘南色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
-
-
-# E231 Series
-    JRE_E231_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
-
-# E233 Series
-    JRE_E233_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
-
-# E235 Series
-    JRE_E235_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}山手線 / 横須賀線{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+  JRH_kiha201_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
 
 
 # 107 Series
-    JRE_107_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}通常色 / 日光線 (新旧塗装) / 上信電鉄{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JRE_107_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}通常色 / 日光線 (新旧塗装) / 上信電鉄{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # E127 Series
-    JRE_E127_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}新潟支社仕様 / 長野支社仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JRE_E127_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}新潟支社仕様 / 長野支社仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+
+# 209 Series
+    JRE_209_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+
+# E331 Series
+    JRE_E331_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+
+
+# E217 Series
+    JRE_E217_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}スカ色 / 湘南色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+
+
+# E231 Series
+    JRE_E231_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+
+# E233 Series
+    JRE_E233_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+
+# E235 Series
+    JRE_E235_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}山手線仕様 / 横須賀線仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # E531 Series
-    JRE_E531_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRE_E531_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形交直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 719 Series
-    JRE_719_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}通常色 / 磐越西線仕様 / 秋田仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JRE_719_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}通常色 / 磐越西線仕様 / 秋田仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # 719-5000 Series
-    JRE_7195000_DESC  :{BLACK}使用線路:{GOLD} Standard / 標準軌 (4ft8.5in/​1,435mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JRE_7195000_DESC  :{BLACK}使用線路:{GOLD} Standard / 標準軌 (4ft8.5in/​1,435mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # E353 Series
-    JRE_E353_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRE_E353_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形直流電車 (特急){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 651 Series
-    JRE_651_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}0番台仕様 / 1000番台仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRE_651_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交直流電車 (特急){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}スーパーひたち号仕様 / 草津･スワローあかぎ号仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # KiHa 100
-  JRE_KH100_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+  JRE_KH100_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa 110
-  JRE_KH110_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/{BLUE}急行{SILVER}/{RED}特急{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+  JRE_KH110_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速/{BLUE}急行{SILVER}/{RED}特急{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa 111/112
-  JRE_KH111_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速/{BLUE}急行{SILVER}/{RED}特急{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+  JRE_KH111_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速/{BLUE}急行{SILVER}/{RED}特急{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa E120
-    JRE_KHE120_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}新潟支社仕様 / 仙台支社仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JRE_KHE120_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}新潟支社仕様 / 仙台支社仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa E130
-    JRE_KHE130_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}水郡線仕様 / 久留里線仕様 / 八戸線仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JRE_KHE130_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}水郡線仕様 / 久留里線仕様 / 八戸線仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa E130
-    JRE_KHE131_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}水郡線仕様 / 八戸線仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JRE_KHE131_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}水郡線仕様 / 八戸線仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # 211-5000/6000 Series
-    JNR_21156_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JNR_21156_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 311 Series
-    JRC_311_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRC_311_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 313 Series
-    JRC_313_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRC_313_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 373 Series
-    JRC_373_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRC_373_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形直流電車 (特急){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 383 Series
-    JRC_383_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形 (特急){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}Various {GREEN}(refittable){GREEN}{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRC_383_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形直流電車 (特急){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}貫通型仕様 / パノラマ仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 207 Series
-    JRW_207_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}旧塗装 / 新塗装 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_207_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}旧塗装 / 新塗装 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 321 Series
-    JRW_321_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_321_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 323 Series
-    JRW_323_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_323_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 221 Series
-    JRW_221_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_221_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 223_0 Series
-    JRW_223_0_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}関空・紀州路快速仕様 / 新快速仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_223_0_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}関空・紀州路快速仕様 / 新快速仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 223_1000 Series
-    JRW_223_1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_223_1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 225_0 Series
-    JRW_225_0_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_225_0_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 225_5000 Series
-    JRW_225_5000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}関空・紀州路快速仕様 / 新快速仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_225_5000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}関空・紀州路快速仕様 / 新快速仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 227 Series
-    JRW_227_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}広島エリア仕様 / 奈良･和歌山エリア仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRW_227_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}広島エリア仕様 / 奈良･和歌山エリア仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+
+
+# KiHa 33 Series
+    JRW_KH33_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本 {}{BLACK}仕様変更(改造): {GOLD}初期色 / 首都圏色{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # 6000 Series
-    JRS_6000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRS_6000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 7200 Series
-    JRS_7200_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+    JRS_7200_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
-# Kiha1000 Series
-    JRS_KH1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+# KiHa 1000 Series
+    JRS_KH1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 
 # 303 Series
-    JRK_303_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRK_303_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 
 # 811 Series
-    JRK_811_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRK_811_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
 
 # 813 Series
-    JRK_813_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}通常塗装 / 福北ゆたか線塗装 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+    JRK_813_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}通常塗装 / 福北ゆたか線塗装 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
