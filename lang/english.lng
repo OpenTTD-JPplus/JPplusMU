@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.4.1)
+STR_GRF_NAME        :{BLACK}JP+ Multiple Units - JGR/JNR/JR Trains (v0.4.1){}
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Erato{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Emperor Jake{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -583,247 +583,252 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 
 # Nade 6100 Series
-    JGR_6340_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
+    JGR_6340_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
 
 
 # 101 Series
-    JNR_101_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_101_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
 
 # 103 Series
-    JNR_103_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_103_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
 
 # 201 Series
-    JNR_201_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_201_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
 
 # 205 Series
-    JNR_205_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_205_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
 
 # 207-900 Series
-    JNR_207900_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East{}
+    JNR_207900_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East{}
 
 
 # 70 Series
-    JNR_70_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_70_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 113 Series
-    JNR_113_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_113_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 115 Series
-    JNR_115_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_115_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 115-1500 Series
-    JNR_1153000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}   
+    JNR_1153000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}   
 
 # 211 Series
-    JNR_211_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central{}{BLACK}Liveries: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}
+    JNR_211_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central{}{BLACK}Liveries: {WHITE}Shonan, Chukyo (1986+), {GREEN}Chiba (2006+), Nagano (2013+){}
 
 # 213 Series
-    JNR_213_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West {ORANGE}Central{}{BLACK}Liveries: {BLUE}Okayama, {ORANGE}Tokai (1989+){}
+    JNR_213_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West {ORANGE}Central{}{BLACK}Liveries: {BLUE}Okayama, {ORANGE}Tokai (1989+){}
 
 # 121 Series
-    JNR_121_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / {WHITE}JR {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_121_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / {WHITE}JR {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # 415 Series
-    JNR_415_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West {RED}Kyushu{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_415_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West {RED}Kyushu{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
 
 
 # 711 Series
-    JNR_711_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Original, Stripe {GREEN}(refittable){}
+    JNR_711_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Original, Stripe {GREEN}(refittable){}
 
 
 # 80 Series
-    JNR_80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 165 Series
-    JNR_165_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_165_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # 181 Series
-    JNR_181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # 485 Series
-    JNR_485_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JNR / JR {DKGREEN}Hokkaido {GREEN}East {BLUE}West　{RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_485_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {DKGREEN}Hokkaido {GREEN}East {BLUE}West　{RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # 781 Series
-  JRH_781emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers{}{}{BLACK}Liveries: {GOLD}JNR & JR Hokkaido {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}
+  JRH_781emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Liveries: {GOLD}JNR & JR Hokkaido {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}
 
 
 # KiHa 30
-    JNR_kiha30_DESC:{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {RED}Kyushu {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_kiha30_DESC:{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {RED}Kyushu {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # KiHa 35
-    JNR_kiha35_DESC:{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {RED}Kyushu {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_kiha35_DESC:{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West {RED}Kyushu {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # KiHa 40
-    JNR_kiha40_DESC:{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR　{DKGREEN}Hokkaido {GREEN}East {ORANGE}Central {BLUE}West {LTBLUE}Shikoku {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
+    JNR_kiha40_DESC:{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JNR / JR　{DKGREEN}Hokkaido {GREEN}East {ORANGE}Central {BLUE}West {LTBLUE}Shikoku {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
 
 # KiHa 48
-    JNR_kiha48_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
+    JNR_kiha48_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}Cold area types have smaller double-glazed windows.{}
 
 # KiHa 54
-    JNR_kiha54_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {WHITE}(-500) {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_kiha54_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {WHITE}(-500) {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # KiHa 56/57/58
-    JNR_kiha58_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{WHITE} (56) {GREEN}East{WHITE} (58) {ORANGE}Central{WHITE} (58) {BLUE}West{WHITE} (58) {LTBLUE}Shikoku{WHITE} (57/58) {RED}Kyushu{WHITE} (58){}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
+    JNR_kiha58_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {BLUE}Express Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{WHITE} (56) {GREEN}East{WHITE} (58) {ORANGE}Central{WHITE} (58) {BLUE}West{WHITE} (58) {LTBLUE}Shikoku{WHITE} (57/58) {RED}Kyushu{WHITE} (58){}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
 
 
 # KiHa 80 Series
-    JNR_kiha80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {ORANGE}Central{}{BLACK}Liveries: {GOLD}Kiha81　/ Kiha82{}
+    JNR_kiha80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {ORANGE}Central{}{BLACK}Liveries: {GOLD}Kiha81　/ Kiha82{}
 
 
 # 721 Series
-  JRH_721emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
+  JRH_721emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
 
 # 731 Series
-  JRH_731emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with KiHa 201 DMU OR 721-735 series EMUs.{}
+  JRH_731emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with KiHa 201 DMU OR 721-735 series EMUs.{}
 
 # 733 Series
-  JRH_733emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}{BLACK}Liveries: {GOLD}Original, Hakodate Liner {GREEN}(refittable){}
+  JRH_733emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}{BLACK}Liveries: {GOLD}Original, Hakodate Liner {GREEN}(refittable){}
 
 # 735 Series
-  JRH_735emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+  JRH_735emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
 
 
 # 785 Series
-  JRH_785emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
+  JRH_785emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
 
 # 789 Series
-  JRH_789emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}
+  JRH_789emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}
 
 
 # KiHa 141
-  JRH_kiha141_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
+  JRH_kiha141_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
 
 # KiHa 150
-  JRH_kiha150_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.{}
+  JRH_kiha150_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.{}
 
 # KiHa 201
-  JRH_kiha201_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
-
-
-# 209 Series
-    JRE_209_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
-
-# E331 Series
-    JRE_E331_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
-
-
-# E217 Series
-    JRE_E217_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yokosuka, Shonan (2006+){}
-
-
-# E231 Series
-    JRE_E231_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
-
-# E233 Series
-    JRE_E233_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Chou, Keihin-Toukohu (2007+), Shonan (2007+), Joban Local (2009+),  Keiyo (2010+),  Saikyo (2013+), Yokohama (2014+), Nanbu (2014+){GREEN}{}
-
-# E235 Series
-    JRE_E235_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yamanote, Yokosuka (2020+){GREEN}{}
+  JRH_kiha201_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
 
 
 # 107 Series
-    JRE_107_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRE_107_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # E127 Series
-    JRE_E127_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Niigata, Matsumoto{}
+    JRE_E127_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Niigata, Matsumoto{}
+
+# 209 Series
+    JRE_209_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
+# E331 Series
+    JRE_E331_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+
+
+# E217 Series
+    JRE_E217_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yokosuka, Shonan (2006+){}
+
+
+# E231 Series
+    JRE_E231_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+
+# E233 Series
+    JRE_E233_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Chou, Keihin-Toukohu (2007+), Shonan (2007+), Joban Local (2009+),  Keiyo (2010+),  Saikyo (2013+), Yokohama (2014+), Nanbu (2014+){GREEN}{}
+
+# E235 Series
+    JRE_E235_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yamanote, Yokosuka (2020+){GREEN}{}
+
 
 # E531 Series
-    JRE_E531_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}
+    JRE_E531_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}
+
 
 # 719 Series
-    JRE_719_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Sendai, Banetsukoshi (2007+), Akita (2017+){}
+    JRE_719_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Sendai, Banetsukoshi (2007+), Akita (2017+){}
 
 # 719-5000 Series
-    JRE_7195000_DESC  :{BLACK}Gauge:{GOLD} Standard/Hyōjyun (4ft8.5in/​1,435mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: Yamagata{}
+    JRE_7195000_DESC  :{BLACK}Gauge:{GOLD} Standard/Hyōjyun (4ft8.5in/​1,435mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: Yamagata{}
+
+
+# E353 Series
+    JRE_E353_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
 
 
 # 651 Series
-    JRE_651_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
-
-# E353 Series
-    JRE_E353_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+    JRE_651_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
 
 
 # KiHa 110
-  JRE_KH110_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+  JRE_KH110_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
 
 # KiHa 111/112
-  JRE_KH111_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+  JRE_KH111_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
 
 # KiHa E120
-    JRE_KHE120_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Orange, Green{}
+    JRE_KHE120_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Orange, Green{}
 
 # KiHa E130
-    JRE_KHE130_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Kurui, Hachinohe{}
+    JRE_KHE130_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Kurui, Hachinohe{}
 
 # KiHa E130
-    JRE_KHE131_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Hachinohe{}
+    JRE_KHE131_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Hachinohe{}
 
 
 # 211-5000/6000 Series
-    JNR_21156_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+    JNR_21156_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
 
 # 311 Series
-    JRC_311_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+    JRC_311_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
 
 # 313 Series
-    JRC_313_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+    JRC_313_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+
 
 # 373 Series
-    JRC_373_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+    JRC_373_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
 
 # 383 Series
-    JRC_383_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+    JRC_383_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
 
 
 # 207 Series
-    JRW_207_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange{}
+    JRW_207_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange{}
 
 # 321 Series
-    JRW_321_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
+    JRW_321_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
 
 # 323 Series
-    JRW_323_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
+    JRW_323_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
 
 
 # 221 Series
-    JRW_221_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
+    JRW_221_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
 
 # 223_0 Series
-    JRW_223_0_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRW_223_0_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 223_1000 Series
-    JRW_223_1000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRW_223_1000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 225_0 and 225_5000 Series
-    JRW_225_0_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRW_225_0_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 227 Series
-    JRW_227_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRW_227_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
 
 # KiHa 33 Series
-    JRW_KH33_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRW_KH33_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
 
 # 6000 Series
-    JRS_6000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
+    JRS_6000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
 
-# 813 Series
-    JRS_KH1000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
+# KiHa 1000 Series
+    JRS_KH1000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
 
 
 
 # 303 Series
-    JRK_303_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}
+    JRK_303_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}
 
 # 811 Series
-    JRK_811_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRK_811_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 813 Series
-    JRK_813_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JRK_813_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
