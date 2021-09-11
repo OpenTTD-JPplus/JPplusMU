@@ -28,6 +28,7 @@
 #include "src/reversing/reversing_KH_110_111_E120_E130_E131_group.pnml"
 #include "src/reversing/reversing_E231_E233_group.pnml"
 #include "src/reversing/reversing_415_group.pnml"
+#include "src/reversing/reversing_221_223_225_group.pnml"
 /*---TRAINS---*/
 
 //Wagons
