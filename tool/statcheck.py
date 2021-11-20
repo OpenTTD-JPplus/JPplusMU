@@ -81,7 +81,10 @@ for file in filelist:
             datalist.append(weight)
     csv_data.append(datalist)
 
+headerrow = ["file","name","introduction_date","model_life","veheicle_life","reliability_decay","cargo_capacity","loading_speed","cost_factor","running_cost_factor","speed","track_type","power","weight"]
+
 with open("traindata.csv","w") as cfile:
     w = csv.writer(cfile,delimiter=",")
-    for data in csv_data:
-        w.writerow(data)
+    w.writerow(headerrow)
+    for data in csv_data:        
+        w.writerow(data[0:14])
