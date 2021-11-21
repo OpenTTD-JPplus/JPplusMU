@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #modules
 import os
 import os.path as path
@@ -13,13 +15,13 @@ for root, dirs, files in os.walk("src"): # temporary link to src folder
                     filelist.append(path.join(root,fname))
 
 # extracting values from text
-def extract(text): 
+def extract(text):
     text = str(text)
     newtext = text.split(":")[-1].split(";")[0].strip()
     return newtext
 
 # reading data per file
-csv_data = [] # csv data collector 
+csv_data = [] # csv data collector
 
 for file in filelist:
     with open(file,"r") as f:
@@ -31,7 +33,7 @@ for file in filelist:
         if "item" in line:
             startnum = linenum
         if "}" in line:
-            if linenum > startnum:            
+            if linenum > startnum:
                 endnum = linenum
                 continue
 
@@ -53,7 +55,7 @@ for file in filelist:
         if atr == "reliability_decay":
             reliability_decay = extract(text)
             datalist.append(reliability_decay)
-        
+
         if atr == "cargo_capacity":
             cargo_capacity = extract(text)
             datalist.append(cargo_capacity)
@@ -69,7 +71,7 @@ for file in filelist:
 
         if atr == "speed":
             speed = extract(text)
-            datalist.append(speed)        
+            datalist.append(speed)
         if atr == "track_type":
             track_type = extract(text)
             datalist.append(track_type)
@@ -86,5 +88,5 @@ headerrow = ["file","name","introduction_date","model_life","veheicle_life","rel
 with open("traindata.csv","w") as cfile:
     w = csv.writer(cfile,delimiter=",")
     w.writerow(headerrow)
-    for data in csv_data:        
+    for data in csv_data:
         w.writerow(data[0:14])
