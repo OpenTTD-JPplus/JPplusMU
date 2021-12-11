@@ -159,6 +159,7 @@ JRW_KH33:KiHa 33 Series {WHITE}(DMU){BLACK}
 JRS_121:121 Series {WHITE}(EMU){BLACK}
 JRS_6000:6000 Series {WHITE}(EMU){BLACK}
 JRS_7200:7200 Series {WHITE}(EMU){BLACK}
+JRS_8000 :8000 Series {WHITE}(EMU){BLACK}
 JRS_KH1000:KiHa 1000 Series {WHITE}(DMU){BLACK}
 
 JRK_303:303 Series {WHITE}(EMU){BLACK}
@@ -189,6 +190,8 @@ LV_VARITION_END8: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} Livery Variation
 
 
 LV_INITIAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Initial Livery
+
+LV_RENEWAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Renewal Livery
 
 LV_STANDARD: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Standard Livery
 
@@ -819,6 +822,9 @@ JRW_KH33_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Us
 # 6000 Series
 JRS_6000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
 
+# 9000 Series
+JRS_8000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
+
 # KiHa 1000 Series
 JRS_KH1000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {LTBLUE}Shikoku{}
 
@@ -832,4 +838,3 @@ JRK_811_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 
 # 813 Series
 JRK_813_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JR {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
-
