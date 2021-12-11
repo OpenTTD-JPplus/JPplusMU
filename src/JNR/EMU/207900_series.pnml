@@ -107,9 +107,10 @@ switch(FEAT_TRAINS, SELF, sw_207900_gfx_rev_pantograph_pos_std, [STORE_TEMP(posi
   0..1 : sw_207900_gfx_rev_pantograph_pos_std_sw1;
   default : sw_207900_gfx_rev_pantograph_pos_std_sw2;
 }
+/*
 switch(FEAT_TRAINS,SELF, sw_207900_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 0 : sw_207900_gfx_rev_pantograph_pos_std;
-}
+}*/
 switch(FEAT_TRAINS, SELF, sw_207900_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
  0 : sw_207900_gfx_rev_back_flippedcheck;
  default : sw_207900_gfx_rev_back_panto_flippedcheck;
@@ -144,7 +145,7 @@ switch(FEAT_TRAINS, SELF, sw_207900_gfx_rev_frontback,
  default : sw_207900_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_207900_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
- 1000 : sw_207900_gfx_rev_pantograph_pos;
+ 1000 : sw_207900_gfx_rev_pantograph_pos_std;
  2049 : sw_207900_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
