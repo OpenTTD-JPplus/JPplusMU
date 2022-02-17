@@ -1,0 +1,28 @@
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KH40_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH40_rev_orange;
+}
+switch(FEAT_TRAINS,SELF, sw_KH40_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH40_revflip_orange;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH40_gfx_rev_livery;
+ default: sw_KH40_gfx_revflip_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1500: sw_KH40_gfx_rev_flippedcheck;
+  1506: sw_KH40_gfx_rev_flippedcheck;
+}
+
+//startstop
+switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop3, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: return string(STR_STARTSTOP_JNRKH_MU);
+}
+switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1500: sw_JNR_KH_startstop3;
+  1506: sw_JNR_KH_startstop3;
+  1000: sw_JNR_KH_startstop3;
+  default: return string(STR_STARTSTOP_JNRKH);
+}

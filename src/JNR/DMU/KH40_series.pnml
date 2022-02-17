@@ -8,9 +8,9 @@ spriteset (spriteset_KH40_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl
 spriteset (spriteset_KH40_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH40_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std(0, 26)}
-alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
 
 /*---END OF SECTION---*/
 
@@ -23,22 +23,7 @@ alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_
 
 
 /*---GFX: Train Reversing Switches---*/
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_KH40_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH40_rev_orange;
-}
-switch(FEAT_TRAINS,SELF, sw_KH40_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH40_revflip_orange;
-}
 
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH40_gfx_rev_livery;
- default: sw_KH40_gfx_revflip_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1500: sw_KH40_gfx_rev_flippedcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -47,7 +32,7 @@ switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_idcheck, [STORE_TEMP(position_in_consi
 //KH40 JR Orange Vermillion
 switch(FEAT_TRAINS, PARENT, sw_KH40_orange_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH40_orange;
- default: sw_KH40_gfx_rev_flippedcheck;
+ default: sw_JNR_KH_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
 
@@ -75,7 +60,7 @@ switch(FEAT_TRAINS, SELF, sw_KH40_subtypetext_main, cargo_subtype) {
 
 
 //Coupling
-  switch(FEAT_TRAINS, SELF, sw_KH40_attach_vehid, [vehicle_type_id == dmu_kiha40]) {
+  switch(FEAT_TRAINS, SELF, sw_KH40_attach_vehid, [vehicle_type_id == dmu_kiha58 || vehicle_type_id == dmu_kiha40]) {
   0: return string(MU_UNIQUE);
   }
 
@@ -102,7 +87,7 @@ item(FEAT_TRAINS, dmu_kiha40) {
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
         refittable_cargo_classes:     bitmask(CC_PASSENGERS);
         non_refittable_cargo_classes: bitmask();
         refit_cost:                   0;

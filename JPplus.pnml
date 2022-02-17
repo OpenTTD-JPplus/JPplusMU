@@ -29,6 +29,8 @@
 #include "src/reversing/reversing_E231_E233_group.pnml"
 #include "src/reversing/reversing_415_group.pnml"
 #include "src/reversing/reversing_221_223_225_group.pnml"
+#include "src/reversing/reversing_JNR_KIHA_group.pnml"
+
 /*---TRAINS---*/
 
 //Wagons
@@ -41,6 +43,7 @@
 //JNR
 #include "src/JNR/DMU/KH30_series.pnml"
 #include "src/JNR/DMU/KH40_series.pnml"
+#include "src/JNR/DMU/KH58_series.pnml"
 #include "src/JNR/DMU/KH80_series.pnml"
 #include "src/JNR/EMU/70_series.pnml"
 #include "src/JNR/EMU/80_series.pnml"

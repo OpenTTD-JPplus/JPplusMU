@@ -7,7 +7,7 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	41;
+	version:	42;
 	min_compatible_version: 10;
 		//japanset3 removal
 		param 4 {
@@ -577,12 +577,6 @@ item(FEAT_TRAINS, emu_323, 2057) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_383, 2058) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_373, 2059) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_8000, 2060) {} //107emu 0x7E2
-
-
-
-item(FEAT_TRAINS, DH_E851, 4000) {} //E851
-item(FEAT_TRAINS, DH_EF210, 4001) {} //EF210
-item(FEAT_TRAINS, DH_ED75, 4002) {} //ED75
 # 1 "JPplus.pnml" 4
 
 //Coupliung Rules
@@ -5911,6 +5905,37 @@ switch(FEAT_TRAINS, SELF, sw_JRW22group_gfx_rev_idcheck, [STORE_TEMP(position_in
 }
 /*---END OF SECTION---*/
 # 1 "JPplus.pnml" 4
+# 1 "src/reversing/reversing_JNR_KIHA_group.pnml" 1
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_KH40_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH40_rev_orange;
+}
+switch(FEAT_TRAINS,SELF, sw_KH40_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH40_revflip_orange;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH40_gfx_rev_livery;
+ default: sw_KH40_gfx_revflip_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1500: sw_KH40_gfx_rev_flippedcheck;
+  1506: sw_KH40_gfx_rev_flippedcheck;
+}
+
+//startstop
+switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop3, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: return string(STR_STARTSTOP_JNRKH_MU);
+}
+switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1500: sw_JNR_KH_startstop3;
+  1506: sw_JNR_KH_startstop3;
+  1000: sw_JNR_KH_startstop3;
+  default: return string(STR_STARTSTOP_JNRKH);
+}
+# 1 "JPplus.pnml" 4
+
 /*---TRAINS---*/
 
 //Wagons
@@ -6345,9 +6370,9 @@ spriteset (spriteset_KH40_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl
 spriteset (spriteset_KH40_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH40_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std(0, 1)}
-alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std(0, 26)}
-alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40-1-1.png")           {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
 
 /*---END OF SECTION---*/
 
@@ -6360,22 +6385,7 @@ alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_
 
 
 /*---GFX: Train Reversing Switches---*/
-//Livery Selection
-switch(FEAT_TRAINS,SELF, sw_KH40_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH40_rev_orange;
-}
-switch(FEAT_TRAINS,SELF, sw_KH40_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH40_revflip_orange;
-}
 
-//Check for flipped vehicles (dual_headed)
-switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_flippedcheck, vehicle_is_flipped) {
-  1: sw_KH40_gfx_rev_livery;
- default: sw_KH40_gfx_revflip_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1500: sw_KH40_gfx_rev_flippedcheck;
-}
 /*---END OF SECTION---*/
 
 
@@ -6384,7 +6394,7 @@ switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_idcheck, [STORE_TEMP(position_in_consi
 //KH40 JR Orange Vermillion
 switch(FEAT_TRAINS, PARENT, sw_KH40_orange_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH40_orange;
- default: sw_KH40_gfx_rev_flippedcheck;
+ default: sw_JNR_KH_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
 
@@ -6412,7 +6422,7 @@ switch(FEAT_TRAINS, SELF, sw_KH40_subtypetext_main, cargo_subtype) {
 
 
 //Coupling
-  switch(FEAT_TRAINS, SELF, sw_KH40_attach_vehid, [vehicle_type_id == dmu_kiha40]) {
+  switch(FEAT_TRAINS, SELF, sw_KH40_attach_vehid, [vehicle_type_id == dmu_kiha58 || vehicle_type_id == dmu_kiha40]) {
   0: return string(MU_UNIQUE);
   }
 
@@ -6439,7 +6449,7 @@ item(FEAT_TRAINS, dmu_kiha40) {
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
         refittable_cargo_classes:     bitmask(CC_PASSENGERS);
         non_refittable_cargo_classes: bitmask();
         refit_cost:                   0;
@@ -6464,6 +6474,180 @@ item(FEAT_TRAINS, dmu_kiha40) {
         can_attach_wagon:			  sw_KH40_attach_vehid;
         //start_stop:                   ;
     }
+}
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/DMU/KH58_series.pnml" 1
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_KH58_purchase,	                                                    "gfx/JNR/dmuKH58/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH58_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JNR/dmuKH58/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH58 JR jnr Vermillion
+spriteset (spriteset_KH58_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH58_frontflip_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH58_rev_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH58_revflip_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH58_mid_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH58_mid_rev_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+spriteset (spriteset_KH58_midgr_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH58_midgr_rev_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+
+alternative_sprites(spriteset_KH58_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std(0, 1)}
+alternative_sprites(spriteset_KH58_frontflip_jnr, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_KH58_rev_jnr,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std(0, 26)}
+alternative_sprites(spriteset_KH58_revflip_jnr,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std_rev(0, 26)}
+
+alternative_sprites(spriteset_KH58_mid_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std(0, 76)}
+alternative_sprites(spriteset_KH58_mid_rev_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std_rev(0, 76)}
+
+alternative_sprites(spriteset_KH58_midgr_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std(0, 51)}
+alternative_sprites(spriteset_KH58_midgr_rev_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std_rev(0, 76)}
+
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//KH58 JNR Express
+switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
+ 0: spriteset_KH58_revflip_jnr;
+ default: spriteset_KH58_rev_jnr;
+}
+switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_flipcheck_posfront, vehicle_is_flipped){
+ 0: spriteset_KH58_jnr;
+ default: spriteset_KH58_frontflip_jnr;
+}
+switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_revcheck_posback, position_in_consist_from_end){
+ 0: sw_KH58_jnr_gfx_frontback_flipcheck_posback;
+ default: spriteset_KH58_rev_jnr;
+}
+switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_revcheck_posfront, position_in_consist){
+ 0: sw_KH58_jnr_gfx_frontback_flipcheck_posfront;
+ default: sw_KH58_jnr_gfx_frontback_revcheck_posback;
+}
+switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH58_jnr_gfx_frontback_revcheck_posfront;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_mid_revcheck, vehicle_is_reversed){
+  0: spriteset_KH58_mid_jnr;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KH58_jnrgr_gfx_mid_revcheck, vehicle_is_reversed){
+  0: spriteset_KH58_midgr_jnr;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_KH58_gfx_main, cargo_subtype) {
+  0: sw_KH58_jnr_gfx_frontback_revcheck;
+}
+
+switch(FEAT_TRAINS, SELF, sw_KH58_gfx_mucar, cargo_subtype) {
+  0: sw_KH58_jnr_gfx_mid_revcheck;
+  1: sw_KH58_jnrgr_gfx_mid_revcheck;
+
+}
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_KH58_subtypetext_main, cargo_subtype) {
+  0: string(LV_JNR_EXPRESS);
+}
+
+switch(FEAT_TRAINS, SELF, sw_KH58_subtypetext_mucar, cargo_subtype) {
+  0: string(LV_JNR_EXPRESS);
+  1: string(LV_VARITION_END1);
+}
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_KH58_attach_vehid, [vehicle_type_id == dmu_kiha58 || vehicle_type_id == mu_car || vehicle_type_id == dmu_kiha40]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, dmu_kiha58) {
+    property {
+        name:                         string(JNR_kiha58);
+        introduction_date:            date(1961, 01, 05);
+        model_life:                   8;
+        vehicle_life:                 44;
+        reliability_decay:            20;
+
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  18;
+        running_cost_factor:          48;
+
+        speed:                        95 km/h;
+        track_type:                   NARROW_NOEL;
+        power:                        132 kW;
+        weight:                       37 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                sw_KH58_gfx_main;
+		    purchase:               spriteset_KH58_purchase;
+		    additional_text:	      return string(JNR_kiha58_DESC);
+        cargo_subtype_text:     sw_KH58_subtypetext_main;
+        can_attach_wagon:			  sw_KH58_attach_vehid;
+        start_stop:             sw_JNR_KH_startstop;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_KH58_gfx_mucar;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_subtype_text:           sw_KH58_subtypetext_mucar;
+        power: 132;
+        weight: 40;
+      }
 }
 # 1 "JPplus.pnml" 4
 # 1 "src/JNR/DMU/KH80_series.pnml" 1

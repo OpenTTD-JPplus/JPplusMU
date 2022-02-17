@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME:JP+ Multiple Units - JGR/JNR/JR Trains (v0.4.1)
+STR_GRF_NAME:JP+ Multiple Units - JGR/JNR/JR Trains (v0.4.2)
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Erato{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Emperor Jake{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -34,8 +34,8 @@ STR_PARAM_DESC_JAPANSETDISABLE   :Removes duplicate trains found in JapanSet3.
 STR_PARAM_NAME_DECAY :Cargo decay rate
 STR_PARAM_DESC_DECAY :Set the rate of cargo decay. In "normal" mode all trains have the same decay rate. In "low" and "very low" cargo decay rates depend on the type of train used. Using a commuter train over long distances would earn less than using an express train.
 
-
-
+STR_STARTSTOP_JNRKH:You will need to make sure that a KiHa type unit with cab is the rear unit. 
+STR_STARTSTOP_JNRKH_MU:The last car cannot be a MU_Car. Please attach a KiHa unit to the rear.
 
 GRF_OTTDVER   : You are below the required OpenTTD version to run this NewGRF. Please update your version of OpenTTD.
 GRF_JAPANSET  : {WHITE}Please load...{}{YELLOW}JapanSet3 Trains{WHITE}{}and/or{}{YELLOW}JapanSet3 Tracks{WHITE}{}before {GREEN}JP+Set.
