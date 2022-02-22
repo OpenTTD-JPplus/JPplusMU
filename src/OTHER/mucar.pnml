@@ -3,7 +3,6 @@ spriteset (set_mu_car_purchase,	    "gfx/OTHER/mucarbuy.png") 	{tmpl_purchase(0,
 spriteset (set_mu_car_base,       	"gfx/OTHER/mucar.png")     	{tmpl_std(0, 0)}
 
 
-
 item(FEAT_TRAINS, mu_car) {
     /* Define properties first, make sure to set all of them */
     property {
@@ -41,6 +40,7 @@ item(FEAT_TRAINS, mu_car) {
     graphics {
 		purchase:                     set_mu_car_purchase;
     additional_text:			        return string(MUCAR_DESC);
+    //can_attach_wagon:			  set_mu_car_noattach_vehid;
     set_mu_car_base;
     }
 

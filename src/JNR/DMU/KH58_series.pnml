@@ -9,24 +9,10 @@ spriteset (spriteset_KH58_frontflip_jnr,    	      	"gfx/OTHER/mucar.png")      
 spriteset (spriteset_KH58_rev_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH58_revflip_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-spriteset (spriteset_KH58_mid_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH58_mid_rev_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-spriteset (spriteset_KH58_midgr_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-spriteset (spriteset_KH58_midgr_rev_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
-
-
 alternative_sprites(spriteset_KH58_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std(0, 1)}
 alternative_sprites(spriteset_KH58_frontflip_jnr, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_KH58_rev_jnr,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std(0, 26)}
 alternative_sprites(spriteset_KH58_revflip_jnr,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std_rev(0, 26)}
-
-alternative_sprites(spriteset_KH58_mid_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std(0, 76)}
-alternative_sprites(spriteset_KH58_mid_rev_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std_rev(0, 76)}
-
-alternative_sprites(spriteset_KH58_midgr_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std(0, 51)}
-alternative_sprites(spriteset_KH58_midgr_rev_jnr,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/58_jnr.png")           {tmpl_std_rev(0, 76)}
-
 
 /*---END OF SECTION---*/
 
@@ -62,7 +48,7 @@ switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_revcheck_posfront, position_
  0: sw_KH58_jnr_gfx_frontback_flipcheck_posfront;
  default: sw_KH58_jnr_gfx_frontback_revcheck_posback;
 }
-switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_revcheck, vehicle_is_reversed){
+switch(FEAT_TRAINS, PARENT, sw_KH58_jnr_gfx_frontback_revcheck, vehicle_is_reversed){
  0: sw_KH58_jnr_gfx_frontback_revcheck_posfront;
  default: sw_JNR_KH_gfx_rev_idcheck;
 }
@@ -70,16 +56,6 @@ switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_frontback_revcheck, vehicle_is_reverse
 
 
 
-/*---GFX: Middle Car Switches---*/
-switch(FEAT_TRAINS, SELF, sw_KH58_jnr_gfx_mid_revcheck, vehicle_is_reversed){
-  0: spriteset_KH58_mid_jnr;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_KH58_jnrgr_gfx_mid_revcheck, vehicle_is_reversed){
-  0: spriteset_KH58_midgr_jnr;
- default: sw_JNR_KH_gfx_rev_idcheck;
-}
-/*---END OF SECTION---*/
 
 
 
@@ -88,20 +64,9 @@ switch(FEAT_TRAINS, SELF, sw_KH58_jnrgr_gfx_mid_revcheck, vehicle_is_reversed){
 switch(FEAT_TRAINS, SELF, sw_KH58_gfx_main, cargo_subtype) {
   0: sw_KH58_jnr_gfx_frontback_revcheck;
 }
-
-switch(FEAT_TRAINS, SELF, sw_KH58_gfx_mucar, cargo_subtype) {
-  0: sw_KH58_jnr_gfx_mid_revcheck;
-  1: sw_KH58_jnrgr_gfx_mid_revcheck;
-
-}
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH58_subtypetext_main, cargo_subtype) {
   0: string(LV_JNR_EXPRESS);
-}
-
-switch(FEAT_TRAINS, SELF, sw_KH58_subtypetext_mucar, cargo_subtype) {
-  0: string(LV_JNR_EXPRESS);
-  1: string(LV_VARITION_END1);
 }
 /*---END OF SECTION---*/
 
@@ -162,10 +127,10 @@ item(FEAT_TRAINS, dmu_kiha58) {
     }
     /*Multiple Unit Car*/
       livery_override(mu_car){
-        default:                      sw_KH58_gfx_mucar;
+        default:                      sw_JNR_KH_gfx_mucar;
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
-        cargo_subtype_text:           sw_KH58_subtypetext_mucar;
+        cargo_subtype_text:           sw_JNR_KH_subtypetext_mucar;
         power: 132;
         weight: 40;
       }

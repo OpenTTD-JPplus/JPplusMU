@@ -54,14 +54,17 @@ switch(FEAT_TRAINS, SELF, sw_KH40_gfx_main, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_KH40_subtypetext_main, cargo_subtype) {
   0: string(LV_ORANGE_CAPITAL);
 }
-
 /*---END OF SECTION---*/
 
 
 
 //Coupling
+switch(FEAT_TRAINS, SELF, sw_attach_hmucheck, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1504: return string(MU_UNIQUE);
+}
   switch(FEAT_TRAINS, SELF, sw_KH40_attach_vehid, [vehicle_type_id == dmu_kiha58 || vehicle_type_id == dmu_kiha40]) {
   0: return string(MU_UNIQUE);
+  default: sw_attach_hmucheck;
   }
 
 
@@ -112,4 +115,12 @@ item(FEAT_TRAINS, dmu_kiha40) {
         can_attach_wagon:			  sw_KH40_attach_vehid;
         //start_stop:                   ;
     }
+      livery_override(mu_car){
+        default:                      sw_JNR_KH_gfx_mucar;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_subtype_text:           sw_JNR_KH_subtypetext_mucar;
+        power: 132;
+        weight: 40;
+      }
 }
