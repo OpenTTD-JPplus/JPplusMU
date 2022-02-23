@@ -113,7 +113,7 @@ item(FEAT_TRAINS, dmu_kiha40) {
 		    additional_text:	      return string(JNR_kiha40_DESC);
         cargo_subtype_text:           sw_KH40_subtypetext_main;
         can_attach_wagon:			  sw_JNR_KH_attach_vehid;
-        //start_stop:             sw_JNR_KH_startstop;
+        start_stop:             sw_JNR_KH_startstop;
     }
       livery_override(mu_car){
         default:                      sw_JNR_KH_gfx_mucar;
