@@ -9,6 +9,16 @@ switch(FEAT_TRAINS,SELF, sw_KH30_gfx_revflip_livery, [STORE_TEMP(position_in_con
   0: spriteset_KH30_revflip_orangecream;
 }
 
+//kh33
+switch(FEAT_TRAINS,SELF, sw_KH33_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KH33_rev_orange;
+  0: spriteset_KH33_rev_inital;
+}
+switch(FEAT_TRAINS,SELF, sw_KH33_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KH33_revflip_orange;
+  0: spriteset_KH33_revflip_inital;
+}
+
 //Livery Selection kh40
 switch(FEAT_TRAINS,SELF, sw_KH40_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0: spriteset_KH40_rev_orange;
@@ -73,6 +83,11 @@ switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_flippedcheck, vehicle_is_flipped) {
  default: sw_KH30_gfx_revflip_livery;
 }
 
+switch(FEAT_TRAINS, SELF, sw_KH33_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH33_gfx_rev_livery;
+ default: sw_KH33_gfx_revflip_livery;
+}
+
 switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_flippedcheck, vehicle_is_flipped) {
   1: sw_KH40_gfx_rev_livery;
  default: sw_KH40_gfx_revflip_livery;
@@ -135,7 +150,8 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_rev_idcheck, [STORE_TEMP(position_in_con
   1500: sw_KH40_gfx_rev_flippedcheck;
   1506: sw_KH58_gfx_rev_opposite_pos;
   1514: sw_KH30_gfx_rev_flippedcheck;
-  1518: sw_KH35_gfx_rev_opposite_pos; //kh35
+  1516: sw_KH33_gfx_rev_flippedcheck;
+  1518: sw_KH35_gfx_rev_opposite_pos;
 
   1000: sw_JNR_KH_gfx_rev_flippedcheck_mucar;
 }
@@ -147,12 +163,14 @@ switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop3, [STORE_TEMP(position_in_consis
 switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop2, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
   1500: sw_JNR_KH_startstop3; //kh40
   1514: sw_JNR_KH_startstop3; //kh30
+  1516: sw_JNR_KH_startstop3; //kh33
   default: return string(STR_STARTSTOP_JNRKH);
 }
 switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
   1500: sw_JNR_KH_startstop3; //kh40
   1506: sw_JNR_KH_startstop3; //kh58
   1514: sw_JNR_KH_startstop3; //kh30
+  1516: sw_JNR_KH_startstop3; //kh33
   1518: sw_JNR_KH_startstop3; //kh35
 
   1000: sw_JNR_KH_startstop3; //mucar
