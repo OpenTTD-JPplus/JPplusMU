@@ -42,6 +42,7 @@
 
 //JNR
 #include "src/JNR/DMU/KH30_series.pnml"
+#include "src/JNR/DMU/KH35_series.pnml"
 #include "src/JNR/DMU/KH40_series.pnml"
 #include "src/JNR/DMU/KH58_series.pnml"
 #include "src/JNR/DMU/KH80_series.pnml"

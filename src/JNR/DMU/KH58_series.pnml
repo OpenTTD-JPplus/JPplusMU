@@ -84,18 +84,18 @@ item(FEAT_TRAINS, dmu_kiha58) {
         name:                         string(JNR_kiha58);
         introduction_date:            date(1961, 01, 05);
         model_life:                   8;
-        vehicle_life:                 44;
-        reliability_decay:            20;
+        vehicle_life:                 57;
+        reliability_decay:            17;
 
         cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
-        cost_factor:                  18;
-        running_cost_factor:          48;
+        cost_factor:                  15;
+        running_cost_factor:          45;
 
         speed:                        95 km/h;
         track_type:                   NARROW_NOEL;
         power:                        132 kW;
-        weight:                       37 ton;
+        weight:                       41 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
@@ -122,13 +122,13 @@ item(FEAT_TRAINS, dmu_kiha58) {
 		    purchase:               spriteset_KH58_purchase;
 		    additional_text:	      return string(JNR_kiha58_DESC);
         cargo_subtype_text:     sw_KH58_subtypetext_main;
-        can_attach_wagon:			  sw_KH58_attach_vehid;
+        can_attach_wagon:			  sw_JNR_KH_attach_vehid;
         start_stop:             sw_JNR_KH_startstop;
     }
     /*Multiple Unit Car*/
       livery_override(mu_car){
         default:                      sw_JNR_KH_gfx_mucar;
-        cargo_capacity:               param_capacity_express;
+        cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
         cargo_subtype_text:           sw_JNR_KH_subtypetext_mucar;
         power: 132;

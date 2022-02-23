@@ -32,6 +32,7 @@ alternative_sprites(spriteset_KH30_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_
 
 
 /*---GFX: Train Reversing Switches---*/
+/*
 //Livery Selection
 switch(FEAT_TRAINS,SELF, sw_KH30_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   1: spriteset_KH30_rev_orange;
@@ -50,6 +51,7 @@ switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_flippedcheck, vehicle_is_flipped) {
 switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
   1500: sw_KH30_gfx_rev_flippedcheck;
 }
+*/
 /*---END OF SECTION---*/
 
 
@@ -58,11 +60,11 @@ switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_idcheck, [STORE_TEMP(position_in_consi
 //KH30 JR Orange Vermillion
 switch(FEAT_TRAINS, PARENT, sw_KH30_orangecream_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH30_orangecream;
- default: sw_KH30_gfx_rev_flippedcheck;
+ default: sw_JNR_KH_gfx_rev_idcheck;
 }
 switch(FEAT_TRAINS, PARENT, sw_KH30_orange_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH30_orange;
- default: sw_KH30_gfx_rev_flippedcheck;
+ default: sw_JNR_KH_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
 
@@ -141,7 +143,16 @@ item(FEAT_TRAINS, dmu_kiha30) {
 		    purchase:                 spriteset_KH30_purchase;
 		    additional_text:	      return string(JNR_kiha30_DESC);
         cargo_subtype_text:           sw_KH30_subtypetext_main;
-        can_attach_wagon:			  sw_KH30_attach_vehid;
-        //start_stop:                   ;
+        can_attach_wagon:			  sw_JNR_KH_attach_vehid;
+        //start_stop:             sw_JNR_KH_startstop;
     }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_JNR_KH_gfx_mucar;
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cargo_subtype_text:           sw_JNR_KH_subtypetext_mucar;
+        power: 132;
+        weight: 32;
+      }
 }

@@ -1,0 +1,193 @@
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_KH35_purchase,	                                                    "gfx/JNR/dmuKH35/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH35_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,        "gfx/JNR/dmuKH35/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH35 JR jnr redcream1
+spriteset (spriteset_KH35_redcream1,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_frontflip_redcream1,    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_rev_redcream1,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_revflip_redcream1,    	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH35_redcream1,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-1.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH35_frontflip_redcream1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-1.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH35_rev_redcream1,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-1.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH35_revflip_redcream1,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-1.png")           {tmpl_std(0, 25)}
+
+//KH35 JR jnr redcream2
+spriteset (spriteset_KH35_redcream2,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_frontflip_redcream2,    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_rev_redcream2,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_revflip_redcream2,      "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH35_redcream2,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-2.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH35_frontflip_redcream2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-2.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH35_rev_redcream2,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-2.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH35_revflip_redcream2,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-2.png")           {tmpl_std(0, 25)}
+
+//KH35 JR jnr red1
+spriteset (spriteset_KH35_red1,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_frontflip_red1,   "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_rev_red1,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_revflip_red1,    	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH35_red1,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-3.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH35_frontflip_red1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-3.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH35_rev_red1,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-3.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH35_revflip_red1,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-3.png")           {tmpl_std(0, 25)}
+
+//KH35 JR jnr red2
+spriteset (spriteset_KH35_red2,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_frontflip_red2,   "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_rev_red2,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH35_revflip_red2,    	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH35_red2,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-4.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH35_frontflip_red2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-4.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH35_rev_red2,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-4.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH35_revflip_red2,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH35/KH35-4.png")           {tmpl_std(0, 25)}
+
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//and draw the right thing by livery
+switch(FEAT_TRAINS, SELF, sw_KH35_revflip_lv, cargo_subtype) {
+  0: spriteset_KH35_revflip_redcream1;
+  1: spriteset_KH35_revflip_redcream2;
+  2: spriteset_KH35_revflip_red1;
+  3: spriteset_KH35_revflip_red2;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_rev_lv, cargo_subtype) {
+  0: spriteset_KH35_rev_redcream1;
+  1: spriteset_KH35_rev_redcream2;
+  2: spriteset_KH35_rev_red1;
+  3: spriteset_KH35_rev_red2;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_frontflip_lv, cargo_subtype) {
+  0: spriteset_KH35_frontflip_redcream1;
+  1: spriteset_KH35_frontflip_redcream2;
+  2: spriteset_KH35_frontflip_red1;
+  3: spriteset_KH35_frontflip_red2;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_front_lv, cargo_subtype) {
+  0: spriteset_KH35_redcream1;
+  1: spriteset_KH35_redcream2;
+  2: spriteset_KH35_red1;
+  3: spriteset_KH35_red2;
+}
+//KH35 JNR Red Cream 1
+switch(FEAT_TRAINS, SELF, sw_KH35_jnr_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
+ 0: sw_KH35_revflip_lv;
+ default: sw_KH35_rev_lv;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_jnr_gfx_frontback_flipcheck_posfront, vehicle_is_flipped){
+ 0: sw_KH35_front_lv;
+ default: sw_KH35_frontflip_lv;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_jnr_gfx_frontback_revcheck_posback, position_in_consist_from_end){
+ 0: sw_KH35_jnr_gfx_frontback_flipcheck_posback;
+ default: sw_KH35_rev_lv;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_jnr_gfx_frontback_revcheck_posfront, position_in_consist){
+ 0: sw_KH35_jnr_gfx_frontback_flipcheck_posfront;
+ default: sw_KH35_jnr_gfx_frontback_revcheck_posback;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH35_jnr_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH35_jnr_gfx_frontback_revcheck_posfront;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+/*
+switch(FEAT_TRAINS, SELF, sw_KH35_gfx_main, cargo_subtype) {
+  0: sw_KH35_jnr_gfx_frontback_revcheck;
+}*/
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_KH35_subtypetext_main, cargo_subtype) {
+  0: string(LV_STANDARD);
+  1: string(LV_VARITION_END1);
+  2: string(LV_ORANGE_CAPITAL);
+  3: string(LV_VARITION_END2);
+}
+/*---END OF SECTION---*/
+
+
+
+item(FEAT_TRAINS, dmu_kiha35) {
+    property {
+        name:                         string(JNR_kiha35);
+        introduction_date:            date(1961, 12, 01);
+        model_life:                   5;
+        vehicle_life:                 51;
+        reliability_decay:            22;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  19;
+        running_cost_factor:          49;
+
+        speed:                        95 km/h;
+        track_type:                   NARROW_NOEL;
+        power:                        132 kW;
+        weight:                       32 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                sw_KH35_jnr_gfx_frontback_revcheck;
+		    purchase:               spriteset_KH35_purchase;
+		    additional_text:	      return string(JNR_kiha35_DESC);
+        cargo_subtype_text:     sw_KH35_subtypetext_main;
+        can_attach_wagon:			  sw_JNR_KH_attach_vehid;
+        start_stop:             sw_JNR_KH_startstop;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_JNR_KH_gfx_mucar;
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cargo_subtype_text:           sw_JNR_KH_subtypetext_mucar;
+        power: 132;
+        weight: 32;
+      }
+}

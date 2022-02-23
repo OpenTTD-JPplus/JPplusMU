@@ -1,9 +1,46 @@
+
+//Livery Selection kh30
+switch(FEAT_TRAINS,SELF, sw_KH30_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KH30_rev_orange;
+  0: spriteset_KH30_rev_orangecream;
+}
+switch(FEAT_TRAINS,SELF, sw_KH30_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  1: spriteset_KH30_revflip_orange;
+  0: spriteset_KH30_revflip_orangecream;
+}
+
 //Livery Selection kh40
 switch(FEAT_TRAINS,SELF, sw_KH40_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0: spriteset_KH40_rev_orange;
 }
 switch(FEAT_TRAINS,SELF, sw_KH40_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0: spriteset_KH40_revflip_orange;
+}
+
+//livery Selection kh35
+switch(FEAT_TRAINS,SELF, sw_KH35_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH35_rev_redcream1;
+  1: spriteset_KH35_rev_redcream2;
+  2: spriteset_KH35_rev_red1;
+  3: spriteset_KH35_rev_red2;
+}
+switch(FEAT_TRAINS,SELF, sw_KH35_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH35_revflip_redcream1;
+  1: spriteset_KH35_revflip_redcream2;
+  2: spriteset_KH35_revflip_red1;
+  3: spriteset_KH35_revflip_red2;
+}
+switch(FEAT_TRAINS,SELF, sw_KH35_gfx_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH35_redcream1;
+  1: spriteset_KH35_redcream2;
+  2: spriteset_KH35_red1;
+  3: spriteset_KH35_red2;
+}
+switch(FEAT_TRAINS,SELF, sw_KH35_gfx_frontflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH35_frontflip_redcream1;
+  1: spriteset_KH35_frontflip_redcream2;
+  2: spriteset_KH35_frontflip_red1;
+  3: spriteset_KH35_frontflip_red2;
 }
 
 //livery Selection kh58
@@ -31,9 +68,23 @@ switch(FEAT_TRAINS,SELF, sw_JNR_KH_gfx_revflip_livery, [STORE_TEMP(position_in_c
 }
 
 //Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_KH30_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH30_gfx_rev_livery;
+ default: sw_KH30_gfx_revflip_livery;
+}
+
 switch(FEAT_TRAINS, SELF, sw_KH40_gfx_rev_flippedcheck, vehicle_is_flipped) {
   1: sw_KH40_gfx_rev_livery;
  default: sw_KH40_gfx_revflip_livery;
+}
+
+switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH35_gfx_rev_livery;
+ default: sw_KH35_gfx_revflip_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
+  1: sw_KH35_gfx_revflip_livery;
+ default: sw_KH35_gfx_rev_livery;
 }
 
 switch(FEAT_TRAINS, SELF, sw_KH58_gfx_rev_flippedcheck, vehicle_is_flipped) {
@@ -52,8 +103,18 @@ getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
   default: sw_KH58_gfx_rev_flippedcheckopp;
 }
 switch(FEAT_TRAINS, SELF, sw_KH58_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
-  0: spriteset_KH58_jnr;
+  0: sw_KH58_gfx_front_livery;
   default: sw_KH58_gfx_rev_opposite_flippedcheck;
+}
+
+switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_opposite_flippedcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), 
+getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
+  0: sw_KH35_gfx_rev_flippedcheck;
+  default: sw_KH35_gfx_rev_flippedcheckopp;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
+  0: sw_KH35_gfx_front_livery;
+  default: sw_KH35_gfx_rev_opposite_flippedcheck;
 }
 
 //mucar flipped
@@ -73,6 +134,8 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_rev_flippedcheck_mucar, vehicle_is_flipp
 switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
   1500: sw_KH40_gfx_rev_flippedcheck;
   1506: sw_KH58_gfx_rev_opposite_pos;
+  1514: sw_KH30_gfx_rev_flippedcheck;
+  1518: sw_KH35_gfx_rev_opposite_pos; //kh35
 
   1000: sw_JNR_KH_gfx_rev_flippedcheck_mucar;
 }
@@ -82,9 +145,12 @@ switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop3, [STORE_TEMP(position_in_consis
   1000: return string(STR_STARTSTOP_JNRKH_MU);
 }
 switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1500: sw_JNR_KH_startstop3;
-  1506: sw_JNR_KH_startstop3;
-  1000: sw_JNR_KH_startstop3;
+  1500: sw_JNR_KH_startstop3; //kh40
+  1506: sw_JNR_KH_startstop3; //kh58
+  1514: sw_JNR_KH_startstop3; //kh30
+  1518: sw_JNR_KH_startstop3; //kh35
+
+  1000: sw_JNR_KH_startstop3; //mucar
   default: return string(STR_STARTSTOP_JNRKH);
 }
 
@@ -119,3 +185,13 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_subtypetext_mucar, cargo_subtype) {
   0: string(LV_JNR_EXPRESS);
   1: string(LV_VARITION_END1);
 }
+
+//coupling group
+  switch(FEAT_TRAINS, SELF, sw_JNR_KH_attach_vehid, [
+    vehicle_type_id == dmu_kiha30 || 
+    vehicle_type_id == dmu_kiha35 || 
+    vehicle_type_id == dmu_kiha40 || 
+    vehicle_type_id == dmu_kiha58 || 
+    vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+  }

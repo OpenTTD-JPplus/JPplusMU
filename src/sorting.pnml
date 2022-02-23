@@ -39,7 +39,7 @@ emu_485,
 emu_781,
 /*JNR Commuter DMU*/
 dmu_kiha30,
-//dmu_kiha35,
+dmu_kiha35,
 //dmu_kiha38,
 /*JNR General DMU*/
 dmu_kiha40,

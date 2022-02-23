@@ -84,12 +84,13 @@ JNR_485:481/483/485/489 Series {WHITE}(EMU){BLACK}
 JNR_781 :781 Series {WHITE}(EMU){BLACK}
 
 JNR_kiha30 :KiHa 30 Series {WHITE}(DMU){BLACK}
+JNR_kiha35 :KiHa 35 Series {WHITE}(DMU){BLACK}
 
 JNR_kiha40 :KiHa 40 Series {WHITE}(DMU){BLACK}
 JNR_kiha48 :KiHa 48 Series {WHITE}(DMU){BLACK}
 JNR_kiha54 :KiHa 54 Series {WHITE}(DMU){BLACK}
 
-JNR_kiha58 :KiHa 56/57/58 Series {WHITE}(DMU){BLACK}
+JNR_kiha58 :KiHa 58 Series {WHITE}(DMU){BLACK}
 
 JNR_kiha80 :KiHa 80 Series {WHITE}(DMU){BLACK}
 
