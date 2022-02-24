@@ -161,14 +161,17 @@ switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop3, [STORE_TEMP(position_in_consis
   1000: return string(STR_STARTSTOP_JNRKH_MU);
 }
 switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop2, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  //only KiHa types with a cab at both ends
   1500: sw_JNR_KH_startstop3; //kh40
   1514: sw_JNR_KH_startstop3; //kh30
   1516: sw_JNR_KH_startstop3; //kh33
   default: return string(STR_STARTSTOP_JNRKH);
 }
 switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  //all KiHa types here
   1500: sw_JNR_KH_startstop3; //kh40
   1506: sw_JNR_KH_startstop3; //kh58
+  1507: sw_JNR_KH_startstop3; //kh141
   1514: sw_JNR_KH_startstop3; //kh30
   1516: sw_JNR_KH_startstop3; //kh33
   1518: sw_JNR_KH_startstop3; //kh35
@@ -215,6 +218,7 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_subtypetext_mucar, cargo_subtype) {
     vehicle_type_id == dmu_kiha35 || 
     vehicle_type_id == dmu_kiha40 || 
     vehicle_type_id == dmu_kiha58 || 
+    vehicle_type_id == dmu_kiha141 || 
     vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }

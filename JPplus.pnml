@@ -74,6 +74,7 @@
 
 
 //JR-Hokkaido
+#include "src/JRH/DMU/KH141_series.pnml"
 //#include "src/JRH/DMU/KH201_series.pnml"
 
 //JR-East

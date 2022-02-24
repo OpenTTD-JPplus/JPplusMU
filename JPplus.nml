@@ -6070,14 +6070,17 @@ switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop3, [STORE_TEMP(position_in_consis
   1000: return string(STR_STARTSTOP_JNRKH_MU);
 }
 switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop2, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  //only KiHa types with a cab at both ends
   1500: sw_JNR_KH_startstop3; //kh40
   1514: sw_JNR_KH_startstop3; //kh30
   1516: sw_JNR_KH_startstop3; //kh33
   default: return string(STR_STARTSTOP_JNRKH);
 }
 switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  //all KiHa types here
   1500: sw_JNR_KH_startstop3; //kh40
   1506: sw_JNR_KH_startstop3; //kh58
+  1507: sw_JNR_KH_startstop3; //kh141
   1514: sw_JNR_KH_startstop3; //kh30
   1516: sw_JNR_KH_startstop3; //kh33
   1518: sw_JNR_KH_startstop3; //kh35
@@ -6124,6 +6127,7 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_subtypetext_mucar, cargo_subtype) {
     vehicle_type_id == dmu_kiha35 || 
     vehicle_type_id == dmu_kiha40 || 
     vehicle_type_id == dmu_kiha58 || 
+    vehicle_type_id == dmu_kiha141 || 
     vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }
@@ -22618,6 +22622,232 @@ item(FEAT_TRAINS, emu_711) {
 
 
 //JR-Hokkaido
+# 1 "src/JRH/DMU/KH141_series.pnml" 1
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_KH141_purchase,	                                                    "gfx/JRH/dmuKH141/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH141_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRH/dmuKH141/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH141 GREEN
+spriteset (spriteset_KH141_GREEN,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH141_frontflip_GREEN,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH141_rev_GREEN,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH141_revflip_GREEN,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH142_GREEN,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH142_frontflip_GREEN,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH142_rev_GREEN,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH142_revflip_GREEN,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH141_GREEN,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_green.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH141_frontflip_GREEN, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_green.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH141_rev_GREEN,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_green.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH141_revflip_GREEN,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_green.png")           {tmpl_std(0, 25)}
+
+alternative_sprites(spriteset_KH142_GREEN,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_green.png")           {tmpl_std(0, 50)}
+alternative_sprites(spriteset_KH142_frontflip_GREEN, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_green.png")           {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_KH142_rev_GREEN,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_green.png")           {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_KH142_revflip_GREEN,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_green.png")           {tmpl_std(0, 75)}
+
+//KH141 JRH
+spriteset (spriteset_KH141_JRH,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH141_frontflip_JRH,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH141_rev_JRH,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH141_revflip_JRH,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH142_JRH,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH142_frontflip_JRH,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH142_rev_JRH,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH142_revflip_JRH,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH141_JRH,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_std.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH141_frontflip_JRH, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_std.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH141_rev_JRH,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_std.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH141_revflip_JRH,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_std.png")           {tmpl_std(0, 25)}
+
+alternative_sprites(spriteset_KH142_JRH,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_std.png")           {tmpl_std(0, 50)}
+alternative_sprites(spriteset_KH142_frontflip_JRH, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_std.png")           {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_KH142_rev_JRH,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_std.png")           {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_KH142_revflip_JRH,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/141_142_std.png")           {tmpl_std(0, 75)}
+
+//KH143 JRH
+spriteset (spriteset_KH143_JRH,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH143_frontflip_JRH,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH143_rev_JRH,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH143_revflip_JRH,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH143_JRH,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/143_144_std.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH143_frontflip_JRH, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/143_144_std.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH143_rev_JRH,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/143_144_std.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH143_revflip_JRH,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuKH141/143_144_std.png")           {tmpl_std(0, 25)}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//KH141 Green
+switch(FEAT_TRAINS, SELF, sw_KH141_GREEN_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
+ 0: spriteset_KH142_revflip_GREEN;
+ default: spriteset_KH142_rev_GREEN;
+}
+switch(FEAT_TRAINS, SELF, sw_KH141_GREEN_gfx_frontback_flipcheck_posfront, vehicle_is_flipped){
+ 0: spriteset_KH141_GREEN;
+ default: spriteset_KH141_frontflip_GREEN;
+}
+switch(FEAT_TRAINS, SELF, sw_KH141_GREEN_gfx_frontback_revcheck_posback, position_in_consist_from_end){
+ 0: sw_KH141_GREEN_gfx_frontback_flipcheck_posback;
+ default: spriteset_KH141_rev_GREEN;
+}
+switch(FEAT_TRAINS, SELF, sw_KH141_GREEN_gfx_frontback_revcheck_posfront, position_in_consist){
+ 0: sw_KH141_GREEN_gfx_frontback_flipcheck_posfront;
+ default: sw_KH141_GREEN_gfx_frontback_revcheck_posback;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH141_GREEN_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH141_GREEN_gfx_frontback_revcheck_posfront;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+//KH141 JRH
+switch(FEAT_TRAINS, SELF, sw_KH141_JRH_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
+ 0: spriteset_KH142_revflip_JRH;
+ default: spriteset_KH142_rev_JRH;
+}
+switch(FEAT_TRAINS, SELF, sw_KH141_JRH_gfx_frontback_flipcheck_posfront, vehicle_is_flipped){
+ 0: spriteset_KH141_JRH;
+ default: spriteset_KH141_frontflip_JRH;
+}
+switch(FEAT_TRAINS, SELF, sw_KH141_JRH_gfx_frontback_revcheck_posback, position_in_consist_from_end){
+ 0: sw_KH141_JRH_gfx_frontback_flipcheck_posback;
+ default: spriteset_KH141_rev_JRH;
+}
+switch(FEAT_TRAINS, SELF, sw_KH141_JRH_gfx_frontback_revcheck_posfront, position_in_consist){
+ 0: sw_KH141_JRH_gfx_frontback_flipcheck_posfront;
+ default: sw_KH141_JRH_gfx_frontback_revcheck_posback;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH141_JRH_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH141_JRH_gfx_frontback_revcheck_posfront;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+//KH143 JRH
+switch(FEAT_TRAINS, SELF, sw_KH143_JRH_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
+ 0: spriteset_KH143_revflip_JRH;
+ default: spriteset_KH143_rev_JRH;
+}
+switch(FEAT_TRAINS, SELF, sw_KH143_JRH_gfx_frontback_flipcheck_posfront, vehicle_is_flipped){
+ 0: spriteset_KH143_JRH;
+ default: spriteset_KH143_frontflip_JRH;
+}
+switch(FEAT_TRAINS, SELF, sw_KH143_JRH_gfx_frontback_revcheck_posback, position_in_consist_from_end){
+ 0: sw_KH143_JRH_gfx_frontback_flipcheck_posback;
+ default: spriteset_KH143_rev_JRH;
+}
+switch(FEAT_TRAINS, SELF, sw_KH143_JRH_gfx_frontback_revcheck_posfront, position_in_consist){
+ 0: sw_KH143_JRH_gfx_frontback_flipcheck_posfront;
+ default: sw_KH143_JRH_gfx_frontback_revcheck_posback;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH143_JRH_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH143_JRH_gfx_frontback_revcheck_posfront;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_KH141_gfx_main, cargo_subtype) {
+  0: sw_KH141_GREEN_gfx_frontback_revcheck;
+  1: sw_KH141_JRH_gfx_frontback_revcheck;
+  2: sw_KH143_JRH_gfx_frontback_revcheck;
+}
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_KH141_subtypetext_main, cargo_subtype) {
+  0: string(LV_KH14142);
+  1: string(LV_VARITION_END1);
+  2: string(LV_KH143);
+
+}
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_KH141_attach_vehid, [vehicle_type_id == dmu_kiha141 || vehicle_type_id == mu_car || vehicle_type_id == dmu_kiha40]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, dmu_kiha141) {
+    property {
+        name:                         string(JRH_kiha141);
+        introduction_date:            date(1990, 04, 16);
+        model_life:                   5;
+        vehicle_life:                 22;
+        reliability_decay:            24;
+
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  20;
+        running_cost_factor:          50;
+
+        speed:                        95 km/h;
+        track_type:                   NARROW_NOEL;
+        power:                        368 kW;
+        weight:                       36 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                sw_KH141_gfx_main;
+		    purchase:               spriteset_KH141_purchase;
+		    additional_text:	      return string(JRH_kiha141_DESC);
+        cargo_subtype_text:     sw_KH141_subtypetext_main;
+        can_attach_wagon:			  sw_JNR_KH_attach_vehid;
+        start_stop:             sw_JNR_KH_startstop;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_JNR_KH_gfx_mucar;
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cargo_subtype_text:           sw_JNR_KH_subtypetext_mucar;
+        power: 184;
+        weight: 32;
+      }
+}
+# 1 "JPplus.pnml" 4
 //#include "src/JRH/DMU/KH201_series.pnml"
 
 //JR-East
