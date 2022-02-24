@@ -116,6 +116,31 @@ switch(FEAT_TRAINS, SELF, sw_en8000_main, cargo_subtype){
 }
 
 /*---GFX: Train Spritesets MU Switches---*/
+switch(FEAT_TRAINS, SELF, sw_mu8000_original_following_2, position_in_consist % 7){
+	0 : spriteset_8000_streamfront_original;
+	1 : spriteset_8000_mid_original;
+	2 : spriteset_8000_midpanto_original;
+	3 : spriteset_8000_gablerear_original;
+	4 : spriteset_8000_gablefront_original;
+	5 : spriteset_8000_mid_original;
+	6 : spriteset_8000_streamrear_original;
+}
+
+switch(FEAT_TRAINS, SELF, sw_mu8000_original_reversing_2, position_in_consist_from_end % 7){
+	0 : spriteset_8000_rev_streamfront_original;
+	1 : spriteset_8000_rev_mid_original;
+	2 : spriteset_8000_rev_midpanto_original;
+	3 : spriteset_8000_rev_gablerear_original;
+	4 : spriteset_8000_rev_gablefront_original;
+	5 : spriteset_8000_rev_mid_original;
+	6 : spriteset_8000_rev_streamrear_original;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_mu8000_original_2, vehicle_is_reversed){
+	0 : sw_mu8000_original_following_2;
+	sw_mu8000_original_reversing_2;
+}
+
 switch(FEAT_TRAINS, SELF, sw_mu8000_original_following, position_in_consist % 8){
 	0 : spriteset_8000_streamfront_original;
 	1 : spriteset_8000_mid_original;
@@ -141,6 +166,31 @@ switch(FEAT_TRAINS, SELF, sw_mu8000_original_reversing, position_in_consist_from
 switch(FEAT_TRAINS, PARENT, sw_mu8000_original, vehicle_is_reversed){
 	0 : sw_mu8000_original_following;
 	sw_mu8000_original_reversing;
+}
+
+switch(FEAT_TRAINS, SELF, sw_mu8000_renewal_following_2, position_in_consist % 7){
+	0 : spriteset_8000_streamfront_renewal;
+	1 : spriteset_8000_mid_renewal;
+	2 : spriteset_8000_midpanto_renewal;
+	3 : spriteset_8000_gablerear_renewal;
+	4 : spriteset_8000_gablefront_renewal;
+	5 : spriteset_8000_midnonrev_renewal;
+	6 : spriteset_8000_streamrear_renewal;
+}
+
+switch(FEAT_TRAINS, SELF, sw_mu8000_renewal_reversing_2, position_in_consist_from_end % 7){
+	0 : spriteset_8000_rev_streamfront_renewal;
+	1 : spriteset_8000_rev_mid_renewal;
+	2 : spriteset_8000_rev_midpanto_renewal;
+	3 : spriteset_8000_rev_gablerear_renewal;
+	4 : spriteset_8000_rev_gablefront_renewal;
+	5 : spriteset_8000_rev_midnonrev_renewal;
+	6 : spriteset_8000_rev_streamrear_renewal;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_mu8000_renewal_2, vehicle_is_reversed){
+	0 : sw_mu8000_renewal_following_2;
+	sw_mu8000_renewal_reversing_2;
 }
 
 switch(FEAT_TRAINS, SELF, sw_mu8000_renewal_following, position_in_consist % 8){
@@ -170,10 +220,27 @@ switch(FEAT_TRAINS, PARENT, sw_mu8000_renewal, vehicle_is_reversed){
 	sw_mu8000_renewal_reversing;
 }
 
-switch(FEAT_TRAINS, SELF, sw_mu8000_main, cargo_subtype){
-	0 : sw_mu8000_original;
-	1 : sw_mu8000_renewal;
+//added these so there isnt a cab car following a cab car
+switch(FEAT_TRAINS, SELF, sw_mu8000_renewal_vehnum, num_vehs_in_consist){
+	9 : sw_mu8000_renewal_2;
+	17 : sw_mu8000_renewal_2;
+	25 : sw_mu8000_renewal_2; 
+	default: sw_mu8000_renewal;
 }
+//added these so there isnt a cab car following a cab car
+switch(FEAT_TRAINS, SELF, sw_mu8000_original_vehnum, num_vehs_in_consist){
+	9 : sw_mu8000_original_2;
+	17 : sw_mu8000_original_2;
+	25 : sw_mu8000_original_2;
+	default: sw_mu8000_original;
+}
+
+switch(FEAT_TRAINS, SELF, sw_mu8000_main, cargo_subtype){
+	0 : sw_mu8000_original_vehnum;
+	1 : sw_mu8000_renewal_vehnum;
+}
+
+
 
 /*---GFX: Train Attaching Switches---*/
 switch(FEAT_TRAINS, SELF, sw_8000_attach_vehid, [vehicle_type_id == emu_8000 || vehicle_type_id == mu_car]) {
