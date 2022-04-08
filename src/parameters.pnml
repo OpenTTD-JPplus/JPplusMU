@@ -33,9 +33,9 @@ param_capacity_rapid = 90;
 param_capacity_express = 70;
 }
 if (param_basecapacity == 4) {
-param_capacity_local = 1;
-param_capacity_rapid = 1;
-param_capacity_express = 1;
+param_capacity_local = param_customlocal;
+param_capacity_rapid = param_customrapid;
+param_capacity_express = param_customexpress;
 }
 
 /*	LOADING SPEEDS	*/

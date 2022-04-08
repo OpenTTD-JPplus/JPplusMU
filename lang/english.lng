@@ -17,6 +17,7 @@ STR_PARAM_LOW:Low
 STR_PARAM_HIGH   :High
 STR_PARAM_VHIGH  :Very high
 STR_PARAM_REAL   :Realistic
+STR_PARAM_CUSTOM   :Custom (Adjust Below)
 STR_PARAM_NAME_DISABLETRAINS  :Disable trains
 STR_PARAM_DESC_DISABLETRAINS  :I don't know why you'd use this, but the option is here!{} Maybe you just want the road vehicles provided by this set?
 STR_PARAM_NAME_DISABLERV  :Disable Road vehicles & trams
@@ -33,6 +34,14 @@ STR_PARAM_NAME_JAPANSETDISABLE   :JapanSet3 removal
 STR_PARAM_DESC_JAPANSETDISABLE   :Removes duplicate trains found in JapanSet3.
 STR_PARAM_NAME_DECAY :Cargo decay rate
 STR_PARAM_DESC_DECAY :Set the rate of cargo decay. In "normal" mode all trains have the same decay rate. In "low" and "very low" cargo decay rates depend on the type of train used. Using a commuter train over long distances would earn less than using an express train.
+
+STR_PARAM_NAME_CUSTOMLOCAL :Local capacities
+STR_PARAM_NAME_CUSTOMRAPID :Rapid capacities
+STR_PARAM_NAME_CUSTOMEXPRESS :Express capacities
+
+STR_PARAM_DESC_CUSTOM :Manually set the amount of passengers different train groups can carry. "Passenger capacities" must be set to "Custom" first.
+
+
 
 STR_STARTSTOP_JNRKH:You will need to make sure that a KiHa type unit with cab is the rear unit. 
 STR_STARTSTOP_JNRKH_MU:The last car cannot be a MU_Car. Please attach a KiHa unit to the rear.
@@ -189,6 +198,7 @@ LV_VARITION_END7: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} Livery Variation
 LV_VARITION_END8: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} Livery Variation
 
 
+LV_AUTO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} AUTO Selection
 
 LV_INITIAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Initial Livery
 
@@ -285,6 +295,9 @@ LV_AKADEN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Akaden Livery
 LV_KH14142: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} KiHa 141/142 Type
 
 LV_KH143: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} KiHa 143 Type
+
+LV_KH58: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} KiHa 58 Type
+
 
 # Legacy - No need to edit/translate
 

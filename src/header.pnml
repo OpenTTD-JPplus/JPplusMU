@@ -55,14 +55,14 @@ grf {
 						name: string(STR_PARAM_NAME_BASECAPACITY);
 						desc: string(STR_PARAM_DESC_BASECAPACITY);
 						min_value: 0;
-						max_value: 3;
+						max_value: 4;
 						def_value: 1;
 						names: {
 												0: string(STR_PARAM_LOW);
 												1: string(STR_PARAM_NORMAL);
 												2: string(STR_PARAM_HIGH);
 												3: string(STR_PARAM_VHIGH);
-												//4: string(STR_PARAM_REAL);
+												4: string(STR_PARAM_CUSTOM);
 						};
 				}
 		}
@@ -89,6 +89,40 @@ grf {
 												1: string(STR_PARAM_LOW);
 												2: string(STR_PARAM_VLOW);
 						};
+			 }
+		}
+		//custom cargo factors
+		param 6 {
+			 param_customlocal {
+						type: int;
+						name: string(STR_PARAM_NAME_CUSTOMLOCAL);
+						desc: string(STR_PARAM_DESC_CUSTOM);
+						min_value: 1;
+						max_value: 5000000;
+						def_value: 1;
+
+			 }
+		}
+		param 7 {
+			 param_customrapid {
+						type: int;
+						name: string(STR_PARAM_NAME_CUSTOMRAPID);
+						desc: string(STR_PARAM_DESC_CUSTOM);
+						min_value: 1;
+						max_value: 5000000;
+						def_value: 1;
+
+			 }
+		}
+		param 8 {
+			 param_customexpress {
+						type: int;
+						name: string(STR_PARAM_NAME_CUSTOMEXPRESS);
+						desc: string(STR_PARAM_DESC_CUSTOM);
+						min_value: 1;
+						max_value: 5000000;
+						def_value: 1;
+
 			 }
 		}
 }
