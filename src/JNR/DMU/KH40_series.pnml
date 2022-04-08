@@ -3,7 +3,7 @@
 spriteset (spriteset_KH40_purchase,	                                                    "gfx/JNR/dmuKH40/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_KH40_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JNR/dmuKH40/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
-//KH40 JR Orange Vermillion
+//KH40 JR Orange Vermillion ( -100/-500/-700/-2000)
 spriteset (spriteset_KH40_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH40_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH40_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -11,6 +11,146 @@ spriteset (spriteset_KH40_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{
 alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
 alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
 alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 akita (-500)
+spriteset (spriteset_KH40_500_akita,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_500_rev_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_500_revflip_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_500_akita,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_500_rev_akita,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_500_revflip_akita, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 suigun (-2000)  
+spriteset (spriteset_KH40_2000_suigun,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_rev_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_revflip_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_2000_suigun,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_2000_rev_suigun,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_2000_revflip_suigun, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 hiroshima (-2000) 
+spriteset (spriteset_KH40_2000_hiroshima,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_rev_hiroshima,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_revflip_hiroshima,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_2000_hiroshima,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_2000_rev_hiroshima,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_2000_revflip_hiroshima, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 takaoka (-2000)
+spriteset (spriteset_KH40_2000_takaoka,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_rev_takaoka,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_revflip_takaoka,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_2000_takaoka,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_2000_rev_takaoka,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_2000_revflip_takaoka, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh old (-700/-100)
+spriteset (spriteset_KH40_jrhgreen,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_rev_jrhgreen,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_revflip_jrhgreen,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_jrhgreen,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_rev_jrhgreen,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_revflip_jrhgreen, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh new (-700)
+spriteset (spriteset_KH40_700_jrh,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_700_rev_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_700_revflip_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_700_jrh,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_700_rev_jrh,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_700_revflip_jrh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_KH40_700_jrh2015,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_700_rev_jrh2015,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_700_revflip_jrh2015,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_700_jrh2015,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_700_rev_jrh2015,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_700_revflip_jrh2015, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh new (-1700)
+spriteset (spriteset_KH40_1700_jrh,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrh,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrh,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_KH40_1700_jrh2003,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrh2003,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrh2003,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrh2003,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrh2003,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrh2003, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_KH40_1700_jrh2015,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrh2015,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrh2015,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrh2015,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrh2015,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrh2015, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 sassho (-400)
+spriteset (spriteset_KH40_400_sassho,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_400_rev_sassho,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_400_revflip_sassho,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_400_sassho,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_400_rev_sassho,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_400_revflip_sassho, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 hidaka (-350)
+spriteset (spriteset_KH40_350_hidaka,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_350_rev_hidaka,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_350_revflip_hidaka,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_350_hidaka,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_350_rev_hidaka,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_350_revflip_hidaka, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh express (-400)
+spriteset (spriteset_KH40_400_jrhex,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_400_rev_jrhex,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_400_revflip_jrhex,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_400_jrhex,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_400_rev_jrhex,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_400_revflip_jrhex, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh kiha22 revival (-1700)
+spriteset (spriteset_KH40_1700_jrh22,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrh22,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrh22,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrh22,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrh22,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrh22, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh orange revival (-1700)
+spriteset (spriteset_KH40_1700_jrhorange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrhorange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrhorange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrhorange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrhorange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrhorange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_KH40_1700_jrhorange2016,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrhorange2016,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrhorange2016,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrhorange2016,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrhorange2016,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrhorange2016, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
 
 /*---END OF SECTION---*/
 
