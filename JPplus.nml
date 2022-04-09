@@ -5963,11 +5963,71 @@ switch(FEAT_TRAINS,SELF, sw_KH33_gfx_revflip_livery, [STORE_TEMP(position_in_con
 }
 
 //Livery Selection kh40
+
+//by year stuff
+switch(FEAT_TRAINS, SELF, sw_KH40_700_rev_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_700_rev_jrh2015;
+  default: spriteset_KH40_700_rev_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_rev_jrh_2003, [build_year>2003 || date_of_last_service>date(2003,1,1)] ){
+  1: spriteset_KH40_1700_rev_jrh2003;
+  default: spriteset_KH40_1700_rev_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_rev_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_1700_rev_jrh2015;
+  default: sw_KH40_1700_rev_jrh_2003;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_rev_jrhorange, [build_year>2016 || date_of_last_service>date(2016,1,1)] ){
+  1: spriteset_KH40_1700_rev_jrhorange2016;
+  default: spriteset_KH40_1700_rev_jrhorange;
+}
+
+switch(FEAT_TRAINS, SELF, sw_KH40_700_revflip_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_700_revflip_jrh2015;
+  default: spriteset_KH40_700_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_revflip_jrh_2003, [build_year>2003 || date_of_last_service>date(2003,1,1)] ){
+  1: spriteset_KH40_1700_revflip_jrh2003;
+  default: spriteset_KH40_1700_revflip_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_revflip_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_1700_revflip_jrh2015;
+  default: sw_KH40_1700_revflip_jrh_2003;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_revflip_jrhorange, [build_year>2016 || date_of_last_service>date(2016,1,1)] ){
+  1: spriteset_KH40_1700_revflip_jrhorange2016;
+  default: spriteset_KH40_1700_revflip_jrhorange;
+}
+
 switch(FEAT_TRAINS,SELF, sw_KH40_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0: spriteset_KH40_rev_orange;
+  1: spriteset_KH40_500_rev_akita;
+  2: spriteset_KH40_2000_rev_suigun;
+  3: spriteset_KH40_2000_rev_hiroshima;
+  4: spriteset_KH40_2000_rev_takaoka;
+  5: spriteset_KH40_rev_jrhgreen;
+  6: sw_KH40_700_rev_jrh;
+  7: sw_KH40_1700_rev_jrh;
+  8: spriteset_KH40_400_rev_sassho;
+  9: spriteset_KH40_350_rev_hidaka;
+  10: spriteset_KH40_400_rev_jrhex;
+  11: spriteset_KH40_1700_rev_jrh22;
+  12: sw_KH40_1700_rev_jrhorange;
 }
 switch(FEAT_TRAINS,SELF, sw_KH40_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH40_revflip_orange;
+    0: spriteset_KH40_revflip_orange;
+  1: spriteset_KH40_500_revflip_akita;
+  2: spriteset_KH40_2000_revflip_suigun;
+  3: spriteset_KH40_2000_revflip_hiroshima;
+  4: spriteset_KH40_2000_revflip_takaoka;
+  5: spriteset_KH40_revflip_jrhgreen;
+  6: sw_KH40_700_revflip_jrh;
+  7: sw_KH40_1700_revflip_jrh;
+  8: spriteset_KH40_400_revflip_sassho;
+  9: spriteset_KH40_350_revflip_hidaka;
+  10: spriteset_KH40_400_revflip_jrhex;
+  11: spriteset_KH40_1700_revflip_jrh22;
+  12: sw_KH40_1700_revflip_jrhorange;
 }
 
 //livery Selection kh35
@@ -6861,14 +6921,154 @@ item(FEAT_TRAINS, dmu_kiha35) {
 spriteset (spriteset_KH40_purchase,	                                                    "gfx/JNR/dmuKH40/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_KH40_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JNR/dmuKH40/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
-//KH40 JR Orange Vermillion
+//KH40 JR Orange Vermillion ( -100/-500/-700/-2000)
 spriteset (spriteset_KH40_orange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH40_rev_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH40_revflip_orange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 
-alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 0)}
-alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std(0, 25)}
-alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/40_jnr.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_KH40_orange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JNR.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_rev_orange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JNR.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JNR.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 akita (-500)
+spriteset (spriteset_KH40_500_akita,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_500_rev_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_500_revflip_akita,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_500_akita,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRE_AK.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_500_rev_akita,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRE_AK.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_500_revflip_akita, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRE_AK.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 suigun (-2000)  
+spriteset (spriteset_KH40_2000_suigun,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_rev_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_revflip_suigun,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_2000_suigun,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRE_SU.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_2000_rev_suigun,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRE_SU.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_2000_revflip_suigun, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRE_SU.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 hiroshima (-2000) 
+spriteset (spriteset_KH40_2000_hiroshima,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_rev_hiroshima,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_revflip_hiroshima,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_2000_hiroshima,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRW_HR.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_2000_rev_hiroshima,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRW_HR.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_2000_revflip_hiroshima, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRW_HR.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 takaoka (-2000)
+spriteset (spriteset_KH40_2000_takaoka,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_rev_takaoka,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_2000_revflip_takaoka,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_2000_takaoka,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRW_TK.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_2000_rev_takaoka,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRW_TK.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_2000_revflip_takaoka, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRW_TK.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh old (-700/-100)
+spriteset (spriteset_KH40_jrhgreen,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_rev_jrhgreen,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_revflip_jrhgreen,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_jrhgreen,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_rev_jrhgreen,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_revflip_jrhgreen, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh new (-700)
+spriteset (spriteset_KH40_700_jrh,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_700_rev_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_700_revflip_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_700_jrh,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_700.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_700_rev_jrh,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_700.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_700_revflip_jrh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_700.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_KH40_700_jrh2015,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_700_rev_jrh2015,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_700_revflip_jrh2015,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_700_jrh2015,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_700_2015.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_700_rev_jrh2015,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_700_2015.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_700_revflip_jrh2015, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_700_2015.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh new (-1700)
+spriteset (spriteset_KH40_1700_jrh,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrh,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrh,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrh,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_KH40_1700_jrh2003,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrh2003,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrh2003,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrh2003,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700_2003.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrh2003,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700_2003.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrh2003, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700_2003.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_KH40_1700_jrh2015,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrh2015,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrh2015,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrh2015,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700_2015.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrh2015,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700_2015.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrh2015, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_1700_2015.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 sassho (-400)
+spriteset (spriteset_KH40_400_sassho,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_400_rev_sassho,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_400_revflip_sassho,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_400_sassho,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_SH.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_400_rev_sassho,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_SH.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_400_revflip_sassho, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_SH.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 hidaka (-350)
+spriteset (spriteset_KH40_350_hidaka,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_350_rev_hidaka,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_350_revflip_hidaka,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_350_hidaka,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_HD.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_350_rev_hidaka,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_HD.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_350_revflip_hidaka, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_HD.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh express (-400)
+spriteset (spriteset_KH40_400_jrhex,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_400_rev_jrhex,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_400_revflip_jrhex,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_400_jrhex,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_EX.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_400_rev_jrhex,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_EX.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_400_revflip_jrhex, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_EX.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh kiha22 revival (-1700)
+spriteset (spriteset_KH40_1700_jrh22,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrh22,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrh22,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrh22,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV22.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrh22,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV22.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrh22, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV22.png")           {tmpl_std_rev(0, 25)}
+
+//KH40 jrh orange revival (-1700)
+spriteset (spriteset_KH40_1700_jrhorange,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrhorange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrhorange,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrhorange,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrhorange,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrhorange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_KH40_1700_jrhorange2016,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_rev_jrhorange2016,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH40_1700_revflip_jrhorange2016,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH40_1700_jrhorange2016,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV_2016.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH40_1700_rev_jrhorange2016,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV_2016.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH40_1700_revflip_jrhorange2016, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH40/JRH_RV_2016.png")           {tmpl_std_rev(0, 25)}
 
 /*---END OF SECTION---*/
 
@@ -6880,8 +7080,23 @@ alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_
 
 
 
-/*---GFX: Train Reversing Switches---*/
-
+/*---GFX: Year Variation Switches---*/
+switch(FEAT_TRAINS, SELF, sw_KH40_700_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_700_jrh2015;
+  default: spriteset_KH40_700_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_jrh_2003, [build_year>2003 || date_of_last_service>date(2003,1,1)] ){
+  1: spriteset_KH40_1700_jrh2003;
+  default: spriteset_KH40_1700_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_1700_jrh2015;
+  default: sw_KH40_1700_jrh_2003;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_jrhorange, [build_year>2016 || date_of_last_service>date(2016,1,1)] ){
+  1: spriteset_KH40_1700_jrhorange2016;
+  default: spriteset_KH40_1700_jrhorange;
+}
 /*---END OF SECTION---*/
 
 
@@ -6890,6 +7105,54 @@ alternative_sprites(spriteset_KH40_revflip_orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_
 //KH40 JR Orange Vermillion
 switch(FEAT_TRAINS, PARENT, sw_KH40_orange_gfx_frontback_revcheck, vehicle_is_reversed){
  0: spriteset_KH40_orange;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_500_akita_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_500_akita;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_2000_suigun_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_2000_suigun;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_2000_hiroshima_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_2000_hiroshima;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_2000_takaoka_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_2000_takaoka;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_jrhgreen_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_jrhgreen;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_700_jrh_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH40_700_jrh;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_1700_jrh_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH40_1700_jrh;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_400_sassho_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_400_sassho;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_350_hidaka_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_350_hidaka;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_400_jrhex_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_400_jrhex;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_1700_jrh22_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH40_1700_jrh22;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH40_1700_jrhorange_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH40_1700_jrhorange;
  default: sw_JNR_KH_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
@@ -6906,11 +7169,34 @@ switch(FEAT_TRAINS, PARENT, sw_KH40_orange_gfx_frontback_revcheck, vehicle_is_re
 //Main Switches
 switch(FEAT_TRAINS, SELF, sw_KH40_gfx_main, cargo_subtype) {
   0: sw_KH40_orange_gfx_frontback_revcheck;
+  1: sw_KH40_500_akita_gfx_frontback_revcheck;
+  2: sw_KH40_2000_suigun_gfx_frontback_revcheck;
+  3: sw_KH40_2000_hiroshima_gfx_frontback_revcheck;
+  4: sw_KH40_2000_takaoka_gfx_frontback_revcheck;
+  5: sw_KH40_jrhgreen_gfx_frontback_revcheck;
+  6: sw_KH40_700_jrh_gfx_frontback_revcheck;
+  7: sw_KH40_1700_jrh_gfx_frontback_revcheck;
+  8: sw_KH40_400_sassho_gfx_frontback_revcheck;
+  9: sw_KH40_350_hidaka_gfx_frontback_revcheck;
+  10: sw_KH40_400_jrhex_gfx_frontback_revcheck;
+  11: sw_KH40_1700_jrh22_gfx_frontback_revcheck;
+  12: sw_KH40_1700_jrhorange_gfx_frontback_revcheck;
 }
-
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_KH40_subtypetext_main, cargo_subtype) {
   0: string(LV_ORANGE_CAPITAL);
+  1: string(LV_AKITA);
+  2: string(LV_SUIGUN);
+  3: string(LV_HIROSHIMA);
+  4: string(LV_TAKAOKA);
+  5: string(LV_JRHOLD);
+  6: string(LV_JRH);
+  7: string(LV_VARITION_END1);
+  8: string(LV_SASSHO);
+  9: string(LV_HIDAKA);
+  10: string(LV_JRHEXP);
+  11: string(LV_JRHRV);
+  12: string(LV_VARITION_END2);
 }
 /*---END OF SECTION---*/
 

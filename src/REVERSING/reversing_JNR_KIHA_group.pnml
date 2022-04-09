@@ -20,11 +20,71 @@ switch(FEAT_TRAINS,SELF, sw_KH33_gfx_revflip_livery, [STORE_TEMP(position_in_con
 }
 
 //Livery Selection kh40
+
+//by year stuff
+switch(FEAT_TRAINS, SELF, sw_KH40_700_rev_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_700_rev_jrh2015;
+  default: spriteset_KH40_700_rev_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_rev_jrh_2003, [build_year>2003 || date_of_last_service>date(2003,1,1)] ){
+  1: spriteset_KH40_1700_rev_jrh2003;
+  default: spriteset_KH40_1700_rev_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_rev_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_1700_rev_jrh2015;
+  default: sw_KH40_1700_rev_jrh_2003;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_rev_jrhorange, [build_year>2016 || date_of_last_service>date(2016,1,1)] ){
+  1: spriteset_KH40_1700_rev_jrhorange2016;
+  default: spriteset_KH40_1700_rev_jrhorange;
+}
+
+switch(FEAT_TRAINS, SELF, sw_KH40_700_revflip_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_700_revflip_jrh2015;
+  default: spriteset_KH40_700_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_revflip_jrh_2003, [build_year>2003 || date_of_last_service>date(2003,1,1)] ){
+  1: spriteset_KH40_1700_revflip_jrh2003;
+  default: spriteset_KH40_1700_revflip_jrh;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_revflip_jrh, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
+  1: spriteset_KH40_1700_revflip_jrh2015;
+  default: sw_KH40_1700_revflip_jrh_2003;
+}
+switch(FEAT_TRAINS, SELF, sw_KH40_1700_revflip_jrhorange, [build_year>2016 || date_of_last_service>date(2016,1,1)] ){
+  1: spriteset_KH40_1700_revflip_jrhorange2016;
+  default: spriteset_KH40_1700_revflip_jrhorange;
+}
+
 switch(FEAT_TRAINS,SELF, sw_KH40_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0: spriteset_KH40_rev_orange;
+  1: spriteset_KH40_500_rev_akita;
+  2: spriteset_KH40_2000_rev_suigun;
+  3: spriteset_KH40_2000_rev_hiroshima;
+  4: spriteset_KH40_2000_rev_takaoka;
+  5: spriteset_KH40_rev_jrhgreen;
+  6: sw_KH40_700_rev_jrh;
+  7: sw_KH40_1700_rev_jrh;
+  8: spriteset_KH40_400_rev_sassho;
+  9: spriteset_KH40_350_rev_hidaka;
+  10: spriteset_KH40_400_rev_jrhex;
+  11: spriteset_KH40_1700_rev_jrh22;
+  12: sw_KH40_1700_rev_jrhorange;
 }
 switch(FEAT_TRAINS,SELF, sw_KH40_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: spriteset_KH40_revflip_orange;
+    0: spriteset_KH40_revflip_orange;
+  1: spriteset_KH40_500_revflip_akita;
+  2: spriteset_KH40_2000_revflip_suigun;
+  3: spriteset_KH40_2000_revflip_hiroshima;
+  4: spriteset_KH40_2000_revflip_takaoka;
+  5: spriteset_KH40_revflip_jrhgreen;
+  6: sw_KH40_700_revflip_jrh;
+  7: sw_KH40_1700_revflip_jrh;
+  8: spriteset_KH40_400_revflip_sassho;
+  9: spriteset_KH40_350_revflip_hidaka;
+  10: spriteset_KH40_400_revflip_jrhex;
+  11: spriteset_KH40_1700_revflip_jrh22;
+  12: sw_KH40_1700_revflip_jrhorange;
 }
 
 //livery Selection kh35
