@@ -111,6 +111,7 @@ JRH_735:735 Series {WHITE}(EMU){BLACK}
 JRH_785:785 Series {WHITE}(EMU){BLACK}
 JRH_789:789 Series {WHITE}(EMU){BLACK}
 
+JRH_kiha130:KiHa 130 Series {WHITE}(DMU){BLACK}
 JRH_kiha150:KiHa 150 Series {WHITE}(DMU){BLACK}
 JRH_kiha141:KiHa 141 Series {WHITE}(DMU){BLACK}
 JRH_201:KiHa 201 Series {WHITE}(DMU){BLACK}
@@ -316,7 +317,7 @@ LV_KH143: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} KiHa 143 Type
 
 LV_KH58: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} KiHa 58 Type
 
-
+LV_CHKR: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Chihoku Kogen Railway
 
 
 
@@ -737,6 +738,8 @@ JRH_785emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}U
 # 789 Series
 JRH_789emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}
 
+# KiHa 130
+JRH_kiha130_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
 
 # KiHa 141
 JRH_kiha141_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}

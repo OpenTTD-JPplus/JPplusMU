@@ -271,6 +271,8 @@ switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop2, [STORE_TEMP(position_in_consis
   1500: sw_JNR_KH_startstop3; //kh40
   1514: sw_JNR_KH_startstop3; //kh30
   1516: sw_JNR_KH_startstop3; //kh33
+  1519: sw_JNR_KH_startstop3; //kh130
+  
   default: return string(STR_STARTSTOP_JNRKH);
 }
 switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
@@ -281,6 +283,7 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_f
   1514: sw_JNR_KH_startstop3; //kh30
   1516: sw_JNR_KH_startstop3; //kh33
   1518: sw_JNR_KH_startstop3; //kh35
+  1519: sw_JNR_KH_startstop3; //kh130
 
   1000: sw_JNR_KH_startstop3; //mucar
   default: sw_JNR_KH_startstop2;
