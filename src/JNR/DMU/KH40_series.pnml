@@ -316,7 +316,7 @@ item(FEAT_TRAINS, dmu_kiha40) {
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
         refittable_cargo_classes:     bitmask(CC_PASSENGERS);
         non_refittable_cargo_classes: bitmask();
         refit_cost:                   0;

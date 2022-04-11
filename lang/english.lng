@@ -42,7 +42,7 @@ STR_PARAM_NAME_CUSTOMEXPRESS :Express capacities
 STR_PARAM_DESC_CUSTOM :Manually set the amount of passengers different train groups can carry. "Passenger capacities" must be set to "Custom" first.
 
 
-
+STR_ATTACH_JNRKH:You can only attach KiHa DMUs listed below or MU Cars.{}{}KiHa 30{}KiHa 35{}KiHa 40{}KiHa 58{}KiHa 130{}KiHa 141
 STR_STARTSTOP_JNRKH:You will need to make sure that a KiHa type unit with cab is the rear unit. 
 STR_STARTSTOP_JNRKH_MU:The last car cannot be a MU_Car. Please attach a KiHa unit to the rear.
 
@@ -580,8 +580,9 @@ JRH735_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs
 JRH731_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with only the 731 Series EMU.
 JRH201_UNIQUE  :You can only attach MU cars or KiHa 201 Series DMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with the 731 Series EMU.
 JRH711_UNIQUE  :You can only attach MU cars or the 711 Series EMU to this consist!
-MU_UNIQUE: You can only attach MU cars or other EMUs of the same design.
-SAME_UNIQUE: You can only attach other EMUs of the same design. MU cars are not permitted.
+MU_UNIQUE: You can only attach MU cars or other DMUs/EMUs of the same design.
+SAME_UNIQUE: You can only attach other DMUs/EMUs of the same design. MU cars are not permitted.
+
 
 # Consist Errors
 MU_NEEDMID:You require more {GREEN}JP+ MU Cars{WHITE} before you can attach this.

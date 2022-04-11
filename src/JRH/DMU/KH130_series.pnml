@@ -158,7 +158,7 @@ item(FEAT_TRAINS, dmu_kiha130) {
 		    purchase:                 spriteset_KH130_purchase;
 		    additional_text:	      return string(JRH_kiha130_DESC);
         cargo_subtype_text:           sw_KH130_subtypetext_main;
-        can_attach_wagon:			  sw_JNR_KH_gfx_rev_idcheck;
+        can_attach_wagon:			  sw_JNR_KH_attach_vehid;
         start_stop:             sw_JNR_KH_startstop;
     }
     /*Multiple Unit Car*/
