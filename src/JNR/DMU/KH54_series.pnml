@@ -1,0 +1,180 @@
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_KH54_purchase,	                                                    "gfx/JNR/dmuKH54/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_KH54_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JNR/dmuKH54/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH54 JNR -0 Standard
+
+//KH54 JNR -0 Shikoku
+
+//KH54 JNR -500 Initial 
+spriteset (spriteset_KH54_500_inital,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_rev_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_revflip_inital,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH54_500_inital,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Initial.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH54_500_rev_inital,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Initial.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH54_500_revflip_inital, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Initial.png")           {tmpl_std_rev(0, 25)}
+
+//KH54 JNR -500 Express  
+spriteset (spriteset_KH54_500_exp,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_rev_exp,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_revflip_exp,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH54_500_exp,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Express.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH54_500_rev_exp,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Express.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH54_500_revflip_exp, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Express.png")           {tmpl_std_rev(0, 25)}
+
+//KH54 JNR -500 Hanasaki Line (Nemuro Line)
+spriteset (spriteset_KH54_500_hanasaki,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_rev_hanasaki,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_revflip_hanasaki,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH54_500_hanasaki,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Hanasaki.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH54_500_rev_hanasaki,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Hanasaki.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH54_500_revflip_hanasaki, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_Hanasaki.png")           {tmpl_std_rev(0, 25)}
+
+//KH54 -500 Ryuhyo Monogatari
+spriteset (spriteset_KH54_500_7,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_rev_7,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_revflip_7,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH54_500_7,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM507.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH54_500_rev_7,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM507.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH54_500_revflip_7, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM507.png")           {tmpl_std_rev(0, 25)}
+
+//KH54 -500 Ryuhyo Monogatari
+spriteset (spriteset_KH54_500_8,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_rev_8,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH54_500_revflip_8,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH54_500_8,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM508.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH54_500_rev_8,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM508.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_KH54_500_revflip_8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH54/54_500_RM508.png")           {tmpl_std_rev(0, 25)}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Year Variation Switches---*/
+/*---END OF SECTION---*/
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//KH54 JR Orange Vermillion
+switch(FEAT_TRAINS, PARENT, sw_KH54_500_inital_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH54_500_inital;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH54_500_exp_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH54_500_exp;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH54_500_hanasaki_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH54_500_hanasaki;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH54_500_7_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH54_500_7;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH54_500_8_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_KH54_500_8;
+ default: sw_JNR_KH_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_KH54_gfx_main, cargo_subtype) {
+  0: sw_KH54_500_inital_gfx_frontback_revcheck;
+  1: sw_KH54_500_exp_gfx_frontback_revcheck;
+  2: sw_KH54_500_hanasaki_gfx_frontback_revcheck;
+  3: sw_KH54_500_7_gfx_frontback_revcheck;
+  4: sw_KH54_500_8_gfx_frontback_revcheck;
+}
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_KH54_subtypetext_main, cargo_subtype) {
+  0: string(LV_INITIAL);
+  1: string(LV_EXP);
+  2: string(LV_HANASAKI); 
+  3: string(LV_RM);
+  4: string(LV_VARITION_END1);
+}
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+
+
+
+
+item(FEAT_TRAINS, dmu_kiha54) {
+    property {
+        name:                         string(JNR_kiha54);
+        introduction_date:            date(1986, 04, 07);
+        model_life:                   1;
+        vehicle_life:                 40;
+        reliability_decay:            23;
+
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  20;
+        running_cost_factor:          50;
+
+        speed:                        95 km/h;
+        track_type:                   NARROW_NOEL;
+        power:                        247 kW;
+        weight:                       38 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_KH54_gfx_main;
+		    purchase:                 spriteset_KH54_purchase;
+		    additional_text:	      return string(JNR_kiha54_DESC);
+        cargo_subtype_text:           sw_KH54_subtypetext_main;
+        can_attach_wagon:			  sw_JNR_KH_attach_vehid;
+        start_stop:             sw_JNR_KH_startstop;
+    }
+      livery_override(mu_car){
+        default:                      sw_JNR_KH_gfx_mucar;
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cargo_subtype_text:           sw_JNR_KH_subtypetext_mucar;
+        power: 132;
+        weight: 54;
+      }
+}

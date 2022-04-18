@@ -207,6 +207,8 @@ LV_RENEWAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Renewal Livery
 
 LV_STANDARD: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Standard Livery
 
+LV_EXP: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Express Livery
+
 LV_TOKAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Tokai Livery  
 
 LV_SHONAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Shonan Livery
@@ -319,6 +321,9 @@ LV_KH58: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} KiHa 58 Type
 
 LV_CHKR: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Chihoku Kogen Railway
 
+LV_RM: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Ryuhyo Monogatari Livery
+
+LV_HANASAKI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Hanasaki Livery
 
 
 # Legacy - No need to edit/translate
