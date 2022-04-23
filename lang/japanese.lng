@@ -37,7 +37,7 @@ GRF_JAPANSET      : {YELLOW}JapanSet3 Trains{WHITE}{}および・また{}{YELLOW
 GRF_JPPLUSSET     : JP+ Set must be loaded AFTER the JP+ Legacy version.
 GRF_NATSSET       : JP+ Set NATS Duplicate Trains Disabler should be loaded together with Nagoya Area Train Set (NATS) to avoid train duplication. 
 GRF_JAPANSETTRAINS: JP+ Set should be loaded AFTER Japan Set3: Trains to avoid train duplication.
-GRF_JAPANSECRETORDER:  JP+ Set should be loaded AFTER Japan Set Secret Engines for compatibility.
+GRF_JAPANSECRETORDER:  JP+ Set should be loaded AFTER JP+ Engines & Wagons for compatibility.
 
 
 
