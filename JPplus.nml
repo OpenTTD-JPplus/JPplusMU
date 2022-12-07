@@ -7,7 +7,7 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	42;
+	version:	43;
 	min_compatible_version: 10;
 		//japanset3 removal
 		param 4 {
@@ -2622,11 +2622,11 @@ alternative_sprites(spriteset_E233_backpan_nanbu_rev, ZOOM_LEVEL_NORMAL, BIT_DEP
 /*---GFX: Train Reversing Switches---*/
 //E231 Livery Selection
 switch(FEAT_TRAINS,SELF, sw_E231_gfx_rev_cab_livery_back, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  4: spriteset_E231_front_tk;
-  3: spriteset_E231_front_chsoto;
-  2: spriteset_E231_front_yamanote;
-  1: spriteset_E231_500_front_sobu;
-  0: spriteset_E231_0_front_sobu;
+  4: spriteset_E231_back_tk_rev;
+  3: spriteset_E231_back_chsoto_rev;
+  2: spriteset_E231_back_yamanote_rev;
+  1: spriteset_E231_500_back_sobu_rev;
+  0: spriteset_E231_0_back_sobu_rev;
 }
 switch(FEAT_TRAINS,SELF, sw_E231_gfx_rev_cab_livery_front, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   4: spriteset_E231_front_tk_rev;
@@ -2761,7 +2761,7 @@ switch(FEAT_TRAINS, SELF, sw_E231_gfx_rev_flippedcheck_cab_front, vehicle_is_fli
 }
 switch(FEAT_TRAINS, SELF, sw_E231_gfx_rev_flippedcheck_cab_back, vehicle_is_flipped) {
   1: sw_E231_gfx_rev_cab_livery_front;
- default: sw_E231_gfx_rev_cab_livery_back;
+ default: sw_E231_gfx_rev_cab_livery_front_flipped;
 }
 switch(FEAT_TRAINS, SELF, sw_E231_gfx_rev_flippedcheck_pantograph, vehicle_is_flipped) {
   1: sw_E231_gfx_rev_pantograph_livery_flipped;
