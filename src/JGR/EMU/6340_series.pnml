@@ -163,8 +163,8 @@ item(FEAT_TRAINS, emu_6340) {
         vehicle_life:                 38;
         reliability_decay:            12;
 
-        cargo_capacity:               param_capacity_local;
-        loading_speed:                param_loading_4D;
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
         cost_factor:                  19;
         running_cost_factor:          55;
 
@@ -204,8 +204,8 @@ item(FEAT_TRAINS, emu_6340) {
     /*Multiple Unit Car*/
       livery_override(mu_car){
         default:                      sw_6340_gfx_mucar;
-        cargo_capacity:               param_capacity_local;
-        loading_speed:                param_loading_4D;
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
         //cargo_subtype_text:           sw_6340_subtypetext_mucar;
         power: 120;
         weight: 23;

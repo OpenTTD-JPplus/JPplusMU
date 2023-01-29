@@ -37,6 +37,7 @@
 #include "src/OTHER/mucar.pnml"
 
 //JGR
+#include "src/JGR/EMU/40_series.pnml"
 #include "src/JGR/EMU/6340_series.pnml"
 
 

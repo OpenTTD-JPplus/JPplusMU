@@ -647,6 +647,7 @@ item(FEAT_TRAINS, emu_323, 2057) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_383, 2058) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_373, 2059) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_8000, 2060) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_40, 2061) {} //107emu 0x7E2
 # 1 "JPplus.pnml" 4
 
 //Coupliung Rules
@@ -661,6 +662,7 @@ sort(FEAT_TRAINS, [
 
 /*JGR*/
 /*JGR Commuter EMU*/
+emu_40,
 emu_6340,
 /*JNR*/
 /*JNR Commuter EMU*/
@@ -6438,6 +6440,180 @@ item(FEAT_TRAINS, mu_car) {
 # 1 "JPplus.pnml" 4
 
 //JGR
+# 1 "src/JGR/EMU/40_series.pnml" 1
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_EMU40_purchase,	                                                    "gfx/JGR/emu40/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_EMU40_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JGR/emu40/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//40 series standard
+spriteset (spriteset_EMU40_std_single,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_std_single,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_std_single,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_std_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_single.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_std_single,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_single.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_EMU40_revflip_std_single,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_single.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_EMU40_std_mufront,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_std_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_std_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_std_mufront,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_std_mufront,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_EMU40_revflip_std_mufront,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_EMU40_std_muback,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_std_muback,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_std_muback,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_std_muback,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab_p.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_EMU40_rev_std_muback,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab_p.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_EMU40_revflip_std_muback,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab_p.png")           {tmpl_std(0, 0)}
+
+spriteset (spriteset_EMU40_std_mid,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_std_mid,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_std_mid,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/mucar.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_std_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/mucar.png")           {tmpl_std(0, 0)}
+
+spriteset (spriteset_EMU40_std_mid_panto,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_std_panto,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_std_mid_panto,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/mucar_p.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_std_panto,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/mucar_p.png")           {tmpl_std(0, 0)}
+
+
+//40 series ube_onoda
+
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+switch(FEAT_TRAINS,SELF, sw_EMU40_gfx_std_pantograph_pos, position_in_vehid_chain%2){
+  0: spriteset_EMU40_std_mid_panto;
+  default: spriteset_EMU40_std_mid;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+
+switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_std_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_EMU40_std_mufront;
+ default: spriteset_EMU40_std_muback;
+}
+switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_std_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_EMU40_gfx_std_frontback_flipcheck;
+ //default: sw_EMU40_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+//80
+switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_cargosubtype, cargo_subtype){
+  0: sw_EMU40_gfx_std_pantograph_pos;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_mucar_revcheck_mid, vehicle_is_reversed){
+    0: sw_EMU40_gfx_cargosubtype;
+    //default: sw_EMU40_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_mucar,  cargo_subtype) {
+  0: sw_EMU40_gfx_mucar_revcheck_mid;
+  1: sw_EMU40_gfx_mucar_revcheck_mid;
+}
+switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_main, cargo_subtype) {
+  0: sw_EMU40_gfx_std_frontback_revcheck;
+  //1: ;
+
+}
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_EMU40_subtypetext_main, cargo_subtype) {
+  0: string(LV_STANDARD);
+  //1: string(LV_VARITION_MID1);
+
+}
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_EMU40_attach_vehid, [vehicle_type_id == emu_40 || vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, emu_40) {
+    property {
+        name:                         string(JGR_40);
+        introduction_date:            date(1932, 04, 05);
+        model_life:                   8;
+        vehicle_life:                 57;
+        reliability_decay:            17;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  19;
+        running_cost_factor:          49;
+
+        speed:                        100 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        568 kW;
+        weight:                       46 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                sw_EMU40_gfx_main;
+		    purchase:               spriteset_EMU40_purchase;
+		    additional_text:	      return string(JGR_40_DESC);
+        cargo_subtype_text:     sw_EMU40_subtypetext_main;
+        can_attach_wagon:			  sw_EMU40_attach_vehid;
+        //start_stop:           ;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_EMU40_gfx_mucar;
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        //cargo_subtype_text:           sw_JGR_KH_subtypetext_mucar;
+        power: 132;
+        weight: 40;
+      }
+}
+# 1 "JPplus.pnml" 4
 # 1 "src/JGR/EMU/6340_series.pnml" 1
 /*---GFX: Spritesets---*/
 
@@ -6604,8 +6780,8 @@ item(FEAT_TRAINS, emu_6340) {
         vehicle_life:                 38;
         reliability_decay:            12;
 
-        cargo_capacity:               param_capacity_local;
-        loading_speed:                param_loading_4D;
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
         cost_factor:                  19;
         running_cost_factor:          55;
 
@@ -6645,8 +6821,8 @@ item(FEAT_TRAINS, emu_6340) {
     /*Multiple Unit Car*/
       livery_override(mu_car){
         default:                      sw_6340_gfx_mucar;
-        cargo_capacity:               param_capacity_local;
-        loading_speed:                param_loading_4D;
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
         //cargo_subtype_text:           sw_6340_subtypetext_mucar;
         power: 120;
         weight: 23;
