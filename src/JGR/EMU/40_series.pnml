@@ -1,7 +1,7 @@
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_EMU40_purchase,	                                                    "gfx/JGR/emu40/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_EMU40_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JGR/emu40/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+alternative_sprites(spriteset_EMU40_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JGR/emu40/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
 
 //40 series standard
 spriteset (spriteset_EMU40_std_single,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -24,6 +24,20 @@ spriteset (spriteset_EMU40_revflip_std_muback,    	      	"gfx/OTHER/mucar.png")
 alternative_sprites(spriteset_EMU40_std_muback,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab_p.png")           {tmpl_std_rev(0, 25)}
 alternative_sprites(spriteset_EMU40_rev_std_muback,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab_p.png")           {tmpl_std_rev(0, 0)}
 alternative_sprites(spriteset_EMU40_revflip_std_muback,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/basic_cab_p.png")           {tmpl_std(0, 0)}
+
+spriteset (spriteset_EMU40_std_gable_mufront,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_std_gable_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_std_gable_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_std_gable_mufront,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/gable_cab.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_std_gable_mufront,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/gable_cab.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_EMU40_revflip_std_gable_mufront,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/gable_cab.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_EMU40_std_gable_muback,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_std_gable_muback,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_std_gable_muback,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_std_gable_muback,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/gable_cab_p.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_EMU40_rev_std_gable_muback,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/gable_cab_p.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_EMU40_revflip_std_gable_muback,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/standard/gable_cab_p.png")           {tmpl_std(0, 0)}
 
 spriteset (spriteset_EMU40_std_mid,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_EMU40_rev_std_mid,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -60,6 +74,7 @@ switch(FEAT_TRAINS,SELF, sw_EMU40_gfx_std_pantograph_pos, position_in_vehid_chai
 
 /*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
 
+//standard normal type
 switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_std_frontback_flipcheck, vehicle_is_flipped){
  0: spriteset_EMU40_std_mufront;
  default: spriteset_EMU40_std_muback;
@@ -68,6 +83,17 @@ switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_std_frontback_revcheck, vehicle_is_reve
  0: sw_EMU40_gfx_std_frontback_flipcheck;
  //default: sw_EMU40_gfx_rev_idcheck;
 }
+
+//standard gable type
+switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_std_gable_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_EMU40_std_gable_mufront;
+ default: spriteset_EMU40_std_gable_muback;
+}
+switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_std_gable_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_EMU40_gfx_std_gable_frontback_flipcheck;
+ //default: sw_EMU40_gfx_rev_idcheck;
+}
+
 /*---END OF SECTION---*/
 
 
@@ -94,13 +120,13 @@ switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_mucar,  cargo_subtype) {
 }
 switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_main, cargo_subtype) {
   0: sw_EMU40_gfx_std_frontback_revcheck;
-  //1: ;
+  1: sw_EMU40_gfx_std_gable_frontback_revcheck;
 
 }
 //Menu Switches
 switch(FEAT_TRAINS, SELF, sw_EMU40_subtypetext_main, cargo_subtype) {
   0: string(LV_STANDARD);
-  //1: string(LV_VARITION_MID1);
+  1: string(LV_VARITION_END1);
 
 }
 /*---END OF SECTION---*/
