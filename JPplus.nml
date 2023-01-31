@@ -103,7 +103,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMLOCAL);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 5000000;
+						max_value: 250;
 						def_value: 1;
 
 			 }
@@ -114,7 +114,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMRAPID);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 5000000;
+						max_value: 250;
 						def_value: 1;
 
 			 }
@@ -125,7 +125,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMEXPRESS);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 5000000;
+						max_value: 250;
 						def_value: 1;
 
 			 }
@@ -6494,6 +6494,50 @@ alternative_sprites(spriteset_EMU40_rev_std_panto,       ZOOM_LEVEL_NORMAL, BIT_
 
 
 //40 series ube_onoda
+spriteset (spriteset_EMU40_ube_single,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_ube_single,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_ube_single,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_ube_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_single.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_ube_single,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_single.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_EMU40_revflip_ube_single,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_single.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_EMU40_ube_mufront,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_ube_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_ube_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_ube_mufront,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_cab.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_ube_mufront,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_cab.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_EMU40_revflip_ube_mufront,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_cab.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_EMU40_ube_muback,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_ube_muback,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_ube_muback,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_ube_muback,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_cab_p.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_EMU40_rev_ube_muback,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_cab_p.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_EMU40_revflip_ube_muback,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/basic_cab_p.png")           {tmpl_std(0, 0)}
+
+spriteset (spriteset_EMU40_ube_gable_mufront,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_ube_gable_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_ube_gable_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_ube_gable_mufront,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/gable_cab.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_ube_gable_mufront,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/gable_cab.png")           {tmpl_std(0, 25)}
+alternative_sprites(spriteset_EMU40_revflip_ube_gable_mufront,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/gable_cab.png")           {tmpl_std_rev(0, 25)}
+
+spriteset (spriteset_EMU40_ube_gable_muback,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_ube_gable_muback,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_revflip_ube_gable_muback,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_ube_gable_muback,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/gable_cab_p.png")           {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_EMU40_rev_ube_gable_muback,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/gable_cab_p.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_EMU40_revflip_ube_gable_muback,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/gable_cab_p.png")           {tmpl_std(0, 0)}
+
+spriteset (spriteset_EMU40_ube_mid,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_ube_mid,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_ube_mid,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/mucar.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_ube_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/mucar.png")           {tmpl_std(0, 0)}
+
+spriteset (spriteset_EMU40_ube_mid_panto,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_EMU40_rev_ube_panto,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+alternative_sprites(spriteset_EMU40_ube_mid_panto,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/mucar_p.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_EMU40_rev_ube_panto,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JGR/emu40/ube_onoda/mucar_p.png")           {tmpl_std(0, 0)}
 
 
 /*---END OF SECTION---*/
@@ -6504,6 +6548,10 @@ alternative_sprites(spriteset_EMU40_rev_std_panto,       ZOOM_LEVEL_NORMAL, BIT_
 switch(FEAT_TRAINS,SELF, sw_EMU40_gfx_std_pantograph_pos, position_in_vehid_chain%2){
   0: spriteset_EMU40_std_mid_panto;
   default: spriteset_EMU40_std_mid;
+}
+switch(FEAT_TRAINS,SELF, sw_EMU40_gfx_ube_pantograph_pos, position_in_vehid_chain%2){
+  0: spriteset_EMU40_ube_mid_panto;
+  default: spriteset_EMU40_ube_mid;
 }
 /*---END OF SECTION---*/
 
@@ -6537,6 +6585,25 @@ switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_std_gable_frontback_revcheck, vehicle_i
  //default: sw_EMU40_gfx_rev_idcheck;
 }
 
+//ube normal type
+switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_ube_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_EMU40_ube_mufront;
+ default: spriteset_EMU40_ube_muback;
+}
+switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_ube_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_EMU40_gfx_ube_frontback_flipcheck;
+ //default: sw_EMU40_gfx_rev_idcheck;
+}
+
+//ube gable type
+switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_ube_gable_frontback_flipcheck, vehicle_is_flipped){
+ 0: spriteset_EMU40_ube_gable_mufront;
+ default: spriteset_EMU40_ube_gable_muback;
+}
+switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_ube_gable_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_EMU40_gfx_ube_gable_frontback_flipcheck;
+ //default: sw_EMU40_gfx_rev_idcheck;
+}
 /*---END OF SECTION---*/
 
 
@@ -6545,6 +6612,9 @@ switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_std_gable_frontback_revcheck, vehicle_i
 //80
 switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_cargosubtype, cargo_subtype){
   0: sw_EMU40_gfx_std_pantograph_pos;
+  1: sw_EMU40_gfx_std_pantograph_pos;
+  2: sw_EMU40_gfx_ube_pantograph_pos;
+  3: sw_EMU40_gfx_ube_pantograph_pos;
 }
 
 switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_mucar_revcheck_mid, vehicle_is_reversed){
@@ -6560,18 +6630,29 @@ switch(FEAT_TRAINS, PARENT, sw_EMU40_gfx_mucar_revcheck_mid, vehicle_is_reversed
 switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_mucar,  cargo_subtype) {
   0: sw_EMU40_gfx_mucar_revcheck_mid;
   1: sw_EMU40_gfx_mucar_revcheck_mid;
+  2: sw_EMU40_gfx_mucar_revcheck_mid;
+  3: sw_EMU40_gfx_mucar_revcheck_mid;
 }
 switch(FEAT_TRAINS, SELF, sw_EMU40_gfx_main, cargo_subtype) {
   0: sw_EMU40_gfx_std_frontback_revcheck;
   1: sw_EMU40_gfx_std_gable_frontback_revcheck;
-
+  2: sw_EMU40_gfx_ube_frontback_revcheck;
+  3: sw_EMU40_gfx_ube_gable_frontback_revcheck;
 }
 //Menu Switches
+switch(FEAT_TRAINS, SELF, sw_EMU40_subtypetext_mucar, cargo_subtype) {
+  0: string(LV_STANDARD);
+  1: string(LV_VARITION_END1);
+  2: string(LV_UBEON);
+  3: string(LV_VARITION_END2);
+}
 switch(FEAT_TRAINS, SELF, sw_EMU40_subtypetext_main, cargo_subtype) {
   0: string(LV_STANDARD);
   1: string(LV_VARITION_END1);
-
+  2: string(LV_UBEON);
+  3: string(LV_VARITION_END2);
 }
+
 /*---END OF SECTION---*/
 
 
@@ -6594,12 +6675,12 @@ item(FEAT_TRAINS, emu_40) {
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
         cost_factor:                  17;
-        running_cost_factor:          47;
+        running_cost_factor:          54;
 
         speed:                        85 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        568 kW;
-        weight:                       46 ton;
+        power:                        420 kW;
+        weight:                       38 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
@@ -6634,7 +6715,7 @@ item(FEAT_TRAINS, emu_40) {
         default:                      sw_EMU40_gfx_mucar;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
-        //cargo_subtype_text:           sw_JGR_KH_subtypetext_mucar;
+        cargo_subtype_text:           sw_EMU40_subtypetext_mucar;
         power: 132;
         weight: 40;
       }

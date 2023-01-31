@@ -98,7 +98,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMLOCAL);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 5000000;
+						max_value: 250;
 						def_value: 1;
 
 			 }
@@ -109,7 +109,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMRAPID);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 5000000;
+						max_value: 250;
 						def_value: 1;
 
 			 }
@@ -120,7 +120,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMEXPRESS);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 5000000;
+						max_value: 250;
 						def_value: 1;
 
 			 }

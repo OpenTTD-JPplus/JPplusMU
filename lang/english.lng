@@ -39,7 +39,7 @@ STR_PARAM_NAME_CUSTOMLOCAL :Local capacities
 STR_PARAM_NAME_CUSTOMRAPID :Rapid capacities
 STR_PARAM_NAME_CUSTOMEXPRESS :Express capacities
 
-STR_PARAM_DESC_CUSTOM :Manually set the amount of passengers different train groups can carry. "Passenger capacities" must be set to "Custom" first.
+STR_PARAM_DESC_CUSTOM :Manually set the amount of passengers different train groups can carry. The setting "Passenger capacities" must be set to "Custom" first.
 
 
 STR_ATTACH_JNRKH:You can only attach KiHa DMUs listed below or MU Cars.{}{}KiHa 30{}KiHa 35{}KiHa 40{}KiHa 58{}KiHa 130{}KiHa 141
@@ -326,6 +326,7 @@ LV_RM: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Ryuhyo Monogatari Livery
 
 LV_HANASAKI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Hanasaki Livery
 
+LV_UBEON: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Ube/Onoda Livery
 
 # Legacy - No need to edit/translate
 
