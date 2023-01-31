@@ -62,6 +62,7 @@ MUCAB   :JP+ MU Cab/Control Car {WHITE}(CC){BLACK}
 MUCARDD :JP+ MU Special Cars {WHITE}(SC){BLACK}
 
 JGR_40:40/51 Series {WHITE}(EMU){BLACK}
+JGR_40single:40/51 Series {WHITE}(EMU){BLACK} Single Type
 JGR_6340:6340 Series {WHITE}(EMU){BLACK}
 
 JNR_101 :101 Series {WHITE}(EMU){BLACK}

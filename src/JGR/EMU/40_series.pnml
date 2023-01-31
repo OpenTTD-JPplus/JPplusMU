@@ -1,7 +1,9 @@
 /*---GFX: Spritesets---*/
 //Purchase Sprites
-spriteset (spriteset_EMU40_purchase,	                                                    "gfx/JGR/emu40/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_EMU40_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JGR/emu40/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+spriteset (spriteset_EMU40_purchase,	                                                            "gfx/JGR/emu40/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_EMU40_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,                 "gfx/JGR/emu40/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+spriteset (spriteset_EMU40sinlge_purchase,	                                                      "gfx/JGR/emu40/purchase_s.png")               {tmpl_purchase(0, 0)}
+alternative_sprites(spriteset_EMU40sinlge_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,           "gfx/JGR/emu40/purchase_s_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
 //40 series standard
 spriteset (spriteset_EMU40_std_single,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -342,7 +344,7 @@ switch(FEAT_TRAINS, SELF, sw_EMU40_subtypetext_main, cargo_subtype) {
 
 
 //Coupling
-  switch(FEAT_TRAINS, SELF, sw_EMU40_attach_vehid, [vehicle_type_id == emu_40 || vehicle_type_id == mu_car]) {
+  switch(FEAT_TRAINS, SELF, sw_EMU40_attach_vehid, [vehicle_type_id == emu_40 || vehicle_type_id == emu_40sinlge ||vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }
 
@@ -403,4 +405,53 @@ item(FEAT_TRAINS, emu_40) {
         power: 132;
         weight: 40;
       }
+}
+
+item(FEAT_TRAINS, emu_40sinlge) {
+    property {
+        //variant_group:                2061;
+        name:                         string(JGR_40single);
+        introduction_date:            date(1932, 04, 05);
+        model_life:                   10;
+        vehicle_life:                 42;
+        reliability_decay:            18;
+
+        cargo_capacity:               param_capacity_local;
+        loading_speed:                param_loading_3D;
+        cost_factor:                  17;
+        running_cost_factor:          54;
+
+        speed:                        85 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        420 kW;
+        weight:                       38 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                spriteset_EMU40_std_single;
+		    purchase:               spriteset_EMU40sinlge_purchase;
+		    additional_text:	      return string(JGR_40_DESC);
+        cargo_subtype_text:     sw_EMU40_subtypetext_main;
+        can_attach_wagon:			  sw_EMU40_attach_vehid;
+        //start_stop:           ;
+    }
 }
