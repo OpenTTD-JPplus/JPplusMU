@@ -6578,16 +6578,16 @@ switch(FEAT_TRAINS,SELF, sw_EMU40_gfx_ube_pantograph_pos, position_in_vehid_chai
 /*---GFX: Train Reversing Switches---*/
 //Livery Selection
 switch(FEAT_TRAINS,SELF, sw_EMU40s_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-4:spriteset_EMU40_rev_ube_gable_single;
-2:spriteset_EMU40_rev_ube_single;
-1:spriteset_EMU40_rev_std_gable_single;
-0:spriteset_EMU40_rev_std_single;
-}
-switch(FEAT_TRAINS,SELF, sw_EMU40s_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-3:spriteset_EMU40_revflip_ube_gable_single;
+4:spriteset_EMU40_revflip_ube_gable_single;
 2:spriteset_EMU40_revflip_ube_single;
 1:spriteset_EMU40_revflip_std_gable_single;
 0:spriteset_EMU40_revflip_std_single;
+}
+switch(FEAT_TRAINS,SELF, sw_EMU40s_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+3:spriteset_EMU40_rev_std_single;
+2:spriteset_EMU40_rev_std_single;
+1:spriteset_EMU40_rev_std_single;
+0:spriteset_EMU40_rev_std_single;
 }
 
 switch(FEAT_TRAINS,SELF, sw_EMU40_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
@@ -7188,10 +7188,10 @@ item(FEAT_TRAINS, emu_63) {
         cost_factor:                  16;
         running_cost_factor:          53;
 
-        speed:                        100 km/h;
+        speed:                        95 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        420 kW;
-        weight:                       37 ton;
+        power:                        400 kW;
+        weight:                       39 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;

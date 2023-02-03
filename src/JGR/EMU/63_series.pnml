@@ -219,10 +219,10 @@ item(FEAT_TRAINS, emu_63) {
         cost_factor:                  16;
         running_cost_factor:          53;
 
-        speed:                        100 km/h;
+        speed:                        95 km/h;
         track_type:                   NARROW_OHLE;
-        power:                        420 kW;
-        weight:                       37 ton;
+        power:                        400 kW;
+        weight:                       39 ton;
 
         climates_available:           ALL_CLIMATES;
         ai_special_flag:              AI_FLAG_PASSENGER;
