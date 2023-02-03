@@ -2,7 +2,7 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	43;
+	version:	44;
 	min_compatible_version: 10;
 		//japanset3 removal
 		param 4 {
