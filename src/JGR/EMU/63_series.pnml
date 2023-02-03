@@ -126,13 +126,13 @@ var[0x61, 0, 0x0000FFFF, 0xC6]]){
 }
 switch(FEAT_TRAINS, SELF, sw_EMU63_gfx_rev_frontback_sameid, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle behind of opposite vehicle
-  2061:sw_EMU63_gfx_rev_frontback_mucarcheck;
+  2063:sw_EMU63_gfx_rev_frontback_mucarcheck;
   1000:sw_EMU63_gfx_rev_front_flippedcheck;
   default:sw_EMU63_gfx_rev_back_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_EMU63_gfx_rev_frontback, 
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of vehicle infront of opposite vehicle
-  2061:sw_EMU63_gfx_rev_frontback_sameid;
+  2063:sw_EMU63_gfx_rev_frontback_sameid;
   1000:sw_EMU63_gfx_rev_back_flippedcheck;
   default:sw_EMU63_gfx_rev_front_flippedcheck;
 }

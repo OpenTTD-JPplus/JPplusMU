@@ -40,6 +40,7 @@
 #include "src/JGR/EMU/40_series.pnml"
 #include "src/JGR/EMU/63_series.pnml"
 #include "src/JGR/EMU/6340_series.pnml"
+#include "src/JGR/EMU/6310_series.pnml"
 
 
 //JNR

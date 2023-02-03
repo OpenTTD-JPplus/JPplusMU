@@ -1,0 +1,145 @@
+/*---GFX: Spritesets---*/
+
+//Purchase Sprites
+spriteset (spriteset_6310_purchase,	                                                     "gfx/JGR/emu6310/purchase.png")               {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_6310_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JGR/emu6310/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//6310 std
+spriteset (spriteset_6310_single,       "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
+spriteset (spriteset_6310_rev_single,      "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
+spriteset (spriteset_6310_revflip_single,	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_6310_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l_rev(0, 48)}
+alternative_sprites(spriteset_6310_rev_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l_rev(0, 72)}
+alternative_sprites(spriteset_6310_revflip_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l(0, 72)}
+
+//6310 new panto
+spriteset (spriteset_6310_newp_single,       "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
+spriteset (spriteset_6310_newp_rev_single,      "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
+spriteset (spriteset_6310_newp_revflip_single,	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_6310_newp_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l_rev(0, 0)}
+alternative_sprites(spriteset_6310_newp_rev_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l_rev(0, 24)}
+alternative_sprites(spriteset_6310_newp_revflip_single,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6310/6310.png")        {tmpl_28px_7l(0, 24)}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_6310_gfx_rev_single_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+1: spriteset_6310_newp_rev_single;
+0: spriteset_6310_rev_single;
+}
+switch(FEAT_TRAINS,SELF, sw_6310_gfx_revflip_single_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+1: spriteset_6310_newp_revflip_single;
+0: spriteset_6310_revflip_single;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_6310_gfx_rev_single_flippedcheck, vehicle_is_flipped) {
+  1: sw_6310_gfx_rev_single_livery;
+ default: sw_6310_gfx_revflip_single_livery;
+}
+
+//ID Testing
+switch(FEAT_TRAINS, SELF, sw_6310_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){ //check ID of opposite vehicle
+  2064: sw_6310_gfx_rev_single_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+switch(FEAT_TRAINS, PARENT, sw_6310_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_6310_single;
+ default: sw_6310_gfx_rev_idcheck;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_6310_newp_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_6310_newp_single;
+ default: sw_6310_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_6310_gfx_main,  cargo_subtype) {
+  1: sw_6310_newp_gfx_frontback_revcheck;
+  0: sw_6310_gfx_frontback_revcheck;
+}
+
+//Menu
+switch(FEAT_TRAINS, SELF, sw_6310_subtypetext_main, cargo_subtype) {
+  0: string(LV_STANDARD);
+  1: string(LV_VARITION_END1);
+}
+
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_6310_attach_vehid, [vehicle_type_id == emu_6310]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, emu_6310) {
+    property {
+        name:                         string(JGR_6310);
+        introduction_date:            date(1914, 05, 22);
+        model_life:                   5;
+        vehicle_life:                 38;
+        reliability_decay:            12;
+
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  19;
+        running_cost_factor:          55;
+
+        speed:                        65 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        420 kW;
+        weight:                       34 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 7;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_6310_gfx_main;
+		    purchase:                 spriteset_6310_purchase;
+		    additional_text:	      return string(JGR_6340_DESC);
+        cargo_subtype_text:           sw_6310_subtypetext_main;
+        can_attach_wagon:			  sw_6310_attach_vehid;
+        //start_stop:                   ;
+    }
+}

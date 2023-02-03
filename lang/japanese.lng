@@ -47,7 +47,8 @@ MUCAR   :JP+ MU 中間車・付属車 {WHITE}(MU){BLACK}
 MUCAB   :JP+ MU 先頭車・制御車 {WHITE}(CC){BLACK}
 MUCARDD :JP+ MU 特別車 {WHITE}(SC){BLACK}
 
-JGR_6340 :デハ63400形 {WHITE}(電車){BLACK}
+JGR_6310 :デハ6310形 {WHITE}(電車){BLACK}
+JGR_6340 :デハ6340形 {WHITE}(電車){BLACK}
 JGR_40:デハ40/51形 {WHITE}(電車){BLACK}
 JGR_40single:デハ40/51形 {WHITE}(電車){BLACK} Single Type
 JGR_63:デハ63形 {WHITE}(電車){BLACK}
