@@ -715,6 +715,7 @@ dmu_kiha58,
 /*JNR Limited Express DMU*/
 dmu_kiha80,
 //dmu_kiha181,
+//dmu_kiha183,
 /*JR Hokkaido*/
 /*JRH Regional AC EMU*/
 emu_721,
@@ -1262,8 +1263,8 @@ alternative_sprites(spriteset_313_revflip_mid,       ZOOM_LEVEL_NORMAL, BIT_DEPT
 
 /*---211---*/
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_rev_back_shonan_year_pantograph, current_year){
- 0..2007: spriteset_211_back_darm_shonan;
- default: spriteset_211_back_sarm_shonan;
+ 0..2007: spriteset_211_rev_back_darm_shonan;
+ default: spriteset_211_rev_back_sarm_shonan;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_211_revflip_back_shonan_year_pantograph, current_year){
  0..2007: spriteset_211_revflip_back_darm_shonan;
@@ -1606,8 +1607,8 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_21156_frontback,
 
 /*---213---*/
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_rev_back_year_pantograph, current_year){
- 0..2007: spriteset_213_back_darm_shonan;
- default: spriteset_213_back_sarm_shonan;
+ 0..2007: spriteset_213_rev_back_darm_shonan;
+ default: spriteset_213_rev_back_sarm_shonan;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_revflip_back_year_pantograph, current_year){
  0..2007: spriteset_213_revflip_back_darm_shonan;
