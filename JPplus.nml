@@ -31428,11 +31428,11 @@ spriteset(spriteset_383_mid_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd(
 spriteset(spriteset_383_mid_panto_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25(1, 61)}
 
 spriteset(spriteset_383_rev_front_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_rev(1, 151)}
-spriteset(spriteset_383_rev_back_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25_rev(1, 1)}
+spriteset(spriteset_383_rev_back_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25(1, 1)}
 spriteset(spriteset_383_rev_mid_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_rev(1, 91)}
 spriteset(spriteset_383_rev_mid_panto_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25_rev(1, 0)}
 
-spriteset(spriteset_383_revflip_front_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_rev(1, 151)}
+spriteset(spriteset_383_revflip_front_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd(1, 151)}
 spriteset(spriteset_383_revflip_back_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25_rev(1, 1)}
 spriteset(spriteset_383_revflip_mid_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_rev(1, 91)}
 spriteset(spriteset_383_revflip_mid_panto_std,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25_rev(1, 61)}
@@ -31459,11 +31459,11 @@ spriteset(spriteset_383_mid_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd
 spriteset(spriteset_383_mid_panto_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25(1, 61)}
 
 spriteset(spriteset_383_rev_front_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_rev(1, 211)}
-spriteset(spriteset_383_rev_back_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25_rev(1, 1)}
+spriteset(spriteset_383_rev_back_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25(1, 1)}
 spriteset(spriteset_383_rev_mid_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_rev(1, 91)}
 spriteset(spriteset_383_rev_mid_panto_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25_rev(1, 0)}
 
-spriteset(spriteset_383_revflip_front_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_rev(1, 211)}
+spriteset(spriteset_383_revflip_front_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd(1, 211)}
 spriteset(spriteset_383_revflip_back_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25_rev(1, 1)}
 spriteset(spriteset_383_revflip_mid_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_rev(1, 91)}
 spriteset(spriteset_383_revflip_mid_panto_view,     "gfx/JRC/EMU383/383.png")      {tmpl_rpstd_panto25_rev(1, 61)}
