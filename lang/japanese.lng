@@ -49,9 +49,9 @@ MUCARDD :JP+ MU 特別車 {WHITE}(SC){BLACK}
 
 JGR_6310 :デハ6310形 {WHITE}(電車){BLACK}
 JGR_6340 :デハ6340形 {WHITE}(電車){BLACK}
-JGR_40:デハ40/51形 {WHITE}(電車){BLACK}
-JGR_40single:デハ40/51形 {WHITE}(電車){BLACK} Single Type
-JGR_63:デハ63形 {WHITE}(電車){BLACK}
+JGR_40single:40系 {WHITE}(電車){BLACK}
+JGR_40:41/51系 {WHITE}(電車){BLACK}
+JGR_63:63系 {WHITE}(電車){BLACK}
 
 
 
