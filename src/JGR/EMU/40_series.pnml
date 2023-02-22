@@ -472,7 +472,7 @@ item(FEAT_TRAINS, emu_40) {
 
 item(FEAT_TRAINS, emu_40sinlge) {
     property {
-        //variant_group:                2061;
+        variant_group:                2061;
         name:                         string(JGR_40single);
         introduction_date:            date(1932, 04, 05);
         model_life:                   10;
