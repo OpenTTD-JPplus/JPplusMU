@@ -6,8 +6,8 @@ sort(FEAT_TRAINS, [
 /*JGR Commuter EMU*/
 emu_6310,
 emu_6340,
-emu_40,
 emu_40sinlge,
+emu_40,
 emu_63,
 /*JNR*/
 /*JNR Commuter EMU*/
