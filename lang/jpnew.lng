@@ -585,22 +585,22 @@ E127_MSMT2   : -100 Matsumoto Livery (Extra Pantograph)
 
 
 # Coupling Rejection
-JNR211_UNIQUE  :You can only attach MU cars, DD-MU cars or the 211 Series EMU to this consist!
-JRH735_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs to this consist!
-JRH731_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with only the 731 Series EMU.
-JRH201_UNIQUE  :You can only attach MU cars or KiHa 201 Series DMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with the 731 Series EMU.
-JRH711_UNIQUE  :You can only attach MU cars or the 711 Series EMU to this consist!
-MU_UNIQUE: You can only attach MU cars or other DMUs/EMUs of the same design.
-SAME_UNIQUE: You can only attach other DMUs/EMUs of the same design. MU cars are not permitted.
+JNR211_UNIQUE  :この編成に連結できるのはMU車またはMU特別車、211系のみです！
+JRH735_UNIQUE  :この編成に連結できるのはMU車または721系、731系、733系、735系のみです！
+JRH731_UNIQUE  :この編成に連結できるのはMU車または721系、731系、733系、735系のみです！ キハ201系は731系電車のみと専用に連結することも可能です。
+JRH201_UNIQUE  :この編成に連結できるのはMU車かキハ201系のみです！ キハ201系は731系と専用に連結することも可能ですす。
+JRH711_UNIQUE  :この編成に連結できるのはMU車か711系のみです！
+MU_UNIQUE: MU車または同じ設計の他の気動車/電車のみを連結できます。
+SAME_UNIQUE: 同じ設計の他の DMU/EMU のみを連結できます。 MU車は許可されていません。
 
 
 # Consist Errors
-MU_NEEDMID:You require more {GREEN}JP+ MU Cars{WHITE} before you can attach this.
-JNR211_DDATT  :Bilevel cars can only be attached after a {GREEN}MU Cab/Control Car{WHITE} on the JNR 211 Series EMU. {TINYFONT}{}You will need to attach a {GREEN}JNR 211 Series EMU {WHITE} after.
-MU_FRONTBACK  :You can only attach this behind {GREEN}JP+ MU Cab/Control Cars.
-MU_ONEBACKCAB :You can only attach one {GREEN}JP+ MU Cab/Control Car {WHITE} to the rear of a consist.
-JNR211_CABTODDATT :You must attach the {GREEN}JNR 211 Series EMU{WHITE} behind bilevel cars on the JNR 211 Series EMU.
-MU_CARATT :You can only attach this behind an EMU lead car.
+MU_NEEDMID:これを連結するには、さらに {GREEN}JP+ MU 中間車・付属車{WHITE} が必要です。
+JNR211_DDATT  :2階建て車両は、211系の {GREEN}JP+ MU 先頭車・制御車{WHITE} の後にのみ連結可能です。 { {TINYFONT}{}後は{GREEN}211系{WHITE}を連結する必要があります。
+MU_FRONTBACK  :{GREEN}JP+ MU 先頭車・制御車{WHITE} の後ろにのみ連結可能です。
+MU_ONEBACKCAB :{GREEN}JP+ MU 先頭車・制御車{WHITE} は編成の後部に 1 台のみ連結することができます。
+JNR211_CABTODDATT :211系の2階建て車両の後ろには、{GREEN}211系{WHITE}を連結する必要があります。
+MU_CARATT :電車の先頭車の後ろにのみ連結可能です。
 MU_MAXMULENGTH:Maximum allowed number of {GREEN}JP+ MU Motor/Trailer Car{WHITE} in this unit has been reached.{}{} Attach a {GREEN}JP+ MU Cab/Control Car{WHITE} to complete the unit.
 MU_MAXDD  :Maximum number of {GREEN}JP+ MU Special Cars{WHITE} is reached.
 MU_MAX:Maximum number of units has been reached. You cannot make this consist any longer!{}{}{TINYFONT}Perhaps try adding more {GREEN}JP+ MU Motor/Trailer Car{WHITE} in the consist?
