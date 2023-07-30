@@ -758,69 +758,69 @@ JRH_kiha130_DESC :{{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm
 JRH_kiha141_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
 
 # KiHa 150
-JRH_kiha150_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.{}
+JRH_kiha150_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}北海道, 旭川 {GREEN}(換装可能){}{}{TINYFONT}{GOLD}キハ150系100番台には冷房装置がありません。
 
 # KiHa 201
-JRH_kiha201_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
+JRH_kiha201_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/気動車{}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}731系と互換性があります。{}
 
 
 # 107 Series
-JRE_107_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+JRE_107_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # E127 Series
-JRE_E127_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Niigata, Matsumoto{}
+JRE_E127_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}新潟支社仕様 / 長野支社仕様 {GREEN}{}
 
 # 209 Series
-JRE_209_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+JRE_209_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # E331 Series
-JRE_E331_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+JRE_E331_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 
 # E217 Series
-JRE_E217_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yokosuka, Shonan (2006+){}
+JRE_E217_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}スカ色 / 湘南色 (2006年以降){}
 
 
 # E231 Series
-JRE_E231_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+JRE_E231_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # E233 Series
-JRE_E233_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Chou, Keihin-Toukohu (2007+), Shonan (2007+), Joban Local (2009+),  Keiyo (2010+),  Saikyo (2013+), Yokohama (2014+), Nanbu (2014+){GREEN}{}
+JRE_E233_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GREEN}中央線、京浜東北線 (2007年以降)、湘南色 (2007年以降)、常磐緩行線 (2009年以降)、 京葉線 (2010年以降)、 埼京線 (2013年以降)、横浜線 (2014年以降)、南武線 (2014年以降){GREEN}{}
 
 # E235 Series
-JRE_E235_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yamanote, Yokosuka (2020+){GREEN}{}
+JRE_E235_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}山手線、横須賀線(2020年以降){}
 
 
 # E531 Series
-JRE_E531_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}
+JRE_E531_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/交直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 
 # 719 Series
-JRE_719_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Sendai, Banetsukoshi (2007+), Akita (2017+){}
+JRE_719_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}仙台, 磐越西線 (2007年以降), 秋田色 (2017年以降){}
 
 # 719-5000 Series
-JRE_7195000_DESC  :{BLACK}Gauge:{GOLD} Standard/Hyōjyun (4ft8.5in/​1,435mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: Yamagata{}
+JRE_7195000_DESC  :{BLACK}使用線路:{GOLD}標準軌 (4ft8.5in/​1,435mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}山形{}
 
 
 # E353 Series
-JRE_E353_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+JRE_E353_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 
 # 651 Series
-JRE_651_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
+JRE_651_DESC  :使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交直流{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 
 # KiHa 110
-JRE_KH110_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+JRE_KH110_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # KiHa 111/112
-JRE_KH111_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
+JRE_KH111_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # KiHa E120
-JRE_KHE120_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Orange, Green{}
+JRE_KHE120_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}新潟/仙台{}
 
 # KiHa E130
-JRE_KHE130_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Kurui, Hachinohe{}
+JRE_KHE130_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}水郡線/久留里線/八戸線{}
 
 # KiHa E130
 JRE_KHE131_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East {}{BLACK}Liveries: {GREEN}JR East Suigun, Hachinohe{}
