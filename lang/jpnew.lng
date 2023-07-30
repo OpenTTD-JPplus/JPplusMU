@@ -211,43 +211,43 @@ LV_RENEWAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} リニューアル塗装
 
 LV_STANDARD: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 標準塗装
 
-LV_EXP: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 特急塗装
+LV_EXP: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 特急色塗装
 
-LV_TOKAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 東海塗装  
+LV_TOKAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 東海色塗装  
 
-LV_SHONAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 湘南塗装
+LV_SHONAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 湘南色塗装
 
-LV_SHONAN_TOKAIDO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} 東海道編成 (湘南塗装)
+LV_SHONAN_TOKAIDO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} 東海道編成 (湘南色塗装)
 
-LV_SHONAN_TAKATOHO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} 高崎/東北編成 (湘南塗装)
+LV_SHONAN_TAKATOHO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} 高崎/東北編成 (湘南色塗装)
 
-LV_JOBAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 常磐塗装
+LV_JOBAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 常磐色塗装
 
-LV_KYUSHU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 九州塗装
+LV_KYUSHU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 九州色塗装
 
-LV_YAMASUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 山スカ塗装
+LV_YAMASUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 山スカ色塗装
 
-LV_YOKOSUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 横須賀塗装
+LV_YOKOSUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 横須賀色塗装
 
-LV_MINOBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 身延塗装
+LV_MINOBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 身延色塗装
 
-LV_NIIGATA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 新潟塗装
+LV_NIIGATA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 新潟色塗装
 
-LV_YAHIKO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 弥彦塗装
+LV_YAHIKO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 弥彦色塗装
 
-LV_NAGANO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 長野塗装
+LV_NAGANO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 長野色塗装
 
-LV_FUKUCHIYAMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 福知山塗装
+LV_FUKUCHIYAMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 福知山色塗装
 
-LV_SETOUCHI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 瀬戸内塗装
+LV_SETOUCHI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 瀬戸内色塗装
 
-LV_HIROSHIMA_RAPID: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 広島快速塗装
+LV_HIROSHIMA_RAPID: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 広島快速色塗装
 
 LV_JRW_REGIONAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR西日本 地域別塗装
 
 LV_JRW_RENEWAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR西日本 リニューアル塗装
 
-LV_SHINANO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} しなの鉄道塗装
+LV_SHINANO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} しなの鉄道色塗装
 
 LV_ORANGE_VERMILLION:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} オレンジバーミリオン塗装
 
@@ -259,61 +259,61 @@ LV_BLUE:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} ブルー塗装
 
 LV_JNR_EXPRESS: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 国鉄急行塗装
 
-LV_NANAO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 七尾塗装
+LV_NANAO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 七尾色塗装
 
-LV_KANSAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 関西塗装
+LV_KANSAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 関西色塗装
 
-LV_CHIBA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 千葉塗装
+LV_CHIBA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 千葉色塗装
 
-LV_CHUKYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 中京塗装
+LV_CHUKYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 中京色塗装
 
 LV_JRW_BLUE: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR西日本 ブルー塗装
 
 LV_JRW_YUMEJI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR西日本 "マリンライナー"
 
-LV_YAMANOTE: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 山手塗装
+LV_YAMANOTE: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 山手線色塗装
 
-LV_KEIHIN_TOUHOKU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 京浜東北塗装
+LV_KEIHIN_TOUHOKU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 京浜東北線色塗装
 
-LV_CHUO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 中央塗装
+LV_CHUO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 中央線色塗装
 
-LV_KEIYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 京葉塗装
+LV_KEIYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 京葉線色塗装
 
-LV_YOKOHAMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 横浜塗装
+LV_YOKOHAMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 横浜線色塗装
 
-LV_SAIKYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 埼京塗装
+LV_SAIKYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 埼京線色塗装
 
-LV_NAMBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 南武塗装
+LV_NAMBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 南武線色塗装
 
 LV_JRS: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR四国 ブルー塗装
 
-LV_AKITA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 秋田塗装
+LV_AKITA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 秋田色塗装
 
-LV_BANETSUAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 磐越西塗装
+LV_BANETSUAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 磐越西色塗装
 
-LV_ORANGE_CAPITAL:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 首都圏塗装
+LV_ORANGE_CAPITAL:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 首都圏色塗装
 
 LV_HITACHI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} スーパーひたち塗装
 
 LV_SWALLOW: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} スワローあかぎ塗装
 
-LV_AKADEN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 赤電塗装
+LV_AKADEN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 赤電色塗装
 
-LV_SUIGUN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 水郡塗装
+LV_SUIGUN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 水郡色塗装
 
-LV_HIROSHIMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 広島塗装
+LV_HIROSHIMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 広島色塗装
 
-LV_TAKAOKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 高岡塗装
+LV_TAKAOKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 高岡色塗装
 
 LV_JRHOLD: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道 旧塗装
 
 LV_JRH: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道塗装
 
-LV_SASSHO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 札沼塗装
+LV_SASSHO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 札沼色塗装
 
-LV_HIDAKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 日高塗装
+LV_HIDAKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 日高色塗装
 
-LV_JRHEXP: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道 特急塗装
+LV_JRHEXP: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道 特急色塗装
 
 LV_JRHRV: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道 リバイバル塗装
 
@@ -327,9 +327,9 @@ LV_CHKR: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} ちほく高原鉄道
 
 LV_RM: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 流氷物語号塗装
 
-LV_HANASAKI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 花咲塗装
+LV_HANASAKI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 花咲色塗装
 
-LV_UBEON: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 宇部/小野田塗装
+LV_UBEON: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 宇部/小野田色塗装
 
 # Legacy - No need to edit/translate
 
@@ -601,34 +601,34 @@ MU_FRONTBACK  :{GREEN}JP+ MU 先頭車・制御車{WHITE} の後ろにのみ連�
 MU_ONEBACKCAB :{GREEN}JP+ MU 先頭車・制御車{WHITE} は編成の後部に 1 台のみ連結することができます。
 JNR211_CABTODDATT :211系の2階建て車両の後ろには、{GREEN}211系{WHITE}を連結する必要があります。
 MU_CARATT :電車の先頭車の後ろにのみ連結可能です。
-MU_MAXMULENGTH:Maximum allowed number of {GREEN}JP+ MU Motor/Trailer Car{WHITE} in this unit has been reached.{}{} Attach a {GREEN}JP+ MU Cab/Control Car{WHITE} to complete the unit.
-MU_MAXDD  :Maximum number of {GREEN}JP+ MU Special Cars{WHITE} is reached.
-MU_MAX:Maximum number of units has been reached. You cannot make this consist any longer!{}{}{TINYFONT}Perhaps try adding more {GREEN}JP+ MU Motor/Trailer Car{WHITE} in the consist?
-MU_REARCABERROR   :You need to add a {GREEN}MU Cab/Control Car{WHITE} to the rear of this consist. {TINYFONT}{}{}A multiple unit requires a cab car at the rear.
-MU_CONSISTERROR   :There are not enough cars in this consist. You need to add {GREEN}JP+ MU Cars{WHITE} to the rear of this consist. {}{}{TINYFONT}{GREEN}JP+ MU Motor/Trailer Car:{LTBLUE} Adds middle cars to the MU. {}{TINYFONT}{GREEN}JP+ MU Cab/Control Car:{LTBLUE} Adds cabs to the MU. Always required at rear. {}{TINYFONT}{GREEN}JP+ MU Special Cars:{LTBLUE} Adds special cars to the MU. See individual MU for details.
-JNR211_MIDATTACH  :You need to attach one more JNR 211 Series EMU at the rear of the consist before you can attach more MU cars. {}{TINYFONT}Max 5 cars per unit.{}If detaching, remove all MU cars behind the driving car first.
+MU_MAXMULENGTH:このユニットの {GREEN}JP+ MU 中間車・付属車{WHITE} の最大許容数に達しました。{}{} {GREEN}JP+ MU 先頭車・制御車{WHITE}を連結してユニットを完成させます。
+MU_MAXDD  :{GREEN}JP+ MU 特別車{WHITE}の最大数に達しました。
+MU_MAX:ユニット数が最大数に達しました。 これ以上この編成を作成することはできません。{}{}{TINYFONT}編成にさらに {GREEN}JP+ MU 中間車・付属車{WHITE}を追加してみてはいかがでしょうか?
+MU_REARCABERROR   :この構成の後部に {GREEN}JP+ MU 先頭車・制御車{WHITE} を追加する必要があります。 {TINYFONT}{}{}マルチユニットの場合、後部に先頭車が必要です。
+MU_CONSISTERROR   :この編成には十分な車両がありません。 この編成の後部に {GREEN}JP+ MU Cars{WHITE} を追加する必要があります。 {}{}{TINYFONT}{GREEN}JP+ MU 中間車・付属車:{LTBLUE} MU に中間車を追加します。 {}{TINYFONT}{GREEN}JP+ MU 先頭車・制御車:{LTBLUE} MU に先頭車を追加します。 必ず後部に必要です。 {}{TINYFONT}{GREEN}JP+ MU 特別車:{LTBLUE} MUに特別車を追加します。 詳細については、個別のMUを参照してください。
+JNR211_MIDATTACH  : MU 車両をさらに連結する前に、編成の後部にもう1台の211系を連結する必要があります。 {}{TINYFONT}1 ユニットあたり最大 5 台の車両。{}取り外す場合は、最初に走行車両の後ろにあるすべての MU 車両を取り外します。
 
-MU_NODD  :You cannot attach {GREEN}JP+ MU Special Cars{WHITE} to this unit.
-MU_ADDMOREMU :You need to attach more {GREEN}JP+ MU Cars{WHITE} to this unit, before attaching anything else.
-MU_CABTOEND  :You need to attach a {GREEN}JP+ MU Cab/Control Car{WHITE} to the end of this unit, before attaching anything else.
-MU_ATTONMU   :You can only attach this behind {GREEN}JP+ MU Cars{WHITE}.
-MU_CHECKCONSIS   :You cannot attach {GREEN}JP+ MU Special Cars{WHITE} here, check the train info for details on where to attach this.
+MU_NODD  :このユニットに{GREEN}JP+ MU 特別車{WHITE}を連結することはできません。
+MU_ADDMOREMU :他のものを取り付ける前に、このユニットにさらに {GREEN}JP+ MU Cars{WHITE} を連結する必要があります。
+MU_CABTOEND  :本機の末端に{GREEN}JP+ MU 先頭車・制御車{WHITE}を連結してから、他のものを連結する必要があります。
+MU_ATTONMU   :{GREEN}JP+ MU Cars{WHITE}の後ろにのみ連結可能です。
+MU_CHECKCONSIS   :{GREEN}JP+ MU 特別車{WHITE}は連結できません。連結場所は列車情報をご確認ください。
 
-MU_ATTEMU209 :You can only attach other {GREEN}209 Series{WHITE} EMUs to this unit.
-MU_ATTEMUE217:You can only attach other {GREEN}E217 Series{WHITE} EMUs to this unit.
-MU_ATTEMUE231:You can only attach other {GREEN}E231 Series{WHITE} EMUs to this unit.
+MU_ATTEMU209 :このユニットには他の {GREEN}209系{WHITE} のみを連結できます。
+MU_ATTEMUE217:このユニットには他の {GREEN}E217系{WHITE} のみを連結できます。
+MU_ATTEMUE231:このユニットには他の {GREEN}E231系{WHITE} のみを連結できます。
 
-MU_MORECARS  :A unit in the consist has an invalid length. You might need to add or take away some MU cars.
+MU_MORECARS  :構成内のユニットの長さが無効です。 いくつかの MU 車両を追加または削除する必要がある場合があります。
 
-MU_MORESP:You need to attach more {GREEN}JP+ MU Special Cars{WHITE} to the rear of the consist.
-MU_CABb4SP   :You can only attach {GREEN}JP+ MU Special Cars{WHITE} after a {GREEN}JP+ MU Cab/Control Car{WHITE}.
+MU_MORESP:編成の後部にさらに{GREEN}JP+ MU 特別車{WHITE}を連結する必要があります。
+MU_CABb4SP   :{GREEN}JP+ MU 特別車{WHITE}は、{GREEN}JP+ MU 先頭車・制御車{WHITE}の後にのみ連結することができます。
 
 
 # Description
 
-MUCAR_DESC  :{BLUE}Used to represent  {GREEN}motor and trailer cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
-MUCAB_DESC  :{BLUE}Used to represent {GREEN}cab/control cars{BLUE} within an EMU formation. {}{RED}Must be the rear of an EMU consist, but can be placed within.
-MUCARDD_DESC  :{BLUE}Used to represent special cars, such as {GREEN}bilevel cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
+MUCAR_DESC  :{BLUE}電車 編成内の {GREEN}モーターカーとトレーラーカー{BLUE}を表すために使用されます。 {}{RED}電車 編成の後部になることはできません。
+MUCAB_DESC  :{BLUE}電車 編成内の {GREEN}運転台/制御車{BLUE} を表すために使用されます。 {}{RED}電車 編成の後部である必要がありますが、中に配置することもできます。
+MUCARDD_DESC  :{BLUE}電車 編成内の {GREEN}2階建て車両{BLUE} などの特殊車両を表すために使用されます。 {}{RED}電車 編成の後部になることはできません。
 
 DH_EF210_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Freight helper/banker{}{BLACK}Operators: {GOLD}JR {GRAY}Freight{}
 DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Heavy freight{}{BLACK}Operators: {YELLOW}Seibu{}
@@ -638,36 +638,35 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 
 # 40 Series 
-JGR_40_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
+JGR_40_DESC  :{BLACK}使用線路:{GOLD}狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}{BLACK}
 
 # Nade 6100 Series
-JGR_6340_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
+    JGR_6340_DESC  :{BLACK}使用線路:{GOLD}狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}{BLACK}
 
 
 # 101 Series
-JNR_101_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_101_DESC  :{BLACK}使用線路:{GOLD}狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}
 
 # 103 Series
-JNR_103_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_103_DESC  :{BLACK}使用線路:{GOLD}狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}
 
 # 201 Series
-JNR_201_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_201_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}
 
 # 205 Series
-JNR_205_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+    JNR_205_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}
 
 # 207-900 Series
-JNR_207900_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East{}
-
+    JNR_207900_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本{}
 
 # 70 Series
-JNR_70_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_70_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}
 
 # 113 Series
-JNR_113_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_113_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}
 
 # 115 Series
-JNR_115_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+    JNR_115_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能
 
 # 115-1500 Series
 JNR_1153000_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}   
