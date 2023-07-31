@@ -596,7 +596,7 @@ SAME_UNIQUE: 同じ設計の他の DMU/EMU のみを連結できます。 MU車�
 
 # Consist Errors
 MU_NEEDMID:これを連結するには、さらに {GREEN}JP+ MU 中間車・付属車{WHITE} が必要です。
-JNR211_DDATT  :2階建て車両は、211系の {GREEN}JP+ MU 先頭車・制御車{WHITE} の後にのみ連結可能です。 { {TINYFONT}{}後は{GREEN}211系{WHITE}を連結する必要があります。
+JNR211_DDATT  :2階建て車両は、211系の {GREEN}JP+ MU 先頭車・制御車{WHITE} の後にのみ連結可能です。{TINYFONT}{}後は{GREEN}211系{WHITE}を連結する必要があります。
 MU_FRONTBACK  :{GREEN}JP+ MU 先頭車・制御車{WHITE} の後ろにのみ連結可能です。
 MU_ONEBACKCAB :{GREEN}JP+ MU 先頭車・制御車{WHITE} は編成の後部に 1 台のみ連結することができます。
 JNR211_CABTODDATT :211系の2階建て車両の後ろには、{GREEN}211系{WHITE}を連結する必要があります。
