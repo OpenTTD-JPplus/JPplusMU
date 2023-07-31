@@ -690,10 +690,10 @@ JNR_711_DESC :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運�
 
 
 # 80 Series
-JNR_80_DESC  :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行/直流{SILVER}(普{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
+JNR_80_DESC  :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行/直流{}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 165 Series
-JNR_165_DESC  :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行/直流{SILVER}{}{BLACK}所属会社: {GOLD}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
+JNR_165_DESC  :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行/直流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 
 # 181 Series
