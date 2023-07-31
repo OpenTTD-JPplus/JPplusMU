@@ -752,7 +752,7 @@ JRH_785emu_DESC :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}�
 JRH_789emu_DESC :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}スーパー白鳥、カムイ{GREEN} (換装可能){}{}{TINYFONT}{GREEN}JP+ MU 特別車{WHITE}は、785系300番台として後部に連結可能です。{}
 
 # KiHa 130
-JRH_kiha130_DESC :{{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}北海道{}
+JRH_kiha130_DESC :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}北海道{}
 
 # KiHa 141
 JRH_kiha141_DESC :{BLACK}使用線路:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}
