@@ -12,10 +12,10 @@ STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLA
 STR_NO  :いいえ
 STR_YES :はい
 STR_PARAM_NORMAL     :普通
-STR_PARAM_VLOW       :僅少
-STR_PARAM_LOW        :低め
-STR_PARAM_HIGH       :高め
-STR_PARAM_VHIGH      :大量
+STR_PARAM_VLOW       :特に低い
+STR_PARAM_LOW        :低い
+STR_PARAM_HIGH       :高い
+STR_PARAM_VHIGH      :特に高い
 STR_PARAM_REAL       :現実的
 STR_PARAM_CUSTOM   :カスタム (以下で調整)
 STR_PARAM_NAME_DISABLETRAINS  :列車を無効化する
@@ -26,25 +26,25 @@ STR_PARAM_NAME_BASECOSTMODBUY    :購入料金
 STR_PARAM_DESC_BASECOSTMODBUY    :車両の購入時の価格を上げる/下げる。(JapanSet3 基準)
 STR_PARAM_NAME_BASECOSTMODRUN    :運用費
 STR_PARAM_DESC_BASECOSTMODRUN    :車両の運用費を上げる/下げる。(JapanSet3 基準)
-STR_PARAM_NAME_BASECAPACITY      :車両定員
-STR_PARAM_DESC_BASECAPACITY      :車両定員を調整します。(JapanSet3 基準) {} 「現実的」設定は実物の車両の定員数データを基に算出しております。他の車両セット等との互換性は考慮しておりません。
-STR_PARAM_NAME_BOOSTCAPACITY     :定員数ボーナス
-STR_PARAM_DESC_BOOSTCAPACITY     :通勤車両に対して定員数を増やします。TIASやNATS車両セットは比較的高めの定員数で設定されいます。この設定をオンにするとJP+Setに含まれる通勤車両の定員数を15名増やし、定員数をTIASやNATSに近づけられます。
+STR_PARAM_NAME_BASECAPACITY      :収容量
+STR_PARAM_DESC_BASECAPACITY      :収容量を調整します。(JapanSet3 基準) {} 「現実的」設定は実物の車両の定員数データを基に算出しております。他の車両セット等との互換性は考慮しておりません。
+STR_PARAM_NAME_BOOSTCAPACITY     :収容量ボーナス
+STR_PARAM_DESC_BOOSTCAPACITY     :通勤車両に対して収容量を増やします。TIASやNATS車両セットは比較的高めの定員数で設定されいます。この設定をオンにするとJP+Setに含まれる通勤車両の定員数を15名増やし、定員数をTIASやNATSに近づけられます。
 STR_PARAM_NAME_JAPANSETDISABLE   :JapanSet3車両を取り除く 
 STR_PARAM_DESC_JAPANSETDISABLE   :JapanSet3から重複している車両を取り除きます。
 STR_PARAM_NAME_DECAY :Cargo decay rate
 STR_PARAM_DESC_DECAY :Set the rate of cargo decay. In "normal" mode all trains have the same decay rate. In "low" and "very low" cargo decay rates depend on the type of train used. Using a commuter train over long distances would earn less than using an express train.
 
-STR_PARAM_NAME_CUSTOMLOCAL :Local capacities
-STR_PARAM_NAME_CUSTOMRAPID :Rapid capacities
-STR_PARAM_NAME_CUSTOMEXPRESS :Express capacities
+STR_PARAM_NAME_CUSTOMLOCAL :普通の収容量
+STR_PARAM_NAME_CUSTOMRAPID :快速の収容量
+STR_PARAM_NAME_CUSTOMEXPRESS :特急の収容量
 
-STR_PARAM_DESC_CUSTOM :異なる列車グループが輸送できる乗客の数を手動で設定します。 最初に「乗客定員」の設定を「カスタム」に設定する必要があります。
+STR_PARAM_DESC_CUSTOM :異なる列車グループが輸送できる乗客の数を手動で設定します。 最初に「収容量」の設定を「カスタム」に設定する必要があります。
 
 
-STR_ATTACH_JNRKH:You can only attach KiHa DMUs listed below or MU Cars.{}{}KiHa 30{}KiHa 35{}KiHa 40{}KiHa 58{}KiHa 130{}KiHa 141
-STR_STARTSTOP_JNRKH:You will need to make sure that a KiHa type unit with cab is the rear unit. 
-STR_STARTSTOP_JNRKH_MU:The last car cannot be a MU_Car. Please attach a KiHa unit to the rear.
+STR_ATTACH_JNRKH:取り付けられるのは、以下の気動車、またはMU車のみです。{}{}キハ30{}キハ35{}キハ40{}キハ58{}キハ130{}キハ141
+STR_STARTSTOP_JNRKH:キハタイプの運転台付ユニットが後部ユニットであることを確認する必要があります。
+STR_STARTSTOP_JNRKH_MU:最後の車両をMU車にすることはできません。 後部にはキハユニットを取り付けてください。
 
 GRF_OTTDVER   : このNewGRFは現在ご使用中のバージョンのOpenTTDではご利用になれません。OpenTTDをアップデートしてください。
 GRF_JAPANSET      : {YELLOW}JapanSet3 Trains{WHITE}{}および・また{}{YELLOW}JapanSet3 Tracks{WHITE}{}を{GREEN}JP+Set{WHITE}より上にロードしてください。
