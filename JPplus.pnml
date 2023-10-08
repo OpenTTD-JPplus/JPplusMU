@@ -30,6 +30,7 @@
 #include "src/reversing/reversing_415_group.pnml"
 #include "src/reversing/reversing_221_223_225_group.pnml"
 #include "src/reversing/reversing_JNR_KIHA_group.pnml"
+#include "src/reversing/reversing_271_281_group.pnml"
 
 /*---TRAINS---*/
 
