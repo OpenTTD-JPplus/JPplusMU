@@ -143,7 +143,7 @@ switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_frontback_mucarcheck,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),
 STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),
 var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  2065: sw_271_gfx_rev_frontback_aftermucars;
+  1000: sw_271_gfx_rev_frontback_aftermucars;
   default: sw_271_gfx_rev_frontback_nomucars;
 }
 switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_frontback_sameid,

@@ -33752,7 +33752,7 @@ switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_frontback_mucarcheck,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),
 STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),
 var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  2065: sw_271_gfx_rev_frontback_aftermucars;
+  1000: sw_271_gfx_rev_frontback_aftermucars;
   default: sw_271_gfx_rev_frontback_nomucars;
 }
 switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_frontback_sameid,
@@ -33905,14 +33905,14 @@ spriteset(spriteset_321_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd(
 spriteset(spriteset_321_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 61)}
 
 spriteset(spriteset_321_rev_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 151)}
-spriteset(spriteset_321_rev_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 1)}
+spriteset(spriteset_321_rev_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 1)}
 spriteset(spriteset_321_rev_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 91)}
 spriteset(spriteset_321_rev_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 61)}
 
-spriteset(spriteset_321_revflip_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 151)}
+spriteset(spriteset_321_revflip_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd(1, 151)}
 spriteset(spriteset_321_revflip_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 1)}
 spriteset(spriteset_321_revflip_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 91)}
-spriteset(spriteset_321_revflip_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 61)}
+spriteset(spriteset_321_revflip_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 61)}
 /*
 alternative_sprites(spriteset_321_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu321/LIVERY_REF/321-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_321_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu321/LIVERY_REF/321-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}

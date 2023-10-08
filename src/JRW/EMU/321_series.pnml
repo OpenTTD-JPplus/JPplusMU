@@ -11,14 +11,14 @@ spriteset(spriteset_321_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd(
 spriteset(spriteset_321_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 61)}
 
 spriteset(spriteset_321_rev_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 151)}
-spriteset(spriteset_321_rev_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 1)}
+spriteset(spriteset_321_rev_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 1)}
 spriteset(spriteset_321_rev_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 91)}
 spriteset(spriteset_321_rev_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 61)}
 
-spriteset(spriteset_321_revflip_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 151)}
+spriteset(spriteset_321_revflip_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd(1, 151)}
 spriteset(spriteset_321_revflip_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 1)}
 spriteset(spriteset_321_revflip_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 91)}
-spriteset(spriteset_321_revflip_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 61)}
+spriteset(spriteset_321_revflip_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 61)}
 /*
 alternative_sprites(spriteset_321_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu321/LIVERY_REF/321-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_321_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu321/LIVERY_REF/321-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}
