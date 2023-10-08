@@ -167,6 +167,9 @@ JRW_223_1000:223-1000/2000/5000 Series {WHITE}(EMU){BLACK}
 JRW_225_0:225-0/100 Series {WHITE}(EMU){BLACK}
 JRW_225_5000:225-5000/5100/6000 Series {WHITE}(EMU){BLACK}
 JRW_227:227 Series {WHITE}(EMU){BLACK}
+
+JRW_271:271 Series {WHITE}(EMU){BLACK}
+
 JRW_323:323 Series {WHITE}(EMU){BLACK}
 
 JRW_KH33:KiHa 33 Series {WHITE}(DMU){BLACK}
@@ -870,6 +873,8 @@ JRW_225_0_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}U
 # 227 Series
 JRW_227_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
+# 271 Series
+JRW_271_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}
 
 # KiHa 33 Series
 JRW_KH33_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}

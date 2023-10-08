@@ -115,19 +115,19 @@ var[0x61, 0, 0x0000FFFF, 0xC6]]){
 }
 switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_frontback_sameid,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
- 2056 : sw_321_gfx_rev_frontback_321check;
+ 2099 : sw_321_gfx_rev_frontback_321check;
  1000 : sw_321_gfx_rev_front_flippedcheck;
  default : sw_321_gfx_rev_back_pantocheck;
 }
 switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_frontback,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
- 2056 : sw_321_gfx_rev_frontback_sameid;
+ 2099 : sw_321_gfx_rev_frontback_sameid;
  1000 : sw_321_gfx_rev_back_pantocheck;
  default : sw_321_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
  1000 : sw_321_gfx_rev_pantograph_pos;
- 2056 : sw_321_gfx_rev_frontback;
+ 2099 : sw_321_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
 /*---GFX: Pantograph Positions---*/

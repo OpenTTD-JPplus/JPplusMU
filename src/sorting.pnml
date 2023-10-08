@@ -127,6 +127,7 @@ emu_225_5000,
 emu_227,
 /*JRW Regional DC_AC EMU*/
 /*JRW Limited Express DC EMU*/
+emu_271,
 /*JRW Limited Express DC_AC EMU*/
 /*JRW General DMU*/
 dmu_KH33,

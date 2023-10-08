@@ -117,14 +117,9 @@ alternative_sprites(spriteset_EMU119_revflip_std_0shonan_muback,   ZOOM_LEVEL_NO
 
 
 /*---GFX: Pantograph Positions---*/
-switch(FEAT_TRAINS,SELF, sw_EMU119_gfx_std_pantograph_pos, position_in_vehid_chain%2){
-  0: spriteset_EMU119_std_mid_panto;
-  default: spriteset_EMU119_std_mid;
-}
-switch(FEAT_TRAINS,SELF, sw_EMU119_gfx_ube_pantograph_pos, position_in_vehid_chain%2){
-  0: spriteset_EMU119_ube_mid_panto;
-  default: spriteset_EMU119_ube_mid;
-}
+
+//not required
+
 /*---END OF SECTION---*/
 
 
@@ -170,33 +165,6 @@ switch(FEAT_TRAINS,SELF, sw_EMU119_gfx_revflip_back_livery, [STORE_TEMP(position
 0:spriteset_EMU119_revflip_std_muback;
 }
 
-switch(FEAT_TRAINS,SELF, sw_EMU119_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-3:spriteset_EMU119_rev_ube_mid;
-2:spriteset_EMU119_rev_ube_mid;
-1:spriteset_EMU119_rev_std_mid;
-0:spriteset_EMU119_rev_std_mid;
-}
-switch(FEAT_TRAINS,SELF, sw_EMU119_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-3:spriteset_EMU119_ube_mid;
-2:spriteset_EMU119_ube_mid;
-1:spriteset_EMU119_std_mid;
-0:spriteset_EMU119_std_mid;
-}
-
-switch(FEAT_TRAINS,PARENT, sw_EMU119_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-3:spriteset_EMU119_rev_ube_panto;
-2:spriteset_EMU119_rev_ube_panto;
-1:spriteset_EMU119_rev_std_panto;
-0:spriteset_EMU119_rev_std_panto;
-}
-switch(FEAT_TRAINS,PARENT, sw_EMU119_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-3:spriteset_EMU119_ube_mid_panto;
-2:spriteset_EMU119_ube_mid_panto;
-1:spriteset_EMU119_std_mid_panto;
-0:spriteset_EMU119_std_mid_panto;
-}
-
-
 
 //Check for flipped vehicles (dual_headed)
 switch(FEAT_TRAINS, SELF, sw_EMU119_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
@@ -206,14 +174,6 @@ switch(FEAT_TRAINS, SELF, sw_EMU119_gfx_rev_front_flippedcheck, vehicle_is_flipp
 switch(FEAT_TRAINS, SELF, sw_EMU119_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
   1: sw_EMU119_gfx_revflip_back_livery;
  default: sw_EMU119_gfx_rev_back_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_EMU119_gfx_rev_mid_flippedcheck, vehicle_is_flipped) {
-  1: sw_EMU119_gfx_revflip_mid_livery;
- default: sw_EMU119_gfx_rev_mid_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_EMU119_gfx_rev_mid_panto_flippedcheck, vehicle_is_flipped) {
-  1: sw_EMU119_gfx_revflip_mid_panto_livery;
- default: sw_EMU119_gfx_rev_mid_panto_livery;
 }
 switch(FEAT_TRAINS, SELF, sw_EMU119s_gfx_rev_flippedcheck, vehicle_is_flipped) {
   1: sw_EMU119s_gfx_rev_livery;
