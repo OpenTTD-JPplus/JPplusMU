@@ -70,6 +70,7 @@
 
 #include "src/JNR/EMU/401_series.pnml"
 #include "src/JNR/EMU/403_series.pnml"
+#include "src/JNR/EMU/413_series.pnml"
 #include "src/JNR/EMU/415_series.pnml"
 #include "src/JNR/EMU/415_1500_series.pnml"
 #include "src/JNR/EMU/485_series.pnml"
