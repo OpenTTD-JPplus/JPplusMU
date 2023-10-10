@@ -92,6 +92,7 @@
 #include "src/JRE/DMU/KHE130_series.pnml"
 #include "src/JRE/DMU/KHE131_series.pnml"
 
+#include "src/JRE/EMU/215_series.pnml"
 #include "src/JRE/EMU/E331_series.pnml"
 #include "src/JRE/EMU/E235_series.pnml"
 #include "src/JRE/EMU/E233_series.pnml"

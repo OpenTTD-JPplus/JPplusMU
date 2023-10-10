@@ -127,6 +127,7 @@ JRH_281:KiHa 281 Series {WHITE}(DMU){BLACK}
 JRE_209:209 Series {WHITE}(EMU){BLACK}
 JRE_E331:E331 Series {WHITE}(EMU){BLACK}
 
+JRE_215:215 Series {WHITE}(EMU){BLACK}
 JRE_E217:E217 Series {WHITE}(EMU){BLACK}
 
 JRE_E231:E231 Series {WHITE}(EMU){BLACK}
@@ -792,6 +793,8 @@ JRE_209_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usag
 # E331 Series
 JRE_E331_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
 
+# 215 Series
+JRE_215_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
 
 # E217 Series
 JRE_E217_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GREEN}Yokosuka, Shonan (2006+){}
