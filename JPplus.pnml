@@ -110,6 +110,8 @@
 
 
 //JR-Central
+#include "src/JRC/DMU/KH85_series.pnml"
+
 #include "src/JRC/EMU/211_56_series.pnml"
 #include "src/JRC/EMU/311_series.pnml"
 #include "src/JRC/EMU/313_series.pnml"
