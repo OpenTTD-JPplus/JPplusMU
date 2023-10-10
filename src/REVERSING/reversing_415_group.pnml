@@ -2046,10 +2046,15 @@ switch(FEAT_TRAINS, SELF, sw_413_gfx_rev_pantograph_pos_etr, [STORE_TEMP(positio
 
 switch(FEAT_TRAINS,SELF, sw_413_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0: sw_413_gfx_rev_pantograph_pos_initial;
-  1: sw_413_gfx_rev_pantograph_pos_hokuriku;
-  2: sw_413_gfx_rev_pantograph_pos_kanazawa;
-  3: sw_413_gfx_rev_pantograph_pos_nanao;
-  4: sw_413_gfx_rev_pantograph_pos_etr;
+  1: sw_413_gfx_rev_pantograph_pos_initial;
+  2: sw_413_gfx_rev_pantograph_pos_hokuriku;
+  3: sw_413_gfx_rev_pantograph_pos_hokuriku;
+  4: sw_413_gfx_rev_pantograph_pos_kanazawa;
+  5: sw_413_gfx_rev_pantograph_pos_kanazawa;
+  6: sw_413_gfx_rev_pantograph_pos_nanao;
+  7: sw_413_gfx_rev_pantograph_pos_nanao;
+  8: sw_413_gfx_rev_pantograph_pos_etr;
+  9: sw_413_gfx_rev_pantograph_pos_etr;
 }
 /*---END OF SECTION---*/
 
