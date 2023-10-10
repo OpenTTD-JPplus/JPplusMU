@@ -190,15 +190,15 @@ switch(FEAT_TRAINS, SELF, sw_KH85_startstop, [STORE_TEMP(position_in_consist_fro
 item(FEAT_TRAINS, dmu_kiha85) {
     property {
         name:                         string(JRC_KH85);
-        introduction_date:            date(1961, 01, 05);
-        model_life:                   8;
-        vehicle_life:                 57;
-        reliability_decay:            17;
+        introduction_date:            date(1989, 02, 18);
+        model_life:                   4;
+        vehicle_life:                 34;
+        reliability_decay:            23;
 
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
-        cost_factor:                  15;
-        running_cost_factor:          45;
+        cost_factor:                  20;
+        running_cost_factor:          50;
 
         speed:                        120 km/h;
         track_type:                   NARROW_NOEL;
