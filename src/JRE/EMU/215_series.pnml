@@ -142,7 +142,7 @@ switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 /*---END OF SECTION---*/
 
 /*---REVERSE CONSIST SWITCH BLOCK---*/
-switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_pantograph_pos_jre215_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){
+switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_pantograph_pos_jre215_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
   1: sw_215_gfx_rev_mid_b_flippedcheck;
   2: sw_215_gfx_rev_mid_c_flippedcheck; 
   3: sw_215_gfx_rev_mid_d_flippedcheck;
@@ -203,7 +203,7 @@ switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 /*---END OF SECTION---*/
 
 /*---CONSIST SWITCH BLOCK---*/
-switch(FEAT_TRAINS, SELF, sw_215_gfx_pantograph_pos_jre215_sw0, position_in_vehid_chain%8){
+switch(FEAT_TRAINS, SELF, sw_215_gfx_pantograph_pos_jre215_sw0, position_in_vehid_chain){
   1: spriteset_215_mid_b_jre215;
   2: spriteset_215_mid_c_jre215;
   3: spriteset_215_mid_d_jre215;
