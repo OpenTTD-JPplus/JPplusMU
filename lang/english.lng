@@ -65,6 +65,7 @@ JGR_6310:6310 Series {WHITE}(EMU){BLACK}
 JGR_6340:6340 Series {WHITE}(EMU){BLACK}
 JGR_40single:40 Series {WHITE}(EMU){BLACK}
 JGR_40:41/51 Series {WHITE}(EMU){BLACK}
+JGR_52:52 Series {WHITE}(EMU){BLACK}
 JGR_63:63 Series {WHITE}(EMU){BLACK}
 
 JNR_101 :101 Series {WHITE}(EMU){BLACK}
@@ -347,6 +348,16 @@ LV_UBEON: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Ube/Onoda Livery
 LV_HANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Hanwa Livery
 
 LV_KEIHANSHIN:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Keihanshin Livery
+
+LV_JGR_BROWN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JGR Brown Livery
+
+LV_JGR_BROWNCREAM: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JGR Brown Livery
+
+LV_JGR_BROWNWARTIME: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JGR Wartime Livery 
+
+LV_SHIZUTETSU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Shizutetsu Livery 
+
+LV_KANSAIHANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Kansai/Hanwa Livery 
 
 # Legacy - No need to edit/translate
 
@@ -656,6 +667,10 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 
 # 40 Series 
 JGR_40_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
+
+# 52 Series 
+JGR_52_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
 
 # Nade 6100 Series
 JGR_6340_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}

@@ -9,6 +9,8 @@ emu_6340,
 emu_40sinlge,
 emu_40,
 emu_63,
+/*JGR Express EMU*/
+emu_52,
 /*JNR*/
 /*JNR Commuter EMU*/
 emu_103,
