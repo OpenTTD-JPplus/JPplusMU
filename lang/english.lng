@@ -344,6 +344,10 @@ LV_HANASAKI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Hanasaki Livery
 
 LV_UBEON: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Ube/Onoda Livery
 
+LV_HANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Hanwa Livery
+
+LV_KEIHANSHIN:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Keihanshin Livery
+
 # Legacy - No need to edit/translate
 
 jnr151_LV : 151 Series JNR Express Livery
