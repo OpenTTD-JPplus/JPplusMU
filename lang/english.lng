@@ -865,6 +865,9 @@ JRC_373_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 # 383 Series
 JRC_383_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
 
+# KiHa 85 Series
+JRC_KH85_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
+
 
 # 207 Series
 JRW_207_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {BLUE}West{}{BLACK}Liveries: {BLUE}Corporate Blue, Corporate Orange, Refurbished Orange{}

@@ -228,7 +228,7 @@ item(FEAT_TRAINS, dmu_kiha85) {
       graphics {
         default:                sw_KH85_gfx_main;
 		    purchase:               spriteset_KH85_purchase;
-		    additional_text:	      return string(JNR_kiha58_DESC);
+		    additional_text:	      return string(JRC_KH85_DESC);
         cargo_subtype_text:     sw_KH85_subtypetext_main;
         can_attach_wagon:			  sw_KH85_attach_vehid;
         start_stop:             sw_KH85_startstop;

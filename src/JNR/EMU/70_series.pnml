@@ -466,7 +466,7 @@ spriteset (spriteset_70_rev_back_panto_niigatacab2,      "gfx/OTHER/mucar.png") 
 spriteset (spriteset_70_revflip_back_panto_niigatacab2,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
 
 alternative_sprites (spriteset_70_back_panto_niigatacab2,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/niigata/70-cab-2.png")     { tmpl_std_rev(0, 25) }
-alternative_sprites (spr teset_70_rev_back_panto_niigatacab2,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/niigata/70-cab-2.png")     { tmpl_std(0, 0) }
+alternative_sprites (spriteset_70_rev_back_panto_niigatacab2,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/niigata/70-cab-2.png")     { tmpl_std(0, 0) }
 alternative_sprites (spriteset_70_revflip_back_panto_niigatacab2,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/niigata/70-cab-2.png")     { tmpl_std_rev(0, 0) }
 
 
