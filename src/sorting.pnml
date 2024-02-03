@@ -97,6 +97,7 @@ emu_E531,
 emu_719,
 emu_7195000,
 /*JRE Limited Express DC EMU*/
+emu_E257,
 emu_E353,
 /*JRE Limited Express DC_AC EMU*/
 emu_651,

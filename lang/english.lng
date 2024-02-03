@@ -138,6 +138,7 @@ JRE_E235:E235 Series {WHITE}(EMU){BLACK}
 JRE_107:107 Series {WHITE}(EMU){BLACK}
 JRE_E127:E127 Series {WHITE}(EMU){BLACK}
 
+JRE_E257:E257 Series {WHITE}(EMU){BLACK}
 JRE_E531:E531 Series {WHITE}(EMU){BLACK}
 
 
@@ -358,6 +359,16 @@ LV_JGR_BROWNWARTIME: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JGR Wartime Livery
 LV_SHIZUTETSU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Shizutetsu Livery 
 
 LV_KANSAIHANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Kansai/Hanwa Livery 
+
+
+# New New Method Test
+E257_LV_E257_0_azusa: {PUSH_COLOUR}{WHITE}-0{POP_COLOUR} Four Seasons
+E257_LV_E257_500: {PUSH_COLOUR}{WHITE}-500{POP_COLOUR} "Boso Express"
+E257_LV_E257_2000: {PUSH_COLOUR}{WHITE}-2000{POP_COLOUR} Peninsula Blue
+E257_LV_E257_2500: {PUSH_COLOUR}{WHITE}-2500{POP_COLOUR} Peninsula Blue
+E257_LV_E257_5000: {PUSH_COLOUR}{WHITE}-5000{POP_COLOUR} Green
+E257_LV_E257_5500: {PUSH_COLOUR}{WHITE}-5500{POP_COLOUR} Green
+
 
 # Legacy - No need to edit/translate
 
@@ -839,6 +850,9 @@ JRE_719_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 # 719-5000 Series
 JRE_7195000_DESC  :{BLACK}Gauge:{GOLD} Standard/Hyōjyun (4ft8.5in/​1,435mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: Yamagata{}
 
+
+# E257 Series
+JRE_E257_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){GREEN}{}
 
 # E353 Series
 JRE_E353_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {GREEN}East{}
