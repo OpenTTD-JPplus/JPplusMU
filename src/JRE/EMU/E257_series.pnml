@@ -870,7 +870,10 @@ switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_500_sw0, [STORE_TE
   2: sw_E257_gfx_rev_mid_pos4_flippedcheck;
   default: sw_E257_gfx_rev_mid_pos3_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_2000_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%7]){
+switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_2000_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+  default: sw_E257_gfx_rev_mid_pos3_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_2000_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%7]){
   0: sw_E257_gfx_rev_mid_pos2_flippedcheck;
   1: sw_E257_gfx_rev_mid_pos3_flippedcheck;
   2: sw_E257_gfx_rev_mid_pos4_flippedcheck;
@@ -886,7 +889,10 @@ switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_2500_sw0, [STORE_T
   2: sw_E257_gfx_rev_mid_pos4_flippedcheck;
   default: sw_E257_gfx_rev_mid_pos3_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_5000_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%7]){
+switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_5000_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+  default: sw_E257_gfx_rev_mid_pos3_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_5000_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%7]){
   0: sw_E257_gfx_rev_mid_pos2_flippedcheck;
   1: sw_E257_gfx_rev_mid_pos3_flippedcheck;
   2: sw_E257_gfx_rev_mid_pos4_flippedcheck;
@@ -911,13 +917,15 @@ switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_500, [STORE_TEMP(p
   default: sw_E257_gfx_rev_pantograph_pos_E257_500_sw0;
 }
 switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_2000, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_E257_gfx_rev_pantograph_pos_E257_2000_sw0;
+  0..1: sw_E257_gfx_rev_pantograph_pos_E257_2000_sw0;
+  default: sw_E257_gfx_rev_pantograph_pos_E257_2000_sw1;
 }
 switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_2500, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   default: sw_E257_gfx_rev_pantograph_pos_E257_2500_sw0;
 }
 switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_5000, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_E257_gfx_rev_pantograph_pos_E257_5000_sw0;
+  0..1: sw_E257_gfx_rev_pantograph_pos_E257_5000_sw0;
+  default: sw_E257_gfx_rev_pantograph_pos_E257_5000_sw1;
 }
 switch(FEAT_TRAINS, SELF, sw_E257_gfx_rev_pantograph_pos_E257_5500, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
   default: sw_E257_gfx_rev_pantograph_pos_E257_5500_sw0;
@@ -1005,7 +1013,10 @@ switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_500_sw0, position_in_v
   2: spriteset_E257_mid_pos4_E257_500;
   default: spriteset_E257_mid_pos3_E257_500;
 }
-switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_2000_sw0, position_in_vehid_chain%7){
+switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_2000_sw0, position_in_vehid_chain){
+  default: spriteset_E257_mid_pos3_E257_2000;
+}
+switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_2000_sw1, position_in_vehid_chain%7){
   0: spriteset_E257_mid_pos2_E257_2000;
   1: spriteset_E257_mid_pos3_E257_2000;
   2: spriteset_E257_mid_pos4_E257_2000;
@@ -1021,7 +1032,10 @@ switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_2500_sw0, position_in_
   2: spriteset_E257_mid_pos4_E257_2500;
   default: spriteset_E257_mid_pos3_E257_2500;
 }
-switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_5000_sw0, position_in_vehid_chain%7){
+switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_5000_sw0, position_in_vehid_chain){
+  default: spriteset_E257_mid_pos3_E257_5000;
+}
+switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_5000_sw1, position_in_vehid_chain%7){
   0: spriteset_E257_mid_pos2_E257_5000;
   1: spriteset_E257_mid_pos3_E257_5000;
   2: spriteset_E257_mid_pos4_E257_5000;
@@ -1046,13 +1060,15 @@ switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_500, num_vehs_in_vehid
   default: sw_E257_gfx_pantograph_pos_E257_500_sw0;
 }
 switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_2000, num_vehs_in_vehid_chain){
-  default: sw_E257_gfx_pantograph_pos_E257_2000_sw0;
+  0..1: sw_E257_gfx_pantograph_pos_E257_2000_sw0;
+  default: sw_E257_gfx_pantograph_pos_E257_2000_sw1;
 }
 switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_2500, num_vehs_in_vehid_chain){
   default: sw_E257_gfx_pantograph_pos_E257_2500_sw0;
 }
 switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_5000, num_vehs_in_vehid_chain){
-  default: sw_E257_gfx_pantograph_pos_E257_5000_sw0;
+  0..1: sw_E257_gfx_pantograph_pos_E257_5000_sw0;
+  default: sw_E257_gfx_pantograph_pos_E257_5000_sw1;
 }
 switch(FEAT_TRAINS, SELF, sw_E257_gfx_pantograph_pos_E257_5500, num_vehs_in_vehid_chain){
   default: sw_E257_gfx_pantograph_pos_E257_5500_sw0;
