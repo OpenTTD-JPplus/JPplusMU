@@ -23,6 +23,7 @@ item(FEAT_TRAINS, dmu_KH33, 1516) {} //kiha80    0x5DC
 item(FEAT_TRAINS, dmu_KH1000, 1517) {} //kiha80    0x5DC
 item(FEAT_TRAINS, dmu_kiha35, 1518) {} //kiha281	 0x5E2
 item(FEAT_TRAINS, dmu_kiha130, 1519) {} //kiha281	 0x5E2
+item(FEAT_TRAINS, dmu_kiha85, 1520) {} //107emu 0x7E2
 
 
 item(FEAT_TRAINS, emu_107, 2018) {} //107emu 0x7E2
@@ -81,7 +82,7 @@ item(FEAT_TRAINS, emu_E531, 2052) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_225_0, 2053) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_225_5000, 2054) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_227, 2055) {} //107emu 0x7E2
-item(FEAT_TRAINS, emu_321, 2056) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_321, 2099) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_323, 2057) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_383, 2058) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_373, 2059) {} //107emu 0x7E2
@@ -90,3 +91,9 @@ item(FEAT_TRAINS, emu_40, 2061) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_40sinlge, 2062) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_63, 2063) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_6310, 2064) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_271, 2065) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_281, 2066) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_413, 2067) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_215, 2068) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_52, 2069) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_E257, 2070) {} //107emu 0x7E2

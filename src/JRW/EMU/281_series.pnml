@@ -1,0 +1,128 @@
+/*---JpyNML2 Generated---*/
+
+/*---CONSIST SWITCH BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_281_gfx_pantograph_pos_Haruka_sw0, position_in_vehid_chain){
+  default: spriteset_281_mid_Haruka;
+}
+switch(FEAT_TRAINS, SELF, sw_281_gfx_pantograph_pos_Haruka_sw1, position_in_vehid_chain%6){
+  0: spriteset_281_mid_panto_Haruka;
+  2: spriteset_281_mid100_Haruka;
+  3: spriteset_281_mid_panto_Haruka;
+  default: spriteset_281_mid_Haruka;
+}
+
+switch(FEAT_TRAINS, SELF, sw_281_gfx_pantograph_pos_Haruka, num_vehs_in_vehid_chain){
+  0..1: sw_281_gfx_pantograph_pos_Haruka_sw0;
+  default: sw_281_gfx_pantograph_pos_Haruka_sw1;
+}
+/*---END OF SECTION---*/
+
+/*---FRONT/BACK CAR SWITCH BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_281_gfx_backcarpanto_Haruka, 
+[STORE_TEMP(position_in_vehid_chain-2, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: spriteset_281_back_Haruka;
+  2066: spriteset_281_back_panto_Haruka;
+}
+switch(FEAT_TRAINS, SELF, sw_281_gfx_frontcargr_Haruka, position_in_consist){
+  0: spriteset_281_front_gr_Haruka;
+  default: spriteset_281_front_Haruka;
+}
+
+switch(FEAT_TRAINS, SELF, sw_281_gfx_pantocheck_Haruka, position_in_vehid_chain){
+  0: sw_281_gfx_backcarpanto_Haruka;
+  default: spriteset_281_back_panto_Haruka;
+}
+switch(FEAT_TRAINS, SELF, sw_281_gfx_frontback_flipcheck_Haruka, vehicle_is_flipped){
+  0: sw_281_gfx_frontcargr_Haruka;
+  default: sw_281_gfx_pantocheck_Haruka;
+}
+switch(FEAT_TRAINS, PARENT, sw_281_gfx_frontback_Haruka, vehicle_is_reversed){
+  0: sw_281_gfx_frontback_flipcheck_Haruka;
+  default: sw_JRW271281group_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+/*---MID CAR SWITCH BLOCK---*/
+switch(FEAT_TRAINS, PARENT, sw_281_gfx_mucar_revcheck_mid_Haruka, vehicle_is_reversed){
+  0: sw_281_gfx_pantograph_pos_Haruka;
+  default: sw_JRW271281group_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+/*---LIVERY REFIT BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_281_gfx_mucar,  cargo_subtype) {
+  0: sw_281_gfx_mucar_revcheck_mid_Haruka;
+}
+switch(FEAT_TRAINS, SELF, sw_281_gfx_main,  cargo_subtype) {
+  0: sw_281_gfx_frontback_Haruka;
+}
+/*---END OF SECTION---*/
+
+/*---LIVERY MENU BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_281_subtypetext_mucar, cargo_subtype) {
+  //0: string(281_LV_Haruka);
+}
+switch(FEAT_TRAINS, SELF, sw_281_subtypetext_main, cargo_subtype) {
+  //0: string(281_LV_Haruka);
+}
+/*---END OF SECTION---*/
+
+/*---COUPLING BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_281_attach_vehid, [vehicle_type_id == 2066 || vehicle_type_id == 2065 ||vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+}
+/*---END OF SECTION---*/
+
+/*---PROPERTY BLOCK---*/
+item(FEAT_TRAINS, emu_281) {
+    property {
+        name:                         string(JRW_281);
+        introduction_date:            date(1994, 09, 04);
+        model_life:                   2;
+        vehicle_life:                 46;
+        reliability_decay:            23;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  20;
+        running_cost_factor:          50;
+        speed:                        130 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        1080 kW;
+        weight:                       44 ton;
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_281_gfx_main;
+        purchase:                     spriteset_281_purchase;
+        additional_text:              return string(JRW_281_DESC);
+        cargo_subtype_text:           sw_281_subtypetext_main;
+        can_attach_wagon:             sw_281_attach_vehid;
+        //start_stop:                   ;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_281_gfx_mucar;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cargo_subtype_text:           sw_281_subtypetext_mucar;
+        power: 540;
+        weight: 32;
+      }
+}
+/*---END OF SECTION---*/

@@ -149,7 +149,7 @@ item(FEAT_TRAINS, emu_401) {
 		    purchase:                 spriteset_401_purchase;
 		    additional_text:	      return string(JNR_415_DESC);
         cargo_subtype_text:           sw_401_subtypetext_main;
-        can_attach_wagon:			  sw_401_attach_vehid;
+        can_attach_wagon:			  sw_415group_attach_vehid;
         //start_stop:                   ;
     }
     /*Multiple Unit Car*/

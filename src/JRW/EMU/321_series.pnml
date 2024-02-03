@@ -11,14 +11,14 @@ spriteset(spriteset_321_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd(
 spriteset(spriteset_321_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 61)}
 
 spriteset(spriteset_321_rev_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 151)}
-spriteset(spriteset_321_rev_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 1)}
+spriteset(spriteset_321_rev_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 1)}
 spriteset(spriteset_321_rev_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 91)}
 spriteset(spriteset_321_rev_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 61)}
 
-spriteset(spriteset_321_revflip_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 151)}
+spriteset(spriteset_321_revflip_front_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd(1, 151)}
 spriteset(spriteset_321_revflip_back_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 1)}
 spriteset(spriteset_321_revflip_mid_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_rev(1, 91)}
-spriteset(spriteset_321_revflip_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25_rev(1, 61)}
+spriteset(spriteset_321_revflip_mid_panto_std,     "gfx/JRW/EMU321/321.png")      {tmpl_rpstd_panto25(1, 61)}
 /*
 alternative_sprites(spriteset_321_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu321/LIVERY_REF/321-REF_LV-REF_CR.png")      {tmpl_std(0, 1)}
 alternative_sprites(spriteset_321_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/COMPANY_REF/emu321/LIVERY_REF/321-REF_LV-REF_CR.png")      {tmpl_std_rev(0, 26)}
@@ -115,19 +115,19 @@ var[0x61, 0, 0x0000FFFF, 0xC6]]){
 }
 switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_frontback_sameid,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
- 2056 : sw_321_gfx_rev_frontback_321check;
+ 2099 : sw_321_gfx_rev_frontback_321check;
  1000 : sw_321_gfx_rev_front_flippedcheck;
  default : sw_321_gfx_rev_back_pantocheck;
 }
 switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_frontback,
 [STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
- 2056 : sw_321_gfx_rev_frontback_sameid;
+ 2099 : sw_321_gfx_rev_frontback_sameid;
  1000 : sw_321_gfx_rev_back_pantocheck;
  default : sw_321_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_321_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
  1000 : sw_321_gfx_rev_pantograph_pos;
- 2056 : sw_321_gfx_rev_frontback;
+ 2099 : sw_321_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
 /*---GFX: Pantograph Positions---*/

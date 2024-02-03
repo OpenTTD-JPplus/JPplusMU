@@ -1,0 +1,245 @@
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_KH85_purchase,	                                                    "gfx/JRC/dmuKH85/purchase.png")               {tmpl_purchase(0, 0)}
+alternative_sprites(spriteset_KH85_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRC/dmuKH85/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//KH85 Cab JRC
+spriteset (spriteset_KH85_JRC,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH85_frontflip_JRC,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH85_rev_JRC,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH85_revflip_JRC,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH85_JRC,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-3.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH85_frontflip_JRC, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-3.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH85_rev_JRC,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-4.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH85_revflip_JRC,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-4.png")           {tmpl_std(0, 0)}
+
+//KH85 Wideview Cab JRC
+spriteset (spriteset_KH85_widev_JRC,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH85_widev_frontflip_JRC,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH85_widev_rev_JRC,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH85_widev_revflip_JRC,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH85_widev_JRC,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-1.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH85_widev_frontflip_JRC, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-1.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH85_widev_rev_JRC,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-2.png")           {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_KH85_widev_revflip_JRC,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-2.png")           {tmpl_std(0, 0)}
+
+//KH85 Mid Car JRC
+spriteset (spriteset_KH85_mid_JRC,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+spriteset (spriteset_KH85_mid_rev_JRC,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_KH85_mid_JRC,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-5.png")           {tmpl_std(0, 0)}
+alternative_sprites(spriteset_KH85_mid_rev_JRC,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRC/dmuKH85/85-5.png")           {tmpl_std_rev(0, 0)}
+
+/*---END OF SECTION---*/
+
+/*---GFX: Train Reversing Switches---*/
+switch(FEAT_TRAINS,SELF, sw_KH85_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH85_rev_JRC;
+  1: spriteset_KH85_widev_rev_JRC;
+}
+switch(FEAT_TRAINS,SELF, sw_KH85_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH85_revflip_JRC;
+  1: spriteset_KH85_widev_revflip_JRC;
+}
+switch(FEAT_TRAINS,SELF, sw_KH85_gfx_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH85_JRC;
+  1: spriteset_KH85_widev_JRC;
+}
+switch(FEAT_TRAINS,SELF, sw_KH85_gfx_frontflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH85_frontflip_JRC;
+  1: spriteset_KH85_widev_frontflip_JRC;
+}
+switch(FEAT_TRAINS,SELF, sw_KH85_gfx_mid_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH85_mid_rev_JRC;
+}
+switch(FEAT_TRAINS,SELF, sw_KH85_gfx_mid_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_KH85_mid_JRC;
+}
+
+//cab flip checkers
+switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH85_gfx_rev_livery;
+ default: sw_KH85_gfx_revflip_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
+  1: sw_KH85_gfx_revflip_livery;
+ default: sw_KH85_gfx_rev_livery;
+}
+
+//mucar flipped
+switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_flippedcheck_mucar, vehicle_is_flipped) {
+  1: sw_KH85_gfx_mid_revflip_livery;
+ default: sw_KH85_gfx_mid_rev_livery;
+}
+
+//check if the opposite vehicle has been flipped
+switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_opposite_flippedcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), 
+getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
+  0: sw_KH85_gfx_rev_flippedcheck;
+  default: sw_KH85_gfx_rev_flippedcheckopp;
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
+  0: sw_KH85_gfx_front_livery;
+  default: sw_KH85_gfx_rev_opposite_flippedcheck;
+}
+
+//main stuff
+switch(FEAT_TRAINS, SELF, sw_KH85_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1520: sw_KH85_gfx_rev_opposite_pos;
+
+  1000: sw_KH85_gfx_rev_flippedcheck_mucar;
+}
+/*---END OF SECTION---*/
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//KH85 Cab JRC
+switch(FEAT_TRAINS, SELF, sw_KH85_JRC_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
+ 0: spriteset_KH85_revflip_JRC;
+ default: spriteset_KH85_rev_JRC;
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_JRC_gfx_frontback_flipcheck_posfront, vehicle_is_flipped){
+ 0: spriteset_KH85_JRC;
+ default: spriteset_KH85_frontflip_JRC;
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_JRC_gfx_frontback_revcheck_posback, position_in_consist_from_end){
+ 0: sw_KH85_JRC_gfx_frontback_flipcheck_posback;
+ default: spriteset_KH85_rev_JRC;
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_JRC_gfx_frontback_revcheck_posfront, position_in_consist){
+ 0: sw_KH85_JRC_gfx_frontback_flipcheck_posfront;
+ default: sw_KH85_JRC_gfx_frontback_revcheck_posback;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH85_JRC_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH85_JRC_gfx_frontback_revcheck_posfront;
+ default: sw_KH85_gfx_rev_idcheck;
+}
+//KH85 Wideview Cab JRC
+switch(FEAT_TRAINS, SELF, sw_KH85_widev_JRC_gfx_frontback_flipcheck_posback, vehicle_is_flipped){
+ 0: spriteset_KH85_widev_revflip_JRC;
+ default: spriteset_KH85_widev_rev_JRC;
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_widev_JRC_gfx_frontback_flipcheck_posfront, vehicle_is_flipped){
+ 0: spriteset_KH85_widev_JRC;
+ default: spriteset_KH85_widev_frontflip_JRC;
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_widev_JRC_gfx_frontback_revcheck_posback, position_in_consist_from_end){
+ 0: sw_KH85_widev_JRC_gfx_frontback_flipcheck_posback;
+ default: spriteset_KH85_widev_rev_JRC;
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_widev_JRC_gfx_frontback_revcheck_posfront, position_in_consist){
+ 0: sw_KH85_widev_JRC_gfx_frontback_flipcheck_posfront;
+ default: sw_KH85_widev_JRC_gfx_frontback_revcheck_posback;
+}
+switch(FEAT_TRAINS, PARENT, sw_KH85_widev_JRC_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: sw_KH85_widev_JRC_gfx_frontback_revcheck_posfront;
+ default: sw_KH85_gfx_rev_idcheck;
+}
+//mucar one
+switch(FEAT_TRAINS, PARENT, sw_KH85_gfx_mid, vehicle_is_reversed){
+  0: spriteset_KH85_mid_JRC;
+  default: sw_KH85_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_KH85_gfx_main, cargo_subtype) {
+  0: sw_KH85_JRC_gfx_frontback_revcheck;
+  1: sw_KH85_widev_JRC_gfx_frontback_revcheck;
+}
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_KH85_subtypetext_main, cargo_subtype) {
+  0: string(LV_JNR_EXPRESS);
+  1: string(LV_VARITION_MID1);
+}
+/*---END OF SECTION---*/
+
+
+//startstop
+switch(FEAT_TRAINS, PARENT, sw_KH85_startstop3, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: return string(STR_STARTSTOP_JNRKH_MU);
+}
+switch(FEAT_TRAINS, PARENT, sw_KH85_startstop2, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  //only KiHa types with a cab at both ends
+  //1520: sw_KH85_startstop3; //kh40
+  
+  default: return string(STR_STARTSTOP_JNRKH);
+}
+switch(FEAT_TRAINS, SELF, sw_KH85_startstop, [STORE_TEMP(position_in_consist_from_end-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  //all KiHa types here
+  1520: sw_KH85_startstop3; //kh40
+
+  1000: sw_KH85_startstop3; //mucar
+  default: sw_KH85_startstop2;
+}
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_KH85_attach_vehid, [vehicle_type_id == dmu_kiha85 || vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, dmu_kiha85) {
+    property {
+        name:                         string(JRC_KH85);
+        introduction_date:            date(1989, 02, 18);
+        model_life:                   4;
+        vehicle_life:                 34;
+        reliability_decay:            23;
+
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        cost_factor:                  20;
+        running_cost_factor:          50;
+
+        speed:                        120 km/h;
+        track_type:                   NARROW_NOEL;
+        power:                        257 kW;
+        weight:                       44 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                sw_KH85_gfx_main;
+		    purchase:               spriteset_KH85_purchase;
+		    additional_text:	      return string(JRC_KH85_DESC);
+        cargo_subtype_text:     sw_KH85_subtypetext_main;
+        can_attach_wagon:			  sw_KH85_attach_vehid;
+        start_stop:             sw_KH85_startstop;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_KH85_gfx_mid;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_2D;
+        //cargo_subtype_text:           sw_KH85_subtypetext_main;
+        power: 132;
+        weight: 42;
+      }
+}

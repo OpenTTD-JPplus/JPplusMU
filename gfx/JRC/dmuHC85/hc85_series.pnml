@@ -1,0 +1,114 @@
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset (spriteset_hc85_purchase,"gfx/JRW/emu207/purchase.png") {tmpl_purchase_dh(0, 0)}
+alternative_sprites(spriteset_hc85_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,"gfx/JRC/dmuhc85/purchase_32bpp.png") {tmpl_purchase_dh_32bpp(0, 0)}
+
+//hc85_original
+spriteset (spriteset_hc85_front_original,"gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_hc85_rear_original,"gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_hc85_mid_original,"gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_hc85_rev_front_original,"gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_hc85_rev_rear_original,"gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_hc85_rev_mid_original,"gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_hc85_front_original,ZOOM_LEVEL_NORMAL,BIT_DEPTH_32BPP,"gfx/JRC/dmuhc85/hc85-1-1.png") {tmpl_std(0, 1)}
+alternative_sprites(spriteset_hc85_rev_front_original,ZOOM_LEVEL_NORMAL,BIT_DEPTH_32BPP,"gfx/JRC/dmuhc85/hc85-1-1.png") {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_hc85_rear_original,ZOOM_LEVEL_NORMAL,BIT_DEPTH_32BPP,"gfx/JRC/dmuhc85/hc85-1-2.png") {tmpl_std(0, 1)}
+alternative_sprites(spriteset_hc85_rev_rear_original,ZOOM_LEVEL_NORMAL,BIT_DEPTH_32BPP,"gfx/JRC/dmuhc85/hc85-1-2.png") {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_hc85_mid_original,ZOOM_LEVEL_NORMAL,BIT_DEPTH_32BPP,"gfx/JRC/dmuhc85/hc85-1-3.png") {tmpl_std(0, 1)}
+alternative_sprites(spriteset_hc85_rev_mid_original,ZOOM_LEVEL_NORMAL,BIT_DEPTH_32BPP,"gfx/JRC/dmuhc85/hc85-1-3.png") {tmpl_std_rev(0, 1)}
+
+/*---GFX: Train Spritesets Engine Switches---*/
+switch(FEAT_TRAINS, SELF, sw_enhc85_original_following, position_in_consist_from_end){
+	0 : spriteset_hc85_rear_original;
+	spriteset_hc85_front_original;
+}
+
+switch(FEAT_TRAINS, SELF, sw_enhc85_original_reversing, position_in_consist){
+	0 : spriteset_hc85_rev_rear_original;
+	spriteset_hc85_rev_front_original;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_enhc85_original, vehicle_is_flipped){
+	0 : sw_enhc85_original_following;
+	sw_enhc85_original_reversing;
+}
+
+switch(FEAT_TRAINS, SELF, sw_enhc85_main, cargo_subtype){
+	0 : sw_enhc85_original;
+}
+
+/*---GFX: Train Spritesets MU Switches---*/
+switch(FEAT_TRAINS, SELF, sw_muhc85_original_following, position_in_consist % 1){
+	0 : spriteset_hc85_mid_original;
+}
+
+switch(FEAT_TRAINS, SELF, sw_muhc85_original_reversing, position_in_consist_from_end % 1){
+	0 : spriteset_hc85_rev_mid_original;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_muhc85_original, vehicle_is_reversed){
+	0 : sw_muhc85_original_following;
+	sw_muhc85_original_reversing;
+}
+
+switch(FEAT_TRAINS, SELF, sw_muhc85_main, cargo_subtype){
+	0 : sw_muhc85_original;
+}
+
+/*---GFX: Train Attaching Switches---*/
+switch(FEAT_TRAINS, SELF, sw_hc85_attach_vehid, [vehicle_type_id == dmu_hc85 || vehicle_type_id == mu_car]) {
+	0: return string(MU_UNIQUE);
+}
+
+item(FEAT_TRAINS, dmu_hc85) {
+	property {
+		name : string(JRC_hc85);
+		introduction_date : date(2021, 01, 20);
+		model_life : 12;
+		vehicle_life : 31;
+		reliability_decay : 23;
+		cargo_capacity : param_capacity_express;
+		loading_speed : param_loading_1D;
+		cost_factor : 30;
+		running_cost_factor : 38;
+		speed : 120 km/h;
+		track_type : NARROW_NOEL;
+		power : 580 kW;
+		weight : 41 ton;
+		climates_available : ALL_CLIMATES;
+		ai_special_flag : AI_FLAG_PASSENGER;
+		sprite_id : SPRITE_ID_NEW_TRAIN;
+		misc_flags : bitmask(TRAIN_FLAG_MU);
+		refittable_cargo_classes : bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes : bitmask();
+		refit_cost : 0;
+		dual_headed : 1;
+		ai_engine_rank : 0;
+		running_cost_base : RUNNING_COST_DIESEL;
+		engine_class : ENGINE_CLASS_DIESEL;
+		visual_effect_and_powered : visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+		tractive_effort_coefficient : 0.2;
+		air_drag_coefficient : 0.07;
+		bitmask_vehicle_info : 0;
+		length : 8;
+	}
+
+	graphics {
+		default : sw_enhc85_main;
+		purchase : spriteset_hc85_purchase;
+		additional_text : return string(JRC_hc85_DESC);
+		can_attach_wagon : sw_hc85_attach_vehid;
+		//start_stop : sw_hc85_start_stop;
+	}
+
+	/*Multiple Unit Car*/
+	livery_override(mu_car){
+		default : sw_muhc85_main;
+		cargo_capacity : param_capacity_express;
+		loading_speed : param_loading_1D;
+		power : 580/2;
+		weight : 41;
+	}
+
+}

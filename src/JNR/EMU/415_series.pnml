@@ -199,7 +199,7 @@ switch(FEAT_TRAINS, SELF, sw_415_subtypetext_main, cargo_subtype) {
 }
 /*---END OF SECTION---*/
 /*---Coupling Switch---*/
-switch(FEAT_TRAINS, SELF, sw_415_attach_vehid, [vehicle_type_id == emu_4151500 || vehicle_type_id == emu_415 ||vehicle_type_id == emu_403 || vehicle_type_id == emu_401 || vehicle_type_id == mu_car]) {
+switch(FEAT_TRAINS, SELF, sw_415_attach_vehid, [vehicle_type_id == emu_413 ||vehicle_type_id == emu_4151500 || vehicle_type_id == emu_415 ||vehicle_type_id == emu_403 || vehicle_type_id == emu_401 || vehicle_type_id == mu_car]) {
  0: return string(MU_UNIQUE);
 }
 /*---END OF SECTION---*/
@@ -247,7 +247,7 @@ item(FEAT_TRAINS, emu_415) {
 		    purchase:                 spriteset_415_purchase;
 		    additional_text:	      return string(JNR_415_DESC);
         cargo_subtype_text:           sw_415_subtypetext_main;
-        can_attach_wagon:			  sw_415_attach_vehid;
+        can_attach_wagon:			  sw_415group_attach_vehid;
         //start_stop:                   ;
     }
     /*Multiple Unit Car*/

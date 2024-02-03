@@ -30,6 +30,7 @@
 #include "src/reversing/reversing_415_group.pnml"
 #include "src/reversing/reversing_221_223_225_group.pnml"
 #include "src/reversing/reversing_JNR_KIHA_group.pnml"
+#include "src/reversing/reversing_271_281_group.pnml"
 
 /*---TRAINS---*/
 
@@ -38,6 +39,7 @@
 
 //JGR
 #include "src/JGR/EMU/40_series.pnml"
+#include "src/JGR/EMU/52_series.pnml"
 #include "src/JGR/EMU/63_series.pnml"
 #include "src/JGR/EMU/6340_series.pnml"
 #include "src/JGR/EMU/6310_series.pnml"
@@ -69,6 +71,7 @@
 
 #include "src/JNR/EMU/401_series.pnml"
 #include "src/JNR/EMU/403_series.pnml"
+#include "src/JNR/EMU/413_series.pnml"
 #include "src/JNR/EMU/415_series.pnml"
 #include "src/JNR/EMU/415_1500_series.pnml"
 #include "src/JNR/EMU/485_series.pnml"
@@ -90,6 +93,7 @@
 #include "src/JRE/DMU/KHE130_series.pnml"
 #include "src/JRE/DMU/KHE131_series.pnml"
 
+#include "src/JRE/EMU/215_series.pnml"
 #include "src/JRE/EMU/E331_series.pnml"
 #include "src/JRE/EMU/E235_series.pnml"
 #include "src/JRE/EMU/E233_series.pnml"
@@ -100,6 +104,7 @@
 #include "src/JRE/EMU/107_series.pnml"
 
 #include "src/JRE/EMU/E531_series.pnml"
+#include "src/JRE/EMU/E257_series.pnml"
 #include "src/JRE/EMU/E353_series.pnml"
 #include "src/JRE/EMU/651_series.pnml"
 
@@ -108,6 +113,8 @@
 
 
 //JR-Central
+#include "src/JRC/DMU/KH85_series.pnml"
+
 #include "src/JRC/EMU/211_56_series.pnml"
 #include "src/JRC/EMU/311_series.pnml"
 #include "src/JRC/EMU/313_series.pnml"
@@ -123,6 +130,8 @@
 #include "src/JRW/EMU/225_0_series.pnml"
 #include "src/JRW/EMU/225_5000_series.pnml"
 #include "src/JRW/EMU/227_series.pnml"
+#include "src/JRW/EMU/271_series.pnml"
+#include "src/JRW/EMU/281_series.pnml"
 #include "src/JRW/EMU/321_series.pnml"
 #include "src/JRW/EMU/323_series.pnml"
 #include "src/JRW/DMU/KH33_series.pnml"
