@@ -23,23 +23,23 @@ spriteset(spriteset_207900_revflip_mid_std,     "gfx/OTHER/mucar.png")      {tmp
 spriteset(spriteset_207900_revflip_mid_panto_std,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
 spriteset(spriteset_207900_revflip_back_panto_std,     "gfx/OTHER/mucar.png")      {tmpl_std(0, 0)}
 
-alternative_sprites(spriteset_207900_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_207900_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1.png")      {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_207900_mid_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_207900_mid_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-3.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_207900_back_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1P.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_207900_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_207900_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_207900_mid_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_207900_mid_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_207900_back_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std_rev(0, 125)}
 
-alternative_sprites(spriteset_207900_rev_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1.png")      {tmpl_std_rev(0, 25)}
-alternative_sprites(spriteset_207900_rev_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_207900_rev_mid_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-2.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_207900_rev_mid_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-3.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_207900_rev_back_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1P.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_207900_rev_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std_rev(0, 25)}
+alternative_sprites(spriteset_207900_rev_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std_rev(0, 0)}
+alternative_sprites(spriteset_207900_rev_mid_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std(0, 50)}
+alternative_sprites(spriteset_207900_rev_mid_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std_rev(0, 75)}
+alternative_sprites(spriteset_207900_rev_back_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std_rev(0, 100)}
 
-alternative_sprites(spriteset_207900_revflip_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1.png")      {tmpl_std(0, 25)}
-alternative_sprites(spriteset_207900_revflip_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_207900_revflip_mid_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-2.png")      {tmpl_std_rev(0, 0)}
-alternative_sprites(spriteset_207900_revflip_mid_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-3.png")      {tmpl_std(0, 0)}
-alternative_sprites(spriteset_207900_revflip_back_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207-1-1P.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_207900_revflip_front_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std(0, 25)}
+alternative_sprites(spriteset_207900_revflip_back_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std(0, 0)}
+alternative_sprites(spriteset_207900_revflip_mid_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std_rev(0, 50)}
+alternative_sprites(spriteset_207900_revflip_mid_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std(0, 75)}
+alternative_sprites(spriteset_207900_revflip_back_panto_std,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu207900/207.png")      {tmpl_std(0, 100)}
 
 /*---END OF SECTION---*/
 /*---GFX: Train Reversing Switches---*/
