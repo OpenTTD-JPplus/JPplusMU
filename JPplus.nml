@@ -8612,73 +8612,22 @@ switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_JGRcream_sw0, [STORE_TEMP
   1: sw_52_gfx_rev_mid_other_flippedcheck;
   default: sw_52_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_JGRbrownwartime_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_kansairapid_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_kansaihanwa_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_hanwa_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_shizutetsu_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_mid_flippedcheck;
-}
 switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_shonan_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+  0: sw_52_gfx_rev_mid_other_flippedcheck;  
   default: sw_52_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_yokosuka1_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_mid_flippedcheck;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_yokosuka2_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_mid_flippedcheck;
-}
-
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_JGRbrown, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_JGRbrown_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_JGRcream, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_JGRcream_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_JGRbrownwartime, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_JGRbrownwartime_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_kansairapid, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_kansairapid_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_kansaihanwa, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_kansaihanwa_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_hanwa, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_hanwa_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_shizutetsu, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_shizutetsu_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_shonan, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_shonan_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_yokosuka1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_yokosuka1_sw0;
-}
-switch(FEAT_TRAINS, SELF, sw_52_gfx_rev_pantograph_pos_yokosuka2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_52_gfx_rev_pantograph_pos_yokosuka2_sw0;
 }
 
 switch(FEAT_TRAINS,SELF, sw_52_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: sw_52_gfx_rev_pantograph_pos_JGRbrown;
-  1: sw_52_gfx_rev_pantograph_pos_JGRcream;
-  2: sw_52_gfx_rev_pantograph_pos_JGRbrownwartime;
-  3: sw_52_gfx_rev_pantograph_pos_kansairapid;
-  4: sw_52_gfx_rev_pantograph_pos_kansaihanwa;
-  5: sw_52_gfx_rev_pantograph_pos_hanwa;
-  6: sw_52_gfx_rev_pantograph_pos_shizutetsu;
-  7: sw_52_gfx_rev_pantograph_pos_shonan;
-  8: sw_52_gfx_rev_pantograph_pos_yokosuka1;
-  9: sw_52_gfx_rev_pantograph_pos_yokosuka2;
+  0: sw_52_gfx_rev_pantograph_pos_JGRbrown_sw0;
+  1: sw_52_gfx_rev_pantograph_pos_JGRcream_sw0;
+  2: sw_52_gfx_rev_mid_flippedcheck;
+  3: sw_52_gfx_rev_mid_flippedcheck;
+  4: sw_52_gfx_rev_mid_flippedcheck;
+  5: sw_52_gfx_rev_mid_flippedcheck;
+  6: sw_52_gfx_rev_mid_flippedcheck;
+  7: sw_52_gfx_rev_pantograph_pos_shonan_sw0;
+  8: sw_52_gfx_rev_mid_flippedcheck;
+  9: sw_52_gfx_rev_mid_flippedcheck;
 }
 /*---END OF SECTION---*/
 
@@ -8750,6 +8699,7 @@ switch(FEAT_TRAINS, SELF, sw_52_gfx_pantograph_pos_shizutetsu_sw0, position_in_v
   default: spriteset_52_mid_shizutetsu;
 }
 switch(FEAT_TRAINS, SELF, sw_52_gfx_pantograph_pos_shonan_sw0, position_in_vehid_chain){
+  0: spriteset_52_mid_other_shonan;
   default: spriteset_52_mid_shonan;
 }
 switch(FEAT_TRAINS, SELF, sw_52_gfx_pantograph_pos_yokosuka1_sw0, position_in_vehid_chain){
