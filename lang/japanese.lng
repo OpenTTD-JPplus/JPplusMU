@@ -12,11 +12,12 @@ STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}は日本の風景をもっと豊
 STR_NO  :いいえ
 STR_YES :はい
 STR_PARAM_NORMAL     :普通
-STR_PARAM_VLOW       :僅少
-STR_PARAM_LOW        :低め
-STR_PARAM_HIGH       :高め
-STR_PARAM_VHIGH      :大量
+STR_PARAM_VLOW       :特に低い
+STR_PARAM_LOW        :低い
+STR_PARAM_HIGH       :高い
+STR_PARAM_VHIGH      :特に高い
 STR_PARAM_REAL       :現実的
+STR_PARAM_CUSTOM   :カスタム (以下で調整)
 STR_PARAM_NAME_DISABLETRAINS  :列車を無効化する
 STR_PARAM_DESC_DISABLETRAINS  :なんでこれを使うかわからないけど、設定はあるよ。{} ただ単に自動車だけを使いたいのかな？
 STR_PARAM_NAME_DISABLERV  :自動車・路面電車を無効化する
@@ -25,19 +26,32 @@ STR_PARAM_NAME_BASECOSTMODBUY    :購入料金
 STR_PARAM_DESC_BASECOSTMODBUY    :車両の購入時の価格を上げる/下げる。(JapanSet3 基準)
 STR_PARAM_NAME_BASECOSTMODRUN    :運用費
 STR_PARAM_DESC_BASECOSTMODRUN    :車両の運用費を上げる/下げる。(JapanSet3 基準)
-STR_PARAM_NAME_BASECAPACITY      :車両定員
-STR_PARAM_DESC_BASECAPACITY      :車両定員を調整します。(JapanSet3 基準) {} 「現実的」設定は実物の車両の定員数データを基に算出しております。他の車両セット等との互換性は考慮しておりません。
-STR_PARAM_NAME_BOOSTCAPACITY     :定員数ボーナス
-STR_PARAM_DESC_BOOSTCAPACITY     :通勤車両に対して定員数を増やします。TIASやNATS車両セットは比較的高めの定員数で設定されいます。この設定をオンにするとJP+Setに含まれる通勤車両の定員数を15名増やし、定員数をTIASやNATSに近づけられます。
+STR_PARAM_NAME_BASECAPACITY      :収容量
+STR_PARAM_DESC_BASECAPACITY      :収容量を調整します。(JapanSet3 基準) {} 「現実的」設定は実物の車両の定員数データを基に算出しております。他の車両セット等との互換性は考慮しておりません。
+STR_PARAM_NAME_BOOSTCAPACITY     :収容量ボーナス
+STR_PARAM_DESC_BOOSTCAPACITY     :通勤車両に対して収容量を増やします。TIASやNATS車両セットは比較的高めの定員数で設定されいます。この設定をオンにするとJP+Setに含まれる通勤車両の定員数を15名増やし、定員数をTIASやNATSに近づけられます。
 STR_PARAM_NAME_JAPANSETDISABLE   :JapanSet3車両を取り除く 
 STR_PARAM_DESC_JAPANSETDISABLE   :JapanSet3から重複している車両を取り除きます。
+STR_PARAM_NAME_DECAY :Cargo decay rate
+STR_PARAM_DESC_DECAY :Set the rate of cargo decay. In "normal" mode all trains have the same decay rate. In "low" and "very low" cargo decay rates depend on the type of train used. Using a commuter train over long distances would earn less than using an express train.
 
-GRF_OTTDVER       : このNewGRFは現在ご使用中のバージョンのOpenTTDではご利用になれません。OpenTTDをアップデートしてください。
+STR_PARAM_NAME_CUSTOMLOCAL :普通の収容量
+STR_PARAM_NAME_CUSTOMRAPID :快速の収容量
+STR_PARAM_NAME_CUSTOMEXPRESS :特急の収容量
+
+STR_PARAM_DESC_CUSTOM :異なる列車グループが輸送できる乗客の数を手動で設定します。 最初に「収容量」の設定を「カスタム」に設定する必要があります。
+
+
+STR_ATTACH_JNRKH:取り付けられるのは、以下の気動車、またはMU車のみです。{}{}キハ30{}キハ35{}キハ40{}キハ58{}キハ130{}キハ141
+STR_STARTSTOP_JNRKH:キハタイプの運転台付ユニットが後部ユニットであることを確認する必要があります。
+STR_STARTSTOP_JNRKH_MU:最後の車両をMU車にすることはできません。 後部にはキハユニットを取り付けてください。
+
+GRF_OTTDVER   : このNewGRFは現在ご使用中のバージョンのOpenTTDではご利用になれません。OpenTTDをアップデートしてください。
 GRF_JAPANSET      : {YELLOW}JapanSet3 Trains{WHITE}{}および・また{}{YELLOW}JapanSet3 Tracks{WHITE}{}を{GREEN}JP+Set{WHITE}より上にロードしてください。
-GRF_JPPLUSSET     : JP+ Set must be loaded AFTER the JP+ Legacy version.
-GRF_NATSSET       : JP+ Set NATS Duplicate Trains Disabler should be loaded together with Nagoya Area Train Set (NATS) to avoid train duplication. 
-GRF_JAPANSETTRAINS: JP+ Set should be loaded AFTER Japan Set3: Trains to avoid train duplication.
-GRF_JAPANSECRETORDER:  JP+ Set should be loaded AFTER JP+ Engines & Wagons for compatibility.
+GRF_JPPLUSSET : JP+ Setは、JP+ Legacy versionの後にロードする必要があります。
+GRF_NATSSET   : 列車の重複を避けるために、JP+ Set NATS Duplicate Trains DisablerをNagoya Area Train Set (NATS) と一緒にロードする必要があります。
+GRF_JAPANSETTRAINS: 列車の重複を避けるために、JP+ Setは、Japan Set3: Trainsの後にロードする必要があります。
+GRF_JAPANSECRETORDER:  互換性を確保するには、JP+ SetをJP+ Engines & Wagonsの後にロードする必要があります。
 
 
 
@@ -51,27 +65,27 @@ JGR_6310 :デハ6310形 {WHITE}(電車){BLACK}
 JGR_6340 :デハ6340形 {WHITE}(電車){BLACK}
 JGR_40single:40系 {WHITE}(電車){BLACK}
 JGR_40:41/51系 {WHITE}(電車){BLACK}
+JGR_52:52系 {WHITE}(電車){BLACK}
 JGR_63:63系 {WHITE}(電車){BLACK}
 
-
-
-JNR_101 :101/103系 {WHITE}(電車){BLACK}
+JNR_101 :101系 {WHITE}(電車){BLACK}
 JNR_103 :101/103系 {WHITE}(電車){BLACK}
 JNR_201 :201系 {WHITE}(電車){BLACK}
-JNR_205 :205系 {WHITE}(電車){BLACK}
-JNR_207900 :207系 900番台 {WHITE}(電車){BLACK}
+JNR_205 :206系 {WHITE}(電車){BLACK}
+JNR_207900  :207系 900番台 {WHITE}(電車){BLACK}
 
 JNR_70 :70系 {WHITE}(電車){BLACK}
 JNR_113 :111/113系 {WHITE}(電車){BLACK}
 JNR_115 :115系 {WHITE}(電車){BLACK}
 JNR_1153000 :115系 3000/3500番台 {WHITE}(電車){BLACK}
-JNR_211 :211系 {WHITE}(電車){BLACK}
-JNR_213 :213系 {WHITE}(電車){BLACK}
+JNR_211  :211系 {WHITE}(電車){BLACK}
+JNR_213  :213系 {WHITE}(電車){BLACK}
 
 JNR_401421 :401/421系 {WHITE}(電車){BLACK}
 JNR_403423 :403/423系 {WHITE}(電車){BLACK}
+JNR_413 :413系 {WHITE}(電車){BLACK}
 JNR_415 :415系 {WHITE}(電車){BLACK}
-JNR_4151500 :415系 1500番台 {WHITE}(電車){BLACK}
+JNR_4151500:415系 1500番台 {WHITE}(電車){BLACK}
 
 JNR_711 :711系 {WHITE}(電車){BLACK}
 
@@ -80,120 +94,292 @@ JNR_165 :165/169系 {WHITE}(電車){BLACK}
 
 JNR_181 :151/161/181系 {WHITE}(電車){BLACK}
 
-JNR_485 :481/483/485/489系 {WHITE}(電車){BLACK}
+JNR_485:481/483/485/489系 {WHITE}(電車){BLACK}
 
 JNR_781 :781系 {WHITE}(電車){BLACK}
 
 JNR_kiha30 :キハ30系 {WHITE}(気動車){BLACK}
+JNR_kiha35 :キハ35系 {WHITE}(気動車){BLACK}
 
 JNR_kiha40 :キハ40系 {WHITE}(気動車){BLACK}
 JNR_kiha48 :キハ48系 {WHITE}(気動車){BLACK}
 JNR_kiha54 :キハ54系 {WHITE}(気動車){BLACK}
 
-JNR_kiha58 :キハ56/57/58系 {WHITE}(気動車){BLACK}
+JNR_kiha58 :キハ58系 {WHITE}(気動車){BLACK}
 
 JNR_kiha80 :キハ80系 {WHITE}(気動車){BLACK}
 
-JRH_721 :721系 {WHITE}(電車){BLACK}
-JRH_731 :731系 {WHITE}(電車){BLACK}
-JRH_733 :733系 {WHITE}(電車){BLACK}
-JRH_735 :735系 {WHITE}(電車){BLACK}
+JRH_721:721系 {WHITE}(電車){BLACK}
+JRH_731:731系 {WHITE}(電車){BLACK}
+JRH_733:733系 {WHITE}(電車){BLACK}
+JRH_735:735系 {WHITE}(電車){BLACK}
 
-JRH_785 :785系 {WHITE}(電車){BLACK}
-JRH_789 :789系 {WHITE}(電車){BLACK}
+JRH_785:785系 {WHITE}(電車){BLACK}
+JRH_789:789系 {WHITE}(電車){BLACK}
 
-JRH_kiha141 :キハ141系 {WHITE}(気動車){BLACK}
-JRH_kiha150 :キハ150系 {WHITE}(気動車){BLACK}
-JRH_201 :キハ201系 {WHITE}(気動車){BLACK}
+JRH_kiha130:キハ130系 {WHITE}(気動車){BLACK}
+JRH_kiha150:キハ150系 {WHITE}(気動車){BLACK}
+JRH_kiha141:キハ141系 {WHITE}(気動車){BLACK}
+JRH_201:キハ201系 {WHITE}(気動車){BLACK}
 
-JRH_261 :キハ261系 {WHITE}(気動車){BLACK}
-JRH_281 :キハ281系 {WHITE}(気動車){BLACK}
+JRH_261:キハ261系 {WHITE}(気動車){BLACK}
+JRH_281:キハ281系 {WHITE}(気動車){BLACK}
 
-JRE_209 :209系 {WHITE}(電車){BLACK}
-JRE_E331 :E331系 {WHITE}(電車){BLACK}
+JRE_209:209系 {WHITE}(電車){BLACK}
+JRE_E331:E331系 {WHITE}(電車){BLACK}
 
-JRE_E217 :E217系 {WHITE}(電車){BLACK}
+JRE_215:215系 {WHITE}(電車){BLACK}
+JRE_E217:E217系 {WHITE}(電車){BLACK}
 
-JRE_E231 :E231系 {WHITE}(電車){BLACK}
-JRE_E233 :E233系 {WHITE}(電車){BLACK}
-JRE_E235 :E235系 {WHITE}(電車){BLACK}
+JRE_E231:E231系 {WHITE}(電車){BLACK}
+JRE_E233:E233系 {WHITE}(電車){BLACK}
+JRE_E235:E235系 {WHITE}(電車){BLACK}
 
-JRE_107 :107系 {WHITE}(電車){BLACK}
-JRE_E127 :E127系 {WHITE}(電車){BLACK}
+JRE_107:107系 {WHITE}(電車){BLACK}
+JRE_E127:E127系 {WHITE}(電車){BLACK}
 
+JRE_E257:E257系 {WHITE}(電車){BLACK}
 JRE_E531:E531系 {WHITE}(電車){BLACK}
 
-JRE_719 :719系 {WHITE}(電車){BLACK}
-JRE_7195000 :719系 5000番台 {WHITE}(電車){BLACK}
+
+JRE_719:719系 {WHITE}(電車){BLACK}
+JRE_7195000:719系 5000番台 {WHITE}(電車){BLACK}
+
+JRE_651:651系 {WHITE}(電車){BLACK}
 
 JRE_E353:E353系 {WHITE}(電車){BLACK}
 
-JRE_651 :651系 {WHITE}(電車){BLACK}
+JRE_KH100:キハ100/101系 {WHITE}(気動車){BLACK}
+JRE_KH110:キハ110系 {WHITE}(気動車){BLACK}
+JRE_KH111:キハ111/112系 {WHITE}(気動車){BLACK}
+JRE_KHE120:キハE120系 {WHITE}(気動車){BLACK}
+JRE_KHE130:キハE130系 {WHITE}(気動車){BLACK}
+JRE_KHE131:キハE131/E132系 {WHITE}(気動車){BLACK}
 
-JRE_KH100 :キハ100/101系 {WHITE}(気動車){BLACK}
-JRE_KH110 :キハ110系 {WHITE}(気動車){BLACK}
-JRE_KH111 :キハ111/112系 {WHITE}(気動車){BLACK}
-JRE_KHE120 :キハE120系 {WHITE}(気動車){BLACK}
-JRE_KHE130 :キハE130系 {WHITE}(気動車){BLACK}
-JRE_KHE131 :キハE131/E132系 {WHITE}(気動車){BLACK}
-
-JNR_21156 :211系 5000/6000番台 {WHITE}(電車){BLACK}
-JRC_311 :311系 {WHITE}(電車){BLACK}
-JRC_313 :313系 {WHITE}(電車){BLACK}
+JRC_KH85: キハ85系 {WHITE}(気動車){BLACK}
+JNR_21156:211系 5000/6000番台 {WHITE}(電車){BLACK}
+JRC_311:311系 {WHITE}(電車){BLACK}
+JRC_313:313系 {WHITE}(電車){BLACK}
 JRC_373:373系 {WHITE}(電車){BLACK}
 JRC_383:383系 {WHITE}(電車){BLACK}
 
-JRW_207 :207系 {WHITE}(電車){BLACK}
+JRW_207:207系 {WHITE}(電車){BLACK}
 JRW_321:321系 {WHITE}(電車){BLACK}
 
-JRW_221 :221系 {WHITE}(電車){BLACK}
-JRW_223_0 :223系 0/2500/5500/6000番台 {WHITE}(電車){BLACK}
-JRW_223_1000 :223系 1000/2000/5000番台 {WHITE}(電車){BLACK}
+JRW_221:221系 {WHITE}(電車){BLACK}
+JRW_223_0:223系 0/2500/5500/6000番台 {WHITE}(電車){BLACK}
+JRW_223_1000:223系 1000/2000/5000番台 {WHITE}(電車){BLACK}
 JRW_225_0:225系 0/100番台 {WHITE}(電車){BLACK}
 JRW_225_5000:225系 5000/5100/6000番台 {WHITE}(電車){BLACK}
 JRW_227:227系 {WHITE}(電車){BLACK}
+
+JRW_271:281系 {WHITE}(電車){BLACK}
+JRW_281:281系 {WHITE}(電車){BLACK}
+
 JRW_323:323系 {WHITE}(電車){BLACK}
 
 JRW_KH33:キハ33系 {WHITE}(気動車){BLACK}
 
-JRS_121 :121系 {WHITE}(電車){BLACK}
-JRS_6000 :6000系 {WHITE}(電車){BLACK}
-JRS_7200 :7200系 {WHITE}(電車){BLACK}
+JRS_121:121系 {WHITE}(電車){BLACK}
+JRS_6000:6000系 {WHITE}(電車){BLACK}
+JRS_7200:7200系 {WHITE}(電車){BLACK}
+JRS_8000 :8000系 {WHITE}(電車){BLACK}
 JRS_KH1000:キハ1000系 {WHITE}(気動車){BLACK}
 
-JRK_303 :303系 {WHITE}(電車){BLACK}
+JRK_303:303系 {WHITE}(電車){BLACK}
 
-JRK_811 :811系 {WHITE}(電車){BLACK}
-JRK_813 :813系 {WHITE}(電車){BLACK}
+JRK_811:811系 {WHITE}(電車){BLACK}
+JRK_813:813系 {WHITE}(電車){BLACK}
 
 
 
 # Livery Name
-BLANK                 : {RED}A{ORANGE}U{YELLOW}T{GREEN}O{BLUE}M{PURPLE}A{CREAM}T{RED}I{ORANGE}C
+BLANK : 
+LV_START: {WHITE}•{BLACK}
 
-jnr151_LV : 151 Series JNR Express Livery
-jnr181_LV : 181 Series JNR Express Livery
+LV_VARITION_MID1: {PUSH_COLOUR}{WHITE}├{POP_COLOUR} 塗装バリエーション
+LV_VARITION_MID2: {PUSH_COLOUR}{WHITE}├{POP_COLOUR} 塗装バリエーション
+LV_VARITION_MID3: {PUSH_COLOUR}{WHITE}├{POP_COLOUR} 塗装バリエーション
+LV_VARITION_MID4: {PUSH_COLOUR}{WHITE}├{POP_COLOUR} 塗装バリエーション
+
+LV_VARITION_END1: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} 塗装バリエーション
+LV_VARITION_END2: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} 塗装バリエーション
+LV_VARITION_END3: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} 塗装バリエーション
+LV_VARITION_END4: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} 塗装バリエーション
+LV_VARITION_END5: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} 塗装バリエーション
+LV_VARITION_END6: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} 塗装バリエーション
+LV_VARITION_END7: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} 塗装バリエーション
+LV_VARITION_END8: {PUSH_COLOUR}{WHITE}└{POP_COLOUR} 塗装バリエーション
+
+
+LV_AUTO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 自動選択
+
+LV_INITIAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 初期塗装
+
+LV_RENEWAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} リニューアル塗装
+
+LV_STANDARD: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 標準塗装
+
+LV_EXP: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 特急色塗装
+
+LV_TOKAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 東海色塗装  
+
+LV_SHONAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 湘南色塗装
+
+LV_SHONAN_TOKAIDO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} 東海道編成 (湘南色塗装)
+
+LV_SHONAN_TAKATOHO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} 高崎/東北編成 (湘南色塗装)
+
+LV_JOBAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 常磐色塗装
+
+LV_KYUSHU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 九州色塗装
+
+LV_YAMASUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 山スカ色塗装
+
+LV_YOKOSUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 横須賀色塗装
+
+LV_MINOBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 身延色塗装
+
+LV_NIIGATA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 新潟色塗装
+
+LV_YAHIKO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 弥彦色塗装
+
+LV_NAGANO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 長野色塗装
+
+LV_FUKUCHIYAMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 福知山色塗装
+
+LV_SETOUCHI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 瀬戸内色塗装
+
+LV_HIROSHIMA_RAPID: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 広島快速色塗装
+
+LV_JRW_REGIONAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR西日本 地域別塗装
+
+LV_JRW_RENEWAL: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR西日本 リニューアル塗装
+
+LV_SHINANO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} しなの鉄道色塗装
+
+LV_ORANGE_VERMILLION:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} オレンジバーミリオン塗装
+
+LV_YELLOW_GREEN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} イエローグリーン塗装
+
+LV_YELLOW:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} イエロー塗装
+
+LV_BLUE:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} ブルー塗装
+
+LV_JNR_EXPRESS: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 国鉄急行塗装
+
+LV_NANAO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 七尾色塗装
+
+LV_HOKURIKU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 新北陸色塗装
+
+LV_ETR: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} えちごトキめき鉄道塗装
+
+LV_KANAZAWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 北陸地域色塗装
+
+LV_KANSAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 関西色塗装
+
+LV_CHIBA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 千葉色塗装
+
+LV_CHUKYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 中京色塗装
+
+LV_JRW_BLUE: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR西日本 ブルー塗装
+
+LV_JRW_YUMEJI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR西日本 "マリンライナー"
+
+LV_YAMANOTE: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 山手線色塗装
+
+LV_KEIHIN_TOUHOKU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 京浜東北線色塗装
+
+LV_CHUO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 中央線色塗装
+
+LV_KEIYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 京葉線色塗装
+
+LV_YOKOHAMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 横浜線色塗装
+
+LV_SAIKYO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 埼京線色塗装
+
+LV_NAMBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 南武線色塗装
+
+LV_JRS: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR四国 ブルー塗装
+
+LV_AKITA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 秋田色塗装
+
+LV_BANETSUAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 磐越西色塗装
+
+LV_ORANGE_CAPITAL:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 首都圏色塗装
+
+LV_HITACHI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} スーパーひたち塗装
+
+LV_SWALLOW: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} スワローあかぎ塗装
+
+LV_AKADEN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 赤電色塗装
+
+LV_SUIGUN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 水郡色塗装
+
+LV_HIROSHIMA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 広島色塗装
+
+LV_TAKAOKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 高岡色塗装
+
+LV_JRHOLD: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道 旧塗装
+
+LV_JRH: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道塗装
+
+LV_SASSHO: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 札沼色塗装
+
+LV_HIDAKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 日高色塗装
+
+LV_JRHEXP: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道 特急色塗装
+
+LV_JRHRV: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} JR北海道 リバイバル塗装
+
+LV_KH14142: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} キハ141/142形
+
+LV_KH143: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} キハ143形
+
+LV_KH58: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} キハ58形
+
+LV_CHKR: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} ちほく高原鉄道
+
+LV_RM: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 流氷物語号塗装
+
+LV_HANASAKI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 花咲色塗装
+
+LV_UBEON: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 宇部/小野田色塗装
+
+LV_HANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 阪和線塗装
+
+LV_KEIHANSHIN:  {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 京阪神緩行線塗装
+
+LV_JGR_BROWN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 鉄道省 旧塗装
+
+LV_JGR_BROWNCREAM: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 鉄道省 新塗装
+
+LV_JGR_BROWNWARTIME: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 鉄道省 戦時中塗装 
+
+LV_SHIZUTETSU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 飯田線快速色塗装 
+
+LV_KANSAIHANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Kansai/Hanwa Livery 
+
+
+# New New Method Test
+E257_LV_E257_0_azusa: {PUSH_COLOUR}{WHITE}-0{POP_COLOUR} Four Seasons
+E257_LV_E257_500: {PUSH_COLOUR}{WHITE}-500{POP_COLOUR} "Boso Express"
+E257_LV_E257_2000: {PUSH_COLOUR}{WHITE}-2000{POP_COLOUR} Peninsula Blue
+E257_LV_E257_2500: {PUSH_COLOUR}{WHITE}-2500{POP_COLOUR} Peninsula Blue
+E257_LV_E257_5000: {PUSH_COLOUR}{WHITE}-5000{POP_COLOUR} Green
+E257_LV_E257_5500: {PUSH_COLOUR}{WHITE}-5500{POP_COLOUR} Green
+
+
+# Legacy - No need to edit/translate
+
+jnr151_LV : 151系 JNR Express Livery
+jnr181_LV : 181系 JNR Express Livery
 jnr181_LVa : 151/161/181 Green Car
 jnr181_LVb : 151/161/181 SaShi Car
 jnr181_LVc : 151/161/181 MoHaShi Car
 jnr181_LVd : 151/161/181 Panto Car
 jnr181_LVe : 151/161/181 Green Panto Car
 
-jnr80_861 : Shonan Livery (KUHA 86 initial face type)
-jnr80_862 : Shonan Livery (KUHA 86 Shonan face type)
-jnr80_85 : Shonan Livery (KUHA 85 type + KUHA 86 initial type)
-jnr80_ka : Kansai Livery (KUHA 86 Shonan face type)
-jnr80_852 : Shonan Livery (KUHA 85 type + KUHA 86 Shonan face type)
-jnr_80_DIV_shonan:{RED}---- Shonan Livery Options ----
-jnr80_shonan_gr : Shonan Green Car
-jnr80_shonan_pt : Shonan Pantograph Car
-jnr80_shonan_mu : Shonan Standard Car
-jnr_80_DIV_kansai:{RED}---- Kansai Livery Options ----
-jnr80_kansai_pt : Kansai Pantograph Car
-jnr80_kansai_mu : Kansai Standard Car
-
-jnr80_pt : Pantograph
-jnr80_gr : Pantograph
 
 jnr165_SHONAN : Shonan Livery
 jnr165_DIV_shonan:{RED}---- Shonan Livery Options ----
@@ -211,473 +397,558 @@ jreE235_DIV_yokosuka:{RED}---- Yokosuka Livery Options ----
 jreE235_LV_yokosuka_mu: Yokosuka Standard Car
 jreE235_LV_yokosuka_dd: Yokosuka DD Green Car
 
+jreE233_LV_chou: Chou Livery
+jreE233_LV_kt: Keihin-Tohoku Livery
+jreE233_LV_shonan_e: Shonan Livery (Early Production)
+jreE233_LV_shonan_p: Shonan Livery (Mass Production)
+jreE233_LV_keiyo: Keiyo Livery
+jreE233_LV_joban: Joban Livery
+jreE233_LV_yokohama: Yokohama Livery
+jreE233_LV_saikyo: Saikyo Livery
+jreE233_LV_nanbu: Nanbu Livery
+jreE235_DIV_shonan:{RED}---- Shonan Livery Options ---- 
+jreE233_LV_shonan_mu: Shonan Standard Car
+jreE233_LV_shonan_dd: Shonan DD Green Car
 
-OLD_LV                : Original livery
-STANDARD_LV           : Standard livery
-NEW_LV                : New livery
-TOKAIDO_LV            : Tokaido Area
-ORANGE_LV             : Orange Vermillion Livery
+JRE_E231_LV_SOBU_0: -0 Sobu Livery
+JRE_E231_LV_SOBU_500: -500 Sobu Livery
+JRE_E231_LV_YAMANOTE: -500 Yamanote Livery
+JRE_E231_LV_CHSOTO: -800 Chuo-Sobu/Tozai Livery
+JRE_E231_LV_SHONAN: -1000 Shonan Livery
+JRE_E231_DIV_SOBU:{RED}---- Sobu Livery Options ---- 
+JRE_E231_DIV_YAMANOTE:{RED}---- Yamanote Livery Options ---- 
+JRE_E231_DIV_SHONAN:{RED}---- Shonan Livery Options ---- 
+JRE_E231_OPT_SOBU_MU: Sobu Standard Car
+JRE_E231_OPT_SOBU_HD: Sobu HD Car
+JRE_E231_OPT_YAMANOTE_MU: Yamanote Standard Car
+JRE_E231_OPT_YAMANOTE_HD: Yamanote HD Car
+JRE_E231_OPT_SHONAN_MU: Shonan Standard Car
+JRE_E231_OPT_SHONAN_DD: Shonan DD Green Car
 
-CHUKYO_LV             : Chukyo Livery
-NAGANO_LV             : Nagano Livery
-CHIBA_LV              : Chiba Livery
-CHIBA_LV_TWOP         : Chiba Livery (Dual Pantograph)
+JRE_E217_LV_YOKO: Yokosuka Livery
+JRE_E217_LV_SHONAN: Shonan Livery
+JRE_E217_DIV_YOKO:{RED}---- Yokosuka Livery Options ---- 
+JRE_E217_DIV_SHONAN:{RED}---- Shonan Livery Options ---- 
+JRE_E217_OPT_YOKO_MU: Yokosuka Standard Car
+JRE_E217_OPT_YOKO_DD: Yokosuka DD Green Car
+JRE_E217_OPT_SHONAN_MU: Shonan Standard Car
+JRE_E217_OPT_SHONAN_DD: Shonan DD Green Car
 
-SHONAN_LV               : Shonan Livery
-SHONAN_LV_TWOP          : Shonan Livery (Dual Pantograph)
-SHONAN_TK_DDDD_LV       : Shonan Livery (Tokaido DD)
-SHONAN_TK_DDSD_LV       : Shonan Livery (Tokaido DD/SD)
-SHONAN_TY_DDDD_LV       : Shonan Livery (Takasaki/Tohoku DD)
-SHONAN_TY_DDDDold_LV    : Shonan Livery (Takasaki/Tohoku DD New/Old)
-SHONAN_TY_DDoldDD_LV    : Shonan Livery (Takasaki/Tohoku DD Old/New)
-SHONAN_TY_DDSD_LV       : Shonan Livery (Takasaki/Tohoku DD/SD)
+JRE_209_LV_KT_0: -0 Keihin Tohoku Livery
+JRE_209_LV_NANNBU: -0 Nannbu Livery
+JRE_209_LV_BOSO: -0 Boso Livery
+JRE_209_LV_HK_0: -0 Hachiko Livery
+JRE_209_LV_SOBU: -500 Sobu Livery
+JRE_209_LV_KT_500: -500 Keihin Tohoku Livery
+JRE_209_LV_KEIYO: -500 Keiyo Livery
+JRE_209_LV_MUSA: -500 Musashino Livery
+JRE_209_LV_JOBAN: -1000 Joban Livery
+JRE_209_LV_CHUO: -1000 Chuo Livery
+JRE_209_LV_HK_3500: -3500 Hachiko Livery
+
+JNR_415_LV_401421_INIT: 401/421系 Initial Livery
+JNR_415_LV_401_JOBAN: 401系 Joban Livery
+JNR_415_LV_421_KYUSHU: 421系 Kyushu Livery
+
+JNR_415_LV_403423_INIT: 403/423系 Initial Livery
+JNR_415_LV_403_JOBAN: 403系 Joban Livery
+JNR_415_LV_423_KYUSHU: 423系 Kyushu Livery
+JNR_415_LV_415_INIT: 415系 Initial Livery
+JNR_415_LV_415_JOBAN: 415系 Joban Livery
+JNR_415_LV_415_KYUSHU: 415系 Kyushu Livery
+JNR_415_LV_415_KYUSHU_NOVENT: 415系 Kyushu Livery (No Ventilators)
+
+OLD_LV: Original livery
+STANDARD_LV   : Standard livery
+NEW_LV: New livery
+TOKAIDO_LV: Tokaido Area
+ORANGE_LV : Orange Vermillion Livery
+
+CHUKYO_LV : Chukyo Livery
+NAGANO_LV : Nagano Livery
+CHIBA_LV  : Chiba Livery
+CHIBA_LV_TWOP : Chiba Livery (Dual Pantograph)
+
+SHONAN_LV   : Shonan Livery
+SHONAN_LV_TWOP  : Shonan Livery (Dual Pantograph)
+SHONAN_TK_DDDD_LV   : Shonan Livery (Tokaido DD)
+SHONAN_TK_DDSD_LV   : Shonan Livery (Tokaido DD/SD)
+SHONAN_TY_DDDD_LV   : Shonan Livery (Takasaki/Tohoku DD)
+SHONAN_TY_DDDDold_LV: Shonan Livery (Takasaki/Tohoku DD New/Old)
+SHONAN_TY_DDoldDD_LV: Shonan Livery (Takasaki/Tohoku DD Old/New)
+SHONAN_TY_DDSD_LV   : Shonan Livery (Takasaki/Tohoku DD/SD)
 
 
 
-SHONAN_LV_DD          : Shonan Livery (DD Green Car)
-SHONAN_LV_SD          : Shonan Livery (SD Green Car)
-SHONAN_LV_MIX         : Shonan Livery (DD/SD Mixed Green Cars)
+SHONAN_LV_DD  : Shonan Livery (DD Green Car)
+SHONAN_LV_SD  : Shonan Livery (SD Green Car)
+SHONAN_LV_MIX : Shonan Livery (DD/SD Mixed Green Cars)
 
 
-TOKAI_211_LV          : Tokai Spec (-5000/-6000 Type)
-TOKAI_313_PANTO       : Tokai Livery (Single Pantograph)
-TOKAI_313_TWOPANTO    : Tokai Livery (Dual Pantograph)
+TOKAI_211_LV  : Tokai Spec (-5000/-6000 Type)
+TOKAI_313_PANTO   : Tokai Livery (Single Pantograph)
+TOKAI_313_TWOPANTO: Tokai Livery (Dual Pantograph)
 
-OKAYAMA_LV              : Okayama Livery
-TOKAI_LV                : Tokai Livery
-
-
-YOKOSUKA_LV           : Yokosuka Livery
-YOKOSUKA_LV_DD        : Yokosuka Livery (DD Green Car)
-
-YAMANOTE_LV           : Yamanote Livery
-
-SENDAI_LV             : Sendai Livery
-YAMAGATA_LV           : Yamagata Livery (-5000 Type)
-AKITA_LV              : Akita Livery
-BANETSU_LV            : Banetsukoshi Livery
-
-SHONAN_LV_EP          : Shonan Livery (Early Production)
-SHONAN_LV_PR          : Shonan Livery (Mass Production)
-CHOU_LV               : Chou Livery
-KT_LV                 : Keihin-Touhoku Livery
-JOBAN_LV              : Joban Livery
-KEIYO_LV              : Keiyo Livery
-YK_LV                 : Yokohama Livery
-SAIKYO_LV             : Saikyo Livery
-NANNBU_LV             : Nannbu Livery
-NANBU_LV              : Nanbu Livery
-BOUSOU_LV             : Bousou Livery
-SOBU_0_LV             : -0 Sobu Livery
-
-JRE_S_LV              : JE East Suburban
+OKAYAMA_LV  : Okayama Livery
+TOKAI_LV: Tokai Livery
 
 
-KT_500_LV             : -500 Keihin-Touhoku Livery
-SOBU_500_LV           : -500 Sobu Livery
+YOKOSUKA_LV   : Yokosuka Livery
+YOKOSUKA_LV_DD: Yokosuka Livery (DD Green Car)
 
-JRWbluestd_LV         : JR West Blue
-JRWblue_LV            : JR West Blue (Dual Pantograph)
-JRWbluepanto_LV       : JR West Blue (Single Pantograph)
-JRWnew_LV             : JR West New Scheme (Cab Pantograph)
-JRWnewpanto_LV        : JR West New Scheme (Mid Pantograph)
-JRWnewremodel_LV      : JR West Remodel Type New Scheme (Cab Pantograph)
+YAMANOTE_LV   : Yamanote Livery
+
+SENDAI_LV : Sendai Livery
+YAMAGATA_LV   : Yamagata Livery (-5000 Type)
+AKITA_LV  : Akita Livery
+BANETSU_LV: Banetsukoshi Livery
+
+SHONAN_LV_EP  : Shonan Livery (Early Production)
+SHONAN_LV_PR  : Shonan Livery (Mass Production)
+CHOU_LV   : Chou Livery
+KT_LV : Keihin-Touhoku Livery
+JOBAN_LV  : Joban Livery
+KEIYO_LV  : Keiyo Livery
+YK_LV : Yokohama Livery
+SAIKYO_LV : Saikyo Livery
+NANNBU_LV : Nannbu Livery
+NANBU_LV  : Nanbu Livery
+BOUSOU_LV : Bousou Livery
+SOBU_0_LV : -0 Sobu Livery
+
+JRE_S_LV  : JE East Suburban
+
+
+KT_500_LV : -500 Keihin-Touhoku Livery
+SOBU_500_LV   : -500 Sobu Livery
+
+JRWbluestd_LV : JR West Blue
+JRWblue_LV: JR West Blue (Dual Pantograph)
+JRWbluepanto_LV   : JR West Blue (Single Pantograph)
+JRWnew_LV : JR West New Scheme (Cab Pantograph)
+JRWnewpanto_LV: JR West New Scheme (Mid Pantograph)
+JRWnewremodel_LV  : JR West Remodel Type New Scheme (Cab Pantograph)
 JRWnewremodelpanto_LV : JR West Remodel Type New Scheme (Mid Pantograph)
 
-JRWyumeji1_LV         : JR West Super Saloon Yumeji (212-1)
-JRWyumeji2_LV         : JR West Super Saloon Yumeji (212-2)
-JRWyumeji3_LV         : JR West Super Saloon Yumeji (212-3)
-JRWyumeji4_LV         : JR West Super Saloon Yumeji (212-4)
-JRWyumeji5_LV         : JR West Super Saloon Yumeji (212-5)
+JRWyumeji1_LV : JR West Super Saloon Yumeji (212-1)
+JRWyumeji2_LV : JR West Super Saloon Yumeji (212-2)
+JRWyumeji3_LV : JR West Super Saloon Yumeji (212-3)
+JRWyumeji4_LV : JR West Super Saloon Yumeji (212-4)
+JRWyumeji5_LV : JR West Super Saloon Yumeji (212-5)
 
-JRW223_0_LV            : -0 JR West Blue Livery
-JRW223_2500_LV         : -2500 JR West Blue Livery
-JRW223_5500_LV         : -5500 JR West Beige Livery
-JRW223_6000_LV         : -6000 JR West Beige Livery
-JRW223_1000_LV         : -1000 JR West Beige Livery
-JRW223_1000as_LV       : -1000 JR West A-SEAT/Beige Livery
-JRW223_2000_LV         : -2000 JR West Beige Livery
+JRW223_0_LV: -0 JR West Blue Livery
+JRW223_2500_LV : -2500 JR West Blue Livery
+JRW223_5500_LV : -5500 JR West Beige Livery
+JRW223_6000_LV : -6000 JR West Beige Livery
+JRW223_1000_LV : -1000 JR West Beige Livery
+JRW223_1000as_LV   : -1000 JR West A-SEAT/Beige Livery
+JRW223_2000_LV : -2000 JR West Beige Livery
 
-JRW221_SP_LV           : JR West Beige (Single Pantograph)
-JRW221_DP_LV           : JR West Beige (Dual Pantograph)
+JRW221_SP_LV   : JR West Beige (Single Pantograph)
+JRW221_DP_LV   : JR West Beige (Dual Pantograph)
 
-JRK811_INITIAL           : Initial Livery
-JRK811_RENEWAL           : Renewal Livery
-JRK811_GREENLAND         : Greenland Livery
-JRK811_SPACEWORLD        : Spaceworld Initial Livery
-JRK811_SPACEWORLD2       : Spaceworld Renewal Livery    
+JRK811_INITIAL   : Initial Livery
+JRK811_RENEWAL   : Renewal Livery
+JRK811_GREENLAND : Greenland Livery
+JRK811_SPACEWORLD: Spaceworld Initial Livery
+JRK811_SPACEWORLD2   : Spaceworld Renewal Livery
 
-JRK813_STD           : Standard Livery (End Pantograph)
-JRK813_STD2          : Standard Livery (Middle Pantograph)
-JRK813_FUKU          : Fukuhoku Yutaka Livery (End Pantograph)
-JRK813_FUKU2         : Fukuhoku Yutaka Livery (Middle Pantograph)
+JRK813_STD   : Standard Livery (End Pantograph)
+JRK813_STD2  : Standard Livery (Middle Pantograph)
+JRK813_FUKU  : Fukuhoku Yutaka Livery (End Pantograph)
+JRK813_FUKU2 : Fukuhoku Yutaka Livery (Middle Pantograph)
 
-JNR711_OLD           : Original Livery
-JNR711_NEW2D         : New Livery (2 Doors)
-JNR711_NEW3D         : New Livery (3 Doors) 
-JNR711_NEWAC         : New Livery (AirCon) 
+JNR711_OLD   : Original Livery
+JNR711_NEW2D : New Livery (2 Doors)
+JNR711_NEW3D : New Livery (3 Doors) 
+JNR711_NEWAC : New Livery (AirCon) 
 
-SANDWICH_LV           : Standard "Sandwich" Livery
-NIKKO_LV              : Nikko "N" Livery
-NIKKORED_LV           : Nikko "Red" Livery
-JOSHIN_LV             : Joshin Electric Livery
+SANDWICH_LV   : Standard "Sandwich" Livery
+NIKKO_LV  : Nikko "N" Livery
+NIKKORED_LV   : Nikko "Red" Livery
+JOSHIN_LV : Joshin Electric Livery
 
-CHOU_LV_DD            : Chou Livery (DD Green Cars)
+CHOU_LV_DD: Chou Livery (DD Green Cars)
 
-GRSD             : Singledecker Greencar
-GRDD             : Doubledecker Greencar
+GRSD : Singledecker Greencar
+GRDD : Doubledecker Greencar
 
-KIHA40liv_RED         : JNR Red (Cold Area Type)
-KIHA40liv_REDW        : JNR Red
-KIHA40liv_HOKKAIDO    : Hokkaido (Cold Area Type)
-KIHA40liv_HIDAKA      : Hidaka Line (Cold Area Type)
+KIHA40liv_RED : JNR Red (Cold Area Type)
+KIHA40liv_REDW: JNR Red
+KIHA40liv_HOKKAIDO: Hokkaido (Cold Area Type)
+KIHA40liv_HIDAKA  : Hidaka Line (Cold Area Type)
 
-KIHA54liv_500red      : -500 Red Stripe
-KIHA54liv_500rebun    : -500 Rebun (Double Red Stripe)
-KIHA54liv_500snowA    : -500 Ryuhyo Monogatari Blue
-KIHA54liv_500snowB    : -500 Ryuhyo Monogatari White
+KIHA54liv_500red  : -500 Red Stripe
+KIHA54liv_500rebun: -500 Rebun (Double Red Stripe)
+KIHA54liv_500snowA: -500 Ryuhyo Monogatari Blue
+KIHA54liv_500snowB: -500 Ryuhyo Monogatari White
 
 KIHA150liv_hokkaido   : -0 Hokkaido
-KIHA150liv_asahi      : -0 Hokkaido Asahikawa
-KIHA150liv_100        : -100 Hokkaido (no AC)
+KIHA150liv_asahi  : -0 Hokkaido Asahikawa
+KIHA150liv_100: -100 Hokkaido (no AC)
 
-HKDLINER_LV           : Hakodate Liner
+HKDLINER_LV   : Hakodate Liner
 
 
-SHONAN_113_LV_0       : Shonan Livery (NO Green Car or SD Green Car Variations)
-SHONAN_113_LV_1       : Shonan Livery (1 SD Green Car w/belt Variations)
-SHONAN_113_LV_2       : Shonan Livery (1 SD Green Car Variations)
-SHONAN_113_LV_3       : Shonan Livery (1 or 2 SD Green Car w/belt Variations)
-SHONAN_113_LV_4       : Shonan Livery (2 SD Green Car w/belt Variations)
-SHONAN_113_LV_5       : Shonan Livery (2 SD Green Car Variations)
-SHONAN_113_LV_6       : Shonan Livery (DD Old/SD Green Car Variations)
-SHONAN_113_LV_7       : Shonan Livery (DD New/SD Green Car Variations)
+SHONAN_113_LV_0   : Shonan Livery (NO Green Car or SD Green Car Variations)
+SHONAN_113_LV_1   : Shonan Livery (1 SD Green Car w/belt Variations)
+SHONAN_113_LV_2   : Shonan Livery (1 SD Green Car Variations)
+SHONAN_113_LV_3   : Shonan Livery (1 or 2 SD Green Car w/belt Variations)
+SHONAN_113_LV_4   : Shonan Livery (2 SD Green Car w/belt Variations)
+SHONAN_113_LV_5   : Shonan Livery (2 SD Green Car Variations)
+SHONAN_113_LV_6   : Shonan Livery (DD Old/SD Green Car Variations)
+SHONAN_113_LV_7   : Shonan Livery (DD New/SD Green Car Variations)
 
-JREKHE120_OR    : Beech Forest Orange Livery
-JREKHE120_GR    : Tohoku Green Livery
+JREKHE120_OR: Beech Forest Orange Livery
+JREKHE120_GR: Tohoku Green Livery
 
-JREKHE130_SU    : -0 Suigun Line
-JREKHE130_KU    : -100 Kurui Line
-JREKHE130_HA    : -500 Hachinohe Line
+JREKHE130_SU: -0 Suigun Line
+JREKHE130_KU: -100 Kurui Line
+JREKHE130_HA: -500 Hachinohe Line
 
-JREKH100_ATZWA      : Aterazawa Line
-JREKH110_GREEN      : Corporate Green
-JREKH110_GREENBL    : Corporate Green (Black Ends)
-JREKH110_RIKKU      : Rikuu Line
-JREKH110_AKITA      : Akita Relay
-JREKH110_VOITAMI    : Iiyama "Voiture Amitié"
+JREKH100_ATZWA  : Aterazawa Line
+JREKH110_GREEN  : Corporate Green
+JREKH110_GREENBL: Corporate Green (Black Ends)
+JREKH110_RIKKU  : Rikuu Line
+JREKH110_AKITA  : Akita Relay
+JREKH110_VOITAMI: Iiyama "Voiture Amitié"
 JREKH110_METRORED   : Koumi "Metropolitan" Red
-JREKH111_HACHIKO    : Hachiko Line
-JREKH111_EXPRED     : Koumi "Express" Vermillion/Cream
+JREKH111_HACHIKO: Hachiko Line
+JREKH111_EXPRED : Koumi "Express" Vermillion/Cream
 
-E127_NIIG    : -0 Niigata Livery
+E127_NIIG: -0 Niigata Livery
 E127_NIIG2   : -0 Niigata Livery (Extra Pantograph)
-E127_MSMT    : -100 Matsumoto Livery (Extra Pantograph)
+E127_MSMT: -100 Matsumoto Livery (Extra Pantograph)
 E127_MSMT2   : -100 Matsumoto Livery (Extra Pantograph)
 
 
 
 # Coupling Rejection
-JNR211_UNIQUE  :You can only attach MU cars, DD-MU cars or the 211 Series EMU to this consist!
-JRH735_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs to this consist!
-JRH731_UNIQUE  :You can only attach MU cars or 721, 731, 733 and 735 Series EMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with only the 731 Series EMU.
-JRH201_UNIQUE  :You can only attach MU cars or KiHa 201 Series DMUs to this consist! The KiHa 201 DMU can also be attached exclusively to consists with the 731 Series EMU.
-JRH711_UNIQUE  :You can only attach MU cars or the 711 Series EMU to this consist!
-MU_UNIQUE: You can only attach MU cars or other EMUs of the same design.
-SAME_UNIQUE: Yor can only attach other EMUs of the same design.
+JNR211_UNIQUE  :この編成に連結できるのはMU車またはMU特別車、211系のみです！
+JRH735_UNIQUE  :この編成に連結できるのはMU車または721系、731系、733系、735系のみです！
+JRH731_UNIQUE  :この編成に連結できるのはMU車または721系、731系、733系、735系のみです！ キハ201系は731系電車のみと専用に連結することも可能です。
+JRH201_UNIQUE  :この編成に連結できるのはMU車かキハ201系のみです！ キハ201系は731系と専用に連結することも可能ですす。
+JRH711_UNIQUE  :この編成に連結できるのはMU車か711系のみです！
+MU_UNIQUE: MU車または同じ設計の他の気動車/電車のみを連結できます。
+SAME_UNIQUE: 同じ設計の他の DMU/EMU のみを連結できます。 MU車は許可されていません。
+
 
 # Consist Errors
-MU_NEEDMID        :You require more {GREEN}JP+ MU Cars{WHITE} before you can attach this.
-JNR211_DDATT      :Bilevel cars can only be attached after a {GREEN}MU Cab/Control Car{WHITE} on the JNR 211 Series EMU. {TINYFONT}{}You will need to attach a {GREEN}JNR 211 Series EMU {WHITE} after.
-MU_FRONTBACK      :You can only attach this behind {GREEN}JP+ MU Cab/Control Cars.
-MU_ONEBACKCAB     :You can only attach one {GREEN}JP+ MU Cab/Control Car {WHITE} to the rear of a consist.
-JNR211_CABTODDATT :You must attach the {GREEN}JNR 211 Series EMU{WHITE} behind bilevel cars on the JNR 211 Series EMU.
-MU_CARATT         :You can only attach this behind an EMU lead car.
-MU_MAXMULENGTH    :Maximum allowed number of {GREEN}JP+ MU Motor/Trailer Car{WHITE} in this unit has been reached.{}{} Attach a {GREEN}JP+ MU Cab/Control Car{WHITE} to complete the unit.
-MU_MAXDD          :Maximum number of {GREEN}JP+ MU Special Cars{WHITE} is reached.
-MU_MAX            :Maximum number of units has been reached. You cannot make this consist any longer!{}{}{TINYFONT}Perhaps try adding more {GREEN}JP+ MU Motor/Trailer Car{WHITE} in the consist?
-MU_REARCABERROR   :You need to add a {GREEN}MU Cab/Control Car{WHITE} to the rear of this consist. {TINYFONT}{}{}A multiple unit requires a cab car at the rear.
-MU_CONSISTERROR   :There are not enough cars in this consist. You need to add {GREEN}JP+ MU Cars{WHITE} to the rear of this consist. {}{}{TINYFONT}{GREEN}JP+ MU Motor/Trailer Car:{LTBLUE} Adds middle cars to the MU. {}{TINYFONT}{GREEN}JP+ MU Cab/Control Car:{LTBLUE} Adds cabs to the MU. Always required at rear. {}{TINYFONT}{GREEN}JP+ MU Special Cars:{LTBLUE} Adds special cars to the MU. See individual MU for details.
-JNR211_MIDATTACH  :You need to attach one more JNR 211 Series EMU at the rear of the consist before you can attach more MU cars. {}{TINYFONT}Max 5 cars per unit.{}If detaching, remove all MU cars behind the driving car first.
+MU_NEEDMID:これを連結するには、さらに {GREEN}JP+ MU 中間車・付属車{WHITE} が必要です。
+JNR211_DDATT  :2階建て車両は、211系の {GREEN}JP+ MU 先頭車・制御車{WHITE} の後にのみ連結可能です。{TINYFONT}{}後は{GREEN}211系{WHITE}を連結する必要があります。
+MU_FRONTBACK  :{GREEN}JP+ MU 先頭車・制御車{WHITE} の後ろにのみ連結可能です。
+MU_ONEBACKCAB :{GREEN}JP+ MU 先頭車・制御車{WHITE} は編成の後部に 1 台のみ連結することができます。
+JNR211_CABTODDATT :211系の2階建て車両の後ろには、{GREEN}211系{WHITE}を連結する必要があります。
+MU_CARATT :電車の先頭車の後ろにのみ連結可能です。
+MU_MAXMULENGTH:このユニットの {GREEN}JP+ MU 中間車・付属車{WHITE} の最大許容数に達しました。{}{} {GREEN}JP+ MU 先頭車・制御車{WHITE}を連結してユニットを完成させます。
+MU_MAXDD  :{GREEN}JP+ MU 特別車{WHITE}の最大数に達しました。
+MU_MAX:ユニット数が最大数に達しました。 これ以上この編成を作成することはできません。{}{}{TINYFONT}編成にさらに {GREEN}JP+ MU 中間車・付属車{WHITE}を追加してみてはいかがでしょうか?
+MU_REARCABERROR   :この構成の後部に {GREEN}JP+ MU 先頭車・制御車{WHITE} を追加する必要があります。 {TINYFONT}{}{}マルチユニットの場合、後部に先頭車が必要です。
+MU_CONSISTERROR   :この編成には十分な車両がありません。 この編成の後部に {GREEN}JP+ MU Cars{WHITE} を追加する必要があります。 {}{}{TINYFONT}{GREEN}JP+ MU 中間車・付属車:{LTBLUE} MU に中間車を追加します。 {}{TINYFONT}{GREEN}JP+ MU 先頭車・制御車:{LTBLUE} MU に先頭車を追加します。 必ず後部に必要です。 {}{TINYFONT}{GREEN}JP+ MU 特別車:{LTBLUE} MUに特別車を追加します。 詳細については、個別のMUを参照してください。
+JNR211_MIDATTACH  : MU 車両をさらに連結する前に、編成の後部にもう1台の211系を連結する必要があります。 {}{TINYFONT}1 ユニットあたり最大 5 台の車両。{}取り外す場合は、最初に走行車両の後ろにあるすべての MU 車両を取り外します。
 
-MU_NODD          :You cannot attach {GREEN}JP+ MU Special Cars{WHITE} to this unit.
-MU_ADDMOREMU     :You need to attach more {GREEN}JP+ MU Cars{WHITE} to this unit, before attaching anything else.
-MU_CABTOEND      :You need to attach a {GREEN}JP+ MU Cab/Control Car{WHITE} to the end of this unit, before attaching anything else.
-MU_ATTONMU       :You can only attach this behind {GREEN}JP+ MU Cars{WHITE}.
-MU_CHECKCONSIS   :You cannot attach {GREEN}JP+ MU Special Cars{WHITE} here, check the train info for details on where to attach this.
+MU_NODD  :このユニットに{GREEN}JP+ MU 特別車{WHITE}を連結することはできません。
+MU_ADDMOREMU :他のものを取り付ける前に、このユニットにさらに {GREEN}JP+ MU Cars{WHITE} を連結する必要があります。
+MU_CABTOEND  :本機の末端に{GREEN}JP+ MU 先頭車・制御車{WHITE}を連結してから、他のものを連結する必要があります。
+MU_ATTONMU   :{GREEN}JP+ MU Cars{WHITE}の後ろにのみ連結可能です。
+MU_CHECKCONSIS   :{GREEN}JP+ MU 特別車{WHITE}は連結できません。連結場所は列車情報をご確認ください。
 
-MU_ATTEMU209     :You can only attach other {GREEN}209 Series{WHITE} EMUs to this unit.
-MU_ATTEMUE217    :You can only attach other {GREEN}E217 Series{WHITE} EMUs to this unit.
-MU_ATTEMUE231    :You can only attach other {GREEN}E231 Series{WHITE} EMUs to this unit.
+MU_ATTEMU209 :このユニットには他の {GREEN}209系{WHITE} のみを連結できます。
+MU_ATTEMUE217:このユニットには他の {GREEN}E217系{WHITE} のみを連結できます。
+MU_ATTEMUE231:このユニットには他の {GREEN}E231系{WHITE} のみを連結できます。
 
-MU_MORECARS      :A unit in the consist has an invalid length. You might need to add or take away some MU cars.
+MU_MORECARS  :構成内のユニットの長さが無効です。 いくつかの MU 車両を追加または削除する必要がある場合があります。
 
-MU_MORESP        :You need to attach more {GREEN}JP+ MU Special Cars{WHITE} to the rear of the consist.
-MU_CABb4SP       :You can only attach {GREEN}JP+ MU Special Cars{WHITE} after a {GREEN}JP+ MU Cab/Control Car{WHITE}.
+MU_MORESP:編成の後部にさらに{GREEN}JP+ MU 特別車{WHITE}を連結する必要があります。
+MU_CABb4SP   :{GREEN}JP+ MU 特別車{WHITE}は、{GREEN}JP+ MU 先頭車・制御車{WHITE}の後にのみ連結することができます。
 
 
 # Description
 
-MUCAR_DESC  :{BLUE}Used to represent  {GREEN}motor and trailer cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
-MUCAB_DESC  :{BLUE}Used to represent {GREEN}cab/control cars{BLUE} within an EMU formation. {}{RED}Must be the rear of an EMU consist, but can be placed within.
-MUCARDD_DESC  :{BLUE}Used to represent special cars, such as {GREEN}bilevel cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
+MUCAR_DESC  :{BLUE}編成内の {GREEN}動力車と付随車{BLUE}を表すために使用されます。 {}{RED}編成の後部になることはできません。
+MUCAB_DESC  :{BLUE}編成内の {GREEN}制御車{BLUE} を表すために使用されます。 {}{RED}編成の後部である必要がありますが、中に配置することもできます。
+MUCARDD_DESC  :{BLUE}編成内の {GREEN}2階建て車両{BLUE} などの特殊車両を表すために使用されます。 {}{RED}編成の後部になることはできません。
 
 DH_EF210_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Freight helper/banker{}{BLACK}Operators: {GOLD}JR {GRAY}Freight{}
 DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Heavy freight{}{BLACK}Operators: {YELLOW}Seibu{}
 
 
 
+
+
+# 40 Series 
+JGR_40_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}
+
+# 52 Series 
+JGR_52_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}特急/ 直流{}{}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}{BLACK}Liveries: {GOLD}各種 {GREEN}(換装可能){}
+
+
 # Nade 6100 Series
-    JGR_6340_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JGR_6340_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}鉄道省 / 国鉄{}
 
 
 # 101 Series
-    JNR_101_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_101_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 103 Series
-    JNR_103_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_103_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 201 Series
-    JNR_201_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_201_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 205 Series
-    JNR_205_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_205_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 207-900 Series
-    JNR_207900_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_207900_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本{}
 
 
 # 70 Series
-    JNR_70_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}スカ色 / 新潟色 / 阪和色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_70_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 113 Series
-    JNR_113_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_113_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 115 Series
-    JNR_115_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_115_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 1153000 Series
-    JNR_1153000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}瀬戸内色 / 広島快速色 / 広島更新色 / 中国地域色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_1153000_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 211 Series
-    JNR_211_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄　/ JR {GREEN}東日本 {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}湘南色 / 中京色 / 房総色 / 長野色 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_211_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海{}{BLACK}塗装: {WHITE}湘南、中京 (1986年以降)、{GREEN}千葉 (2006年以降)、長野 (2013年以降)
 
 # 213 Series
-    JNR_213_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}JR西日本仕様 / JR東海仕様 (1989+) {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_213_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {ORANGE}東海 {BLUE}西日本{}{BLACK}塗装: {BLUE}岡山、{ORANGE}東海 (1989年以降){}
 
 # 121 Series
-    JNR_121_DESC  :{BLACK}Gauge:{GOLD} Narrow/狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}初期塗装 / JR四国色{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JNR_121_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}国鉄 / {WHITE}JR {LTBLUE}四国{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
+# 413 Series
+JNR_413_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 415 Series
-    JNR_415_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本 {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_415_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本 {RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 
 # 711 Series
-    JNR_711_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}旧塗色, 新塗色 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_711_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}旧塗色, 新塗色 {GREEN}{}
 
 
 # 80 Series
-    JNR_80_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形直流電車 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_80_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行/直流{}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 165 Series
-    JNR_165_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形直流電車 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_165_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行/直流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 
 # 181 Series
-    JNR_181_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形直流電車 (特急){}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}仕様変更(改造): {GOLD}151系 / 161系 / 181系{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+JNR_181_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/直流{}{}{BLACK}所属会社: {WHITE}国鉄{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 
 # 485 Series
-    JNR_485_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交直流電車 (特急){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {BLUE}西日本　{RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+JNR_485_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本　{RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 
 # 781 Series
-  JRH_781emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交流電車 (特急){}{BLACK}所属会社: {WHITE}国鉄 /　JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}国鉄色 / 新塗装色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+JRH_781emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}国鉄色 / 新塗装色 {GREEN}(換装可能){}
 
 
 # KiHa 30
-    JNR_kiha30_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JNR_kiha30_DESC:{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
+
+# KiHa 35
+JNR_kiha35_DESC:{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {RED}九州 {LTBLUE}四国{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 
 # KiHa 40
-    JNR_kiha40_DESC:{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速/急行){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {LTBLUE}四国 {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JNR_kiha40_DESC:{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {LTBLUE}四国 {RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}{}{TINYFONT}{GOLD}寒冷地型は、小さな二重窓があります。{}
 
 # KiHa 48
-    JNR_kiha48_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JNR_kiha48_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {ORANGE}東海 {BLUE}西日本 {LTBLUE}四国 {RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}{}{TINYFONT}{GOLD}寒冷地タイプは二重窓が小さめです。{}
 
 # KiHa 54
-    JNR_kiha54_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {WHITE}(-500) {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JNR_kiha54_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道 {WHITE}(-500) {LTBLUE}四国{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 
 # KiHa 56/57/58
-    JNR_kiha58_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行形気動車 {SILVER}(普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道{WHITE} (56) {GREEN}東日本{WHITE} (58) {ORANGE}東海{WHITE} (58) {BLUE}西日本{WHITE} (58) {LTBLUE}四国{WHITE} (57/58) {RED}九州{WHITE} (58){}{BLACK}仕様変更(改造): {GOLD}多数あり {GREEN}(改造可能){}{}{TINYFONT}{GOLD}KiHa 56 types for cold areas have smaller double-glazed windows and no air-con units.{}KiHa 57 types are high-preformace variants fitted with air suspension and disc brakes.{}
+JNR_kiha58_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {BLUE}急行/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{WHITE} (56) {GREEN}東日本{WHITE} (58) {ORANGE}東海{WHITE} (58) {BLUE}西日本{WHITE} (58) {LTBLUE}四国{WHITE} (57/58) {RED}九州{WHITE} (58){}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}{}{TINYFONT}{GOLD}寒冷地向けのキハ56系は、小さな二重窓があり、エアコンはありません。{}キハ57系は、エアサスペンションとディスクブレーキを備えた高性能型です。{}
 
 
 # KiHa 80 Series
-    JNR_kiha80_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形気動車 (特急){}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}キハ81形仕様(ボンネット型)　/ キハ82形仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+JNR_kiha80_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道 {ORANGE}東海{}{BLACK}塗装: {GOLD}キハ81/キハ82 {GREEN}(換装可能)
 
 
 # 721 Series
-  JRH_721emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Blue U-Seat car appears in 6-car formations. Compatible with 721-735 series EMUs.{}
+JRH_721emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}ブルーのUシート車が6両編成で登場。 721～735系と互換性があります。{}
 
 # 731 Series
-  JRH_731emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with KiHa 201 DMU OR 721-735 series EMUs.{}
+JRH_731emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}キハ201系または721～735系と互換性があります。{}
 
 # 733 Series
-  JRH_733emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Original, Hakodate Liner {GREEN}(refittable){}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+JRH_733emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}721～735系と互換性があります。{}{BLACK}塗装: {GOLD}オリジナル、はこだてライナー {GREEN}(換装可能){}
 
 # 735 Series
-  JRH_735emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
+JRH_735emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}721～735系と互換性があります。{}
 
 
 # 785 Series
-  JRH_785emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交流電車 (特急){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
+JRH_785emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}
 
 # 789 Series
-  JRH_789emu_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交流電車 (特急){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Hakucho, Sapporo{GREEN} (refittable){}{}{TINYFONT}{GREEN}JP+ MU Special Cars{WHITE} can be attached at the rear as converted 785 Series extra cars.{}{}
+JRH_789emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}スーパー白鳥、カムイ{GREEN} (換装可能){}{}{TINYFONT}{GREEN}JP+ MU 特別車{WHITE}は、785系300番台として後部に連結可能です。{}
 
+# KiHa 130
+JRH_kiha130_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}北海道{}
 
 # KiHa 141
-  JRH_kiha141_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}
+JRH_kiha141_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}
 
 # KiHa 150
-  JRH_kiha150_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}Hokkaido, Asahikawa {GREEN}(refittable){}{}{TINYFONT}{GOLD}KiHa 150-100 types have no air-con units.
+JRH_kiha150_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{BLACK}仕様変更(改造): {GOLD}北海道, 旭川 {GREEN}(換装可能){}{}{TINYFONT}{GOLD}キハ150系100番台には冷房装置がありません。{}
 
 # KiHa 201
-  JRH_kiha201_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
+JRH_kiha201_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/気動車{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}731系と互換性があります。{}
 
 
 # 107 Series
-    JRE_107_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}通常色 / 日光線 (新旧塗装) / 上信電鉄{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_107_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # E127 Series
-    JRE_E127_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}新潟支社仕様 / 長野支社仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_E127_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}新潟支社仕様 / 長野支社仕様 {GREEN}{}
 
 # 209 Series
-    JRE_209_DESC :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+JRE_209_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # E331 Series
-    JRE_E331_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}
+JRE_E331_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
+# 215 Series
+JRE_215_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 # E217 Series
-    JRE_E217_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}スカ色 / 湘南色{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRE_E217_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GREEN}スカ色 / 湘南色 (2006年以降){}
 
 
 # E231 Series
-    JRE_E231_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRE_E231_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){GREEN}{}
 
 # E233 Series
-    JRE_E233_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRE_E233_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GREEN}中央線、京浜東北線 (2007年以降)、湘南色 (2007年以降)、常磐緩行線 (2009年以降)、 京葉線 (2010年以降)、 埼京線 (2013年以降)、横浜線 (2014年以降)、南武線 (2014年以降){GREEN}{}
 
 # E235 Series
-    JRE_E235_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}山手線仕様 / 横須賀線仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRE_E235_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GREEN}山手線、横須賀線(2020年以降){GREEN}{}
 
 
 # E531 Series
-    JRE_E531_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形交直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRE_E531_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/交直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 
 # 719 Series
-    JRE_719_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}通常色 / 磐越西線仕様 / 秋田仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_719_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GREEN}仙台, 磐越西線 (2007年以降), 秋田色 (2017年以降){}
 
 # 719-5000 Series
-    JRE_7195000_DESC  :{BLACK}使用線路:{GOLD} Standard / 標準軌 (4ft8.5in/​1,435mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_7195000_DESC  :{BLACK}軌間:{GOLD}標準軌 (4ft8.5in/​1,435mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}山形{}
 
+
+# E257 Series
+JRE_E257_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){GREEN}{}
 
 # E353 Series
-    JRE_E353_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形直流電車 (特急){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRE_E353_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
 
 # 651 Series
-    JRE_651_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形交直流電車 (特急){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}{BLACK}仕様変更(改造): {GOLD}スーパーひたち号仕様 / 草津･スワローあかぎ号仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRE_651_DESC  :軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交直流{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本{}
 
-
-# KiHa 100
-  JRE_KH100_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速/{BLUE}急行{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
 
 # KiHa 110
-  JRE_KH110_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速/{BLUE}急行{SILVER}/{RED}特急{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_KH110_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){GREEN}{}
 
 # KiHa 111/112
-  JRE_KH111_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速/{BLUE}急行{SILVER}/{RED}特急{SILVER}){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_KH111_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){GREEN}{}
 
 # KiHa E120
-    JRE_KHE120_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}新潟支社仕様 / 仙台支社仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_KHE120_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}新潟/仙台{}
 
 # KiHa E130
-    JRE_KHE130_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}水郡線仕様 / 久留里線仕様 / 八戸線仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_KHE130_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}水郡線/久留里線/八戸線{}
 
 # KiHa E130
-    JRE_KHE131_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}仕様変更(改造): {GOLD}水郡線仕様 / 八戸線仕様{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRE_KHE131_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {WHITE}JR {GREEN}東日本 {}{BLACK}塗装: {GOLD}水郡線/八戸線{}
 
 
 # 211-5000/6000 Series
-    JNR_21156_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JNR_21156_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
 # 311 Series
-    JRC_311_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRC_311_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
 # 313 Series
-    JRC_313_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRC_313_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
+
 
 # 373 Series
-    JRC_373_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形直流電車 (特急){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRC_373_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/直流{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
 # 383 Series
-    JRC_383_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急形直流電車 (特急){}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}仕様変更(改造): {GOLD}貫通型仕様 / パノラマ仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRC_383_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/直流{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){GREEN}{}
+
+# KiHa 85 Series
+JRC_KH85_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/気動車{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
 
 # 207 Series
-    JRW_207_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}旧塗装 / 新塗装 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRW_207_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}塗装: {BLUE}コーポレートブルー、コーポレートオレンジ、体質改善オレンジ{}
 
 # 321 Series
-    JRW_321_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRW_321_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}
 
 # 323 Series
-    JRW_323_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRW_323_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}
 
 
 # 221 Series
-    JRW_221_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRW_221_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}
 
 # 223_0 Series
-    JRW_223_0_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}関空・紀州路快速仕様 / 新快速仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRW_223_0_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 223_1000 Series
-    JRW_223_1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRW_223_1000_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
-# 225_0 Series
-    JRW_225_0_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}なし {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
-
-# 225_5000 Series
-    JRW_225_5000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}関空・紀州路快速仕様 / 新快速仕様 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+# 225_0 and 225_5000 Series
+JRW_225_0_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 227 Series
-    JRW_227_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}仕様変更(改造): {GOLD}広島エリア仕様 / 奈良･和歌山エリア仕様{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRW_227_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
+# 271 Series
+JRW_271_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}特急/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}
+
+# 281 Series
+JRW_281_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}特急/直流{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本{}
 
 # KiHa 33 Series
-    JRW_KH33_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {BLUE}西日本 {}{BLACK}仕様変更(改造): {GOLD}初期色 / 首都圏色{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRW_KH33_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {WHITE}JR {BLUE}西日本 {}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 
 # 6000 Series
-    JRS_6000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRS_6000_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}
 
-# 7200 Series
-    JRS_7200_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+# 9000 Series
+JRS_8000_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}特急/直流{}{}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}
 
 # KiHa 1000 Series
-    JRS_KH1000_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般形気動車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、新たな先頭車を購入し、連結。{}
+JRS_KH1000_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車 {}{BLACK}所属会社: {WHITE}JR {LTBLUE}四国{}
+
 
 
 # 303 Series
-    JRK_303_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤形直流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}なし{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
-
+JRK_303_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/直流{}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}
 
 # 811 Series
-    JRK_811_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}多数あり{}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRK_811_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 813 Series
-    JRK_813_DESC  :{BLACK}使用線路:{GOLD} Narrow / 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊形交流電車 (普通/快速){}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}仕様変更(改造): {GOLD}通常塗装 / 福北ゆたか線塗装 {GREEN}(細かい選択可能){}{TINYFONT}{GOLD}増車/連結は、[JP+MU 中間車･付随車]で追加。{}{TINYFONT}{GOLD}中間運転台追加は、新たな先頭車を購入し、連結。
+JRK_813_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {WHITE}JR {RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
