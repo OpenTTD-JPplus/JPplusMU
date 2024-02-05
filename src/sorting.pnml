@@ -34,6 +34,7 @@ emu_415,
 emu_4151500,
 /*JNR Regional AC EMU*/
 emu_711,
+emu_713,
 /*JNR Express DC EMU*/
 emu_80,
 emu_165,

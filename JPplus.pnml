@@ -78,7 +78,7 @@
 
 
 #include "src/JNR/EMU/711_series.pnml"
-
+#include "src/JNR/EMU/713_series.pnml"
 
 //JR-Hokkaido
 #include "src/JRH/DMU/KH130_series.pnml"
