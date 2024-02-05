@@ -160,6 +160,8 @@ JRC_KH85: KiHa 85 Series {WHITE}(DMU){BLACK}
 JNR_21156:211-5000/6000 Series {WHITE}(EMU){BLACK}
 JRC_311:311 Series {WHITE}(EMU){BLACK}
 JRC_313:313 Series {WHITE}(EMU){BLACK}
+JRC_315:315 Series {WHITE}(EMU){BLACK}
+
 JRC_373:373 Series {WHITE}(EMU){BLACK}
 JRC_383:383 Series {WHITE}(EMU){BLACK}
 
@@ -887,6 +889,8 @@ JRC_311_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 # 313 Series
 JRC_313_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
 
+# 315 Series
+JRC_315_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}
 
 # 373 Series
 JRC_373_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JR {ORANGE}Central{}

@@ -5,6 +5,7 @@ alternative_sprites(spriteset_EMU119_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BP
 spriteset (spriteset_EMU119sinlge_purchase,	                                                      "gfx/JNR/emu119/purchase_s.png")               {tmpl_purchase(0, 0)}
 alternative_sprites(spriteset_EMU119sinlge_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,           "gfx/JNR/emu119/purchase_s_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
 
+//single car -100 and -5100
 //119-100 Single Initial noac
 spriteset (spriteset_EMU119_100_single,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_EMU119_rev_100_single,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
@@ -21,6 +22,7 @@ alternative_sprites(spriteset_EMU119_5100_single,           ZOOM_LEVEL_NORMAL, B
 alternative_sprites(spriteset_EMU119_rev_5100_single,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/emu119/standard/gable_single.png")           {tmpl_std(0, 25)}
 alternative_sprites(spriteset_EMU119_revflip_5100_single,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/emu119/standard/gable_single.png")           {tmpl_std_rev(0, 25)}
 
+//2cars
 //119-0 Initial noac
 spriteset (spriteset_EMU119_0initial_mufront,    	      	    "gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_EMU119_rev_0initial_mufront,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
