@@ -670,7 +670,7 @@ switch(FEAT_TRAINS, SELF, sw_52_gfx_pantograph_pos_shizutetsu_sw0, position_in_v
   default: spriteset_52_mid_shizutetsu;
 }
 switch(FEAT_TRAINS, SELF, sw_52_gfx_pantograph_pos_shonan_sw0, position_in_vehid_chain){
-  0: spriteset_52_mid_other_shonan;
+  0: spriteset_52_mid_other_shonan; 
   default: spriteset_52_mid_shonan;
 }
 switch(FEAT_TRAINS, SELF, sw_52_gfx_pantograph_pos_yokosuka1_sw0, position_in_vehid_chain){
