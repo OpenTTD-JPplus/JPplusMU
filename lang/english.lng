@@ -97,6 +97,8 @@ JNR_181 :151/161/181 Series {WHITE}(EMU){BLACK}
 
 JNR_485:481/483/485/489 Series {WHITE}(EMU){BLACK}
 
+JNR_583 :581/583 Series {WHITE}(EMU){BLACK}
+
 JNR_781 :781 Series {WHITE}(EMU){BLACK}
 
 JNR_kiha30 :KiHa 30 Series {WHITE}(DMU){BLACK}
@@ -756,6 +758,9 @@ JNR_181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 
 # 485 Series
 JNR_485_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {DKGREEN}Hokkaido {GREEN}East {BLUE}West　{RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
+# 581/583 Series
+JNR_583_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 781 Series
 JRH_781emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Liveries: {GOLD}JNR & JR Hokkaido {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}
