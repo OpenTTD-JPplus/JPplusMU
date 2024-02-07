@@ -86,6 +86,7 @@ JNR_403423 :403/423 Series {WHITE}(EMU){BLACK}
 JNR_413 :413 Series {WHITE}(EMU){BLACK}
 JNR_415 :415 Series {WHITE}(EMU){BLACK}
 JNR_4151500:415-1500 Series {WHITE}(EMU){BLACK}
+JNR_417 :417 Series {WHITE}(EMU){BLACK}
 
 JNR_711 :711 Series {WHITE}(EMU){BLACK}
 JNR_713 :713 Series {WHITE}(EMU){BLACK}
@@ -159,7 +160,7 @@ JRE_KHE120:KiHa E120 Series {WHITE}(DMU){BLACK}
 JRE_KHE130:KiHa E130 Series {WHITE}(DMU){BLACK}
 JRE_KHE131:KiHa E131/E132 Series {WHITE}(DMU){BLACK}
 
-JRC_KH85: KiHa 85 Series {WHITE}(DMU){BLACK}
+JRC_KH85:KiHa 85 Series {WHITE}(DMU){BLACK}
 JNR_21156:211-5000/6000 Series {WHITE}(EMU){BLACK}
 JRC_311:311 Series {WHITE}(EMU){BLACK}
 JRC_313:313 Series {WHITE}(EMU){BLACK}
@@ -367,6 +368,7 @@ LV_SHIZUTETSU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Shizutetsu Livery
 
 LV_KANSAIHANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Kansai/Hanwa Livery 
 
+LV_TOHOKU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Tohoku Livery 
 
 # New New Method Test
 E257_LV_E257_0_azusa: {PUSH_COLOUR}{WHITE}-0{POP_COLOUR} Four Seasons
@@ -737,6 +739,10 @@ JNR_413_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 # 415 Series
 JNR_415_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West {RED}Kyushu{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
 
+# 417 Series
+JNR_417_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+
+
 
 # 711 Series
 JNR_711_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Original, Stripe {GREEN}(refittable){}
@@ -757,7 +763,7 @@ JNR_181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 
 
 # 485 Series
-JNR_485_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {DKGREEN}Hokkaido {GREEN}East {BLUE}West　{RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+JNR_485_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {DKGREEN}Hokkaido {GREEN}East {BLUE}West {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 581/583 Series
 JNR_583_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
