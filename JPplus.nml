@@ -26998,17 +26998,17 @@ spriteset (spriteset_583_mid_JNR,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 
 spriteset (spriteset_583_rev_mid_JNR,      "gfx/OTHER/mucar.png")     { tmpl_std_rev(0, 0) }
 spriteset (spriteset_583_revflip_mid_JNR,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
 
-alternative_sprites (spriteset_583_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-2.png")     { tmpl_std(0, 1) }
-alternative_sprites (spriteset_583_rev_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-2.png")     { tmpl_std_rev(0, 1) }
-alternative_sprites (spriteset_583_revflip_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-2.png")     { tmpl_std(0, 1) }
+alternative_sprites (spriteset_583_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-2.png")     { tmpl_std_rev(0, 1) }
+alternative_sprites (spriteset_583_rev_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-2.png")     { tmpl_std(0, 1) }
+alternative_sprites (spriteset_583_revflip_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-2.png")     { tmpl_std_rev(0, 1) }
 
 spriteset (spriteset_583_mid_panto_JNR,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
 spriteset (spriteset_583_rev_mid_panto_JNR,      "gfx/OTHER/mucar.png")     { tmpl_std_rev(0, 0) }
 spriteset (spriteset_583_revflip_mid_panto_JNR,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
 
-alternative_sprites (spriteset_583_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-3.png")     { tmpl_std(0, 1) }
-alternative_sprites (spriteset_583_rev_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-3.png")     { tmpl_std_rev(0, 1) }
-alternative_sprites (spriteset_583_revflip_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-3.png")     { tmpl_std(0, 1) }
+alternative_sprites (spriteset_583_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-3.png")     { tmpl_std_rev(0, 1) }
+alternative_sprites (spriteset_583_rev_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-3.png")     { tmpl_std(0, 1) }
+alternative_sprites (spriteset_583_revflip_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu583/583-1-3.png")     { tmpl_std_rev(0, 1) }
 
 spriteset (spriteset_583_mid_gr_JNR,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
 spriteset (spriteset_583_rev_mid_gr_JNR,      "gfx/OTHER/mucar.png")     { tmpl_std_rev(0, 0) }
