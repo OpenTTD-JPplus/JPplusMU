@@ -27105,24 +27105,69 @@ switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_mid_sashi_flippedcheck, vehicle_is_flip
 /*---END OF SECTION---*/
 
 /*---REVERSE CONSIST SWITCH BLOCK---*/
-switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
   0: sw_583_gfx_rev_mid_panto_flippedcheck;
-  2: sw_583_gfx_rev_mid_panto_flippedcheck;
-  4: sw_583_gfx_rev_mid_panto_flippedcheck;
   default: sw_583_gfx_rev_mid_flippedcheck;
 }
-switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%11]){
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%3]){
+  0: sw_583_gfx_rev_mid_panto_flippedcheck;
+  default: sw_583_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw2, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%3]){
+  0: sw_583_gfx_rev_mid_panto_flippedcheck;
+  2: sw_583_gfx_rev_mid_gr_flippedcheck;
+  default: sw_583_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw3, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%5]){
+  0: sw_583_gfx_rev_mid_panto_flippedcheck;
+  2: sw_583_gfx_rev_mid_panto_flippedcheck;
+  4: sw_583_gfx_rev_mid_gr_flippedcheck; 
+  default: sw_583_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw4, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%6]){
+  0: sw_583_gfx_rev_mid_panto_flippedcheck;
+  2: sw_583_gfx_rev_mid_panto_flippedcheck;
+  4: sw_583_gfx_rev_mid_gr_flippedcheck;
+  6: sw_583_gfx_rev_mid_panto_flippedcheck;
+  default: sw_583_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw5, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%9]){
+  0: sw_583_gfx_rev_mid_panto_flippedcheck;
+  3: sw_583_gfx_rev_mid_gr_flippedcheck;
+  4: sw_583_gfx_rev_mid_sashi_flippedcheck;
+  5: sw_583_gfx_rev_mid_panto_flippedcheck;
+  7: sw_583_gfx_rev_mid_panto_flippedcheck;
+  default: sw_583_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw6, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%10]){
+  0: sw_583_gfx_rev_mid_panto_flippedcheck;
+  3: sw_583_gfx_rev_mid_gr_flippedcheck;
+  4: sw_583_gfx_rev_mid_sashi_flippedcheck;
+  5: sw_583_gfx_rev_mid_panto_flippedcheck;
+  8: sw_583_gfx_rev_mid_panto_flippedcheck;
+  default: sw_583_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR_sw7, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%11]){
   0: sw_583_gfx_rev_mid_panto_flippedcheck;
   2: sw_583_gfx_rev_mid_panto_flippedcheck;
   4: sw_583_gfx_rev_mid_gr_flippedcheck;
   5: sw_583_gfx_rev_mid_sashi_flippedcheck;
   6: sw_583_gfx_rev_mid_panto_flippedcheck;
+  8: sw_583_gfx_rev_mid_panto_flippedcheck;
   default: sw_583_gfx_rev_mid_flippedcheck;
 }
 
 switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_JNR, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..7: sw_583_gfx_rev_pantograph_pos_JNR_sw0;
-  default: sw_583_gfx_rev_pantograph_pos_JNR_sw1;
+  0..2: sw_583_gfx_rev_pantograph_pos_JNR_sw0;
+  3: sw_583_gfx_rev_pantograph_pos_JNR_sw1;
+  4: sw_583_gfx_rev_pantograph_pos_JNR_sw0;
+  5: sw_583_gfx_rev_pantograph_pos_JNR_sw2;
+  6: sw_583_gfx_rev_pantograph_pos_JNR_sw0; 
+  7: sw_583_gfx_rev_pantograph_pos_JNR_sw3;
+  8: sw_583_gfx_rev_pantograph_pos_JNR_sw4;
+  9: sw_583_gfx_rev_pantograph_pos_JNR_sw5;
+  10: sw_583_gfx_rev_pantograph_pos_JNR_sw6;
+  default: sw_583_gfx_rev_pantograph_pos_JNR_sw7;
 }
 
 switch(FEAT_TRAINS,SELF, sw_583_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
@@ -27174,24 +27219,68 @@ switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_idcheck, [STORE_TEMP(position_in_consis
 /*---END OF SECTION---*/
 
 /*---CONSIST SWITCH BLOCK---*/
-switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw0, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw0, position_in_vehid_chain%2){
   0: spriteset_583_mid_panto_JNR;
-  2: spriteset_583_mid_panto_JNR;
-  4: spriteset_583_mid_panto_JNR;
   default: spriteset_583_mid_JNR;
 }
-switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw1, position_in_vehid_chain%11){
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw1, position_in_vehid_chain%3){
+  0: spriteset_583_mid_panto_JNR;
+  default: spriteset_583_mid_JNR;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw2, position_in_vehid_chain%3){
+  0: spriteset_583_mid_panto_JNR;
+  2: spriteset_583_mid_gr_JNR;
+  default: spriteset_583_mid_JNR;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw3, position_in_vehid_chain%5){
+  0: spriteset_583_mid_panto_JNR;
+  2: spriteset_583_mid_panto_JNR;
+  4: spriteset_583_mid_gr_JNR; 
+  default: spriteset_583_mid_JNR;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw4, position_in_vehid_chain%6){
+  0: spriteset_583_mid_panto_JNR;
+  2: spriteset_583_mid_panto_JNR;
+  4: spriteset_583_mid_gr_JNR;
+  6: spriteset_583_mid_panto_JNR;
+  default: spriteset_583_mid_JNR;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw5, position_in_vehid_chain%9){
+  0: spriteset_583_mid_panto_JNR;
+  3: spriteset_583_mid_gr_JNR;
+  4: spriteset_583_mid_sashi_JNR;
+  5: spriteset_583_mid_panto_JNR;
+  7: spriteset_583_mid_panto_JNR;
+  default: spriteset_583_mid_JNR;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw6, position_in_vehid_chain%10){
+  0: spriteset_583_mid_panto_JNR;
+  3: spriteset_583_mid_gr_JNR;
+  4: spriteset_583_mid_sashi_JNR;
+  5: spriteset_583_mid_panto_JNR;
+  8: spriteset_583_mid_panto_JNR;
+  default: spriteset_583_mid_JNR;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR_sw7, position_in_vehid_chain%11){
   0: spriteset_583_mid_panto_JNR;
   2: spriteset_583_mid_panto_JNR;
   4: spriteset_583_mid_gr_JNR;
   5: spriteset_583_mid_sashi_JNR;
   6: spriteset_583_mid_panto_JNR;
+  8: spriteset_583_mid_panto_JNR;
   default: spriteset_583_mid_JNR;
 }
-
 switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_JNR, num_vehs_in_vehid_chain){
-  0..7: sw_583_gfx_pantograph_pos_JNR_sw0;
-  default: sw_583_gfx_pantograph_pos_JNR_sw1;
+  0..2: sw_583_gfx_pantograph_pos_JNR_sw0;
+  3: sw_583_gfx_pantograph_pos_JNR_sw1;
+  4: sw_583_gfx_pantograph_pos_JNR_sw0;
+  5: sw_583_gfx_pantograph_pos_JNR_sw2;
+  6: sw_583_gfx_pantograph_pos_JNR_sw0; 
+  7: sw_583_gfx_pantograph_pos_JNR_sw3;
+  8: sw_583_gfx_pantograph_pos_JNR_sw4;
+  9: sw_583_gfx_pantograph_pos_JNR_sw5;
+  10: sw_583_gfx_pantograph_pos_JNR_sw6;
+  default: sw_583_gfx_pantograph_pos_JNR_sw7;
 }
 /*---END OF SECTION---*/
 
