@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME:JP+ Multiple Units - JGR/JNR/JR Trains (v0.4.5)
+STR_GRF_NAME:JP+ Multiple Units v0.4.5
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Takamaro{}Erato{}StandUserLeon{}Yozora{}Emperor Jake{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -17,7 +17,7 @@ STR_PARAM_LOW:Low
 STR_PARAM_HIGH   :High
 STR_PARAM_VHIGH  :Very high
 STR_PARAM_REAL   :Realistic
-STR_PARAM_CUSTOM   :Custom (Adjust Below)
+STR_PARAM_CUSTOM   :{RED}Custom (Adjust Below)
 STR_PARAM_NAME_DISABLETRAINS  :Disable trains
 STR_PARAM_DESC_DISABLETRAINS  :I don't know why you'd use this, but the option is here!{} Maybe you just want the road vehicles provided by this set?
 STR_PARAM_NAME_DISABLERV  :Disable Road vehicles & trams
@@ -39,7 +39,7 @@ STR_PARAM_NAME_CUSTOMLOCAL :Local capacities
 STR_PARAM_NAME_CUSTOMRAPID :Rapid capacities
 STR_PARAM_NAME_CUSTOMEXPRESS :Express capacities
 
-STR_PARAM_DESC_CUSTOM :Manually set the amount of passengers different train groups can carry. The setting "Passenger capacities" must be set to "Custom" first.
+STR_PARAM_DESC_CUSTOM :{RED}WARNING! {BLACK}It is not reccomended to go over {RED}255{BLACK}.{}Going over 255 will work only for single car trains and the multiple unit car.{}{}Manually set the amount of passengers different train groups can carry. {}{YELLOW}The setting "Passenger capacities" must be set to "Custom" first.
 
 
 STR_ATTACH_JNRKH:You can only attach KiHa DMUs listed below or MU Cars.{}{}KiHa 30{}KiHa 35{}KiHa 40{}KiHa 58{}KiHa 130{}KiHa 141

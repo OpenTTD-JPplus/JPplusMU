@@ -1,5 +1,7 @@
 basecost {
-		 PR_BUILD_VEHICLE : param_basecostbuy -1;
+		 PR_BUILD_VEHICLE_TRAIN : param_basecostbuy -1;
 		 PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
-		 PR_RUNNING: param_basecostrun +1; //3
+		 //PR_RUNNING_TRAIN_STEAM: param_basecostrun +1;
+		 PR_RUNNING_TRAIN_DIESEL: param_basecostrun +1;
+		 PR_RUNNING_TRAIN_ELECTRIC: param_basecostrun +1;
 }

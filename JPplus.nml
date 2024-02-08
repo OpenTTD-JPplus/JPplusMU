@@ -103,7 +103,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMLOCAL);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 250;
+						max_value: 65535;
 						def_value: 1;
 
 			 }
@@ -114,7 +114,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMRAPID);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 250;
+						max_value: 65535;
 						def_value: 1;
 
 			 }
@@ -125,7 +125,7 @@ grf {
 						name: string(STR_PARAM_NAME_CUSTOMEXPRESS);
 						desc: string(STR_PARAM_DESC_CUSTOM);
 						min_value: 1;
-						max_value: 250;
+						max_value: 65535;
 						def_value: 1;
 
 			 }
@@ -136,9 +136,11 @@ grf {
 //Helpers
 # 1 "src/basecosts.pnml" 1
 basecost {
-		 PR_BUILD_VEHICLE : param_basecostbuy -1;
+		 PR_BUILD_VEHICLE_TRAIN : param_basecostbuy -1;
 		 PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
-		 PR_RUNNING: param_basecostrun +1; //3
+		 //PR_RUNNING_TRAIN_STEAM: param_basecostrun +1;
+		 PR_RUNNING_TRAIN_DIESEL: param_basecostrun +1;
+		 PR_RUNNING_TRAIN_ELECTRIC: param_basecostrun +1;
 }
 # 1 "JPplus.pnml" 4
 # 1 "src/railtypetable.pnml" 1
@@ -43257,13 +43259,13 @@ item(FEAT_TRAINS, emu_813) {
 //GRF OVERRIDE
 # 1 "src/grfoverrides.pnml" 1
 if (param_japansetdisable == 0) {
-	disable_item(FEAT_TRAINS, 0, 115); //Disables original vehicles
+	//disable_item(FEAT_TRAINS, 0, 115); //Disables original vehicles
 }
 
 //JPSet3 DUPLICATION
 if (param_japansetdisable == 1) {
 	engine_override("SZ\0D\00");
-
+	/*
 	basecost {
 			PR_BUILD_VEHICLE : param_basecostbuy -1;
 			PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
@@ -43272,7 +43274,7 @@ if (param_japansetdisable == 1) {
 			PR_RUNNING_TRAIN_DIESEL: param_basecostrun +1;
 			PR_RUNNING_TRAIN_ELECTRIC:param_basecostrun -2;
 
-	}
+	}*/
 
 	item(FEAT_TRAINS, japanset_113, 0x49) {
 		property {

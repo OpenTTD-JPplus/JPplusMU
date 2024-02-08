@@ -1,11 +1,11 @@
 if (param_japansetdisable == 0) {
-	disable_item(FEAT_TRAINS, 0, 115); //Disables original vehicles
+	//disable_item(FEAT_TRAINS, 0, 115); //Disables original vehicles
 }
 
 //JPSet3 DUPLICATION
 if (param_japansetdisable == 1) {
 	engine_override("SZ\0D\00");
-
+	/*
 	basecost {
 			PR_BUILD_VEHICLE : param_basecostbuy -1;
 			PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
@@ -14,7 +14,7 @@ if (param_japansetdisable == 1) {
 			PR_RUNNING_TRAIN_DIESEL: param_basecostrun +1;
 			PR_RUNNING_TRAIN_ELECTRIC:param_basecostrun -2;
 
-	}
+	}*/
 
 	item(FEAT_TRAINS, japanset_113, 0x49) {
 		property {
