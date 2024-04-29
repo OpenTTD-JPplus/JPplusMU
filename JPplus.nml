@@ -7,7 +7,7 @@ grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESC);
-	version:	45;
+	version:	46;
 	min_compatible_version: 10;
 		//japanset3 removal
 		param 4 {
@@ -29910,14 +29910,6 @@ switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_pantograph_pos_jre215_sw0, [STORE_TEMP(
   6: sw_215_gfx_rev_mid_b_flippedcheck;
   default: sw_215_gfx_rev_mid_a_flippedcheck;
 }
-
-switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_pantograph_pos_jre215, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_215_gfx_rev_pantograph_pos_jre215_sw0;
-}
-
-switch(FEAT_TRAINS,SELF, sw_215_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: sw_215_gfx_rev_pantograph_pos_jre215;
-}
 /*---END OF SECTION---*/
 
 /*---REVERSE SYSTEM SWITCH BLOCK---*/
@@ -29955,7 +29947,7 @@ switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_frontback,
   default: sw_215_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000: sw_215_gfx_rev_pantograph_pos;
+  1000: sw_215_gfx_rev_pantograph_pos_jre215_sw0;
   2068: sw_215_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
