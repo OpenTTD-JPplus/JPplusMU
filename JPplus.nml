@@ -37579,7 +37579,7 @@ switch(FEAT_TRAINS, SELF, sw_315_gfx_rev_frontback,
   default: sw_315_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_315_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000: sw_315_gfx_rev_pantograph_pos;
+  1000: sw_315_gfx_rev_pantograph_pos_jrc;
   2071: sw_315_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
