@@ -36,7 +36,7 @@ alternative_sprites(spriteset_KH58_frontflip_jnr, ZOOM_LEVEL_NORMAL, BIT_DEPTH_3
 alternative_sprites(spriteset_KH58_rev_jnr,       ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/JNR_58.png")           {tmpl_std(0, 205)}
 alternative_sprites(spriteset_KH58_revflip_jnr,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JNR/dmuKH58/JNR_58.png")           {tmpl_std_rev(0, 205)}
 
-//KH28 JNR Vermillion no AC
+//KH28 JNR Vermillion no AC 
 spriteset (spriteset_KH28_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH28_frontflip_jnr,    	      	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
 spriteset (spriteset_KH28_rev_jnr,    	   	"gfx/OTHER/mucar.png")      	{ tmpl_std(0, 0) }
