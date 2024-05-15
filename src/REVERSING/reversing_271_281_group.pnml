@@ -168,16 +168,16 @@ switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 /*---END OF SECTION---*/
 
 /*---271 REVERSE CONSIST SWITCH BLOCK---*/
-switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_pantograph_pos_Haruka_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+/*switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_pantograph_pos_Haruka_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
   default: sw_271_gfx_rev_mid_flippedcheck;
-}
+}*/
 switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_pantograph_pos_Haruka_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
   1: sw_271_gfx_rev_mid_panto_flippedcheck;
   default: sw_271_gfx_rev_mid_flippedcheck;
 }
 
 switch(FEAT_TRAINS, SELF, sw_271_gfx_rev_pantograph_pos_Haruka, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..2: sw_271_gfx_rev_pantograph_pos_Haruka_sw0;
+  0..2: sw_271_gfx_rev_mid_flippedcheck;
   default: sw_271_gfx_rev_pantograph_pos_Haruka_sw1;
 }
 
@@ -302,9 +302,9 @@ switch(FEAT_TRAINS, SELF, sw_281_gfx_rev_back_panto_flippedcheck, vehicle_is_fli
 /*---END OF SECTION---*/
 
 /*---281 REVERSE CONSIST SWITCH BLOCK---*/
-switch(FEAT_TRAINS, SELF, sw_281_gfx_rev_pantograph_pos_Haruka_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+/*switch(FEAT_TRAINS, SELF, sw_281_gfx_rev_pantograph_pos_Haruka_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
   default: sw_281_gfx_rev_mid_flippedcheck;
-}
+}*/
 switch(FEAT_TRAINS, SELF, sw_281_gfx_rev_pantograph_pos_Haruka_sw1, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%6]){
   0: sw_281_gfx_rev_mid_panto_flippedcheck;
   2: sw_281_gfx_rev_mid100_flippedcheck;
@@ -313,7 +313,7 @@ switch(FEAT_TRAINS, SELF, sw_281_gfx_rev_pantograph_pos_Haruka_sw1, [STORE_TEMP(
 }
 
 switch(FEAT_TRAINS, SELF, sw_281_gfx_rev_pantograph_pos_Haruka, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  0..1: sw_281_gfx_rev_pantograph_pos_Haruka_sw0;
+  0..1: sw_281_gfx_rev_mid_flippedcheck;
   default: sw_281_gfx_rev_pantograph_pos_Haruka_sw1;
 }
 /*
