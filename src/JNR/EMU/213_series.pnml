@@ -58,7 +58,7 @@ switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
 
 //213 Shonan
 switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
- 0: spriteset_213_mid_jrw;
+ 0: spriteset_213_mid_shonan;
  default: sw_211group_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/

@@ -245,31 +245,37 @@ spriteset (spriteset_213_front_old_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmp
 spriteset (spriteset_213_front_new_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_213_back_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_213_back_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_mid_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 spriteset (spriteset_213_rev_front_old_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_213_rev_front_new_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_213_rev_back_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_213_rev_back_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_rev_mid_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 spriteset (spriteset_213_revflip_front_old_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_213_revflip_front_new_shonan,    	   	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_213_revflip_back_darm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 spriteset (spriteset_213_revflip_back_sarm_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
+spriteset (spriteset_213_revflip_mid_shonan,    		"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
 
 alternative_sprites(spriteset_213_front_old_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-1_32bpp.png")         {tmpl_std(0, 1)}
 alternative_sprites(spriteset_213_front_new_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-1_32bpp.png")         {tmpl_std(0, 1)}
 alternative_sprites(spriteset_213_back_darm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-2_32bpp.png")         {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_213_back_sarm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-2_32bpp.png")         {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_213_mid_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-1-1_fake32bpp.png")        {tmpl_std(0, 1)}
 
 alternative_sprites(spriteset_213_rev_front_old_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-1_32bpp.png")         {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_213_rev_front_new_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-1_32bpp.png")         {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_213_rev_back_darm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-2_32bpp.png")         {tmpl_std(0, 1)}
 alternative_sprites(spriteset_213_rev_back_sarm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-2_32bpp.png")         {tmpl_std(0, 1)}
+alternative_sprites(spriteset_213_rev_mid_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-1-1_fake32bpp.png")        {tmpl_std_rev(0, 1)}
 
 alternative_sprites(spriteset_213_revflip_front_old_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-1_32bpp.png")         {tmpl_std(0, 26)}
 alternative_sprites(spriteset_213_revflip_front_new_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-1_32bpp.png")         {tmpl_std(0, 26)}
 alternative_sprites(spriteset_213_revflip_back_darm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-2-2_32bpp.png")         {tmpl_std_rev(0, 1)}
 alternative_sprites(spriteset_213_revflip_back_sarm_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-4-2_32bpp.png")         {tmpl_std_rev(0, 1)}
+alternative_sprites(spriteset_213_revflip_mid_shonan,   ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JNR/emu213/tokai/213-1-1_fake32bpp.png")        {tmpl_std(0, 1)}
 
 //213 JRwest Super Saloon Yumeji
 spriteset (spriteset_213_front_s1,    	    	"gfx/OTHER/mucar.png") 	{ tmpl_std(0, 0) }
@@ -770,7 +776,7 @@ switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_rev_mid_livery, [STORE_TEMP(pos
 4:spriteset_213_rev_mid_jrw;
 3:spriteset_213_rev_mid_jrw;
 2:spriteset_213_rev_mid_jrw;
-1:spriteset_213_rev_mid_jrw;
+1:spriteset_213_rev_mid_shonan;
 0:spriteset_213_rev_mid_jrw;
 }
 switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
@@ -779,7 +785,7 @@ switch(FEAT_TRAINS,SELF, sw_211group_gfx_rev_213_revflip_mid_livery, [STORE_TEMP
 4:spriteset_213_revflip_mid_jrw;
 3:spriteset_213_revflip_mid_jrw;
 2:spriteset_213_revflip_mid_jrw;
-1:spriteset_213_revflip_mid_jrw;
+1:spriteset_213_revflip_mid_shonan;
 0:spriteset_213_revflip_mid_jrw;
 }
 switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_213_mid_flipcheck, vehicle_is_flipped) {
