@@ -52,6 +52,7 @@
 #include "src/JNR/DMU/KH54_series.pnml"
 #include "src/JNR/DMU/KH58_series.pnml"
 #include "src/JNR/DMU/KH80_series.pnml"
+#include "src/JNR/DMU/KH183_series.pnml"
 #include "src/JNR/EMU/70_series.pnml"
 #include "src/JNR/EMU/80_series.pnml"
 

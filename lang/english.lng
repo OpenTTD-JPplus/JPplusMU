@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME:JP+ Multiple Units (v0.4.7)
+STR_GRF_NAME:JP+ Multiple Units (v0.5.0)
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Takamaro{}Erato{}StandUserLeon{}Yozora{}Emperor Jake{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -112,6 +112,7 @@ JNR_kiha54 :KiHa 54 Series {WHITE}(DMU){BLACK}
 JNR_kiha58 :KiHa 58 Series {WHITE}(DMU){BLACK}
 
 JNR_kiha80 :KiHa 80 Series {WHITE}(DMU){BLACK}
+JNR_kiha183 :KiHa 183 Series {WHITE}(DMU){BLACK}
 
 JRH_721:721 Series {WHITE}(EMU){BLACK}
 JRH_731:731 Series {WHITE}(EMU){BLACK}
@@ -795,6 +796,9 @@ JNR_kiha58_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}U
 
 # KiHa 80 Series
 JNR_kiha80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {ORANGE}Central{}{BLACK}Liveries: {GOLD}Kiha81　/ Kiha82{}
+
+# KiHa 80 Series
+JNR_kiha183_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # 721 Series
