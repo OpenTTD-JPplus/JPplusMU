@@ -771,7 +771,7 @@ JNR_485_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 JNR_583_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 781 Series
-JRH_781emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Liveries: {GOLD}JNR & JR Hokkaido {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}
+JNR_781_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # KiHa 30

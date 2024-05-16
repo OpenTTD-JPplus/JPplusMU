@@ -751,7 +751,7 @@ JNR_485_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種
 
 
 # 781 Series
-JRH_781emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}国鉄色 / 新塗装色 {GREEN}(換装可能){}
+JNR_781_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}国鉄色 / 新塗装色 {GREEN}(換装可能){}
 
 
 # KiHa 30

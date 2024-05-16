@@ -82,6 +82,7 @@
 
 #include "src/JNR/EMU/581_583_series.pnml"
 
+#include "src/JNR/EMU/781_series.pnml"
 
 #include "src/JNR/EMU/711_series.pnml"
 #include "src/JNR/EMU/713_series.pnml"
