@@ -112,6 +112,7 @@ JNR_kiha54 :KiHa 54 Series {WHITE}(DMU){BLACK}
 JNR_kiha58 :KiHa 58 Series {WHITE}(DMU){BLACK}
 
 JNR_kiha80 :KiHa 80 Series {WHITE}(DMU){BLACK}
+JNR_kiha181 :KiHa 181 Series {WHITE}(DMU){BLACK}
 JNR_kiha183 :KiHa 183 Series {WHITE}(DMU){BLACK}
 
 JRH_721:721 Series {WHITE}(EMU){BLACK}
@@ -797,8 +798,11 @@ JNR_kiha58_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}U
 # KiHa 80 Series
 JNR_kiha80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {ORANGE}Central{}{BLACK}Liveries: {GOLD}Kiha81　/ Kiha82{}
 
-# KiHa 80 Series
-JNR_kiha183_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+# KiHa 181 Series
+JNR_kiha181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {BLUE}West {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
+# KiHa 183 Series
+JNR_kiha183_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # 721 Series

@@ -25,6 +25,7 @@ item(FEAT_TRAINS, dmu_kiha35, 1518) {} //kiha281	 0x5E2
 item(FEAT_TRAINS, dmu_kiha130, 1519) {} //kiha281	 0x5E2
 item(FEAT_TRAINS, dmu_kiha85, 1520) {} //107emu 0x7E2
 item(FEAT_TRAINS, dmu_kiha183, 1521) {} //107emu 0x7E2
+item(FEAT_TRAINS, dmu_kiha181, 1522) {} //107emu 0x7E2
 
 
 item(FEAT_TRAINS, emu_107, 2018) {} //107emu 0x7E2
