@@ -237,6 +237,7 @@ item(FEAT_TRAINS, emu_227) {
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
+        cargo_age_period:             param_decay_local;
         cost_factor:                  18;
         running_cost_factor:          48;
 
@@ -278,6 +279,7 @@ item(FEAT_TRAINS, emu_227) {
         default:                      sw_227_gfx_227_0;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
+        cargo_age_period:             param_decay_local;
         cargo_subtype_text:           sw_227_subtypetext_227_0;
         power: 540/2;
         weight: 37;

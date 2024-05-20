@@ -1118,6 +1118,7 @@ item(FEAT_TRAINS, emu_70) {
         reliability_decay:            23;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
+        cargo_age_period:             param_decay_local;
         cost_factor:                  19;
         running_cost_factor:          49;
         speed:                        100 km/h;
@@ -1155,6 +1156,7 @@ item(FEAT_TRAINS, emu_70) {
         default:                      sw_70_gfx_mucar;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
+        cargo_age_period:             param_decay_local;
         cargo_subtype_text:           sw_70_subtypetext_mucar;
         power: 284;
         weight: 32;

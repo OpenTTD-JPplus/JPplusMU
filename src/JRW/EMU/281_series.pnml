@@ -122,6 +122,7 @@ item(FEAT_TRAINS, emu_281) {
         default:                      sw_281_gfx_mucar;
         cargo_capacity:               param_capacity_express;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_express;
         cargo_subtype_text:           sw_281_subtypetext_mucar;
         power: 540;
         weight: 32;
