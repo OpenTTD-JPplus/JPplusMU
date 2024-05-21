@@ -106,6 +106,7 @@ item(FEAT_TRAINS, emu_6310) {
 
         cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
         cost_factor:                  19;
         running_cost_factor:          55;
 
