@@ -23,7 +23,6 @@ item(FEAT_TRAINS, mu_car) {
                 air_drag_coefficient: 0;
                 reliability_decay: 20;
                 refittable_cargo_classes: bitmask(CC_PASSENGERS);
-                cargo_age_period: 185;
                 refit_cost: 0;
                 track_type: NARROW_NOEL;
                 ai_special_flag: AI_FLAG_PASSENGER;
