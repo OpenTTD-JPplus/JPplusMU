@@ -262,6 +262,7 @@ item(FEAT_TRAINS, emu_8000) {
 		reliability_decay : 23;
 		cargo_capacity : param_capacity_express;
 		loading_speed : param_loading_2D;
+        cargo_age_period : param_decay_express;
 		cost_factor : 24;
 		running_cost_factor : 48;
 		speed : 130 km/h;
@@ -297,8 +298,10 @@ item(FEAT_TRAINS, emu_8000) {
 	/*Multiple Unit Car*/
 	livery_override(mu_car){
 		default : sw_mu8000_main;
-		cargo_subtype_text : sw_8000_subtypetext_main;		cargo_capacity : param_capacity_express;
+		cargo_subtype_text : sw_8000_subtypetext_main;	
+		cargo_capacity : param_capacity_express;
 		loading_speed : param_loading_2D;
+        cargo_age_period : param_decay_express;
 		power : 800/2;
 		weight : 37;
 	}

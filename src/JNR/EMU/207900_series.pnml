@@ -218,6 +218,7 @@ item(FEAT_TRAINS, emu_207900) {
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
+        cargo_age_period:             param_decay_local;
         cost_factor:                  17;
         running_cost_factor:          51;
 
@@ -259,6 +260,7 @@ item(FEAT_TRAINS, emu_207900) {
         default:                      sw_207900_gfx_mucar;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_4D;
+        cargo_age_period:             param_decay_local;
         //cargo_subtype_text:           sw_207900_subtypetext_mucar;
         power: 600/2;
         weight: 29;

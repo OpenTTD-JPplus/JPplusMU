@@ -171,8 +171,9 @@ item(FEAT_TRAINS, dmu_kiha201) {
         vehicle_life:                 46;
         reliability_decay:            21;
 
-        cargo_capacity:               param_capacity_rapid;
+        cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
         cost_factor:                  18;
         running_cost_factor:          48;
 
@@ -212,8 +213,9 @@ item(FEAT_TRAINS, dmu_kiha201) {
     /*Multiple Unit Car*/
       livery_override(mu_car){
         default:                      sw_KH201_gfx_mucar;
-        cargo_capacity:               param_capacity_express;
+        cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
         //cargo_subtype_text:           sw_KH201_subtypetext_mucar;
         power: 620/2;
         weight: 36;
