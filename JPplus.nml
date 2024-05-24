@@ -1,6 +1,8 @@
+# 1 "JPplus.pnml"
 /*---HEADER--*/
 
 //Define the GRF
+# 1 "src/header.pnml" 1
 grf {
 	grfid:	"BS\13\20";
 	name:	string(STR_GRF_NAME);
@@ -129,8 +131,10 @@ grf {
 			 }
 		}
 }
+# 1 "JPplus.pnml" 4
 
 //Helpers
+# 1 "src/basecosts.pnml" 1
 basecost {
 		 PR_BUILD_VEHICLE_TRAIN : param_basecostbuy -1;
 		 PR_BUILD_VEHICLE_WAGON: param_basecostbuy +3;
@@ -138,6 +142,8 @@ basecost {
 		 PR_RUNNING_TRAIN_DIESEL: param_basecostrun +1;
 		 PR_RUNNING_TRAIN_ELECTRIC: param_basecostrun +1;
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/railtypetable.pnml" 1
 /*railtypetable {
     "3RDR", "3RDC", RLOW, ELOW, RHIG, EHIG, HSTR, NGRL, ELNG, NLOW, ENLW, ENHI, RAIL, ELRL,
 }*/
@@ -152,9 +158,13 @@ railtypetable {
 	STANDARD_3RDR: [SAB3, SAA3, RAIL],
 	STANDARD_OHLE: [SAAE, ELRL],
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/cargotable.pnml" 1
 cargotable {
 	PASS,
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/parameters.pnml" 1
 /*	CAPCITY BOOST	*/
 if (param_boostcapacity == 1)
 {
@@ -248,6 +258,8 @@ if (param_cargodecay >= 2) {
 	param_decay_rapid = 650;
 	param_decay_express = 1000;
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/template.pnml" 1
 //[(left_x, upper_y, width, height, )offset_x, offset_y(, flags)(, filename)(, mask)]
 
 /*Purchase Templates*/
@@ -545,8 +557,10 @@ template tmpl_7l_rev(x,y){
 //[x +97,  y,	22,	20,		-13,	-13] //dia1
 //[x +120, y,	32,	17,		-14,	-13] //long
 //[x+153,  y,	22,	20,		-5, 	-12] //dia2
+# 1 "JPplus.pnml" 4
 
 //IDs
+# 1 "src/vehicleid.pnml" 1
 
 item(FEAT_TRAINS, mu_car, 1000) {} //mucar 				0x3E8
 item(FEAT_TRAINS, mu_cardd, 1001) {} //mucardd 		0x3E9
@@ -652,12 +666,14 @@ item(FEAT_TRAINS, emu_315, 2071) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_713, 2072) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_583, 2073) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_417, 2074) {} //107emu 0x7E2
+# 1 "JPplus.pnml" 4
 
 //Coupliung Rules
 //#include "src/attach_kiha_group.pnml"
 //#include "src/attach_211_213_group.pnml"
 
 //Sorting
+# 1 "src/sorting.pnml" 1
 sort(FEAT_TRAINS, [
 
 /* **EMU** */
@@ -827,8 +843,10 @@ mu_cab,
 mu_cardd,
 
 ]);
+# 1 "JPplus.pnml" 4
 
 //Final Settings
+# 1 "src/grfintegration.pnml" 1
 //set depot vehicle width to 32px to avoid overlap
 train_width_32_px = 1;
 //align train properly in depot window
@@ -865,8 +883,10 @@ if (grf_order_behind("SZ\0D\00") == 0) {
 if (grf_order_behind("JD\A1\E1") == 0) {
 	error(WARNING, string(GRF_JAPANSECRETORDER));
 }
+# 1 "JPplus.pnml" 4
 
 //Reversing
+# 1 "src/reversing/reversing_211_213_311_313_group.pnml" 1
 /*---GFX: Spritesets---*/
 
 /*---211---*/
@@ -1863,6 +1883,8 @@ switch(FEAT_TRAINS, SELF, sw_211group_gfx_rev_idcheck, [STORE_TEMP(position_in_c
   2024: sw_211group_gfx_rev_313_frontback;
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/reversing/reversing_KH_110_111_E120_E130_E131_group.pnml" 1
 
 
 /*---GFX: Spritesets---*/
@@ -2318,6 +2340,8 @@ switch(FEAT_TRAINS, SELF, sw_JREKHgroup_gfx_rev_idcheck, [STORE_TEMP(position_in
 /*---END OF SECTION---*/
 
 
+# 1 "JPplus.pnml" 4
+# 1 "src/reversing/reversing_E231_E233_group.pnml" 1
 /*---GFX: Spritesets---*/
 
 /*---E231---*/
@@ -3233,6 +3257,8 @@ switch(FEAT_TRAINS, SELF, sw_E231group_gfx_rev_idcheck, [STORE_TEMP(position_in_
   2016: sw_E233_gfx_rev_frontback; 
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/reversing/reversing_415_group.pnml" 1
 /*415-1500*/
 //Purchase Sprites
 spriteset (spriteset_4151500_purchase,	                                                    "gfx/JNR/emu415_1500/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -5358,6 +5384,8 @@ switch(FEAT_TRAINS, SELF, sw_415group_gfx_rev_idcheck, [STORE_TEMP(position_in_c
 switch(FEAT_TRAINS, SELF, sw_415group_attach_vehid, [vehicle_type_id == emu_413 ||vehicle_type_id == emu_4151500 || vehicle_type_id == emu_415 ||vehicle_type_id == emu_403 || vehicle_type_id == emu_401 || vehicle_type_id == mu_car]) {
  0: return string(MU_UNIQUE);
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/reversing/reversing_221_223_225_group.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_221_purchase,	                                                     "gfx/JRW/emu207/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -6638,6 +6666,8 @@ switch(FEAT_TRAINS, SELF, sw_JRW22group_gfx_rev_idcheck, [STORE_TEMP(position_in
   2054: sw_225_5000_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/reversing/reversing_JNR_KIHA_group.pnml" 1
 
 //Livery Selection kh30
 switch(FEAT_TRAINS,SELF, sw_KH30_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
@@ -7043,6 +7073,8 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_subtypetext_mucar, cargo_subtype) {
     vehicle_type_id == mu_car]) {
   0: return string(STR_ATTACH_JNRKH);
   }
+# 1 "JPplus.pnml" 4
+# 1 "src/reversing/reversing_271_281_group.pnml" 1
 /*---271 SPRITESHEETS BLOCK---*/
 
 /*-Purchase Sprites-*/
@@ -7436,10 +7468,12 @@ switch(FEAT_TRAINS, SELF, sw_JRW271281group_gfx_rev_idcheck, [STORE_TEMP(positio
   2066: sw_281_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
 
 /*---TRAINS---*/
 
 //Wagons
+# 1 "src/OTHER/mucar.pnml" 1
 /*---GFX: Spritesets---*/
 spriteset (set_mu_car_purchase,	    "gfx/OTHER/mucarbuy.png") 	{tmpl_purchase(0, 0)}
 spriteset (set_mu_car_base,       	"gfx/OTHER/mucar.png")     	{tmpl_std(0, 0)}
@@ -7465,7 +7499,6 @@ item(FEAT_TRAINS, mu_car) {
                 air_drag_coefficient: 0;
                 reliability_decay: 20;
                 refittable_cargo_classes: bitmask(CC_PASSENGERS);
-                cargo_age_period: 185;
                 refit_cost: 0;
                 track_type: NARROW_NOEL;
                 ai_special_flag: AI_FLAG_PASSENGER;
@@ -7488,8 +7521,10 @@ item(FEAT_TRAINS, mu_car) {
     }
 
 }
+# 1 "JPplus.pnml" 4
 
 //JGR
+# 1 "src/JGR/EMU/40_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_EMU40_purchase,	                                                            "gfx/JGR/emu40/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -8013,6 +8048,8 @@ item(FEAT_TRAINS, emu_40sinlge) {
         //start_stop:           ;
     }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JGR/EMU/52_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -9008,6 +9045,8 @@ item(FEAT_TRAINS, emu_52) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/JGR/EMU/63_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_EMU63_purchase,	                                                            "gfx/JGR/emu63/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -9274,6 +9313,8 @@ item(FEAT_TRAINS, emu_63) {
         weight: 61;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JGR/EMU/6340_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
@@ -9491,6 +9532,8 @@ item(FEAT_TRAINS, emu_6340) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JGR/EMU/6310_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
@@ -9637,9 +9680,11 @@ item(FEAT_TRAINS, emu_6310) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
 
 
 //JNR
+# 1 "src/JNR/DMU/KH30_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH30_purchase,	                                                    "gfx/JNR/dmuKH30/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -9800,6 +9845,8 @@ item(FEAT_TRAINS, dmu_kiha30) {
         weight: 32;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/DMU/KH35_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH35_purchase,	                                                    "gfx/JNR/dmuKH35/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -9995,6 +10042,8 @@ item(FEAT_TRAINS, dmu_kiha35) {
         weight: 32;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/DMU/KH40_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH40_purchase,	                                                    "gfx/JNR/dmuKH40/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -10349,6 +10398,8 @@ item(FEAT_TRAINS, dmu_kiha40) {
         weight: 40;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/DMU/KH54_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH54_purchase,	                                                    "gfx/JNR/dmuKH54/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -10531,6 +10582,8 @@ item(FEAT_TRAINS, dmu_kiha54) {
         weight: 54;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/DMU/KH58_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH58_purchase,	                                                    "gfx/JNR/dmuKH58/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -10772,6 +10825,8 @@ item(FEAT_TRAINS, dmu_kiha58) {
         weight: 40;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/DMU/KH80_series.pnml" 1
 /*---!!!THIS HAS BEEN GENERATED BY JpyNML!!!---*/
 /*---END OF SECTION---*/
 /*---GFX: Spritesets---*/
@@ -11318,6 +11373,8 @@ item(FEAT_TRAINS, dmu_kiha80) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/DMU/KH181_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH181_purchase,	                                                    "gfx/JNR/dmuKH181/purchase.png")               {tmpl_purchase(0, 0)}
@@ -11545,6 +11602,8 @@ item(FEAT_TRAINS, dmu_kiha181) {
         weight: 42;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/DMU/KH183_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH183_purchase,	                                                    "gfx/JNR/dmuKH183/purchase.png")               {tmpl_purchase(0, 0)}
@@ -11849,6 +11908,8 @@ item(FEAT_TRAINS, dmu_kiha183) {
         weight: 42;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/70_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -13014,6 +13075,8 @@ item(FEAT_TRAINS, emu_70) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/80_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_80_purchase,	                                                     "gfx/JNR/emu80/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -13678,7 +13741,9 @@ item(FEAT_TRAINS, emu_80) {
       }
 
 }
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JNR/EMU/103_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_103_purchase,	                                                    "gfx/JNR/emu101_103/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_103_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu101_103/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
@@ -16110,6 +16175,8 @@ item(FEAT_TRAINS, emu_103) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/111_113_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_113_purchase,	                                                    "gfx/JNR/emu111_113/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -17317,6 +17384,8 @@ item(FEAT_TRAINS, emu_113) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/115_3000_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset(spriteset_1153000_purchase,	                                                    "gfx/JNR/emu115/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -17876,6 +17945,8 @@ item(FEAT_TRAINS, emu_1153000) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/115_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset(spriteset_115_purchase,	                                                    "gfx/JNR/emu115/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -21699,6 +21770,8 @@ item(FEAT_TRAINS, emu_115) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/151_161_181_series.pnml" 1
 /*---GF2: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_151_purchase,	                                                    "gfx/JNR/emu151_181/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -22460,6 +22533,8 @@ item(FEAT_TRAINS, emu_151) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/165_169_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_165_purchase,	                                                     "gfx/JNR/emu165_169/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -23071,7 +23146,9 @@ item(FEAT_TRAINS, emu_165) {
       }
 
 }
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JNR/EMU/201_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_201_purchase,	                                                    "gfx/JNR/emu201/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_201_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu201/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
@@ -24444,6 +24521,8 @@ item(FEAT_TRAINS, emu_201) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/205_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
@@ -24812,6 +24891,8 @@ item(FEAT_TRAINS, emu_205) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/207900_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_207900_purchase,	                                                    "gfx/JNR/emu207900/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_207900_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JNR/emu207900/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
@@ -25081,6 +25162,8 @@ item(FEAT_TRAINS, emu_207900) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/211_series.pnml" 1
 
 
 /*---GFX: Year Dependent Graphics---*/
@@ -25416,6 +25499,8 @@ item(FEAT_TRAINS, emu_211) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/213_series.pnml" 1
 
 
 /*---GFX: Year Dependent Graphics---*/
@@ -25582,8 +25667,10 @@ item(FEAT_TRAINS, emu_213) {
       }
 
 }
+# 1 "JPplus.pnml" 4
 
 
+# 1 "src/JNR/EMU/401_series.pnml" 1
 /*---GFX: Pantograph Positions---*/
 switch(FEAT_TRAINS, SELF, sw_401_gfx_pantograph_pos_initial_sw1, position_in_vehid_chain){
  0 : spriteset_401_mid_panto_initial;
@@ -25751,6 +25838,8 @@ item(FEAT_TRAINS, emu_401) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/403_series.pnml" 1
 /*---GFX: Train Reversing Switches---*/
 /*---END OF SECTION---*/
 /*---GFX: Pantograph Positions---*/
@@ -25920,6 +26009,8 @@ item(FEAT_TRAINS, emu_403) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/413_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -26283,6 +26374,8 @@ item(FEAT_TRAINS, emu_413) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/415_series.pnml" 1
 /*---GFX: Override Spriteset Switches---*/
 switch(FEAT_TRAINS, SELF, sw_415_gfx_spriteset_415_front_kyushu, [build_year>1995 || date_of_last_service>date(1995,1,1)] ){
   1: spriteset_415_front_nv_kyushu;
@@ -26548,6 +26641,8 @@ item(FEAT_TRAINS, emu_415) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/415_1500_series.pnml" 1
 /*---GFX: Override Spriteset Switches---*/
 switch(FEAT_TRAINS, SELF, sw_4151500_gfx_spriteset_4151500_mid_kyushu, [build_year>1997 || date_of_last_service>date(1997,1,1)] ){
   1: spriteset_4151500_mid_nv_kyushu;
@@ -26766,6 +26861,8 @@ item(FEAT_TRAINS, emu_4151500) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/417_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -27080,7 +27177,9 @@ item(FEAT_TRAINS, emu_417) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JNR/EMU/485_series.pnml" 1
 /*---GF2: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_485_purchase,	                                                    "gfx/JNR/emu485_489/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -27783,7 +27882,9 @@ item(FEAT_TRAINS, emu_485) {
       }
 
 }
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JNR/EMU/581_583_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -28331,7 +28432,9 @@ item(FEAT_TRAINS, emu_583) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JNR/EMU/781_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -28609,7 +28712,9 @@ item(FEAT_TRAINS, emu_781) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JNR/EMU/711_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_711_purchase,	                                                     "gfx/JRW/emu207/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -29182,6 +29287,8 @@ item(FEAT_TRAINS, emu_711) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JNR/EMU/713_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -29486,8 +29593,10 @@ item(FEAT_TRAINS, emu_713) {
       }*/
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
 
 //JR-Hokkaido
+# 1 "src/JRH/DMU/KH130_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH130_purchase,	                                                    "gfx/JRH/dmuKH130/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -29663,6 +29772,8 @@ item(FEAT_TRAINS, dmu_kiha130) {
         weight: 32;
       }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRH/DMU/KH141_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH141_purchase,	                                                    "gfx/JRH/dmuKH141/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -29889,9 +30000,11 @@ item(FEAT_TRAINS, dmu_kiha141) {
         weight: 32;
       }
 }
+# 1 "JPplus.pnml" 4
 //#include "src/JRH/DMU/KH201_series.pnml"
 
 //JR-East
+# 1 "src/JRE/DMU/KH110_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 /*---END OF SECTION---*/
@@ -30031,6 +30144,8 @@ item(FEAT_TRAINS, dmu_KH110) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/DMU/KH111_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 /*---END OF SECTION---*/
@@ -30183,7 +30298,9 @@ item(FEAT_TRAINS, dmu_KH111) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JRE/DMU/KHE120_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 /*---END OF SECTION---*/
@@ -30295,6 +30412,8 @@ item(FEAT_TRAINS, dmu_KHE120) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/DMU/KHE130_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 /*---END OF SECTION---*/
@@ -30413,6 +30532,8 @@ item(FEAT_TRAINS, dmu_KHE130) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/DMU/KHE131_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 /*---END OF SECTION---*/
@@ -30532,7 +30653,9 @@ item(FEAT_TRAINS, dmu_KHE131) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JRE/EMU/215_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -30844,6 +30967,8 @@ item(FEAT_TRAINS, emu_215) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E331_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
@@ -31118,6 +31243,8 @@ item(FEAT_TRAINS, emu_E331) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E235_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //purchase sprites
@@ -31557,6 +31684,8 @@ item(FEAT_TRAINS, emu_E235) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E233_series.pnml" 1
 /*---GFX: Pantograph Positions---*/
 //E233-0 Chou Line
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_numofcars_chou, num_vehs_in_vehid_chain){
@@ -31999,6 +32128,8 @@ item(FEAT_TRAINS, emu_E233) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E231_series.pnml" 1
 /*---GFX: Pantograph Positions---*/
 //E231-1000 Suburban
 switch(FEAT_TRAINS,SELF, sw_E231_gfx_pantograph_pos_tk_default_dd, position_in_vehid_chain%10){
@@ -32349,6 +32480,8 @@ item(FEAT_TRAINS, emu_E231) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E217_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
@@ -32793,6 +32926,8 @@ item(FEAT_TRAINS, emu_E217) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E127_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
@@ -33045,6 +33180,8 @@ item(FEAT_TRAINS, emu_E127) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/209_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_209_purchase,	                                                    "gfx/JRE/emu209/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -34376,6 +34513,8 @@ item(FEAT_TRAINS, emu_209) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/107_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
@@ -34592,7 +34731,9 @@ item(FEAT_TRAINS, emu_107) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JRE/EMU/E531_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_E531_purchase,	                                                    "gfx/JRE/emuE531/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_E531_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE531/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
@@ -35150,6 +35291,8 @@ item(FEAT_TRAINS, emu_E531) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E257_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -36428,6 +36571,8 @@ item(FEAT_TRAINS, emu_E257) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/E353_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_E353_purchase,	                                                    "gfx/JRE/emuE353/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_E353_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emuE353/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
@@ -36744,6 +36889,8 @@ item(FEAT_TRAINS, emu_E353) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/651_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_651_purchase,	                                                    "gfx/JRE/emu651/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_651_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRE/emu651/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
@@ -37155,7 +37302,9 @@ item(FEAT_TRAINS, emu_651) {
       }
 
 }
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JRE/EMU/719_series.pnml" 1
 /*---!!!THIS HAS BEEN GENERATED BY JpyNML!!!---*/
 /*---END OF SECTION---*/
 /*---GFX: Spritesets---*/
@@ -37416,6 +37565,8 @@ item(FEAT_TRAINS, emu_719) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRE/EMU/7195000_series.pnml" 1
 /*---!!!THIS HAS BEEN GENERATED BY JpyNML!!!---*/
 /*---END OF SECTION---*/
 /*---GFX: Spritesets---*/
@@ -37592,9 +37743,11 @@ item(FEAT_TRAINS, emu_7195000) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
 
 
 //JR-Central
+# 1 "src/JRC/DMU/KH85_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH85_purchase,	                                                    "gfx/JRC/dmuKH85/purchase.png")               {tmpl_purchase(0, 0)}
@@ -37843,7 +37996,9 @@ item(FEAT_TRAINS, dmu_kiha85) {
         weight: 42;
       }
 }
+# 1 "JPplus.pnml" 4
 
+# 1 "src/JRC/EMU/211_56_series.pnml" 1
 
 
 /*---GFX: Year Dependent Graphics---*/
@@ -37949,6 +38104,8 @@ item(FEAT_TRAINS, emu_21156) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRC/EMU/311_series.pnml" 1
 
 
 /*---GFX: Year Dependent Graphics---*/
@@ -38054,6 +38211,8 @@ item(FEAT_TRAINS, emu_311) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRC/EMU/313_series.pnml" 1
 
 /*---GFX: Pantograph Positions---*/
 
@@ -38179,6 +38338,8 @@ item(FEAT_TRAINS, emu_313) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRC/EMU/315_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---SPRITESHEETS BLOCK---*/
@@ -38472,6 +38633,8 @@ item(FEAT_TRAINS, emu_315) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/JRC/EMU/373_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_373_purchase,	                                                    "gfx/JRC/emu373/purchase.png")               {tmpl_purchase_dh(1, 0)}
 alternative_sprites(spriteset_373_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRC/emu373/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(1, 0)}
@@ -38696,6 +38859,8 @@ item(FEAT_TRAINS, emu_373) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRC/EMU/383_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_383_purchase,	                                                    "gfx/JRC/emu383/purchase.png")               {tmpl_purchase_dh(1, 0)}
 alternative_sprites(spriteset_383_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRC/emu383/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(1, 0)}
@@ -39011,9 +39176,11 @@ item(FEAT_TRAINS, emu_383) {
       }
 
 }
+# 1 "JPplus.pnml" 4
 
 
 //JR-West
+# 1 "src/JRW/EMU/207_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
@@ -39572,6 +39739,8 @@ item(FEAT_TRAINS, emu_jrw207) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/221_series.pnml" 1
 /*---GFX: Spritesets---*/
 
 /*---END OF SECTION---*/
@@ -39726,6 +39895,8 @@ item(FEAT_TRAINS, emu_221) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/223_0_series.pnml" 1
 /*---GFX: Spritesets---*/
 /*---END OF SECTION---*/
 
@@ -39975,6 +40146,8 @@ item(FEAT_TRAINS, emu_223_0) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/223_1000_series.pnml" 1
 /*---GFX: Spritesets---*/
 /*---END OF SECTION---*/
 
@@ -40172,6 +40345,8 @@ item(FEAT_TRAINS, emu_223_1000) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/225_0_series.pnml" 1
 
 /*---GFX: Override Spriteset Switches---*/
 switch(FEAT_TRAINS, SELF, sw_225_0_gfx_spriteset_225_0_front_0type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
@@ -40342,6 +40517,8 @@ item(FEAT_TRAINS, emu_225_0) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/225_5000_series.pnml" 1
 
 /*---GFX: Override Spriteset Switches---*/
 switch(FEAT_TRAINS, SELF, sw_225_5000_gfx_spriteset_225_5000_front_5000type, [build_year>2015 || date_of_last_service>date(2015,1,1)] ){
@@ -40598,6 +40775,8 @@ item(FEAT_TRAINS, emu_225_5000) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/227_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_227_purchase,	                                                    "gfx/JRW/emu227/purchase.png")               {tmpl_purchase_dh(1, 0)}
 alternative_sprites(spriteset_227_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRW/emu227/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(1, 0)}
@@ -40886,6 +41065,8 @@ item(FEAT_TRAINS, emu_227) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/271_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---CONSIST SWITCH BLOCK---*/
@@ -41005,6 +41186,8 @@ item(FEAT_TRAINS, emu_271) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/281_series.pnml" 1
 /*---JpyNML2 Generated---*/
 
 /*---CONSIST SWITCH BLOCK---*/
@@ -41136,6 +41319,8 @@ item(FEAT_TRAINS, emu_281) {
       }
 }
 /*---END OF SECTION---*/
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/321_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_321_purchase,	                                                    "gfx/JRW/emu321/purchase.png")               {tmpl_purchase_dh(0, 0)}
 alternative_sprites(spriteset_321_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRW/emu321/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
@@ -41385,6 +41570,8 @@ item(FEAT_TRAINS, emu_321) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/EMU/323_series.pnml" 1
 //Purchase Sprites
 spriteset (spriteset_323_purchase,	                                                    "gfx/JRW/emu323/purchase.png")               {tmpl_purchase_dh(1, 0)}
 alternative_sprites(spriteset_323_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JRW/emu323/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(1, 0)}
@@ -41691,6 +41878,8 @@ item(FEAT_TRAINS, emu_323) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRW/DMU/KH33_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH33_purchase,	                                                    "gfx/JRW/dmuKH33/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -41850,9 +42039,11 @@ item(FEAT_TRAINS, dmu_KH33) {
         weight: 40;
       }
 }
+# 1 "JPplus.pnml" 4
 
 
 //JR-Shikoku
+# 1 "src/JRS/EMU/121_series.pnml" 1
 /*---!!!THIS HAS BEEN GENERATED BY JpyNML!!!---*/
 /*---END OF SECTION---*/
 /*---GFX: Spritesets---*/
@@ -42072,6 +42263,8 @@ item(FEAT_TRAINS, emu_121) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRS/EMU/6000_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_6000_purchase,	                                                     "gfx/JRW/emu207/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -42303,6 +42496,8 @@ item(FEAT_TRAINS, emu_6000) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRS/EMU/7200_series.pnml" 1
 /*---!!!THIS HAS BEEN GENERATED BY JpyNML!!!---*/
 /*---END OF SECTION---*/
 /*---GFX: Spritesets---*/
@@ -42456,6 +42651,8 @@ item(FEAT_TRAINS, emu_7200) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRS/EMU/8000_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_8000_purchase,"gfx/JRW/emu207/purchase.png") {tmpl_purchase_dh(0, 0)}
@@ -42765,6 +42962,8 @@ item(FEAT_TRAINS, emu_8000) {
 	}
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRS/DMU/KH1000_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_KH1000_purchase,	                                                    "gfx/JRS/dmuKH1000/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -42896,8 +43095,10 @@ item(FEAT_TRAINS, dmu_KH1000) {
         //start_stop:                   ;
     }
 }
+# 1 "JPplus.pnml" 4
 
 //JR-Kyushu
+# 1 "src/JRK/EMU/303_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_303_purchase,	                                                     "gfx/JRW/emu207/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -43186,6 +43387,8 @@ item(FEAT_TRAINS, emu_303) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRK/EMU/811_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_811_purchase,	                                                     "gfx/JRW/emu207/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -43602,6 +43805,8 @@ item(FEAT_TRAINS, emu_811) {
       }
 
 }
+# 1 "JPplus.pnml" 4
+# 1 "src/JRK/EMU/813_series.pnml" 1
 /*---GFX: Spritesets---*/
 //Purchase Sprites
 spriteset (spriteset_813_purchase,	                                                     "gfx/JRW/emu207/purchase.png")               {tmpl_purchase_dh(0, 0)}
@@ -44009,9 +44214,11 @@ item(FEAT_TRAINS, emu_813) {
       }
 
 }
+# 1 "JPplus.pnml" 4
 
 
 //GRF OVERRIDE
+# 1 "src/grfoverrides.pnml" 1
 if (param_japansetdisable == 0) {
 	//disable_item(FEAT_TRAINS, 0, 115); //Disables original vehicles
 }
@@ -44232,4 +44439,5 @@ item(FEAT_TRAINS, JRC373, 0x250) {
 
 }
 */
+# 1 "JPplus.pnml" 4
 
