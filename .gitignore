@@ -5,3 +5,4 @@ pybuild.bat
 *.cache
 *.vs
 backups/
+nmlc.exe

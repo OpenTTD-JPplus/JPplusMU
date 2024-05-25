@@ -511,15 +511,26 @@ template tmpl_std_orginal(x,y){
 */
 # 223 "src/template.pnml"
 template tmpl_28px_7l(x,y){
-[x, y, 8, 23, -3, -19] //short A
-[x +9, y, 20, 19, -13, -12] //dia1 
-[x +30, y, 28, 15, -14, -11] //long C
+[x, y, 8, 23, -3, -19-2] //short A
+[x +9, y, 20, 19, -13+2, -12-1] //dia1 
+[x +30, y, 28, 15, -14+4, -11] //long C
 [x +59, y, 20, 19, -5, -12] //dia2
 [x +80, y, 8, 23, -3, -19] //short E
 [x +89, y, 20, 19, -13, -12] //dia1
 [x +110, y, 28, 15, -14, -11] //long
-[x +139, y, 20, 19, -5, -12] //dia2
+[x +139, y, 20, 19, -5-2, -12-1] //dia2
 }
+template tmpl_28px_7l_rev(x,y){
+[x +80, y, 8, 23, -3, -19-2] //short E
+[x +89, y, 20, 19, -13+2, -12-1] //dia1
+[x +110, y, 28, 15, -14+4, -11] //long
+[x +139, y, 20, 19, -5, -12] //dia2
+[x, y, 8, 23, -3, -19] //short A
+[x +9, y, 20, 19, -13, -12] //dia1 
+[x +30, y, 28, 15, -14, -11] //long C
+[x +59, y, 20, 19, -5-2, -12-1] //dia2
+}
+
 
 template tmpl_20px_5l(x,y){
 [x, y, 8, 19, -3, -19] //short A
@@ -530,17 +541,6 @@ template tmpl_20px_5l(x,y){
 [x +73, y, 16, 17, -13, -10] //dia1 
 [x +90, y, 20, 15, -14, -11] //long 
 [x+111, y, 16, 17, -5, -12] //dia2 
-}
-
-template tmpl_28px_7l_rev(x,y){
-[x +80, y, 8, 23, -3, -19] //short E
-[x +89, y, 20, 19, -13, -12] //dia1
-[x +110, y, 28, 15, -14, -11] //long
-[x +139, y, 20, 19, -5, -12] //dia2
-[x, y, 8, 23, -3, -19] //short A
-[x +9, y, 20, 19, -13, -12] //dia1 
-[x +30, y, 28, 15, -14, -11] //long C
-[x +59, y, 20, 19, -5, -12] //dia2
 }
 
 template tmpl_20px_5l_rev(x,y){
@@ -7676,12 +7676,12 @@ item(FEAT_TRAINS, mu_car) {
                 speed: 0 km/h;
                 power: 0 hp;
                 cargo_capacity: 1;
+                cargo_age_period: 185;
                 weight: 0 ton;
                 tractive_effort_coefficient: 0.3;
                 air_drag_coefficient: 0;
                 reliability_decay: 20;
                 refittable_cargo_classes: bitmask(CC_PASSENGERS);
-                cargo_age_period: 185;
                 refit_cost: 0;
                 track_type: NARROW_NOEL;
                 ai_special_flag: AI_FLAG_PASSENGER;
@@ -8135,6 +8135,7 @@ item(FEAT_TRAINS, emu_40) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 17;
         running_cost_factor: 54;
 
@@ -8176,6 +8177,7 @@ item(FEAT_TRAINS, emu_40) {
         default: sw_EMU40_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_EMU40_subtypetext_mucar;
         power: 132;
         weight: 40;
@@ -8193,6 +8195,7 @@ item(FEAT_TRAINS, emu_40sinlge) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 17;
         running_cost_factor: 54;
 
@@ -9220,6 +9223,7 @@ item(FEAT_TRAINS, emu_52) {
         default: sw_52_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_rapid;
         cargo_subtype_text: sw_52_subtypetext_mucar;
         power: 200;
         weight: 34;
@@ -9446,6 +9450,7 @@ item(FEAT_TRAINS, emu_63) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 16;
         running_cost_factor: 53;
 
@@ -9487,6 +9492,7 @@ item(FEAT_TRAINS, emu_63) {
         default: sw_EMU63_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_EMU63_subtypetext_mucar;
         power: 132;
         weight: 61;
@@ -9661,6 +9667,7 @@ item(FEAT_TRAINS, emu_6340) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 55;
 
@@ -9702,6 +9709,7 @@ item(FEAT_TRAINS, emu_6340) {
         default: sw_6340_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_6340_subtypetext_mucar;
         power: 120;
         weight: 23;
@@ -9819,6 +9827,7 @@ item(FEAT_TRAINS, emu_6310) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 55;
 
@@ -9993,6 +10002,7 @@ item(FEAT_TRAINS, dmu_kiha30) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -10034,6 +10044,7 @@ item(FEAT_TRAINS, dmu_kiha30) {
         default: sw_JNR_KH_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
         power: 132;
         weight: 32;
@@ -10192,6 +10203,7 @@ item(FEAT_TRAINS, dmu_kiha35) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -10233,6 +10245,7 @@ item(FEAT_TRAINS, dmu_kiha35) {
         default: sw_JNR_KH_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
         power: 132;
         weight: 32;
@@ -10547,6 +10560,7 @@ item(FEAT_TRAINS, dmu_kiha40) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -10587,6 +10601,7 @@ item(FEAT_TRAINS, dmu_kiha40) {
         default: sw_JNR_KH_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
         power: 132;
         weight: 40;
@@ -10729,6 +10744,7 @@ item(FEAT_TRAINS, dmu_kiha54) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -10769,6 +10785,7 @@ item(FEAT_TRAINS, dmu_kiha54) {
         default: sw_JNR_KH_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
         power: 132;
         weight: 54;
@@ -10969,6 +10986,7 @@ item(FEAT_TRAINS, dmu_kiha58) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_rapid;
         cost_factor: 15;
         running_cost_factor: 45;
 
@@ -11010,6 +11028,7 @@ item(FEAT_TRAINS, dmu_kiha58) {
         default: sw_JNR_KH_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_rapid;
         cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
         power: 132;
         weight: 40;
@@ -11514,6 +11533,7 @@ item(FEAT_TRAINS, dmu_kiha80) {
 
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cost_factor: 18;
         running_cost_factor: 47;
 
@@ -11555,6 +11575,7 @@ item(FEAT_TRAINS, dmu_kiha80) {
         default: sw_KH80_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_KH80_subtypetext_mucar;
         power: 194;
         weight: 40;
@@ -11784,6 +11805,7 @@ item(FEAT_TRAINS, dmu_kiha181) {
         default: sw_KH181_gfx_mid;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         //cargo_subtype_text:           sw_KH181_subtypetext_main;
         power: 181;
         weight: 42;
@@ -12089,6 +12111,7 @@ item(FEAT_TRAINS, dmu_kiha183) {
         default: sw_KH183_gfx_mid;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         //cargo_subtype_text:           sw_KH183_subtypetext_main;
         power: 183;
         weight: 42;
@@ -13216,6 +13239,7 @@ item(FEAT_TRAINS, emu_70) {
         reliability_decay: 23;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
         speed: 100 km/h;
@@ -13253,6 +13277,7 @@ item(FEAT_TRAINS, emu_70) {
         default: sw_70_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_70_subtypetext_mucar;
         power: 284;
         weight: 32;
@@ -13876,6 +13901,7 @@ item(FEAT_TRAINS, emu_80) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_rapid;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -13917,6 +13943,7 @@ item(FEAT_TRAINS, emu_80) {
         default: sw_80_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_rapid;
         cargo_subtype_text: sw_80_subtypetext_mucar;
         power: 568/2;
         weight: 32;
@@ -16308,6 +16335,7 @@ item(FEAT_TRAINS, emu_103) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 11;
         running_cost_factor: 41;
 
@@ -16349,6 +16377,7 @@ item(FEAT_TRAINS, emu_103) {
         default: sw_103_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_103_subtypetext_mucar;
         power: 440/2;
         weight: 26;
@@ -17564,6 +17593,7 @@ item(FEAT_TRAINS, emu_113) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 14;
         running_cost_factor: 42;
 
@@ -17605,6 +17635,7 @@ item(FEAT_TRAINS, emu_113) {
         default: sw_113_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_113_subtypetext_mucar;
         power: 480/2;
         weight: 29;
@@ -18123,6 +18154,7 @@ item(FEAT_TRAINS, emu_1153000) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 16;
         running_cost_factor: 45;
 
@@ -18164,6 +18196,7 @@ item(FEAT_TRAINS, emu_1153000) {
         default: sw_1153000_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_1153000_subtypetext_mucar;
         power: 480/2;
         weight: 28;
@@ -21946,6 +21979,7 @@ item(FEAT_TRAINS, emu_115) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 16;
         running_cost_factor: 45;
 
@@ -21987,6 +22021,7 @@ item(FEAT_TRAINS, emu_115) {
         default: sw_115_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_115_subtypetext_mucar;
         power: 480/2;
         weight: 28;
@@ -22707,6 +22742,7 @@ item(FEAT_TRAINS, emu_151) {
 
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -22748,6 +22784,7 @@ item(FEAT_TRAINS, emu_151) {
         default: sw_151_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_151_subtypetext_mucar;
         power: 400/2;
         weight: 30;
@@ -23318,6 +23355,7 @@ item(FEAT_TRAINS, emu_165) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_rapid;
         cost_factor: 19;
         running_cost_factor: 48;
 
@@ -23359,6 +23397,7 @@ item(FEAT_TRAINS, emu_165) {
         default: sw_165_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_rapid;
         cargo_subtype_text: sw_165_subtypetext_mucar;
         power: 480/2;
         weight: 29;
@@ -24691,6 +24730,7 @@ item(FEAT_TRAINS, emu_201) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 47;
 
@@ -24732,6 +24772,7 @@ item(FEAT_TRAINS, emu_201) {
         default: sw_201_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_201_subtypetext_mucar;
         power: 600/2;
         weight: 31;
@@ -25059,6 +25100,7 @@ item(FEAT_TRAINS, emu_205) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 17;
         running_cost_factor: 46;
 
@@ -25100,6 +25142,7 @@ item(FEAT_TRAINS, emu_205) {
         default: sw_205_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_205_subtypetext_mucar;
         power: 480/2;
         weight: 24;
@@ -25332,6 +25375,7 @@ item(FEAT_TRAINS, emu_207900) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 17;
         running_cost_factor: 51;
 
@@ -25373,6 +25417,7 @@ item(FEAT_TRAINS, emu_207900) {
         default: sw_207900_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_207900_subtypetext_mucar;
         power: 600/2;
         weight: 29;
@@ -25667,6 +25712,7 @@ item(FEAT_TRAINS, emu_211) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -25708,6 +25754,7 @@ item(FEAT_TRAINS, emu_211) {
         default: sw_211_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_211_subtypetext_mucar;
         power: 480/2;
         weight: 23;
@@ -25833,6 +25880,7 @@ item(FEAT_TRAINS, emu_213) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -25874,6 +25922,7 @@ item(FEAT_TRAINS, emu_213) {
         default: sw_213_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_213_subtypetext_mucar;
         power: 480/2;
         weight: 24;
@@ -26002,6 +26051,7 @@ item(FEAT_TRAINS, emu_401) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 49;
 
@@ -26043,6 +26093,7 @@ item(FEAT_TRAINS, emu_401) {
         default: sw_401_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_401_subtypetext_mucar;
         power: 400/2;
         weight: 28;
@@ -26171,6 +26222,7 @@ item(FEAT_TRAINS, emu_403) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 49;
 
@@ -26212,6 +26264,7 @@ item(FEAT_TRAINS, emu_403) {
         default: sw_403_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_403_subtypetext_mucar;
         power: 480/2;
         weight: 28;
@@ -26581,6 +26634,7 @@ item(FEAT_TRAINS, emu_413) {
         default: sw_413_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_rapid;
         cargo_subtype_text: sw_413_subtypetext_mucar;
         power: 240;
         weight: 28;
@@ -26805,6 +26859,7 @@ item(FEAT_TRAINS, emu_415) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 49;
 
@@ -26846,6 +26901,7 @@ item(FEAT_TRAINS, emu_415) {
         default: sw_415_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_415_subtypetext_mucar;
         power: 480/2;
         weight: 28;
@@ -27023,6 +27079,7 @@ item(FEAT_TRAINS, emu_4151500) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -27064,6 +27121,7 @@ item(FEAT_TRAINS, emu_4151500) {
         default: sw_4151500_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_4151500_subtypetext_mucar;
         power: 480/2;
         weight: 26;
@@ -27341,6 +27399,7 @@ item(FEAT_TRAINS, emu_417) {
         reliability_decay: 24;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
         speed: 100 km/h;
@@ -27378,6 +27437,7 @@ item(FEAT_TRAINS, emu_417) {
         default: sw_417_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_417_subtypetext_mucar;
         power: 300;
         weight: 32;
@@ -28040,6 +28100,7 @@ item(FEAT_TRAINS, emu_485) {
 
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -28081,6 +28142,7 @@ item(FEAT_TRAINS, emu_485) {
         default: sw_485_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_485_subtypetext_mucar;
         power: 400/2;
         weight: 30;
@@ -28630,6 +28692,7 @@ item(FEAT_TRAINS, emu_583) {
         default: sw_583_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_1D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_583_subtypetext_mucar;
         power: 240;
         weight: 35;
@@ -28879,6 +28942,7 @@ item(FEAT_TRAINS, emu_781) {
         reliability_decay: 24;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_1D;
+        cargo_age_period: param_decay_express;
         cost_factor: 20;
         running_cost_factor: 50;
         speed: 120 km/h;
@@ -28916,6 +28980,7 @@ item(FEAT_TRAINS, emu_781) {
         default: sw_781_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_1D;
+        cargo_age_period: param_decay_express;
         //cargo_subtype_text:           sw_781_subtypetext_mucar;
         power: 300;
         weight: 36;
@@ -29448,6 +29513,7 @@ item(FEAT_TRAINS, emu_711) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -29489,6 +29555,7 @@ item(FEAT_TRAINS, emu_711) {
         default: sw_711_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_711_subtypetext_mucar;
         power: 600/2;
         weight: 30;
@@ -29757,6 +29824,7 @@ item(FEAT_TRAINS, emu_713) {
         reliability_decay: 23;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
         speed: 100 km/h;
@@ -29806,7 +29874,7 @@ item(FEAT_TRAINS, emu_713) {
         weight: 32;
 
       }*/
-# 302 "src/JNR/EMU/713_series.pnml"
+# 303 "src/JNR/EMU/713_series.pnml"
 }
 /*---END OF SECTION---*/
 # 89 ".\\JPplus.pnml" 2
@@ -29960,6 +30028,7 @@ item(FEAT_TRAINS, dmu_kiha130) {
 
         cargo_capacity: param_capacity_local-15;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -30001,6 +30070,7 @@ item(FEAT_TRAINS, dmu_kiha130) {
         default: sw_JNR_KH_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
         power: 132;
         weight: 32;
@@ -30186,6 +30256,7 @@ item(FEAT_TRAINS, dmu_kiha141) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -30227,6 +30298,7 @@ item(FEAT_TRAINS, dmu_kiha141) {
         default: sw_JNR_KH_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
         power: 184;
         weight: 32;
@@ -30325,6 +30397,7 @@ item(FEAT_TRAINS, emu_737) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -30504,6 +30577,7 @@ item(FEAT_TRAINS, dmu_H100) {
 
         cargo_capacity: param_capacity_local-15;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -30644,6 +30718,7 @@ item(FEAT_TRAINS, dmu_KH110) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 49;
 
@@ -30797,6 +30872,7 @@ item(FEAT_TRAINS, dmu_KH111) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 49;
 
@@ -30910,6 +30986,7 @@ item(FEAT_TRAINS, dmu_KHE120) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -31029,6 +31106,7 @@ item(FEAT_TRAINS, dmu_KHE130) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -31149,6 +31227,7 @@ item(FEAT_TRAINS, dmu_KHE131) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -31455,6 +31534,7 @@ item(FEAT_TRAINS, emu_215) {
         reliability_decay: 24;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
         speed: 120 km/h;
@@ -31492,6 +31572,7 @@ item(FEAT_TRAINS, emu_215) {
         default: sw_215_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_215_subtypetext_mucar;
         power: 240;
         weight: 35;
@@ -31726,6 +31807,7 @@ item(FEAT_TRAINS, emu_E331) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 67.74; //50
 
@@ -31766,6 +31848,7 @@ item(FEAT_TRAINS, emu_E331) {
         default: sw_E331_gfx_mucar_revcheck;
         cargo_capacity: param_capacity_local-30;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         power: 640/4;
         weight: 16;
         length: sw_E331_length_pos_flipped;
@@ -32164,6 +32247,7 @@ item(FEAT_TRAINS, emu_E235) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 17;
         running_cost_factor: 46;
 
@@ -32205,6 +32289,7 @@ item(FEAT_TRAINS, emu_E235) {
         default: sw_E235_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_E235_subtypetext_mucar;
         power: 560/2;
         weight: 29;
@@ -32612,6 +32697,7 @@ item(FEAT_TRAINS, emu_E233) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 13;
         running_cost_factor: 41;
 
@@ -32653,6 +32739,7 @@ item(FEAT_TRAINS, emu_E233) {
         default: sw_E233_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_E233_subtypetext_mucar;
         power: 560/2;
         weight: 28;
@@ -32962,6 +33049,7 @@ item(FEAT_TRAINS, emu_E231) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 15;
         running_cost_factor: 43;
 
@@ -33003,6 +33091,7 @@ item(FEAT_TRAINS, emu_E231) {
         default: sw_E231_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_E231_subtypetext_mucar;
         power: 380/2;
         weight: 25;
@@ -33406,6 +33495,7 @@ item(FEAT_TRAINS, emu_E217) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 48;
 
@@ -33447,6 +33537,7 @@ item(FEAT_TRAINS, emu_E217) {
         default: sw_E217_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_E217_subtypetext_mucar;
         power: 380/2;
         weight: 25;
@@ -33669,6 +33760,7 @@ item(FEAT_TRAINS, emu_E127) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -34990,6 +35082,7 @@ item(FEAT_TRAINS, emu_209) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 47;
 
@@ -35031,6 +35124,7 @@ item(FEAT_TRAINS, emu_209) {
         default: sw_209_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_209_subtypetext_mucar;
         power: 380/2;
         weight: 23;
@@ -35217,6 +35311,7 @@ item(FEAT_TRAINS, emu_107) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -35765,6 +35860,7 @@ item(FEAT_TRAINS, emu_E531) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -35806,6 +35902,7 @@ item(FEAT_TRAINS, emu_E531) {
         default: sw_E531_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_E531_subtypetext_mucar;
         power: 840/2;
         weight: 30;
@@ -37085,6 +37182,7 @@ item(FEAT_TRAINS, emu_E257) {
         default: sw_E257_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_E257_subtypetext_mucar;
         power: 290;
         weight: 30;
@@ -37402,6 +37500,7 @@ item(FEAT_TRAINS, emu_E353) {
         default: sw_E353_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_1D;
+        cargo_age_period: param_decay_express;
         //cargo_subtype_text:           sw_E353_subtypetext_mucar;
         power: 400/2;
         weight: 30;
@@ -37772,6 +37871,7 @@ item(FEAT_TRAINS, emu_651) {
 
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -37813,6 +37913,7 @@ item(FEAT_TRAINS, emu_651) {
         default: sw_651_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_651_subtypetext_mucar;
         power: 400/2;
         weight: 30;
@@ -38044,6 +38145,7 @@ item(FEAT_TRAINS, emu_719) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -38221,6 +38323,7 @@ item(FEAT_TRAINS, emu_7195000) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -38505,6 +38608,7 @@ item(FEAT_TRAINS, dmu_kiha85) {
         default: sw_KH85_gfx_mid;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         //cargo_subtype_text:           sw_KH85_subtypetext_main;
         power: 132;
         weight: 42;
@@ -38569,6 +38673,7 @@ item(FEAT_TRAINS, emu_21156) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -38610,6 +38715,7 @@ item(FEAT_TRAINS, emu_21156) {
         default: sw_21156_gfx_mucar_revcheck;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_21156_subtypetext_mucar;
         power: 480/2;
         weight: 23;
@@ -38674,6 +38780,7 @@ item(FEAT_TRAINS, emu_311) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -38715,6 +38822,7 @@ item(FEAT_TRAINS, emu_311) {
         default: sw_311_gfx_mucar_revcheck;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_311_subtypetext_mucar;
         power: 480/2;
         weight: 23;
@@ -38799,6 +38907,7 @@ item(FEAT_TRAINS, emu_313) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -38840,6 +38949,7 @@ item(FEAT_TRAINS, emu_313) {
         default: sw_313_gfx_mucar_revcheck;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_313_subtypetext_mucar;
         power: 740/2;
         weight: 24;
@@ -39134,6 +39244,7 @@ item(FEAT_TRAINS, emu_315) {
         default: sw_315_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_315_subtypetext_mucar;
         power: 400;
         weight: 31;
@@ -39330,6 +39441,7 @@ item(FEAT_TRAINS, emu_373) {
 
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -39371,6 +39483,7 @@ item(FEAT_TRAINS, emu_373) {
         default: sw_373_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         //cargo_subtype_text:           sw_373_subtypetext_mucar;
         power: 620/2;
         weight: 36;
@@ -39677,6 +39790,7 @@ item(FEAT_TRAINS, emu_383) {
 
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -39718,6 +39832,7 @@ item(FEAT_TRAINS, emu_383) {
         default: sw_383_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_383_subtypetext_mucar;
         power: 620/2;
         weight: 36;
@@ -40238,6 +40353,7 @@ item(FEAT_TRAINS, emu_jrw207) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -40279,6 +40395,7 @@ item(FEAT_TRAINS, emu_jrw207) {
         default: sw_207_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_207_subtypetext_mucar;
         power: 880/2;
         weight: 25;
@@ -40392,6 +40509,7 @@ item(FEAT_TRAINS, emu_221) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -40433,6 +40551,7 @@ item(FEAT_TRAINS, emu_221) {
         default: sw_221_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_221_subtypetext_mucar;
         power: 480/2;
         weight: 30;
@@ -40641,6 +40760,7 @@ item(FEAT_TRAINS, emu_223_0) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -40682,6 +40802,7 @@ item(FEAT_TRAINS, emu_223_0) {
         default: sw_223_0_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_223_0_subtypetext_mucar;
         power: 720/2;
         weight: 29;
@@ -40838,6 +40959,7 @@ item(FEAT_TRAINS, emu_223_1000) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -40879,6 +41001,7 @@ item(FEAT_TRAINS, emu_223_1000) {
         default: sw_223_1000_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_223_1000_subtypetext_mucar;
         power: 880/2;
         weight: 29;
@@ -41008,6 +41131,7 @@ item(FEAT_TRAINS, emu_225_0) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -41049,6 +41173,7 @@ item(FEAT_TRAINS, emu_225_0) {
         default: sw_225_0_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_225_0_subtypetext_mucar;
         power: 540/2;
         weight: 38;
@@ -41264,6 +41389,7 @@ item(FEAT_TRAINS, emu_225_5000) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -41305,6 +41431,7 @@ item(FEAT_TRAINS, emu_225_5000) {
         default: sw_225_5000_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_225_5000_subtypetext_mucar;
         power: 540/2;
         weight: 38;
@@ -41578,6 +41705,7 @@ item(FEAT_TRAINS, emu_227) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -41619,6 +41747,7 @@ item(FEAT_TRAINS, emu_227) {
         default: sw_227_gfx_227_0;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_227_subtypetext_227_0;
         power: 540/2;
         weight: 37;
@@ -41739,6 +41868,7 @@ item(FEAT_TRAINS, emu_271) {
         default: sw_271_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_271_subtypetext_mucar;
         power: 540;
         weight: 32;
@@ -41871,6 +42001,7 @@ item(FEAT_TRAINS, emu_281) {
         default: sw_281_gfx_mucar;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
         cargo_subtype_text: sw_281_subtypetext_mucar;
         power: 540;
         weight: 32;
@@ -42095,6 +42226,7 @@ item(FEAT_TRAINS, emu_321) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -42136,6 +42268,7 @@ item(FEAT_TRAINS, emu_321) {
         default: sw_321_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_321_subtypetext_321;
         power: 540/2;
         weight: 27;
@@ -42423,6 +42556,7 @@ item(FEAT_TRAINS, emu_323) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -42464,6 +42598,7 @@ item(FEAT_TRAINS, emu_323) {
         default: sw_323_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_323_subtypetext_323;
         power: 440/2;
         weight: 36;
@@ -42603,6 +42738,7 @@ item(FEAT_TRAINS, dmu_KH33) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -42643,6 +42779,7 @@ item(FEAT_TRAINS, dmu_KH33) {
         default: sw_JNR_KH_gfx_mucar;
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
         power: 132;
         weight: 40;
@@ -42834,6 +42971,7 @@ item(FEAT_TRAINS, emu_121) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -43071,6 +43209,7 @@ item(FEAT_TRAINS, emu_6000) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -43112,6 +43251,7 @@ item(FEAT_TRAINS, emu_6000) {
         default: sw_6000_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_6000_subtypetext_mucar;
         power: 640/2;
         weight: 28;
@@ -43235,6 +43375,7 @@ item(FEAT_TRAINS, emu_7200) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 21;
         running_cost_factor: 49;
 
@@ -43538,6 +43679,7 @@ item(FEAT_TRAINS, emu_8000) {
   reliability_decay : 23;
   cargo_capacity : param_capacity_express;
   loading_speed : param_loading_2D;
+        cargo_age_period : param_decay_express;
   cost_factor : 24;
   running_cost_factor : 48;
   speed : 130 km/h;
@@ -43573,8 +43715,10 @@ item(FEAT_TRAINS, emu_8000) {
  /*Multiple Unit Car*/
  livery_override(mu_car){
   default : sw_mu8000_main;
-  cargo_subtype_text : sw_8000_subtypetext_main; cargo_capacity : param_capacity_express;
+  cargo_subtype_text : sw_8000_subtypetext_main;
+  cargo_capacity : param_capacity_express;
   loading_speed : param_loading_2D;
+        cargo_age_period : param_decay_express;
   power : 800/2;
   weight : 37;
  }
@@ -43675,6 +43819,7 @@ item(FEAT_TRAINS, dmu_KH1000) {
 
         cargo_capacity: param_capacity_rapid;
         loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_local;
         cost_factor: 18;
         running_cost_factor: 48;
 
@@ -43963,6 +44108,7 @@ item(FEAT_TRAINS, emu_303) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -44004,6 +44150,7 @@ item(FEAT_TRAINS, emu_303) {
         default: sw_303_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_4D;
+        cargo_age_period: param_decay_local;
         //cargo_subtype_text:           sw_303_subtypetext_mucar;
         power: 600/2;
         weight: 28;
@@ -44379,6 +44526,7 @@ item(FEAT_TRAINS, emu_811) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 20;
         running_cost_factor: 50;
 
@@ -44420,6 +44568,7 @@ item(FEAT_TRAINS, emu_811) {
         default: sw_811_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_811_subtypetext_mucar;
         power: 600/2;
         weight: 28;
@@ -44786,6 +44935,7 @@ item(FEAT_TRAINS, emu_813) {
 
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cost_factor: 19;
         running_cost_factor: 49;
 
@@ -44827,6 +44977,7 @@ item(FEAT_TRAINS, emu_813) {
         default: sw_813_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
+        cargo_age_period: param_decay_local;
         cargo_subtype_text: sw_813_subtypetext_mucar;
         power: 600/2;
         weight: 28;

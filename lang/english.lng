@@ -693,7 +693,7 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 JGR_40_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
 
 # 52 Series 
-JGR_52_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+JGR_52_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # Nade 6100 Series
