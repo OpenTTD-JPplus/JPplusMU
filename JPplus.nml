@@ -30542,7 +30542,7 @@ switch(FEAT_TRAINS, SELF, sw_H100f_alone_check_init, (position_in_consist == 0 &
 }
 
 switch(FEAT_TRAINS, SELF, sw_H100_model_check, cargo_subtype) {
- 0: sw_H100_alone_check_init;
+ 1: sw_H100_alone_check_init;
  default: sw_H100_alone_check;
 }
 
@@ -30557,8 +30557,8 @@ switch(FEAT_TRAINS, PARENT, sw_H100_gfx_main, vehicle_is_reversed) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_H100_subtypetext_main, cargo_subtype) {
- 1: string(LV_STANDARD); // Standard(Ryosan-sha) livery
- 0: string(LV_INITIAL); // Experimental(Ryosan-senko-sha) livery
+ 1: string(LV_INITIAL); // Experimental(Ryosan-senko-sha) livery
+ default: string(LV_STANDARD); // Standard(Ryosan-sha) livery
 }
 
 
