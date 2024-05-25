@@ -1,0 +1,620 @@
+/*---JpyNML2 Generated---*/
+
+/*---SPRITESHEETS BLOCK---*/
+
+/*-Purchase Sprites-*/
+spriteset (spriteset_381_purchase,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/purchase_32bpp.png")     { tmpl_purchase_dh_32bpp(0, 0) }
+
+/*-Livery: JNR-*/
+
+  //kuha381-0
+  spriteset (spriteset_381_front_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_front_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std_rev(0, 26) }
+  spriteset (spriteset_381_revflip_front_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std(0, 26) }
+
+  spriteset (spriteset_381_back_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std(0, 26) }
+  spriteset (spriteset_381_rev_back_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_back_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std(0, 1) }
+
+  spriteset (spriteset_381_back_panto_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std(0, 26) }
+  spriteset (spriteset_381_rev_back_panto_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_back_panto_JNR_kuha381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-0.png")     { tmpl_std(0, 1) }
+
+  //kuha381-100
+  spriteset (spriteset_381_front_JNR_kuha381_100,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-100.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_front_JNR_kuha381_100,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-100.png")     { tmpl_std_rev(0, 26) }
+  spriteset (spriteset_381_revflip_front_JNR_kuha381_100,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-100.png")     { tmpl_std(0, 26) }
+
+  spriteset (spriteset_381_back_JNR_kuha381_100,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-100.png")     { tmpl_std(0, 26) }
+  spriteset (spriteset_381_rev_back_JNR_kuha381_100,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-100.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_back_JNR_kuha381_100,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuha-381-100.png")     { tmpl_std(0, 1) }
+
+  //kumoha381
+  spriteset (spriteset_381_front_JNR_kumoha381,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kumoha-381.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_front_JNR_kumoha381,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kumoha-381.png")     { tmpl_std_rev(0, 26) }
+  spriteset (spriteset_381_revflip_front_JNR_kumoha381,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kumoha-381.png")     { tmpl_std(0, 26) }
+
+  spriteset (spriteset_381_back_JNR_kumoha381,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kumoha-381.png")     { tmpl_std(0, 26) }
+  spriteset (spriteset_381_rev_back_JNR_kumoha381,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kumoha-381.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_back_JNR_kumoha381,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kumoha-381.png")     { tmpl_std(0, 1) }
+
+  //kuro 381-0
+  spriteset (spriteset_381_front_JNR_kuro381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-0.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_front_JNR_kuro381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-0.png")     { tmpl_std_rev(0, 26) }
+  spriteset (spriteset_381_revflip_front_JNR_kuro381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-0.png")     { tmpl_std(0, 26) }
+
+  spriteset (spriteset_381_back_JNR_kuro381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-0.png")     { tmpl_std(0, 26) }
+  spriteset (spriteset_381_rev_back_JNR_kuro381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-0.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_back_JNR_kuro381_0,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-0.png")     { tmpl_std(0, 1) }
+
+  //kuro 381-10
+  spriteset (spriteset_381_front_JNR_kuro381_10,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-10.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_front_JNR_kuro381_10,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-10.png")     { tmpl_std_rev(0, 26) }
+  spriteset (spriteset_381_revflip_front_JNR_kuro381_10,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-10.png")     { tmpl_std(0, 26) }
+
+  spriteset (spriteset_381_back_JNR_kuro381_10,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-10.png")     { tmpl_std(0, 26) }
+  spriteset (spriteset_381_rev_back_JNR_kuro381_10,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-10.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_back_JNR_kuro381_10,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-10.png")     { tmpl_std(0, 1) }
+
+  //kuro 381-50
+  spriteset (spriteset_381_front_JNR_kuro381_50,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-50.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_front_JNR_kuro381_50,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-50.png")     { tmpl_std_rev(0, 26) }
+  spriteset (spriteset_381_revflip_front_JNR_kuro381_50,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-50.png")     { tmpl_std(0, 26) }
+
+  spriteset (spriteset_381_back_JNR_kuro381_50,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-50.png")     { tmpl_std(0, 26) }
+  spriteset (spriteset_381_rev_back_JNR_kuro381_50,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-50.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_back_JNR_kuro381_50,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Kuro-381-50.png")     { tmpl_std(0, 1) }
+
+  //moha 381
+  spriteset (spriteset_381_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-381.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-381.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_mid_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-381.png")     { tmpl_std(0, 1) }
+
+  //moha 380
+  spriteset (spriteset_381_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-380-DualArm.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-380-DualArm.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-380-DualArm.png")     { tmpl_std(0, 1) }
+
+  //moha 380 single arm 2007
+  spriteset (spriteset_381_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-380-SingleArm.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-380-SingleArm.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_mid_panto_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Moha-380-SingleArm.png")     { tmpl_std(0, 1) }
+
+  //salo 381
+  spriteset (spriteset_381_mid_gr_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Salo-381.png")     { tmpl_std(0, 1) }
+  spriteset (spriteset_381_rev_mid_gr_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Salo-381.png")     { tmpl_std_rev(0, 1) }
+  spriteset (spriteset_381_revflip_mid_gr_JNR,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/JNR/Salo-381.png")     { tmpl_std(0, 1) }
+
+/*-Livery: JNR Panoramic-*/
+spriteset (spriteset_381_front_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_front_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_front_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_back_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_back_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_back_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_back_panto_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_back_panto_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_back_panto_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_panto_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_panto_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_panto_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_gr_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_gr_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_gr_JNR Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+
+/*-Livery: Yakumo-*/
+spriteset (spriteset_381_front_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_front_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_front_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_back_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_back_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_back_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_back_panto_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_back_panto_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_back_panto_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_panto_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_panto_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_panto_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_gr_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_gr_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_gr_Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+
+/*-Livery: Super Yakumo-*/
+spriteset (spriteset_381_front_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_front_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_front_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_back_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_back_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_back_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_back_panto_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_back_panto_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_back_panto_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_panto_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_panto_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_panto_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_gr_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_gr_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_gr_Super Yakumo,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+
+/*-Livery: Super Yakumo Panoramic-*/
+spriteset (spriteset_381_front_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_front_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_front_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_back_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_back_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_back_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_back_panto_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_back_panto_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_back_panto_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_panto_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_panto_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_panto_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+spriteset (spriteset_381_mid_gr_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+spriteset (spriteset_381_rev_mid_gr_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std_rev(0, 0) }
+spriteset (spriteset_381_revflip_mid_gr_Super Yakumo Panoramic,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/381/SPRITE.png")     { tmpl_std(0, 0) }
+
+/*---END OF SECTION---*/
+
+/*---REVERSE OVERRIDE SPRITES SWITCH BLOCK---*/
+/*---END OF SECTION---*/
+
+/*---REVERSE LIVERY SWITCH BLOCK---*/
+switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_rev_front_JNR;
+  1: spriteset_381_rev_front_JNR Panoramic;
+  2: spriteset_381_rev_front_Yakumo;
+  3: spriteset_381_rev_front_Super Yakumo;
+  4: spriteset_381_rev_front_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_revflip_front_JNR;
+  1: spriteset_381_revflip_front_JNR Panoramic;
+  2: spriteset_381_revflip_front_Yakumo;
+  3: spriteset_381_revflip_front_Super Yakumo;
+  4: spriteset_381_revflip_front_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_rev_back_JNR;
+  1: spriteset_381_rev_back_JNR Panoramic;
+  2: spriteset_381_rev_back_Yakumo;
+  3: spriteset_381_rev_back_Super Yakumo;
+  4: spriteset_381_rev_back_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_revflip_back_JNR;
+  1: spriteset_381_revflip_back_JNR Panoramic;
+  2: spriteset_381_revflip_back_Yakumo;
+  3: spriteset_381_revflip_back_Super Yakumo;
+  4: spriteset_381_revflip_back_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_rev_back_panto_JNR;
+  1: spriteset_381_rev_back_panto_JNR Panoramic;
+  2: spriteset_381_rev_back_panto_Yakumo;
+  3: spriteset_381_rev_back_panto_Super Yakumo;
+  4: spriteset_381_rev_back_panto_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_revflip_back_panto_JNR;
+  1: spriteset_381_revflip_back_panto_JNR Panoramic;
+  2: spriteset_381_revflip_back_panto_Yakumo;
+  3: spriteset_381_revflip_back_panto_Super Yakumo;
+  4: spriteset_381_revflip_back_panto_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_rev_mid_JNR;
+  1: spriteset_381_rev_mid_JNR Panoramic;
+  2: spriteset_381_rev_mid_Yakumo;
+  3: spriteset_381_rev_mid_Super Yakumo;
+  4: spriteset_381_rev_mid_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_revflip_mid_JNR;
+  1: spriteset_381_revflip_mid_JNR Panoramic;
+  2: spriteset_381_revflip_mid_Yakumo;
+  3: spriteset_381_revflip_mid_Super Yakumo;
+  4: spriteset_381_revflip_mid_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_rev_mid_panto_JNR;
+  1: spriteset_381_rev_mid_panto_JNR Panoramic;
+  2: spriteset_381_rev_mid_panto_Yakumo;
+  3: spriteset_381_rev_mid_panto_Super Yakumo;
+  4: spriteset_381_rev_mid_panto_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_revflip_mid_panto_JNR;
+  1: spriteset_381_revflip_mid_panto_JNR Panoramic;
+  2: spriteset_381_revflip_mid_panto_Yakumo;
+  3: spriteset_381_revflip_mid_panto_Super Yakumo;
+  4: spriteset_381_revflip_mid_panto_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_mid_gr_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_rev_mid_gr_JNR;
+  1: spriteset_381_rev_mid_gr_JNR Panoramic;
+  2: spriteset_381_rev_mid_gr_Yakumo;
+  3: spriteset_381_rev_mid_gr_Super Yakumo;
+  4: spriteset_381_rev_mid_gr_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_gr_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_381_revflip_mid_gr_JNR;
+  1: spriteset_381_revflip_mid_gr_JNR Panoramic;
+  2: spriteset_381_revflip_mid_gr_Yakumo;
+  3: spriteset_381_revflip_mid_gr_Super Yakumo;
+  4: spriteset_381_revflip_mid_gr_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
+  1: sw_381_gfx_revflip_front_livery;
+  default: sw_381_gfx_rev_front_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
+  1: sw_381_gfx_revflip_back_livery;
+  default: sw_381_gfx_rev_back_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_back_panto_flippedcheck, vehicle_is_flipped) {
+  1: sw_381_gfx_revflip_back_panto_livery;
+  default: sw_381_gfx_rev_back_panto_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_mid_flippedcheck, vehicle_is_flipped) {
+  1: sw_381_gfx_revflip_mid_livery;
+  default: sw_381_gfx_rev_mid_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_mid_panto_flippedcheck, vehicle_is_flipped) {
+  1: sw_381_gfx_revflip_mid_panto_livery;
+  default: sw_381_gfx_rev_mid_panto_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_mid_gr_flippedcheck, vehicle_is_flipped) {
+  1: sw_381_gfx_revflip_mid_gr_livery;
+  default: sw_381_gfx_rev_mid_gr_livery;
+}
+/*---END OF SECTION---*/
+
+/*---REVERSE CONSIST SWITCH BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_JNR_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%3]){
+  0: sw_381_gfx_rev_mid_panto_flippedcheck;
+  2: sw_381_gfx_rev_mid_gr_flippedcheck;
+  default: sw_381_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_JNR Panoramic_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+  0: sw_381_gfx_rev_mid_panto_flippedcheck;
+  default: sw_381_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_Yakumo_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%3]){
+  0: sw_381_gfx_rev_mid_panto_flippedcheck;
+  2: sw_381_gfx_rev_mid_gr_flippedcheck;
+  default: sw_381_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_Super Yakumo_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%3]){
+  0: sw_381_gfx_rev_mid_panto_flippedcheck;
+  2: sw_381_gfx_rev_mid_gr_flippedcheck;
+  default: sw_381_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_Super Yakumo Panoramic_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+  0: sw_381_gfx_rev_mid_panto_flippedcheck;
+  default: sw_381_gfx_rev_mid_flippedcheck;
+}
+
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_JNR, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  default: sw_381_gfx_rev_pantograph_pos_JNR_sw0;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_JNR Panoramic, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  default: sw_381_gfx_rev_pantograph_pos_JNR Panoramic_sw0;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_Yakumo, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  default: sw_381_gfx_rev_pantograph_pos_Yakumo_sw0;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_Super Yakumo, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  default: sw_381_gfx_rev_pantograph_pos_Super Yakumo_sw0;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_Super Yakumo Panoramic, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  default: sw_381_gfx_rev_pantograph_pos_Super Yakumo Panoramic_sw0;
+}
+
+switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: sw_381_gfx_rev_pantograph_pos_JNR;
+  1: sw_381_gfx_rev_pantograph_pos_JNR Panoramic;
+  2: sw_381_gfx_rev_pantograph_pos_Yakumo;
+  3: sw_381_gfx_rev_pantograph_pos_Super Yakumo;
+  4: sw_381_gfx_rev_pantograph_pos_Super Yakumo Panoramic;
+}
+/*---END OF SECTION---*/
+
+/*---REVERSE SYSTEM SWITCH BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+  0: sw_381_gfx_rev_back_flippedcheck;
+  default: sw_381_gfx_rev_back_panto_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_frontback_nomucars,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+  1: sw_381_gfx_rev_front_flippedcheck;
+  0: sw_381_gfx_rev_back_pantocheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_frontback_aftermucars,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+  1: sw_381_gfx_rev_back_pantocheck;
+  0: sw_381_gfx_rev_front_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_frontback_mucarcheck,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_381_gfx_rev_frontback_aftermucars;
+  default: sw_381_gfx_rev_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_frontback_sameid,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  2075: sw_381_gfx_rev_frontback_mucarcheck;
+  1000: sw_381_gfx_rev_front_flippedcheck;
+  default: sw_381_gfx_rev_back_pantocheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_frontback,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  2075: sw_381_gfx_rev_frontback_sameid;
+  1000: sw_381_gfx_rev_back_pantocheck;
+  default: sw_381_gfx_rev_front_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_381_gfx_rev_pantograph_pos;
+  2075: sw_381_gfx_rev_frontback;
+}
+/*---END OF SECTION---*/
+
+/*---OVERRIDE SPRITES SWITCH BLOCK---*/
+/*---END OF SECTION---*/
+
+/*---CONSIST SWITCH BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_JNR_sw0, position_in_vehid_chain%3){
+  0: spriteset_381_mid_panto_JNR;
+  2: spriteset_381_mid_gr_JNR;
+  default: spriteset_381_mid_JNR;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_JNR Panoramic_sw0, position_in_vehid_chain%2){
+  0: spriteset_381_mid_panto_JNR Panoramic;
+  default: spriteset_381_mid_JNR Panoramic;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_Yakumo_sw0, position_in_vehid_chain%3){
+  0: spriteset_381_mid_panto_Yakumo;
+  2: spriteset_381_mid_gr_Yakumo;
+  default: spriteset_381_mid_Yakumo;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_Super Yakumo_sw0, position_in_vehid_chain%3){
+  0: spriteset_381_mid_panto_Super Yakumo;
+  2: spriteset_381_mid_gr_Super Yakumo;
+  default: spriteset_381_mid_Super Yakumo;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_Super Yakumo Panoramic_sw0, position_in_vehid_chain%2){
+  0: spriteset_381_mid_panto_Super Yakumo Panoramic;
+  default: spriteset_381_mid_Super Yakumo Panoramic;
+}
+
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_JNR, num_vehs_in_vehid_chain){
+  default: sw_381_gfx_pantograph_pos_JNR_sw0;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_JNR Panoramic, num_vehs_in_vehid_chain){
+  default: sw_381_gfx_pantograph_pos_JNR Panoramic_sw0;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_Yakumo, num_vehs_in_vehid_chain){
+  default: sw_381_gfx_pantograph_pos_Yakumo_sw0;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_Super Yakumo, num_vehs_in_vehid_chain){
+  default: sw_381_gfx_pantograph_pos_Super Yakumo_sw0;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_Super Yakumo Panoramic, num_vehs_in_vehid_chain){
+  default: sw_381_gfx_pantograph_pos_Super Yakumo Panoramic_sw0;
+}
+/*---END OF SECTION---*/
+
+/*---FRONT/BACK CAR SWITCH BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantocheck_JNR, position_in_vehid_chain){
+  0: spriteset_381_back_JNR;
+  default: spriteset_381_back_panto_JNR;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_frontback_flipcheck_JNR, vehicle_is_flipped){
+  0: spriteset_381_front_JNR;
+  default: sw_381_gfx_pantocheck_JNR;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_frontback_JNR, vehicle_is_reversed){
+  0: sw_381_gfx_frontback_flipcheck_JNR;
+  default: sw_381_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantocheck_JNR Panoramic, position_in_vehid_chain){
+  0: spriteset_381_back_JNR Panoramic;
+  default: spriteset_381_back_panto_JNR Panoramic;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_frontback_flipcheck_JNR Panoramic, vehicle_is_flipped){
+  0: spriteset_381_front_JNR Panoramic;
+  default: sw_381_gfx_pantocheck_JNR Panoramic;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_frontback_JNR Panoramic, vehicle_is_reversed){
+  0: sw_381_gfx_frontback_flipcheck_JNR Panoramic;
+  default: sw_381_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantocheck_Yakumo, position_in_vehid_chain){
+  0: spriteset_381_back_Yakumo;
+  default: spriteset_381_back_panto_Yakumo;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_frontback_flipcheck_Yakumo, vehicle_is_flipped){
+  0: spriteset_381_front_Yakumo;
+  default: sw_381_gfx_pantocheck_Yakumo;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_frontback_Yakumo, vehicle_is_reversed){
+  0: sw_381_gfx_frontback_flipcheck_Yakumo;
+  default: sw_381_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantocheck_Super Yakumo, position_in_vehid_chain){
+  0: spriteset_381_back_Super Yakumo;
+  default: spriteset_381_back_panto_Super Yakumo;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_frontback_flipcheck_Super Yakumo, vehicle_is_flipped){
+  0: spriteset_381_front_Super Yakumo;
+  default: sw_381_gfx_pantocheck_Super Yakumo;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_frontback_Super Yakumo, vehicle_is_reversed){
+  0: sw_381_gfx_frontback_flipcheck_Super Yakumo;
+  default: sw_381_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantocheck_Super Yakumo Panoramic, position_in_vehid_chain){
+  0: spriteset_381_back_Super Yakumo Panoramic;
+  default: spriteset_381_back_panto_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_frontback_flipcheck_Super Yakumo Panoramic, vehicle_is_flipped){
+  0: spriteset_381_front_Super Yakumo Panoramic;
+  default: sw_381_gfx_pantocheck_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_frontback_Super Yakumo Panoramic, vehicle_is_reversed){
+  0: sw_381_gfx_frontback_flipcheck_Super Yakumo Panoramic;
+  default: sw_381_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+/*---MID CAR SWITCH BLOCK---*/
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_mucar_revcheck_mid_JNR, vehicle_is_reversed){
+  0: sw_381_gfx_pantograph_pos_JNR;
+  default: sw_381_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_mucar_revcheck_mid_JNR Panoramic, vehicle_is_reversed){
+  0: sw_381_gfx_pantograph_pos_JNR Panoramic;
+  default: sw_381_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_mucar_revcheck_mid_Yakumo, vehicle_is_reversed){
+  0: sw_381_gfx_pantograph_pos_Yakumo;
+  default: sw_381_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_mucar_revcheck_mid_Super Yakumo, vehicle_is_reversed){
+  0: sw_381_gfx_pantograph_pos_Super Yakumo;
+  default: sw_381_gfx_rev_idcheck;
+}
+switch(FEAT_TRAINS, PARENT, sw_381_gfx_mucar_revcheck_mid_Super Yakumo Panoramic, vehicle_is_reversed){
+  0: sw_381_gfx_pantograph_pos_Super Yakumo Panoramic;
+  default: sw_381_gfx_rev_idcheck;
+}
+/*---END OF SECTION---*/
+
+/*---LIVERY REFIT BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_381_gfx_mucar,  cargo_subtype) {
+  0: sw_381_gfx_mucar_revcheck_mid_JNR;
+  1: sw_381_gfx_mucar_revcheck_mid_JNR Panoramic;
+  2: sw_381_gfx_mucar_revcheck_mid_Yakumo;
+  3: sw_381_gfx_mucar_revcheck_mid_Super Yakumo;
+  4: sw_381_gfx_mucar_revcheck_mid_Super Yakumo Panoramic;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_main,  cargo_subtype) {
+  0: sw_381_gfx_frontback_JNR;
+  1: sw_381_gfx_frontback_JNR Panoramic;
+  2: sw_381_gfx_frontback_Yakumo;
+  3: sw_381_gfx_frontback_Super Yakumo;
+  4: sw_381_gfx_frontback_Super Yakumo Panoramic;
+}
+/*---END OF SECTION---*/
+
+/*---LIVERY MENU BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_381_subtypetext_mucar, cargo_subtype) {
+  0: string(381_LV_JNR);
+  1: string(381_LV_JNR Panoramic);
+  2: string(381_LV_Yakumo);
+  3: string(381_LV_Super Yakumo);
+  4: string(381_LV_Super Yakumo Panoramic);
+}
+switch(FEAT_TRAINS, SELF, sw_381_subtypetext_main, cargo_subtype) {
+  0: string(381_LV_JNR);
+  1: string(381_LV_JNR Panoramic);
+  2: string(381_LV_Yakumo);
+  3: string(381_LV_Super Yakumo);
+  4: string(381_LV_Super Yakumo Panoramic);
+}
+/*---END OF SECTION---*/
+
+/*---COUPLING BLOCK---*/
+switch(FEAT_TRAINS, SELF, sw_381_attach_vehid, [vehicle_type_id == 2075 || vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+}
+/*---END OF SECTION---*/
+
+/*---PROPERTY BLOCK---*/
+item(FEAT_TRAINS, emu_381) {
+    property {
+        name:                         string(EMU_381);
+        introduction_date:            date(1973, 05, 01);
+        model_life:                   9;
+        vehicle_life:                 51;
+        reliability_decay:            22;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_1D;
+        cost_factor:                  19;
+        running_cost_factor:          49;
+        speed:                        120 km/h;
+        track_type:                   NARROW_OHLE;
+        power:                        960 kW;
+        weight:                       42 ton;
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  1;
+        ai_engine_rank:               0;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_381_gfx_main;
+        purchase:                     spriteset_381_purchase;
+        additional_text:              return string(EMU_381_DESC);
+        cargo_subtype_text:           sw_381_subtypetext_main;
+        can_attach_wagon:             sw_381_attach_vehid;
+        //start_stop:                   ;
+    }
+    /*Multiple Unit Car*/
+      livery_override(mu_car){
+        default:                      sw_381_gfx_mucar;
+        cargo_capacity:               param_capacity_express;
+        loading_speed:                param_loading_1D;
+        cargo_subtype_text:           sw_381_subtypetext_mucar;
+        power: 480;
+        weight: 33;
+      }
+}
+/*---END OF SECTION---*/

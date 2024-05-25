@@ -42,6 +42,7 @@ emu_165,
 /*JNR Express DC_AC EMU*/
 /*JNR Limited Express DC EMU*/
 emu_151,
+emu_381,
 /*JNR Limited Express DC_AC EMU*/
 emu_485,
 emu_583,
