@@ -119,6 +119,7 @@ JRH_721:721 Series {WHITE}(EMU){BLACK}
 JRH_731:731 Series {WHITE}(EMU){BLACK}
 JRH_733:733 Series {WHITE}(EMU){BLACK}
 JRH_735:735 Series {WHITE}(EMU){BLACK}
+JRH_737:737 Series {WHITE}(EMU){BLACK}
 
 JRH_785:785 Series {WHITE}(EMU){BLACK}
 JRH_789:789 Series {WHITE}(EMU){BLACK}
@@ -127,6 +128,7 @@ JRH_kiha130:KiHa 130 Series {WHITE}(DMU){BLACK}
 JRH_kiha150:KiHa 150 Series {WHITE}(DMU){BLACK}
 JRH_kiha141:KiHa 141 Series {WHITE}(DMU){BLACK}
 JRH_201:KiHa 201 Series {WHITE}(DMU){BLACK}
+JRH_H100:H100 Series {WHITE}(DMU){BLACK}
 
 JRH_261:KiHa 261 Series {WHITE}(DMU){BLACK}
 JRH_281:KiHa 281 Series {WHITE}(DMU){BLACK}
@@ -817,6 +819,10 @@ JRH_733emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}U
 # 735 Series
 JRH_735emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 721-735 series EMUs.{}
 
+# 737 Series
+JRH_737emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Regional Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
+
+
 
 # 785 Series
 JRH_785emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
@@ -835,6 +841,9 @@ JRH_kiha150_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}
 
 # KiHa 201
 JRH_kiha201_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}{}{TINYFONT}{WHITE}Compatible with 731 Series EMU.{}
+
+# H100
+JRH_H100_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}General Passengers / DMU Type{}{}{BLACK}Operators: {GOLD}JR {DKGREEN}Hokkaido{}
 
 
 # 107 Series

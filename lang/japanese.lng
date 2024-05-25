@@ -113,6 +113,7 @@ JRH_721:721系 {WHITE}(電車){BLACK}
 JRH_731:731系 {WHITE}(電車){BLACK}
 JRH_733:733系 {WHITE}(電車){BLACK}
 JRH_735:735系 {WHITE}(電車){BLACK}
+JRH_737:737系 {WHITE}(電車){BLACK}
 
 JRH_785:785系 {WHITE}(電車){BLACK}
 JRH_789:789系 {WHITE}(電車){BLACK}
@@ -121,6 +122,7 @@ JRH_kiha130:キハ130系 {WHITE}(気動車){BLACK}
 JRH_kiha150:キハ150系 {WHITE}(気動車){BLACK}
 JRH_kiha141:キハ141系 {WHITE}(気動車){BLACK}
 JRH_201:キハ201系 {WHITE}(気動車){BLACK}
+JRH_H100:H100系 {WHITE}(気動車){BLACK}
 
 JRH_261:キハ261系 {WHITE}(気動車){BLACK}
 JRH_281:キハ281系 {WHITE}(気動車){BLACK}
@@ -794,6 +796,10 @@ JRH_733emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用�
 # 735 Series
 JRH_735emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}721～735系と互換性があります。{}
 
+# 737 Series
+JRH_737emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}
+
+
 
 # 785 Series
 JRH_785emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}
@@ -812,6 +818,9 @@ JRH_kiha150_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用
 
 # KiHa 201
 JRH_kiha201_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}通勤/気動車{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}{}{TINYFONT}{WHITE}731系と互換性があります。{}
+
+# H100
+JRH_H100_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}一般/気動車{}{}{BLACK}所属会社: {GOLD}JR {DKGREEN}北海道{}
 
 
 # 107 Series

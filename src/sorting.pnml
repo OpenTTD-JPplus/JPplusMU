@@ -64,6 +64,7 @@ dmu_kiha183,
 /*JR Hokkaido*/
 /*JRH Regional AC EMU*/
 emu_721,
+emu_737,
 /*JRH Commuter AC EMU*/
 emu_731,
 emu_733,
@@ -75,6 +76,7 @@ emu_789,
 dmu_kiha130,
 dmu_kiha141,
 dmu_kiha150,
+dmu_H100,
 /*JRH Commuter DMU*/
 dmu_kiha201,
 /*JRH Limited Express DMU*/

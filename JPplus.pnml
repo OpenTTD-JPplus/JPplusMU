@@ -91,6 +91,8 @@
 #include "src/JRH/DMU/KH130_series.pnml"
 #include "src/JRH/DMU/KH141_series.pnml"
 //#include "src/JRH/DMU/KH201_series.pnml"
+#include "src/JRH/EMU/737_series.pnml"
+#include "src/JRH/DMU/H100_series.pnml"
 
 //JR-East
 #include "src/JRE/DMU/KH110_series.pnml"
