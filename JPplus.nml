@@ -26227,9 +26227,9 @@ switch(FEAT_TRAINS, SELF, sw_381_gfx_mucar,  cargo_subtype) {
   1: sw_583_gfx_pantograph_pos_gr_over7car;
   2: sw_583_gfx_pantograph_pos_gr_over7car;
   3: sw_583_gfx_pantograph_pos_gr_over4car;
-  4..5: sw_583_gfx_pantograph_pos_over6car;
+  4..5: sw_381_gfx_pantograph_pos_special_over6extra;
   6..7: sw_381_gfx_pantograph_pos_special_over6extra;
-  8..9: sw_583_gfx_pantograph_pos_over6car;
+  8..9: sw_381_gfx_pantograph_pos_special_over6extra;
   10..14: sw_381_gfx_pantograph_pos_std_withgr;
 }
 switch(FEAT_TRAINS, PARENT, sw_381_gfx_mucar_revcheck, vehicle_is_reversed){
