@@ -2,7 +2,7 @@
 # This is the English language file
 
 # GRF name and description definitions
-STR_GRF_NAME:JP+ Multiple Units v0.4.5
+STR_GRF_NAME:JP+ Multiple Units (v0.5.0)
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Takamaro{}Erato{}StandUserLeon{}Yozora{}Emperor Jake{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -96,6 +96,8 @@ JNR_165 :165/169 Series {WHITE}(EMU){BLACK}
 
 JNR_181 :151/161/181 Series {WHITE}(EMU){BLACK}
 
+JNR_381 :381 Series {WHITE}(EMU){BLACK}
+
 JNR_485:481/483/485/489 Series {WHITE}(EMU){BLACK}
 
 JNR_583 :581/583 Series {WHITE}(EMU){BLACK}
@@ -112,6 +114,8 @@ JNR_kiha54 :KiHa 54 Series {WHITE}(DMU){BLACK}
 JNR_kiha58 :KiHa 58 Series {WHITE}(DMU){BLACK}
 
 JNR_kiha80 :KiHa 80 Series {WHITE}(DMU){BLACK}
+JNR_kiha181 :KiHa 181 Series {WHITE}(DMU){BLACK}
+JNR_kiha183 :KiHa 183 Series {WHITE}(DMU){BLACK}
 
 JRH_721:721 Series {WHITE}(EMU){BLACK}
 JRH_731:731 Series {WHITE}(EMU){BLACK}
@@ -377,6 +381,22 @@ E257_LV_E257_2000: {PUSH_COLOUR}{WHITE}-2000{POP_COLOUR} Peninsula Blue
 E257_LV_E257_2500: {PUSH_COLOUR}{WHITE}-2500{POP_COLOUR} Peninsula Blue
 E257_LV_E257_5000: {PUSH_COLOUR}{WHITE}-5000{POP_COLOUR} Green
 E257_LV_E257_5500: {PUSH_COLOUR}{WHITE}-5500{POP_COLOUR} Green
+
+emu381_LV_JNR_1: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuha 381-0 / Kuha 381-0
+emu381_LV_JNR_2: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuha 381-0 / Kuha 381-100
+emu381_LV_JNR_3: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuha 381-100 / Kuha 381-100
+emu381_LV_JNR_4: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuha 381-100 / Kumoha 381
+emu381_LV_JNR_5: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuro 381-0 / Kuha 381-0
+emu381_LV_JNR_6: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuro 381-0 / Kuha 381-100
+emu381_LV_JNR_7: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuro 381-10 / Kuha 381-0
+emu381_LV_JNR_8: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuro 381-10 / Kuha 381-100
+emu381_LV_JNR_9: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuro 381-50 / Kuha 381-0
+emu381_LV_JNR_10: {PUSH_COLOUR}{WHITE}JNR{POP_COLOUR} Kuro 381-50 / Kuha 381-100
+emu381_LV_Yakumo_1: {PUSH_COLOUR}{WHITE}Yakumo{POP_COLOUR} Kuha 381-0 / Kuha 381-0
+emu381_LV_Yakumo_2: {PUSH_COLOUR}{WHITE}Yakumo{POP_COLOUR} Kuha 381-0 / Kuha 381-100
+emu381_LV_SuperYakumo_1: {PUSH_COLOUR}{WHITE}Super Yakumo{POP_COLOUR} Kuha 381-0 / Kuha 381-0
+emu381_LV_SuperYakumo_2: {PUSH_COLOUR}{WHITE}Super Yakumo{POP_COLOUR} Kuro 381-0 / Kuha 381-100
+emu381_LV_SuperYakumo_3: {PUSH_COLOUR}{WHITE}Super Yakumo{POP_COLOUR} Kuro 380 / Kuha 381-100
 
 
 # Legacy - No need to edit/translate
@@ -689,7 +709,7 @@ DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3f
 JGR_40_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}
 
 # 52 Series 
-JGR_52_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+JGR_52_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # Nade 6100 Series
@@ -761,6 +781,8 @@ JNR_165_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 # 181 Series
 JNR_181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
+# 381 Series
+JNR_381_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {ORANGE}Central {BLUE}West {}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 485 Series
 JNR_485_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {DKGREEN}Hokkaido {GREEN}East {BLUE}West {RED}Kyushu{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
@@ -769,7 +791,7 @@ JNR_485_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 JNR_583_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DC-AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 # 781 Series
-JRH_781emu_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Liveries: {GOLD}JNR & JR Hokkaido {GREEN}(refittable){}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}
+JNR_781_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / AC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # KiHa 30
@@ -795,6 +817,12 @@ JNR_kiha58_DESC :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}U
 
 # KiHa 80 Series
 JNR_kiha80_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido {ORANGE}Central{}{BLACK}Liveries: {GOLD}Kiha81　/ Kiha82{}
+
+# KiHa 181 Series
+JNR_kiha181_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {BLUE}West {LTBLUE}Shikoku{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
+
+# KiHa 183 Series
+JNR_kiha183_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Limited Express Passengers / DMU Type{}{BLACK}Operators: {GOLD}JNR / JR {DKGREEN}Hokkaido{}{BLACK}Liveries: {GOLD}Various {GREEN}(refittable){}
 
 
 # 721 Series

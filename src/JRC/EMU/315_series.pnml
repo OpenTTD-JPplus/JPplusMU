@@ -163,7 +163,7 @@ switch(FEAT_TRAINS, SELF, sw_315_gfx_rev_frontback,
   default: sw_315_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_315_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000: sw_315_gfx_rev_pantograph_pos;
+  1000: sw_315_gfx_rev_pantograph_pos_jrc;
   2071: sw_315_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
@@ -284,6 +284,7 @@ item(FEAT_TRAINS, emu_315) {
         default:                      sw_315_gfx_mucar;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_3D;
+        cargo_age_period:             param_decay_local;
         //cargo_subtype_text:           sw_315_subtypetext_mucar;
         power: 400;
         weight: 31;

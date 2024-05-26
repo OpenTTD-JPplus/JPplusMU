@@ -52,6 +52,8 @@
 #include "src/JNR/DMU/KH54_series.pnml"
 #include "src/JNR/DMU/KH58_series.pnml"
 #include "src/JNR/DMU/KH80_series.pnml"
+#include "src/JNR/DMU/KH181_series.pnml"
+#include "src/JNR/DMU/KH183_series.pnml"
 #include "src/JNR/EMU/70_series.pnml"
 #include "src/JNR/EMU/80_series.pnml"
 
@@ -68,6 +70,7 @@
 #include "src/JNR/EMU/211_series.pnml"
 #include "src/JNR/EMU/213_series.pnml"
 
+#include "src/JNR/EMU/381_series.pnml"
 
 #include "src/JNR/EMU/401_series.pnml"
 #include "src/JNR/EMU/403_series.pnml"
@@ -80,6 +83,7 @@
 
 #include "src/JNR/EMU/581_583_series.pnml"
 
+#include "src/JNR/EMU/781_series.pnml"
 
 #include "src/JNR/EMU/711_series.pnml"
 #include "src/JNR/EMU/713_series.pnml"

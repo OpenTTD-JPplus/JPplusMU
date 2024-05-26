@@ -149,14 +149,6 @@ switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_pantograph_pos_jre215_sw0, [STORE_TEMP(
   6: sw_215_gfx_rev_mid_b_flippedcheck;
   default: sw_215_gfx_rev_mid_a_flippedcheck;
 }
-
-switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_pantograph_pos_jre215, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
-  default: sw_215_gfx_rev_pantograph_pos_jre215_sw0;
-}
-
-switch(FEAT_TRAINS,SELF, sw_215_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-  0: sw_215_gfx_rev_pantograph_pos_jre215;
-}
 /*---END OF SECTION---*/
 
 /*---REVERSE SYSTEM SWITCH BLOCK---*/
@@ -194,7 +186,7 @@ switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_frontback,
   default: sw_215_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_215_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000: sw_215_gfx_rev_pantograph_pos;
+  1000: sw_215_gfx_rev_pantograph_pos_jre215_sw0;
   2068: sw_215_gfx_rev_frontback;
 }
 /*---END OF SECTION---*/
@@ -272,6 +264,7 @@ item(FEAT_TRAINS, emu_215) {
         reliability_decay:            24;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
         cost_factor:                  20;
         running_cost_factor:          50;
         speed:                        120 km/h;
@@ -309,6 +302,7 @@ item(FEAT_TRAINS, emu_215) {
         default:                      sw_215_gfx_mucar;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
         //cargo_subtype_text:           sw_215_subtypetext_mucar;
         power: 240;
         weight: 35;

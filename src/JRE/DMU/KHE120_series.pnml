@@ -71,6 +71,7 @@ item(FEAT_TRAINS, dmu_KHE120) {
 
         cargo_capacity:               param_capacity_rapid;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
         cost_factor:                  20;
         running_cost_factor:          50;
 

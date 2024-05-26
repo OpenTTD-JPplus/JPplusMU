@@ -2,8 +2,10 @@
 # This is the Japanese language file
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+ Multiple Units v0.4.5
-STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}は日本の風景をもっと豊かに鉄道車両を追加します。当GRF利用の際には、狭軌を含むレールセットが必要です。{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Takamaro{}Erato{}StandUserLeon{}Yozora{}Emperor Jake{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
+
+STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.5.0)
+STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}は日本の風景をもっと豊かに鉄道車両を追加します。当GRF利用の際には、狭軌を含むレールセットが必要です。{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Takamaro{}Erato{}StandUserLeon{}Yozora{}Emperor Jake{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
+
 
 
 
@@ -769,7 +771,7 @@ JNR_485_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種
 JNR_583_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 781 Series
-JRH_781emu_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}国鉄色 / 新塗装色 {GREEN}(換装可能){}
+JNR_781_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}国鉄色 / 新塗装色 {GREEN}(換装可能){}
 
 
 # KiHa 30
@@ -795,6 +797,9 @@ JNR_kiha58_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用�
 
 # KiHa 80 Series
 JNR_kiha80_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道 {ORANGE}東海{}{BLACK}塗装: {GOLD}キハ81/キハ82 {GREEN}(換装可能)
+
+# KiHa 183 Series
+JNR_kiha183_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/気動車{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道 {ORANGE}東海{}{BLACK}塗装: {GOLD}キハ81/キハ82 {GREEN}(換装可能)
 
 
 # 721 Series

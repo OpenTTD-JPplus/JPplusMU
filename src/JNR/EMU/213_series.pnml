@@ -58,7 +58,7 @@ switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_jrw, vehicle_is_reversed){
 
 //213 Shonan
 switch(FEAT_TRAINS, PARENT, sw_213_gfx_mucar_revcheck_shonan, vehicle_is_reversed){
- 0: spriteset_213_mid_jrw;
+ 0: spriteset_213_mid_shonan;
  default: sw_211group_gfx_rev_idcheck;
 }
 /*---END OF SECTION---*/
@@ -115,6 +115,7 @@ item(FEAT_TRAINS, emu_213) {
 
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
         cost_factor:                  20;
         running_cost_factor:          50;
 
@@ -156,6 +157,7 @@ item(FEAT_TRAINS, emu_213) {
         default:                      sw_213_gfx_mucar;
         cargo_capacity:               param_capacity_local;
         loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
         cargo_subtype_text:           sw_213_subtypetext_mucar;
         power: 480/2;
         weight: 24;

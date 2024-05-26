@@ -17,14 +17,15 @@ item(FEAT_TRAINS, mu_car) {
                 speed: 0 km/h;
                 power: 0 hp;
                 cargo_capacity: 1;
+                cargo_age_period: 185;
                 weight: 0 ton;
                 tractive_effort_coefficient: 0.3;
                 air_drag_coefficient: 0;
                 reliability_decay: 20;
                 refittable_cargo_classes: bitmask(CC_PASSENGERS);
-                cargo_age_period: 185;
                 refit_cost: 0;
                 track_type: NARROW_NOEL;
+                misc_flags: bitmask(TRAIN_FLAG_TILT);
                 ai_special_flag: AI_FLAG_PASSENGER;
                 running_cost_base: RUNNING_COST_DIESEL;
                 engine_class: ENGINE_CLASS_STEAM;
