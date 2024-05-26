@@ -2,8 +2,10 @@
 # This is the Japanese language file
 
 # GRF name and description definitions
+
 STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.5.0)
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}は日本の風景をもっと豊かに鉄道車両を追加します。当GRF利用の際には、狭軌を含むレールセットが必要です。{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Takamaro{}Erato{}StandUserLeon{}Yozora{}Emperor Jake{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
+
 
 
 
@@ -17,7 +19,7 @@ STR_PARAM_LOW        :低い
 STR_PARAM_HIGH       :高い
 STR_PARAM_VHIGH      :特に高い
 STR_PARAM_REAL       :現実的
-STR_PARAM_CUSTOM   :カスタム (以下で調整)
+STR_PARAM_CUSTOM   :{RED}カスタム (以下で調整)
 STR_PARAM_NAME_DISABLETRAINS  :列車を無効化する
 STR_PARAM_DESC_DISABLETRAINS  :なんでこれを使うかわからないけど、設定はあるよ。{} ただ単に自動車だけを使いたいのかな？
 STR_PARAM_NAME_DISABLERV  :自動車・路面電車を無効化する
@@ -39,7 +41,7 @@ STR_PARAM_NAME_CUSTOMLOCAL :普通の収容量
 STR_PARAM_NAME_CUSTOMRAPID :快速の収容量
 STR_PARAM_NAME_CUSTOMEXPRESS :特急の収容量
 
-STR_PARAM_DESC_CUSTOM :異なる列車グループが輸送できる乗客の数を手動で設定します。 最初に「収容量」の設定を「カスタム」に設定する必要があります。
+STR_PARAM_DESC_CUSTOM :{RED}警告！ 255{BLACK}を超えることはお勧めできません。{}255を超えると機能するのは、1両編成の列車と複数ユニットの車両の場合のみです。{}{}異なる列車グループが輸送できる乗客の数を手動で設定します。 {}{YELLOW}最初に「収容量」の設定を「カスタム」に設定する必要があります。
 
 
 STR_ATTACH_JNRKH:取り付けられるのは、以下の気動車、またはMU車のみです。{}{}キハ30{}キハ35{}キハ40{}キハ58{}キハ130{}キハ141
@@ -85,9 +87,11 @@ JNR_401421 :401/421系 {WHITE}(電車){BLACK}
 JNR_403423 :403/423系 {WHITE}(電車){BLACK}
 JNR_413 :413系 {WHITE}(電車){BLACK}
 JNR_415 :415系 {WHITE}(電車){BLACK}
-JNR_4151500:415系 1500番台 {WHITE}(電車){BLACK}
+JNR_4151500:415系　1500番台 {WHITE}(電車){BLACK}
+JNR_417 :417系 {WHITE}(EMU){BLACK}
 
 JNR_711 :711系 {WHITE}(電車){BLACK}
+JNR_713 :713系 {WHITE}(電車){BLACK}
 
 JNR_80 :80系 {WHITE}(電車){BLACK}
 JNR_165 :165/169系 {WHITE}(電車){BLACK}
@@ -95,6 +99,8 @@ JNR_165 :165/169系 {WHITE}(電車){BLACK}
 JNR_181 :151/161/181系 {WHITE}(電車){BLACK}
 
 JNR_485:481/483/485/489系 {WHITE}(電車){BLACK}
+
+JNR_583 :581/583系 {WHITE}(電車){BLACK}
 
 JNR_781 :781系 {WHITE}(電車){BLACK}
 
@@ -160,6 +166,8 @@ JRC_KH85: キハ85系 {WHITE}(気動車){BLACK}
 JNR_21156:211系 5000/6000番台 {WHITE}(電車){BLACK}
 JRC_311:311系 {WHITE}(電車){BLACK}
 JRC_313:313系 {WHITE}(電車){BLACK}
+JRC_315:315 Series {WHITE}(EMU){BLACK}
+
 JRC_373:373系 {WHITE}(電車){BLACK}
 JRC_383:383系 {WHITE}(電車){BLACK}
 
@@ -233,6 +241,8 @@ LV_SHONAN_TAKATOHO: {PUSH_COLOUR}{WHITE}┬{POP_COLOUR} 高崎/東北編成 (湘
 LV_JOBAN: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 常磐色塗装
 
 LV_KYUSHU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 九州色塗装
+
+LV_MIYAZAKI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} サンシャイン宮崎塗装
 
 LV_YAMASUKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 山スカ色塗装
 
@@ -358,16 +368,17 @@ LV_JGR_BROWNWARTIME: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 鉄道省 戦時中塗�
 
 LV_SHIZUTETSU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 飯田線快速色塗装 
 
-LV_KANSAIHANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Kansai/Hanwa Livery 
+LV_KANSAIHANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 京阪神緩行線/阪和線塗装（アイスキャンデー色）
 
+LV_TOHOKU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} 東北塗装 
 
 # New New Method Test
-E257_LV_E257_0_azusa: {PUSH_COLOUR}{WHITE}-0{POP_COLOUR} Four Seasons
-E257_LV_E257_500: {PUSH_COLOUR}{WHITE}-500{POP_COLOUR} "Boso Express"
-E257_LV_E257_2000: {PUSH_COLOUR}{WHITE}-2000{POP_COLOUR} Peninsula Blue
-E257_LV_E257_2500: {PUSH_COLOUR}{WHITE}-2500{POP_COLOUR} Peninsula Blue
-E257_LV_E257_5000: {PUSH_COLOUR}{WHITE}-5000{POP_COLOUR} Green
-E257_LV_E257_5500: {PUSH_COLOUR}{WHITE}-5500{POP_COLOUR} Green
+E257_LV_E257_0_azusa: {PUSH_COLOUR}{WHITE}0番台{POP_COLOUR} 四季
+E257_LV_E257_500: {PUSH_COLOUR}{WHITE}500番台{POP_COLOUR} "Boso Express"
+E257_LV_E257_2000: {PUSH_COLOUR}{WHITE}2000番台{POP_COLOUR} ペニンシュラブルー
+E257_LV_E257_2500: {PUSH_COLOUR}{WHITE}2500番台{POP_COLOUR} ペニンシュラブルー
+E257_LV_E257_5000: {PUSH_COLOUR}{WHITE}5000番台{POP_COLOUR} 緑色
+E257_LV_E257_5500: {PUSH_COLOUR}{WHITE}5500番台{POP_COLOUR} 緑色
 
 
 # Legacy - No need to edit/translate
@@ -730,9 +741,16 @@ JNR_413_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種
 # 415 Series
 JNR_415_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本 {RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
+# 417 Series
+JNR_417_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
+
+
 
 # 711 Series
 JNR_711_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}旧塗色, 新塗色 {GREEN}{}
+
+# 713 Series
+JNR_713_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {RED}九州{}{BLACK}塗装: {GOLD}旧塗色, 九州, サンシャイン宮崎塗装 {GREEN}(換装可能){}
 
 
 # 80 Series
@@ -747,8 +765,10 @@ JNR_181_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種
 
 
 # 485 Series
-JNR_485_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本　{RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
+JNR_485_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {DKGREEN}北海道 {GREEN}東日本 {BLUE}西日本　{RED}九州{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
+# 581/583 Series
+JNR_583_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交直流{}{}{BLACK}所属会社: {WHITE}国鉄 / JR {GREEN}東日本 {BLUE}西日本{}{BLACK}塗装: {GOLD}各種 {GREEN}(換装可能){}
 
 # 781 Series
 JNR_781_DESC :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/交流{}{}{BLACK}所属会社: {GOLD}国鉄 / JR {DKGREEN}北海道{}{BLACK}塗装: {GOLD}国鉄色 / 新塗装色 {GREEN}(換装可能){}
@@ -890,6 +910,8 @@ JRC_311_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種
 # 313 Series
 JRC_313_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
+# 315 Series
+JRC_315_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {SILVER}近郊/直流{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
 
 # 373 Series
 JRC_373_DESC  :{BLACK}軌間:{GOLD} 狭軌 (3ft6in/​1,067mm){}{BLACK}運用種別: {RED}特急/直流{}{}{BLACK}所属会社: {WHITE}JR {ORANGE}東海{}
