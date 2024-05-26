@@ -26154,83 +26154,63 @@ switch(FEAT_TRAINS,SELF, sw_381_gfx_mid_gr_livery, cargo_subtype){
 /*---END OF SECTION---*/
 
 /*---CONSIST SWITCH BLOCK---*/
-switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_std_withgr_repeat, position_in_vehid_chain_from_end%2){
+
+//Standard JNR Formation 381
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_jnr_mcars_repeat, position_in_vehid_chain_from_end%2){
   1: sw_381_gfx_mid_panto_livery;
   default: sw_381_gfx_mid_livery;
 }
-switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_std_withgr, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_jnr_greencars, position_in_vehid_chain){
   0: sw_381_gfx_mid_panto_livery;
   1: sw_381_gfx_mid_livery;
   2: sw_381_gfx_mid_gr_livery;
-  default: sw_381_gfx_pantograph_pos_std_withgr_repeat;
+  3: sw_381_gfx_mid_panto_livery;
+  default: sw_381_gfx_pantograph_pos_jnr_mcars_repeat;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_jnr_check, num_vehs_in_vehid_chain){
+  0..7: sw_381_gfx_pantograph_pos_jnr_mcars_repeat;
+  default: sw_381_gfx_pantograph_pos_jnr_greencars;
 }
 
-switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_std_nogr, position_in_vehid_chain%2){
-  0: sw_381_gfx_mid_panto_livery;
+//Izumo Formation for Kumoha 381
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_jnrkumoha_4car, position_in_vehid_chain){
+  0: sw_381_gfx_mid_gr_livery;
+  1: spriteset_381_rev_mid_panto_JNR;
   default: sw_381_gfx_mid_livery;
 }
-
-switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_std_over6extra_repeat, position_in_vehid_chain_from_end%3){
-  1: sw_381_gfx_mid_panto_livery;
-  2: spriteset_381_rev_mid_JNR_kuha381_0;
-  default: sw_381_gfx_mid_livery;
-}
-switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_std_over6extra, position_in_vehid_chain){
-  0: sw_381_gfx_mid_panto_livery;
-  1: sw_381_gfx_mid_livery;
-  2: sw_381_gfx_mid_panto_livery;
-  3: sw_381_gfx_mid_livery;
-  4: spriteset_381_rev_mid_JNR_kuha381_0;
-  default: sw_381_gfx_pantograph_pos_std_over6extra_repeat;
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_jnrkumoha_check, num_vehs_in_vehid_chain){
+  0..1: sw_381_gfx_mid_panto_livery;
+  2: sw_583_gfx_pantograph_pos_jnrkumoha_4car;
+  default: sw_381_gfx_pantograph_pos_jnr_greencars;
 }
 
-switch(FEAT_TRAINS, SELF,sw_381_gfx_pantograph_pos_special_nogr, position_in_vehid_chain%2){
-  1: sw_381_gfx_mid_panto_livery;
-  default: sw_381_gfx_mid_livery;
-}
-
-switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_special_over6extra_repeat, position_in_vehid_chain_from_end%3){
+//Central Formation for Kuro 381 Leading
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_central_repeat, position_in_vehid_chain_from_end%3){
   0: spriteset_381_rev_mid_panto_JNR;
   2: spriteset_381_rev_mid_JNR_kuha381_0;
   default: spriteset_381_rev_mid_JNR;
 }
-switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_special_over6extra, position_in_vehid_chain){
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_central, position_in_vehid_chain){
   0: spriteset_381_rev_mid_JNR;
   1: spriteset_381_rev_mid_panto_JNR;
   2: spriteset_381_rev_mid_JNR;
   3: spriteset_381_rev_mid_panto_JNR;
   4: spriteset_381_rev_mid_JNR_kuha381_0;
-  default: sw_381_gfx_pantograph_pos_special_over6extra_repeat;
+  default: sw_381_gfx_pantograph_pos_central_repeat;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_central_check, num_vehs_in_vehid_chain){
+  0..1: sw_381_gfx_rev_mid_panto_livery;
+  default: sw_381_gfx_pantograph_pos_central;
 }
 
-switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_gr_over4car, num_vehs_in_vehid_chain){
-  0..1: sw_381_gfx_pantograph_pos_std_nogr;
-  default: sw_381_gfx_pantograph_pos_std_withgr;
-}
-switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_gr_over7car, num_vehs_in_vehid_chain){
-  0..4: sw_381_gfx_pantograph_pos_std_nogr;
-  default: sw_381_gfx_pantograph_pos_std_withgr;
-}
-switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_over6car, num_vehs_in_vehid_chain){
-  0..4: sw_381_gfx_pantograph_pos_std_nogr;
-  default: sw_381_gfx_pantograph_pos_std_over6extra;
-}
-switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_special_over6car, num_vehs_in_vehid_chain){
-  0..4: sw_381_gfx_pantograph_pos_special_nogr;
-  default: sw_381_gfx_pantograph_pos_std_over6extra;
-}
 /*---END OF SECTION---*/
 
 /*---MID CAR SWITCH BLOCK---*/
 switch(FEAT_TRAINS, SELF, sw_381_gfx_mucar,  cargo_subtype) {
-  0: sw_583_gfx_pantograph_pos_gr_over7car;
-  1: sw_583_gfx_pantograph_pos_gr_over7car;
-  2: sw_583_gfx_pantograph_pos_gr_over7car;
-  3: sw_583_gfx_pantograph_pos_gr_over4car;
-  4..5: sw_381_gfx_pantograph_pos_special_over6extra;
-  6..7: sw_381_gfx_pantograph_pos_special_over6extra;
-  8..9: sw_381_gfx_pantograph_pos_special_over6extra;
-  10..14: sw_381_gfx_pantograph_pos_std_withgr;
+  0..2: sw_583_gfx_pantograph_pos_jnr_check;
+  3: sw_583_gfx_pantograph_pos_jnrkumoha_check;
+  4..9: sw_381_gfx_pantograph_pos_central_check;
+  10..14: sw_583_gfx_pantograph_pos_jnr_check;
 }
 switch(FEAT_TRAINS, PARENT, sw_381_gfx_mucar_revcheck, vehicle_is_reversed){
   0: sw_381_gfx_mucar;
