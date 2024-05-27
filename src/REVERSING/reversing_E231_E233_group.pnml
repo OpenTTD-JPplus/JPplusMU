@@ -716,7 +716,7 @@ switch(FEAT_TRAINS,SELF, sw_E233_gfx_rev_ddcar_livery, [STORE_TEMP(position_in_c
   3: spriteset_E233_middd_tk_rev;
   2: spriteset_E233_middd_tk_rev;
   1: spriteset_E233_middle_kt_rev;
-  0: spriteset_E233_middle_chou_rev;
+  0: spriteset_E233_middd_chou_rev;
 }
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_rev_ddcar_livery_flipped, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   10: spriteset_E233_middd_tk;
@@ -729,7 +729,7 @@ switch(FEAT_TRAINS,SELF, sw_E233_gfx_rev_ddcar_livery_flipped, [STORE_TEMP(posit
   3: spriteset_E233_middd_tk;
   2: spriteset_E233_middd_tk;
   1: spriteset_E233_middle_kt;
-  0: spriteset_E233_middle_chou;
+  0: spriteset_E233_middd_chou;
 }
 
 //E233Check for flipped vehicles (dual_headed)
@@ -802,10 +802,37 @@ switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_tokaido2, [STORE_TEMP(p
   default: sw_E233_gfx_rev_pantograph_pos_tokaido_dd2;
 }
 
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_chou_dd12, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%11]){ //look at opposte position_in_vehID_chain
+  0: sw_E233_gfx_rev_flippedcheck_pantogaph_dual;
+  2..3: sw_E233_gfx_rev_flippedcheck_ddcar;
+  5: sw_E233_gfx_rev_flippedcheck_pantograph_single;
+  8: sw_E233_gfx_rev_flippedcheck_pantograph_single;
+  default: sw_E233_gfx_rev_flippedcheck_mucar;
+}
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_chou_dd8, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){ //look at opposte position_in_vehID_chain
+  0: sw_E233_gfx_rev_flippedcheck_pantogaph_dual;
+  2..3: sw_E233_gfx_rev_flippedcheck_ddcar;
+  4: sw_E233_gfx_rev_flippedcheck_pantograph_single;
+  default: sw_E233_gfx_rev_flippedcheck_mucar;
+}
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_chou_default, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%8]){ //look at opposte position_in_vehID_chain
+  0: sw_E233_gfx_rev_flippedcheck_pantogaph_dual;
+  2: sw_E233_gfx_rev_flippedcheck_pantograph_single;
+  6: sw_E233_gfx_rev_flippedcheck_pantograph_single;
+  default: sw_E233_gfx_rev_flippedcheck_mucar;
+}
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_rev_pantograph_pos_chou, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){ //look at opposte num_vehs_in_vehid_chain
+  0..1: sw_E233_gfx_rev_flippedcheck_pantogaph_dual;
+  2..5: sw_E233_gfx_rev_pantograph_pos_chou_default;
+  6: sw_E233_gfx_rev_pantograph_pos_chou_dd8;
+  7..9: sw_E233_gfx_rev_pantograph_pos_chou_default;
+  default: sw_E233_gfx_rev_pantograph_pos_chou_dd12;
+}
 
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   3: sw_E233_gfx_rev_pantograph_pos_tokaido2;
   2: sw_E233_gfx_rev_pantograph_pos_tokaido1;
+  0: sw_E233_gfx_rev_pantograph_pos_chou;
   default: sw_E233_gfx_rev_pantograph_pos_normal;
 }
 

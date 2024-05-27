@@ -5,14 +5,30 @@ switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_numofcars_chou, num_vehs_in_vehi
   default: spriteset_E233_midpant_chou;
 }
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_chou_default, position_in_vehid_chain%8){
-  1: sw_E233_gfx_pantograph_numofcars_chou;
+  0: spriteset_E233_midpant_chou;
+  2: spriteset_E233_midpan_chou;
+  6: spriteset_E233_midpan_chou;
+  default: spriteset_E233_middle_chou;
+}
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_chou_dd8, position_in_vehid_chain%8){
+  0: spriteset_E233_midpant_chou;
+  2..3: spriteset_E233_middd_chou;
+  4: spriteset_E233_midpan_chou;
+  default: spriteset_E233_middle_chou;
+}
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_chou_dd12, position_in_vehid_chain%11){
+  0: spriteset_E233_midpant_chou;
+  2..3: spriteset_E233_middd_chou;
   5: spriteset_E233_midpan_chou;
-  7: spriteset_E233_midpan_chou;
+  8: spriteset_E233_midpan_chou;
   default: spriteset_E233_middle_chou;
 }
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_chou, num_vehs_in_vehid_chain){
-  0..1: spriteset_E233_midpan_chou;
-  default: sw_E233_gfx_pantograph_pos_chou_default;
+  0..1: spriteset_E233_midpant_chou;
+  2..5: sw_E233_gfx_pantograph_pos_chou_default;
+  6: sw_E233_gfx_pantograph_pos_chou_dd8;
+  7..9: sw_E233_gfx_pantograph_pos_chou_default;
+  default: sw_E233_gfx_pantograph_pos_chou_dd12;
 }
 
 //E233-1000 Keihin-Touhoku Line
