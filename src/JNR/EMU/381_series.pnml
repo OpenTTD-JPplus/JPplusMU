@@ -205,7 +205,6 @@ switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_front_livery, [STORE_TEMP(position_in_co
   12: spriteset_381_rev_front_SuperYakumo_kuha381_0;
   13: spriteset_381_rev_front_SuperYakumo_kuha381_0;
   14: spriteset_381_rev_front_SuperYakumo_kuro380;
-
 }
 switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0: spriteset_381_revflip_front_JNR_kuha381_0;
@@ -307,8 +306,8 @@ switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_livery, [STORE_TEMP(position_in_
 switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0..3: spriteset_381_rev_mid_panto_JNR;
   3..9: spriteset_381_mid_panto_JNR;
-  10..11: spriteset_381_revflip_mid_panto_Yakumo;
-  12..14: spriteset_381_revflip_mid_panto_SuperYakumo;
+  10..11: spriteset_381_rev_mid_panto_Yakumo;
+  12..14: spriteset_381_rev_mid_panto_SuperYakumo;
 }
 switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0..3: spriteset_381_revflip_mid_panto_JNR;
@@ -319,8 +318,8 @@ switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_panto_livery, [STORE_TEMP(positi
 switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_mid_gr_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0..3: spriteset_381_rev_mid_gr_JNR;
   3..9: spriteset_381_mid_gr_JNR;
-  10..11: spriteset_381_revflip_mid_gr_Yakumo;
-  12..14: spriteset_381_revflip_mid_gr_SuperYakumo;  
+  10..11: spriteset_381_rev_mid_gr_Yakumo;
+  12..14: spriteset_381_rev_mid_gr_SuperYakumo;  
 }
 switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_gr_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0..3: spriteset_381_revflip_mid_gr_JNR;
@@ -383,6 +382,7 @@ switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_jnr_greencars, [STORE_TE
   default: sw_381_gfx_rev_pantograph_pos_jnr_mcars_repeat;
 }
 switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_jnr_check, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  0..1: sw_381_gfx_rev_mid_panto_flippedcheck;
   0..7: sw_381_gfx_rev_pantograph_pos_jnr_mcars_repeat;
   default: sw_381_gfx_rev_pantograph_pos_jnr_greencars;
 }
@@ -505,10 +505,10 @@ switch(FEAT_TRAINS,SELF, sw_381_gfx_front_livery, cargo_subtype){
   7: spriteset_381_front_JNR_kuro381_10; 
   8: spriteset_381_front_JNR_kuro381_50;
   9: spriteset_381_front_JNR_kuro381_50;   
-  10: spriteset_381_front_Yakumo_kuha381_100;
-  11: spriteset_381_front_Yakumo_kuha381_100;
-  12: spriteset_381_front_SuperYakumo_kuha381_100;
-  13: spriteset_381_front_SuperYakumo_kuha381_100;
+  10: spriteset_381_front_Yakumo_kuha381_0;
+  11: spriteset_381_front_Yakumo_kuha381_0;
+  12: spriteset_381_front_SuperYakumo_kuha381_0;
+  13: spriteset_381_front_SuperYakumo_kuha381_0;
   14: spriteset_381_front_SuperYakumo_kuro380;      
 }
 switch(FEAT_TRAINS,SELF, sw_381_gfx_back_livery, cargo_subtype){
@@ -585,7 +585,8 @@ switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_jnr_greencars, position_in_v
   default: sw_381_gfx_pantograph_pos_jnr_mcars_repeat;
 }
 switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_jnr_check, num_vehs_in_vehid_chain){
-  0..7: sw_381_gfx_pantograph_pos_jnr_mcars_repeat;
+  0..1: sw_381_gfx_mid_panto_livery;
+  2..7: sw_381_gfx_pantograph_pos_jnr_mcars_repeat;
   default: sw_381_gfx_pantograph_pos_jnr_greencars;
 }
 
