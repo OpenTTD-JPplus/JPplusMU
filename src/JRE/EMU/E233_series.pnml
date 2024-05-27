@@ -47,6 +47,22 @@ switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_kt, num_vehs_in_vehid_chain)
   default: sw_E233_gfx_pantograph_pos_kt_default;
 }
 
+//E233-2000
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_numofcars_2000, num_vehs_in_vehid_chain){
+  0..5: spriteset_E233_midpan_2000;
+  default: spriteset_E233_midpant_2000;
+}
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_2000_default, position_in_vehid_chain%8){
+  1: spriteset_E233_midpan_2000;
+  4: spriteset_E233_midpant_2000;
+  7: spriteset_E233_midpan_2000;
+  default: spriteset_E233_middle_2000;
+}
+switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_pos_2000, num_vehs_in_vehid_chain){
+  0..1: spriteset_E233_midpant_2000;
+  default: sw_E233_gfx_pantograph_pos_2000_default;
+}
+
 //E233-3000 Tokaido production
 switch(FEAT_TRAINS,SELF, sw_E233_gfx_pantograph_numofcars_tk, num_vehs_in_vehid_chain){
   0..5: spriteset_E233_midpan_tk;
@@ -194,6 +210,20 @@ switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_kt, vehicle_is_reversed){
  default: sw_E231group_gfx_rev_idcheck;
 }
 
+//2000 Joban
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_2000, position_in_vehid_chain){
+ 0: spriteset_E233_back_2000_rev;
+ default: spriteset_E233_back_2000;
+}
+switch(FEAT_TRAINS, SELF, sw_E233_gfx_frontback_flipcheck_2000, vehicle_is_flipped){
+ 0: spriteset_E233_front_2000;
+ default: sw_E233_gfx_pantocheck_2000;
+}
+switch(FEAT_TRAINS, PARENT, sw_E233_gfx_frontback_2000, vehicle_is_reversed){
+ 0: sw_E233_gfx_frontback_flipcheck_2000;
+ default: sw_E231group_gfx_rev_idcheck;
+}
+
 //E233-3000 Tokaido
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_pantocheck_tk, position_in_vehid_chain){
  0: spriteset_E233_back_tk_rev;
@@ -288,6 +318,12 @@ switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_kt, vehicle_is_revers
  default: sw_E231group_gfx_rev_idcheck;
 }
 
+//2000 Joban
+switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_mid_2000, vehicle_is_reversed){
+ 0: sw_E233_gfx_pantograph_pos_2000;
+ default: sw_E231group_gfx_rev_idcheck;
+}
+
 //E233-3000 Tokaido
 switch(FEAT_TRAINS, PARENT, sw_E233_gfx_mucar_revcheck_dd_tk, vehicle_is_reversed){
  0: spriteset_E233_middd_tk;
@@ -340,20 +376,22 @@ switch(FEAT_TRAINS, SELF, sw_E233_gfx_mucar,  cargo_subtype) {
   //10: sw_E233_gfx_mucar_revcheck_dd_tk;
   //9: sw_E233_gfx_mucar_revcheck_sd_tk;
   //8: sw_E233_gfx_mucar_revcheck_mid_tk;
-  7: sw_E233_gfx_mucar_revcheck_mid_nanbu;
-  6: sw_E233_gfx_mucar_revcheck_mid_saikyo;
-  5: sw_E233_gfx_mucar_revcheck_mid_yoko;
-  4: sw_E233_gfx_mucar_revcheck_mid_keiyo;
+  8: sw_E233_gfx_mucar_revcheck_mid_nanbu;
+  7: sw_E233_gfx_mucar_revcheck_mid_saikyo;
+  6: sw_E233_gfx_mucar_revcheck_mid_yoko;
+  5: sw_E233_gfx_mucar_revcheck_mid_keiyo;
+  4: sw_E233_gfx_mucar_revcheck_mid_2000;
   3: sw_E233_gfx_mucar_revcheck_mid_tk1;
   2: sw_E233_gfx_mucar_revcheck_mid_tk2;
   1: sw_E233_gfx_mucar_revcheck_mid_kt;
   0: sw_E233_gfx_mucar_revcheck_mid_chou;
 }
 switch(FEAT_TRAINS, SELF, sw_E233_gfx_main,  cargo_subtype) {
-  7: sw_E233_gfx_frontback_nanbu;
-  6: sw_E233_gfx_frontback_saikyo;
-  5: sw_E233_gfx_frontback_yoko;
-  4: sw_E233_gfx_frontback_keiyo;
+  8: sw_E233_gfx_frontback_nanbu;
+  7: sw_E233_gfx_frontback_saikyo;
+  6: sw_E233_gfx_frontback_yoko;
+  5: sw_E233_gfx_frontback_keiyo;
+  4: sw_E233_gfx_frontback_2000;
   3: sw_E233_gfx_frontback_tk;
   2: sw_E233_gfx_frontback_tk;
   1: sw_E233_gfx_frontback_kt;
@@ -365,22 +403,22 @@ switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_mucar, cargo_subtype) {
   //10: string(jreE233_LV_shonan_dd);
   //9: string(jreE233_LV_shonan_mu);
   //8: string(jreE235_DIV_shonan);
-  7: string(LV_NAMBU);
-  6: string(LV_SAIKYO);
-  5: string(LV_YOKOHAMA);
-  4: string(LV_KEIYO);
-  //4: string(jreE233_LV_joban);
+  8: string(LV_NAMBU);
+  7: string(LV_SAIKYO);
+  6: string(LV_YOKOHAMA);
+  5: string(LV_KEIYO);
+  4: string(LV_JOBAN);
   3: string(LV_VARITION_END1);
   2: string(LV_SHONAN);
   1: string(LV_KEIHIN_TOUHOKU);
   0: string(LV_CHUO);
 }
 switch(FEAT_TRAINS, SELF, sw_E233_subtypetext_main, cargo_subtype) {
-  7: string(LV_NAMBU);
-  6: string(LV_SAIKYO);
-  5: string(LV_YOKOHAMA);
-  4: string(LV_KEIYO);
-  //4: string(jreE233_LV_joban);
+  8: string(LV_NAMBU);
+  7: string(LV_SAIKYO);
+  6: string(LV_YOKOHAMA);
+  5: string(LV_KEIYO);
+  4: string(LV_JOBAN);
   3: string(LV_VARITION_END1);
   2: string(LV_SHONAN);
   1: string(LV_KEIHIN_TOUHOKU);
