@@ -26003,6 +26003,16 @@ switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_gr_livery, [STORE_TEMP(position_
   10..11: spriteset_381_revflip_mid_gr_Yakumo;
   12..14: spriteset_381_revflip_mid_gr_SuperYakumo;
 }
+switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_mid_cab_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0..9: spriteset_381_mid_JNR_kuha381_0;
+  10..11: spriteset_381_mid_Yakumo_kuha381_0;
+  12..14: spriteset_381_mid_SuperYakumo_kuha381_0;  
+}
+switch(FEAT_TRAINS,SELF, sw_381_gfx_revflip_mid_cab_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0..9: spriteset_381_rev_mid_JNR_kuha381_0;
+  10..11: spriteset_381_rev_mid_Yakumo_kuha381_0;
+  12..14: spriteset_381_rev_mid_SuperYakumo_kuha381_0;
+}
 switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
   1: sw_381_gfx_revflip_front_livery;
   default: sw_381_gfx_rev_front_livery;
@@ -26026,6 +26036,10 @@ switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_mid_panto_flippedcheck, vehicle_is_flip
 switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_mid_gr_flippedcheck, vehicle_is_flipped) {
   1: sw_381_gfx_revflip_mid_gr_livery;
   default: sw_381_gfx_rev_mid_gr_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_mid_cab_flippedcheck, vehicle_is_flipped) {
+  1: sw_381_gfx_revflip_mid_cab_livery;
+  default: sw_381_gfx_rev_mid_cab_livery;
 }
 /*---END OF SECTION---*/
 
@@ -26060,10 +26074,10 @@ switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_jnrkumoha_check, [STORE_
   default: sw_381_gfx_rev_pantograph_pos_jnr_greencars;
 }
 
-//Central Formation for Kuro 381 Leading
+//Central Formation for Kuro 381 Leading REV
 switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_central_repeat,  [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x41]%3]){
   0: sw_381_gfx_rev_mid_panto_flippedcheck;
-  2: spriteset_381_mid_JNR_kuha381_0; //caution spriteset
+  2: sw_381_gfx_rev_mid_cab_flippedcheck;
   default: sw_381_gfx_rev_mid_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_central, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
@@ -26071,7 +26085,7 @@ switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_central, [STORE_TEMP(pos
   1: sw_381_gfx_rev_mid_panto_flippedcheck;
   2: sw_381_gfx_rev_mid_flippedcheck;
   3: sw_381_gfx_rev_mid_panto_flippedcheck;
-  4: spriteset_381_mid_JNR_kuha381_0; //cation spriteset
+  4: sw_381_gfx_rev_mid_cab_flippedcheck;
   default: sw_381_gfx_rev_pantograph_pos_central_repeat;
 }
 switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_central_check, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
@@ -26079,12 +26093,35 @@ switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_central_check, [STORE_TE
   default: sw_381_gfx_rev_pantograph_pos_central;
 }
 
+//Standard Yakumo Formation REV
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_yakumo_mcars_repeat, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x41]%3]){
+  0: sw_381_gfx_rev_mid_panto_flippedcheck;
+  2: sw_381_gfx_rev_mid_cab_flippedcheck;
+  default: sw_381_gfx_rev_mid_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_yakumo_greencars, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+  0: sw_381_gfx_rev_mid_panto_flippedcheck;
+  1: sw_381_gfx_rev_mid_flippedcheck;
+  2: sw_381_gfx_rev_mid_gr_flippedcheck;
+  3: sw_381_gfx_rev_mid_panto_flippedcheck;
+  default: sw_381_gfx_rev_pantograph_pos_yakumo_mcars_repeat;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_rev_pantograph_pos_yakumo_ts_m, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+  1: sw_381_gfx_rev_mid_panto_flippedcheck;
+  default: sw_381_gfx_rev_mid_gr_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_rev_pantograph_pos_yakumo_check, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 16, 0x000000FF, 0x41]]){
+  0..1: sw_381_gfx_rev_mid_panto_flippedcheck;
+  2: sw_381_gfx_rev_pantograph_pos_yakumo_ts_m;
+  default: sw_381_gfx_rev_pantograph_pos_yakumo_greencars;
+}
+
 //Main Switch
 switch(FEAT_TRAINS,SELF, sw_381_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0..2: sw_583_gfx_rev_pantograph_pos_jnr_check;
   3: sw_583_gfx_rev_pantograph_pos_jnrkumoha_check;
   4..9: sw_381_gfx_rev_pantograph_pos_central_check;
-  10..14: sw_583_gfx_rev_pantograph_pos_jnr_check;
+  10..14: sw_583_gfx_rev_pantograph_pos_yakumo_check;
 }
 /*---END OF SECTION---*/
 
@@ -26201,6 +26238,11 @@ switch(FEAT_TRAINS,SELF, sw_381_gfx_mid_gr_livery, cargo_subtype){
   10..11: spriteset_381_mid_gr_Yakumo;
   12..14: spriteset_381_mid_gr_SuperYakumo;
 }
+switch(FEAT_TRAINS,SELF, sw_381_gfx_mid_cab_livery, cargo_subtype){
+  0..9: spriteset_381_rev_mid_JNR_kuha381_0;
+  10..11: spriteset_381_rev_mid_Yakumo_kuha381_0;
+  12..14: spriteset_381_rev_mid_SuperYakumo_kuha381_0;
+}
 /*---END OF SECTION---*/
 
 /*---CONSIST SWITCH BLOCK---*/
@@ -26237,15 +26279,15 @@ switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_jnrkumoha_check, num_vehs_in
 //Central Formation for Kuro 381 Leading
 switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_central_repeat, position_in_vehid_chain_from_end%3){
   0: sw_381_gfx_mid_panto_livery;
-  2: spriteset_381_rev_mid_JNR_kuha381_0; //caution spriteset
-  default: spriteset_381_rev_mid_JNR;
+  2: sw_381_gfx_mid_cab_livery;
+  default: sw_381_gfx_mid_livery;
 }
 switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_central, position_in_vehid_chain){
   0: spriteset_381_rev_mid_JNR;
   1: sw_381_gfx_mid_panto_livery;
   2: spriteset_381_rev_mid_JNR;
   3: sw_381_gfx_mid_panto_livery;
-  4: spriteset_381_rev_mid_JNR_kuha381_0; //cation spriteset
+  4: sw_381_gfx_mid_cab_livery;
   default: sw_381_gfx_pantograph_pos_central_repeat;
 }
 switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_central_check, num_vehs_in_vehid_chain){
@@ -26253,6 +26295,28 @@ switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_central_check, num_vehs_in_v
   default: sw_381_gfx_pantograph_pos_central;
 }
 
+//Standard Yakumo Formation
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_yakumo_mcars_repeat, position_in_vehid_chain_from_end%3){
+  0: sw_381_gfx_mid_panto_livery;
+  2: sw_381_gfx_mid_cab_livery;
+  default: sw_381_gfx_mid_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_yakumo_greencars, position_in_vehid_chain){
+  0: sw_381_gfx_mid_panto_livery;
+  1: sw_381_gfx_mid_livery;
+  2: sw_381_gfx_mid_gr_livery;
+  3: sw_381_gfx_mid_panto_livery;
+  default: sw_381_gfx_pantograph_pos_yakumo_mcars_repeat;
+}
+switch(FEAT_TRAINS, SELF, sw_381_gfx_pantograph_pos_yakumo_ts_m, position_in_vehid_chain){
+  1: sw_381_gfx_mid_panto_livery;
+  default: sw_381_gfx_mid_gr_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_583_gfx_pantograph_pos_yakumo_check, num_vehs_in_vehid_chain){
+  0..1: sw_381_gfx_mid_panto_livery;
+  2: sw_381_gfx_pantograph_pos_yakumo_ts_m;
+  default: sw_381_gfx_pantograph_pos_yakumo_greencars;
+}
 /*---END OF SECTION---*/
 
 /*---MID CAR SWITCH BLOCK---*/
@@ -26260,7 +26324,7 @@ switch(FEAT_TRAINS, SELF, sw_381_gfx_mucar,  cargo_subtype) {
   0..2: sw_583_gfx_pantograph_pos_jnr_check;
   3: sw_583_gfx_pantograph_pos_jnrkumoha_check;
   4..9: sw_381_gfx_pantograph_pos_central_check;
-  10..14: sw_583_gfx_pantograph_pos_jnr_check;
+  10..14: sw_583_gfx_pantograph_pos_yakumo_check;
 }
 switch(FEAT_TRAINS, PARENT, sw_381_gfx_mucar_revcheck, vehicle_is_reversed){
   0: sw_381_gfx_mucar;
