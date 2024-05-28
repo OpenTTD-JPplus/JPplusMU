@@ -71,6 +71,7 @@ JGR_63:63 Series {WHITE}(EMU){BLACK}
 JNR_101 :101 Series {WHITE}(EMU){BLACK}
 JNR_103 :101/103 Series {WHITE}(EMU){BLACK}
 JNR_201 :201 Series {WHITE}(EMU){BLACK}
+JNR_203 :203 Series {WHITE}(EMU){BLACK}
 JNR_205 :205 Series {WHITE}(EMU){BLACK}
 JNR_207900  :207-900 Series {WHITE}(EMU){BLACK}
 
@@ -724,6 +725,9 @@ JNR_103_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usa
 
 # 201 Series
 JNR_201_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {ORANGE}Central {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
+
+# 203 Series
+JNR_203_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}
 
 # 205 Series
 JNR_205_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JNR / JR {GREEN}East {BLUE}West{}{BLACK}Liveries:  {GOLD}Various {GREEN}(refittable){}

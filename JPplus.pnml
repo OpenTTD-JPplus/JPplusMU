@@ -65,6 +65,7 @@
 #include "src/JNR/EMU/165_169_series.pnml"
 
 #include "src/JNR/EMU/201_series.pnml"
+#include "src/JNR/EMU/203_series.pnml"
 #include "src/JNR/EMU/205_series.pnml"
 #include "src/JNR/EMU/207900_series.pnml"
 #include "src/JNR/EMU/211_series.pnml"

@@ -104,3 +104,4 @@ item(FEAT_TRAINS, emu_713, 2072) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_583, 2073) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_417, 2074) {} //107emu 0x7E2
 item(FEAT_TRAINS, emu_381, 2075) {} //107emu 0x7E2
+item(FEAT_TRAINS, emu_203, 2076) {} //107emu 0x7E2
