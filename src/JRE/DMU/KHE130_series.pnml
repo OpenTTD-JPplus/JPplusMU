@@ -83,7 +83,7 @@ item(FEAT_TRAINS, dmu_KHE130) {
         running_cost_factor:          50;
 
         speed:                        100 km/h;
-        track_type:                   NARROW_NOEL;
+        track_type:                   TR_1067_NE;
         power:                        331 kW;
         weight:                       38 ton;
 
@@ -110,7 +110,15 @@ item(FEAT_TRAINS, dmu_KHE130) {
       graphics {
         default:                      sw_KHE130_gfx_main;
 		    purchase:                 spriteset_KHE130_purchase;
-		    additional_text:	      return string(JRE_KHE130_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_NOT_DENKI, string(STR_DIESEL)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 3)),
+        string(STR_USAGE,string(STR_USE_GENERAL)),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_EAST))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
         cargo_subtype_text:           sw_KHE130_subtypetext_main;
         can_attach_wagon:			  sw_KHE130_attach_vehid;
         //start_stop:                   ;

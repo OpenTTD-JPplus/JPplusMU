@@ -170,7 +170,7 @@ item(FEAT_TRAINS, emu_6340) {
         running_cost_factor:          55;
 
         speed:                        65 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_DC;
         power:                        420 kW;
         weight:                       34 ton;
 
@@ -197,7 +197,14 @@ item(FEAT_TRAINS, emu_6340) {
       graphics {
         default:                      sw_6340_gfx_main;
 		    purchase:                 spriteset_6340_purchase;
-		    additional_text:	      return string(JGR_6340_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_DC_N, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+        string(STR_USAGE, string(STR_USE_COMMUTER)),
+        string(STR_OPERATOR, string(STR_CONCAT_2_DASH, string(STR_OP_JGR),string(STR_JNR))));
+
         //cargo_subtype_text:           sw_6340_subtypetext_main;
         can_attach_wagon:			  sw_6340_attach_vehid;
         //start_stop:                   ;

@@ -242,7 +242,7 @@ item(FEAT_TRAINS, emu_303) {
         running_cost_factor:          50;
 
         speed:                        85 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_DC;
         power:                        600 kW;
         weight:                       33 ton;
 
@@ -269,7 +269,15 @@ item(FEAT_TRAINS, emu_303) {
       graphics {
         default:                      sw_303_gfx_main;
 		    purchase:                 spriteset_303_purchase;
-		    additional_text:	      return string(JRK_303_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_DC_N, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 4)),
+        string(STR_USAGE, string(STR_USE_COMMUTER)),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_KYUSHU))));
+        // string(STR_LIVERIES, string(LV_VARIOUS)));
+        
         //cargo_subtype_text:           sw_303_subtypetext_main;
         can_attach_wagon:			  sw_303_attach_vehid;
         //start_stop:                   ;

@@ -310,7 +310,7 @@ item(FEAT_TRAINS, dmu_kiha40) {
         running_cost_factor:          48;
 
         speed:                        95 km/h;
-        track_type:                   NARROW_NOEL;
+        track_type:                   TR_1067_NE;
         power:                        162 kW;
         weight:                       37 ton;
 

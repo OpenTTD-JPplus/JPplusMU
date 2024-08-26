@@ -150,7 +150,7 @@ item(FEAT_TRAINS, dmu_kiha35) {
         running_cost_factor:          49;
 
         speed:                        95 km/h;
-        track_type:                   NARROW_NOEL;
+        track_type:                   TR_1067_NE;
         power:                        132 kW;
         weight:                       32 ton;
 
@@ -177,7 +177,15 @@ item(FEAT_TRAINS, dmu_kiha35) {
       graphics {
         default:                sw_KH35_jnr_gfx_frontback_revcheck;
 		    purchase:               spriteset_KH35_purchase;
-		    additional_text:	      return string(JNR_kiha35_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_NOT_DENKI, string(STR_DIESEL)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 3)),
+        string(STR_USAGE,string(STR_USE_COMMUTER)),
+        string(STR_OPERATOR,string(STR_CONCAT_2_DASH,string(STR_JNR),string(STR_JR,string(STR_CONCAT_5,string(STR_JR_EAST),string(STR_JR_CENTRAL),string(STR_JR_WEST),string(STR_JR_KYUSHU),string(STR_JR_SHIKOKU))))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
         cargo_subtype_text:     sw_KH35_subtypetext_main;
         can_attach_wagon:			  sw_JNR_KH_attach_vehid;
         start_stop:             sw_JNR_KH_startstop;

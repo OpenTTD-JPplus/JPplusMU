@@ -322,7 +322,7 @@ item(FEAT_TRAINS, emu_205) {
         running_cost_factor:          46;
 
         speed:                        100 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_DC;
         power:                        480 kW;
         weight:                       34 ton;
 
@@ -349,7 +349,15 @@ item(FEAT_TRAINS, emu_205) {
       graphics {
         default:                      sw_205_gfx_main;
 		    purchase:                 spriteset_205_purchase;
-		    additional_text:	      return string(JNR_205_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_DC_N, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 4)),
+        string(STR_USAGE, string(STR_USE_COMMUTER)),
+        string(STR_OPERATOR,string(STR_CONCAT_2_DASH,string(STR_JNR),string(STR_JR,string(STR_CONCAT_2,string(STR_JR_EAST),string(STR_JR_WEST))))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
         cargo_subtype_text:           sw_205_subtypetext_main;
         can_attach_wagon:			  sw_205_attach_vehid;
         //start_stop:                   ;

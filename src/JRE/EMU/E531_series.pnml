@@ -511,7 +511,7 @@ item(FEAT_TRAINS, emu_E531) {
         running_cost_factor:          48;
 
         speed:                        130 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_ACDC;
         power:                        840 kW;
         weight:                       37 ton;
 
@@ -538,7 +538,15 @@ item(FEAT_TRAINS, emu_E531) {
       graphics {
         default:                      sw_E531_gfx_main;
 		    purchase:                 spriteset_E531_purchase;
-		    additional_text:	      return string(JRE_E531_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_AC_DC, 20,50, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 4)),
+        string(STR_USAGE, string(STR_USE_REGIO)),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_EAST))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+        
         cargo_subtype_text:           sw_E531_subtypetext_main;
         can_attach_wagon:			  sw_E531_attach_vehid;
         //start_stop:                   ;

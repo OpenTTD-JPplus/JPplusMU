@@ -121,7 +121,7 @@ item(FEAT_TRAINS, emu_401) {
         running_cost_factor:          49;
 
         speed:                        100 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_ACDC;
         power:                        400 kW;
         weight:                       39 ton;
 
@@ -148,7 +148,15 @@ item(FEAT_TRAINS, emu_401) {
       graphics {
         default:                      sw_401_gfx_main;
 		    purchase:                 spriteset_401_purchase;
-		    additional_text:	      return string(JNR_415_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_AC_DC_2_HZ, 20, 50,60, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 3)),
+        string(STR_USAGE, string(STR_USE_REGIO)),
+        string(STR_OPERATOR,string(STR_CONCAT_2_DASH,string(STR_JNR),string(STR_JR,string(STR_CONCAT_3,string(STR_JR_EAST),string(STR_JR_WEST),string(STR_JR_KYUSHU))))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
         cargo_subtype_text:           sw_401_subtypetext_main;
         can_attach_wagon:			  sw_415group_attach_vehid;
         //start_stop:                   ;
