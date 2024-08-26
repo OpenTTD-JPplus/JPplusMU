@@ -266,7 +266,7 @@ item(FEAT_TRAINS, emu_8000) {
 		cost_factor : 24;
 		running_cost_factor : 48;
 		speed : 130 km/h;
-		track_type : NARROW_OHLE;
+		track_type : TR_1067_DC;
 		power : 800 kW;
 		weight : 37 ton;
 		climates_available : ALL_CLIMATES;
@@ -290,7 +290,15 @@ item(FEAT_TRAINS, emu_8000) {
 	graphics {
 		default : sw_en8000_main;
 		purchase : spriteset_8000_purchase;
-		additional_text : return string(JRS_8000_DESC);
+		additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_DC_N, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+        string(STR_USAGE, string(STR_USE_LTDEXPRESS)),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_SHIKOKU))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+        
 		can_attach_wagon : sw_8000_attach_vehid;
 		cargo_subtype_text : sw_8000_subtypetext_main;		//start_stop : sw_8000_start_stop;
 	}

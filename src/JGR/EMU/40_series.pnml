@@ -428,7 +428,7 @@ item(FEAT_TRAINS, emu_40) {
         running_cost_factor:          54;
 
         speed:                        85 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_DC;
         power:                        420 kW;
         weight:                       38 ton;
 
@@ -455,7 +455,15 @@ item(FEAT_TRAINS, emu_40) {
       graphics {
         default:                sw_EMU40_gfx_main;
 		    purchase:               spriteset_EMU40_purchase;
-		    additional_text:	      return string(JGR_40_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_DC_N, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 3)),
+        string(STR_USAGE, string(STR_USE_COMMUTER)),
+        string(STR_OPERATOR, string(STR_CONCAT_2_DASH, string(STR_OP_JGR),string(STR_JNR))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
         cargo_subtype_text:     sw_EMU40_subtypetext_main;
         can_attach_wagon:			  sw_EMU40_attach_vehid;
         //start_stop:           ;
@@ -488,7 +496,7 @@ item(FEAT_TRAINS, emu_40sinlge) {
         running_cost_factor:          54;
 
         speed:                        85 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_DC;
         power:                        420 kW;
         weight:                       38 ton;
 
@@ -515,7 +523,15 @@ item(FEAT_TRAINS, emu_40sinlge) {
       graphics {
         default:                sw_EMU40_gfx_single;
 		    purchase:               spriteset_EMU40sinlge_purchase;
-		    additional_text:	      return string(JGR_40_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_DC_N, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 3)),
+        string(STR_USAGE, string(STR_USE_COMMUTER)),
+        string(STR_OPERATOR, string(STR_CONCAT_2_DASH, string(STR_OP_JGR),string(STR_JNR))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
         cargo_subtype_text:     sw_EMU40_subtypetext_single;
         can_attach_wagon:			  sw_EMU40_single_attach_vehid;
         //start_stop:           ;

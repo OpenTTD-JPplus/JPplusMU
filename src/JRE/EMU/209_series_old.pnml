@@ -415,7 +415,7 @@ item(FEAT_TRAINS, emu_209) {
         running_cost_factor:          51;
 
         speed:                        110 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_DC;
         power:                        380 kW;
         weight:                       35 ton;
 

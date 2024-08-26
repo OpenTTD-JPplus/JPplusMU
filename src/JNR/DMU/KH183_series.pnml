@@ -259,7 +259,7 @@ item(FEAT_TRAINS, dmu_kiha183) {
         running_cost_factor:          50;
 
         speed:                        110 km/h;
-        track_type:                   NARROW_NOEL;
+        track_type:                   TR_1067_NE;
         power:                        367 kW;
         weight:                       46 ton;
 
@@ -286,7 +286,15 @@ item(FEAT_TRAINS, dmu_kiha183) {
       graphics {
         default:                sw_KH183_gfx_main;
 		    purchase:               spriteset_KH183_purchase;
-		    additional_text:	      return string(JNR_kiha183_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_NOT_DENKI, string(STR_DIESEL)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+        string(STR_USAGE,string(STR_USE_LTDEXPRESS)),
+        string(STR_OPERATOR,string(STR_CONCAT_2_DASH,string(STR_JNR),string(STR_JR,string(STR_JR_HOKKAIDO)))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
         cargo_subtype_text:     sw_KH183_subtypetext_main;
         can_attach_wagon:			  sw_KH183_attach_vehid;
         start_stop:             sw_KH183_startstop;

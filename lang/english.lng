@@ -1,5 +1,6 @@
 ##grflangid 0x01
 # This is the English language file
+##plural 0
 
 # GRF name and description definitions
 STR_GRF_NAME:JP+ Multiple Units (v0.5.0)
@@ -54,7 +55,21 @@ GRF_JAPANSETTRAINS: JP+ Set should be loaded AFTER Japan Set3: Trains to avoid t
 GRF_JAPANSECRETORDER:  JP+ Set should be loaded AFTER JP+ Engines & Wagons for compatibility.
 
 
-
+# *String templates stuff
+# Used for Train Description. Don't change structure of these
+# STR_TRAIN_DESC:{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}
+STR_TRAIN_DESC:{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}{}{BLACK}{STRING}{STRING}
+STR_CONCAT_2:{STRING} {STRING}
+STR_CONCAT_2_DASH:{STRING} / {STRING}
+STR_CONCAT_2_OR:{STRING}{BLACK} or {STRING}
+STR_CONCAT_3:{STRING} {STRING} {STRING}
+STR_CONCAT_4:{STRING} {STRING} {STRING} {STRING}
+STR_CONCAT_5:{STRING} {STRING} {STRING} {STRING}
+STR_LIVERY: {STRING} {GOLD}{TINYFONT}({COMMA})
+# Whitespaces could be removed for specific languages: Hatsune 39 Type -> 初音39形
+STR_TRAIN_NAME_SHORT:{STRING} {STRING}
+STR_TRAIN_NAME:{STRING} {STRING} {STRING}
+STR_TRAIN_NAME_LONG:{STRING} {STRING} {STRING} {STRING}
 
 # Vehicle Name
 MUCAR   :JP+ MU Car {WHITE}(MU){BLACK}
@@ -692,19 +707,69 @@ MU_MORECARS  :A unit in the consist has an invalid length. You might need to add
 MU_MORESP:You need to attach more {GREEN}JP+ MU Special Cars{WHITE} to the rear of the consist.
 MU_CABb4SP   :You can only attach {GREEN}JP+ MU Special Cars{WHITE} after a {GREEN}JP+ MU Cab/Control Car{WHITE}.
 
+# *Description
+# Gauge
+STR_NARROWGAUGE:Gauge:{GOLD} Narrow (1,067mm)
+STR_STANDARDGAUGE:Gauge:{GOLD} Standard (1,435mm)
 
-# Description
+# Loading Speed
+STR_LOAD_SPEED:Loading Speed: {GOLD}{STRING}
+STR_DOORS:{COMMA} Door{P "" s}
+STR_DOORS_REFIT:{COMMA} Door{P "" s} (refit to {COMMA} available)
+
+# Formations
+STR_FORMATION:Real Formations: {GOLD}{STRING}
+
+STR_NUM_CARS_1:{COMMA} car{P "" s}
+STR_NUM_CARS_2:{COMMA},{COMMA} cars
+STR_NUM_CARS_3:{COMMA},{COMMA},{COMMA} cars
+STR_NUM_CARS_4:{COMMA},{COMMA},{COMMA},{COMMA} cars
+STR_NUM_CARS_5:{COMMA},{COMMA},{COMMA},{COMMA},{COMMA} cars
+STR_NUM_CARS_6:{COMMA},{COMMA},{COMMA},{COMMA},{COMMA},{COMMA} cars
+STR_NUM_CARS_RANGE:{COMMA}~{COMMA} cars
+
+# Usage
+STR_USAGE:Usage: {STRING} {STRING}
+STR_USE_COMMUTER:{SILVER}Commuter Passengers
+STR_USE_REGIO:{SILVER}Regional Passengers
+STR_USE_GENERAL:{SILVER}General Passengers
+STR_USE_EXPRESS:{LTBLUE}Express Passengers
+STR_USE_LTDEXPRESS:{RED}Limited Express Passengers
+
+# Electro system
+STR_DENKI:Electric System: {STRING}
+STR_NOT_DENKI:Power Type: {GOLD}{STRING}
+STR_DIESEL:Diesel
+STR_HYBRID:Diesel-Electric
+
+STR_DC_N:{BLUE}DC ({COMMA}V)
+STR_AC_V:{RED}AC ({COMMA}V {COMMA}Hz)
+STR_AC_KV:{RED}AC ({COMMA}kV {COMMA}Hz)
+STR_AC_DC:{RED}AC ({COMMA}kV {COMMA}Hz){SILVER} / {BLUE}DC ({COMMA}V)
+STR_AC_DC_2_HZ:{RED}AC ({COMMA}kV {COMMA}/{COMMA}Hz){SILVER} / {BLUE}DC ({COMMA}V)
+
+# Operator
+STR_OPERATOR:Operator: {STRING}
+STR_OP_JGR:{WHITE}JGR
+STR_JNR:{WHITE}JNR
+STR_JR:{WHITE}JR {STRING}
+STR_JR_EAST:{GREEN}East
+STR_JR_CENTRAL:{ORANGE}Central
+STR_JR_WEST:{BLUE}West
+STR_JR_HOKKAIDO:{DKGREEN}Hokkaido
+STR_JR_SHIKOKU:{LTBLUE}Shikoku
+STR_JR_KYUSHU:{RED}Kyushu
+
+# Desc Liveries
+STR_LIVERIES:{}{BLACK}Liveries: {STRING}
+LV_VARIOUS:{GOLD}Various {GREEN}(refittable)
 
 MUCAR_DESC  :{BLUE}Used to represent  {GREEN}motor and trailer cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
 MUCAB_DESC  :{BLUE}Used to represent {GREEN}cab/control cars{BLUE} within an EMU formation. {}{RED}Must be the rear of an EMU consist, but can be placed within.
 MUCARDD_DESC  :{BLUE}Used to represent special cars, such as {GREEN}bilevel cars{BLUE} within an EMU formation. {}{RED}Cannot be the rear of an EMU consist.
 
-DH_EF210_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Freight helper/banker{}{BLACK}Operators: {GOLD}JR {GRAY}Freight{}
-DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Heavy freight{}{BLACK}Operators: {YELLOW}Seibu{}
-
-
-
-
+# DH_EF210_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Freight helper/banker{}{BLACK}Operators: {GOLD}JR {GRAY}Freight{}
+# DH_E851_DESC  :{BLACK}UIC:{GOLD} Bo-Bo-Bo{}{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {RED}Heavy freight{}{BLACK}Operators: {YELLOW}Seibu{}
 
 # 40 Series 
 JGR_40_DESC  :{BLACK}Gauge:{GOLD} Narrow/Kyōki (3ft6in/​1,067mm){}{BLACK}Usage: {SILVER}Commuter Passengers / DC Type{}{}{BLACK}Operators: {WHITE}JGR / JNR{}

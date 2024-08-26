@@ -141,7 +141,7 @@ item(FEAT_TRAINS, emu_7195000) {
         running_cost_factor:          50;
 
         speed:                        110 km/h;
-        track_type:                   STANDARD_OHLE;
+        track_type:                   TR_1435_AC;
         power:                        480 kW;
         weight:                       36 ton;
 
@@ -168,7 +168,15 @@ item(FEAT_TRAINS, emu_7195000) {
       graphics {
         default:                  sw_7195000_gfx_main;
 		    purchase:                 spriteset_7195000_purchase;
-		    additional_text:	        return string(JRE_7195000_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_STANDARDGAUGE),
+        string(STR_DENKI, string(STR_AC_KV, 20, 50)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 3)),
+        string(STR_USAGE, string(STR_USE_REGIO)),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_EAST))));
+        // string(STR_LIVERIES, string(LV_VARIOUS)));
+        
         //cargo_subtype_text:       sw_7195000_subtypetext_main;
         can_attach_wagon:			    sw_7195000_attach_vehid;
         //start_stop:                   ;

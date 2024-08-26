@@ -526,7 +526,7 @@ item(FEAT_TRAINS, emu_711) {
         running_cost_factor:          50;
 
         speed:                        110 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_AC;
         power:                        600 kW;
         weight:                       45 ton;
 
@@ -553,7 +553,15 @@ item(FEAT_TRAINS, emu_711) {
       graphics {
         default:                      sw_711_gfx_main;
 		    purchase:                 spriteset_711_purchase;
-		    additional_text:	      return string(JNR_711_DESC);
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_STANDARDGAUGE),
+        string(STR_DENKI, string(STR_AC_KV, 20, 50)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+        string(STR_USAGE, string(STR_USE_REGIO)),
+        string(STR_OPERATOR,string(STR_CONCAT_2_DASH,string(STR_JNR),string(STR_JR,string(STR_JR_HOKKAIDO)))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
         cargo_subtype_text:           sw_711_subtypetext_main;
         can_attach_wagon:			  sw_711_attach_vehid;
         //start_stop:                   ;

@@ -250,7 +250,7 @@ item(FEAT_TRAINS, emu_315) {
         cost_factor:                  19;
         running_cost_factor:          49;
         speed:                        130 km/h;
-        track_type:                   NARROW_OHLE;
+        track_type:                   TR_1067_DC;
         power:                        800 kW;
         weight:                       37 ton;
         climates_available:           ALL_CLIMATES;
@@ -274,7 +274,15 @@ item(FEAT_TRAINS, emu_315) {
       graphics {
         default:                      sw_315_gfx_main;
         purchase:                     spriteset_315_purchase;
-        additional_text:              return string(JRC_315_DESC);
+        additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_DC_N, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 3)),
+        string(STR_USAGE, string(STR_USE_REGIO)),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_CENTRAL))));
+        // string(STR_LIVERIES, string(LV_VARIOUS)));
+        
         //cargo_subtype_text:           sw_315_subtypetext_main;
         can_attach_wagon:             sw_315_attach_vehid;
         //start_stop:                   ;
