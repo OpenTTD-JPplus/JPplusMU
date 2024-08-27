@@ -1,6 +1,5 @@
 
-nml_patcher.py
-pybuild.bat
+build.bat
 *.cacheindex
 *.cache
 *.vs

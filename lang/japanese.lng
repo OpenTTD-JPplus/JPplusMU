@@ -3,7 +3,7 @@
 
 # GRF name and description definitions
 
-STR_GRF_NAME        :JP+ Multiple Units - JGR/JNR/JR Trains (v0.5.0)
+STR_GRF_NAME        :JP+ Multiple Units
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}は日本の風景をもっと豊かに鉄道車両を追加します。当GRF利用の際には、狭軌を含むレールセットが必要です。{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Takamaro{}Erato{}StandUserLeon{}Yozora{}Emperor Jake{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Erato{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
