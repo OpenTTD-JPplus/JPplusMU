@@ -8,6 +8,6 @@ JP+ Multiple Units is a NewGRF for [OpenTTD](https://www.openttd.org/), bringing
 
 Coding: Tintinfan, Takamaro, Azusa
 
-Graphics: Tintinfan, Azusa, Wicket-303, RIPper_KR, ChuoSpecialRapid201, Erato, Takamaro, StandUserLeon, Yozora, Emperor Jake
+Graphics: Tintinfan, Azusa, Wicket-303, RIPper_KR, ChuoSpecialRapid201, Erato, Takamaro, StandUserLeon, Yozora, Emperor Jake, John Franklin
 
 Thanks to: Jake, KeepinItRail, Romazoon, Doorslammer, Gwyd & The JapanSet Team
