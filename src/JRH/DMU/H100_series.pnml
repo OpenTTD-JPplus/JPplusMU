@@ -1,0 +1,134 @@
+/*---GFX: Spritesets---*/
+//Purchase Sprites
+spriteset(spriteset_H100_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRH/dmuH100/purchase_32bpp.png")         {tmpl_purchase_32bpp(0, 0)}
+
+//H100 JR
+spriteset(spriteset_H100_inital,         ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuH100/h100.png")           {tmpl_std(0, 0)}
+spriteset(spriteset_H100_rev_inital,     ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuH100/h100.png")           {tmpl_std_rev(0, 25)}
+spriteset(spriteset_H100_revflip_inital, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,             "gfx/JRH/dmuH100/h100.png")           {tmpl_std(0, 25)}
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Pantograph Positions---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Train Reversing Switches---*/
+//Livery Selection
+switch(FEAT_TRAINS,SELF, sw_H100_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_H100_rev_inital;
+}
+switch(FEAT_TRAINS,SELF, sw_H100_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_H100_revflip_inital;
+}
+
+//Check for flipped vehicles (dual_headed)
+switch(FEAT_TRAINS, SELF, sw_H100_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_H100_gfx_rev_livery;
+ default: sw_H100_gfx_revflip_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_H100_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1523: sw_H100_gfx_rev_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Front/Back Cab Car Switches + DUAL_HEADED fix---*/
+//H100 JR Orange Vermillion
+switch(FEAT_TRAINS, PARENT, sw_H100_inital_gfx_frontback_revcheck, vehicle_is_reversed){
+ 0: spriteset_H100_inital;
+ default: sw_H100_gfx_rev_flippedcheck;
+}
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Middle Car Switches---*/
+
+/*---END OF SECTION---*/
+
+
+
+/*---GFX: Livery Refitting Switches---*/
+//Main Switches
+switch(FEAT_TRAINS, SELF, sw_H100_gfx_main, cargo_subtype) {
+  0: sw_H100_inital_gfx_frontback_revcheck;
+}
+
+//Menu Switches
+switch(FEAT_TRAINS, SELF, sw_H100_subtypetext_main, cargo_subtype) {
+  0: string(LV_ORANGE_CAPITAL);
+}
+
+/*---END OF SECTION---*/
+
+
+
+//Coupling
+  switch(FEAT_TRAINS, SELF, sw_H100_attach_vehid, [vehicle_type_id == dmu_H100]) {
+  0: return string(MU_UNIQUE);
+  }
+
+
+
+item(FEAT_TRAINS, dmu_H100) {
+    property {
+        name:                         string(JRH_H100);
+        introduction_date:            date(2017, 03, 10);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 42;
+        reliability_decay:            19;
+
+        cargo_capacity:               param_capacity_rapid;
+        loading_speed:                param_loading_2D;
+        cargo_age_period:             param_decay_local;
+        cost_factor:                  17;
+        running_cost_factor:          49;
+
+        speed:                        100 km/h;
+        track_type:                   TR_1067_NE;
+        power:                        331 kW;
+        weight:                       42 ton;
+
+        climates_available:           ALL_CLIMATES;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        misc_flags:                   bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost:                   0;
+        dual_headed:                  0;
+        ai_engine_rank:               0;
+
+        running_cost_base:            RUNNING_COST_DIESEL;
+        engine_class:                 ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient:  0.2;
+        air_drag_coefficient:         0.07;
+        bitmask_vehicle_info:         0;
+        length: 8;
+    }
+    /*Graphics and Callbacks*/
+      graphics {
+        default:                      sw_H100_gfx_main;
+		    purchase:                 spriteset_H100_purchase;
+		    additional_text:	      
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_NOT_DENKI, string(STR_DIESEL)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+        string(STR_USAGE,string(STR_USE_REGIO)),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_SHIKOKU))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
+
+        //cargo_subtype_text:           sw_H100_subtypetext_main;
+        can_attach_wagon:			  sw_H100_attach_vehid;
+        //start_stop:                   ;
+    }
+}
