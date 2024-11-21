@@ -30837,7 +30837,7 @@ item(FEAT_TRAINS, dmu_H100) {
         string(STR_NOT_DENKI, string(STR_DIESEL)),
         string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
         string(STR_USAGE,string(STR_USE_REGIO)),
-        string(STR_OPERATOR,string(STR_JR,string(STR_JR_SHIKOKU))),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_HOKKAIDO))),
         string(STR_LIVERIES, string(LV_VARIOUS)));
 
 
