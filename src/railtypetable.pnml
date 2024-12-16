@@ -15,5 +15,5 @@ railtypetable {
   TR_1435_M:        [SAA3, SAB3, "3RDR", MTRO, ELRL],
   TR_1435_LINEAR:   [SAAI, ELRL],
   TR_RUBBER:        [rAA3,rAAE, ELRL],
-  TR_UNIVERSAL:     [_AAE, RAIL], //for mu cars
+  TR_UNIVERSAL:     [_AAE,NAAN, RAIL], //for mu cars
 } 
