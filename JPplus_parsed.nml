@@ -2,7 +2,7 @@ grf {
 	grfid: "BS\13\20";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	version: 51;
+	version: 52;
 	min_compatible_version: 10;
 	param 4 {
 		param_japansetdisable {
@@ -125,7 +125,7 @@ basecost {
 }
 
 railtypetable {
-    TR_1067_NE: [NAAN, RAIL], TR_1067_DC: [NAAD, NAAE, NABE, ELNG, ELRL], TR_1067_AC: [NAAA, NAAE, NABE, ELNG, ELRL], TR_1067_ACDC: [NAAE, NABE, ELNG, ELRL], TR_1372_DC: [sAAD, sAAE, SAAD, SAAE, ELRL], TR_1435_NE: [SAAN, RAIL], TR_1435_DC: [SAAD, ELRL], TR_1435_AC: [SAAA, ELRL], TR_1435_ACDC: [SAAE, ELRL], TR_1435_M: [SAA3, SAB3, "3RDR", MTRO, ELRL], TR_1435_LINEAR: [SAAI, ELRL], TR_RUBBER: [rAA3, rAAE, ELRL], TR_UNIVERSAL: [_AAE, RAIL]
+    TR_1067_NE: [NAAN, RAIL], TR_1067_DC: [NAAD, NAAE, NABE, ELNG, ELRL], TR_1067_AC: [NAAA, NAAE, NABE, ELNG, ELRL], TR_1067_ACDC: [NAAE, NABE, ELNG, ELRL], TR_1372_DC: [sAAD, sAAE, SAAD, SAAE, ELRL], TR_1435_NE: [SAAN, RAIL], TR_1435_DC: [SAAD, ELRL], TR_1435_AC: [SAAA, ELRL], TR_1435_ACDC: [SAAE, ELRL], TR_1435_M: [SAA3, SAB3, "3RDR", MTRO, ELRL], TR_1435_LINEAR: [SAAI, ELRL], TR_RUBBER: [rAA3, rAAE, ELRL], TR_UNIVERSAL: [_AAE, NAAN, RAIL]
 }
 
 cargotable {
@@ -7549,7 +7549,7 @@ spriteset(spriteset_413_revflip_front_initial, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP
 	tmpl_std(0, 0)
 }
 
-alternative_sprites(spriteset_413_front_initial, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx\JNR\emu413/413_initial.png") {
+alternative_sprites(spriteset_413_front_initial, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu413/413_initial.png") {
 	tmpl_std(0, 0)
 }
 
