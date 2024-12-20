@@ -37390,24 +37390,24 @@ spriteset (spriteset_E351_rev_front_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev
 spriteset (spriteset_E351_revflip_front_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 
 alternative_sprites (spriteset_E351_front_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 0) }
-alternative_sprites (spriteset_E351_rev_front_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 0) }
-alternative_sprites (spriteset_E351_revflip_front_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 0) }
+alternative_sprites (spriteset_E351_rev_front_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 25) }
+alternative_sprites (spriteset_E351_revflip_front_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 25) }
 
 spriteset (spriteset_E351_back_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 spriteset (spriteset_E351_rev_back_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
 spriteset (spriteset_E351_revflip_back_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 
 alternative_sprites (spriteset_E351_back_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 25) }
-alternative_sprites (spriteset_E351_rev_back_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 25) }
-alternative_sprites (spriteset_E351_revflip_back_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 25) }
+alternative_sprites (spriteset_E351_rev_back_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 0) }
+alternative_sprites (spriteset_E351_revflip_back_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 0) }
 
 spriteset (spriteset_E351_back_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 spriteset (spriteset_E351_rev_back_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
 spriteset (spriteset_E351_revflip_back_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 
-alternative_sprites (spriteset_E351_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 175) }
-alternative_sprites (spriteset_E351_rev_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 175) }
-alternative_sprites (spriteset_E351_revflip_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 175) }
+alternative_sprites (spriteset_E351_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 200) }
+alternative_sprites (spriteset_E351_rev_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 175) }
+alternative_sprites (spriteset_E351_revflip_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 175) }
 
 spriteset (spriteset_E351_mid_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 spriteset (spriteset_E351_rev_mid_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
@@ -37500,7 +37500,7 @@ switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_mid_panto_flippedcheck, vehicle_is_fli
 
 
 
-switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_pantograph_pos_azusa_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_pantograph_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
   0: sw_E351_gfx_rev_mid_panto_flippedcheck;
   default: sw_E351_gfx_rev_mid_flippedcheck;
 }
@@ -37539,7 +37539,7 @@ switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_frontback,
   default: sw_E351_gfx_rev_front_flippedcheck;
 }
 switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-  1000: sw_E351_gfx_rev_pantograph_pos_azusa_sw0;
+  1000: sw_E351_gfx_rev_pantograph_pos;
   2077: sw_E351_gfx_rev_frontback;
 }
 
@@ -37552,14 +37552,11 @@ switch(FEAT_TRAINS, SELF, sw_E351_mid_panto_azusa, [build_year>1996 || date_of_l
 
 
 
-switch(FEAT_TRAINS, SELF, sw_E351_gfx_pantograph_pos_azusa_sw0, position_in_vehid_chain%4){
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_pantograph_pos_azusa, position_in_vehid_chain%4){
   0: sw_E351_mid_panto_azusa;
   default: spriteset_E351_mid_azusa;
 }
 
-switch(FEAT_TRAINS, SELF, sw_E351_gfx_pantograph_pos_azusa, num_vehs_in_vehid_chain){
-  default: sw_E351_gfx_pantograph_pos_azusa_sw0;
-}
 
 
 
@@ -37666,7 +37663,7 @@ item(FEAT_TRAINS, emu_E351) {
     }
 
       livery_override(mu_car){
-        default: sw_E351_gfx_mucar;
+        default: sw_E351_gfx_mucar_revcheck_mid_azusa;
         cargo_capacity: param_capacity_express;
         loading_speed: param_loading_2D;
 
