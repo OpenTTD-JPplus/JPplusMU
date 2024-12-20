@@ -10,7 +10,7 @@ grf {
  grfid: "BS\13\20";
  name: string(STR_GRF_NAME);
  desc: string(STR_GRF_DESC);
- version: 52;
+ version: 53;
  min_compatible_version: 10;
 
   param 4 {
@@ -622,6 +622,7 @@ item(FEAT_TRAINS, emu_583, 2073) {}
 item(FEAT_TRAINS, emu_417, 2074) {}
 item(FEAT_TRAINS, emu_381, 2075) {}
 item(FEAT_TRAINS, emu_203, 2076) {}
+item(FEAT_TRAINS, emu_E351, 2077) {}
 # 15 "JPplus.pnml" 2
 
 
@@ -736,6 +737,7 @@ emu_719,
 emu_7195000,
 
 emu_E257,
+emu_E351,
 emu_E353,
 
 emu_651,
@@ -37373,6 +37375,306 @@ item(FEAT_TRAINS, emu_E257) {
       }
 }
 # 118 "JPplus.pnml" 2
+# 1 "src/JRE/EMU/E351_series.pnml" 1
+
+
+
+
+
+spriteset (spriteset_E351_purchase, "gfx/OTHER/mucar.png") { tmpl_purchase(0, 0) }
+alternative_sprites (spriteset_E351_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/purchase_32bpp.png") { tmpl_purchase_dh_32bpp(0, 0) }
+
+
+spriteset (spriteset_E351_front_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_E351_rev_front_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
+spriteset (spriteset_E351_revflip_front_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_E351_front_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 0) }
+alternative_sprites (spriteset_E351_rev_front_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 0) }
+alternative_sprites (spriteset_E351_revflip_front_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 0) }
+
+spriteset (spriteset_E351_back_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_E351_rev_back_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
+spriteset (spriteset_E351_revflip_back_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_E351_back_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 25) }
+alternative_sprites (spriteset_E351_rev_back_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 25) }
+alternative_sprites (spriteset_E351_revflip_back_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 25) }
+
+spriteset (spriteset_E351_back_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_E351_rev_back_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
+spriteset (spriteset_E351_revflip_back_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_E351_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 175) }
+alternative_sprites (spriteset_E351_rev_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 175) }
+alternative_sprites (spriteset_E351_revflip_back_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 175) }
+
+spriteset (spriteset_E351_mid_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_E351_rev_mid_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
+spriteset (spriteset_E351_revflip_mid_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_E351_mid_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 150) }
+alternative_sprites (spriteset_E351_rev_mid_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 150) }
+alternative_sprites (spriteset_E351_revflip_mid_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 150) }
+
+spriteset (spriteset_E351_mid_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_E351_rev_mid_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
+spriteset (spriteset_E351_revflip_mid_panto_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_E351_mid_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 100) }
+alternative_sprites (spriteset_E351_rev_mid_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 100) }
+alternative_sprites (spriteset_E351_revflip_mid_panto_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 100) }
+
+spriteset (spriteset_E351_mid_panto_singlearm_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_E351_rev_mid_panto_singlearm_azusa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
+spriteset (spriteset_E351_revflip_mid_panto_singlearm_azusa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+
+alternative_sprites (spriteset_E351_mid_panto_singlearm_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 125) }
+alternative_sprites (spriteset_E351_rev_mid_panto_singlearm_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std_rev(0, 125) }
+alternative_sprites (spriteset_E351_revflip_mid_panto_singlearm_azusa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRE/emuE351/E351.png") { tmpl_std(0, 125) }
+
+
+
+
+switch(FEAT_TRAINS, SELF, sw_E351_rev_mid_panto_azusa, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_E351_rev_mid_panto_singlearm_azusa;
+  default: spriteset_E351_rev_mid_panto_azusa;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_revflip_mid_panto_azusa, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_E351_revflip_mid_panto_singlearm_azusa;
+  default: spriteset_E351_revflip_mid_panto_azusa;
+}
+
+
+
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_rev_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_E351_rev_front_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_revflip_front_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_E351_revflip_front_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_rev_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_E351_rev_back_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_revflip_back_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_E351_revflip_back_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_rev_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_E351_rev_back_panto_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_revflip_back_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_E351_revflip_back_panto_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_rev_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_E351_rev_mid_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_revflip_mid_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: spriteset_E351_revflip_mid_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_rev_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: sw_E351_rev_mid_panto_azusa;
+}
+switch(FEAT_TRAINS,SELF, sw_E351_gfx_revflip_mid_panto_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  0: sw_E351_revflip_mid_panto_azusa;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
+  1: sw_E351_gfx_revflip_front_livery;
+  default: sw_E351_gfx_rev_front_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
+  1: sw_E351_gfx_revflip_back_livery;
+  default: sw_E351_gfx_rev_back_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_back_panto_flippedcheck, vehicle_is_flipped) {
+  1: sw_E351_gfx_revflip_back_panto_livery;
+  default: sw_E351_gfx_rev_back_panto_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_mid_flippedcheck, vehicle_is_flipped) {
+  1: sw_E351_gfx_revflip_mid_livery;
+  default: sw_E351_gfx_rev_mid_livery;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_mid_panto_flippedcheck, vehicle_is_flipped) {
+  1: sw_E351_gfx_revflip_mid_panto_livery;
+  default: sw_E351_gfx_rev_mid_panto_livery;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_pantograph_pos_azusa_sw0, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%4]){
+  0: sw_E351_gfx_rev_mid_panto_flippedcheck;
+  default: sw_E351_gfx_rev_mid_flippedcheck;
+}
+# 140 "src/JRE/EMU/E351_series.pnml"
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_back_pantocheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x41]]){
+  0: sw_E351_gfx_rev_back_flippedcheck;
+  default: sw_E351_gfx_rev_back_panto_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_frontback_nomucars,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+  1: sw_E351_gfx_rev_front_flippedcheck;
+  0: sw_E351_gfx_rev_back_pantocheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_frontback_aftermucars,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x000000FF, 0x41]%2]){
+  1: sw_E351_gfx_rev_back_pantocheck;
+  0: sw_E351_gfx_rev_front_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_frontback_mucarcheck,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),STORE_TEMP(var[0x61, 0, 0x000000FF, 0x41],0),
+STORE_TEMP((position_in_consist_from_end-position_in_consist-1)-LOAD_TEMP(0), 0x10F),
+var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_E351_gfx_rev_frontback_aftermucars;
+  default: sw_E351_gfx_rev_frontback_nomucars;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_frontback_sameid,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist+1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  2077: sw_E351_gfx_rev_frontback_mucarcheck;
+  1000: sw_E351_gfx_rev_front_flippedcheck;
+  default: sw_E351_gfx_rev_back_pantocheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_frontback,
+[STORE_TEMP(position_in_consist_from_end-position_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  2077: sw_E351_gfx_rev_frontback_sameid;
+  1000: sw_E351_gfx_rev_back_pantocheck;
+  default: sw_E351_gfx_rev_front_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+  1000: sw_E351_gfx_rev_pantograph_pos_azusa_sw0;
+  2077: sw_E351_gfx_rev_frontback;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, sw_E351_mid_panto_azusa, [build_year>1996 || date_of_last_service>date(1996,1,1)] ){
+  1: spriteset_E351_mid_panto_singlearm_azusa;
+  default: spriteset_E351_mid_panto_azusa;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_pantograph_pos_azusa_sw0, position_in_vehid_chain%4){
+  0: sw_E351_mid_panto_azusa;
+  default: spriteset_E351_mid_azusa;
+}
+
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_pantograph_pos_azusa, num_vehs_in_vehid_chain){
+  default: sw_E351_gfx_pantograph_pos_azusa_sw0;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_pantocheck_azusa, position_in_vehid_chain){
+  0: spriteset_E351_back_azusa;
+  default: spriteset_E351_back_panto_azusa;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_frontback_flipcheck_azusa, vehicle_is_flipped){
+  0: spriteset_E351_front_azusa;
+  default: sw_E351_gfx_pantocheck_azusa;
+}
+switch(FEAT_TRAINS, PARENT, sw_E351_gfx_frontback_azusa, vehicle_is_reversed){
+  0: sw_E351_gfx_frontback_flipcheck_azusa;
+  default: sw_E351_gfx_rev_idcheck;
+}
+
+
+
+switch(FEAT_TRAINS, PARENT, sw_E351_gfx_mucar_revcheck_mid_azusa, vehicle_is_reversed){
+  0: sw_E351_gfx_pantograph_pos_azusa;
+  default: sw_E351_gfx_rev_idcheck;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_mucar, cargo_subtype) {
+  0: sw_E351_gfx_mucar_revcheck_mid_azusa;
+}
+switch(FEAT_TRAINS, SELF, sw_E351_gfx_main, cargo_subtype) {
+  0: sw_E351_gfx_frontback_azusa;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, sw_E351_subtypetext_mucar, cargo_subtype) {
+  0: string(E351_LV_azusa);
+}
+switch(FEAT_TRAINS, SELF, sw_E351_subtypetext_main, cargo_subtype) {
+  0: string(E351_LV_azusa);
+}
+
+
+
+switch(FEAT_TRAINS, SELF, sw_E351_attach_vehid, [vehicle_type_id == 2077 || vehicle_type_id == mu_car]) {
+  0: return string(MU_UNIQUE);
+}
+
+
+
+item(FEAT_TRAINS, emu_E351) {
+    property {
+        name: string(JRE_E351);
+        introduction_date: date(1993, 12, 23);
+        model_life: 3;
+        vehicle_life: 25;
+        reliability_decay: 24;
+
+        cargo_capacity: param_capacity_express;
+        loading_speed: param_loading_2D;
+        cargo_age_period: param_decay_express;
+        cost_factor: 20;
+        running_cost_factor: 50;
+
+        speed: 130 km/h;
+        track_type: TR_1067_DC;
+        power: 600 kW;
+        weight: 39 ton;
+
+        climates_available: ALL_CLIMATES;
+        ai_special_flag: AI_FLAG_PASSENGER;
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        misc_flags: bitmask(TRAIN_FLAG_MU);
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        refit_cost: 0;
+        dual_headed: 1;
+        ai_engine_rank: 0;
+
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 4, ENABLE_WAGON_POWER);
+
+        tractive_effort_coefficient: 0.2;
+        air_drag_coefficient: 0.07;
+        bitmask_vehicle_info: 0;
+        length: 8;
+    }
+
+      graphics {
+        default: sw_E351_gfx_main;
+        purchase: spriteset_E351_purchase;
+  additional_text:
+        string(STR_TRAIN_DESC,
+        string(STR_NARROWGAUGE),
+        string(STR_DENKI, string(STR_DC_N, 1500)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+        string(STR_USAGE, string(STR_USE_LTDEXPRESS)),
+        string(STR_OPERATOR,string(STR_JR,string(STR_JR_EAST))));
+
+
+
+        can_attach_wagon: sw_E351_attach_vehid;
+
+    }
+
+      livery_override(mu_car){
+        default: sw_E351_gfx_mucar;
+        cargo_capacity: param_capacity_express;
+        loading_speed: param_loading_2D;
+
+        power: 300;
+        weight: 37;
+      }
+}
+# 119 "JPplus.pnml" 2
 # 1 "src/JRE/EMU/E353_series.pnml" 1
 
 spriteset (spriteset_E353_purchase, "gfx/JRE/emuE353/purchase.png") {tmpl_purchase_dh(0, 0)}
@@ -37677,7 +37979,7 @@ item(FEAT_TRAINS, emu_E353) {
         string(STR_TRAIN_DESC,
         string(STR_NARROWGAUGE),
         string(STR_DENKI, string(STR_DC_N, 1500)),
-        string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 1)),
         string(STR_USAGE, string(STR_USE_LTDEXPRESS)),
         string(STR_OPERATOR,string(STR_JR,string(STR_JR_EAST))));
 
@@ -37698,7 +38000,7 @@ item(FEAT_TRAINS, emu_E353) {
       }
 
 }
-# 119 "JPplus.pnml" 2
+# 120 "JPplus.pnml" 2
 # 1 "src/JRE/EMU/651_series.pnml" 1
 
 spriteset (spriteset_651_purchase, "gfx/JRE/emu651/purchase.png") {tmpl_purchase_dh(0, 0)}
@@ -38119,7 +38421,7 @@ item(FEAT_TRAINS, emu_651) {
       }
 
 }
-# 120 "JPplus.pnml" 2
+# 121 "JPplus.pnml" 2
 
 # 1 "src/JRE/EMU/719_series.pnml" 1
 
@@ -38390,7 +38692,7 @@ item(FEAT_TRAINS, emu_719) {
 
     }
 }
-# 122 "JPplus.pnml" 2
+# 123 "JPplus.pnml" 2
 # 1 "src/JRE/EMU/7195000_series.pnml" 1
 
 
@@ -38576,7 +38878,7 @@ item(FEAT_TRAINS, emu_7195000) {
 
     }
 }
-# 123 "JPplus.pnml" 2
+# 124 "JPplus.pnml" 2
 
 
 
@@ -38829,7 +39131,7 @@ item(FEAT_TRAINS, dmu_kiha85) {
         weight: 42;
       }
 }
-# 127 "JPplus.pnml" 2
+# 128 "JPplus.pnml" 2
 
 # 1 "src/JRC/EMU/211_56_series.pnml" 1
 
@@ -38945,7 +39247,7 @@ item(FEAT_TRAINS, emu_21156) {
       }
 
 }
-# 129 "JPplus.pnml" 2
+# 130 "JPplus.pnml" 2
 # 1 "src/JRC/EMU/311_series.pnml" 1
 
 
@@ -39060,7 +39362,7 @@ item(FEAT_TRAINS, emu_311) {
       }
 
 }
-# 130 "JPplus.pnml" 2
+# 131 "JPplus.pnml" 2
 # 1 "src/JRC/EMU/313_series.pnml" 1
 
 
@@ -39186,7 +39488,7 @@ item(FEAT_TRAINS, emu_313) {
       }
 
 }
-# 131 "JPplus.pnml" 2
+# 132 "JPplus.pnml" 2
 # 1 "src/JRC/EMU/315_series.pnml" 1
 
 
@@ -39488,7 +39790,7 @@ item(FEAT_TRAINS, emu_315) {
         weight: 31;
       }
 }
-# 132 "JPplus.pnml" 2
+# 133 "JPplus.pnml" 2
 # 1 "src/JRC/EMU/373_series.pnml" 1
 
 spriteset (spriteset_373_purchase, "gfx/JRC/emu373/purchase.png") {tmpl_purchase_dh(1, 0)}
@@ -39708,7 +40010,7 @@ item(FEAT_TRAINS, emu_373) {
       }
 
 }
-# 133 "JPplus.pnml" 2
+# 134 "JPplus.pnml" 2
 # 1 "src/JRC/EMU/383_series.pnml" 1
 
 spriteset (spriteset_383_purchase, "gfx/JRC/emu383/purchase.png") {tmpl_purchase_dh(1, 0)}
@@ -40000,7 +40302,7 @@ item(FEAT_TRAINS, emu_383) {
       }
 
 }
-# 134 "JPplus.pnml" 2
+# 135 "JPplus.pnml" 2
 
 
 
@@ -40571,7 +40873,7 @@ item(FEAT_TRAINS, emu_jrw207) {
       }
 
 }
-# 138 "JPplus.pnml" 2
+# 139 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/221_series.pnml" 1
 
 
@@ -40724,7 +41026,7 @@ item(FEAT_TRAINS, emu_221) {
       }
 
 }
-# 139 "JPplus.pnml" 2
+# 140 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/223_0_series.pnml" 1
 
 
@@ -40973,7 +41275,7 @@ item(FEAT_TRAINS, emu_223_0) {
       }
 
 }
-# 140 "JPplus.pnml" 2
+# 141 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/223_1000_series.pnml" 1
 
 
@@ -41170,7 +41472,7 @@ item(FEAT_TRAINS, emu_223_1000) {
       }
 
 }
-# 141 "JPplus.pnml" 2
+# 142 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/225_0_series.pnml" 1
 
 
@@ -41350,7 +41652,7 @@ item(FEAT_TRAINS, emu_225_0) {
       }
 
 }
-# 142 "JPplus.pnml" 2
+# 143 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/225_5000_series.pnml" 1
 
 
@@ -41616,7 +41918,7 @@ item(FEAT_TRAINS, emu_225_5000) {
       }
 
 }
-# 143 "JPplus.pnml" 2
+# 144 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/227_series.pnml" 1
 
 spriteset (spriteset_227_purchase, "gfx/JRW/emu227/purchase.png") {tmpl_purchase_dh(1, 0)}
@@ -41887,7 +42189,7 @@ item(FEAT_TRAINS, emu_227) {
       }
 
 }
-# 144 "JPplus.pnml" 2
+# 145 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/271_series.pnml" 1
 
 
@@ -42015,7 +42317,7 @@ item(FEAT_TRAINS, emu_271) {
         weight: 32;
       }
 }
-# 145 "JPplus.pnml" 2
+# 146 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/281_series.pnml" 1
 
 
@@ -42155,7 +42457,7 @@ item(FEAT_TRAINS, emu_281) {
         weight: 32;
       }
 }
-# 146 "JPplus.pnml" 2
+# 147 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/321_series.pnml" 1
 
 spriteset (spriteset_321_purchase, "gfx/JRW/emu321/purchase.png") {tmpl_purchase_dh(0, 0)}
@@ -42397,7 +42699,7 @@ item(FEAT_TRAINS, emu_321) {
       }
 
 }
-# 147 "JPplus.pnml" 2
+# 148 "JPplus.pnml" 2
 # 1 "src/JRW/EMU/323_series.pnml" 1
 
 spriteset (spriteset_323_purchase, "gfx/JRW/emu323/purchase.png") {tmpl_purchase_dh(1, 0)}
@@ -42690,7 +42992,7 @@ item(FEAT_TRAINS, emu_323) {
       }
 
 }
-# 148 "JPplus.pnml" 2
+# 149 "JPplus.pnml" 2
 # 1 "src/JRW/DMU/KH33_series.pnml" 1
 
 
@@ -42811,7 +43113,7 @@ item(FEAT_TRAINS, dmu_KH33) {
         weight: 40;
       }
 }
-# 149 "JPplus.pnml" 2
+# 150 "JPplus.pnml" 2
 
 
 
@@ -43043,7 +43345,7 @@ item(FEAT_TRAINS, emu_121) {
 
     }
 }
-# 153 "JPplus.pnml" 2
+# 154 "JPplus.pnml" 2
 # 1 "src/JRS/EMU/6000_series.pnml" 1
 
 
@@ -43262,7 +43564,7 @@ item(FEAT_TRAINS, emu_6000) {
       }
 
 }
-# 154 "JPplus.pnml" 2
+# 155 "JPplus.pnml" 2
 # 1 "src/JRS/EMU/7200_series.pnml" 1
 
 
@@ -43425,7 +43727,7 @@ item(FEAT_TRAINS, emu_7200) {
 
     }
 }
-# 155 "JPplus.pnml" 2
+# 156 "JPplus.pnml" 2
 # 1 "src/JRS/EMU/8000_series.pnml" 1
 
 
@@ -43744,7 +44046,7 @@ item(FEAT_TRAINS, emu_8000) {
  }
 
 }
-# 156 "JPplus.pnml" 2
+# 157 "JPplus.pnml" 2
 # 1 "src/JRS/DMU/KH1000_series.pnml" 1
 
 
@@ -43862,7 +44164,7 @@ item(FEAT_TRAINS, dmu_KH1000) {
 
     }
 }
-# 157 "JPplus.pnml" 2
+# 158 "JPplus.pnml" 2
 
 
 # 1 "src/JRK/EMU/303_series.pnml" 1
@@ -44148,7 +44450,7 @@ item(FEAT_TRAINS, emu_303) {
       }
 
 }
-# 160 "JPplus.pnml" 2
+# 161 "JPplus.pnml" 2
 # 1 "src/JRK/EMU/811_series.pnml" 1
 
 
@@ -44574,7 +44876,7 @@ item(FEAT_TRAINS, emu_811) {
       }
 
 }
-# 161 "JPplus.pnml" 2
+# 162 "JPplus.pnml" 2
 # 1 "src/JRK/EMU/813_series.pnml" 1
 
 
@@ -44991,7 +45293,7 @@ item(FEAT_TRAINS, emu_813) {
       }
 
 }
-# 162 "JPplus.pnml" 2
+# 163 "JPplus.pnml" 2
 
 
 
@@ -45085,4 +45387,4 @@ if (param_japansetdisable == 1) {
   }
  }
 }
-# 166 "JPplus.pnml" 2
+# 167 "JPplus.pnml" 2

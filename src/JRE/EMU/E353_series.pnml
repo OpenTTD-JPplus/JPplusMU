@@ -301,7 +301,7 @@ item(FEAT_TRAINS, emu_E353) {
         string(STR_TRAIN_DESC,
         string(STR_NARROWGAUGE),
         string(STR_DENKI, string(STR_DC_N, 1500)),
-        string(STR_LOAD_SPEED, string(STR_DOORS, 2)),
+        string(STR_LOAD_SPEED, string(STR_DOORS, 1)),
         string(STR_USAGE, string(STR_USE_LTDEXPRESS)),
         string(STR_OPERATOR,string(STR_JR,string(STR_JR_EAST))));
         // string(STR_LIVERIES, string(LV_VARIOUS)));
