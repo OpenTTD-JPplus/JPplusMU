@@ -30,7 +30,7 @@ if (((grf_order_behind("EN\21\01") == 0) && (grf_order_behind("BS\07\20") != 0))
 if (grf_order_behind("SZ\0D\00") == 0) {
 	error(WARNING, string(GRF_JAPANSETTRAINS));
 }
-
+/*
 if (grf_order_behind("JD\A1\E1") == 0) {
 	error(WARNING, string(GRF_JAPANSECRETORDER));
-}
+}*/

@@ -559,6 +559,9 @@ item(0, dmu_kiha181, 1522) {
 item(0, dmu_H100, 1523) {
 }
 
+item(0, dmu_kiha25, 1524) {
+}
+
 item(0, emu_107, 2018) {
 }
 
@@ -796,7 +799,7 @@ item(0, emu_E351, 2077) {
 item(0, emu_301, 2078) {
 }
 
-sort(0, [emu_6310, emu_6340, emu_40sinlge, emu_40, emu_63, emu_52, emu_103, emu_201, emu_203, emu_205, emu_207900, emu_301, emu_70, emu_113, emu_115, emu_1153000, emu_121, emu_211, emu_213, emu_401, emu_403, emu_413, emu_415, emu_4151500, emu_417, emu_711, emu_713, emu_80, emu_165, emu_151, emu_381, emu_485, emu_583, emu_781, dmu_kiha30, dmu_kiha35, dmu_kiha40, dmu_kiha48, dmu_kiha54, dmu_kiha58, dmu_kiha80, dmu_kiha181, dmu_kiha183, emu_721, emu_731, emu_733, emu_735, emu_785, emu_789, dmu_kiha130, dmu_kiha141, dmu_kiha150, dmu_H100, dmu_kiha201, dmu_kiha261, dmu_kiha281, emu_107, emu_E127, emu_209, emu_215, emu_E217, emu_E231, emu_E233, emu_E235, emu_E331, emu_E531, emu_719, emu_7195000, emu_E257, emu_E351, emu_E353, emu_651, dmu_KH110, dmu_KH111, dmu_KHE120, dmu_KHE130, dmu_KHE131, emu_21156, emu_311, emu_313, emu_315, emu_373, emu_383, dmu_kiha85, emu_jrw207, emu_321, emu_323, emu_221, emu_223_0, emu_223_1000, emu_225_0, emu_225_5000, emu_227, emu_271, emu_281, dmu_KH33, emu_6000, emu_7200, emu_8000, dmu_KH1000, emu_303, emu_811, emu_813, mu_car, mu_cab, mu_cardd]);
+sort(0, [emu_6310, emu_6340, emu_40sinlge, emu_40, emu_63, emu_52, emu_103, emu_201, emu_203, emu_205, emu_207900, emu_301, emu_70, emu_113, emu_115, emu_1153000, emu_121, emu_211, emu_213, emu_401, emu_403, emu_413, emu_415, emu_4151500, emu_417, emu_711, emu_713, emu_80, emu_165, emu_151, emu_381, emu_485, emu_583, emu_781, dmu_kiha30, dmu_kiha35, dmu_kiha40, dmu_kiha48, dmu_kiha54, dmu_kiha58, dmu_kiha80, dmu_kiha181, dmu_kiha183, emu_721, emu_731, emu_733, emu_735, emu_785, emu_789, dmu_kiha130, dmu_kiha141, dmu_kiha150, dmu_H100, dmu_kiha201, dmu_kiha261, dmu_kiha281, emu_107, emu_E127, emu_209, emu_215, emu_E217, emu_E231, emu_E233, emu_E235, emu_E331, emu_E531, emu_719, emu_7195000, emu_E257, emu_E351, emu_E353, emu_651, dmu_KH110, dmu_KH111, dmu_KHE120, dmu_KHE130, dmu_KHE131, emu_21156, emu_311, emu_313, emu_315, emu_373, emu_383, dmu_kiha25, dmu_kiha85, emu_jrw207, emu_321, emu_323, emu_221, emu_223_0, emu_223_1000, emu_225_0, emu_225_5000, emu_227, emu_271, emu_281, dmu_KH33, emu_6000, emu_7200, emu_8000, dmu_KH1000, emu_303, emu_811, emu_813, mu_car, mu_cab, mu_cardd]);
 
 train_width_32_px = 1;
 
@@ -819,11 +822,6 @@ if ((grf_order_behind("BS\42\13") == 0)) {
 
 if ((grf_order_behind("SZ\0D\00") == 0)) {
 	error(WARNING, string(GRF_JAPANSETTRAINS));
-}
-
-
-if ((grf_order_behind("JD\A1\E1") == 0)) {
-	error(WARNING, string(GRF_JAPANSECRETORDER));
 }
 
 
@@ -61294,6 +61292,150 @@ item(0, emu_7195000, -1) {
 		purchase: spriteset_7195000_purchase;
 		additional_text: string(STR_TRAIN_DESC, string(STR_STANDARDGAUGE), string(STR_DENKI, string(STR_AC_KV, 20, 50)), string(STR_LOAD_SPEED, string(STR_DOORS, 3)), string(STR_USAGE, string(STR_USE_REGIO)), string(STR_OPERATOR, string(STR_JR, string(STR_JR_EAST))));
 		can_attach_wagon: sw_7195000_attach_vehid;
+	}
+}
+
+spriteset(spriteset_KH25_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRC/dmuKH25/purchase_32bpp.png") {
+	tmpl_purchase_dh_32bpp(0, 0)
+}
+
+spriteset(spriteset_KH25_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRC/dmuKH25/kh25-1-1_32bpp.png") {
+	tmpl_std(0, 0)
+}
+
+spriteset(spriteset_KH25_rev_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRC/dmuKH25/kh25-1-1_32bpp.png") {
+	tmpl_std(0, 25)
+}
+
+spriteset(spriteset_KH25_revflip_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRC/dmuKH25/kh25-1-1_32bpp.png") {
+	tmpl_std_rev(0, 25)
+}
+
+spriteset(spriteset_KH25_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRC/dmuKH25/kh25-1-1_32bpp.png") {
+	tmpl_std_rev(0, 25)
+}
+
+spriteset(spriteset_KH25_rev_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRC/dmuKH25/kh25-1-1_32bpp.png") {
+	tmpl_std(0, 0)
+}
+
+spriteset(spriteset_KH25_revflip_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRC/dmuKH25/kh25-1-1_32bpp.png") {
+	tmpl_std_rev(0, 0)
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_front_livery, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 242]]) {
+	0: spriteset_KH25_rev_front;
+}
+
+switch(0, SELF, sw_KH25_gfx_revflip_front_livery, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 242]]) {
+	0: spriteset_KH25_revflip_front;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_back_livery, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 242]]) {
+	0: spriteset_KH25_rev_back;
+}
+
+switch(0, SELF, sw_KH25_gfx_revflip_back_livery, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 242]]) {
+	0: spriteset_KH25_revflip_back;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_front_flippedcheck, vehicle_is_flipped) {
+	1: sw_KH25_gfx_rev_front_livery;
+	default: sw_KH25_gfx_revflip_front_livery;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_back_flippedcheck, vehicle_is_flipped) {
+	1: sw_KH25_gfx_rev_back_livery;
+	default: sw_KH25_gfx_revflip_back_livery;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_frontback_nomucars, [STORE_TEMP(((position_in_consist_from_end - position_in_consist) - 1), 271), (var[0x61, 0, 255, 65] % 2)]) {
+	1: sw_KH25_gfx_rev_front_flippedcheck;
+	0: sw_KH25_gfx_rev_back_flippedcheck;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_frontback_aftermucars, [STORE_TEMP(((position_in_consist_from_end - position_in_consist) - 1), 271), (var[0x61, 0, 255, 65] % 2)]) {
+	1: sw_KH25_gfx_rev_back_flippedcheck;
+	0: sw_KH25_gfx_rev_front_flippedcheck;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_frontback_mucarcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), STORE_TEMP(var[0x61, 0, 255, 65], 0), STORE_TEMP((((position_in_consist_from_end - position_in_consist) - 1) - LOAD_TEMP(0)), 271), var[0x61, 0, 65535, 198]]) {
+	1000: sw_KH25_gfx_rev_frontback_aftermucars;
+	default: sw_KH25_gfx_rev_frontback_nomucars;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_frontback_sameid, [STORE_TEMP(((position_in_consist_from_end - position_in_consist) + 1), 271), var[0x61, 0, 65535, 198]]) {
+	1524: sw_KH25_gfx_rev_frontback_mucarcheck;
+	1000: sw_KH25_gfx_rev_front_flippedcheck;
+	default: sw_KH25_gfx_rev_back_flippedcheck;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_frontback, [STORE_TEMP(((position_in_consist_from_end - position_in_consist) - 1), 271), var[0x61, 0, 65535, 198]]) {
+	1524: sw_KH25_gfx_rev_frontback_sameid;
+	1000: sw_KH25_gfx_rev_back_flippedcheck;
+	default: sw_KH25_gfx_rev_front_flippedcheck;
+}
+
+switch(0, SELF, sw_KH25_gfx_rev_idcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 198]]) {
+	1524: sw_KH25_gfx_rev_frontback;
+}
+
+switch(0, SELF, sw_KH25_gfx_frontback_flipcheck, vehicle_is_flipped) {
+	0: spriteset_KH25_front;
+	default: spriteset_KH25_back;
+}
+
+switch(0, PARENT, sw_KH25_gfx_frontback_revcheck, vehicle_is_reversed) {
+	0: sw_KH25_gfx_frontback_flipcheck;
+	default: sw_KH25_gfx_rev_idcheck;
+}
+
+switch(0, SELF, sw_KH25_gfx_main, cargo_subtype) {
+	0: sw_KH25_gfx_frontback_revcheck;
+}
+
+switch(0, SELF, sw_KH25_attach_vehid, [(vehicle_type_id == dmu_kiha25)]) {
+	0: return string(SAME_UNIQUE);
+}
+
+item(0, dmu_kiha25, -1) {
+	property {
+		name: string(JRC_KH25);
+		introduction_date: date(2010, 3, 3);
+		model_life: 5;
+		vehicle_life: 42;
+		reliability_decay: 23;
+		cargo_capacity: param_capacity_rapid;
+		loading_speed: param_loading_3D;
+		cargo_age_period: param_decay_rapid;
+		cost_factor: 20;
+		running_cost_factor: 50;
+		speed: 110 km/h;
+		track_type: TR_1067_NE;
+		power: 340 kW;
+		weight: 40 ton;
+		climates_available: ALL_CLIMATES;
+		ai_special_flag: AI_FLAG_PASSENGER;
+		sprite_id: SPRITE_ID_NEW_TRAIN;
+		misc_flags: bitmask(TRAIN_FLAG_MU);
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		refit_cost: 0;
+		dual_headed: 1;
+		ai_engine_rank: 0;
+		running_cost_base: RUNNING_COST_DIESEL;
+		engine_class: ENGINE_CLASS_DIESEL;
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+		tractive_effort_coefficient: 0.2;
+		air_drag_coefficient: 0.07;
+		bitmask_vehicle_info: 0;
+		length: 8;
+	}
+	graphics {
+		default: sw_KH25_gfx_main;
+		purchase: spriteset_KH25_purchase;
+		additional_text: string(STR_TRAIN_DESC, string(STR_NARROWGAUGE), string(STR_NOT_DENKI, string(STR_DIESEL)), string(STR_LOAD_SPEED, string(STR_DOORS, 3)), string(STR_USAGE, string(STR_USE_GENERAL)), string(STR_OPERATOR, string(STR_JR, string(STR_JR_CENTRAL))), string(STR_LIVERIES, string(LV_VARIOUS)));
+		can_attach_wagon: sw_KH25_attach_vehid;
 	}
 }
 

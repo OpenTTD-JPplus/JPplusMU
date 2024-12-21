@@ -126,6 +126,7 @@
 
 
 //JR-Central
+#include "src/JRC/DMU/KH25_series.pnml"
 #include "src/JRC/DMU/KH85_series.pnml"
 
 #include "src/JRC/EMU/211_56_series.pnml"

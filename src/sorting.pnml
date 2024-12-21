@@ -126,6 +126,7 @@ emu_315,
 emu_373,
 emu_383,
 /*JRC General DMU*/
+dmu_kiha25,
 /*JRC Limited Express DMU*/
 dmu_kiha85,
 /*JR West*/
