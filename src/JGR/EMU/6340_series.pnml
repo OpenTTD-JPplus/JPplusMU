@@ -1,33 +1,20 @@
 /*---GFX: Spritesets---*/
 
 //Purchase Sprites
-spriteset (spriteset_6340_purchase,	                                                     "gfx/JGR/emu6340/purchase.png")               {tmpl_purchase_dh(0, 0)}
-alternative_sprites(spriteset_6340_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JGR/emu6340/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
+spriteset(spriteset_6340_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,         "gfx/JGR/emu6340/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
 
 //6340 Yamanote
-spriteset (spriteset_6340_front,       "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_6340_back,	  	   "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_6340_mid,	       "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
+spriteset(spriteset_6340_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l_rev(0, 0)}
+spriteset(spriteset_6340_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l_rev(0, 96)}
+spriteset(spriteset_6340_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l(0, 48)}
 
-spriteset (spriteset_6340_rev_front,      "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_6340_rev_back,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_6340_rev_mid,		  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
+spriteset(spriteset_6340_rev_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l_rev(0, 24)}
+spriteset(spriteset_6340_rev_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l_rev(0, 72)}
+spriteset(spriteset_6340_rev_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l_rev(0, 48)}
 
-spriteset (spriteset_6340_revflip_front,	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_6340_revflip_back,	  	  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-spriteset (spriteset_6340_revflip_mid,		  "gfx/OTHER/mucar.png")          { tmpl_std(0, 0) }
-
-alternative_sprites(spriteset_6340_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l_rev(0, 0)}
-alternative_sprites(spriteset_6340_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l_rev(0, 96)}
-alternative_sprites(spriteset_6340_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l(0, 48)}
-
-alternative_sprites(spriteset_6340_rev_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l_rev(0, 24)}
-alternative_sprites(spriteset_6340_rev_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l_rev(0, 72)}
-alternative_sprites(spriteset_6340_rev_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l_rev(0, 48)}
-
-alternative_sprites(spriteset_6340_revflip_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l(0, 24)}
-alternative_sprites(spriteset_6340_revflip_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l(0, 72)}
-alternative_sprites(spriteset_6340_revflip_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_28px_7l(0, 48)}
+spriteset(spriteset_6340_revflip_front,           ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l(0, 24)}
+spriteset(spriteset_6340_revflip_back,            ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l(0, 72)}
+spriteset(spriteset_6340_revflip_mid,             ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,       "gfx/JGR/emu6340/6340.png")        {tmpl_dh_28px_7l(0, 48)}
 /*---END OF SECTION---*/
 
 

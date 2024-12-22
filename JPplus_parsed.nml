@@ -434,6 +434,28 @@ template tmpl_28px_7l_rev(x, y) {
 	[(x + 59), y, 20, 19, (-5 - 2), (-12 - 1)]
 }
 
+template tmpl_dh_28px_7l(x, y) {
+	[x, y, 8, 23, -3, -19]
+	[(x + 9), y, 20, 19, -13, -12]
+	[(x + 30), y, 28, 15, -14, -11]
+	[(x + 59), y, 20, 19, -5, -12]
+	[(x + 80), y, 8, 23, -3, -19]
+	[(x + 89), y, 20, 19, -13, -12]
+	[(x + 110), y, 28, 15, -14, -11]
+	[(x + 139), y, 20, 19, -5, -12]
+}
+
+template tmpl_dh_28px_7l_rev(x, y) {
+	[(x + 80), y, 8, 23, -3, -19]
+	[(x + 89), y, 20, 19, -13, -12]
+	[(x + 110), y, 28, 15, -14, -11]
+	[(x + 139), y, 20, 19, -5, -12]
+	[x, y, 8, 23, -3, -19]
+	[(x + 9), y, 20, 19, -13, -12]
+	[(x + 30), y, 28, 15, -14, -11]
+	[(x + 59), y, 20, 19, -5, -12]
+}
+
 template tmpl_20px_5l(x, y) {
 	[x, y, 8, 19, -3, -19]
 	[(x + 9), y, 16, 17, -9, -12]
@@ -15547,84 +15569,44 @@ item(0, emu_63, -1) {
 	}
 }
 
-spriteset(spriteset_6340_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JGR/emu6340/purchase.png") {
-	tmpl_purchase_dh(0, 0)
-}
-
-alternative_sprites(spriteset_6340_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/purchase_32bpp.png") {
+spriteset(spriteset_6340_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/purchase_32bpp.png") {
 	tmpl_purchase_dh_32bpp(0, 0)
 }
 
-spriteset(spriteset_6340_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
+spriteset(spriteset_6340_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l_rev(0, 0)
 }
 
-spriteset(spriteset_6340_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
+spriteset(spriteset_6340_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l_rev(0, 96)
 }
 
-spriteset(spriteset_6340_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
+spriteset(spriteset_6340_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l(0, 48)
 }
 
-spriteset(spriteset_6340_rev_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
+spriteset(spriteset_6340_rev_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l_rev(0, 24)
 }
 
-spriteset(spriteset_6340_rev_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
+spriteset(spriteset_6340_rev_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l_rev(0, 72)
 }
 
-spriteset(spriteset_6340_rev_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
+spriteset(spriteset_6340_rev_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l_rev(0, 48)
 }
 
-spriteset(spriteset_6340_revflip_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
+spriteset(spriteset_6340_revflip_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l(0, 24)
 }
 
-spriteset(spriteset_6340_revflip_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
+spriteset(spriteset_6340_revflip_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l(0, 72)
 }
 
-spriteset(spriteset_6340_revflip_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
-}
-
-alternative_sprites(spriteset_6340_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l_rev(0, 0)
-}
-
-alternative_sprites(spriteset_6340_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l_rev(0, 96)
-}
-
-alternative_sprites(spriteset_6340_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l(0, 48)
-}
-
-alternative_sprites(spriteset_6340_rev_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l_rev(0, 24)
-}
-
-alternative_sprites(spriteset_6340_rev_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l_rev(0, 72)
-}
-
-alternative_sprites(spriteset_6340_rev_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l_rev(0, 48)
-}
-
-alternative_sprites(spriteset_6340_revflip_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l(0, 24)
-}
-
-alternative_sprites(spriteset_6340_revflip_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l(0, 72)
-}
-
-alternative_sprites(spriteset_6340_revflip_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
-	tmpl_28px_7l(0, 48)
+spriteset(spriteset_6340_revflip_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6340/6340.png") {
+	tmpl_dh_28px_7l(0, 48)
 }
 
 switch(0, SELF, sw_6340_gfx_rev_front_livery, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 242]]) {
@@ -15780,59 +15762,31 @@ item(0, emu_6340, -1) {
 	}
 }
 
-spriteset(spriteset_6310_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JGR/emu6310/purchase.png") {
-	tmpl_purchase_dh(0, 0)
-}
-
-alternative_sprites(spriteset_6310_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/purchase_32bpp.png") {
+spriteset(spriteset_6310_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/purchase_32bpp.png") {
 	tmpl_purchase_32bpp(0, 0)
 }
 
-spriteset(spriteset_6310_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
-}
-
-spriteset(spriteset_6310_rev_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
-}
-
-spriteset(spriteset_6310_revflip_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
-}
-
-alternative_sprites(spriteset_6310_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
+spriteset(spriteset_6310_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
 	tmpl_28px_7l_rev(0, 48)
 }
 
-alternative_sprites(spriteset_6310_rev_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
+spriteset(spriteset_6310_rev_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
 	tmpl_28px_7l_rev(0, 72)
 }
 
-alternative_sprites(spriteset_6310_revflip_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
+spriteset(spriteset_6310_revflip_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
 	tmpl_28px_7l(0, 72)
 }
 
-spriteset(spriteset_6310_newp_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
-}
-
-spriteset(spriteset_6310_newp_rev_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
-}
-
-spriteset(spriteset_6310_newp_revflip_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/OTHER/mucar.png") {
-	tmpl_std(0, 0)
-}
-
-alternative_sprites(spriteset_6310_newp_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
+spriteset(spriteset_6310_newp_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
 	tmpl_28px_7l_rev(0, 0)
 }
 
-alternative_sprites(spriteset_6310_newp_rev_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
+spriteset(spriteset_6310_newp_rev_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
 	tmpl_28px_7l_rev(0, 24)
 }
 
-alternative_sprites(spriteset_6310_newp_revflip_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
+spriteset(spriteset_6310_newp_revflip_single, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JGR/emu6310/6310.png") {
 	tmpl_28px_7l(0, 24)
 }
 
@@ -50877,15 +50831,15 @@ alternative_sprites(spriteset_E331_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,
 }
 
 spriteset(spriteset_E331_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331.png") {
-	tmpl_28px_7l(0, 0)
+	tmpl_dh_28px_7l(0, 0)
 }
 
 spriteset(spriteset_E331_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331.png") {
-	tmpl_28px_7l(0, 24)
+	tmpl_dh_28px_7l(0, 24)
 }
 
 spriteset(spriteset_E331_mid_nonartic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331.png") {
-	tmpl_28px_7l(0, 48)
+	tmpl_dh_28px_7l(0, 48)
 }
 
 spriteset(spriteset_E331_mid_artic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331.png") {
@@ -50897,15 +50851,15 @@ spriteset(spriteset_E331_mid_articpan, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/J
 }
 
 spriteset(spriteset_E331_front_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331.png") {
-	tmpl_28px_7l_rev(0, 0)
+	tmpl_dh_28px_7l_rev(0, 0)
 }
 
 spriteset(spriteset_E331_back_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331.png") {
-	tmpl_28px_7l_rev(0, 24)
+	tmpl_dh_28px_7l_rev(0, 24)
 }
 
 spriteset(spriteset_E331_mid_nonartic_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331.png") {
-	tmpl_28px_7l_rev(0, 48)
+	tmpl_dh_28px_7l_rev(0, 48)
 }
 
 spriteset(spriteset_E331_mid_artic_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331.png") {
@@ -50917,11 +50871,11 @@ spriteset(spriteset_E331_mid_articpan_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "g
 }
 
 spriteset(spriteset_E331_back_panto, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331-extra.png") {
-	tmpl_28px_7l_rev(0, 24)
+	tmpl_dh_28px_7l_rev(0, 24)
 }
 
 spriteset(spriteset_E331_back_panto_rev, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/JRE/emuE331/E331-extra.png") {
-	tmpl_28px_7l(0, 0)
+	tmpl_dh_28px_7l(0, 0)
 }
 
 switch(0, SELF, sw_E331_gfx_pantograph_pos_artic_default, (position_in_vehid_chain % 7)) {

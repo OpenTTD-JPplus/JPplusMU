@@ -5,20 +5,20 @@ spriteset (spriteset_E331_purchase,	                                            
 alternative_sprites(spriteset_E331_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,          "gfx/JRE/emuE331/purchase_32bpp.png")         {tmpl_purchase_dh_32bpp(0, 0)}
 
 //E331-0
-spriteset (spriteset_E331_front,	       	"gfx/JRE/emuE331/E331.png")          	{ tmpl_28px_7l(0, 0) }
-spriteset (spriteset_E331_back,	        	"gfx/JRE/emuE331/E331.png")            { tmpl_28px_7l(0, 24) }
-spriteset (spriteset_E331_mid_nonartic,	  "gfx/JRE/emuE331/E331.png")          	{ tmpl_28px_7l(0, 48) }
+spriteset (spriteset_E331_front,	       	"gfx/JRE/emuE331/E331.png")          	{ tmpl_dh_28px_7l(0, 0) }
+spriteset (spriteset_E331_back,	        	"gfx/JRE/emuE331/E331.png")            { tmpl_dh_28px_7l(0, 24) }
+spriteset (spriteset_E331_mid_nonartic,	  "gfx/JRE/emuE331/E331.png")          	{ tmpl_dh_28px_7l(0, 48) }
 spriteset (spriteset_E331_mid_artic,	  	"gfx/JRE/emuE331/E331.png")          	{ tmpl_20px_5l(0, 72) }
 spriteset (spriteset_E331_mid_articpan,		"gfx/JRE/emuE331/E331.png") 	          { tmpl_20px_5l(0, 92) }
 
-spriteset (spriteset_E331_front_rev,	       	"gfx/JRE/emuE331/E331.png")          	{ tmpl_28px_7l_rev(0, 0) }
-spriteset (spriteset_E331_back_rev,	        	"gfx/JRE/emuE331/E331.png")            { tmpl_28px_7l_rev(0, 24) }
-spriteset (spriteset_E331_mid_nonartic_rev,	  "gfx/JRE/emuE331/E331.png")          	{ tmpl_28px_7l_rev(0, 48) }
+spriteset (spriteset_E331_front_rev,	       	"gfx/JRE/emuE331/E331.png")          	{ tmpl_dh_28px_7l_rev(0, 0) }
+spriteset (spriteset_E331_back_rev,	        	"gfx/JRE/emuE331/E331.png")            { tmpl_dh_28px_7l_rev(0, 24) }
+spriteset (spriteset_E331_mid_nonartic_rev,	  "gfx/JRE/emuE331/E331.png")          	{ tmpl_dh_28px_7l_rev(0, 48) }
 spriteset (spriteset_E331_mid_artic_rev,	  	"gfx/JRE/emuE331/E331.png")          	{ tmpl_20px_5l_rev(0, 72) }
 spriteset (spriteset_E331_mid_articpan_rev,		"gfx/JRE/emuE331/E331.png") 	          { tmpl_20px_5l_rev(0, 92) }
 
-spriteset (spriteset_E331_back_panto,	             	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l_rev(0, 24) }
-spriteset (spriteset_E331_back_panto_rev,	        	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_28px_7l(0, 0) }
+spriteset (spriteset_E331_back_panto,	             	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_dh_28px_7l_rev(0, 24) }
+spriteset (spriteset_E331_back_panto_rev,	        	"gfx/JRE/emuE331/E331-extra.png")            { tmpl_dh_28px_7l(0, 0) }
 
 /*---END OF SECTION---*/
 
