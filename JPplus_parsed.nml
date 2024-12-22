@@ -11717,6 +11717,18 @@ switch(0, SELF, sw_KH130_gfx_revflip_livery, [STORE_TEMP((position_in_consist_fr
 	0: spriteset_KH130_revflip_jrhgreen;
 }
 
+switch(0, SELF, sw_KH150_gfx_rev_livery, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 242]]) {
+	2: spriteset_KH150_rev_naebo0;
+	1: spriteset_KH150_rev_asa100;
+	0: spriteset_KH150_rev_asa0;
+}
+
+switch(0, SELF, sw_KH150_gfx_revflip_livery, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 242]]) {
+	2: spriteset_KH150_revflip_naebo0;
+	1: spriteset_KH150_revflip_asa100;
+	0: spriteset_KH150_revflip_asa0;
+}
+
 switch(0, SELF, sw_KH40_700_rev_jrh, [(!!((build_year > 2015)) | !!((date_of_last_service > date(2015, 1, 1))))]) {
 	1: spriteset_KH40_700_rev_jrh2015;
 	default: spriteset_KH40_700_rev_jrh;
@@ -11952,6 +11964,11 @@ switch(0, SELF, sw_KH141_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
 	default: sw_KH141_gfx_rev_livery;
 }
 
+switch(0, SELF, sw_KH150_gfx_rev_flippedcheck, vehicle_is_flipped) {
+	1: sw_KH150_gfx_rev_livery;
+	default: sw_KH150_gfx_revflip_livery;
+}
+
 switch(0, SELF, sw_KH58_gfx_rev_opposite_flippedcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), getbits(var[0x61, 0, 255, 200], 1, 1)]) {
 	0: sw_KH58_gfx_rev_flippedcheck;
 	default: sw_KH58_gfx_rev_flippedcheckopp;
@@ -11996,6 +12013,7 @@ switch(0, SELF, sw_JNR_KH_gfx_rev_idcheck, [STORE_TEMP((position_in_consist_from
 	1516: sw_KH33_gfx_rev_flippedcheck;
 	1518: sw_KH35_gfx_rev_opposite_pos;
 	1519: sw_KH130_gfx_rev_flippedcheck;
+	1508: sw_KH150_gfx_rev_flippedcheck;
 	1000: sw_JNR_KH_gfx_rev_flippedcheck_mucar;
 }
 
@@ -12009,6 +12027,7 @@ switch(0, PARENT, sw_JNR_KH_startstop2, [STORE_TEMP(position_in_consist_from_end
 	1514: sw_JNR_KH_startstop3;
 	1516: sw_JNR_KH_startstop3;
 	1519: sw_JNR_KH_startstop3;
+	1508: sw_JNR_KH_startstop3;
 	default: return string(STR_STARTSTOP_JNRKH);
 }
 
@@ -12021,6 +12040,7 @@ switch(0, SELF, sw_JNR_KH_startstop, [STORE_TEMP((position_in_consist_from_end -
 	1516: sw_JNR_KH_startstop3;
 	1518: sw_JNR_KH_startstop3;
 	1519: sw_JNR_KH_startstop3;
+	1508: sw_JNR_KH_startstop3;
 	1000: sw_JNR_KH_startstop3;
 	default: sw_JNR_KH_startstop2;
 }
@@ -12100,7 +12120,7 @@ switch(0, SELF, sw_JNR_KH_subtypetext_mucar, cargo_subtype) {
 	2: string(LV_KH143);
 }
 
-switch(0, SELF, sw_JNR_KH_attach_vehid, [(!!((!!((!!((!!((!!((!!((!!((vehicle_type_id == dmu_kiha30)) | !!((vehicle_type_id == dmu_kiha35)))) | !!((vehicle_type_id == dmu_kiha40)))) | !!((vehicle_type_id == dmu_kiha54)))) | !!((vehicle_type_id == dmu_kiha58)))) | !!((vehicle_type_id == dmu_kiha130)))) | !!((vehicle_type_id == dmu_kiha141)))) | !!((vehicle_type_id == mu_car)))]) {
+switch(0, SELF, sw_JNR_KH_attach_vehid, [(!!((!!((!!((!!((!!((!!((!!((!!((vehicle_type_id == dmu_kiha30)) | !!((vehicle_type_id == dmu_kiha35)))) | !!((vehicle_type_id == dmu_kiha40)))) | !!((vehicle_type_id == dmu_kiha54)))) | !!((vehicle_type_id == dmu_kiha58)))) | !!((vehicle_type_id == dmu_kiha130)))) | !!((vehicle_type_id == dmu_kiha141)))) | !!((vehicle_type_id == dmu_kiha150)))) | !!((vehicle_type_id == mu_car)))]) {
 	0: return string(STR_ATTACH_JNRKH);
 }
 
@@ -49895,6 +49915,129 @@ item(0, dmu_kiha141, -1) {
 		cargo_age_period: param_decay_local;
 		cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
 		power: 184;
+		weight: 32;
+	}
+}
+
+spriteset(spriteset_KH150_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/purchase_32bpp.png") {
+	tmpl_purchase_32bpp(0, 0)
+}
+
+spriteset(spriteset_KH150_asa0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/0_asahikawa.png") {
+	tmpl_std(0, 25)
+}
+
+spriteset(spriteset_KH150_rev_asa0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/0_asahikawa.png") {
+	tmpl_std(0, 0)
+}
+
+spriteset(spriteset_KH150_revflip_asa0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/0_asahikawa.png") {
+	tmpl_std_rev(0, 0)
+}
+
+spriteset(spriteset_KH150_asa100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/100.png") {
+	tmpl_std(0, 25)
+}
+
+spriteset(spriteset_KH150_rev_asa100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/100.png") {
+	tmpl_std(0, 0)
+}
+
+spriteset(spriteset_KH150_revflip_asa100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/100.png") {
+	tmpl_std_rev(0, 0)
+}
+
+spriteset(spriteset_KH150_naebo0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/0_naebo.png") {
+	tmpl_std(0, 25)
+}
+
+spriteset(spriteset_KH150_rev_naebo0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/0_naebo.png") {
+	tmpl_std(0, 0)
+}
+
+spriteset(spriteset_KH150_revflip_naebo0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JRH/dmuKH150/0_naebo.png") {
+	tmpl_std_rev(0, 0)
+}
+
+switch(0, PARENT, sw_KH150_asa0_gfx_frontback_revcheck, vehicle_is_reversed) {
+	0: spriteset_KH150_asa0;
+	default: sw_JNR_KH_gfx_rev_idcheck;
+}
+
+switch(0, PARENT, sw_KH150_asa100_gfx_frontback_revcheck, vehicle_is_reversed) {
+	0: spriteset_KH150_asa100;
+	default: sw_JNR_KH_gfx_rev_idcheck;
+}
+
+switch(0, PARENT, sw_KH150_naebo0_gfx_frontback_revcheck, vehicle_is_reversed) {
+	0: spriteset_KH150_naebo0;
+	default: sw_JNR_KH_gfx_rev_idcheck;
+}
+
+switch(0, SELF, sw_KH150_gfx_main, cargo_subtype) {
+	2: sw_KH150_naebo0_gfx_frontback_revcheck;
+	1: sw_KH150_asa100_gfx_frontback_revcheck;
+	0: sw_KH150_asa0_gfx_frontback_revcheck;
+}
+
+switch(0, SELF, sw_KH150_subtypetext_main, cargo_subtype) {
+	2: string(LV_VARITION_END1);
+	1: string(LV_VARITION_MID1);
+	0: string(LV_JRH);
+}
+
+switch(0, SELF, sw_KH150_attach_vehid, [(vehicle_type_id == dmu_kiha130)]) {
+	0: return string(MU_UNIQUE);
+}
+
+item(0, dmu_kiha150, -1) {
+	property {
+		name: string(JRH_kiha150);
+		introduction_date: date(1993, 2, 2);
+		model_life: 2;
+		vehicle_life: 42;
+		reliability_decay: 21;
+		cargo_capacity: param_capacity_rapid;
+		loading_speed: param_loading_2D;
+		cargo_age_period: param_decay_local;
+		cost_factor: 16;
+		running_cost_factor: 51;
+		speed: 110 km/h;
+		track_type: TR_1067_NE;
+		power: 331 kW;
+		weight: 33 ton;
+		climates_available: ALL_CLIMATES;
+		ai_special_flag: AI_FLAG_PASSENGER;
+		sprite_id: SPRITE_ID_NEW_TRAIN;
+		misc_flags: bitmask(TRAIN_FLAG_MU);
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		refit_cost: 0;
+		dual_headed: 0;
+		ai_engine_rank: 0;
+		running_cost_base: RUNNING_COST_DIESEL;
+		engine_class: ENGINE_CLASS_DIESEL;
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 4, ENABLE_WAGON_POWER);
+		tractive_effort_coefficient: 0.2;
+		air_drag_coefficient: 0.07;
+		bitmask_vehicle_info: 0;
+		length: 8;
+	}
+	graphics {
+		default: sw_KH150_gfx_main;
+		purchase: spriteset_KH150_purchase;
+		additional_text: string(STR_TRAIN_DESC, string(STR_NARROWGAUGE), string(STR_NOT_DENKI, string(STR_DIESEL)), string(STR_LOAD_SPEED, string(STR_DOORS, 2)), string(STR_USAGE, string(STR_USE_GENERAL)), string(STR_OPERATOR, string(STR_JR, string(STR_JR_HOKKAIDO))), string(STR_LIVERIES, string(LV_VARIOUS)));
+		cargo_subtype_text: sw_KH150_subtypetext_main;
+		can_attach_wagon: sw_JNR_KH_attach_vehid;
+		start_stop: sw_JNR_KH_startstop;
+	}
+	livery_override(mu_car) {
+		default: sw_JNR_KH_gfx_mucar;
+		cargo_capacity: param_capacity_rapid;
+		loading_speed: param_loading_2D;
+		cargo_age_period: param_decay_local;
+		cargo_subtype_text: sw_JNR_KH_subtypetext_mucar;
+		power: 132;
 		weight: 32;
 	}
 }

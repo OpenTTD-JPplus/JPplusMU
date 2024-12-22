@@ -31,6 +31,17 @@ switch(FEAT_TRAINS,SELF, sw_KH130_gfx_revflip_livery, [STORE_TEMP(position_in_co
   0: spriteset_KH130_revflip_jrhgreen;
 }
 
+//kh150
+switch(FEAT_TRAINS,SELF, sw_KH150_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  2: spriteset_KH150_rev_naebo0;
+  1: spriteset_KH150_rev_asa100;
+  0: spriteset_KH150_rev_asa0;
+}
+switch(FEAT_TRAINS,SELF, sw_KH150_gfx_revflip_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+  2: spriteset_KH150_revflip_naebo0;
+  1: spriteset_KH150_revflip_asa100;
+  0: spriteset_KH150_revflip_asa0;
+}
 
 //Livery Selection kh40
 
@@ -102,7 +113,6 @@ switch(FEAT_TRAINS,SELF, sw_KH40_gfx_revflip_livery, [STORE_TEMP(position_in_con
 
 
 //livery selection kh54
-
 switch(FEAT_TRAINS,SELF, sw_KH54_gfx_rev_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
   0: spriteset_KH54_500_rev_inital;
   1: spriteset_KH54_500_rev_exp;
@@ -257,6 +267,10 @@ switch(FEAT_TRAINS, SELF, sw_KH141_gfx_rev_flippedcheckopp, vehicle_is_flipped) 
  default: sw_KH141_gfx_rev_livery;
 }
 
+switch(FEAT_TRAINS, SELF, sw_KH150_gfx_rev_flippedcheck, vehicle_is_flipped) {
+  1: sw_KH150_gfx_rev_livery;
+ default: sw_KH150_gfx_revflip_livery;
+}
 
 //check if the opposite vehicle has been flipped
 switch(FEAT_TRAINS, SELF, sw_KH58_gfx_rev_opposite_flippedcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), 
@@ -312,7 +326,7 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_rev_idcheck, [STORE_TEMP(position_in_con
   1516: sw_KH33_gfx_rev_flippedcheck;
   1518: sw_KH35_gfx_rev_opposite_pos;
   1519: sw_KH130_gfx_rev_flippedcheck;
-
+  1508: sw_KH150_gfx_rev_flippedcheck;
 
   1000: sw_JNR_KH_gfx_rev_flippedcheck_mucar;
 }
@@ -328,6 +342,8 @@ switch(FEAT_TRAINS, PARENT, sw_JNR_KH_startstop2, [STORE_TEMP(position_in_consis
   1514: sw_JNR_KH_startstop3; //kh30
   1516: sw_JNR_KH_startstop3; //kh33
   1519: sw_JNR_KH_startstop3; //kh130
+  1508: sw_JNR_KH_startstop3; //kh150
+
   
   default: return string(STR_STARTSTOP_JNRKH);
 }
@@ -341,6 +357,7 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_startstop, [STORE_TEMP(position_in_consist_f
   1516: sw_JNR_KH_startstop3; //kh33
   1518: sw_JNR_KH_startstop3; //kh35
   1519: sw_JNR_KH_startstop3; //kh130
+  1508: sw_JNR_KH_startstop3; //kh150
 
   1000: sw_JNR_KH_startstop3; //mucar
   default: sw_JNR_KH_startstop2;
@@ -399,7 +416,8 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_subtypetext_mucar, cargo_subtype) {
     vehicle_type_id == dmu_kiha54 || 
     vehicle_type_id == dmu_kiha58 || 
     vehicle_type_id == dmu_kiha130 ||
-    vehicle_type_id == dmu_kiha141 || 
+    vehicle_type_id == dmu_kiha141 ||
+    vehicle_type_id == dmu_kiha150 ||
     vehicle_type_id == mu_car]) {
   0: return string(STR_ATTACH_JNRKH);
   }
