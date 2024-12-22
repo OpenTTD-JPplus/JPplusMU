@@ -10,7 +10,7 @@ grf {
  grfid: "BS\13\20";
  name: string(STR_GRF_NAME);
  desc: string(STR_GRF_DESC);
- version: 53;
+ version: 54;
  min_compatible_version: 10;
 
   param 4 {
@@ -25696,13 +25696,13 @@ spriteset (spriteset_301_back_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "
 spriteset (spriteset_301_rev_back_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 0) }
 spriteset (spriteset_301_revflip_back_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 0) }
 
-spriteset (spriteset_301_mid_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 50) }
-spriteset (spriteset_301_rev_mid_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std_rev(0, 50) }
-spriteset (spriteset_301_revflip_mid_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 50) }
+spriteset (spriteset_301_mid_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std_rev(0, 50) }
+spriteset (spriteset_301_rev_mid_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 50) }
+spriteset (spriteset_301_revflip_mid_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std_rev(0, 50) }
 
-spriteset (spriteset_301_mid_panto_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 75) }
-spriteset (spriteset_301_rev_mid_panto_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std_rev(0, 75) }
-spriteset (spriteset_301_revflip_mid_panto_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 75) }
+spriteset (spriteset_301_mid_panto_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std_rev(0, 75) }
+spriteset (spriteset_301_rev_mid_panto_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 75) }
+spriteset (spriteset_301_revflip_mid_panto_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std_rev(0, 75) }
 
 spriteset (spriteset_301_back_panto_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std_rev(0, 25) }
 spriteset (spriteset_301_rev_back_panto_ac_chousobu, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_yellowstripe.png") { tmpl_std(0, 0) }
@@ -25738,13 +25738,13 @@ spriteset (spriteset_301_back_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx
 spriteset (spriteset_301_rev_back_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 0) }
 spriteset (spriteset_301_revflip_back_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 0) }
 
-spriteset (spriteset_301_mid_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 50) }
-spriteset (spriteset_301_rev_mid_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std_rev(0, 50) }
-spriteset (spriteset_301_revflip_mid_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 50) }
+spriteset (spriteset_301_mid_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std_rev(0, 50) }
+spriteset (spriteset_301_rev_mid_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 50) }
+spriteset (spriteset_301_revflip_mid_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std_rev(0, 50) }
 
-spriteset (spriteset_301_mid_panto_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 75) }
-spriteset (spriteset_301_rev_mid_panto_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std_rev(0, 75) }
-spriteset (spriteset_301_revflip_mid_panto_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 75) }
+spriteset (spriteset_301_mid_panto_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std_rev(0, 75) }
+spriteset (spriteset_301_rev_mid_panto_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 75) }
+spriteset (spriteset_301_revflip_mid_panto_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std_rev(0, 75) }
 
 spriteset (spriteset_301_back_panto_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std_rev(0, 25) }
 spriteset (spriteset_301_rev_back_panto_ac_tozai, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu301/301_bluestripe.png") { tmpl_std(0, 0) }
