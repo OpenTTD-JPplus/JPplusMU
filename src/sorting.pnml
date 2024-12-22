@@ -101,6 +101,7 @@ emu_E331,
 /*JRE Regional DC_AC EMU*/
 emu_E531,
 /*JRE Regional AC EMU*/
+emu_7015000,
 emu_719,
 emu_7195000,
 /*JRE Limited Express DC EMU*/

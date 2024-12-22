@@ -121,6 +121,8 @@
 #include "src/JRE/EMU/E353_series.pnml"
 #include "src/JRE/EMU/651_series.pnml"
 
+
+#include "src/JRE/EMU/7015000_series.pnml"
 #include "src/JRE/EMU/719_series.pnml"
 #include "src/JRE/EMU/7195000_series.pnml"
 
