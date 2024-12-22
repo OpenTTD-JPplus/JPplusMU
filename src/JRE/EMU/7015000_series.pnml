@@ -231,7 +231,7 @@ item(FEAT_TRAINS, emu_7015000) {
         refittable_cargo_classes:     bitmask(CC_PASSENGERS);
         non_refittable_cargo_classes: bitmask();
         refit_cost:                   0;
-        dual_headed:                  1.0;
+        dual_headed:                  1;
         ai_engine_rank:               0;
         running_cost_base:            RUNNING_COST_ELECTRIC;
         engine_class:                 ENGINE_CLASS_ELECTRIC;
