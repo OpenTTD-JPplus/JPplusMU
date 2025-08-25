@@ -11939,6 +11939,11 @@ switch(0, SELF, sw_KH35_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
 	default: sw_KH35_gfx_rev_livery;
 }
 
+switch(0, SELF, sw_KH35_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+	1: sw_KH35_gfx_frontflip_livery;
+	default: sw_KH35_gfx_front_livery;
+}
+
 switch(0, SELF, sw_KH58_gfx_rev_flippedcheck, vehicle_is_flipped) {
 	1: sw_KH58_gfx_rev_livery;
 	default: sw_KH58_gfx_revflip_livery;
@@ -11947,6 +11952,11 @@ switch(0, SELF, sw_KH58_gfx_rev_flippedcheck, vehicle_is_flipped) {
 switch(0, SELF, sw_KH58_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
 	1: sw_KH58_gfx_revflip_livery;
 	default: sw_KH58_gfx_rev_livery;
+}
+
+switch(0, SELF, sw_KH58_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+	1: sw_KH58_gfx_frontflip_livery;
+	default: sw_KH58_gfx_front_livery;
 }
 
 switch(0, SELF, sw_KH130_gfx_rev_flippedcheck, vehicle_is_flipped) {
@@ -11964,6 +11974,11 @@ switch(0, SELF, sw_KH141_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
 	default: sw_KH141_gfx_rev_livery;
 }
 
+switch(0, SELF, sw_KH141_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+	1: sw_KH141_gfx_frontflip_livery;
+	default: sw_KH141_gfx_front_livery;
+}
+
 switch(0, SELF, sw_KH150_gfx_rev_flippedcheck, vehicle_is_flipped) {
 	1: sw_KH150_gfx_rev_livery;
 	default: sw_KH150_gfx_revflip_livery;
@@ -11974,9 +11989,14 @@ switch(0, SELF, sw_KH58_gfx_rev_opposite_flippedcheck, [STORE_TEMP((position_in_
 	default: sw_KH58_gfx_rev_flippedcheckopp;
 }
 
-switch(0, SELF, sw_KH58_gfx_rev_opposite_pos, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 8, 255, 64]]) {
-	0: sw_KH58_gfx_front_livery;
+switch(0, SELF, sw_KH58_gfx_rev_opposite_frontcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 255, 64]]) {
+	0: sw_KH58_gfx_rev_flippedcheck;
 	default: sw_KH58_gfx_rev_opposite_flippedcheck;
+}
+
+switch(0, SELF, sw_KH58_gfx_rev_opposite_pos, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 8, 255, 64]]) {
+	0: sw_KH58_gfx_front_flippedcheckopp;
+	default: sw_KH58_gfx_rev_opposite_frontcheck;
 }
 
 switch(0, SELF, sw_KH35_gfx_rev_opposite_flippedcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), getbits(var[0x61, 0, 255, 200], 1, 1)]) {
@@ -11984,9 +12004,14 @@ switch(0, SELF, sw_KH35_gfx_rev_opposite_flippedcheck, [STORE_TEMP((position_in_
 	default: sw_KH35_gfx_rev_flippedcheckopp;
 }
 
-switch(0, SELF, sw_KH35_gfx_rev_opposite_pos, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 8, 255, 64]]) {
-	0: sw_KH35_gfx_front_livery;
+switch(0, SELF, sw_KH35_gfx_rev_opposite_frontcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 255, 64]]) {
+	0: sw_KH35_gfx_rev_flippedcheck;
 	default: sw_KH35_gfx_rev_opposite_flippedcheck;
+}
+
+switch(0, SELF, sw_KH35_gfx_rev_opposite_pos, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 8, 255, 64]]) {
+	0: sw_KH35_gfx_front_flippedcheckopp;
+	default: sw_KH35_gfx_rev_opposite_frontcheck;
 }
 
 switch(0, SELF, sw_KH141_gfx_rev_opposite_flippedcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), getbits(var[0x61, 0, 255, 200], 1, 1)]) {
@@ -11994,9 +12019,14 @@ switch(0, SELF, sw_KH141_gfx_rev_opposite_flippedcheck, [STORE_TEMP((position_in
 	default: sw_KH141_gfx_rev_flippedcheckopp;
 }
 
-switch(0, SELF, sw_KH141_gfx_rev_opposite_pos, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 8, 255, 64]]) {
-	0: sw_KH141_gfx_front_livery;
+switch(0, SELF, sw_KH141_gfx_rev_opposite_frontcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 255, 64]]) {
+	0: sw_KH141_gfx_rev_flippedcheck;
 	default: sw_KH141_gfx_rev_opposite_flippedcheck;
+}
+
+switch(0, SELF, sw_KH141_gfx_rev_opposite_pos, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 8, 255, 64]]) {
+	0: sw_KH141_gfx_front_flippedcheckopp;
+	default: sw_KH141_gfx_rev_opposite_frontcheck;
 }
 
 switch(0, SELF, sw_JNR_KH_gfx_rev_flippedcheck_mucar, vehicle_is_flipped) {
@@ -18357,6 +18387,11 @@ switch(0, SELF, sw_KH181_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
 	default: sw_KH181_gfx_rev_livery;
 }
 
+switch(0, SELF, sw_KH181_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+	1: sw_KH181_gfx_frontflip_livery;
+	default: sw_KH181_gfx_front_livery;
+}
+
 switch(0, SELF, sw_KH181_gfx_rev_flippedcheck_mucar, vehicle_is_flipped) {
 	1: sw_KH181_gfx_mid_revflip_livery;
 	default: sw_KH181_gfx_mid_rev_livery;
@@ -18367,9 +18402,14 @@ switch(0, SELF, sw_KH181_gfx_rev_opposite_flippedcheck, [STORE_TEMP((position_in
 	default: sw_KH181_gfx_rev_flippedcheckopp;
 }
 
-switch(0, SELF, sw_KH181_gfx_rev_opposite_pos, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 8, 255, 64]]) {
-	0: sw_KH181_gfx_front_livery;
+switch(0, SELF, sw_KH181_gfx_rev_opposite_frontcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 255, 64]]) {
+	0: sw_KH181_gfx_rev_flippedcheck;
 	default: sw_KH181_gfx_rev_opposite_flippedcheck;
+}
+
+switch(0, SELF, sw_KH181_gfx_rev_opposite_pos, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 8, 255, 64]]) {
+	0: sw_KH181_gfx_front_flippedcheckopp;
+	default: sw_KH181_gfx_rev_opposite_frontcheck;
 }
 
 switch(0, SELF, sw_KH181_gfx_rev_idcheck, [STORE_TEMP((position_in_consist_from_end - position_in_consist), 271), var[0x61, 0, 65535, 198]]) {

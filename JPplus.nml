@@ -6778,6 +6778,11 @@ switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
   1: sw_KH35_gfx_revflip_livery;
  default: sw_KH35_gfx_rev_livery;
 }
+switch(FEAT_TRAINS, SELF, sw_KH35_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+  1: sw_KH35_gfx_frontflip_livery;
+ default: sw_KH35_gfx_front_livery;
+}
+
 
 switch(FEAT_TRAINS, SELF, sw_KH58_gfx_rev_flippedcheck, vehicle_is_flipped) {
   1: sw_KH58_gfx_rev_livery;
@@ -6787,6 +6792,11 @@ switch(FEAT_TRAINS, SELF, sw_KH58_gfx_rev_flippedcheckopp, vehicle_is_flipped) {
   1: sw_KH58_gfx_revflip_livery;
  default: sw_KH58_gfx_rev_livery;
 }
+switch(FEAT_TRAINS, SELF, sw_KH58_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+  1: sw_KH58_gfx_frontflip_livery;
+ default: sw_KH58_gfx_front_livery;
+}
+
 
 switch(FEAT_TRAINS, SELF, sw_KH130_gfx_rev_flippedcheck, vehicle_is_flipped) {
   1: sw_KH130_gfx_rev_livery;
@@ -6801,6 +6811,11 @@ switch(FEAT_TRAINS, SELF, sw_KH141_gfx_rev_flippedcheckopp, vehicle_is_flipped) 
   1: sw_KH141_gfx_revflip_livery;
  default: sw_KH141_gfx_rev_livery;
 }
+switch(FEAT_TRAINS, SELF, sw_KH141_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+  1: sw_KH141_gfx_frontflip_livery;
+ default: sw_KH141_gfx_front_livery;
+}
+
 
 switch(FEAT_TRAINS, SELF, sw_KH150_gfx_rev_flippedcheck, vehicle_is_flipped) {
   1: sw_KH150_gfx_rev_livery;
@@ -6813,9 +6828,13 @@ getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
   0: sw_KH58_gfx_rev_flippedcheck;
   default: sw_KH58_gfx_rev_flippedcheckopp;
 }
-switch(FEAT_TRAINS, SELF, sw_KH58_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
-  0: sw_KH58_gfx_front_livery;
+switch(FEAT_TRAINS, SELF, sw_KH58_gfx_rev_opposite_frontcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x40]]){
+  0: sw_KH58_gfx_rev_flippedcheck;
   default: sw_KH58_gfx_rev_opposite_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KH58_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
+  0: sw_KH58_gfx_front_flippedcheckopp;
+  default: sw_KH58_gfx_rev_opposite_frontcheck;
 }
 
 switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_opposite_flippedcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),
@@ -6823,9 +6842,13 @@ getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
   0: sw_KH35_gfx_rev_flippedcheck;
   default: sw_KH35_gfx_rev_flippedcheckopp;
 }
-switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
-  0: sw_KH35_gfx_front_livery;
+switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_opposite_frontcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x40]]){
+  0: sw_KH35_gfx_rev_flippedcheck;
   default: sw_KH35_gfx_rev_opposite_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KH35_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
+  0: sw_KH35_gfx_front_flippedcheckopp;
+  default: sw_KH35_gfx_rev_opposite_frontcheck;
 }
 
 switch(FEAT_TRAINS, SELF, sw_KH141_gfx_rev_opposite_flippedcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F),
@@ -6833,9 +6856,13 @@ getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
   0: sw_KH141_gfx_rev_flippedcheck;
   default: sw_KH141_gfx_rev_flippedcheckopp;
 }
-switch(FEAT_TRAINS, SELF, sw_KH141_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
-  0: sw_KH141_gfx_front_livery;
+switch(FEAT_TRAINS, SELF, sw_KH141_gfx_rev_opposite_frontcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x40]]){
+  0: sw_KH141_gfx_rev_flippedcheck;
   default: sw_KH141_gfx_rev_opposite_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KH141_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
+  0: sw_KH141_gfx_front_flippedcheckopp;
+  default: sw_KH141_gfx_rev_opposite_frontcheck;
 }
 
 
@@ -6843,7 +6870,7 @@ switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_rev_flippedcheck_mucar, vehicle_is_flipp
   1: sw_JNR_KH_gfx_revflip_livery;
  default: sw_JNR_KH_gfx_rev_livery;
 }
-# 320 "src/reversing/reversing_JNR_KIHA_group.pnml"
+# 347 "src/reversing/reversing_JNR_KIHA_group.pnml"
 switch(FEAT_TRAINS, SELF, sw_JNR_KH_gfx_rev_idcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
   1500: sw_KH40_gfx_rev_flippedcheck;
   1505: sw_KH54_gfx_rev_flippedcheck;
@@ -11194,6 +11221,10 @@ switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_flippedcheckopp, vehicle_is_flipped) 
   1: sw_KH181_gfx_revflip_livery;
  default: sw_KH181_gfx_rev_livery;
 }
+switch(FEAT_TRAINS, SELF, sw_KH181_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+  1: sw_KH181_gfx_frontflip_livery;
+ default: sw_KH181_gfx_front_livery;
+}
 
 
 switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_flippedcheck_mucar, vehicle_is_flipped) {
@@ -11207,9 +11238,13 @@ getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
   0: sw_KH181_gfx_rev_flippedcheck;
   default: sw_KH181_gfx_rev_flippedcheckopp;
 }
-switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
-  0: sw_KH181_gfx_front_livery;
+switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_opposite_frontcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x40]]){
+  0: sw_KH181_gfx_rev_flippedcheck;
   default: sw_KH181_gfx_rev_opposite_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
+  0: sw_KH181_gfx_front_flippedcheckopp;
+  default: sw_KH181_gfx_rev_opposite_frontcheck;
 }
 
 
@@ -11250,7 +11285,7 @@ switch(FEAT_TRAINS, PARENT, sw_KH181_gfx_mid, vehicle_is_reversed){
   0: spriteset_KH181_mid_JNR;
   default: sw_KH181_gfx_rev_idcheck;
 }
-# 134 "src/JNR/DMU/KH181_series.pnml"
+# 142 "src/JNR/DMU/KH181_series.pnml"
 switch(FEAT_TRAINS, SELF, sw_KH181_gfx_main, cargo_subtype) {
   0: sw_KH181_JNR_gfx_frontback_revcheck;
 }

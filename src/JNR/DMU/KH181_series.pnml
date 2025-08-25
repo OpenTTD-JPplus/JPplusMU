@@ -66,6 +66,10 @@ switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_flippedcheckopp, vehicle_is_flipped) 
   1: sw_KH181_gfx_revflip_livery;
  default: sw_KH181_gfx_rev_livery;
 }
+switch(FEAT_TRAINS, SELF, sw_KH181_gfx_front_flippedcheckopp, vehicle_is_flipped) {
+  1: sw_KH181_gfx_frontflip_livery;
+ default: sw_KH181_gfx_front_livery;
+}
 
 //mucar flipped
 switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_flippedcheck_mucar, vehicle_is_flipped) {
@@ -79,9 +83,13 @@ getbits(var[0x61, 0, 0x000000FF, 0xC8], 1, 1)]){
   0: sw_KH181_gfx_rev_flippedcheck;
   default: sw_KH181_gfx_rev_flippedcheckopp;
 }
-switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
-  0: sw_KH181_gfx_front_livery;
+switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_opposite_frontcheck, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0x40]]){
+  0: sw_KH181_gfx_rev_flippedcheck;
   default: sw_KH181_gfx_rev_opposite_flippedcheck;
+}
+switch(FEAT_TRAINS, SELF, sw_KH181_gfx_rev_opposite_pos, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 8, 0x000000FF, 0x40]]){
+  0: sw_KH181_gfx_front_flippedcheckopp;
+  default: sw_KH181_gfx_rev_opposite_frontcheck;
 }
 
 //main stuff
