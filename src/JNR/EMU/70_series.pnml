@@ -302,8 +302,8 @@ spriteset (spriteset_70_rev_front_hanwa,      "gfx/OTHER/mucar.png")     { tmpl_
 spriteset (spriteset_70_revflip_front_hanwa,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
 
 alternative_sprites (spriteset_70_front_hanwa,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/hanwa/70-cab-1.png")     { tmpl_std(0, 0) }
-alternative_sprites (spriteset_70_rev_front_hanwa,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/hanwa/70-cab-1.png")     { tmpl_std_rev(0, 25) }
-alternative_sprites (spriteset_70_revflip_front_hanwa,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/hanwa/70-cab-1.png")     { tmpl_std(0, 25) }
+alternative_sprites (spriteset_70_rev_front_hanwa,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/hanwa/70-cab-1.png")     { tmpl_std(0, 25) }
+alternative_sprites (spriteset_70_revflip_front_hanwa,      ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,     "gfx/JNR/emu70/hanwa/70-cab-1.png")     { tmpl_std_rev(0, 25) }
 
 spriteset (spriteset_70_back_hanwa,      "gfx/OTHER/mucar.png")     { tmpl_std(0, 0) }
 spriteset (spriteset_70_rev_back_hanwa,      "gfx/OTHER/mucar.png")     { tmpl_std_rev(0, 0) }

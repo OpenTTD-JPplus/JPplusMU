@@ -10,7 +10,7 @@ grf {
  grfid: "BS\13\20";
  name: string(STR_GRF_NAME);
  desc: string(STR_GRF_DESC);
- version: 54;
+ version: 55;
  min_compatible_version: 10;
 
   param 4 {
@@ -11965,8 +11965,8 @@ spriteset (spriteset_70_rev_front_hanwa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0
 spriteset (spriteset_70_revflip_front_hanwa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 
 alternative_sprites (spriteset_70_front_hanwa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu70/hanwa/70-cab-1.png") { tmpl_std(0, 0) }
-alternative_sprites (spriteset_70_rev_front_hanwa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu70/hanwa/70-cab-1.png") { tmpl_std_rev(0, 25) }
-alternative_sprites (spriteset_70_revflip_front_hanwa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu70/hanwa/70-cab-1.png") { tmpl_std(0, 25) }
+alternative_sprites (spriteset_70_rev_front_hanwa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu70/hanwa/70-cab-1.png") { tmpl_std(0, 25) }
+alternative_sprites (spriteset_70_revflip_front_hanwa, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu70/hanwa/70-cab-1.png") { tmpl_std_rev(0, 25) }
 
 spriteset (spriteset_70_back_hanwa, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
 spriteset (spriteset_70_rev_back_hanwa, "gfx/OTHER/mucar.png") { tmpl_std_rev(0, 0) }
@@ -26101,11 +26101,11 @@ switch(FEAT_TRAINS, SELF, sw_301_gfx_main, cargo_subtype) {
 
 
 switch(FEAT_TRAINS, SELF, sw_301_subtypetext_mucar, cargo_subtype) {
-  0: string(LV_CHOUSOBU);
+  0: string(LV_CHUOSOBU);
   1: string(LV_TOZAI);
 }
 switch(FEAT_TRAINS, SELF, sw_301_subtypetext_main, cargo_subtype) {
-  0: string(LV_CHOUSOBU);
+  0: string(LV_CHUOSOBU);
   1: string(LV_TOZAI);
 }
 

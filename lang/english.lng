@@ -3,7 +3,7 @@
 ##plural 0
 
 # GRF name and description definitions
-STR_GRF_NAME        :JP+ Multiple Units
+STR_GRF_NAME        :JP+ Multiple Units v0.5.5
 STR_GRF_DESC		:{WHITE}JP{RED}+{WHITE}Set{BLACK}{}{}{WHITE}JP{RED}+{WHITE}Set{BLACK} adds more {WHITE}Ja{RED}p{WHITE}an{BLACK} to your Japanese scene.{}This JP+Set focuses on multiple units operated by JGR, JNR and JR. Trains require narrow gauge tracks.{}{COPYRIGHT}JP+Set Team{}Licence: GPLv2+{}{BLACK}{}Coded By{}{LTBLUE}Tintinfan{BLACK}{}{}{BLACK}Sprites By{}{GREEN}Tintinfan{}RIPper_KR{}Wicket-303{}Azusa{}ChuoSpecialRapid201{}Takamaro{}Erato{}StandUserLeon{}Yozora{}Emperor Jake{}John Franklin{}{}{TINYFONT}{BLACK}Thanks To{}{ORANGE}Romazoon{}Doorslammer{}Toni Babelony{}Gwyd{}JapanSet3 Team{}{}{}{BLACK}{}
 
 
@@ -398,7 +398,7 @@ LV_KANSAIHANWA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Kansai/Hanwa Livery
 
 LV_TOHOKU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Tohoku Livery 
 
-LV_CHOUSOBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Chou-Sobu Livery 
+LV_CHUOSOBU: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Chuo-Sobu Livery 
 
 LV_TOZAI: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Tozai Livery 
 
@@ -465,7 +465,7 @@ jreE235_DIV_yokosuka:{RED}---- Yokosuka Livery Options ----
 jreE235_LV_yokosuka_mu: Yokosuka Standard Car
 jreE235_LV_yokosuka_dd: Yokosuka DD Green Car
 
-jreE233_LV_chou: Chou Livery
+jreE233_LV_Chuo: Chuo Livery
 jreE233_LV_kt: Keihin-Tohoku Livery
 jreE233_LV_shonan_e: Shonan Livery (Early Production)
 jreE233_LV_shonan_p: Shonan Livery (Mass Production)
@@ -573,7 +573,7 @@ BANETSU_LV: Banetsukoshi Livery
 
 SHONAN_LV_EP  : Shonan Livery (Early Production)
 SHONAN_LV_PR  : Shonan Livery (Mass Production)
-CHOU_LV   : Chou Livery
+Chuo_LV   : Chuo Livery
 KT_LV : Keihin-Touhoku Livery
 JOBAN_LV  : Joban Livery
 KEIYO_LV  : Keiyo Livery
@@ -636,7 +636,7 @@ NIKKO_LV  : Nikko "N" Livery
 NIKKORED_LV   : Nikko "Red" Livery
 JOSHIN_LV : Joshin Electric Livery
 
-CHOU_LV_DD: Chou Livery (DD Green Cars)
+Chuo_LV_DD: Chuo Livery (DD Green Cars)
 
 GRSD : Singledecker Greencar
 GRDD : Doubledecker Greencar

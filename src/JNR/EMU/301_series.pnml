@@ -439,11 +439,11 @@ switch(FEAT_TRAINS, SELF, sw_301_gfx_main,  cargo_subtype) {
 
 /*---LIVERY MENU BLOCK---*/
 switch(FEAT_TRAINS, SELF, sw_301_subtypetext_mucar, cargo_subtype) {
-  0: string(LV_CHOUSOBU);
+  0: string(LV_CHUOSOBU);
   1: string(LV_TOZAI);
 }
 switch(FEAT_TRAINS, SELF, sw_301_subtypetext_main, cargo_subtype) {
-  0: string(LV_CHOUSOBU);
+  0: string(LV_CHUOSOBU);
   1: string(LV_TOZAI);
 }
 /*---END OF SECTION---*/
