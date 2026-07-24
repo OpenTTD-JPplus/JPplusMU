@@ -19008,6 +19008,16 @@ alternative_sprites(spriteset_21156_back_darm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BP
 alternative_sprites(spriteset_21156_back_sarm, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu211/tokai/211-5-3_32bpp.png") {tmpl_std_rev(0, 26)}
 alternative_sprites(spriteset_21156_mid, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu211/tokai/211-5-4_32bpp.png") {tmpl_std(0, 1)}
 
+spriteset (spriteset_21156_front_sangi, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_21156_back_darm_sangi, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_21156_back_sarm_sangi, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+spriteset (spriteset_21156_mid_sangi, "gfx/OTHER/mucar.png") { tmpl_std(0, 0) }
+
+alternative_sprites(spriteset_21156_front_sangi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu211/Sangi/211-6-1_32bpp.png") {tmpl_std(0, 1)}
+alternative_sprites(spriteset_21156_back_darm_sangi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu211/Sangi/211-6-2_32bpp.png") {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_21156_back_sarm_sangi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu211/Sangi/211-6-3_32bpp.png") {tmpl_std_rev(0, 26)}
+alternative_sprites(spriteset_21156_mid_sangi, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/JNR/emu211/Sangi/211-6-4_32bpp.png") {tmpl_std(0, 1)}
+
 
 
 
@@ -19019,6 +19029,12 @@ switch(FEAT_TRAINS, SELF, sw_21156_gfx_year_back_pantograph, current_year){
 }
 
 
+switch(FEAT_TRAINS, SELF, sw_21156_gfx_year_back_pantograph_sangi, current_year){
+ 0..2005: spriteset_21156_back_darm_sangi;
+ default: spriteset_21156_back_sarm_sangi;
+}
+
+
 
 
 
@@ -19026,7 +19042,34 @@ switch(FEAT_TRAINS, SELF, sw_21156_gfx_frontback_flipcheck, vehicle_is_flipped){
  0: spriteset_21156_front;
  default: sw_21156_gfx_year_back_pantograph;
 }
-# 43 "src/JRC/EMU/211_56_series.pnml"
+
+
+switch(FEAT_TRAINS, SELF, sw_21156_gfx_frontback_flipcheck_sangi, vehicle_is_flipped){
+ 0: spriteset_21156_front_sangi;
+ default: sw_21156_gfx_year_back_pantograph_sangi;
+}
+# 69 "src/JRC/EMU/211_56_series.pnml"
+switch(FEAT_TRAINS, SELF, sw_21156_gfx_mucar, cargo_subtype) {
+0: spriteset_21156_mid;
+1: spriteset_21156_mid_sangi;
+}
+switch(FEAT_TRAINS, SELF, sw_21156_gfx_main, cargo_subtype) {
+0: sw_21156_gfx_frontback_flipcheck;
+1: sw_21156_gfx_frontback_flipcheck_sangi;
+}
+
+
+switch(FEAT_TRAINS, SELF, sw_21156_subtypetext_mucar, cargo_subtype) {
+0: string(LV_TOKAI);
+1: string(LV_SANGIrailway);
+}
+switch(FEAT_TRAINS, SELF, sw_21156_subtypetext_main, cargo_subtype) {
+0: string(LV_TOKAI);
+1: string(LV_SANGIrailway);
+}
+
+
+
   switch(FEAT_TRAINS, SELF, sw_21156_attach_vehid, [vehicle_type_id == emu_211 || vehicle_type_id == emu_21156 ||vehicle_type_id == emu_213 || vehicle_type_id == emu_313 || vehicle_type_id == emu_311 || vehicle_type_id == mu_car]) {
   0: return string(MU_UNIQUE);
   }
@@ -19071,7 +19114,7 @@ item(FEAT_TRAINS, emu_21156) {
     }
 
       graphics {
-        default: sw_21156_gfx_frontback_flipcheck;
+        default: sw_21156_gfx_main;
       purchase: spriteset_21156_purchase;
       additional_text:
         string(STR_TRAIN_DESC,
@@ -19079,21 +19122,21 @@ item(FEAT_TRAINS, emu_21156) {
         string(STR_DENKI, string(STR_DC_N, 1500)),
         string(STR_LOAD_SPEED, string(STR_DOORS, 3)),
         string(STR_USAGE, string(STR_USE_REGIO)),
-        string(STR_OPERATOR,string(STR_JR,string(STR_JR_CENTRAL))));
+        string(STR_OPERATOR,string(STR_CONCAT_2_DASH_BL,string(STR_JR,string(STR_JR_CENTRAL)),string(STR_PRIVATE))),
+        string(STR_LIVERIES, string(LV_VARIOUS)));
 
-
-
+        cargo_subtype_text: sw_21156_subtypetext_main;
         purchase_cargo_capacity: param_capacity_local - param_capacity_local;
         can_attach_wagon: sw_21156_attach_vehid;
 
     }
 
       livery_override(mu_car){
-        default: spriteset_21156_mid;
+        default: sw_21156_gfx_mucar;
         cargo_capacity: param_capacity_local;
         loading_speed: param_loading_3D;
         cargo_age_period: param_decay_local;
-
+        cargo_subtype_text: sw_21156_subtypetext_mucar;
         power: 480/2;
         weight: 23;
       }

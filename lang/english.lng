@@ -412,6 +412,8 @@ LV_IGRrailway: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Iwate Galaxy Railway
 
 LV_MORIOKA: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Morioka Livery
 
+LV_SANGIrailway: {PUSH_COLOUR}{WHITE}•{POP_COLOUR} Sangi Railway
+
 
 # New New Method Test
 E257_LV_E257_0_azusa: {PUSH_COLOUR}{WHITE}-0{POP_COLOUR} Four Seasons
